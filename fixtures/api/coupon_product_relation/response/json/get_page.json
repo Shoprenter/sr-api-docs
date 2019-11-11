@@ -1,0 +1,21 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/couponProductRelations?page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/couponProductRelations?page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/couponProductRelations?page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponProductRelations/Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponProductRelations/Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTI="
+        }
+    ]
+}

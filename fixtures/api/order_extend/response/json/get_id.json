@@ -1,0 +1,233 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/orderExtend/b3JkZXItb3JkZXJfaWQ9MTcy",
+    "id": "b3JkZXItb3JkZXJfaWQ9MTcy",
+    "innerId": "172",
+    "invoiceId": "0",
+    "invoicePrefix": "",
+    "firstname": "Teszt",
+    "lastname": "Teszt",
+    "phone": "+36201234567",
+    "fax": "",
+    "email": "teszt@teszt.com",
+    "shippingFirstname": "Teszt",
+    "shippingLastname": "Teszt",
+    "shippingCompany": "",
+    "shippingAddress1": "Teszt út 11",
+    "shippingAddress2": "",
+    "shippingCity": "Teszt",
+    "shippingPostcode": "4033",
+    "shippingZoneName": "",
+    "shippingCountryName": "Magyarország",
+    "shippingAddressFormat": "",
+    "shippingMethodName": "Házhozszállítás futárszolgálattal",
+    "shippingMethodTaxRate": "25.0000",
+    "shippingMethodTaxName": "25 %",
+    "shippingMethodExtension": "wseship",
+    "shippingReceivingPointId": "0",
+    "paymentFirstname": "Teszt",
+    "paymentLastname": "Teszt",
+    "paymentCompany": "",
+    "paymentAddress1": "Teszt út 11",
+    "paymentAddress2": "",
+    "paymentCity": "Teszt",
+    "paymentPostcode": "4033",
+    "paymentZoneName": "",
+    "paymentCountryName": "Magyarország",
+    "paymentAddressFormat": "",
+    "paymentMethodName": "Fizetési mód",
+    "paymentMethodCode": "cod",
+    "paymentMethodTaxRate": "0.0000",
+    "paymentMethodTaxName": "",
+    "paymentMethodAfter": "1",
+    "taxNumber": "",
+    "comment": "Megjegyzés",
+    "total": "3990.0000",
+    "value": "1.00000000",
+    "couponTaxRate": "-1.0000",
+    "dateCreated": "2019-09-06T15:47:59",
+    "dateUpdated": "2019-09-06T15:47:59",
+    "ip": "11.11.11.11",
+    "pickPackPontShopCode": "100010",
+    "loyaltyPointsTaxRate": "-1.0000",
+    "customer": {
+        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+    },
+    "customerGroup": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    },
+    "shippingZone": null,
+    "shippingCountry": {
+        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "paymentZone": null,
+    "paymentCountry": {
+        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "orderStatus": {
+        "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    },
+    "currency": {
+        "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+    },
+    "shippingMode": {
+        "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4",
+        "id": "c2hpcHBpbmdNb2RlLWlkPTE4",
+        "innerId": "18",
+        "sortOrder": "1",
+        "enabled": "1",
+        "costCalculationBy": "PRICE",
+        "freeShippingFrom": "0.0000",
+        "shippingType": "COURIER_SERVICE",
+        "taxClass": {
+            "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+        },
+        "geoZone": null,
+        "shippingModeDescriptions": {
+            "href": "http://shopname.api.shoprenter.hu/shippingModeDescriptions?shippingModeId=c2hpcHBpbmdNb2RlLWlkPTE4"
+        },
+        "shippingLanes": {
+            "href": "http://shopname.api.shoprenter.hu/shippingLanes?shippingModeId=c2hpcHBpbmdNb2RlLWlkPTE4"
+        }
+    },
+    "orderTotals": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDE=",
+            "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDE=",
+            "name": "Nettó részösszeg:",
+            "valueText": "6.400 Ft",
+            "value": "6400.0000",
+            "sortOrder": "3",
+            "type": "SUB_TOTAL",
+            "key": null,
+            "description": null,
+            "dateCreated": "-0001-11-30T00:00:00",
+            "dateUpdated": "-0001-11-30T00:00:00",
+            "order": {
+                "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDI=",
+            "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDI=",
+            "name": "ÁFA (27%):",
+            "valueText": "1.728 Ft",
+            "value": "1728.0000",
+            "sortOrder": "3",
+            "type": "TAX",
+            "key": null,
+            "description": null,
+            "dateCreated": "-0001-11-30T00:00:00",
+            "dateUpdated": "-0001-11-30T00:00:00",
+            "order": {
+                "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDM=",
+            "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDM=",
+            "name": "Bruttó részösszeg:",
+            "valueText": "8.128 Ft",
+            "value": "8128.0000",
+            "sortOrder": "4",
+            "type": "SUB_TOTAL_WITH_TAX",
+            "key": null,
+            "description": null,
+            "dateCreated": "-0001-11-30T00:00:00",
+            "dateUpdated": "-0001-11-30T00:00:00",
+            "order": {
+                "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=",
+            "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=",
+            "name": "Személyes átvétel (1025 Budapest, Teszt u. 25):",
+            "valueText": "0 Ft",
+            "value": "0.0000",
+            "sortOrder": "6",
+            "type": "SHIPPING",
+            "key": null,
+            "description": null,
+            "dateCreated": "-0001-11-30T00:00:00",
+            "dateUpdated": "-0001-11-30T00:00:00",
+            "order": {
+                "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDU=",
+            "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDU=",
+            "name": "Összesen bruttó:",
+            "valueText": "8.128 Ft",
+            "value": "8128.0000",
+            "sortOrder": "10",
+            "type": "TOTAL",
+            "key": null,
+            "description": null,
+            "dateCreated": "-0001-11-30T00:00:00",
+            "dateUpdated": "-0001-11-30T00:00:00",
+            "order": {
+                "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            }
+        }
+    ],
+    "orderProducts": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3",
+            "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3",
+            "name": "Mini Tündér karkötő",
+            "sku": "997000004",
+            "modelNumber": null,
+            "price": "400.0000",
+            "total": "400.0000",
+            "taxRate": "27.0000",
+            "stock1": "1",
+            "stock2": "0",
+            "stock3": "0",
+            "stock4": "0",
+            "subtractStock": "1",
+            "dateCreated": "2017-07-30T21:02:10",
+            "dateUpdated": "2017-10-19T16:38:44",
+            "order": {
+                "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            },
+            "product": {
+                "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE4NQ=="
+            },
+            "orderProductOptions": {
+                "href": "http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1",
+            "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1",
+            "name": "Borotválkozó Ken",
+            "sku": "99400000",
+            "modelNumber": null,
+            "price": "6000.0000",
+            "total": "6000.0000",
+            "taxRate": "27.0000",
+            "stock1": "1",
+            "stock2": "0",
+            "stock3": "0",
+            "stock4": "0",
+            "subtractStock": "1",
+            "dateCreated": "2017-10-19T16:38:44",
+            "dateUpdated": "2017-10-19T16:38:44",
+            "order": {
+                "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            },
+            "product": {
+                "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTExNw=="
+            },
+            "orderProductOptions": {
+                "href": "http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1"
+            }
+        }
+    ],
+    "orderGiftWrappings": [],
+    "orderAddressIdentifications": []
+}

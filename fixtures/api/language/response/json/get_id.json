@@ -1,0 +1,10 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==",
+    "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==",
+    "innerId": "1",
+    "name": "Hungarian",
+    "code": "hu",
+    "locale": "hu_HUN.UTF-8,hu_HUN,hu-hun,hungarian",
+    "sortOrder": "1",
+    "status": "1"
+}

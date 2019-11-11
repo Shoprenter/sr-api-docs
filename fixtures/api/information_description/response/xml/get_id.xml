@@ -1,0 +1,24 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x]]>
+    </href>
+    <id>
+        <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x]]>
+    </id>
+    <title>
+        <![CDATA[Szöveges tartalom címe]]>
+    </title>
+    <description>
+        <![CDATA[Szöveges tartalom. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.]]>
+    </description>
+    <information>
+        <href>
+            <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+        </href>
+    </information>
+    <language>
+        <href>
+            <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+        </href>
+    </language>
+</response>

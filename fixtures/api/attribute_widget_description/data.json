@@ -1,0 +1,158 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Attribútum widget leírás azonosító. Az OuterID módosítására szolgál.",
+                "en": "Attribútum widget leírás azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "label",
+            "description": {
+                "hu": "Címke.",
+                "en": "Címke."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "attributeWidget",
+            "description": {
+                "hu": "Attributútum widget link.",
+                "en": "Attributútum widget link."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Nyelv link.",
+                "en": "Nyelv link."
+            },
+            "required": true,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/attributeWidgetDescriptions\/attribútum widget leírás id",
+                "en": "\/attributeWidgetDescriptions\/attribútum widget leírás id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeWidgetDescriptions\/YXR0cmlidXRlV2lkZ2V0RGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MQ==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/attributeWidgetDescriptions",
+                "en": "\/attributeWidgetDescriptions"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "numberAttributeWidgetId",
+                    "description": {
+                        "hu": "Szám típusú attribútum widget azonosító.",
+                        "en": "Szám típusú attribútum widget azonosító."
+                    }
+                },
+                {
+                    "name": "listAttributeWidgetId",
+                    "description": {
+                        "hu": "Válaszható érték típusú attribútum widget azonosító.",
+                        "en": "Válaszható érték típusú attribútum widget azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/attributeWidgetDescriptions?page=0&limit=25&listAttributeWidgetId=bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA==",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/attributeWidgetDescriptions[\/attribútum widget leírás id]",
+                "en": "\/attributeWidgetDescriptions[\/attribútum widget leírás id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeWidgetDescriptions",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/attributeWidgetDescriptions\/attribútum widget leírás id",
+                "en": "\/attributeWidgetDescriptions\/attribútum widget leírás id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeWidgetDescriptions\/YXR0cmlidXRlV2lkZ2V0RGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MQ==",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/attributeWidgetDescriptions\/attribútum widget leírás id",
+                "en": "\/attributeWidgetDescriptions\/attribútum widget leírás id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeWidgetDescriptions\/YXR0cmlidXRlV2lkZ2V0RGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MQ==",
+                "statusCode": "204"
+            }
+        }
+    }
+}

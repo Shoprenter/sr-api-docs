@@ -1,0 +1,153 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Szállítási mód leírás azonosító. Az OuterID módosítására szolgál.",
+                "en": "Szállítási mód leírás azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Szállítási mód neve.",
+                "en": "Szállítási mód neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "description",
+            "description": {
+                "hu": "Leírás.",
+                "en": "Leírás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Nyelv resource linkje.",
+                "en": "Nyelv resource linkje."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "shippingMode",
+            "description": {
+                "hu": "Szállítási mód resource linkje.",
+                "en": "Szállítási mód resource linkje."
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/shippingModeDescriptions\/szállítási mód leírás id",
+                "en": "\/shippingModeDescriptions\/szállítási mód leírás id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeDescriptions\/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTAxJmxhbmd1YWdlX2lkPTE=?full=1",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/shippingModeDescriptions",
+                "en": "\/shippingModeDescriptions"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/shippingModeDescriptions?full=1&page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/shippingModeDescriptions[\/szállítási mód leírás id]",
+                "en": "\/shippingModeDescriptions[\/szállítási mód leírás id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeDescriptions",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/shippingModeDescriptions\/szállítási mód leírás id",
+                "en": "\/shippingModeDescriptions\/szállítási mód leírás id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeDescriptions\/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTAxJmxhbmd1YWdlX2lkPTE=",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/shippingModeDescriptions\/szállítási mód leírás id",
+                "en": "\/shippingModeDescriptions\/szállítási mód leírás id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeDescriptions\/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTAxJmxhbmd1YWdlX2lkPTE=",
+                "statusCode": "204"
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "stock1": "12",
+    "stock2": "22",
+    "sku": "ABCD-1234",
+    "price": "2200",
+    "manufacturer": {
+        "name": "Manufacturer name",
+        "picture": "image.jpg",
+        "sortOrder": 0,
+        "robotsMetaTag": 0
+    },
+    "productDescriptions": [
+        {
+            "name": "Termék Név",
+            "shortDescription": "Rövid Leírás",
+            "description": "Hosszú Leírás",
+            "language": {
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+            }
+        },
+        {
+            "name": "Product Name",
+            "shortDescription": "Short Description",
+            "description": "Long Description",
+            "language": {
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+            }
+        }
+    ],
+    "productSpecials": [
+        {
+            "price": "1000"
+        },
+        {
+            "price": "2000"
+        }
+    ],
+    "productCategoryRelations": [
+        {
+            "category": {
+                "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTU="
+            }
+        },
+        {
+            "category": {
+                "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTM="
+            }
+        },
+        {
+            "category": {
+                "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTQ="
+            }
+        }
+    ],
+    "productRelatedProductRelations": [
+        {
+            "relatedProduct": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE0OQ=="
+            }
+        },
+        {
+            "relatedProduct": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE2MA=="
+            }
+        },
+        {
+            "relatedProduct": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE2Nw=="
+            }
+        }
+    ],
+    "productProductBadgeRelations": [
+        {
+            "productBadge": {
+                "id": "cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTE="
+            }
+        },
+        {
+            "productBadge": {
+                "id": "cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTM="
+            }
+        }
+    ],
+    "productTags": [
+        {
+            "language": {
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+            },
+            "tags": "valami1, valami2, valami3"
+        },
+        {
+            "language": {
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+            },
+            "tags": "something1, something2, something3"
+        }
+    ],
+    "productCollateralProductRelations": [
+        {
+            "collateralProduct": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTEyMA=="
+            }
+        },
+        {
+            "collateralProduct": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTExOQ=="
+            }
+        },
+        {
+            "collateralProduct": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTExOA=="
+            }
+        }
+    ],
+    "customerGroupProductPrices": [
+        {
+            "customerGroup": {
+                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD05"
+            },
+            "price": "1200"
+        },
+        {
+            "customerGroup": {
+                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02"
+            },
+            "price": "1500",
+            "product": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE0OQ=="
+            }
+        }
+    ]
+}

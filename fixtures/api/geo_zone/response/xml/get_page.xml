@@ -1,0 +1,37 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.shoprenter.hu/geoZones?page=0&limit=5]]>
+    </href>
+    <page>0</page>
+    <pageCount>1</pageCount>
+    <limit>5</limit>
+    <first>
+        <href>
+            <![CDATA[http://shopname.api.shoprenter.hu/geoZones?page=0&limit=5]]>
+        </href>
+    </first>
+    <previous/>
+    <next/>
+    <last>
+        <href>
+            <![CDATA[http://shopname.api.shoprenter.hu/geoZones?page=0&limit=5]]>
+        </href>
+    </last>
+    <items>
+        <item>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
+            </href>
+        </item>
+        <item>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02]]>
+            </href>
+        </item>
+        <item>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD03]]>
+            </href>
+        </item>
+    </items>
+</response>

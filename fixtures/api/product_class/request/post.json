@@ -1,0 +1,12 @@
+{
+    "name": "Név",
+    "description": "Leírás",
+    "firstVariantSelectType": "SELECT",
+    "secondVariantSelectType": "SELECT",
+    "firstVariantParameter": {
+        "href": "http:\/\/shopname.api.shoprenter.hu\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
+    },
+    "secondVariantParameter": {
+        "href": "http:\/\/shopname.api.shoprenter.hu\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
+    }
+}

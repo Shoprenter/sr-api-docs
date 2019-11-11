@@ -1,0 +1,113 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
+    "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
+    "innerId": "1",
+    "sku": "FJ010201_12_BHM003",
+    "modelNumber": "0",
+    "orderable": "1",
+    "price": "139900.0000",
+    "multiplier": "1.0000",
+    "multiplierLock": "0",
+    "loyaltyPoints": {},
+    "stock1": "0",
+    "stock2": "0",
+    "stock3": "0",
+    "stock4": "0",
+    "subtractStock": "1",
+    "mainPicture": "product/FJ010201_12_BHM003.jpg",
+    "width": "0.00",
+    "height": "0.00",
+    "length": "0.00",
+    "weight": "0.00",
+    "status": "1",
+    "shipped": "1",
+    "minimalOrderNumber": "1",
+    "maximalOrderNumber": "0",
+    "minimalOrderNumberMultiply": "0",
+    "availableDate": "0000-00-00",
+    "quantity": "0.0000",
+    "sortOrder": "0",
+    "dateCreated": "2013-08-08T12:30:00",
+    "dateUpdated": "2013-08-08T12:30:00",
+    "imageAlt": "image alt",
+    "freeShipping": "0",
+    "taxClass": {
+        "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+    },
+    "noStockStatus": {
+        "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU="
+    },
+    "inStockStatus": {
+        "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTk="
+    },
+    "productClass": {
+        "href": "http://shopname.api.shoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MQ=="
+    },
+    "parentProduct": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "volumeUnit": {
+        "href": "http://shopname.api.shoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE="
+    },
+    "weightUnit": {
+        "href": "http://shopname.api.shoprenter.hu/weightClasses/d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE="
+    },
+    "manufacturer": {
+        "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0y"
+    },
+    "onlyStock1Status": {
+        "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU="
+    },
+    "onlyStock2Status": {
+        "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTk="
+    },
+    "onlyStock3Status": {
+        "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTl="
+    },
+    "onlyStock4Status": {
+        "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTm="
+    },
+    "allImages": {
+        "mainImage": "https://shopname.shoprenter.hu/custom/shopname/image/cache/w460h460wt1/product/main_image.jpg?lastmod=1537961896.1537962288",
+        "image1": "https://shopname.shoprenter.hu/custom/shopname/image/cache/w460h460wt1/product/other_image1.jpg?lastmod=1537961896.1537962288"
+    },
+    "productDescriptions": {
+        "href": "http://shopname.api.shoprenter.hu/productDescriptions?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "productRelatedProductRelations": {
+        "href": "http://shopname.api.shoprenter.hu/productRelatedProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "productCategoryRelations": {
+        "href": "http://shopname.api.shoprenter.hu/productCategoryRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "productSpecials": {
+        "href": "http://shopname.api.shoprenter.hu/productSpecials?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "productProductBadgeRelations": {
+        "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "productListAttributeValueRelations": {
+        "href": "http://shopname.api.shoprenter.hu/productListAttributeValueRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "numberAttributeValues": {
+        "href": "http://shopname.api.shoprenter.hu/numberAttributeValues?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "textAttributeValues": {
+        "href": "http://shopname.api.shoprenter.hu/textAttributeValues?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "productTags": {
+        "href": "http://shopname.api.shoprenter.hu/productTags?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "productCollateralProductRelations": {
+        "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "customerGroupProductPrices": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroupProductPrices?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "relatedProducts": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/relatedProducts"
+    },
+    "collateralProducts": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/collateralProducts"
+    }
+}

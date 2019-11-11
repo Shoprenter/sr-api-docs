@@ -1,0 +1,30 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></href>
+    <id><![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></id>
+    <name><![CDATA[Termék név]]></name>
+    <sku><![CDATA[9789639715615]]></sku>
+    <modelNumber/>
+    <originalPrice><![CDATA[2400.0000]]></originalPrice>
+    <price><![CDATA[2400.0000]]></price>
+    <total><![CDATA[2400.0000]]></total>
+    <taxRate><![CDATA[25.0000]]></taxRate>
+    <stock1><![CDATA[0]]></stock1>
+    <stock2><![CDATA[1]]></stock2>
+    <subtractStock><![CDATA[1]]></subtractStock>
+    <dateCreated><![CDATA[2013-01-01T01:00:00]]></dateCreated>
+    <dateUpdated><![CDATA[2013-01-01T01:00:00]]></dateUpdated>
+    <width><![CDATA[1.00]]></width>
+    <height><![CDATA[1.00]]></height>
+    <length><![CDATA[1.00]]></length>
+    <weight><![CDATA[1.00]]></weight>
+    <order>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
+    </order>
+    <product>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx]]></href>
+    </product>
+    <orderProductOptions>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></href>
+    </orderProductOptions>
+</response>
+

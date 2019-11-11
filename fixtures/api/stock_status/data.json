@@ -1,0 +1,78 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Raktár állapot azonosító.",
+                "en": "Raktár állapot azonosító."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "stockStatusDescriptions",
+            "description": {
+                "hu": "Raktár állapot leírások linkjei.",
+                "en": "Raktár állapot leírások linkjei."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/stockStatuses\/Raktár állapot id",
+                "en": "\/stockStatuses\/Raktár állapot id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/stockStatuses\/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/stockStatuses",
+                "en": "\/stockStatuses"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/stockStatuses?page=0&limit=5",
+                "statusCode": "200"
+            }
+        }
+    }
+}

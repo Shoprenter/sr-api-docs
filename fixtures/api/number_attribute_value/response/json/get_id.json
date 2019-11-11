@@ -1,0 +1,11 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05MA==",
+    "id": "bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05MA==",
+    "value": "21",
+    "numberAttribute": {
+        "href": "http://shopname.api.shoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
+    },
+    "product": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTkw"
+    }
+}

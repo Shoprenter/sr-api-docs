@@ -1,0 +1,241 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Attribútum azonosító. Az OuterID módosítására szolgál.",
+                "en": "Attribútum azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "type",
+            "description": {
+                "hu": "Típus. Lehetséges értékek: INTEGER, FLOAT.",
+                "en": "Típus. Lehetséges értékek: INTEGER, FLOAT."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név (kisbetűs, és csak angol karakterek szerepelhetnek benne). ",
+                "en": "Név (kisbetűs, és csak angol karakterek szerepelhetnek benne). "
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "priority",
+            "description": {
+                "hu": "Prioritás. Lehetséges értékek: HIDDEN, NORMAL, IMPORTANT.",
+                "en": "Prioritás. Lehetséges értékek: HIDDEN, NORMAL, IMPORTANT."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend.",
+                "en": "Sorrend."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "defaultValue",
+            "description": {
+                "hu": "Alapértelmezett érték.",
+                "en": "Alapértelmezett érték."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "required",
+            "description": {
+                "hu": "Kötelező-e kitölteni a mezőt.",
+                "en": "Kötelező-e kitölteni a mezőt."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "minValue",
+            "description": {
+                "hu": "Minimumális érték.",
+                "en": "Minimumális érték."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "maxValue",
+            "description": {
+                "hu": "Maximális érték.",
+                "en": "Maximális érték."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "showIfZero",
+            "description": {
+                "hu": "Akkor is legyen-e megjelenítve az érték, ha nulla.",
+                "en": "Akkor is legyen-e megjelenítve az érték, ha nulla."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "precision",
+            "description": {
+                "hu": "Float típus esetén a tizedes jegyek száma.",
+                "en": "Float típus esetén a tizedes jegyek száma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "numberAttributeWidget",
+            "description": {
+                "hu": "Attribútum widget linkje.",
+                "en": "Attribútum widget linkje."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "attributeDescriptions",
+            "description": {
+                "hu": "Az attribútumhoz tartozó leírások.",
+                "en": "Az attribútumhoz tartozó leírások."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "numberAttributeValues",
+            "description": {
+                "hu": "Az attribútumhoz tartozó értékek.",
+                "en": "Az attribútumhoz tartozó értékek."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/numberAttributes\/attribútum id",
+                "en": "\/numberAttributes\/attribútum id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/numberAttributes",
+                "en": "\/numberAttributes"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "name",
+                    "description": {
+                        "hu": "Kereső paraméter. Az attribútum neve.",
+                        "en": "Kereső paraméter. Az attribútum neve."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/numberAttributes?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/numberAttributes[\/attribútum id]",
+                "en": "\/numberAttributes[\/attribútum id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributes",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/numberAttributes\/attribútum id",
+                "en": "\/numberAttributes\/attribútum id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/numberAttributes\/attribútum id",
+                "en": "\/numberAttributes\/attribútum id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05",
+                "statusCode": "204"
+            }
+        }
+    }
+}

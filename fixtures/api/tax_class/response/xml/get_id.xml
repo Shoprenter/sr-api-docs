@@ -1,0 +1,11 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
+    <id><![CDATA[dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></id>
+    <name><![CDATA[Adó osztály név]]></name>
+    <description><![CDATA[Leírás]]></description>
+    <dateCreated><![CDATA[2013-08-08T12:30:00]]></dateCreated>
+    <dateUpdated><![CDATA[2013-08-08T12:30:00]]></dateUpdated>
+    <taxRates>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/taxRates?taxClassId=dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
+    </taxRates>
+</response>

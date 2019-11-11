@@ -1,0 +1,12 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+    "id": "YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+    "name": "Név",
+    "description": "Leírás",
+    "attribute": {
+        "href": "http://shopname.api.shoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Nw=="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9NA=="
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/listAttributes?page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/listAttributes?page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/listAttributes?page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MjA="
+        }
+    ]
+}

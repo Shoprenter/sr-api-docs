@@ -1,0 +1,13 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/documentDescriptions/ZG9jdW1lbnREZXNjcmlwdGlZD0yJmxhbmd1YWdlX2lkPTE=",
+    "id": "ZG9jdW1lbnREZXNjcmlwdGlZD0yJmxhbmd1YWdlX2lkPTE=",
+    "name": "Dokumentum szövege",
+    "filename": "document_name.pdf.123",
+    "mask": "document_name.pdf",
+    "document": {
+        "href": "http://shopname.api.shoprenter.hu/categories/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9Mg=="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

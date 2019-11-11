@@ -1,0 +1,87 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTcy",
+    "id": "b3JkZXItb3JkZXJfaWQ9MTcy",
+    "innerId": "172",
+    "invoiceId": "0",
+    "invoicePrefix": "",
+    "firstname": "Teszt",
+    "lastname": "Teszt",
+    "phone": "+36201234567",
+    "fax": "",
+    "email": "teszt@teszt.com",
+    "shippingFirstname": "Teszt",
+    "shippingLastname": "Teszt",
+    "shippingCompany": "",
+    "shippingAddress1": "Teszt út 11",
+    "shippingAddress2": "",
+    "shippingCity": "Teszt",
+    "shippingPostcode": "4033",
+    "shippingZoneName": "",
+    "shippingCountryName": "Magyarország",
+    "shippingAddressFormat": "",
+    "shippingMethodName": "Házhozszállítás futárszolgálattal",
+    "shippingMethodTaxRate": "25.0000",
+    "shippingMethodTaxName": "25 %",
+    "shippingMethodExtension": "WSESHIP",
+    "shippingReceivingPointId": "0",
+    "paymentFirstname": "Teszt",
+    "paymentLastname": "Teszt",
+    "paymentCompany": "",
+    "paymentAddress1": "Teszt út 11",
+    "paymentAddress2": "",
+    "paymentCity": "Teszt",
+    "paymentPostcode": "4033",
+    "paymentZoneName": "",
+    "paymentCountryName": "Magyarország",
+    "paymentAddressFormat": "",
+    "paymentMethodName": "Fizetési mód",
+    "paymentMethodCode": "COD",
+    "paymentMethodTaxRate": "0.0000",
+    "paymentMethodTaxName": "",
+    "paymentMethodAfter": "1",
+    "taxNumber": "",
+    "comment": "Megjegyzés",
+    "total": "3990.0000",
+    "value": "1.00000000",
+    "couponTaxRate": "-1.0000",
+    "dateCreated": "2019-09-06T15:47:59",
+    "dateUpdated": "2019-09-06T15:47:59",
+    "ip": "11.11.11.11",
+    "pickPackPontShopCode": "100010",
+    "loyaltyPointsTaxRate": "-1.0000",
+    "customer": {
+        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+    },
+    "customerGroup": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    },
+    "shippingZone": null,
+    "shippingCountry": {
+        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "paymentZone": null,
+    "paymentCountry": {
+        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "orderStatus": {
+        "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    },
+    "currency": {
+        "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+    },
+    "shippingMode": {
+        "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
+    },
+    "orderTotals": {
+        "href": "http://shopname.api.shoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+    },
+    "orderProducts": {
+        "href": "http://shopname.api.shoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+    },
+    "orderGiftWrappings": {
+        "href": "http://shopname.api.shoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+    }
+}

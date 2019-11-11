@@ -1,0 +1,50 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/paymentModes?full=1&page=0&limit=1",
+    "page": 0,
+    "pageCount": 13,
+    "limit": 1,
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/paymentModes?full=1&page=0&limit=1"
+    },
+    "previous": null,
+    "next": {
+        "href": "http://shopname.api.shoprenter.hu/paymentModes?full=1&page=1&limit=1"
+    },
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/paymentModes?full=1&page=12&limit=1"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/paymentModes/cGF5bWVudE1vZGUtZXh0ZW5zaW9uX2lkPTIz",
+            "id": "cGF5bWVudE1vZGUtZXh0ZW5zaW9uX2lkPTIz",
+            "innerId": "23",
+            "code": "cod",
+            "status": "1",
+            "sortOrder": "2",
+            "geoZone": {
+                "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD0w"
+            },
+            "orderStatus": {
+                "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+            },
+            "paymentDescription": [
+                {
+                    "name": "Utánvétel",
+                    "description": "Etiam velit erat, dapibus luctus enim non, pellentesque ullamcorper nunc. Nullam in ex eget purus fringilla maximus blandit ut diam.",
+                    "language": {
+                        "href": "http://demo.api.aurora.rosti/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==",
+                        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                    }
+                },
+                {
+                    "name": "Utánvétel",
+                    "description": "Etiam velit erat, dapibus luctus enim non, pellentesque ullamcorper nunc. Nullam in ex eget purus fringilla maximus blandit ut diam.",
+                    "language": {
+                        "href": "http://demo.api.aurora.rosti/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==",
+                        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                    }
+                }
+            ]
+        }
+    ]
+}

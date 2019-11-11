@@ -1,0 +1,49 @@
+{
+    "properties": [
+        {
+            "name": "url",
+            "description": {
+                "hu": "Az adott domain url-je",
+                "en": "Az adott domain url-je"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "primary",
+            "description": {
+                "hu": "Az adott domain-e elsődleges domain-e? Ha nincs szülő domain, ez az érték '1'",
+                "en": "Az adott domain-e elsődleges domain-e? Ha nincs szülő domain, ez az érték '1'"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Az adott domain nyelve",
+                "en": "Az adott domain nyelve"
+            },
+            "required": false,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/domains",
+                "en": "\/domains"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/domains",
+                "statusCode": "200"
+            }
+        }
+    }
+}

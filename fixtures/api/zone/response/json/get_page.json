@@ -1,0 +1,32 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/zones?page=0&limit=5",
+    "page": "0",
+    "limit": "5",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/zones?page=0&limit=5"
+    },
+    "previous": null,
+    "next": {
+        "href": "http://shopname.api.shoprenter.hu/zones?page=1&limit=5"
+    },
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/zones?page=781&limit=5"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTI="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTM="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTQ="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTU="
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "description": "Leírás",
+    "customTitle": "Egyedi title",
+    "metaDescription": "Meta leírás.",
+    "metaKeywords": "kulcsszó_1, kulcsszó_2",
+    "manufacturer": {
+        "id": "bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02"
+    },
+    "language": {
+        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

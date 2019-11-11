@@ -1,0 +1,19 @@
+{
+    "name": "Termék név",
+    "metaKeywords": "Meta kulcsszavak",
+    "metaDescription": "Meta leírás",
+    "shortDescription": "Rövid leírás",
+    "description": "Hosszú leírás",
+    "customContentTitle": "Egyedi tartalom címe",
+    "customContent": "Egyedi tartalom",
+    "parameters": "Paraméterek",
+    "packagingUnit": "csomag",
+    "measurementUnit": "db",
+    "videoCode": "Youtube videók kódja",
+    "product": {
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTEzNTgw"
+    },
+    "language": {
+        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

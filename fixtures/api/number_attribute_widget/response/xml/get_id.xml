@@ -1,0 +1,23 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeWidgets/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05]]></href>
+    <id><![CDATA[bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05]]></id>
+    <active><![CDATA[1]]></active>
+    <displayMode><![CDATA[RADIO]]></displayMode>
+    <displayToAllCategory><![CDATA[1]]></displayToAllCategory>
+    <autoCalculateLimits><![CDATA[1]]></autoCalculateLimits>
+    <sortOrder>10</sortOrder>
+    <maxNumberOfOptions>10</maxNumberOfOptions>
+    <sortValuesBy><![CDATA[COUNT_DESC]]></sortValuesBy>
+    <numberAttribute>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05]]></href>
+    </numberAttribute>
+    <attributeWidgetDescriptions>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/attributeWidgetDescriptions?numberAttributeWidgetId=bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05]]></href>
+    </attributeWidgetDescriptions>
+    <attributeWidgetCategoryRelations>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations?numberAttributeWidgetId=bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05]]></href>
+    </attributeWidgetCategoryRelations>
+    <numberAttributeWidgetLimits>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeWidgetLimits?numberAttributeWidgetId=bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05]]></href>
+    </numberAttributeWidgetLimits>
+</response>

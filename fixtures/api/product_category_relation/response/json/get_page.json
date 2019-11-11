@@ -1,0 +1,32 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/productCategoryRelations?page=0&limit=5",
+    "page": "0",
+    "limit": "5",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/productCategoryRelations?page=0&limit=5"
+    },
+    "previous": null,
+    "next": {
+        "href": "http://shopname.api.shoprenter.hu/productCategoryRelations?page=1&limit=5"
+    },
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/productCategoryRelations?page=365&limit=5"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDkmY2F0ZWdvcnlfaWQ9MjA="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTE0JmNhdGVnb3J5X2lkPTIw"
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTE1JmNhdGVnb3J5X2lkPTIw"
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTE2JmNhdGVnb3J5X2lkPTIw"
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NjQ0JmNhdGVnb3J5X2lkPTIw"
+        }
+    ]
+}

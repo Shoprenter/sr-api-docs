@@ -1,0 +1,9 @@
+{
+    "type": "TEXT",
+    "name": "text",
+    "priority": "HIDDEN",
+    "sortOrder": "0",
+    "required": "0",
+    "textFieldType": "INPUT",
+    "translateable": "0\n"
+}

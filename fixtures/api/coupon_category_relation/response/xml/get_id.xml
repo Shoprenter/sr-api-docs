@@ -1,0 +1,13 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.shoprenter.hu/couponCategoryRelations/
+        Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw==]]>
+    </href>
+    <id><![CDATA[Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw==]]></id>
+    <coupon>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x]]></href>
+    </coupon>
+    <category>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MjM=]]></href>
+    </category>
+</response>

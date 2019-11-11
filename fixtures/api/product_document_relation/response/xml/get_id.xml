@@ -1,0 +1,10 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/productDocumentRelations/cHJvZHVjdERvY3VtZW50LWlkPTE2]]></href>
+    <id><![CDATA[cHJvZHVjdERvY3VtZW50LWlkPTE2]]></id>
+    <product>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTc4]]></href>
+    </product>
+    <document>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9OQ==]]></href>
+    </document>
+</response>

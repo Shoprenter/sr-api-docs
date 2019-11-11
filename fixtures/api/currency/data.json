@@ -1,0 +1,148 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Pénznem azonosító. Az OuterID módosítására szolgál.",
+                "en": "Pénznem azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név.",
+                "en": "Név."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "code",
+            "description": {
+                "hu": "Pénznem kódja, pl: USD, EUR, HUF.",
+                "en": "Pénznem kódja, pl: USD, EUR, HUF."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "symbolLeft",
+            "description": {
+                "hu": "Összeg előtt szereplő szimbólum.",
+                "en": "Összeg előtt szereplő szimbólum."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "symbolRight",
+            "description": {
+                "hu": "Összeg után szereplő szimbólum.",
+                "en": "Összeg után szereplő szimbólum."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "decimalPlace",
+            "description": {
+                "hu": "Az összegben a tizedes jegyek száma.",
+                "en": "Az összegben a tizedes jegyek száma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "value",
+            "description": {
+                "hu": "Váltószám.",
+                "en": "Váltószám."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "status",
+            "description": {
+                "hu": "Státusz.",
+                "en": "Státusz."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "hu": "Utolsó módosítás dátuma.",
+                "en": "Utolsó módosítás dátuma."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/currencies\/pénznem id",
+                "en": "\/currencies\/pénznem id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/currencies\/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/currencies",
+                "en": "\/currencies"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "code",
+                    "description": {
+                        "hu": "Kereső paraméter. A pénznem kódja.",
+                        "en": "Kereső paraméter. A pénznem kódja."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/currencies?page=0&limit=5",
+                "statusCode": "200"
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=]]></href>
+    <id><![CDATA[cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=]]></id>
+    <innerId><![CDATA[7]]></innerId>
+    <name><![CDATA[Action]]></name>
+    <picture><![CDATA[p_1.png]]></picture>
+    <description><![CDATA[Akciós!]]></description>
+    <custom><![CDATA[0]]></custom>
+    <active><![CDATA[1]]></active>
+    <sortOrder><![CDATA[1]]></sortOrder>
+</response>

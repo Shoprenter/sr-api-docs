@@ -1,0 +1,167 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "További termék kép azonosító. Az OuterID módosítására szolgál.",
+                "en": "További termék kép azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "imagePath",
+            "description": {
+                "hu": "Útvonal.",
+                "en": "Útvonal."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "imageAlt",
+            "description": {
+                "hu": "Termék kép alt.",
+                "en": "Termék kép alt."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "A kép sorrendjét határozza meg.",
+                "en": "A kép sorrendjét határozza meg."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "product",
+            "description": {
+                "hu": "Termék linkje.",
+                "en": "Termék linkje."
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productImages\/termék kép id",
+                "en": "\/productImages\/termék kép id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productImages\/cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productImages",
+                "en": "\/productImages"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "productId",
+                    "description": {
+                        "hu": "Kereső paraméter (Termék azonosító).",
+                        "en": "Kereső paraméter (Termék azonosító)."
+                    }
+                },
+                {
+                    "name": "imagePath",
+                    "description": {
+                        "hu": "Kereső paraméter (Termék kép elérési útvonala).",
+                        "en": "Kereső paraméter (Termék kép elérési útvonala)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/productImages?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/productImages[\/termék kép id]",
+                "en": "\/productImages[\/termék kép id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productImages",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/productImages\/termék kép id",
+                "en": "\/productImages\/termék kép id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productImages\/cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/productImages\/termék kép id",
+                "en": "\/productImages\/termék kép id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productImages\/cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
+                "statusCode": "204"
+            }
+        }
+    }
+}

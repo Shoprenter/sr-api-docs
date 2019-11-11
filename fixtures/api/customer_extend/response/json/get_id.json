@@ -1,0 +1,97 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw==",
+    "id": "Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw==",
+    "innerId": "7",
+    "firstname": "TesztKeresztNév",
+    "lastname": "TesztVezeetékNév",
+    "email": "valaki@domain.hu",
+    "telephone": "+36201234567",
+    "fax": {},
+    "password": "$2y$10$Ynx7HptRL9B3nD.4KAFA8.ah2miCMeK/nIIY9pFT9aavbGKVfVLwO",
+    "newsletter": "0",
+    "status": "1",
+    "approved": "1",
+    "dateCreated": "2018-12-05T13:41:45",
+    "dateUpdated": "2018-12-05T13:41:45",
+    "freeShipping": "0",
+    "defaultAddress": {},
+    "customerGroup": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    },
+    "addresses": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTc=",
+            "id": "YWRkcmVzcy1hZGRyZXNzX2lkPTc=",
+            "innerId": "7",
+            "company": "Cégnév1",
+            "firstname": "KeresztNév1",
+            "lastname": "Vezetéknév1",
+            "taxNumber": "0",
+            "type": "private",
+            "address1": "Teszt Cím 1",
+            "address2": "Kiegészítő Teszt Cím 1",
+            "postcode": "4028",
+            "city": "Debrecen",
+            "dateCreated": "2018-12-05T13:41:46",
+            "dateUpdated": "2018-12-05T13:41:46",
+            "telephone": {},
+            "customer": {
+                "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw=="
+            },
+            "country": {
+                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+            },
+            "zone": {}
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTg=",
+            "id": "YWRkcmVzcy1hZGRyZXNzX2lkPTg=",
+            "innerId": "8",
+            "company": "Cégnév2",
+            "firstname": "KeresztNév2",
+            "lastname": "Vezetéknév2",
+            "taxNumber": "0",
+            "type": "private",
+            "address1": "Teszt Cím 2",
+            "address2": "Kiegészítő Teszt Cím 2",
+            "postcode": "4000",
+            "city": "Debrecen 2",
+            "dateCreated": "2018-12-05T13:41:46",
+            "dateUpdated": "2018-12-05T13:41:46",
+            "telephone": {},
+            "customer": {
+                "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw=="
+            },
+            "country": {
+                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+            },
+            "zone": {}
+        }
+    ],
+    "loyaltyPoints": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTE=",
+            "id": "bG95YWx0eVBvaW50LWlkPTE=",
+            "dateAdded": "-0001-11-30T00:00:00",
+            "dateExpiration": "2018-08-04T15:13:01",
+            "value": "100",
+            "description": "Hűségpont leírása 1",
+            "customer": {
+                "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw=="
+            },
+            "order": {}
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTI=",
+            "id": "bG95YWx0eVBvaW50LWlkPTI=",
+            "dateAdded": "-0001-11-30T00:00:00",
+            "dateExpiration": "2019-10-04T15:13:01",
+            "value": "50",
+            "description": "Hűségpont leírása 2",
+            "customer": {
+                "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw=="
+            },
+            "order": {}
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "firstname": "Teszt",
+    "lastname": "Teszt",
+    "email": "teszt@teszt.hu",
+    "phone": "36303336699",
+    "status": "1",
+    "blacklisted": "0",
+    "dateSubscribed": "2015-06-15T11:35:48",
+    "mailmasterId": "0",
+    "hash": "2d0d067ac341a580c894b254417195c7",
+    "language": {
+        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

@@ -1,0 +1,160 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál.",
+                "en": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "hu": "Szöveges tartalom belső azonosító.",
+                "en": "Szöveges tartalom belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend a többi szöveges tartalomhoz képest.",
+                "en": "Sorrend a többi szöveges tartalomhoz képest."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "enabled",
+            "description": {
+                "hu": "Engedélyezett-e?",
+                "en": "Engedélyezett-e?"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "informationDescriptions",
+            "description": {
+                "hu": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",
+                "en": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    "
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/informationExtend\/szöveges tartalom id",
+                "en": "\/informationExtend\/szöveges tartalom id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/informationExtend\/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/informationExtend",
+                "en": "\/informationExtend"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "innerId",
+                    "description": {
+                        "hu": "Kereső paraméter. Szöveges tartalom belső azonosító.",
+                        "en": "Kereső paraméter. Szöveges tartalom belső azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/informationExtend?full=1&page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/informationExtend[\/szöveges tartalom id]",
+                "en": "\/informationExtend[\/szöveges tartalom id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/informationExtend",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/informationExtend\/szöveges tartalom id",
+                "en": "\/informationExtend\/szöveges tartalom id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/informationExtend\/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/informationExtend\/szöveges tartalom id",
+                "en": "\/informationExtend\/szöveges tartalom id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/informationExtend\/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
+                "statusCode": "204"
+            }
+        }
+    }
+}

@@ -1,0 +1,246 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Feliratkozó azonosító. Az OuterID módosítására szolgál.",
+                "en": "Feliratkozó azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "firstname",
+            "description": {
+                "hu": "Vezetéknév.",
+                "en": "Vezetéknév."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "lastname",
+            "description": {
+                "hu": "Keresztnév.",
+                "en": "Keresztnév."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "email",
+            "description": {
+                "hu": "Email cím.",
+                "en": "Email cím."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "phone",
+            "description": {
+                "hu": "Telefonszám.",
+                "en": "Telefonszám."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "status",
+            "description": {
+                "hu": "Státusz.",
+                "en": "Státusz."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "blacklisted",
+            "description": {
+                "hu": "Tiltólistán van-e.",
+                "en": "Tiltólistán van-e."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateSubscribed",
+            "description": {
+                "hu": "Feliratkozás dátuma.",
+                "en": "Feliratkozás dátuma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "hash",
+            "description": {
+                "hu": "Aktiváláshoz, leiratkozáshoz szükséges hash.",
+                "en": "Aktiváláshoz, leiratkozáshoz szükséges hash."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "mailmasterId",
+            "description": {
+                "hu": "A feliratkozó MailMaster azonosítója, ha van.",
+                "en": "A feliratkozó MailMaster azonosítója, ha van."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "hu": "Létrehozás dátuma.",
+                "en": "Létrehozás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "hu": "Utolsó módosítás dátuma.",
+                "en": "Utolsó módosítás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "A feliratkozás nyelvének linkje.",
+                "en": "A feliratkozás nyelvének linkje."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/newsletterSubscribers\/feliratkozó id",
+                "en": "\/newsletterSubscribers\/feliratkozó id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/newsletterSubscribers\/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/newsletterSubscribers",
+                "en": "\/newsletterSubscribers"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "email",
+                    "description": {
+                        "hu": "Kereső paraméter. Feliratkozó email címe.",
+                        "en": "Kereső paraméter. Feliratkozó email címe."
+                    }
+                },
+                {
+                    "name": "status",
+                    "description": {
+                        "hu": "Kereső paraméter. Feliratkozás státusza (0, 1).",
+                        "en": "Kereső paraméter. Feliratkozás státusza (0, 1)."
+                    }
+                },
+                {
+                    "name": "subscribedAt",
+                    "description": {
+                        "hu": "Kereső paraméter. Feliratkozás időpontja. pl. 2016-10-12 vagy 2016-10-12T10:11:12.",
+                        "en": "Kereső paraméter. Feliratkozás időpontja. pl. 2016-10-12 vagy 2016-10-12T10:11:12."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/newsletterSubscribers?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/newsletterSubscribers[\/feliratkozó id]",
+                "en": "\/newsletterSubscribers[\/feliratkozó id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/newsletterSubscribers",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/newsletterSubscribers\/feliratkozó id",
+                "en": "\/newsletterSubscribers\/feliratkozó id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/newsletterSubscribers\/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/newsletterSubscribers\/feliratkozó id",
+                "en": "\/newsletterSubscribers\/feliratkozó id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/newsletterSubscribers\/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
+                "statusCode": "204"
+            }
+        }
+    }
+}

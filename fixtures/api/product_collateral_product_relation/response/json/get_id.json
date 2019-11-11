@@ -1,0 +1,10 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzEzNA==",
+    "id": "cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzEzNA==",
+    "product": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY="
+    },
+    "collateralProduct": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTMxMzQ="
+    }
+}

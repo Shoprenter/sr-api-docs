@@ -1,0 +1,14 @@
+{
+  "domain": [
+    {
+      "url": "www.shoprenter.hu",
+      "primary": true,
+      "language": "hu"
+    },
+    {
+      "url": "www.shoprenter.com",
+      "primary": false,
+      "language": "en"
+    }
+  ]
+}

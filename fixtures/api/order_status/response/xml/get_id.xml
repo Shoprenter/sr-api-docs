@@ -1,0 +1,7 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]></href>
+    <id><![CDATA[b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]></id>
+    <orderStatusDescriptions>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/orderStatusDescriptions?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]></href>
+    </orderStatusDescriptions>
+</response>

@@ -1,0 +1,21 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/customerGroupProductPrices?page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroupProductPrices?page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroupProductPrices?page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/customerGroupProductPrices/Y3VzdG9tZXJHcm91cFByb2R1Y3RQcmljZS1jdXN0b21lcl9ncm91cF9pZD02JnByb2R1Y3RfaWQ9NTU4MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/customerGroupProductPrices/Y3VzdG9tZXJHcm91cFByb2R1Y3RQcmljZS1jdXN0b21lcl9ncm91cF9pZD02JnByb2R1Y3RfaWQ9MTk5ODU="
+        }
+    ]
+}

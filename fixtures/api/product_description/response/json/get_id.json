@@ -1,0 +1,23 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTM1ODAmbGFuZ3VhZ2VfaWQ9MQ==",
+    "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTM1ODAmbGFuZ3VhZ2VfaWQ9MQ==",
+    "name": "Termék név",
+    "metaKeywords": "Meta kulcsszavak",
+    "metaDescription": "Meta leírás",
+    "shortDescription": "Rövid leírás",
+    "description": "Hosszú leírás",
+    "customContentTitle": "Egyedi tartalom címe",
+    "customContent": "Egyedi tartalom",
+    "parameters": "Paraméterek",
+    "packagingUnit": "csomag",
+    "measurementUnit": "db",
+    "dateCreated": "2013-08-08T12:30:00",
+    "dateUpdated": "2013-08-08T12:30:00",
+    "videoCode": "Youtube videók kódja",
+    "product": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTEzNTgw"
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

@@ -1,0 +1,23 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTM1ODAmbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    <id><![CDATA[cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTM1ODAmbGFuZ3VhZ2VfaWQ9MQ==]]></id>
+    <name><![CDATA[Termék név]]></name>
+    <metaKeywords><![CDATA[Meta kulcsszavak]]></metaKeywords>
+    <metaDescription><![CDATA[Meta leírás]]></metaDescription>
+    <shortDescription><![CDATA[Rövid leírás]]></shortDescription>
+    <description><![CDATA[Hosszú leírás]]></description>
+    <customContentTitle><![CDATA[Egyedi tartalom címe]]></customContentTitle>
+    <customContent><![CDATA[Egyedi tartalom]]></customContent>
+    <parameters><![CDATA[Paraméterek]]></parameters>
+    <packagingUnit><![CDATA[csomag]]></packagingUnit>
+    <measurementUnit><![CDATA[db]]></measurementUnit>
+    <dateCreated><![CDATA[2013-08-08T12:30:00]]></dateCreated>
+    <dateUpdated><![CDATA[2013-08-08T12:30:00]]></dateUpdated>
+    <videoCode><![CDATA[Youtube videók kódja]]></videoCode>
+    <product>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTEzNTgw]]></href>
+    </product>
+    <language>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    </language>
+</response>

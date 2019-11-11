@@ -1,0 +1,19 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x]]></href>
+    <id><![CDATA[bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x]]></id>
+    <firstname><![CDATA[Teszt]]></firstname>
+    <lastname><![CDATA[Teszt]]></lastname>
+    <email><![CDATA[teszt@wteszt.hu]]></email>
+    <phone><![CDATA[36303336699]]></phone>
+    <status><![CDATA[1]]></status>
+    <blacklisted><![CDATA[0]]></blacklisted>
+    <dateSubscribed><![CDATA[2015-06-15T11:35:48]]></dateSubscribed>
+    <hash><![CDATA[2d0d067ac341a580c894b254417195c7]]></hash>
+    <mailmasterId><![CDATA[0]]></mailmasterId>
+    <dateCreated><![CDATA[2015-06-15T11:35:48]]></dateCreated>
+    <dateUpdated><![CDATA[2015-08-18T15:05:23]]></dateUpdated>
+    <language>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    </language>
+</response>
+

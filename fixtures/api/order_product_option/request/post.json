@@ -1,0 +1,12 @@
+{
+    "name": "Név",
+    "valueName": "A Verzió",
+    "price": "1000.0000",
+    "prefix": "+",
+    "orderProduct": {
+        "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mzg5"
+    },
+    "productOptionValue": {
+        "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTkxNg=="
+    }
+}

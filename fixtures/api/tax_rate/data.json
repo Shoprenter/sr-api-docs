@@ -1,0 +1,139 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Adó kulcs azonosító.",
+                "en": "Adó kulcs azonosító."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "priority",
+            "description": {
+                "hu": "Prioritás.",
+                "en": "Prioritás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "rate",
+            "description": {
+                "hu": "Ráta.",
+                "en": "Ráta."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "description",
+            "description": {
+                "hu": "Hosszú leírás.",
+                "en": "Hosszú leírás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "geoZone",
+            "description": {
+                "hu": "Geo Zóna linkje.",
+                "en": "Geo Zóna linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "hu": "Létrehozás dátuma.",
+                "en": "Létrehozás dátuma."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "hu": "Utolsó módosítás dátuma.",
+                "en": "Utolsó módosítás dátuma."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "taxClass",
+            "description": {
+                "hu": "Adó osztály linkje.",
+                "en": "Adó osztály linkje."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/taxRates\/adó kulcs id",
+                "en": "\/taxRates\/adó kulcs id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/taxRates\/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/taxRates",
+                "en": "\/taxRates"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "taxClassId",
+                    "description": {
+                        "hu": "Kereső paraméter (Adó osztály azonosító).",
+                        "en": "Kereső paraméter (Adó osztály azonosító)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/taxRates?page=0&limit=25",
+                "statusCode": "200"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "priority": "1",
+    "price": "1000.0000",
+    "dateFrom": "2013-06-14",
+    "dateTo": "2013-06-29",
+    "minQuantity": "0",
+    "maxQuantity": "100",
+    "product": {
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
+    },
+    "customerGroup": {
+        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    }
+}

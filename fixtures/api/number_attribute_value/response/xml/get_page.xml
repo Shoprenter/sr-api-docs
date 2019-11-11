@@ -1,0 +1,27 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25]]></href>
+    <page>0</page>
+    <limit>25</limit>
+    <first>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25]]></href>
+    </first>
+    <previous/>
+    <next/>
+    <last>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25]]></href>
+    </last>
+    <items>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05MA==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05Mg==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05Mw==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05NA==]]></href>
+        </item>
+    </items>
+</response>

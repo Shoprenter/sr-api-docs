@@ -1,0 +1,16 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
+    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
+    "name": "Nettó részösszeg:",
+    "valueText": "2.400 Ft",
+    "value": "2400.0000",
+    "sortOrder": "1",
+    "type": "SUB_TOTAL",
+    "key": {},
+    "description": {},
+    "dateCreated": "2013-01-01T01:00:00",
+    "dateUpdated": "2013-01-01T01:00:00",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+    }
+}

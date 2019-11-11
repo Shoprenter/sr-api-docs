@@ -1,0 +1,39 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations?listAttributeWidgetId=bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA&page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations?listAttributeWidgetId=bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA&page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations?listAttributeWidgetId=bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA&page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9MzY="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9MjY="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9MTg="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9Mjk="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9Mjg="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9MjQ="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9NTA="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/attributeWidgetCategoryRelations/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9NTE="
+        }
+    ]
+}

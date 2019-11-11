@@ -1,0 +1,24 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/loyaltyPoints?page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/loyaltyPoints?page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/loyaltyPoints?page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTI="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTM="
+        }
+    ]
+}

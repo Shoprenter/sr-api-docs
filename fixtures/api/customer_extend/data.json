@@ -1,0 +1,291 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Vásárló azonosító. Az OuterID módosítására szolgál.",
+                "en": "Vásárló azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "hu": "Vásárló belső azonosító.",
+                "en": "Vásárló belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "firstname",
+            "description": {
+                "hu": "Vezetéknév.",
+                "en": "Vezetéknév."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "lastname",
+            "description": {
+                "hu": "Keresztnév.",
+                "en": "Keresztnév."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "email",
+            "description": {
+                "hu": "Email cím.",
+                "en": "Email cím."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "telephone",
+            "description": {
+                "hu": "Telefonszám.",
+                "en": "Telefonszám."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "fax",
+            "description": {
+                "hu": "Fax.",
+                "en": "Fax."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "password",
+            "description": {
+                "hu": "bcrypt jelszó.",
+                "en": "bcrypt jelszó."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "newsletter",
+            "description": {
+                "hu": "Hírlevél feliratkozás státusz.",
+                "en": "Hírlevél feliratkozás státusz."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "status",
+            "description": {
+                "hu": "Státusz.",
+                "en": "Státusz."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "approved",
+            "description": {
+                "hu": "Engedélyezett-e.",
+                "en": "Engedélyezett-e."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "freeShipping",
+            "description": {
+                "hu": "Ingyenes szállítás.",
+                "en": "Ingyenes szállítás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "hu": "Létrehozás dátuma.",
+                "en": "Létrehozás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "hu": "Utolsó módosítás dátuma.",
+                "en": "Utolsó módosítás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "defaultAddress",
+            "description": {
+                "hu": "Alapértelmezett cím linkje.",
+                "en": "Alapértelmezett cím linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "customerGroup",
+            "description": {
+                "hu": "Vásárlói csoport linkje.",
+                "en": "Vásárlói csoport linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "addresses *",
+            "description": {
+                "hu": "Tömb formában megadott, akár több cím adatai",
+                "en": "Tömb formában megadott, akár több cím adatai"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "loyaltyPoints *",
+            "description": {
+                "hu": "Tömb formában megadott, akár több hűdégpont adatai",
+                "en": "Tömb formában megadott, akár több hűdégpont adatai"
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/customerExtend\/vásárló id",
+                "en": "\/customerExtend\/vásárló id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customerExtend\/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/customerExtend",
+                "en": "\/customerExtend"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "innerId",
+                    "description": {
+                        "hu": "Kereső paraméter. Vásárló belső azonosító.",
+                        "en": "Kereső paraméter. Vásárló belső azonosító."
+                    }
+                },
+                {
+                    "name": "email",
+                    "description": {
+                        "hu": "Kereső paraméter. Email cím.",
+                        "en": "Kereső paraméter. Email cím."
+                    }
+                },
+                {
+                    "name": "updatedAtMin",
+                    "description": {
+                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
+                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/customerExtend?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/customerExtend[\/vásárló id]",
+                "en": "\/customerExtend[\/vásárló id]"
+            },
+            "description": {
+                "hu": "Létrehozásra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig létrehozza.",
+                "en": "Létrehozásra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig létrehozza."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customers",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/customerExtend\/vásárló id",
+                "en": "\/customerExtend\/vásárló id"
+            },
+            "description": {
+                "hu": "Módosításra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig felülírja.",
+                "en": "Módosításra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig felülírja."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customerExtend\/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/customerExtend\/vásárló id",
+                "en": "\/customerExtend\/vásárló id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customerExtend\/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
+                "statusCode": "204"
+            }
+        }
+    }
+}

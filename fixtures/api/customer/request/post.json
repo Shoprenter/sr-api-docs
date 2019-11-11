@@ -1,0 +1,18 @@
+{
+    "firstname": "Teszt",
+    "lastname": "Teszt",
+    "email": "teszt@teszt.com",
+    "telephone": "+36201234567",
+    "fax": null,
+    "password": "$2y$15$IPKwtcGcJ1r2DCOS\/YsO9OHJJHtAa9vENzDO5agb\/fTaui5m8HEkq",
+    "newsletter": "1",
+    "status": "1",
+    "approved": "1",
+    "freeShipping": "0",
+    "defaultAddress": {
+        "id": "YWRkcmVzcy1hZGRyZXNzX2lkPTcy"
+    },
+    "customerGroup": {
+        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    }
+}

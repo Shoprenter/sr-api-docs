@@ -1,0 +1,119 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Rendelés állapot leírás azonosító.",
+                "en": "Rendelés állapot leírás azonosító."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név.",
+                "en": "Név."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "color",
+            "description": {
+                "hu": "Szín.",
+                "en": "Szín."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "orderStatus",
+            "description": {
+                "hu": "Rendelés állapot link.",
+                "en": "Rendelés állapot link."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Nyelv link.",
+                "en": "Nyelv link."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/orderStatusDescriptions\/Rendelés állapot leírás id",
+                "en": "\/orderStatusDescriptions\/Rendelés állapot leírás id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderStatusDescriptions\/b3JkZXJTdGF0dXNEZXNjcmlwdGlvbi1vcmRlcl9zdGF0dXNfaWQ9MSZsYW5ndWFnZV9pZD0x",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/orderStatusDescriptions",
+                "en": "\/orderStatusDescriptions"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "orderStatusId",
+                    "description": {
+                        "hu": "Kereső paraméter. (Rendelés állapot azonosító).",
+                        "en": "Kereső paraméter. (Rendelés állapot azonosító)."
+                    }
+                },
+                {
+                    "name": "languageId",
+                    "description": {
+                        "hu": "Kereső paraméter. (Nyelv azonosító).",
+                        "en": "Kereső paraméter. (Nyelv azonosító)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/orderStatusDescriptions?page=0&limit=5",
+                "statusCode": "200"
+            }
+        }
+    }
+}

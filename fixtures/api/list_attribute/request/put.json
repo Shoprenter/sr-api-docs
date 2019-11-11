@@ -1,0 +1,8 @@
+{
+    "type": "LIST",
+    "name": "list",
+    "priority": "IMPORTANT",
+    "sortOrder": "1",
+    "required": "1",
+    "presentation": "TEXT\n"
+}

@@ -1,0 +1,10 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24taWQ9MQ==]]></href>
+    <id><![CDATA[cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24taWQ9MQ==]]></id>
+    <innerId><![CDATA[1]]></innerId>
+    <badgeId><![CDATA[1]]></badgeId>
+    <languageId><![CDATA[1]]></languageId>
+    <description><![CDATA[Akció]]></description>
+    <picture><![CDATA[c_1.png]]></picture>
+    <popupDescription><![CDATA[Most kirobbanó akciók!]]></popupDescription>
+</response>

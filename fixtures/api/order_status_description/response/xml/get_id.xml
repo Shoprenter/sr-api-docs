@@ -1,0 +1,12 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/orderStatusDescriptions/b3JkZXJTdGF0dXNEZXNjcmlwdGlvbi1vcmRlcl9zdGF0dXNfaWQ9MSZsYW5ndWFnZV9pZD0x]]></href>
+    <id><![CDATA[b3JkZXJTdGF0dXNEZXNjcmlwdGlvbi1vcmRlcl9zdGF0dXNfaWQ9MSZsYW5ndWFnZV9pZD0x]]></id>
+    <name><![CDATA[Függőben lévő]]></name>
+    <color><![CDATA[#ff00ff]]></color>
+    <orderStatus>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]></href>
+    </orderStatus>
+    <language>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    </language>
+</response>

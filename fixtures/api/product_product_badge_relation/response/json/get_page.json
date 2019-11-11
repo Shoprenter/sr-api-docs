@@ -1,0 +1,92 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations?page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations?page=0&limit=25"
+    },
+    "previous": null,
+    "next": {
+        "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations?page=1&limit=25"
+    },
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations?page=6&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTM5NSZiYWRnZV9pZD03Jmxhbmd1YWdlX2lkPTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTcwNjYmYmFkZ2VfaWQ9NyZsYW5ndWFnZV9pZD0x"
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTExNDQ5JmJhZGdlX2lkPTcmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI0ODgwJmJhZGdlX2lkPTYmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI3ODkxJmJhZGdlX2lkPTEmbGFuZ3VhZ2VfaWQ9Mw=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI3ODkxJmJhZGdlX2lkPTUmbGFuZ3VhZ2VfaWQ9Nw=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4MzI3JmJhZGdlX2lkPTMmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4MzI4JmJhZGdlX2lkPTMmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4NDExJmJhZGdlX2lkPTUmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4NDEyJmJhZGdlX2lkPTEmbGFuZ3VhZ2VfaWQ9Mw=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4NDEyJmJhZGdlX2lkPTMmbGFuZ3VhZ2VfaWQ9NA=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4NDEyJmJhZGdlX2lkPTUmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4NDEyJmJhZGdlX2lkPTUmbGFuZ3VhZ2VfaWQ9NA=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI4NDE0JmJhZGdlX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5MjQ5JmJhZGdlX2lkPTEmbGFuZ3VhZ2VfaWQ9MTg="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5MjQ5JmJhZGdlX2lkPTMmbGFuZ3VhZ2VfaWQ9MTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5MjQ5JmJhZGdlX2lkPTYmbGFuZ3VhZ2VfaWQ9MTc="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5MjQ5JmJhZGdlX2lkPTcmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5MjQ5JmJhZGdlX2lkPTcmbGFuZ3VhZ2VfaWQ9MTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5NTEzJmJhZGdlX2lkPTMmbGFuZ3VhZ2VfaWQ9MTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5NTEzJmJhZGdlX2lkPTYmbGFuZ3VhZ2VfaWQ9MTc="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5NTEzJmJhZGdlX2lkPTcmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5NTEzJmJhZGdlX2lkPTcmbGFuZ3VhZ2VfaWQ9MTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5NTE0JmJhZGdlX2lkPTMmbGFuZ3VhZ2VfaWQ9MTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productProductBadgeRelations/cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTI5NTE0JmJhZGdlX2lkPTYmbGFuZ3VhZ2VfaWQ9MTc="
+        }
+    ]
+}

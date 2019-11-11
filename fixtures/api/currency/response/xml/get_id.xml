@@ -1,0 +1,13 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]></href>
+    <id><![CDATA[Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]></id>
+    <name><![CDATA[Hungarian Forint]]></name>
+    <code><![CDATA[HUF]]></code>
+    <symbolLeft/>
+    <symbolRight><![CDATA[ Ft]]></symbolRight>
+    <decimalPlace><![CDATA[0]]></decimalPlace>
+    <value><![CDATA[1.00000000]]></value>
+    <status><![CDATA[1]]></status>
+    <dateUpdated><![CDATA[2013-12-11 16:59:10]]></dateUpdated>
+</response>
+

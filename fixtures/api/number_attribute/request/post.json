@@ -1,0 +1,10 @@
+{
+    "type": "INTEGER",
+    "name": "number",
+    "priority": "NORMAL",
+    "sortOrder": "1",
+    "defaultValue": "10",
+    "required": "1",
+    "minValue": "10",
+    "maxValue": "100\n"
+}

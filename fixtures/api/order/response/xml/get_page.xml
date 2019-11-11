@@ -1,0 +1,32 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/orders?page=0&limit=5]]></href>
+    <page>0</page>
+    <limit>5</limit>
+    <first>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/orders?page=0&limit=5]]></href>
+    </first>
+    <previous/>
+    <next>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/orders?page=1&limit=5]]></href>
+    </next>
+    <last>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/orders?page=46&limit=5]]></href>
+    </last>
+    <items>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NA==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NQ==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Ng==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Nw==]]></href>
+        </item>
+    </items>
+</response>

@@ -1,0 +1,87 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/couponDescriptions?page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/couponDescriptions?page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/couponDescriptions?page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9Mg=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9Mw=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9NA=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9NQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9Ng=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9Nw=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9OA=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9OQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MTA="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MTI="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9MQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9Mg=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9Mw=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9NA=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9NQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9Ng=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9Nw=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9OA=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9OQ=="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9MTA="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9MTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTImbGFuZ3VhZ2VfaWQ9MTI="
+        }
+    ]
+}

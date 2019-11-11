@@ -1,0 +1,110 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Beállítás azonosító. Az OuterID módosítására szolgál.",
+                "en": "Beállítás azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "group",
+            "description": {
+                "hu": "Csoport.",
+                "en": "Csoport."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "key",
+            "description": {
+                "hu": "Kulcs (belső szöveges azonosító).",
+                "en": "Kulcs (belső szöveges azonosító)."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "value",
+            "description": {
+                "hu": "Érték.",
+                "en": "Érték."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/settings\/beállítás id",
+                "en": "\/settings\/beállítás id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/settings\/bGF4Q2xhc3Mt3dGF4X2NsYXNzX2lkPTwEw",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/settings",
+                "en": "\/settings"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "group",
+                    "description": {
+                        "hu": "Kereső paraméter (Csoport alapján szűrhetünk).",
+                        "en": "Kereső paraméter (Csoport alapján szűrhetünk)."
+                    }
+                },
+                {
+                    "name": "key",
+                    "description": {
+                        "hu": "Kereső paraméter (Kulcs alapján szűrhetünk).",
+                        "en": "Kereső paraméter (Kulcs alapján szűrhetünk)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/settings?full=1&page=0&limit=25",
+                "statusCode": "200"
+            }
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=",
+    "id": "c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=",
+    "stockStatusDescriptions": {
+        "href": "http://shopname.api.shoprenter.hu/stockStatusDescriptions?stockStatusId=c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU="
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/productSpecials?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=&page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/productSpecials?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=&page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/productSpecials?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=&page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE="
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTI="
+        }
+    ]
+}

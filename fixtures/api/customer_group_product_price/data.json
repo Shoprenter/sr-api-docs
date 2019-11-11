@@ -1,0 +1,158 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Vásárlói csoport termékár azonosító. Az OuterID módosítására szolgál.",
+                "en": "Vásárlói csoport termékár azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "customerGroup",
+            "description": {
+                "hu": "Vásárlói csoport linkje.",
+                "en": "Vásárlói csoport linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "product",
+            "description": {
+                "hu": "Termék linkje.",
+                "en": "Termék linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "price",
+            "description": {
+                "hu": "A termék nettó ára.",
+                "en": "A termék nettó ára."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/customerGroupProductPrices\/id",
+                "en": "\/customerGroupProductPrices\/id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customerGroupProductPrices\/Y3VzdG9tZXJHcm91cFByb2R1Y3RQcmljZS1jdXN0b21lcl9ncm91cF9pZD02JnByb2R1Y3RfaWQ9NTU4MQ==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/customerGroupProductPrices",
+                "en": "\/customerGroupProductPrices"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "productId",
+                    "description": {
+                        "hu": "Kereső paraméter (Termék azonosító).",
+                        "en": "Kereső paraméter (Termék azonosító)."
+                    }
+                },
+                {
+                    "name": "customerGroupId",
+                    "description": {
+                        "hu": "Kereső paraméter (Vásárlói csoport azonosító).",
+                        "en": "Kereső paraméter (Vásárlói csoport azonosító)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/customerGroupProductPrices?limit=25&page=0",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/customerGroupProductPrices[\/id]",
+                "en": "\/customerGroupProductPrices[\/id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customerGroups",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/customerGroupProductPrices\/id",
+                "en": "\/customerGroupProductPrices\/id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customerGroupProductPrices\/Y3VzdG9tZXJHcm91cFByb2R1Y3RQcmljZS1jdXN0b21lcl9ncm91cF9pZD02JnByb2R1Y3RfaWQ9NTU4MQ==",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/customerGroupProductPrices\/id",
+                "en": "\/customerGroupProductPrices\/id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/customerGroupProductPrices\/Y3VzdG9tZXJHcm91cFByb2R1Y3RQcmljZS1jdXN0b21lcl9ncm91cF9pZD02JnByb2R1Y3RfaWQ9NTU4MQ==",
+                "statusCode": "204"
+            }
+        }
+    }
+}

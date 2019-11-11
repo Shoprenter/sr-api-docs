@@ -1,0 +1,27 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPointsUsed?page=0&limit=25]]></href>
+    <page>0</page>
+    <limit>25</limit>
+    <first>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPointsUsed?page=0&limit=25]]></href>
+    </first>
+    <previous/>
+    <next/>
+    <last>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPointsUsed?page=0&limit=25]]></href>
+    </last>
+    <items>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPointsUsed/bG95YWx0eVBvaW50VXNlZC1pZD0x]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPointsUsed/bG95YWx0eVBvaW50VXNlZC1pZD0y]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPointsUsed/bG95YWx0eVBvaW50VXNlZC1pZD0z]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPointsUsed/bG95YWx0eVBvaW50VXNlZC1pZD00]]></href>
+        </item>
+    </items>
+</response>

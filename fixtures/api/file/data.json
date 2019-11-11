@@ -1,0 +1,111 @@
+{
+    "properties": [
+        {
+            "name": "filePath",
+            "description": {
+                "hu": "A fájl relatív elérési útvonala.",
+                "en": "A fájl relatív elérési útvonala."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "type",
+            "description": {
+                "hu": "A fájl típusa. Lehetséges értékek: image, download.",
+                "en": "A fájl típusa. Lehetséges értékek: image, download."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "attachment",
+            "description": {
+                "hu": "A fájl tartalma base64 encodolva.",
+                "en": "A fájl tartalma base64 encodolva."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/files\/type=[típus]&filePath=[fájl elérési útvonala]",
+                "en": "\/files\/type=[típus]&filePath=[fájl elérési útvonala]"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "type",
+                    "description": {
+                        "hu": "Fájl típusa.",
+                        "en": "Fájl típusa."
+                    }
+                },
+                {
+                    "name": "filePath",
+                    "description": {
+                        "hu": "Fájl elérési útvonala.",
+                        "en": "Fájl elérési útvonala."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/files\/type=image&filePath=product\/image.jpg",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/files",
+                "en": "\/files"
+            },
+            "description": {
+                "hu": "Létrehoz\/Módosít. Ha az adott filePath-on már van fájl, akkor azt lecseréli.",
+                "en": "Létrehoz\/Módosít. Ha az adott filePath-on már van fájl, akkor azt lecseréli."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/files",
+                "statusCode": "204"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/files",
+                "en": "\/files"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "type",
+                    "description": {
+                        "hu": "A fájl típusa.",
+                        "en": "A fájl típusa."
+                    }
+                },
+                {
+                    "name": "filePath",
+                    "description": {
+                        "hu": "A fájl relatív elérési útvonala.",
+                        "en": "A fájl relatív elérési útvonala."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/files?type=image&filePath=product\/image.jpg",
+                "statusCode": "204"
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/couponProductRelations?page=0&limit=25]]></href>
+    <page>0</page>
+    <limit>25</limit>
+    <first>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/couponProductRelations?page=0&limit=25]]></href>
+    </first>
+    <previous/>
+    <next/>
+    <last>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/couponProductRelations?page=0&limit=25]]></href>
+    </last>
+    <items>
+        <item>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/couponProductRelations/
+                Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE=]]>
+            </href>
+        </item>
+        <item>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/couponProductRelations/
+                Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTI=]]>
+            </href>
+        </item>
+    </items>
+</response>

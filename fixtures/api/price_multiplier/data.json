@@ -1,0 +1,162 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Árszorzó azonosító. Az OuterID módosítására szolgál.",
+                "en": "Árszorzó azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "categoryId",
+            "description": {
+                "hu": "Kategória azonosító.",
+                "en": "Kategória azonosító."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "manufacturerId",
+            "description": {
+                "hu": "Gyártó azonosító.",
+                "en": "Gyártó azonosító."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "minNetPrice",
+            "description": {
+                "hu": "Minimális nettó ár.",
+                "en": "Minimális nettó ár."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "maxNetPrice",
+            "description": {
+                "hu": "Maximális nettó ár.",
+                "en": "Maximális nettó ár."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "multiplier",
+            "description": {
+                "hu": "Szorzó.",
+                "en": "Szorzó."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "priority",
+            "description": {
+                "hu": "Prioritás.",
+                "en": "Prioritás."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/priceMultipliers",
+                "en": "\/priceMultipliers"
+            },
+            "description": {
+                "hu": "Szorzók kollekciójának lekérésére szolgál.",
+                "en": "Szorzók kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített szorzók száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített szorzók száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "priceMultiplierId",
+                    "description": {
+                        "hu": "Kereső paraméter. Sávos árszorzó azonosító.",
+                        "en": "Kereső paraméter. Sávos árszorzó azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/priceMultipliers?page=0&limit=5",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/priceMultipliers[\/sávos árszorzó id]",
+                "en": "\/priceMultipliers[\/sávos árszorzó id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/priceMultipliers",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/priceMultipliers[\/sávos árszorzó id]",
+                "en": "\/priceMultipliers[\/sávos árszorzó id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/priceMultipliers\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/priceMultipliers\/sávos árszorzó id",
+                "en": "\/priceMultipliers\/sávos árszorzó id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/priceMultipliers\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+                "statusCode": "204"
+            }
+        }
+    }
+}

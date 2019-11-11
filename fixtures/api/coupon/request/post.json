@@ -1,0 +1,12 @@
+{
+    "code": "10wevb",
+    "discountType": "PERCENT",
+    "percentDiscount": "10",
+    "freeShipping": "1",
+    "totalNumberOfCoupons": "100",
+    "totalNumberOfCouponsPerCustomer": "1",
+    "targetType": "CATEGORY",
+    "taxClass": {
+        "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+    }
+}

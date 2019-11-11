@@ -1,0 +1,11 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/attributeWidgetDescriptions/YXR0cmlidXRlV2lkZ2V0RGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MQ==",
+    "id": "YXR0cmlidXRlV2lkZ2V0RGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MQ==",
+    "label": "Címke",
+    "attributeWidget": {
+        "href": "http://shopname.api.shoprenter.hu/listAttributeWidgets/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA=="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

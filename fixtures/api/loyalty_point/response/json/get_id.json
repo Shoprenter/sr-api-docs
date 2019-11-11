@@ -1,0 +1,14 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTE=",
+    "id": "bG95YWx0eVBvaW50LWlkPTE=",
+    "dateAdded": "2013-04-30T10:52:36",
+    "dateExpiration": "2013-08-08T10:52:36",
+    "value": "100",
+    "description": "Leírás",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MQ=="
+    },
+    "customer": {
+        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+    }
+}

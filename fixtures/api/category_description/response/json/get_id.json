@@ -1,0 +1,18 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMiZsYW5ndWFnZV9pZD0x",
+    "id": "Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMiZsYW5ndWFnZV9pZD0x",
+    "name": "Kategória név",
+    "metaKeywords": "Meta kulcsszavak",
+    "metaDescription": "Meta leírás",
+    "description": "Hosszú leírás",
+    "customTitle": "Egyedi title",
+    "robotsMetaTag": "0",
+    "footerSeoText": "Seo szöveg",
+    "heading": "Heading",
+    "category": {
+        "href": "http://shopname.api.shoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTI="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

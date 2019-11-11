@@ -1,0 +1,10 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/productImages/cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
+    "id": "cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
+    "imagePath": "data/product/FI010201_07_BHM007--2.jpg",
+    "imageAlt": "Image Alt",
+    "sortOrder": "1",
+    "product": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE1NDc2"
+    }
+}

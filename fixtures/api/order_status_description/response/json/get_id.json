@@ -1,0 +1,12 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/orderStatusDescriptions/b3JkZXJTdGF0dXNEZXNjcmlwdGlvbi1vcmRlcl9zdGF0dXNfaWQ9MSZsYW5ndWFnZV9pZD0x",
+    "id": "b3JkZXJTdGF0dXNEZXNjcmlwdGlvbi1vcmRlcl9zdGF0dXNfaWQ9MSZsYW5ndWFnZV9pZD0x",
+    "name": "Függőben lévő",
+    "color": "#ff00ff",
+    "orderStatus": {
+        "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

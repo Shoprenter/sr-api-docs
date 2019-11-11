@@ -1,0 +1,14 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0zOQ==",
+    "id": "b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0zOQ==",
+    "name": "Valami",
+    "valueName": "B Verzió",
+    "price": "1000.0000",
+    "prefix": "+",
+    "orderProduct": {
+        "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mzg5"
+    },
+    "productOptionValue": {
+        "href": "http://shopname.api.shoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTkxNg=="
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=",
+    "id": "b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=",
+    "orderStatusDescriptions": {
+        "href": "http://shopname.api.shoprenter.hu/orderStatusDescriptions?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+    }
+}

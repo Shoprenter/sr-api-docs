@@ -1,0 +1,16 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/languages?code=en&page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.shoprenter.hu/languages?code=en&page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.shoprenter.hu/languages?code=en&page=0&limit=25"
+    },
+    "items": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9NA=="
+    }
+}

@@ -1,0 +1,12 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=]]></href>
+    <id><![CDATA[cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=]]></id>
+    <tags><![CDATA[csaptelep,hideg-meleg]]></tags>
+    <product>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy]]></href>
+    </product>
+    <language>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    </language>
+</response>
+

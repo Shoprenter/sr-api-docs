@@ -1,0 +1,226 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Kategória leírás azonosító. Az OuterID módosítására szolgál.",
+                "en": "Kategória leírás azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név.",
+                "en": "Név."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "metaKeywords",
+            "description": {
+                "hu": "Meta kulcsszavak.",
+                "en": "Meta kulcsszavak."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "metaDescription",
+            "description": {
+                "hu": "Meta leírás.",
+                "en": "Meta leírás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "description",
+            "description": {
+                "hu": "Hosszú leírás.",
+                "en": "Hosszú leírás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "customTitle",
+            "description": {
+                "hu": "Egyedi title.",
+                "en": "Egyedi title."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "robotsMetaTag",
+            "description": {
+                "hu": "Robots meta tag.",
+                "en": "Robots meta tag."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "footerSeoText",
+            "description": {
+                "hu": "Seo szöveg az oldal alján.",
+                "en": "Seo szöveg az oldal alján."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "category",
+            "description": {
+                "hu": "A leíráshoz tartozó kategória linkje.",
+                "en": "A leíráshoz tartozó kategória linkje."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "A leíráshoz tartozó nyelv linkje.",
+                "en": "A leíráshoz tartozó nyelv linkje."
+            },
+            "required": true,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/categoryDescriptions\/kategória leírás id",
+                "en": "\/categoryDescriptions\/kategória leírás id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/categoryDescriptions\/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMiZsYW5ndWFnZV9pZD0x",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/categoryDescriptions",
+                "en": "\/categoryDescriptions"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "categoryId",
+                    "description": {
+                        "hu": "Kereső paraméter (Kategória azonosító).",
+                        "en": "Kereső paraméter (Kategória azonosító)."
+                    }
+                },
+                {
+                    "name": "languageId",
+                    "description": {
+                        "hu": "Kereső paraméter (Nyelv azonosító).",
+                        "en": "Kereső paraméter (Nyelv azonosító)."
+                    }
+                },
+                {
+                    "name": "name",
+                    "description": {
+                        "hu": "Kereső paraméter (Kategória név).",
+                        "en": "Kereső paraméter (Kategória név)."
+                    }
+                },
+                {
+                    "name": "metaDescription",
+                    "description": {
+                        "hu": "Kereső paraméter (Meta leírás).",
+                        "en": "Kereső paraméter (Meta leírás)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/categoryDescriptions?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/categoryDescriptions[\/kategória leírás id]",
+                "en": "\/categoryDescriptions[\/kategória leírás id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/categoryDescriptions",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/categoryDescriptions\/kategória leírás id",
+                "en": "\/categoryDescriptions\/kategória leírás id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/categoryDescriptions\/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMiZsYW5ndWFnZV9pZD0x",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/categoryDescriptions\/kategória leírás id",
+                "en": "\/categoryDescriptions\/kategória leírás id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/categoryDescriptions\/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMiZsYW5ndWFnZV9pZD0x",
+                "statusCode": "204"
+            }
+        }
+    }
+}

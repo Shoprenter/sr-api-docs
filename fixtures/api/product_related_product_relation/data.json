@@ -1,0 +1,149 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "A kapcsolat azonosítója. Az OuterID módosítására szolgál.",
+                "en": "A kapcsolat azonosítója. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "product",
+            "description": {
+                "hu": "Termék link. Annak a terméknek a linkje, amelyhez kapcsolódik egy másik termék.",
+                "en": "Termék link. Annak a terméknek a linkje, amelyhez kapcsolódik egy másik termék."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "relatedProduct",
+            "description": {
+                "hu": "Termék link. A kapcsolódó termék linkje.",
+                "en": "Termék link. A kapcsolódó termék linkje."
+            },
+            "required": true,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productRelatedProductRelations\/kapcsolat id",
+                "en": "\/productRelatedProductRelations\/kapcsolat id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productRelatedProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productRelatedProductRelations",
+                "en": "\/productRelatedProductRelations"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "productId",
+                    "description": {
+                        "hu": "Kereső paraméter (Termék azonosító).",
+                        "en": "Kereső paraméter (Termék azonosító)."
+                    }
+                },
+                {
+                    "name": "relatedProductId",
+                    "description": {
+                        "hu": "Kereső paraméter (Kapcsolódó termék azonosító).",
+                        "en": "Kereső paraméter (Kapcsolódó termék azonosító)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/productRelatedProductRelations?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/productRelatedProductRelations",
+                "en": "\/productRelatedProductRelations"
+            },
+            "description": {
+                "hu": "Csak létrehozásra szolgál.",
+                "en": "Csak létrehozásra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productRelatedProductRelations",
+                "statusCode": "201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/productRelatedProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
+                "en": "\/productRelatedProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg=="
+            },
+            "description": {
+                "hu": "Csak létrehozásra szolgál.",
+                "en": "Csak létrehozásra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productRelatedProductRelations",
+                "statusCode": "201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/productRelatedProductRelations\/kapcsolat id",
+                "en": "\/productRelatedProductRelations\/kapcsolat id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productRelatedProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
+                "statusCode": "204"
+            }
+        }
+    }
+}

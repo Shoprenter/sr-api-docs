@@ -1,0 +1,160 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Termék opció azonosító. Az OuterID módosítására szolgál.",
+                "en": "Termék opció azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend.",
+                "en": "Sorrend."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "product",
+            "description": {
+                "hu": "Termék linkje.",
+                "en": "Termék linkje."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "productOptionDescriptions",
+            "description": {
+                "hu": "Termék opció leírások.",
+                "en": "Termék opció leírások."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "productOptionValues",
+            "description": {
+                "hu": "Termék opció értékek.",
+                "en": "Termék opció értékek."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productOptions\/id",
+                "en": "\/productOptions\/id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productOptions\/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD0zNjU=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productOptions",
+                "en": "\/productOptions"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "productId",
+                    "description": {
+                        "hu": "Kereső paraméter. Termék azonosító.",
+                        "en": "Kereső paraméter. Termék azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/productOptions?page=0&limit=5",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/productOptions[\/id]",
+                "en": "\/productOptions[\/id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productOptions",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/productOptions\/id",
+                "en": "\/productOptions\/id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productOptions\/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD0zNjU=",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/productOptions\/id",
+                "en": "\/productOptions\/id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productOptions\/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD0zNjU=",
+                "statusCode": "204"
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "dateUsed": "2013-04-30T10:52:36",
+    "value": "100",
+    "description": "Leírás",
+    "loyaltyPoint": {
+        "id": "bG95YWx0eVBvaW50LWlkPTEw"
+    },
+    "customer": {
+        "id": "Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+    },
+    "order": {
+        "id": "b3JkZXItb3JkZXJfaWQ9MTcy"
+    }
+}

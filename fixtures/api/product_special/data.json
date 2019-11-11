@@ -1,0 +1,196 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Akciós ár azonosító. Az OuterID módosítására szolgál.",
+                "en": "Akciós ár azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "priority",
+            "description": {
+                "hu": "Prioritás.",
+                "en": "Prioritás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "price",
+            "description": {
+                "hu": "Nettó ár.",
+                "en": "Nettó ár."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateFrom",
+            "description": {
+                "hu": "Akció kezdete.",
+                "en": "Akció kezdete."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateTo",
+            "description": {
+                "hu": "Akció vége.",
+                "en": "Akció vége."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "minQuantity",
+            "description": {
+                "hu": "Mennyiségi kedvezmény alsó korlátja (0 esetén nincs korlát).",
+                "en": "Mennyiségi kedvezmény alsó korlátja (0 esetén nincs korlát)."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "maxQuantity",
+            "description": {
+                "hu": "Mennyiségi kedvezmény felső korlátja (0 esetén nincs korlát).",
+                "en": "Mennyiségi kedvezmény felső korlátja (0 esetén nincs korlát)."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "product",
+            "description": {
+                "hu": "Termék linkje.",
+                "en": "Termék linkje."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "customerGroup",
+            "description": {
+                "hu": "Vásárlói csoport linkje.",
+                "en": "Vásárlói csoport linkje."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productSpecials\/akciós ár id",
+                "en": "\/productSpecials\/akciós ár id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productSpecials\/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/productSpecials",
+                "en": "\/productSpecials"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "productId",
+                    "description": {
+                        "hu": "Kereső paraméter (Termék azonosító).",
+                        "en": "Kereső paraméter (Termék azonosító)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/productSpecials?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/productSpecials[\/akciós ár id]",
+                "en": "\/productSpecials[\/akciós ár id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productSpecials",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/productSpecials\/akciós ár id",
+                "en": "\/productSpecials\/akciós ár id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productSpecials\/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/productSpecials\/akciós ár id",
+                "en": "\/productSpecials\/akciós ár id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productSpecials\/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+                "statusCode": "204"
+            }
+        }
+    }
+}

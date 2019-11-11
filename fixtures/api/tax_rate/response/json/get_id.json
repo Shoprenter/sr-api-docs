@@ -1,0 +1,15 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
+    "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
+    "priority": "1",
+    "rate": "27",
+    "description": "Adó kulcs leírás",
+    "dateCreated": "2013-08-08T12:30:00",
+    "dateUpdated": "2013-08-08T12:30:00",
+    "geoZone": {
+        "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+    },
+    "taxClass": {
+        "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
+    }
+}

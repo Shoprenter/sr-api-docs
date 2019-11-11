@@ -1,0 +1,29 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+    "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+    "name": "Termék név",
+    "sku": "9789639715615",
+    "modelNumber": {},
+    "originalPrice": "2400.0000",
+    "price": "2400.0000",
+    "total": "2400.0000",
+    "taxRate": "25.0000",
+    "stock1": "0",
+    "stock2": "1",
+    "subtractStock": "1",
+    "dateCreated": "2013-01-01T01:00:00",
+    "dateUpdated": "2013-01-01T01:00:00",
+    "width": "1.00",
+    "height": "1.00",
+    "length": "1.00",
+    "weight": "1.00",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+    },
+    "product": {
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
+    },
+    "orderProductOptions": {
+        "href": "http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw=="
+    }
+}

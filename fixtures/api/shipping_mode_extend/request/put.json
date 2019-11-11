@@ -1,0 +1,48 @@
+{
+  "sortOrder": 3,
+  "enabled": 0,
+  "costCalculationBy": "WEIGHT",
+  "freeShippingFrom": 0,
+  "shippingType": "COURIER_SERVICE",
+  "shippingModeDescriptions": [
+    {
+      "name": "Saját szállítási mód neve",
+      "description": "Saját szállítási mód leírás",
+      "language": {
+        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+      }
+    }
+  ],
+  "shippingLanes": [
+    {
+      "costNet": 6450,
+      "weightMinimum": 0,
+      "weightMaximum": 50
+    },
+    {
+      "costNet": 8450,
+      "weightMinimum": 51,
+      "weightMaximum": 75
+    },
+    {
+      "costNet": 9450,
+      "weightMinimum": 76,
+      "weightMaximum": 100
+    },
+    {
+      "costNet": 12500,
+      "weightMinimum": 101,
+      "weightMaximum": 150
+    },
+    {
+      "costNet": 15500,
+      "weightMinimum": 151,
+      "weightMaximum": 200
+    },
+    {
+      "costNet": 18000,
+      "weightMinimum": 201,
+      "weightMaximum": 300
+    }
+  ]
+}

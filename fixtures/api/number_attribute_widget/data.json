@@ -1,0 +1,223 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Attribútum widget azonosító. Az OuterID módosítására szolgál.",
+                "en": "Attribútum widget azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "active",
+            "description": {
+                "hu": "Látható-e a widget.",
+                "en": "Látható-e a widget."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "autoCalculateLimits",
+            "description": {
+                "hu": "Automatikusan hozza létre az ársávokat. (Csúszka esetén nem értelmezett)",
+                "en": "Automatikusan hozza létre az ársávokat. (Csúszka esetén nem értelmezett)"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "displayToAllCategory",
+            "description": {
+                "hu": "Minden kategóriára meg legyen jelenítve-e.",
+                "en": "Minden kategóriára meg legyen jelenítve-e."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "displayMode",
+            "description": {
+                "hu": "Megjelenítés módja. Lehetséges értékek: CHECKBOX, RADIO, SELECT, SLIDER.",
+                "en": "Megjelenítés módja. Lehetséges értékek: CHECKBOX, RADIO, SELECT, SLIDER."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend.",
+                "en": "Sorrend."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "maxNumberOfOptions",
+            "description": {
+                "hu": "A választható opciók maximális száma. (Csúszka esetén nem értelmezett)",
+                "en": "A választható opciók maximális száma. (Csúszka esetén nem értelmezett)"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortValuesBy",
+            "description": {
+                "hu": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC.",
+                "en": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "numberAttribute",
+            "description": {
+                "hu": "Attribútum linkje.",
+                "en": "Attribútum linkje."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "attributeWidgetCategoryRelations",
+            "description": {
+                "hu": "A widgethez tartozó kategóriák linkjei.",
+                "en": "A widgethez tartozó kategóriák linkjei."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "attributeWidgetDescriptions",
+            "description": {
+                "hu": "A widgethez tartozó leírások linkjei.",
+                "en": "A widgethez tartozó leírások linkjei."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "attributeWidgetLimits",
+            "description": {
+                "hu": "A widgethez tartozó értékhatárok linkjei.",
+                "en": "A widgethez tartozó értékhatárok linkjei."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/numberAttributeWidgets\/attribútum widget id",
+                "en": "\/numberAttributeWidgets\/attribútum widget id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributeWidgets\/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/numberAttributeWidgets",
+                "en": "\/numberAttributeWidgets"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "numberAttributeId",
+                    "description": {
+                        "hu": "Attribútum azonosító.",
+                        "en": "Attribútum azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/numberAttributeWidgets?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/numberAttributeWidgets[\/attribútum widget id]",
+                "en": "\/numberAttributeWidgets[\/attribútum widget id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributeWidgets",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/numberAttributeWidgets\/attribútum widget id",
+                "en": "\/numberAttributeWidgets\/attribútum widget id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributeWidgets\/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/numberAttributeWidgets\/attribútum widget id",
+                "en": "\/numberAttributeWidgets\/attribútum widget id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/numberAttributeWidgets\/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05",
+                "statusCode": "204"
+            }
+        }
+    }
+}

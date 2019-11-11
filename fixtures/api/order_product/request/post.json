@@ -1,0 +1,22 @@
+{
+    "name": "Termék név",
+    "sku": "9789639715615",
+    "modelNumber": null,
+    "originalPrice": "2400.0000",
+    "price": "2400.0000",
+    "total": "2400.0000",
+    "taxRate": "25.0000",
+    "stock1": "0",
+    "stock2": "1",
+    "subtractStock": "1",
+    "width": "1.0",
+    "height": "1.0",
+    "length": "1.0",
+    "weight": "1.0",
+    "order": {
+        "id": "b3JkZXItb3JkZXJfaWQ9Mw=="
+    },
+    "product": {
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
+    }
+}

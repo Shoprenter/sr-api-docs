@@ -1,0 +1,10 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/categoryCustomerGroupRelations/Y2F0ZWdvcnlDdXN0b21lckdyb3VwLWNhdGVnb3J5X2lkPTEyJmN1c3RvbWVyX2dyb3VwX2lkPTY=]]></href>
+    <id><![CDATA[Y2F0ZWdvcnlDdXN0b21lckdyb3VwLWNhdGVnb3J5X2lkPTEyJmN1c3RvbWVyX2dyb3VwX2lkPTY=]]></id>
+    <category>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTI=]]></href>
+    </category>
+    <customerGroup>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02]]></href>
+    </customerGroup>
+</response>

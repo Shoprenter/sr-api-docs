@@ -1,0 +1,31 @@
+{
+    "sortOrder": "10",
+    "status": "1",
+    "productsStatus": "1",
+    "categoryDescriptions": [
+        {
+            "name": "Teszt Kategória",
+            "language": {
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+            }
+        },
+        {
+            "name": "Test Category",
+            "language": {
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+            }
+        }
+    ],
+    "categoryCustomerGroupRelations": [
+        {
+            "customerGroup": {
+                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02"
+            }
+        },
+        {
+            "customerGroup": {
+                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD05"
+            }
+        }
+    ]
+}

@@ -1,0 +1,214 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Kosárérték módosító tétel azonosító. Az OuterID módosítására szolgál.",
+                "en": "Kosárérték módosító tétel azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név.",
+                "en": "Név."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "valueText",
+            "description": {
+                "hu": "Érték szövegesen.",
+                "en": "Érték szövegesen."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "value",
+            "description": {
+                "hu": "Érték.",
+                "en": "Érték."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend.",
+                "en": "Sorrend."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "type",
+            "description": {
+                "hu": "Típus. Lehetséges értékek: <br>\n                        <strong>SUB_TOTAL<\/strong> -  Nettó részösszeg.<br>\n                        <strong>TAX<\/strong> - ÁFA érték.<br>\n                        <strong>SUB_TOTAL_WITH_TAX<\/strong> - Bruttó részösszeg.<br>\n                        <strong>SHIPPING<\/strong> - Szállítási díj.<br>\n                        <strong>PAYMENT<\/strong> - Fizetési mód esetén felmerülő kezelési díj.<br>\n                        <strong>COUPON, TOTAL<\/strong> - Kuponkód kedvezmény.<br>\n                        <strong>LOYALTYPOINTS_TO_GET<\/strong> -  A vásárlással szerzett új hűségpontok.<br>\n                        <strong>LOYALTYPOINTS_TO_USE<\/strong> - A vásárlás során felhasznált hűségpontok.\n                    ",
+                "en": "Típus. Lehetséges értékek: <br>\n                        <strong>SUB_TOTAL<\/strong> -  Nettó részösszeg.<br>\n                        <strong>TAX<\/strong> - ÁFA érték.<br>\n                        <strong>SUB_TOTAL_WITH_TAX<\/strong> - Bruttó részösszeg.<br>\n                        <strong>SHIPPING<\/strong> - Szállítási díj.<br>\n                        <strong>PAYMENT<\/strong> - Fizetési mód esetén felmerülő kezelési díj.<br>\n                        <strong>COUPON, TOTAL<\/strong> - Kuponkód kedvezmény.<br>\n                        <strong>LOYALTYPOINTS_TO_GET<\/strong> -  A vásárlással szerzett új hűségpontok.<br>\n                        <strong>LOYALTYPOINTS_TO_USE<\/strong> - A vásárlás során felhasznált hűségpontok.\n                    "
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "key",
+            "description": {
+                "hu": "Kulcs. Lehetséges értékek: CART_AMOUNT_DISCOUNT, vagy üres.",
+                "en": "Kulcs. Lehetséges értékek: CART_AMOUNT_DISCOUNT, vagy üres."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "description",
+            "description": {
+                "hu": "Leírás.",
+                "en": "Leírás."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "hu": "Létrehozás dátuma.",
+                "en": "Létrehozás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "hu": "Utolsó módosítás dátuma.",
+                "en": "Utolsó módosítás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "order",
+            "description": {
+                "hu": "Rendelés linkje.",
+                "en": "Rendelés linkje."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/orderTotals\/kosárérték módosító tétel id",
+                "en": "\/orderTotals\/kosárérték módosító tétel id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderTotals\/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/orderTotals",
+                "en": "\/orderTotals"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "orderId",
+                    "description": {
+                        "hu": "Kereső paraméter. Rendelés azonosító.",
+                        "en": "Kereső paraméter. Rendelés azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/orderTotals?page=0&limit=5",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/orderTotals[\/kosárérték módosító tétel id]",
+                "en": "\/orderTotals[\/kosárérték módosító tétel id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderTotals",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/orderTotals\/kosárérték módosító tétel id",
+                "en": "\/orderTotals\/kosárérték módosító tétel id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderTotals\/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/orderTotals\/kosárérték módosító tétel id",
+                "en": "\/orderTotals\/kosárérték módosító tétel id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderTotals\/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
+                "statusCode": "204"
+            }
+        }
+    }
+}

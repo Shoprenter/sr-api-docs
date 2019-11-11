@@ -1,0 +1,698 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Rendelés azonosító.",
+                "en": "Rendelés azonosító."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "hu": "Rendelés belső azonosító.",
+                "en": "Rendelés belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "invoiceId",
+            "description": {
+                "hu": "Számla azonosító.",
+                "en": "Számla azonosító."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "invoiceIdPrefix",
+            "description": {
+                "hu": "Számla azonosító prefix.",
+                "en": "Számla azonosító prefix."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "firstname",
+            "description": {
+                "hu": "Vezetéknév.",
+                "en": "Vezetéknév."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "lastname",
+            "description": {
+                "hu": "Keresztnév.",
+                "en": "Keresztnév."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "phone",
+            "description": {
+                "hu": "Telefonszám.",
+                "en": "Telefonszám."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "fax",
+            "description": {
+                "hu": "Fax.",
+                "en": "Fax."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "email",
+            "description": {
+                "hu": "Email cím.",
+                "en": "Email cím."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingFirstname",
+            "description": {
+                "hu": "Szállítási cím vezetékneve.",
+                "en": "Szállítási cím vezetékneve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingLastname",
+            "description": {
+                "hu": "Szállítási cím keresztneve.",
+                "en": "Szállítási cím keresztneve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingCompany",
+            "description": {
+                "hu": "Szállítási cím cégneve.",
+                "en": "Szállítási cím cégneve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingAddress1",
+            "description": {
+                "hu": "Szállítási cím utcája, házszáma.",
+                "en": "Szállítási cím utcája, házszáma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingAddress2",
+            "description": {
+                "hu": "Szállítási cím kiegészítő adatai.",
+                "en": "Szállítási cím kiegészítő adatai."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingCity",
+            "description": {
+                "hu": "Szállítási cím városa.",
+                "en": "Szállítási cím városa."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingPostcode",
+            "description": {
+                "hu": "Szállítási cím irányítószáma.",
+                "en": "Szállítási cím irányítószáma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingCountryName",
+            "description": {
+                "hu": "Szállítási cím országának neve.",
+                "en": "Szállítási cím országának neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingZoneName",
+            "description": {
+                "hu": "Szállítási cím megyéjének neve.",
+                "en": "Szállítási cím megyéjének neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingAddressFormat",
+            "description": {
+                "hu": "Szállítási cím megjelenítésének formátuma.",
+                "en": "Szállítási cím megjelenítésének formátuma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingMethodName",
+            "description": {
+                "hu": "Szállítási mód neve.",
+                "en": "Szállítási mód neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingMethodTaxRate",
+            "description": {
+                "hu": "Szállítás mód áfakulcsa.",
+                "en": "Szállítás mód áfakulcsa."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingMethodTaxName",
+            "description": {
+                "hu": "Szállítás mód áfakulcsának neve.",
+                "en": "Szállítás mód áfakulcsának neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingMethodExtension",
+            "description": {
+                "hu": "Szállítás mód típusa. Lehetséges értékek: WSESHIP, MPLPOSTPOINT, MPLPOSTSTAY, RECEIVINGPOINT, PICKPACKPONT.",
+                "en": "Szállítás mód típusa. Lehetséges értékek: WSESHIP, MPLPOSTPOINT, MPLPOSTSTAY, RECEIVINGPOINT, PICKPACKPONT."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingReceivingPointId",
+            "description": {
+                "hu": "Átvevőpont azonosítója.",
+                "en": "Átvevőpont azonosítója."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentFirstname",
+            "description": {
+                "hu": "Számlázási cím vezetéknév.",
+                "en": "Számlázási cím vezetéknév."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentLastname",
+            "description": {
+                "hu": "Számlázási cím keresztnév.",
+                "en": "Számlázási cím keresztnév."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentCompany",
+            "description": {
+                "hu": "Számlázási cím cégneve.",
+                "en": "Számlázási cím cégneve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentAddress1",
+            "description": {
+                "hu": "Számlázási cím utcája, házszáma.",
+                "en": "Számlázási cím utcája, házszáma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentAddress2",
+            "description": {
+                "hu": "Számlázási cím kiegészítő adatai.",
+                "en": "Számlázási cím kiegészítő adatai."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentCity",
+            "description": {
+                "hu": "Számlázási cím városa.",
+                "en": "Számlázási cím városa."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentPostcode",
+            "description": {
+                "hu": "Számlázási cím irányítószáma.",
+                "en": "Számlázási cím irányítószáma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentCountryName",
+            "description": {
+                "hu": "Számlázási cím országának neve.",
+                "en": "Számlázási cím országának neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentZoneName",
+            "description": {
+                "hu": "Számlázási cím megyéjének neve.",
+                "en": "Számlázási cím megyéjének neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentAddressFormat",
+            "description": {
+                "hu": "Számlázási cím megjelenítésének formátuma.",
+                "en": "Számlázási cím megjelenítésének formátuma."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentMethodName",
+            "description": {
+                "hu": "Fizetési mód neve.",
+                "en": "Fizetési mód neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentMethodCode",
+            "description": {
+                "hu": "Fizetési mód neve. Lehetséges értékek: PAYU, OTP, CIB, COD, COD2, NOCHEX, BANK_TRANSFER, PAYPAL, CHEQUE, FREE_CHECKOUT, TCOM, LOYALTYPOINT, ESCALION, UNICREDIT, EUPLATESC, PAYSECURE, PICKPACKPONT, KHB, OTPAY, TELENOR_MOBILE, MASTERCARD_MOBILE, WIRECARD_QPAY, SOFORT, BARION.",
+                "en": "Fizetési mód neve. Lehetséges értékek: PAYU, OTP, CIB, COD, COD2, NOCHEX, BANK_TRANSFER, PAYPAL, CHEQUE, FREE_CHECKOUT, TCOM, LOYALTYPOINT, ESCALION, UNICREDIT, EUPLATESC, PAYSECURE, PICKPACKPONT, KHB, OTPAY, TELENOR_MOBILE, MASTERCARD_MOBILE, WIRECARD_QPAY, SOFORT, BARION."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentMethodTaxRate",
+            "description": {
+                "hu": "Fizetési mód áfakulcsa.",
+                "en": "Fizetési mód áfakulcsa."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentMethodTaxName",
+            "description": {
+                "hu": "Fizetési mód áfakulcsának neve.",
+                "en": "Fizetési mód áfakulcsának neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentMethodAfter",
+            "description": {
+                "hu": "Utólag kell fizetni vagy előre.",
+                "en": "Utólag kell fizetni vagy előre."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "taxNumber",
+            "description": {
+                "hu": "Adószám",
+                "en": "Adószám"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "comment",
+            "description": {
+                "hu": "Megjegyzés.",
+                "en": "Megjegyzés."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "total",
+            "description": {
+                "hu": "Rendelés eredeti bruttó összege.",
+                "en": "Rendelés eredeti bruttó összege."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "value",
+            "description": {
+                "hu": "Rendelés árszorzója. Pénznemek között váltást szolgálja.",
+                "en": "Rendelés árszorzója. Pénznemek között váltást szolgálja."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "couponTaxRate",
+            "description": {
+                "hu": "Kupon áfakulcsa. (-1)",
+                "en": "Kupon áfakulcsa. (-1)"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "hu": "Létrehozás dátuma.",
+                "en": "Létrehozás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "hu": "Utolsó módosítás dátuma.",
+                "en": "Utolsó módosítás dátuma."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "ip",
+            "description": {
+                "hu": "Az IP cím, amelyről a rendelés érkezett.",
+                "en": "Az IP cím, amelyről a rendelés érkezett."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "pickPackPontShopCode",
+            "description": {
+                "hu": "A PickPackPont-os átvételi pont azonosítója.",
+                "en": "A PickPackPont-os átvételi pont azonosítója."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "customer",
+            "description": {
+                "hu": "Vásárló linkje.",
+                "en": "Vásárló linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "customerGroup",
+            "description": {
+                "hu": "Vásárlói csoport linkje.",
+                "en": "Vásárlói csoport linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingCountry",
+            "description": {
+                "hu": "Szállítási cím országának linkje.",
+                "en": "Szállítási cím országának linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingZone",
+            "description": {
+                "hu": "Szállítási cím megyéjének linkje.",
+                "en": "Szállítási cím megyéjének linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentCountry",
+            "description": {
+                "hu": "Számlázási cím országának linkje.",
+                "en": "Számlázási cím országának linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "paymentZone",
+            "description": {
+                "hu": "Számlázási cím megyéjének linkje.",
+                "en": "Számlázási cím megyéjének linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "orderStatus",
+            "description": {
+                "hu": "Rendelés státusz linkje. Ha nincs státusz, akkor az nem befejezett rendelés.",
+                "en": "Rendelés státusz linkje. Ha nincs státusz, akkor az nem befejezett rendelés."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Nyelv linkje.",
+                "en": "Nyelv linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "currency",
+            "description": {
+                "hu": "Pénznem linkje.",
+                "en": "Pénznem linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingMode *",
+            "description": {
+                "hu": "Objektum formában megadott, a rendeléshez tartozó szállítási mód adatai.",
+                "en": "Objektum formában megadott, a rendeléshez tartozó szállítási mód adatai."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "orderTotals *",
+            "description": {
+                "hu": "Kosárérték módosító tételek adatai",
+                "en": "Kosárérték módosító tételek adatai"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "orderProducts *",
+            "description": {
+                "hu": "Rendelt termékek adatai",
+                "en": "Rendelt termékek adatai"
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/orderExtend\/rendelés id",
+                "en": "\/orderExtend\/rendelés id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderExtend\/b3JkZXItb3JkZXJfaWQ9MTcy",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/orderExtend",
+                "en": "\/orderExtend"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "innerId",
+                    "description": {
+                        "hu": "Kereső paraméter. Rendelés belső azonosító.",
+                        "en": "Kereső paraméter. Rendelés belső azonosító."
+                    }
+                },
+                {
+                    "name": "orderStatusId",
+                    "description": {
+                        "hu": "Kereső paraméter. Rendelés állapot azonosító.",
+                        "en": "Kereső paraméter. Rendelés állapot azonosító."
+                    }
+                },
+                {
+                    "name": " ",
+                    "description": {
+                        "hu": "Példa használat:",
+                        "en": "Példa használat:"
+                    }
+                },
+                {
+                    "name": " ",
+                    "description": {
+                        "hu": "http:\/\/shopname.api.shoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=",
+                        "en": "http:\/\/shopname.api.shoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+                    }
+                },
+                {
+                    "name": " ",
+                    "description": {
+                        "hu": "Tehát az adott rendelés státus resource azonosítóját szükséges megadni.",
+                        "en": "Tehát az adott rendelés státus resource azonosítóját szükséges megadni."
+                    }
+                },
+                {
+                    "name": "email",
+                    "description": {
+                        "hu": "Kereső paraméter. Csak a paraméterben megadott email címmel leadott rendeléseket fogja listázni.",
+                        "en": "Kereső paraméter. Csak a paraméterben megadott email címmel leadott rendeléseket fogja listázni."
+                    }
+                },
+                {
+                    "name": "excludeAbandonedCart",
+                    "description": {
+                        "hu": "Kereső paraméter. Az excludeAbandonedCart=1 parametert használva nem fognak megjelenni a 0-ás orderStatusId-val rendelkező elhagyott kosarak.",
+                        "en": "Kereső paraméter. Az excludeAbandonedCart=1 parametert használva nem fognak megjelenni a 0-ás orderStatusId-val rendelkező elhagyott kosarak."
+                    }
+                },
+                {
+                    "name": "excludeStorno",
+                    "description": {
+                        "hu": "Kereső paraméter. Az excludeStorno=1 paramétert használva nem fognak megjeleni a törölt rendelések.",
+                        "en": "Kereső paraméter. Az excludeStorno=1 paramétert használva nem fognak megjeleni a törölt rendelések."
+                    }
+                },
+                {
+                    "name": "createdAtMin",
+                    "description": {
+                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00.",
+                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00."
+                    }
+                },
+                {
+                    "name": "updatedAtMin",
+                    "description": {
+                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00.",
+                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00."
+                    }
+                },
+                {
+                    "name": "createdAtMax",
+                    "description": {
+                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00.",
+                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00."
+                    }
+                },
+                {
+                    "name": "createdAt",
+                    "description": {
+                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum napján létrehozott rendeléseket adja vissza. Formátum: 2013-01-01.",
+                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum napján létrehozott rendeléseket adja vissza. Formátum: 2013-01-01."
+                    }
+                },
+                {
+                    "name": "updatedAt",
+                    "description": {
+                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított rendeléseket adja vissza. Formátum: 2013-01-01.",
+                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított rendeléseket adja vissza. Formátum: 2013-01-01."
+                    }
+                },
+                {
+                    "name": "shippingMode",
+                    "description": {
+                        "hu": "Kereső paraméter. Szállítási mód belső azonosító.",
+                        "en": "Kereső paraméter. Szállítási mód belső azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/orderExtend?full=1&page=0&limit=1",
+                "statusCode": "200"
+            }
+        }
+    }
+}

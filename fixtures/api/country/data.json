@@ -1,0 +1,123 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Ország azonosító. Az OuterID módosítására szolgál.",
+                "en": "Ország azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név.",
+                "en": "Név."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "isoCode2",
+            "description": {
+                "hu": "Iso Code 2. Pl: HU",
+                "en": "Iso Code 2. Pl: HU"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "isoCode3",
+            "description": {
+                "hu": "Iso Code 3. Pl: HUN",
+                "en": "Iso Code 3. Pl: HUN"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "status",
+            "description": {
+                "hu": "Státusz.",
+                "en": "Státusz."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "zones",
+            "description": {
+                "hu": "Országhoz tartozó megyék linkje.",
+                "en": "Országhoz tartozó megyék linkje."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "geoZones",
+            "description": {
+                "hu": "Országhoz tartozó földrajzi zónák linkje.",
+                "en": "Országhoz tartozó földrajzi zónák linkje."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/countries\/ország id",
+                "en": "\/countries\/ország id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/countries\/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/countries",
+                "en": "\/countries"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/countries?page=0&limit=5",
+                "statusCode": "200"
+            }
+        }
+    }
+}

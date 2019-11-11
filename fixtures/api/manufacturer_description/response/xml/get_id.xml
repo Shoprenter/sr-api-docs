@@ -1,0 +1,16 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/manufacturerDescriptions/bWFudWZhY3R1cmVyRGVzY3JpcHRpb24tbWFudWZhY3R1cmVyX2lkPTYmbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    <id><![CDATA[bWFudWZhY3R1cmVyRGVzY3JpcHRpb24tbWFudWZhY3R1cmVyX2lkPTYmbGFuZ3VhZ2VfaWQ9MQ==]]></id>
+    <description><![CDATA[Leírás]]></description>
+    <dateCreated><![CDATA[2013-08-08T12:30:00]]></dateCreated>
+    <dateUpdated><![CDATA[2013-08-08T12:30:00]]></dateUpdated>
+	<customTitle><![CDATA[Egyedi cím]]></customTitle>
+    <metaDescription><![CDATA[Meta leírás.]]></metaDescription>
+	<metaKeywords><![CDATA[kulcsszó_1, kulcsszó_2]]></metaKeywords>
+    <manufacturer>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02]]></href>
+    </manufacturer>
+    <language>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    </language>
+</response>

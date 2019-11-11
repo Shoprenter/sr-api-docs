@@ -1,0 +1,43 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.shoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
+    </href>
+    <id>
+        <![CDATA[d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
+    </id>
+    <event>
+        <![CDATA[order_confirm]]>
+    </event>
+    <status>
+        <![CDATA[1]]>
+    </status>
+    <label>
+        <![CDATA[ teszt webhook]]>
+    </label>
+    <webHookParameters>
+        <type>
+            <![CDATA[json]]>
+        </type>
+        <url>
+            <![CDATA[http://shoprenter.hu]]>
+        </url>
+        <webHook>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
+            </href>
+        </webHook>
+    </webHookParameters>
+    <webHookDelay>
+        <delay>
+            <![CDATA[10]]>
+        </delay>
+        <delayUnit>
+            <![CDATA[day]]>
+        </delayUnit>
+        <webHook>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
+            </href>
+        </webHook>
+    </webHookDelay>
+</response>

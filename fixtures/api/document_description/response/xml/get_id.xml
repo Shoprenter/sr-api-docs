@@ -1,0 +1,13 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/documentDescriptions/ZG9jdW1lbnREZXNjcmlwdGlZD0yJmxhbmd1YWdlX2lkPTE=]]></href>
+    <id><![CDATA[ZG9jdW1lbnREZXNjcmlwdGlZD0yJmxhbmd1YWdlX2lkPTE=]]></id>
+    <name><![CDATA[Dokumentum szövege]]></name>
+    <filename><![CDATA[document_name.pdf.123]]></filename>
+    <mask><![CDATA[document_name.pdf]]></mask>
+    <document>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/categories/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9Mg==]]></href>
+    </document>
+    <language>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    </language>
+</response>

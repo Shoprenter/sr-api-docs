@@ -1,0 +1,13 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx",
+    "id": "c2hpcHBpbmdMYW5lLWlkPTYx",
+    "innerId": "61",
+    "cartMinimumGross": "0.0000",
+    "cartMaximumGross": "99999999999.9999",
+    "costNet": "0.0000",
+    "weightMinimum": "0.0000",
+    "weightMaximum": "0.0000",
+    "shippingMode": {
+        "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTM="
+    }
+}

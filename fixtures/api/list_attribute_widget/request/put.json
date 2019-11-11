@@ -1,0 +1,11 @@
+{
+    "active": "1",
+    "displayMode": "CHECKBOX",
+    "displayToAllCategory": "1",
+    "sortOrder": "10",
+    "maxNumberOfOptions": "10",
+    "sortValuesBy": "COUNT_ASC",
+    "listAttribute": {
+        "id": "bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA=="
+    }
+}

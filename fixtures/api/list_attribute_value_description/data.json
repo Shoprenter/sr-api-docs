@@ -1,0 +1,158 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Attribútum érték leírás azonosító. Az OuterID módosítására szolgál.",
+                "en": "Attribútum érték leírás azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név.",
+                "en": "Név."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "listAttributeValue",
+            "description": {
+                "hu": "Attribútum érték link.",
+                "en": "Attribútum érték link."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Nyelv link.",
+                "en": "Nyelv link."
+            },
+            "required": true,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/listAttributeValueDescriptions\/attribútum érték leírás id",
+                "en": "\/listAttributeValueDescriptions\/attribútum érték leírás id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributeValueDescriptions\/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MSZ2YWx1ZV9pZD0y",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/listAttributeValueDescriptions",
+                "en": "\/listAttributeValueDescriptions"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "listAttributeValueId",
+                    "description": {
+                        "hu": "Attribútum érték azonosító.",
+                        "en": "Attribútum érték azonosító."
+                    }
+                },
+                {
+                    "name": "languageId",
+                    "description": {
+                        "hu": "Nyelv azonosító.",
+                        "en": "Nyelv azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/listAttributeValueDescriptions?page=0&limit=25&listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD04JnZhbHVlX2lkPTI=",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/listAttributeValueDescriptions[\/attribútum érték leírás id]",
+                "en": "\/listAttributeValueDescriptions[\/attribútum érték leírás id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributeValueDescriptions",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/listAttributeValueDescriptions\/attribútum érték leírás id",
+                "en": "\/listAttributeValueDescriptions\/attribútum érték leírás id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributeValueDescriptions\/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MSZ2YWx1ZV9pZD0y",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/listAttributeValueDescriptions\/attribútum érték leírás id",
+                "en": "\/listAttributeValueDescriptions\/attribútum érték leírás id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributeValueDescriptions\/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTgmbGFuZ3VhZ2VfaWQ9MSZ2YWx1ZV9pZD0y",
+                "statusCode": "204"
+            }
+        }
+    }
+}

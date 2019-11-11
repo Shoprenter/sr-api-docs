@@ -1,0 +1,29 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
+    "id": "Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
+    "innerId": "1",
+    "firstname": "Teszt",
+    "lastname": "Teszt",
+    "email": "teszt@teszt.com",
+    "telephone": "+36201234567",
+    "fax": {},
+    "password": "$2y$15$IPKwtcGcJ1r2DCOS/YsO9OHJJHtAa9vENzDO5agb/fTaui5m8HEkq",
+    "newsletter": "1",
+    "status": "1",
+    "approved": "1",
+    "dateCreated": "2012-09-27T18:13:04",
+    "dateUpdated": "2013-08-05T16:50:38",
+    "freeShipping": "0",
+    "defaultAddress": {
+        "href": "http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTcy"
+    },
+    "customerGroup": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    },
+    "addresses": {
+        "href": "http://shopname.api.shoprenter.hu/addresses?customerId=Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+    },
+    "loyaltyPoints": {
+        "href": "http://shopname.api.shoprenter.hu/loyaltyPoints?customerId=Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+    }
+}

@@ -1,0 +1,23 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.shoprenter.hu/scriptTags/c2NyaXB0VGFnLWlkPTc=]]>
+    </href>
+    <id>
+        <![CDATA[c2NyaXB0VGFnLWlkPTc=]]>
+    </id>
+    <event>
+        <![CDATA[ONLOAD]]>
+    </event>
+    <src>
+        <![CDATA[https://somedomain.hu/somedir/example.js]]>
+    </src>
+    <displayScope>
+        <![CDATA[THANK_YOU_PAGE]]>
+    </displayScope>
+    <dateCreated>
+        <![CDATA[2018-09-13T12:14:39]]>
+    </dateCreated>
+    <dateUpdated>
+        <![CDATA[2018-09-13T13:13:09]]>
+    </dateUpdated>
+</response>

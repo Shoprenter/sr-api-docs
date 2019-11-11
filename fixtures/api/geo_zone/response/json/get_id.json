@@ -1,0 +1,316 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02",
+    "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD02",
+    "name": "Európai Unió",
+    "description": "EU",
+    "countries": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE0",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE0",
+            "name": "Ausztria",
+            "isoCode2": "AT",
+            "isoCode3": "AUT",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE0"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTIx",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTIx",
+            "name": "Belgium",
+            "isoCode2": "BE",
+            "isoCode3": "BEL",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTIx"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTMz",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTMz",
+            "name": "Bulgária",
+            "isoCode2": "BG",
+            "isoCode3": "BGR",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTMz"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTUz",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTUz",
+            "name": "Horvátország",
+            "isoCode2": "HR",
+            "isoCode3": "HRV",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTUz"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTU1",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTU1",
+            "name": "Ciprus",
+            "isoCode2": "CY",
+            "isoCode3": "CYP",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTU1"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTU2",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTU2",
+            "name": "Cseh köztársaság",
+            "isoCode2": "CZ",
+            "isoCode3": "CZE",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTU2"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTU3",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTU3",
+            "name": "Dánia",
+            "isoCode2": "DK",
+            "isoCode3": "DNK",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTU3"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTY3",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTY3",
+            "name": "Észtország",
+            "isoCode2": "EE",
+            "isoCode3": "EST",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTY3"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTcy",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTcy",
+            "name": "Finnország",
+            "isoCode2": "FI",
+            "isoCode3": "FIN",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTcy"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTcz",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTcz",
+            "name": "Franciaország",
+            "isoCode2": "FR",
+            "isoCode3": "FRA",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTcz"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTgx",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTgx",
+            "name": "Németország",
+            "isoCode2": "DE",
+            "isoCode3": "DEU",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTgx"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTg0",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTg0",
+            "name": "Görögország",
+            "isoCode2": "GR",
+            "isoCode3": "GRC",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTg0"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+            "name": "Magyarország",
+            "isoCode2": "HU",
+            "isoCode3": "HUN",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTEwMw==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTEwMw==",
+            "name": "Írország",
+            "isoCode2": "IE",
+            "isoCode3": "IRL",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTEwMw=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTEwNQ==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTEwNQ==",
+            "name": "Olaszország",
+            "isoCode2": "IT",
+            "isoCode3": "ITA",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTEwNQ=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTExNw==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTExNw==",
+            "name": "Lettország",
+            "isoCode2": "LV",
+            "isoCode3": "LVA",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTExNw=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTEyMw==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTEyMw==",
+            "name": "Litvánia",
+            "isoCode2": "LT",
+            "isoCode3": "LTU",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTEyMw=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTEyNA==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTEyNA==",
+            "name": "Luxemburg",
+            "isoCode2": "LU",
+            "isoCode3": "LUX",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTEyNA=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTEzMg==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTEzMg==",
+            "name": "Málta",
+            "isoCode2": "MT",
+            "isoCode3": "MLT",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTEzMg=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE1MA==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE1MA==",
+            "name": "Hollandia",
+            "isoCode2": "NL",
+            "isoCode3": "NLD",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE1MA=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE3MA==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE3MA==",
+            "name": "Lengyelország",
+            "isoCode2": "PL",
+            "isoCode3": "POL",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE3MA=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE3MQ==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE3MQ==",
+            "name": "Portugália",
+            "isoCode2": "PT",
+            "isoCode3": "PRT",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE3MQ=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE3NQ==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE3NQ==",
+            "name": "Románia",
+            "isoCode2": "RO",
+            "isoCode3": "ROM",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE3NQ=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE4OQ==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE4OQ==",
+            "name": "Szlovák köztársaság",
+            "isoCode2": "SK",
+            "isoCode3": "SVK",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE4OQ=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE5MA==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE5MA==",
+            "name": "Szlovénia",
+            "isoCode2": "SI",
+            "isoCode3": "SVN",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE5MA=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE5NQ==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTE5NQ==",
+            "name": "Spanyolország",
+            "isoCode2": "ES",
+            "isoCode3": "ESP",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTE5NQ=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTIwMw==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTIwMw==",
+            "name": "Svédország",
+            "isoCode2": "SE",
+            "isoCode3": "SWE",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTIwMw=="
+            }
+        },
+        {
+            "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTIyMg==",
+            "id": "Y291bnRyeS1jb3VudHJ5X2lkPTIyMg==",
+            "name": "Egyesült Királyság",
+            "isoCode2": "GB",
+            "isoCode3": "GBR",
+            "status": "1",
+            "zones": {
+                "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTIyMg=="
+            }
+        }
+    ]
+}

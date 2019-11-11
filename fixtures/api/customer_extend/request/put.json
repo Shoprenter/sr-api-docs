@@ -1,0 +1,55 @@
+{
+    "firstname": "TesztKeresztNév",
+    "lastname": "TesztVezeetékNév",
+    "email": "valaki@domain.hu",
+    "telephone": "+36201234567",
+    "password": "$2y$10$Ynx7HptRL9B3nD.4KAFA8.ah2miCMeK\/nIIY9pFT9aavbGKVfVLwO",
+    "status": "1",
+    "approved": "1",
+    "freeShipping": "0",
+    "customerGroup": {
+        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    },
+    "addresses": [
+        {
+            "company": "Cégnév1",
+            "firstname": "KeresztNév1",
+            "lastname": "Vezetéknév1",
+            "taxNumber": "0",
+            "type": "private",
+            "address1": "Teszt Cím 1",
+            "address2": "Kiegészítő Teszt Cím 1",
+            "postcode": "4028",
+            "city": "Debrecen",
+            "country": {
+                "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+            }
+        },
+        {
+            "company": "Cégnév2",
+            "firstname": "KeresztNév2",
+            "lastname": "Vezetéknév2",
+            "taxNumber": "0",
+            "type": "private",
+            "address1": "Teszt Cím 2",
+            "address2": "Kiegészítő Teszt Cím 2",
+            "postcode": "4000",
+            "city": "Debrecen 2",
+            "country": {
+                "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+            }
+        }
+    ],
+    "loyaltyPoints": [
+        {
+            "dateExpiration": "2018-08-04T15:13:1",
+            "value": "100",
+            "description": "Hűségpont leírása 1"
+        },
+        {
+            "dateExpiration": "2019-10-04T15:13:1",
+            "value": "50",
+            "description": "Hűségpont leírása 2"
+        }
+    ]
+}

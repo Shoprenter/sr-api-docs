@@ -1,0 +1,24 @@
+<response>
+    <domain>
+        <url>
+            <![CDATA[www.shoprenter.hu]]>
+        </url>
+        <primary>
+            <![CDATA[1]]>
+        </primary>
+        <language>
+            <![CDATA[hu]]>
+        </language>
+    </domain>
+    <domain>
+        <url>
+            <![CDATA[www.shoprenter.com]]>
+        </url>
+        <primary>
+            <![CDATA[]]>
+        </primary>
+        <language>
+            <![CDATA[eng]]>
+        </language>
+    </domain>
+</response>

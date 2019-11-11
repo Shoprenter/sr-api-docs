@@ -1,0 +1,12 @@
+{
+    "active": "1",
+    "displayMode": "RADIO",
+    "displayToAllCategory": "1",
+    "autoCalculateLimits": "1",
+    "sortOrder": "10",
+    "maxNumberOfOptions": "10",
+    "sortValuesBy": "COUNT_DESC",
+    "numberAttribute": {
+        "id": "bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
+    }
+}

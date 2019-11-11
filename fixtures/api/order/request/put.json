@@ -1,0 +1,73 @@
+{
+    "invoiceId": "0",
+    "invoicePrefix": null,
+    "firstname": "Teszt",
+    "lastname": "Teszt",
+    "phone": "+36201234567",
+    "fax": null,
+    "email": "teszt@teszt.com",
+    "shippingFirstname": "Teszt",
+    "shippingLastname": "Teszt",
+    "shippingCompany": null,
+    "shippingAddress1": "Teszt út 11",
+    "shippingAddress2": null,
+    "shippingCity": "Teszt",
+    "shippingPostcode": "4033",
+    "shippingZoneName": null,
+    "shippingCountryName": "Magyarország",
+    "shippingAddressFormat": null,
+    "shippingMethodName": "Házhozszállítás futárszolgálattal",
+    "shippingMethodTaxRate": "25.0000",
+    "shippingMethodTaxName": "25 %",
+    "shippingMethodExtension": "WSESHIP",
+    "shippingReceivingPointId": "0",
+    "paymentFirstname": "Teszt",
+    "paymentLastname": "Teszt",
+    "paymentCompany": null,
+    "paymentAddress1": "Teszt út 11",
+    "paymentAddress2": null,
+    "paymentCity": "Teszt",
+    "paymentPostcode": "4033",
+    "paymentZoneName": null,
+    "paymentCountryName": "Magyarország",
+    "paymentAddressFormat": null,
+    "paymentMethodName": "Fizetési mód",
+    "paymentMethodCode": "COD",
+    "paymentMethodTaxRate": "0.0000",
+    "paymentMethodTaxName": null,
+    "paymentMethodAfter": "1",
+    "comment": "Megjegyzés",
+    "total": "3990.0000",
+    "value": "1.00000000",
+    "couponTaxRate": "-1.0000",
+    "dateCreated": "2012-09-27T18:13:31",
+    "dateUpdated": "2012-09-27T18:13:31",
+    "ip": "11.11.11.11",
+    "pickPackPontShopCode": "100010",
+    "customer": {
+        "id": "Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+    },
+    "customerGroup": {
+        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    },
+    "shippingZone": null,
+    "shippingCountry": {
+        "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "paymentZone": null,
+    "paymentCountry": {
+        "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "orderStatus": {
+        "id": "b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+    },
+    "language": {
+        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    },
+    "currency": {
+        "id": "Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+    },
+    "shippingMode" : {
+        "id": "c2hpcHBpbmdNb2RlLWlkPTE4"
+    }
+}

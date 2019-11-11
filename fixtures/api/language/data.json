@@ -1,0 +1,144 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Nyelv azonosító. Az OuterID módosítására szolgál.",
+                "en": "Nyelv azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "hu": "Nyelv belső azonosító.",
+                "en": "Nyelv belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Név.",
+                "en": "Név."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "code",
+            "description": {
+                "hu": "Nyelvkód.",
+                "en": "Nyelvkód."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "locale",
+            "description": {
+                "hu": "Locale.",
+                "en": "Locale."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend.",
+                "en": "Sorrend."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "status",
+            "description": {
+                "hu": "Státusz.",
+                "en": "Státusz."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/languages\/nyelv id",
+                "en": "\/languages\/nyelv id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/languages\/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/languages",
+                "en": "\/languages"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "innerId",
+                    "description": {
+                        "hu": "Kereső paraméter (Nyelv belső azonosító).",
+                        "en": "Kereső paraméter (Nyelv belső azonosító)."
+                    }
+                },
+                {
+                    "name": "name",
+                    "description": {
+                        "hu": "Kereső paraméter (Nyelv neve).",
+                        "en": "Kereső paraméter (Nyelv neve)."
+                    }
+                },
+                {
+                    "name": "code",
+                    "description": {
+                        "hu": "Kereső paraméter (Nyelvkód).",
+                        "en": "Kereső paraméter (Nyelvkód)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/languages?limit=3&page=0",
+                "statusCode": "200"
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/loyaltyPointsUsed/bG95YWx0eVBvaW50VXNlZC1pZD0y",
+    "id": "bG95YWx0eVBvaW50VXNlZC1pZD0y",
+    "dateUsed": "2014-11-26 09:32:55",
+    "value": "87",
+    "description": {},
+    "loyaltyPoint": {
+        "href": "http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTEw"
+    },
+    "customer": {
+        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+    },
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTcy"
+    }
+}

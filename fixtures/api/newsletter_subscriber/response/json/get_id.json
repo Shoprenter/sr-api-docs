@@ -1,0 +1,18 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
+    "id": "bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
+    "firstname": "Teszt",
+    "lastname": "Teszt",
+    "email": "teszt@wteszt.hu",
+    "phone": "36303336699",
+    "status": "1",
+    "blacklisted": "0",
+    "dateSubscribed": "2015-06-15T11:35:48",
+    "hash": "2d0d067ac341a580c894b254417195c7",
+    "mailmasterId": "0",
+    "dateCreated": "2015-06-15T11:35:48",
+    "dateUpdated": "2015-08-18T15:05:23",
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

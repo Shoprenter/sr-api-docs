@@ -1,0 +1,10 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/priceMultipliers/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></href>
+    <id><![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></id>
+    <categoryId><![CDATA[1]]></categoryId>
+    <manufacturerId><![CDATA[0]]></manufacturerId>
+    <minNetPrice><![CDATA[0.0000]]></minNetPrice>
+    <maxNetPrice><![CDATA[9999.0000]]></maxNetPrice>
+    <multiplier><![CDATA[1.0029]]></multiplier>
+    <priority><![CDATA[0]]></priority>
+</response>

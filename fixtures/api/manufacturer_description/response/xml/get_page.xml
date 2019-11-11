@@ -1,0 +1,19 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/manufacturerDescriptions?page=0&limit=25]]></href>
+    <page>0</page>
+    <limit>25</limit>
+    <first>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/manufacturerDescriptions?page=0&limit=25]]></href>
+    </first>
+    <previous/>
+    <next/>
+    <last>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/manufacturerDescriptions?page=0&limit=25]]></href>
+    </last>
+    <items>
+        <item>
+            <href><![CDATA[http://shopname.api.shoprenter.hu/manufacturerDescriptions/bWFudWZhY3R1cmVyRGVzY3JpcHRpb24tbWFudWZhY3R1cmVyX2lkPTYmbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+        </item>
+    </items>
+</response>
+

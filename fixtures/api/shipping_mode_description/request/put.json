@@ -1,0 +1,12 @@
+{
+  "data": {
+    "name": "Saját szállítási mód neve",
+    "description": "Saját szállítási mód leírás",
+    "language": {
+      "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    },
+    "shippingMode": {
+      "id": "c2hpcHBpbmdNb2RlLWlkPTEwMQ=="
+    }
+  }
+}

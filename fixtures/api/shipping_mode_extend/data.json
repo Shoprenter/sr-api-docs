@@ -1,0 +1,214 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Szállítási mód azonosító. Az OuterID módosítására szolgál.",
+                "en": "Szállítási mód azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "hu": "Szállítási mód belső azonosító.",
+                "en": "Szállítási mód belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend, a többi szállítási módhoz képest.",
+                "en": "Sorrend, a többi szállítási módhoz képest."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "enabled",
+            "description": {
+                "hu": "Engedélyezett-e?",
+                "en": "Engedélyezett-e?"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "costCalculationBy",
+            "description": {
+                "hu": "\n                        Mi alapján kalkuláljuk a szállítási költség? Lehetséges értékek:<br>\n                        <strong>PRICE:<\/strong> Kosár érték szerint<br>\n                        <strong>WEIGHT:<\/strong> Kosár súlya szerint<br>\n                        <strong>PRICE_WEIGHT:<\/strong> Kosár értéke és súlya szerint\n                    ",
+                "en": "\n                        Mi alapján kalkuláljuk a szállítási költség? Lehetséges értékek:<br>\n                        <strong>PRICE:<\/strong> Kosár érték szerint<br>\n                        <strong>WEIGHT:<\/strong> Kosár súlya szerint<br>\n                        <strong>PRICE_WEIGHT:<\/strong> Kosár értéke és súlya szerint\n                    "
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "freeShippingFrom",
+            "description": {
+                "hu": "Ha a vásárlás értéke elér ennyi forintot, akkor súlytól függetlenül ingyenes a szállítás. Csak akkor vesszük figyelembe, ha a costCalculationBy értéke WEIGHT.",
+                "en": "Ha a vásárlás értéke elér ennyi forintot, akkor súlytól függetlenül ingyenes a szállítás. Csak akkor vesszük figyelembe, ha a costCalculationBy értéke WEIGHT."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingType",
+            "description": {
+                "hu": "\n                        Ez az opció határozza meg, hogy a szállítási mód beleszámít-e a termékoldali szállítási díj számításba, illetve a termék megosztónak továbbított feedekbe, mint átadott szállítási díj. Több \"Futárszolgálat\" típusú szállítási mód esetén a rendszer mindig a legkedvezőbbet ajánlja ki.<br>\n                        Lehetséges értéke:<br>\n                        <strong>COURIER_SERVICE:<\/strong> Futárszolgálat<br>\n                        <strong>PERSONAL_RECEIPT:<\/strong> Személyes átvétel\n                    ",
+                "en": "\n                        Ez az opció határozza meg, hogy a szállítási mód beleszámít-e a termékoldali szállítási díj számításba, illetve a termék megosztónak továbbított feedekbe, mint átadott szállítási díj. Több \"Futárszolgálat\" típusú szállítási mód esetén a rendszer mindig a legkedvezőbbet ajánlja ki.<br>\n                        Lehetséges értéke:<br>\n                        <strong>COURIER_SERVICE:<\/strong> Futárszolgálat<br>\n                        <strong>PERSONAL_RECEIPT:<\/strong> Személyes átvétel\n                    "
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "taxClass",
+            "description": {
+                "hu": "Áfakulcs resource id-ja.",
+                "en": "Áfakulcs resource id-ja."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "geoZone",
+            "description": {
+                "hu": "Földrajzi zóna resource id-ja.",
+                "en": "Földrajzi zóna resource id-ja."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "shippingModeDescriptions",
+            "description": {
+                "hu": "A szállítási módhoz tartozó szöveges tartalmak.",
+                "en": "A szállítási módhoz tartozó szöveges tartalmak."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "shippingLanes",
+            "description": {
+                "hu": "A szállítási sávok.",
+                "en": "A szállítási sávok."
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/shippingModeExtend\/szállítási mód id",
+                "en": "\/shippingModeExtend\/szállítási mód id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeExtend\/c2hpcHBpbmdNb2RlLWlkPTg0?full=1",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/shippingModeExtend",
+                "en": "\/shippingModeExtend"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "innerId",
+                    "description": {
+                        "hu": "Kereső paraméter. Szállítási mód belső azonosító.",
+                        "en": "Kereső paraméter. Szállítási mód belső azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/shippingModeExtend?full=1&page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/shippingModeExtend[\/szállítási mód id]",
+                "en": "\/shippingModeExtend[\/szállítási mód id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeExtend",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/shippingModeExtend\/szállítási mód id",
+                "en": "\/shippingModeExtend\/szállítási mód id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeExtend\/c2hpcHBpbmdNb2RlLWlkPTg0",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/shippingModeExtend\/szállítási mód id",
+                "en": "\/shippingModeExtend\/szállítási mód id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/shippingModeExtend\/c2hpcHBpbmdNb2RlLWlkPTg0",
+                "statusCode": "204"
+            }
+        }
+    }
+}

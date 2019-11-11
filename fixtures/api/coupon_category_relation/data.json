@@ -1,0 +1,142 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "A kapcsolat azonosítója. Az OuterID módosítására szolgál.",
+                "en": "A kapcsolat azonosítója. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "coupon",
+            "description": {
+                "hu": "Kupon linkje.",
+                "en": "Kupon linkje."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "category",
+            "description": {
+                "hu": "Kategória linkje.",
+                "en": "Kategória linkje."
+            },
+            "required": true,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/couponCategoryRelations\/kapcsolat id",
+                "en": "\/couponCategoryRelations\/kapcsolat id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/couponCategoryRelations\/Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/couponCategoryRelations",
+                "en": "\/couponCategoryRelations"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "couponId",
+                    "description": {
+                        "hu": "Kereső paraméter. Kupon azonosító.",
+                        "en": "Kereső paraméter. Kupon azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/couponCategoryRelations?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/couponCategoryRelations[\/kapcsolat id]",
+                "en": "\/couponCategoryRelations[\/kapcsolat id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/couponCategoryRelations",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/couponCategoryRelations\/kapcsolat id",
+                "en": "\/couponCategoryRelations\/kapcsolat id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra szolgál.",
+                "en": "Létrehozásra és módosításra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/couponCategoryRelations\/Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw==",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/couponCategoryRelations\/kapcsolat id",
+                "en": "\/couponCategoryRelations\/kapcsolat id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/couponCategoryRelations\/Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw==",
+                "statusCode": "204"
+            }
+        }
+    }
+}

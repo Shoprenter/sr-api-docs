@@ -1,0 +1,169 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Dokumentum azonosító. Az OuterID módosítására szolgál.",
+                "en": "Dokumentum azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "hu": "Dokumentum leírás.",
+                "en": "Dokumentum leírás."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "filename",
+            "description": {
+                "hu": "Egyedi fájlnév.",
+                "en": "Egyedi fájlnév."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "mask",
+            "description": {
+                "hu": "Fájlnév.",
+                "en": "Fájlnév."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "document",
+            "description": {
+                "hu": "A kapcsolódó dokumentum linkje.",
+                "en": "A kapcsolódó dokumentum linkje."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "A kapcsolódó nyelv linkje.",
+                "en": "A kapcsolódó nyelv linkje."
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/documentDescriptions\/id",
+                "en": "\/documentDescriptions\/id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/documentDescriptions\/ZG9jdW1lbnREZXNjcmlwdGlvbipZD0yJmxhbmd1YWdlX2lkPTE=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/documentDescriptions",
+                "en": "\/documentDescriptions"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "innerId",
+                    "description": {
+                        "hu": "Kereső paraméter. Dokumentum belső azonosító.",
+                        "en": "Kereső paraméter. Dokumentum belső azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/documentDescriptions?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/documentDescriptions[\/id]",
+                "en": "\/documentDescriptions[\/id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/documentDescriptions",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/documentDescriptions\/id",
+                "en": "\/documentDescriptions\/id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/documentDescriptions\/ZG9jdW1lbnREZXNjcmlwdGlvbi1kb2N1bWVudF9pZD0yJmxhbmd1YWdlX2lkPTE=",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/documentDescriptions\/id",
+                "en": "\/documentDescriptions\/id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/documentDescriptions\/ZG9jdW1lbnREZXNjcmlwdGlvbipZD0yJmxhbmd1YWdlX2lkPTE=",
+                "statusCode": "204"
+            }
+        }
+    }
+}

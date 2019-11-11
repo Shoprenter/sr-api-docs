@@ -1,0 +1,25 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
+    "id": "bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
+    "type": "LIST",
+    "name": "list",
+    "priority": "IMPORTANT",
+    "sortOrder": "2",
+    "defaultValue": "3",
+    "required": "0",
+    "valuePrefix": "cm",
+    "valuePostfix": {},
+    "presentation": "TEXT",
+    "defaultListAttributeValue": {
+        "href": "http://shopname.api.shoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD04JnZhbHVlX2lkPTI="
+    },
+    "listAttributeWidget": {
+        "href": "http://shopname.api.shoprenter.hu/listAttributeWidgets/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA=="
+    },
+    "attributeDescriptions": {
+        "href": "http://shopname.api.shoprenter.hu/attributeDescriptions?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA=="
+    },
+    "listAttributeValues": {
+        "href": "http://shopname.api.shoprenter.hu/listAttributeValues?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA=="
+    }
+}
