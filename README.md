@@ -6,11 +6,11 @@ tagline: Segédlet ShopRenter alkalmazás készítőknek
 actionText: Kezdés →
 actionLink: /development/app-development/01_getting_started.html
 features:
-- title: API Changelog
-  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate augue felis, aliquet facilisis sem dapibus et.
-- title: App fejlesztés
-  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate augue felis, aliquet facilisis sem dapibus et.
-- title: API Resources
-  details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate augue felis, aliquet facilisis sem dapibus et.
+- title: '<i class="fas fa-wrench"></i> App fejlesztés'
+  link: /development/app-development/01_getting_started.html
+- title: '<i class="fas fa-book"></i> API Resources'
+  link: /api/address.html
+- title: '<i class="far fa-list-alt"></i> API Changelog'
+  link: /development/changelog.html
 footer: © 2011 - 2019 ShopRenter.hu Kft.
 ---
