@@ -2,7 +2,6 @@
 home: true
 heroImage: /images/logo.svg
 heroText: Fejlesztői dokumentáció
-tagline: Segédlet ShopRenter alkalmazás készítőknek
 actionText: Kezdés →
 actionLink: /development/app-development/01_getting_started.html
 features:
