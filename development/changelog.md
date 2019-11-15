@@ -1,8 +1,5 @@
 # API changelog
 
-#### 2019.11.15.
-- Boiler eladó
-
 #### 2019.10.24.
 Elérhető vált a **Payment Mode Resource** API végpont, amellyel kikérhetjük az aktuális bolt **telepített** fizetési módjait. Mivel a rendszer nem támogatja a saját fizetési módok létrehozását, így ez a resource teljesen readOnly. [dokumentáció](../api/payment_mode.md)
 
