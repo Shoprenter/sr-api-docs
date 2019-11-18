@@ -10,8 +10,8 @@ Ez a legelső lépés, amit el szoktak rontani az API-ra történő fejlesztésn
 
 Ez helyzetfüggő, ha konkrétan tudod, mire akarsz rákérdezni az API-ból, akkor már legalább egy resource ID-d van. A termékeknél például van lehetőség **_sku_** szerint lekérdezni. Még egy lehetőség az Outer ID használata. Arról, hogy hogyan tudsz kereső paramétereket használni egy adott resource-nál vagy hogyan lehet létrehozni Outer ID-kat, a dokumentációban olvashatsz bővebben:
 
-- https://www.shoprenter.hu/api/doc#product
-- https://github.com/Shoprenter/developers/blob/master/api/API_OUTER_ID.md
+- [Product Resource](../../api/product.md)
+- [Outer ID](../api/05_outer_id.md)
 
 ---
 
@@ -46,7 +46,7 @@ Nem ott fog megjelenni. Az applikációk az Alkalmazások menüpont alatt talál
 
 #### Új Vevő resource létrehozásánál milyen formátumú telefonszám az elfogadott?
 
-https://github.com/googlei18n/libphonenumber package-et használjuk a 
+[https://github.com/googlei18n/libphonenumber](https://github.com/googlei18n/libphonenumber) package-et használjuk a 
 telefonszámok kezelésére. Érdemes áttanulmányozni, illetve ezt használni a telefonszámok 
 bevitelénél, így a formátum probléma elkerülhető.
 
@@ -61,9 +61,7 @@ A jelszavak kódolására bcryptet használunk, azaz nektek is így kell felvenn
 #### Ha rendelésekkel dolgozok, és nyomon akarom követni az újonnan beérkezett rendeléseket, mindig le kell kérdeznem az API-n keresztül az összes rendelést?
 
 Nem szükséges. Van lehetőség webhook-ot létrehozni például “Új rendelés feladás” eseményre, melynek megadható
-egy endpoint. Az esemény kiváltása után az általatok megadott URL-re a rendszer elküldi az új rendelés adatait:
-
-https://www.shoprenter.hu/api/doc#webhook
+egy endpoint. Az esemény kiváltása után az általatok megadott URL-re a rendszer elküldi az új rendelés adatait. Bővebb információ a [WebHook Resource](../../api/webhook.md) oldalán.
 
 ---
 
@@ -76,14 +74,14 @@ https://www.shoprenter.hu/api/doc#webhook
 
 #### Nem látjuk az alkalmazásunkat az iframe-ben, mi lehet a gond?
 'Refused to display' hibát kapunk a DevTools console-ban. A megjelenítést valószínűleg a 'X-Frame-Options' HTTP response header blokkolja, mivel ez jelzi a böngészőnek, hogy engedélyeznie kell-e az oldal megjelenítését.
-(Bővebben erről: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options)
+(Bővebben erről: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options))
 
 ---
 
 #### A cUrl hívás nem működik Batch API-val a terminálban, mi a gond?
 `-F` kapcsolóval küldöm a POST adatokat, de `40014 - 'POST is either empty or content length exceeds the limit of %s bytes'` hibát kapom.
 Az `-F` kapcsoló eleve `multipart/form-data`-ként küldi el az adatot, így nem kell a 'content-type' header-t mellékelned.
-(Bővebben erről: https://ec.haxx.se/http-postvspost.html)
+(Bővebben erről: [https://ec.haxx.se/http-postvspost.html](https://ec.haxx.se/http-postvspost.html))
 
 ---
 

@@ -1,4 +1,4 @@
-## Kezdeti lépések
+# Kezdeti lépések
 
 ### Az Alkalmazás integrációhoz szükséges adatok:
 
