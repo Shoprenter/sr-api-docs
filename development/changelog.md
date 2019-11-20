@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2019.11.20.
+- A Product Extend Resource GET endpoint hívása kiegészült egy **productPrices** tömbbel, amellyel a termékek árait kaphatjuk meg vevőcsoportokra szétbontva. [dokumentáció](../api/product_extend.md)
+
+
 #### 2019.10.24.
 Elérhető vált a **Payment Mode Resource** API végpont, amellyel kikérhetjük az aktuális bolt **telepített** fizetési módjait. Mivel a rendszer nem támogatja a saját fizetési módok létrehozását, így ez a resource teljesen readOnly. [dokumentáció](../api/payment_mode.md)
 
