@@ -15,13 +15,32 @@ A [WebHook Resource](/api/webhook.md) az alábbi tulajdonságokkal rendelkezik
     - **0** - Letiltott
     - **1** - Engedélyezett
 - **Paraméterek (webHookParameters)**: A paraméterek segítségével beállítható, hogy milyen formátumban (type) vagy hova (url) menjen ki a webhook. Paraméterei:
-    - **Formátum (type)**: json vagy xml
+    - **Formátum (type)**: "json" vagy "xml"
     - **Url (url)**
 - **Időzítés (webHookDelay)**: Az időzítés segítéségvel beállítható, hogy a kiváltó eseményt követően mikor történjen meg az értesítés, azaz menjen ki a webhook. Amennyiben ez az érték nincs megadva úgy a kiküldés azonnali. Paraméterei:
     - **Késletetés mennyisége (delay)**: pl: 10
     - **Késleltetés mértékegysége (delayUnit)**: nap (day) vagy óra (hour)
 
-Konkrét példák a [WebHook Resource](/api/webhook.md) oldalon található.
+Konkrét példa POST kérésre JSON formátumban:
+```json
+{
+    "label": "teszt webhook",
+    "event": "order_confirm",
+    "status": 1,
+    "webHookParameters": [
+        {
+            "type": "json",
+            "url": "http:\/\/shoprenter.hu\n"
+        }
+    ],
+    "webHookDelay": [
+        {
+            "delay": 10,
+            "delayUnit": "day"
+        }
+    ]
+}
+```
 
 ## Elküldhető adatok listája
 
