@@ -8,13 +8,13 @@ A webhook küldése során a webáruház egy külső szoftver számára küld ad
 ## Tulajdonságok
 A [WebHook Resource](/api/webhook.md) az alábbi tulajdonságokkal rendelkezik
 - **Megnevezés (label)**: Az értesítés belső azonosítására szolgál, az üzenetben nem lesz látható az itt megadott név.
-- **Esemény (event)**: Az általunk kiválasztott esemény típusa, amely az alábbiak lehetnek:
-    - **Rendelés félbehagyás (order_confirm)**: Azoknak a felhasználóknak a célzására szolgál, akik félbehagyták a vásárlást. Ennek segítségével a vásárlások befejezésére ösztönözhetjük a felhasználókat, azáltal, hogy elküldjük számukra a félbehagyott kosaruk visszaállításához szükséges URL-t egy kuponkóddal fűszerezve, hogy fejezzék be a vásárlást.
-    - **Új rendelés feladás (order_status_change )**: Olyan üzenetet küldhetünk, melynek kiváltó eseménye egy megrendelés. Ezt például használhatjuk arra, hogy vevőinktől véleményeket kérjük a megrendelt termékekre vonatkozóan.
+- **Esemény (event)**: Az általunk kiválasztott esemény típusa, amely az alábbi lehet:
+    - **Új rendelés feladás (order_confirm)**: Olyan üzenetet küldhetünk, melynek kiváltó eseménye egy megrendelés. Ezt például használhatjuk arra, hogy vevőinktől véleményeket kérjük a megrendelt termékekre vonatkozóan.
+    - **Rendelés állapot váltás (order_status_change )**: Amennyiben a rendelések státuszának változásáról szeretnénk értesíteni az ügyfeleinket vagy kollégáinkat, úgy érdemes ezt a menüpontot  is használni. Illetve ugyanígy használhatjuk ezt a kiváltó eseményt a vevőcsoportok kapcsán is, amikor egy rendelés állapotának változását a vevőcsoportokban történő mozgatás követ.
 - **Státusz (status)**: Itt lehet engedélyezni, vagy letiltani az értesítést. Értékei:
     - **0** - Letiltott
     - **1** - Engedélyezett
-- **Paraméterek (webHookParameters)**: A paraméterek segítségével beállítható, hogy milyen formátumban (type) vagy hova (url) menjen ki a webhook. Paraméterei:
+- **Paraméterek (webHookParameters)**: A paraméterek segítségével beállítható, hogy milyen formátumban (type) vagy hova (url) menjen ki a webhook. A paramétereket egy tömbben tárolt objectként kell átadni. Paraméterei:
     - **Formátum (type)**: json vagy xml
     - **Url (url)**
 - **Időzítés (webHookDelay)**: Az időzítés segítéségvel beállítható, hogy a kiváltó eseményt követően mikor történjen meg az értesítés, azaz menjen ki a webhook. Amennyiben ez az érték nincs megadva úgy a kiküldés azonnali. Paraméterei:
@@ -25,62 +25,74 @@ Konkrét példák a [WebHook Resource](/api/webhook.md) oldalon található.
 
 ## Elküldhető adatok listája
 
-A rendelésről kiküldött webhook fontosabb értékeinek a jelentése.
+A rendelésről kiküldött webhook értékeinek a jelentése.
 
 |Kulcs|Érték|
 |-----|-----|
+|storeName|Bolt neve|
 |innerId|Rendelés azonosító|
 |innerResourceId|Rendelés resource azonosító|
+|outerResourceId|Rendelés külső resource azonosító|
 |firstname|Vevő keresztneve|
 |lastname|Vevő vezetékneve|
 |phone|Tefonszám|
 |fax|Fax|
 |email|Email cím|
+|cart_token|Cart token|
 |shippingFirstname|Szállítási cím keresztneve|
 |shippingLastname|Szállítási cím vezetékneve|
 |shippingCompany|Szállítási cím cégneve|
-|shippingAddress1|Szállítási cím utcája, házszáma|
+|shippingAddress1|Szállítási cím 1 utcája, házszáma|
+|shippingAddress2|Szállítási cím 2 utcája, házszáma|
 |shippingCity|Szállítási cím városa|
 |shippingCountryName|Szállítási cím országának neve|
 |shippingZoneName|Szállítási cím megyéjének neve|
 |shippingPostcode|Szállítási cím irányítószáma|
+|shippingMethodName|Szállítási mód típusa|
+|shippingInnerResourceId|Szállítási mód resource azonosítója|
+|shippingNetPrice|Szállítási mód nettó költsége|
+|shippingGrossPrice|Szállítási mód bruttó költsége|
 |paymentFirstname|Számlázási cím keresztneve|
 |paymentLastname|Számlázási cím vezetékneve|
 |paymentCompany|Számlázási cím cégneve|
-|paymentAddress1|Számlázási cím utcája, házszáma|
+|paymentAddress1|Számlázási cím 1 utcája, házszáma|
+|paymentAddress2|Számlázási cím 2 utcája, házszáma|
 |paymentCity|Számlázási cím városa|
 |paymentCountryName|Számlázási cím országának neve|
-|paymentPostcode|Számlázási cím országának neve|
+|paymentPostcode|Számlázási cím irányítószáma|
+|paymentTaxnumber|Számlázási cím adószáma|
 |paymentZoneName|Számlázási cím megyéjének neve|
-|shippingMethodName|Szállítási mód típusa|
-|shippingNetPrice|Szállítási mód nettó költsége|
-|shippingGrossPrice|Szállítási mód bruttó költsége|
 |paymentMethodName|Fizetési mód neve|
 |paymentNetPrice|Fizetési illeték nettó költsége|
-|shippingGrossPrice|Fizetési illeték bruttó költsége|
+|paymentGrossPrice|Fizetési illeték bruttó költsége|
 |couponCode|Kupon kódja|
 |couponGrossPrice|Kupon bruttó összege|
+|languageId|Nyelv azonosítója|
+|languageCode|Nyelv kódja|
 |comment|Rendelés megjegyzése|
 |total|Rendelés nettó összege|
+|totalGross|Rendelés bruttó végösszege|
 |taxPrice|Rendelés áfa tartalma|
 |orderHistory|Rendelés állapota|
 |currency|Rendelés pénznemének kódja|
-|totalGross|Rendelés bruttó végösszege|
+|orderHistory|Rendelés állapota|
 |orderProducts|Rendelt termékek tömbje|
 
 A rendelt termékekkel kapcsolatos információk az **orderProducts** tömbben találhatók, melynek jelentései az alábbiak.
 
 |Kulcs|Érték|
 |-----|-----|
+|innerId|Termék azonosító|
+|innerResourceId|Termék resource azonosító|
 |name|Név|
-|sku|Cikkszáma
+|sku|Cikkszám|
 |price|Nettóérték|
 |currency|Pénznem|
 |taxRate|ÁFA kulcs|
 |quantity|Mennyiség|
-|image|Kép linkje|
+|image|Kép link|
 |category|Termékkategória|
-|volume|Méretek|
+|volume|Méretek: height (magasság), hosszúság (length), szélesség (width), mértékegység (volumeUnit)|
 |weight|Súly|
 
 Példa webhook:
@@ -107,7 +119,7 @@ Példa webhook:
             "shippingAddress2":"",
             "shippingCity":"Debrecen",
             "shippingCountryName":"Magyarorsz\u00e1g",
-            "shippingZoneName":"Budapest",
+            "shippingZoneName":"Hajd\u00fa-Bihar",
             "shippingPostcode":"4033",
             "paymentFirstname":"Teszt",
             "paymentLastname":"P\u00e9ter",
@@ -116,7 +128,7 @@ Példa webhook:
             "paymentAddress2":"",
             "paymentCity":"Debrecen",
             "paymentCountryName":"Magyarorsz\u00e1g",
-            "paymentZoneName":"Budapest",
+            "paymentZoneName":"Hajd\u00fa-Bihar",
             "shippingMethodName":"H\u00e1zhozsz\u00e1ll\u00edt\u00e1s fut\u00e1rszolg\u00e1lattal",
             "shippingNetPrice":970.0714,
             "shippingGrossPrice":"1006",
