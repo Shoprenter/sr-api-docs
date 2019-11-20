@@ -21,7 +21,26 @@ A [WebHook Resource](/api/webhook.md) az alábbi tulajdonságokkal rendelkezik
     - **Késletetés mennyisége (delay)**: pl: 10
     - **Késleltetés mértékegysége (delayUnit)**: nap (day) vagy óra (hour)
 
-Konkrét példák a [WebHook Resource](/api/webhook.md) oldalon található.
+Konkrét példa POST kérésre JSON formátumban:
+```json
+{
+    "label": "teszt webhook",
+    "event": "order_confirm",
+    "status": 1,
+    "webHookParameters": [
+        {
+            "type": "json",
+            "url": "http:\/\/shoprenter.hu\n"
+        }
+    ],
+    "webHookDelay": [
+        {
+            "delay": 10,
+            "delayUnit": "day"
+        }
+    ]
+}
+```
 
 ## Elküldhető adatok listája
 
