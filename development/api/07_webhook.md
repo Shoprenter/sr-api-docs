@@ -1,9 +1,7 @@
 # WebHook automatizmus
 
-
-Az automatizmusok valamilyen esemény hatására (például rendelés feladása) kiváltódó másik esemény (például: webhook küldés). 
-A [WebHook Resource](/api/webhook.md) segítségével olyan automatizmusokat hozhatunk létre API-n keresztül, amelyet máskülönben csak az admin oldalt a **Marketing->Automatizmusok** menüpontban tudnánk megvalósítani. 
-A webhook küldése során a webáruház egy külső szoftver számára küld adatokat JSON/XML formátumban. A külső rendszer lehet akár egy ERP rendszer vagy egy számlázó, de számos további felhasználási módja lehetséges.  
+A WebHook egy olyan automatikus üzenet a webáruháztól egy külső rendszer felé, amely olyan események hatására váltódhat ki, mint például egy rendelés feladása vagy egy rendelés állapotának megváltozása.
+A [WebHook Resource](/api/webhook.md) segítségével ilyen automatizmusokat hozhatunk létre API-n keresztül. A webhookkal küldött adat formátuma lehet XML vagy JSON. A külső rendszer lehet akár egy ERP rendszer vagy egy számlázó, de számos további felhasználási módja lehetséges.  
 
 ## Tulajdonságok
 A [WebHook Resource](/api/webhook.md) az alábbi tulajdonságokkal rendelkezik
