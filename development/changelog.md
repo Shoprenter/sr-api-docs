@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2019.11.21.
+- [WebHook automatizmus](api/07_webhook.md) dokumentációja hozzáadva.
+
 #### 2019.11.20.
 - A Product Extend Resource GET endpoint hívása kiegészült egy **productPrices** tömbbel, amellyel a termékek árait kaphatjuk meg vevőcsoportokra szétbontva. [dokumentáció](../api/product_extend.md)
 
