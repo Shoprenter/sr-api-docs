@@ -2,6 +2,7 @@
 
 #### 2020.01.22.
 - Pótolva lett a CustomerGroup Resource és a Product Extend Resource ProductPrice adataiban a Customer Group InnerId-t. 
+- Pótolva lett a CustomerGroup Resource és a Product Extend Resource ProductPrice adataiban a Customer Group InnerId-t. 
 
 #### 2019.11.21.
 - [WebHook automatizmus](api/07_webhook.md) dokumentációja hozzáadva.
