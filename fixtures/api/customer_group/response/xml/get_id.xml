@@ -1,6 +1,7 @@
 <response>
     <href><![CDATA[http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02]]></href>
     <id><![CDATA[Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02]]></id>
+    <innerId><![CDATA[6]]></innerId>
     <name><![CDATA[Törzsvásárló]]></name>
     <percentDiscount><![CDATA[20]]></percentDiscount>
     <percentDiscountSpecialPrices><![CDATA[0]]></percentDiscountSpecialPrices>

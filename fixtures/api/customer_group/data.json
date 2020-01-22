@@ -10,6 +10,15 @@
             "readonly": false
         },
         {
+            "name": "innerId",
+            "description": {
+                "hu": "Vásárlói csoport belső azonosító.",
+                "en": "Vásárlói csoport belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
             "name": "name",
             "description": {
                 "hu": "Név.",
