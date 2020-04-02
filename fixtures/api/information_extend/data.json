@@ -3,8 +3,8 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál."
+                "hu": "Szöveges menüpont azonosító. Az OuterID módosítására szolgál.",
+                "en": "Szöveges menüpont azonosító. Az OuterID módosítására szolgál."
             },
             "required": false,
             "readonly": false
@@ -12,8 +12,8 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Szöveges tartalom belső azonosító.",
-                "en": "Szöveges tartalom belső azonosító."
+                "hu": "Szöveges menüpont belső azonosító.",
+                "en": "Szöveges menüpont belső azonosító."
             },
             "required": false,
             "readonly": true
@@ -21,8 +21,8 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend a többi szöveges tartalomhoz képest.",
-                "en": "Sorrend a többi szöveges tartalomhoz képest."
+                "hu": "Sorrend a többi szöveges menüponthoz képest.",
+                "en": "Sorrend a többi szöveges menüponthoz képest."
             },
             "required": false,
             "readonly": false
@@ -39,8 +39,8 @@
         {
             "name": "informationDescriptions",
             "description": {
-                "hu": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",
-                "en": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    "
+                "hu": "\n                        A szöveges menüponthoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",
+                "en": "\n                        A szöveges menüponthoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    "
             },
             "required": true,
             "readonly": false
@@ -50,8 +50,8 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/informationExtend\/szöveges tartalom id",
-                "en": "\/informationExtend\/szöveges tartalom id"
+                "hu": "\/informationExtend\/szöveges menüpont id",
+                "en": "\/informationExtend\/szöveges menüpont id"
             },
             "description": {
                 "hu": "Egy konkrét elem lekérésére szolgál.",
@@ -98,8 +98,8 @@
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Szöveges tartalom belső azonosító.",
-                        "en": "Kereső paraméter. Szöveges tartalom belső azonosító."
+                        "hu": "Kereső paraméter. Szöveges menüpont belső azonosító.",
+                        "en": "Kereső paraméter. Szöveges menüpont belső azonosító."
                     }
                 }
             ],
@@ -111,8 +111,8 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/informationExtend[\/szöveges tartalom id]",
-                "en": "\/informationExtend[\/szöveges tartalom id]"
+                "hu": "\/informationExtend[\/szöveges menüpont id]",
+                "en": "\/informationExtend[\/szöveges menüpont id]"
             },
             "description": {
                 "hu": "Létrehozásra és módosításra is szolgál.",
@@ -127,8 +127,8 @@
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/informationExtend\/szöveges tartalom id",
-                "en": "\/informationExtend\/szöveges tartalom id"
+                "hu": "\/informationExtend\/szöveges menüpont id",
+                "en": "\/informationExtend\/szöveges menüpont id"
             },
             "description": {
                 "hu": "Létrehozásra és módosításra is szolgál.",
@@ -143,8 +143,8 @@
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/informationExtend\/szöveges tartalom id",
-                "en": "\/informationExtend\/szöveges tartalom id"
+                "hu": "\/informationExtend\/szöveges menüpont id",
+                "en": "\/informationExtend\/szöveges menüpont id"
             },
             "description": {
                 "hu": "Törlésre szolgál.",
