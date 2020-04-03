@@ -305,7 +305,7 @@
         {
             "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsYW5ndWFnZV9pZD0x",
-            "title": "Szöveges tartalom címe",
+            "title": "Szöveges menüpont címe",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
                 "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTU="

@@ -3,8 +3,8 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szöveges tartalom leírás azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szöveges tartalom leírás azonosító. Az OuterID módosítására szolgál."
+                "hu": "Szöveges menüpont leírás azonosító. Az OuterID módosítására szolgál.",
+                "en": "Szöveges menüpont leírás azonosító. Az OuterID módosítására szolgál."
             },
             "required": false,
             "readonly": false
@@ -12,8 +12,8 @@
         {
             "name": "title",
             "description": {
-                "hu": "Szöveges tartalom címe.",
-                "en": "Szöveges tartalom címe."
+                "hu": "Szöveges menüpont címe.",
+                "en": "Szöveges menüpont címe."
             },
             "required": false,
             "readonly": false
@@ -21,8 +21,8 @@
         {
             "name": "description",
             "description": {
-                "hu": "\n                        Szöveges tartalom.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",
-                "en": "\n                        Szöveges tartalom.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    "
+                "hu": "Szöveges menüpont.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.",
+                "en": "Szöveges menüpont.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező."
             },
             "required": false,
             "readonly": false
@@ -39,8 +39,8 @@
         {
             "name": "information",
             "description": {
-                "hu": "Szöveges tartalom belső azonosítója.",
-                "en": "Szöveges tartalom belső azonosítója."
+                "hu": "Szöveges menüpont belső azonosítója.",
+                "en": "Szöveges menüpont belső azonosítója."
             },
             "required": true,
             "readonly": true
@@ -50,8 +50,8 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/informationDescriptions\/szöveges tartalom leírás id",
-                "en": "\/informationDescriptions\/szöveges tartalom leírás id"
+                "hu": "\/informationDescriptions\/szöveges menüpont leírás id",
+                "en": "\/informationDescriptions\/szöveges menüpont leírás id"
             },
             "description": {
                 "hu": "Egy konkrét elem lekérésére szolgál.",
@@ -104,8 +104,8 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/informationDescriptions[\/szöveges tartalom leírás id]",
-                "en": "\/informationDescriptions[\/szöveges tartalom leírás id]"
+                "hu": "\/informationDescriptions[\/szöveges menüpont leírás id]",
+                "en": "\/informationDescriptions[\/szöveges menüpont leírás id]"
             },
             "description": {
                 "hu": "Létrehozásra és módosításra is szolgál.",
@@ -120,8 +120,8 @@
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/informationDescriptions\/szöveges tartalom leírás id",
-                "en": "\/informationDescriptions\/szöveges tartalom leírás id"
+                "hu": "\/informationDescriptions\/szöveges menüpont leírás id",
+                "en": "\/informationDescriptions\/szöveges menüpont leírás id"
             },
             "description": {
                 "hu": "Létrehozásra és módosításra is szolgál.",
@@ -136,8 +136,8 @@
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/informationDescriptions\/szöveges tartalom leírás id",
-                "en": "\/informationDescriptions\/szöveges tartalom leírás id"
+                "hu": "\/informationDescriptions\/szöveges menüpont leírás id",
+                "en": "\/informationDescriptions\/szöveges menüpont leírás id"
             },
             "description": {
                 "hu": "Törlésre szolgál.",
