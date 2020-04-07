@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.04.07.
+- Product Description Resource kiegészült a metaTitle propertyvel.
+
 #### 2020.01.22.
 - Pótolva lett a CustomerGroup Resource és a Product Extend Resource ProductPrice adataiban a Customer Group InnerId-t.
 
