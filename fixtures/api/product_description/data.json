@@ -19,6 +19,15 @@
             "readonly": false
         },
         {
+            "name": "metaTitle",
+            "description": {
+                "hu": "Meta title.",
+                "en": "Meta title."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "metaKeywords",
             "description": {
                 "hu": "Meta kulcsszavak.",
