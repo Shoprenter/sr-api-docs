@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.04.15.
+- A példa alkalmazások menüpont kiegészült egy bővebb Slim keretrendszerre épülő demo alkalmazással.
+
 #### 2020.04.07.
 - Product Description Resource kiegészült a metaTitle propertyvel.
 
