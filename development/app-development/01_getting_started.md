@@ -54,4 +54,5 @@ A post requestnek tarttalmaznia kell az alábbi mezőket:
 
 ### Példa alkalmazások
 - [SR Demo app PHP](https://github.com/Shoprenter/sr-demo-app-php)
+- [SR Demo app PHP Slim](https://github.com/Shoprenter/sr-demo-app-php-slim)
 - [SR Demo app Node.js](https://github.com/Shoprenter/sr-demo-app-node)
