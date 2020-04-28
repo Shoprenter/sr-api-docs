@@ -37,6 +37,42 @@
             "readonly": false
         },
         {
+            "name": "showInHeader",
+            "description": {
+                "hu": "Jelenjen meg fejlécben? Érteke: 0 vagy 1",
+                "en": "Jelenjen meg fejlécben? Érteke: 0 vagy 1"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "showInInfoModule",
+            "description": {
+                "hu": "Jelenjen meg az Információk modulban? Érteke: 0 vagy 1",
+                "en": "Jelenjen meg fejlécben? Érteke: 0 vagy 1"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "showInInfoModule2",
+            "description": {
+                "hu": "Jelenjen meg az Információk 2 modulban? Érteke: 0 vagy 1",
+                "en": "Jelenjen meg az Információk 2 modulban? Érteke: 0 vagy 1"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "showInInfoModule3",
+            "description": {
+                "hu": "Jelenjen meg az Információk 3 modulban? Érteke: 0 vagy 1",
+                "en": "Jelenjen meg az Információk 3 modulban? Érteke: 0 vagy 1"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "informationDescriptions",
             "description": {
                 "hu": "\n                        A szöveges menüponthoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",

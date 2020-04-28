@@ -4,6 +4,10 @@
     "innerId": "16",
     "sortOrder": "1",
     "enabled": "1",
+    "showInHeader": "1",
+    "showInInfoModule": "1",
+    "showInInfoModule2": "1",
+    "showInInfoModule3": "0",
     "informationDescriptions": [
         {
             "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x",

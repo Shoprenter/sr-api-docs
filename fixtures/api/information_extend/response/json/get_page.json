@@ -18,6 +18,10 @@
             "innerId": "3",
             "sortOrder": "3",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "1",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=",
@@ -51,6 +55,10 @@
             "innerId": "4",
             "sortOrder": "1",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "0",
+            "showInInfoModule3": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=",
@@ -84,6 +92,10 @@
             "innerId": "5",
             "sortOrder": "2",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "0",
+            "showInInfoModule3": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=",
@@ -117,6 +129,10 @@
             "innerId": "6",
             "sortOrder": "4",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=",
@@ -150,6 +166,10 @@
             "innerId": "7",
             "sortOrder": "5",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "1",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=",
@@ -183,6 +203,10 @@
             "innerId": "8",
             "sortOrder": "6",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "1",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=",
