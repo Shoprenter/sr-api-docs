@@ -47,7 +47,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_1",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==",
@@ -84,7 +93,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_2",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==",
@@ -121,7 +139,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_3",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==",
@@ -158,7 +185,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_4",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==",
@@ -195,7 +231,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_6",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==",
@@ -232,7 +277,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_7",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         }
     ]
 }

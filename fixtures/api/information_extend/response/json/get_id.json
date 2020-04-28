@@ -33,5 +33,14 @@
                 "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         }
-    ]
+    ],
+    "urlAliases": {
+        "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+        "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+        "type": "INFORMATION",
+        "urlAlias": "example_information_1",
+        "urlAliasEntity": {
+            "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+        }
+    }
 }

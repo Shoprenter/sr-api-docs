@@ -80,6 +80,15 @@
             },
             "required": true,
             "readonly": false
+        },
+        {
+            "name": "urlAliases *",
+            "description": {
+                "hu": "A Szöveges menüpont keresőbarát URL-jének adatai. Nevével ellentétben termékenként csak 1 db van belőle.",
+                "en": "A Szöveges menüpont keresőbarát URL-jének adatai. Nevével ellentétben termékenként csak 1 db van belőle."
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {

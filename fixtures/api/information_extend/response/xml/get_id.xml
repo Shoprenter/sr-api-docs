@@ -74,4 +74,23 @@
             </href>
         </language>
     </informationDescriptions>
+    <urlAliases>
+        <href>
+            <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+        </href>
+        <id>
+            <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+        </id>
+        <type>
+            <![CDATA[INFORMATION]]>
+        </type>
+        <urlAlias>
+            <![CDATA[adatvedelmi_nyilatkozat_4]]>
+        </urlAlias>
+        <urlAliasEntity>
+            <href>
+                <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+            </href>
+        </urlAliasEntity>
+    </urlAliases>
 </response>

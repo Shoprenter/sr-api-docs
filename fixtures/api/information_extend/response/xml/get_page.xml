@@ -110,6 +110,25 @@
                     </href>
                 </language>
             </informationDescriptions>
+            <urlAliases>
+                <href>
+                    <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </href>
+                <id>
+                    <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </id>
+                <type>
+                    <![CDATA[INFORMATION]]>
+                </type>
+                <urlAlias>
+                    <![CDATA[example_information_1]]>
+                </urlAlias>
+                <urlAliasEntity>
+                    <href>
+                        <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+                    </href>
+                </urlAliasEntity>
+            </urlAliases>
         </item>
         <item>
             <href>
@@ -275,6 +294,25 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                     </href>
                 </language>
             </informationDescriptions>
+            <urlAliases>
+                <href>
+                    <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </href>
+                <id>
+                    <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </id>
+                <type>
+                    <![CDATA[INFORMATION]]>
+                </type>
+                <urlAlias>
+                    <![CDATA[example_information_2]]>
+                </urlAlias>
+                <urlAliasEntity>
+                    <href>
+                        <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+                    </href>
+                </urlAliasEntity>
+            </urlAliases>
         </item>
         <item>
             <href>
@@ -472,6 +510,25 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                     </href>
                 </language>
             </informationDescriptions>
+            <urlAliases>
+                <href>
+                    <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </href>
+                <id>
+                    <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </id>
+                <type>
+                    <![CDATA[INFORMATION]]>
+                </type>
+                <urlAlias>
+                    <![CDATA[example_information_3]]>
+                </urlAlias>
+                <urlAliasEntity>
+                    <href>
+                        <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+                    </href>
+                </urlAliasEntity>
+            </urlAliases>
         </item>
         <item>
             <href>
@@ -553,6 +610,25 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                     </href>
                 </language>
             </informationDescriptions>
+            <urlAliases>
+                <href>
+                    <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </href>
+                <id>
+                    <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </id>
+                <type>
+                    <![CDATA[INFORMATION]]>
+                </type>
+                <urlAlias>
+                    <![CDATA[example_information_4]]>
+                </urlAlias>
+                <urlAliasEntity>
+                    <href>
+                        <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+                    </href>
+                </urlAliasEntity>
+            </urlAliases>
         </item>
         <item>
             <href>
@@ -710,6 +786,25 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                     </href>
                 </language>
             </informationDescriptions>
+            <urlAliases>
+                <href>
+                    <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </href>
+                <id>
+                    <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </id>
+                <type>
+                    <![CDATA[INFORMATION]]>
+                </type>
+                <urlAlias>
+                    <![CDATA[example_information_5]]>
+                </urlAlias>
+                <urlAliasEntity>
+                    <href>
+                        <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+                    </href>
+                </urlAliasEntity>
+            </urlAliases>
         </item>
         <item>
             <href>
@@ -791,6 +886,25 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                     </href>
                 </language>
             </informationDescriptions>
+            <urlAliases>
+                <href>
+                    <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </href>
+                <id>
+                    <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+                </id>
+                <type>
+                    <![CDATA[INFORMATION]]>
+                </type>
+                <urlAlias>
+                    <![CDATA[example_information_6]]>
+                </urlAlias>
+                <urlAliasEntity>
+                    <href>
+                        <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+                    </href>
+                </urlAliasEntity>
+            </urlAliases>
         </item>
     </items>
 </response>
