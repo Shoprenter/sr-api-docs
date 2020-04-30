@@ -22,6 +22,7 @@
             "showInInfoModule": "1",
             "showInInfoModule2": "1",
             "showInInfoModule3": "1",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=",
@@ -68,6 +69,7 @@
             "showInInfoModule": "1",
             "showInInfoModule2": "0",
             "showInInfoModule3": "0",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=",
@@ -114,6 +116,7 @@
             "showInInfoModule": "1",
             "showInInfoModule2": "0",
             "showInInfoModule3": "0",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=",
@@ -160,6 +163,7 @@
             "showInInfoModule": "1",
             "showInInfoModule2": "1",
             "showInInfoModule3": "0",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=",
@@ -206,6 +210,7 @@
             "showInInfoModule": "1",
             "showInInfoModule2": "1",
             "showInInfoModule3": "1",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=",
@@ -252,6 +257,7 @@
             "showInInfoModule": "1",
             "showInInfoModule2": "1",
             "showInInfoModule3": "1",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=",
