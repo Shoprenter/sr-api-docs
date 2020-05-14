@@ -1,5 +1,14 @@
 # API changelog
 
+#### 2020.05.14.
+- Az Information Extend Resource-ba bekerült az UrlAliases property, illetve szabályozhatóvá vált a láthatósága a resouce-al felvett Szöveges menüpontoknak:
+
+https://doc.shoprenter.hu/api/information_extend.html
+
+Természetesen bővült az URL Alias Resource is. Ezentúl INFORMATION típusú alias is kezelhető:
+
+https://doc.shoprenter.hu/api/url_alias.html
+
 #### 2020.04.15.
 - A példa alkalmazások menüpont kiegészült egy bővebb Slim keretrendszerre épülő demo alkalmazással.
 
