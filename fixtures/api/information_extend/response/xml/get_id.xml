@@ -14,6 +14,21 @@
     <enabled>
         <![CDATA[1]]>
     </enabled>
+    <showInHeader>
+        <![CDATA[1]]>
+    </showInHeader>
+    <showInInfoModule>
+        <![CDATA[1]]>
+    </showInInfoModule>
+    <showInInfoModule2>
+        <![CDATA[1]]>
+    </showInInfoModule2>
+    <showInInfoModule3>
+        <![CDATA[0]]>
+    </showInInfoModule3>
+    <showInFooter>
+        <![CDATA[1]]>
+    </showInFooter>
     <informationDescriptions>
         <href>
             <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x]]>
@@ -62,4 +77,23 @@
             </href>
         </language>
     </informationDescriptions>
+    <urlAliases>
+        <href>
+            <![CDATA[http://demo.api.aurora.rosti/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+        </href>
+        <id>
+            <![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTE1NDI=]]>
+        </id>
+        <type>
+            <![CDATA[INFORMATION]]>
+        </type>
+        <urlAlias>
+            <![CDATA[adatvedelmi_nyilatkozat_4]]>
+        </urlAlias>
+        <urlAliasEntity>
+            <href>
+                <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
+            </href>
+        </urlAliasEntity>
+    </urlAliases>
 </response>

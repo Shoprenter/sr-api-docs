@@ -1,6 +1,11 @@
 {
   "sortOrder":"1",
   "enabled":"1",
+  "showInHeader": "1",
+  "showInInfoModule": "1",
+  "showInInfoModule2": "1",
+  "showInInfoModule3": "0",
+  "showInFooter": "0",
   "informationDescriptions":[
     {
       "title":"Szöveges menüpont címe",

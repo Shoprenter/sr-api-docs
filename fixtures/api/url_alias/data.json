@@ -12,8 +12,8 @@
         {
             "name": "type",
             "description": {
-                "hu": "Típus. Lehetséges értékek: PRODUCT, CATEGORY, MANUFACTURER.",
-                "en": "Típus. Lehetséges értékek: PRODUCT, CATEGORY, MANUFACTURER."
+                "hu": "Típus. Lehetséges értékek: PRODUCT, CATEGORY, MANUFACTURER, INFORMATION.",
+                "en": "Típus. Lehetséges értékek: PRODUCT, CATEGORY, MANUFACTURER, INFORMATION."
             },
             "required": true,
             "readonly": true

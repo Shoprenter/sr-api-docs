@@ -18,6 +18,11 @@
             "innerId": "3",
             "sortOrder": "3",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "1",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=",
@@ -43,7 +48,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_1",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==",
@@ -51,6 +65,11 @@
             "innerId": "4",
             "sortOrder": "1",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "0",
+            "showInInfoModule3": "0",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=",
@@ -76,7 +95,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_2",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==",
@@ -84,6 +112,11 @@
             "innerId": "5",
             "sortOrder": "2",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "0",
+            "showInInfoModule3": "0",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=",
@@ -109,7 +142,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_3",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==",
@@ -117,6 +159,11 @@
             "innerId": "6",
             "sortOrder": "4",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "0",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=",
@@ -142,7 +189,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_4",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==",
@@ -150,6 +206,11 @@
             "innerId": "7",
             "sortOrder": "5",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "1",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=",
@@ -175,7 +236,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_6",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         },
         {
             "href": "http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==",
@@ -183,6 +253,11 @@
             "innerId": "8",
             "sortOrder": "6",
             "enabled": "1",
+            "showInHeader": "1",
+            "showInInfoModule": "1",
+            "showInInfoModule2": "1",
+            "showInInfoModule3": "1",
+            "showInFooter": "0",
             "informationDescriptions": [
                 {
                     "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=",
@@ -208,7 +283,16 @@
                         "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
                     }
                 }
-            ]
+            ],
+            "urlAliases": {
+                "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+                "type": "INFORMATION",
+                "urlAlias": "example_information_7",
+                "urlAliasEntity": {
+                    "href": "http://shopname.api.shoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                }
+            }
         }
     ]
 }
