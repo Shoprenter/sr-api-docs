@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.05.18.
+- A Shipping Mode Extend Resource-on keresztül elérhetőek lettek  integrált szállítási módok is. Fontos: csak, a Shoprenter adminon szerkesztett, szállítási módok érhetőek el és a WSESHIP (egyedi, felhasználók által létrehozott) típusúak módosíthatóak API-on keresztül.
+
 #### 2020.05.14.
 - Az Information Extend Resource-ba bekerült az UrlAliases property, illetve szabályozhatóvá vált a láthatósága a resouce-al felvett Szöveges menüpontoknak:
 
