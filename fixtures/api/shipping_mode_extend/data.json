@@ -37,6 +37,15 @@
             "readonly": false
         },
         {
+            "name": "type",
+            "description": {
+                "hu": "Típus. Egyedi szállítási mód esetén (amit az API-val vagy kézzel vettek fel adminon) WSESHIP lesz a típus. Fontos, hogy csak a WSESHIP típusú szállítási módok módosíthatóak!",
+                "en": "Típus. Egyedi szállítási mód esetén (amit az API-val vagy kézzel vettek fel adminon) WSESHIP lesz a típus. Fontos, hogy csak a WSESHIP típusú szállítási módok módosíthatóak!"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
             "name": "costCalculationBy",
             "description": {
                 "hu": "\n                        Mi alapján kalkuláljuk a szállítási költség? Lehetséges értékek:<br>\n                        <strong>PRICE:<\/strong> Kosár érték szerint<br>\n                        <strong>WEIGHT:<\/strong> Kosár súlya szerint<br>\n                        <strong>PRICE_WEIGHT:<\/strong> Kosár értéke és súlya szerint\n                    ",
