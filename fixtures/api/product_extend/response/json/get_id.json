@@ -59,6 +59,50 @@
             ]
         }
     ],
+    "productPrices": [
+        {
+            "customerGroup": {
+                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
+                "innerId": "6",
+                "default": false
+            },
+            "net": "1900",
+            "netOriginal": "1900",
+            "netSpecial": null,
+            "gross": "2413",
+            "grossOriginal": "2413",
+            "grossSpecial": null,
+            "currencyCode": "HUF"
+        },
+        {
+            "customerGroup": {
+                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04",
+                "innerId": "8",
+                "default": true
+            },
+            "net": "1900",
+            "netOriginal": "1900",
+            "netSpecial": null,
+            "gross": "2413",
+            "grossOriginal": "2413",
+            "grossSpecial": null,
+            "currencyCode": "HUF"
+        },
+        {
+            "customerGroup": {
+                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD0xMw==",
+                "innerId": "13",
+                "default": false
+            },
+            "net": "1710",
+            "netOriginal": "1710",
+            "netSpecial": null,
+            "gross": "2172",
+            "grossOriginal": "2172",
+            "grossSpecial": null,
+            "currencyCode": "HUF"
+        }
+    ],
     "taxClass": {
         "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
     },
@@ -371,107 +415,6 @@
     "collateralProducts": {
         "href": "http://shopname.api.shoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=/collateralProducts"
     },
-    "productPrices": [
-        {
-            "customerGroup": {
-                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
-                "innerId": "6",
-                "default": false
-            },
-            "price": [
-                {
-                    "price": "2413",
-                    "net": "1900",
-                    "gross": "2413",
-                    "priceOriginal": "2413",
-                    "netOriginal": "1900",
-                    "grossOriginal": "2413",
-                    "netSpecial": false,
-                    "grossSpecial": false,
-                    "unitprice": "0",
-                    "currencyCode": "HUF"
-                },
-                {
-                    "price": "8.62",
-                    "net": "6.79",
-                    "gross": "8.62",
-                    "priceOriginal": "8.62",
-                    "netOriginal": "6.79",
-                    "grossOriginal": "8.62",
-                    "netSpecial": false,
-                    "grossSpecial": false,
-                    "unitprice": "0.00",
-                    "currencyCode": "USD"
-                }
-            ]
-        },
-        {
-            "customerGroup": {
-                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04",
-                "innerId": "8",
-                "default": true
-            },
-            "price": [
-                {
-                    "price": "2413",
-                    "net": "1900",
-                    "gross": "2413",
-                    "priceOriginal": "2413",
-                    "netOriginal": "1900",
-                    "grossOriginal": "2413",
-                    "netSpecial": false,
-                    "grossSpecial": false,
-                    "unitprice": "0",
-                    "currencyCode": "HUF"
-                },
-                {
-                    "price": "8.62",
-                    "net": "6.79",
-                    "gross": "8.62",
-                    "priceOriginal": "8.62",
-                    "netOriginal": "6.79",
-                    "grossOriginal": "8.62",
-                    "netSpecial": false,
-                    "grossSpecial": false,
-                    "unitprice": "0.00",
-                    "currencyCode": "USD"
-                }
-            ]
-        },
-        {
-            "customerGroup": {
-                "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD0xMw==",
-                "innerId": "13",
-                "default": false
-            },
-            "price": [
-                {
-                    "price": "2172",
-                    "net": "1710",
-                    "gross": "2172",
-                    "priceOriginal": "2413",
-                    "netOriginal": "1710",
-                    "grossOriginal": "2172",
-                    "netSpecial": false,
-                    "grossSpecial": false,
-                    "unitprice": "0",
-                    "currencyCode": "HUF"
-                },
-                {
-                    "price": "7.76",
-                    "net": "6.11",
-                    "gross": "7.76",
-                    "priceOriginal": "8.62",
-                    "netOriginal": "6.11",
-                    "grossOriginal": "7.76",
-                    "netSpecial": false,
-                    "grossSpecial": false,
-                    "unitprice": "0.00",
-                    "currencyCode": "USD"
-                }
-            ]
-        }
-    ],
     "urlAliases": {
         "href": "http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
         "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
