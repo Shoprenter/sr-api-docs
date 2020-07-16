@@ -79,7 +79,7 @@
                 {
                     "customerGroup": {
                         "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
-                        "innerId": "6",
+                        "innerId": 6,
                         "default": false
                     },
                     "net": "1900",
@@ -93,7 +93,7 @@
                 {
                     "customerGroup": {
                         "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04",
-                        "innerId": "8",
+                        "innerId": 8,
                         "default": true
                     },
                     "net": "1900",
@@ -107,7 +107,7 @@
                 {
                     "customerGroup": {
                         "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD0xMw==",
-                        "innerId": "13",
+                        "innerId": 13,
                         "default": false
                     },
                     "net": "1710",
@@ -495,7 +495,7 @@
                 {
                     "customerGroup": {
                         "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
-                        "innerId": "6",
+                        "innerId": 6,
                         "default": false
                     },
                     "net": "1900",
@@ -509,7 +509,7 @@
                 {
                     "customerGroup": {
                         "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04",
-                        "innerId": "8",
+                        "innerId": 8,
                         "default": true
                     },
                     "net": "1900",
@@ -523,7 +523,7 @@
                 {
                     "customerGroup": {
                         "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD0xMw==",
-                        "innerId": "13",
+                        "innerId": 13,
                         "default": false
                     },
                     "net": "1710",
