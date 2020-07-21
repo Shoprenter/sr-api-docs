@@ -75,6 +75,50 @@
                     ]
                 }
             ],
+            "productPrices": [
+                {
+                    "customerGroup": {
+                        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
+                        "innerId": 6,
+                        "default": false
+                    },
+                    "net": "1900",
+                    "netOriginal": "1900",
+                    "netSpecial": null,
+                    "gross": "2413",
+                    "grossOriginal": "2413",
+                    "grossSpecial": null,
+                    "currencyCode": "HUF"
+                },
+                {
+                    "customerGroup": {
+                        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04",
+                        "innerId": 8,
+                        "default": true
+                    },
+                    "net": "1900",
+                    "netOriginal": "1900",
+                    "netSpecial": null,
+                    "gross": "2413",
+                    "grossOriginal": "2413",
+                    "grossSpecial": null,
+                    "currencyCode": "HUF"
+                },
+                {
+                    "customerGroup": {
+                        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD0xMw==",
+                        "innerId": 13,
+                        "default": false
+                    },
+                    "net": "1710",
+                    "netOriginal": "1710",
+                    "netSpecial": null,
+                    "gross": "2172",
+                    "grossOriginal": "2172",
+                    "grossSpecial": null,
+                    "currencyCode": "HUF"
+                }
+            ],
             "taxClass": {
                 "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -445,6 +489,50 @@
                             "id": "bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTImbGFuZ3VhZ2VfaWQ9MiZ2YWx1ZV9pZD0x"
                         }
                     ]
+                }
+            ],
+            "productPrices": [
+                {
+                    "customerGroup": {
+                        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
+                        "innerId": 6,
+                        "default": false
+                    },
+                    "net": "1900",
+                    "netOriginal": "1900",
+                    "netSpecial": null,
+                    "gross": "2413",
+                    "grossOriginal": "2413",
+                    "grossSpecial": null,
+                    "currencyCode": "HUF"
+                },
+                {
+                    "customerGroup": {
+                        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04",
+                        "innerId": 8,
+                        "default": true
+                    },
+                    "net": "1900",
+                    "netOriginal": "1900",
+                    "netSpecial": null,
+                    "gross": "2413",
+                    "grossOriginal": "2413",
+                    "grossSpecial": null,
+                    "currencyCode": "HUF"
+                },
+                {
+                    "customerGroup": {
+                        "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD0xMw==",
+                        "innerId": 13,
+                        "default": false
+                    },
+                    "net": "1710",
+                    "netOriginal": "1710",
+                    "netSpecial": null,
+                    "gross": "2172",
+                    "grossOriginal": "2172",
+                    "grossSpecial": null,
+                    "currencyCode": "HUF"
                 }
             ],
             "taxClass": {
