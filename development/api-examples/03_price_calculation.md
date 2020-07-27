@@ -163,7 +163,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
 
 ## 2. lépés
 
-Azt aktuális termék lekérdezése a **productExtend** resource segítségével.
+Az aktuális termék lekérdezése a **productExtend** resource segítségével.
 
 **Request**
 
