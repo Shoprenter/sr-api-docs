@@ -7,9 +7,9 @@ Az árszámolás 3 lépésből áll.
 ## 1. lépés
 
 Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befolyásoló tényezőt:
-- az összes **GeoZone**-t (Földrajzi zóna),
-- az összes **TaxRate**-et (ÁFA kulcs),
-- az összes **Currency**-t (Pénznem).
+- az összes [**GeoZone**-t (Földrajzi zóna)](../../api/geo_zone.md),
+- az összes [**TaxRate**-et (ÁFA kulcs)](../../api/tax_rate.md),
+- az összes [**Currency**-t (Pénznem)](../../api/currency.md).
 
 **Request**
 
@@ -52,7 +52,7 @@ Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befo
 }
 ```
 
-A Batch API válaszából kiderül, hogy a bolt milyen beállításokat tartalmaz:
+A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen beállításokat tartalmaz:
 
 ### Földrajzi zónák (GeoZone):
 
