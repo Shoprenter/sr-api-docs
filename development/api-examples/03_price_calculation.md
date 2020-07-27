@@ -1,17 +1,17 @@
 # Árszámítás
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy termék árát kiszámolni, az alapértelmezett pénznemről egy számunkra ideális másik pénznemre.
+Az alábbi példában bemutatásra kerül, hogy miként lehet egy termék árát kiszámolni az alapértelmezett pénznemről egy számunkra ideális másik pénznemre.
 
 Az árszámolás 3 lépésből áll.
 
 ## 1. lépés
 
 Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befolyásoló tényezőt:
-- az összes **Currency**-t (Pénznem), 
+- az összes **GeoZone**-t (Földrajzi zóna),
 - az összes **TaxRate**-et (ÁFA kulcs),
-- az összes **GeoZone**-t (Földrajzi zóna).
+- az összes **Currency**-t (Pénznem).
 
-#### Request
+**Request**
 
 <table>
   <tr>
@@ -54,7 +54,7 @@ Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befo
 
 A Batch API válaszából kiderül, hogy a bolt milyen beállításokat tartalmaz:
 
-**Földrajzi zónák:**
+### Földrajzi zónák (GeoZone):
 
 ```json
 {
@@ -89,7 +89,7 @@ A Batch API válaszából kiderül, hogy a bolt milyen beállításokat tartalma
 }
 ```
 
-**ÁFA kulcsok:**
+### ÁFA kulcsok (TaxRate):
 
 ```json
 {
@@ -128,7 +128,7 @@ A Batch API válaszából kiderül, hogy a bolt milyen beállításokat tartalma
 }
 ```
 
-**Pénznemek:**
+### Pénznemek (Currency):
 
 ```json
 {
@@ -165,7 +165,7 @@ A Batch API válaszából kiderül, hogy a bolt milyen beállításokat tartalma
 
 Azt aktuális termék lekérdezése a **productExtend** resource segítségével.
 
-#### Request
+**Request**
 
 <table>
   <tr>
@@ -185,7 +185,7 @@ Azt aktuális termék lekérdezése a **productExtend** resource segítségével
   </tr>
 </table>
 
-#### Response
+**Response**
 
 ```json
 {
@@ -222,8 +222,8 @@ Azt aktuális termék lekérdezése a **productExtend** resource segítségével
 }
 ```
 
-A válaszból számunkra csak a **productPrices** értéke lesz fontos.
-A **productPrices** lista tartalmazza a boltban alapértelmezettnek beállított pénznemmel kiszámolt árakat, vevői csoportok szerint lebontva.
+A válasz **productPrices** értéke lesz csak számunkra fontos.
+A **productPrices** lista tartalmazza a bolt alapértelmezett pénznemével kiszámolt árakat, vevői csoportok szerint lebontva.
 
 ## 3. lépés
 
@@ -239,6 +239,8 @@ Ha megvan a **földrajzi zóna** (GeoZone), akkor az alapján behatárolom az **
 Ezután a termék nettó árát megszorzom a már lekérdezett **pénznemek** (Currency) között megtalálható magyar forint **értékével**.
 Végül az **adó kulcs rátá** (TaxRate) segítségével kiszámolom a termék árát Áfával együtt.
 
+**Néhány példa:**
+
 - Nettó (net):
 
 `termék nettó ára * pénznem értéke = nettó ár`
@@ -251,8 +253,8 @@ Végül az **adó kulcs rátá** (TaxRate) segítségével kiszámolom a termék
 
 `1200.000 * 311.85000000 * (27.0000 / 100 + 1.0) = 475259.4 Ft`
 
-- Áfa összeg:
+- ÁFA összeg:
 
-`termék nettó ára * pénznem értéke * (ÁFA kulcs / 100) = áfa összeg`
+`termék nettó ára * pénznem értéke * (ÁFA kulcs / 100) = ÁFA összeg`
 
 `1200.000 * 311.85000000 * (27.0000 / 100) = 101039.4 Ft`
