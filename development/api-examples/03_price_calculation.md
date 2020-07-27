@@ -237,7 +237,7 @@ akkor a lekérdezett **földrajzi zónák** (GeoZone) közül ki kell keresnem, 
 Ha megvan a **földrajzi zóna** (GeoZone), akkor az alapján behatárolom az **adó kulcsot** (TaxRate).
 
 Ezután a termék nettó árát megszorzom a már lekérdezett **pénznemek** (Currency) között megtalálható magyar forint **értékével**.
-Végül az **adó kulcs rátá** (TaxRate) segítségével kiszámolom a termék árát Áfával együtt.
+Végül az **adó kulcs ráta** (TaxRate) segítségével kiszámolom a termék árát Áfával együtt.
 
 **Néhány példa:**
 
