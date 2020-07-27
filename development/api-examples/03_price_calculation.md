@@ -231,7 +231,7 @@ Az utolsó lépés maga az árszámítás, mivel az összes szükséges adatunk 
 
 A fenti példában látható, hogy a termék alapértelmezett pénzneme az euró ("EUR"). Valamint tudjuk, hogy melyik az alapértelmezett vevői csoport (CustomerGroup), 8-as innerId-val.
 
-Ha pl. meg akarom kapni magyar forintban ("HUF") a példában látható termék **alapértelmezett vevői csoporttal**, a termék **bruttó árát**, 
+Ha pl. meg akarom kapni magyar forintban ("HUF") a példában látható termék **bruttó árát** az **alapértelmezett vevői csoporttal**, 
 akkor a lekérdezett **földrajzi zónák** (GeoZone) közül ki kell keresnem, hogy melyikhez tartozik Magyarország.
 
 Ha megvan a **földrajzi zóna** (GeoZone), akkor az alapján behatárolom az **adó kulcsot** (TaxRate).
