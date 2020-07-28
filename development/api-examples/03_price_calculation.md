@@ -3,6 +3,9 @@
 Az alábbi példában bemutatásra kerül, hogy miként lehet egy termék árát kiszámolni az alapértelmezett pénznemről egy számunkra ideális másik pénznemre.
 
 Az árszámolás 3 lépésből áll.
+1. Az összes számoláshoz szükséges adat lekérdezése
+2. AZ aktuális termék lekérdezése
+3. A konkrét árszámítás
 
 ## 1. lépés
 
