@@ -11,5 +11,5 @@ features:
   link: /api/address.html
 - title: '<i class="far fa-list-alt"></i> API Changelog'
   link: /development/changelog.html
-footer: © 2011 - 2019 ShopRenter.hu Kft.
+footer: © 2011 - 2020 ShopRenter.hu Kft.
 ---
