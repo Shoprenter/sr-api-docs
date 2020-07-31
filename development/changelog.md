@@ -1,7 +1,7 @@
 # API changelog
 
-#### 2020.07.08.
-- ShopRenter.js shop propertyje kiegészült egy taxRate propertyvel, amellyel  az aktuális ÁFA kulcs elérhetővé vált.
+#### 2020.07.21.
+- A Product Extend Resource "productPrices" értéke megváltozott.
 
 #### 2020.05.18.
 - A Shipping Mode Extend Resource-on keresztül elérhetőek lettek  integrált szállítási módok is. Fontos: csak, a Shoprenter adminon szerkesztett, szállítási módok érhetőek el és a WSESHIP (egyedi, felhasználók által létrehozott) típusúak módosíthatóak API-on keresztül.
