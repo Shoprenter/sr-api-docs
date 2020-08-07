@@ -32,8 +32,8 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/files\/type=[típus]&filePath=[fájl elérési útvonala]",
-                "en": "\/files\/type=[típus]&filePath=[fájl elérési útvonala]"
+                "hu": "\/files?type=[típus]&filePath=[fájl elérési útvonala]",
+                "en": "\/files?type=[típus]&filePath=[fájl elérési útvonala]"
             },
             "description": {
                 "hu": "Egy konkrét elem lekérésére szolgál.",
