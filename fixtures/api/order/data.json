@@ -21,8 +21,8 @@
         {
             "name": "invoiceId",
             "description": {
-                "hu": "Számla azonosító.",
-                "en": "Számla azonosító."
+                "hu": "Szállítólevél azonosító.",
+                "en": "Szállítólevél azonosító."
             },
             "required": false,
             "readonly": false
@@ -30,8 +30,8 @@
         {
             "name": "invoiceIdPrefix",
             "description": {
-                "hu": "Számla azonosító prefix.",
-                "en": "Számla azonosító prefix."
+                "hu": "Szállítólevél azonosító előtag.",
+                "en": "Szállítólevél azonosító előtag."
             },
             "required": false,
             "readonly": false
