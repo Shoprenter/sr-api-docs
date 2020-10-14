@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.10.13.
+- Az oldalkeresője módosult, amelyen belül most már nem csak az oldal nevére, hanem a benne lévő tartalmakra is rá lehet keresni.
+
 #### 2020.07.21.
 - A Product Extend Resource "productPrices" értéke megváltozott. Leírás a működésről [link](./api-examples/03_price_calculation.md)
 
