@@ -669,6 +669,7 @@ A termékhez tartozó további termékképek csatolását a [**Product Image Res
 ```json
 {
     "imagePath": "product\/image.jpg",
+    "imageAlt": "Image Alt",
     "sortOrder": "1",
     "product": {
         "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
