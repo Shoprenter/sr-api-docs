@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.10.22.
+- Az API példák kiegészültek egy [**termék hozzáadása kategóriához**](./api-examples/04_attach_product_to_category.md) példával.
+
 #### 2020.10.13.
 - Az oldalkeresője módosult, amelyen belül most már nem csak az oldal nevére, hanem a benne lévő tartalmakra is rá lehet keresni.
 
