@@ -3,13 +3,13 @@
 Az alábbi példában bemutatásra kerül, hogy miként lehet egy újonnan létrehozott kategóriához hozzáadni egy újonnan létrehozott terméket.
 
 A feladat 3 lépésből áll.
-1. Kategória létrehozása a [**CategoryExtend Resource**](../../api/category_extend.md) segítségével
-2. Termék létrehozása a [**ProductExtend Resource**](../../api/product_extend.md) segítségével
-3. Termék hozzáadása a kategóriához a [**ProductCategoryRelation Resource**](../../api/product_category_relation.md) segítségével
+1. Kategória létrehozása a [**Category Extend Resource**](../../api/category_extend.md) segítségével
+2. Termék létrehozása a [**Product Extend Resource**](../../api/product_extend.md) segítségével
+3. Termék hozzáadása a kategóriához a [**Product Category Relation Resource**](../../api/product_category_relation.md) segítségével
 
 ## 1. lépés
 
-A [**CategoryExtend Resource**](../../api/category_extend.md) segítségével létrehozzuk az új kategóriát.
+A [**Category Extend Resource**](../../api/category_extend.md) segítségével létrehozzuk az új kategóriát.
 
 **Request**
 
@@ -153,7 +153,7 @@ A [**CategoryExtend Resource**](../../api/category_extend.md) segítségével l�
 
 ## 2. lépés
 
-A [**ProductExtend Resource**](../../api/product_extend.md) segítségével létrehozzuk az új terméket.
+A [**Product Extend Resource**](../../api/product_extend.md) segítségével létrehozzuk az új terméket.
 
 **Request**
 
@@ -744,7 +744,7 @@ A [**ProductExtend Resource**](../../api/product_extend.md) segítségével lét
 
 ## 3. lépés
 
-A [**ProductCategoryRelation Resource**](../../api/product_category_relation.md)  segítségével a terméket hozzáadjuk a kategóriához.
+A [**Product Category Relation Resource**](../../api/product_category_relation.md)  segítségével a terméket hozzáadjuk a kategóriához.
 
 **Request**
 
