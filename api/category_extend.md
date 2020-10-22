@@ -89,3 +89,6 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'category_extend'" :endpoint="'delete'" :lang="'hu'"/>
 
+## Példák
+
+- [**Termék hozzáadása kategóriához**](../development/api-examples/04_attach_product_to_category.md)

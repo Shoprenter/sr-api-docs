@@ -781,13 +781,13 @@ A [**ProductCategoryRelation Resource**](../../api/product_category_relation.md)
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDkmY2F0ZWdvcnlfaWQ9MjA=",
-    "id": "cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDkmY2F0ZWdvcnlfaWQ9MjA=",
+    "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD0xMTk=",
+    "id": "cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD0xMTk=",
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQ5"
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
     },
     "category": {
-        "href": "http://shopname.api.shoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MjA="
+        "href": "http://shopname.api.shoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
     }
 }
 ```
