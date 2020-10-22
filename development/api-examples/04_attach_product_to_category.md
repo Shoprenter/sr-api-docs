@@ -769,10 +769,10 @@ A [**ProductCategoryRelation Resource**](../../api/product_category_relation.md)
 ```json
 {
     "product": {
-        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTQ5"
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
     },
     "category": {
-        "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MjA="
+        "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
     }
 }
 ```
