@@ -92,4 +92,5 @@
 ## Példák
 
 - [**Termék hozzáadása kategóriához**](../development/api-examples/04_attach_product_to_category.md)
+- [**Termékkép hozzáadása termékhez**](../development/api-examples/05_attach_uploaded_image_to_product.md)
 
