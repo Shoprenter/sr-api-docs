@@ -49,3 +49,7 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'file'" :endpoint="'delete'" :lang="'hu'"/>
 
+## Példák
+
+- [**Termékkép hozzáadása termékhez**](../development/api-examples/05_attach_uploaded_image_to_product.md)
+
