@@ -92,4 +92,6 @@
 ## Példák
 
 - [**Termék hozzáadása kategóriához**](../development/api-examples/04_attach_product_to_category.md)
+- [**Akciós termék**](../development/api-examples/01_product_of_day.md)
+- [**Nap terméke**](../development/api-examples/01_product_special.md)
 
