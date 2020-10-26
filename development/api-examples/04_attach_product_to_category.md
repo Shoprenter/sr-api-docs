@@ -5,7 +5,7 @@ Az alábbi példában bemutatásra kerül, hogy miként lehet egy újonnan létr
 A feladat 3 lépésből áll.
 1. Kategória létrehozása a [**Category Extend Resource**](../../api/category_extend.md) segítségével.
 2. Termék létrehozása a [**Product Extend Resource**](../../api/product_extend.md) segítségével, amelyhez már létrehozáskor megadjuk a kategóriát.
-3. Termék hozzáadása a kategóriához a [**Product Category Relation Resource**](../../api/product_category_relation.md) segítségével.
+3. További kategóriák hozzáadása a termékhez a [**Product Category Relation Resource**](../../api/product_category_relation.md) segítségével.
 
 ## 1. lépés
 
@@ -312,7 +312,7 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
 
 ## 3. lépés
 
-Amennyiben nem létrehozáskor adjuk meg a kategóriát a termékhez, úgy utólag a [**Product Category Relation Resource**](../../api/product_category_relation.md)  segítségével is hozzáadhatjuk a kategóriához.
+Amennyiben nem létrehozáskor adjuk meg a kategóriát a termékhez, úgy utólag a [**Product Category Relation Resource**](../../api/product_category_relation.md) segítségével is megtehetjük. (Megjegyzés: Meglévő termékhez további kategóriákat a [**Product Extend Resource**](../../api/product_extend.md) PUT methodjával is meg lehet valósítani.)
 
 **Request**
 
