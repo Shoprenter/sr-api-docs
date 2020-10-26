@@ -89,3 +89,7 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'product_special'" :endpoint="'delete'" :lang="'hu'"/>
 
+## Példák
+
+- [**Akciós termék**](../development/api-examples/01_0_product_special.md)
+- [**Nap terméke**](../development/api-examples/01_1_product_special_product_of_day.md)

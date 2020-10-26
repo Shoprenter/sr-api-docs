@@ -1,6 +1,6 @@
 # Dokumentáció csatolása termékhez
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet a ShopRenter API-n keresztül dokumentumot feltölteni és azt a kiválasztott termékhez csatolni.
+Az alábbi példában bemutatásra kerül, hogy miként lehet dokumentumot feltölteni és azt a kiválasztott termékhez csatolni.
 
 ### 1. lépés
 
