@@ -91,5 +91,5 @@
 
 ## Példák
 
-- [**Akciós termék**](../development/api-examples/01_product_of_day.md)
-- [**Nap terméke**](../development/api-examples/01_product_special.md)
+- [**Akciós termék**](../development/api-examples/01_0_product_special.md)
+- [**Nap terméke**](../development/api-examples/01_1_product_special_product_of_day.md)
