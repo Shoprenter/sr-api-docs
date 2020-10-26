@@ -143,7 +143,7 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
   </tr>
 </table>
 
-```json{25-31}
+```json{26-32}
 {
     "stock1": "12",
     "stock2": "22",
@@ -186,7 +186,7 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
 
 **Response**
 
-```json{97-108}
+```json{98-109}
 {
     "href": "http://shopname.api.shoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
