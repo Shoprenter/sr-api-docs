@@ -1,10 +1,10 @@
 # Nap terméke
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet a ShopRenter API-n keresztül nap termékét felvinni és módosítani.
+Az alábbi példában bemutatásra kerül, hogy miként lehet egy terméket nap termékeként felvinni és módosítani.
 
 ### Bevezetés
 
-A nap terméke egy speciális akciós árnak számít, ahol megadhatjuk, hogy a hét egy adott napján melyik termék legyen kiemelve, aminek akciós ára van.
+Az akciós termékek kezeléséről korábban volt már szó (lásd bővebbben: [**Akciós termék**](./01_0_product_special.md) példa). A nap terméke egy olyan speciális akciós árnak számít, ahol megadhatjuk, hogy a hét egy adott napján melyik termék legyen kiemelve, aminek akciós ára van.
  Ennek megadása az akciós árnál ismert [Product Special Resource](../../api/product_special.md) segítségével történik.
  A nap termékét a webshop admin felületén a **Beállítások > Megjelenés > Modul beállítása** menüpont alatt lehet beállítani. [Bővebb információ](https://support.shoprenter.hu/hc/hu/articles/215106328-Aj%C3%A1nl%C3%B3-modulok#nap_termeke)
  

@@ -9,6 +9,8 @@ A posztolás során szükségünk van a korábban felvett termék ([**Product Re
 illetve annak a vevőcsoportnak ([**Customer Group Resource**](../../api/customer_group.md)) resource azonosítójára, akiknek az akciót szeretnénk biztosítani.
 A minimum mennyiség és maximum mennyiség értékének csak abban az esetben szükséges 0-nál magasabb számot megadni, ha mennyiségi árkedvezmény kerül beállításra.
 
+**Megjegyzés:** A nap terméke egy speciális akciós árnak számít (lásd bővebben a [**Nap terméke**](./01_1_product_special_product_of_day.md) példában) 
+
 ### Példa
 
 #### Request
