@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.10.26.
+- Az API példák kiegészültek egy [**termékkép hozzáadása termékhez**](./api-examples/05_attach_uploaded_image_to_product) példával.
+
 #### 2020.10.22.
 - Az API példák kiegészültek egy [**termék hozzáadása kategóriához**](./api-examples/04_attach_product_to_category.md) példával.
 
