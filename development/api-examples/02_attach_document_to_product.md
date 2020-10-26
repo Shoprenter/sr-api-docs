@@ -2,6 +2,8 @@
 
 Az alábbi példában bemutatásra kerül, hogy miként lehet a ShopRenter API-n keresztül dokumentumot feltölteni és azt a kiválasztott termékhez csatolni.
 
+A fájlfeltöltésről bővebben az alábbi [linken](https://support.shoprenter.hu/hc/hu/articles/215106038-F%C3%A1jlok-felt%C3%B6lt%C3%A9se-%C3%A9s-kezel%C3%A9se) olvasható.
+
 ### 1. lépés
 
 A [File Resource](../../api/file.md) segítségével töltsük fel a kívánt dokumentumot. Fontos, hogy a request **body**-ban megadott **filePath** értékének adjuk meg a `srattached\/` mappát, illetve a **type** értéke mindenképp `image` legyen, mégha szöveges dokumentumról is van szó.

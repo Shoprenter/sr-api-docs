@@ -1,6 +1,8 @@
 # Termékkép hozzáadása termékhez
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy újonnan létrehozott termékhez elsődleges fő termékképet illetve további termékképeket hozzáadni. 
+Az alábbi példában bemutatásra kerül, hogy miként lehet egy újonnan létrehozott termékhez elsődleges fő termékképet illetve további termékképeket hozzáadni.
+
+A fájlfeltöltésről bővebben az alábbi [linken](https://support.shoprenter.hu/hc/hu/articles/215106038-F%C3%A1jlok-felt%C3%B6lt%C3%A9se-%C3%A9s-kezel%C3%A9se) olvasható. 
 
 A feladat 3 lépésből áll.
 1. Fájl feltöltése a [**File Resource**](../../api/file.md) segítségével.
