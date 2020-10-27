@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.10.27.
+- Az API menüpont kiegészült a [**Postman használatát példakódokkal bemutató bejegyzéssel**](api/08_postman.md)
+
 #### 2020.10.26.
 - Az API példák kiegészültek egy [**termékkép hozzáadása termékhez**](./api-examples/05_attach_uploaded_image_to_product.md) példával.
 - Az API példák kiegészültek egy [**akciós termék**](./api-examples/01_0_product_special.md) példával.
