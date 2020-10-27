@@ -44,7 +44,7 @@ Amennyiben további információ szükséges az induláshoz, az
 
 #### Példa kollekció importálása
 
-ShopRenter részről előre elkészítettünk egy kollekciót amit be lehet importálni és használni. A kérdéses JSON file ezen az URL-en érhető el: https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json
+Shoprenter részről előre elkészítettünk egy kollekciót amit be lehet importálni és használni. A kérdéses JSON file ezen az URL-en érhető el: https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json
 
 A Postman-en belül a bal felső sarokban találunk egy import gombot, ezzel be tudjuk importálni URL-ből vagy akár file-ból is a fenti példát:
 
@@ -54,7 +54,7 @@ Az import után a bal oldalon láthatjuk is, hogy kaptunk 5db POST példát.
 
 ![postman_post](./images/postman_post.png)
 
-Ezen az oldalon szükségünk lesz a ShopRenteres API belépési adatokra, ezeket a bolt admin felületén,
+Ezen az oldalon szükségünk lesz a Shoprenteres API belépési adatokra, ezeket a bolt admin felületén,
 a **Beállítások > Integrációk > API beállítások** menüben fogjuk megtalálni.
 
 A következő képen egy sikeres POST-ot láthatunk, amivel egy új terméket jött létre a bolton belül. Sikeres GET kérés esetén a standard 200-as válaszkódok kapjuk, jelen esetben POST-olás történt, ezért 201-es válaszüzenetet kaptunk. Ha a státusz fülé visszük az egeret, akkor bővebb információt kaphatunk a kapott válaszkódról.
