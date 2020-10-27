@@ -2,7 +2,7 @@
 
 Az alábbi példában bemutatásra kerül, hogy miként lehet a ShopRenter API-n keresztül dokumentumot feltölteni és azt a kiválasztott termékhez csatolni.
 
-A fájlfeltöltésről bővebben az alábbi [linken](https://support.shoprenter.hu/hc/hu/articles/215106038-F%C3%A1jlok-felt%C3%B6lt%C3%A9se-%C3%A9s-kezel%C3%A9se) olvasható.
+Fájlfeltöltéshez példa az alábbi [linken](https://support.shoprenter.hu/hc/hu/articles/215106038-F%C3%A1jlok-felt%C3%B6lt%C3%A9se-%C3%A9s-kezel%C3%A9se) olvasható.
 
 ### 1. lépés
 
