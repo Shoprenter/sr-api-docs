@@ -33,7 +33,7 @@ A Linuxon történő telepítés eltérő lehet. A következő útmutatóban bő
 
 Chrome böngésző esetén lehetőség van bővítményként hozzáadni a böngészőhöz a [Postman-t.](https://chrome.google.com/webstore/search/Postman?hl=hu)
 
-## Használat
+### Használat
 
 A Postman indítása után nincs más dolgunk mint elküldeni 
 [az első kérést](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
