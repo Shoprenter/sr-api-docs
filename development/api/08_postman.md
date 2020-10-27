@@ -8,7 +8,7 @@
 
 ## Postman használata
 
-A Postman egy komplett eszköztár API fejlesztők részére, a programmal gyorsan és hatékonyan lehet dolgozni az API-val, mivel támogatja a fejlesztők minden munkafolyamatát, továbbá elérhető Mac OS X, Windows, Linux és Chrome felhasználók számára is.
+A Postman egy komplett eszköztár API fejlesztők részére, a programmal gyorsan és hatékonyan lehet dolgozni az API-val, mivel támogatja a fejlesztők minden munkafolyamatát. A szoftver az alábbi platformokon érhető el: Mac OS X, Windows, Linux valamint Chrome.
 
 ### Telepítés
 
@@ -33,9 +33,9 @@ A Linuxon történő telepítés eltérő lehet. A következő útmutatóban bő
 
 Chrome böngésző esetén lehetőség van bővítményként hozzáadni a böngészőhöz a [Postman-t.](https://chrome.google.com/webstore/search/Postman?hl=hu)
 
-### Használat
+## Használat
 
-A Postman indítás után nincs más dolgunk mint elküldeni 
+A Postman indítása után nincs más dolgunk mint elküldeni 
 [az első kérést](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
 vagy létrehozni a [saját kollekciónkat](https://learning.postman.com/docs/getting-started/creating-the-first-collection/).
 Amennyiben további információ szükséges az induláshoz, az 
@@ -55,16 +55,17 @@ Az import után a bal oldalon láthatjuk is, hogy kaptunk 5db POST példát.
 ![postman_post](./images/postman_post.png)
 
 Ezen az oldalon szükségünk lesz a Shoprenteres API belépési adatokra, ezeket a bolt admin felületén,
-a **Beállítások > Integrációk > API beállítások** menüben fogjuk megtalálni.
+a **Beállítások > Integrációk > API beállítások** menüben fogjuk megtalálni.<br/>Az új admin felület esetén ugyanezt pedig a **Beállítások > API beállítások** menüben fogjuk megtalálni.
 
 A következő képen egy sikeres POST-ot láthatunk, amivel egy új terméket jött létre a bolton belül. Sikeres GET kérés esetén a standard 200-as válaszkódok kapjuk, jelen esetben POST-olás történt, ezért 201-es válaszüzenetet kaptunk. Ha a státusz fülé visszük az egeret, akkor bővebb információt kaphatunk a kapott válaszkódról.
+[További API státuszkódok a Shoprenterben.](https://doc.shoprenter.hu/development/api/02_status_codes.html)
 
 ![postman_success_post](./images/postman_success_post.png)
 
 A kollekcióban lévő [**Batch szerkezetet**](./04_batch.md)
-mindenképpen ajánlani tudjuk tanulmányozásra, ezzel ugyanis tudjuk csökkenteni az elküldött kérések számát, így az API kapcsolatunk is optimalizált lesz.
+mindenképpen ajánljuk tanulmányozásra, ezzel ugyanis szignifikánsan tudjuk csökkenteni az elküldött kérések számát, így az API kapcsolat is sokkal optimálisabb lehet.
  
-Válasz átváltása JSON formátumra
+#### Válasz átváltása JSON formátumra
 
 A fenti példánál maradva lehetőség van JSON formátumban is megkapni a választ. Ehhez a headers fülön szükséges aktiválni a application/json key-t.
 
