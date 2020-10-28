@@ -305,12 +305,13 @@ Válasz
 
 ###
 
-## További példa
+## További példák
+
+### Tömeges termékfeltöltés
 
 A következő példában az előzőhöz példához hasonló gyakori művelet kerül bemutatásra, ahol is batchelés segítségével több terméket töltünk fel egyszerre.
 Annak érdekében, hogy a termék feltöltés során minden a termékhez kapcsolódó további adat is feltöltésre kerüljön (pl: képek, tulajdonságok stb.), így érdemes a
-[**Product Extend Resource-t**](../../api/product_extend.md) használni. Amennyiben a termékek azonosítóját magunk szeretnénk megadni (mert például egy külső másik rendszerben már tárolva vannak)
-, úgy javasoljuk az [**Outer ID használatát**](./05_outer_id.md)
+[**Product Extend Resource-t**](../../api/product_extend.md) használni.
 
 **Fontos megjegyezni, hogy a batchelésnek vannak korlátai, amit a gördülékeny hívások érdekében ajánlott betartani. Ilyenek például:**
 1. A batchelt kéréseket lehetőség szerint ne aszinkron módon küldjük el, azaz egy batchelt hívást csak azt követően indítsunk, miután az előző batchelt hívás befejeződött, tehát kaptunk responset.
@@ -397,6 +398,123 @@ Annak érdekében, hogy a termék feltöltés során minden a termékhez kapcsol
                         "statusCode": 200
                     },
                     "body": {...}
+                }
+            }
+        ]
+    }
+}
+```
+
+### Termék hozzáadása kategóriához Outer ID segítségével
+
+Ennek a példának a dokumentáción belül ugyan már létezik egy hasonló Outer ID nélküli részletes ([**Termék hozzáadása kategóriához**](../api-examples/04_attach_product_to_category.md)) leírása,
+de az API hívások csökkentése érdekében az alábbi példában bemutatásra kerül, hogyan is lehet batchelve egyetlen kérés elküldésével ugyanezt megvalósítani.
+Mind a kategóriat mind a terméket külsős azonosítókkal, azaz [**Outer ID-kal**](./05_outer_id.md) fogjuk létrehozni.
+Az Outer ID szerepe azért lényeges a batchelt kérések küldése során, mivel előfordulhat, hogy egymáshoz kapcsolódó resourceokat (pl: termék-kategória) kell megadni
+anélkül, hogy tudnánk például a kategória resource azonosítóját. 
+
+**Fontos megjegyezni, hogy a batchelésnek vannak korlátai, amit a gördülékeny hívások érdekében ajánlott betartani. Ilyenek például:**
+1. A batchelt kéréseket lehetőség szerint ne aszinkron módon küldjük el, azaz egy batchelt hívást csak azt követően indítsunk, miután az előző batchelt hívás befejeződött, tehát kaptunk responset.
+2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 1000 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
+
+**Az alábbi példa csak szemléltetésképp mutatja be a működést,
+így azok a teljesség igénye nélkül nem tartalmazzák az egész API request-et és response-t!**
+
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>POST</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/batch</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table>
+
+```json{6,11,14-20}
+{
+  "data": {
+    "requests": [
+        {
+            "method": "POST",
+            "uri": "http://shopname.api.shoprenter.hu/categoryExtend/123",
+            "data": {...}
+        },
+        {
+            "method": "POST",
+            "uri": "http://shopname.api.shoprenter.hu/productExtend/456",
+            "data": {
+                ...
+                "productCategoryRelations": [
+                    {
+                        "category": {
+                            "id": "123"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+  }
+}
+```
+
+**Response**
+
+```json{6,12,13,21,27,28,31-42}
+{
+    "requests": {
+        "request": [
+            {
+                "method": "POST",
+                "uri": "http://shopname.api.shoprenter.hu/categoryExtend/123",
+                "response": {
+                    "header": {
+                        "statusCode": 200
+                    },
+                    "body": {
+                        "href": "http://shopname.api.shoprenter.hu/categoryExtend/123",
+                        "id": "123",
+                        "innerId": "8797",
+                        ...
+                    }
+                }
+            },
+            {
+                "method": "POST",
+                "uri": "http://shopname.api.shoprenter.hu/productExtend/456",
+                "response": {
+                    "header": {
+                        "statusCode": 200
+                    },
+                    "body": {
+                        "href": "http://shopname.api.shoprenter.hu/productExtend/456",
+                        "id": "456",
+                        "innerId": "41706",
+                        ...
+                        "productCategoryRelations": [
+                            {
+                                "href": "http://shopname.api.shoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDE3MDYmY2F0ZWdvcnlfaWQ9MTIy",
+                                "id": "cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDE3MDYmY2F0ZWdvcnlfaWQ9MTIy",
+                                "product": {
+                                    "href": "http://shopname.api.shoprenter.hu/products/456"
+                                },
+                                "category": {
+                                    "href": "http://shopname.api.shoprenter.hu/categories/123"
+                                }
+                            }
+                        ],
+                        ...
+                    }
                 }
             }
         ]

@@ -92,3 +92,4 @@
 ## Példák
 
 - [**Termék hozzáadása kategóriához**](../development/api-examples/04_attach_product_to_category.md)
+- [**API Batch feldolgozó**](../development/api/04_batch.md)
