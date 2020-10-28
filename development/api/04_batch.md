@@ -301,3 +301,105 @@ Válasz
 
 1. **Üres válasz, vagy "Data parameter not found in POST/PUT!" hibaüzenet 400-as státusz kóddal:**<br>
 Értelemszerűen nem található **data** paraméter a küldött tömbben.
+
+
+###
+
+## További példa
+
+A következő példában az előzőhöz példához hasonló gyakori művelet kerül bemutatásra, ahol is batchelés segítségével több terméket töltünk fel egyszerre.
+Annak érdekében, hogy a termék feltöltés során minden a termékhez kapcsolódó további adat is feltöltésre kerüljön (pl: képek, tulajdonságok stb.), így érdemes a
+[**Product Extend Resource-t**](../../api/product_extend.md) használni. Amennyiben a termékek azonosítóját magunk szeretnénk megadni (mert például egy külső másik rendszerben már tárolva vannak)
+, úgy javasoljuk az [**Outer ID használatát**](./05_outer_id.md)
+
+**Fontos megjegyezni, hogy a batchelésnek vannak korlátai, amit a gördülékeny hívások érdekében ajánlott betartani. Ilyenek például:**
+1. A batchelt kéréseket lehetőség szerint ne aszinkron módon küldjük el, azaz egy batchelt hívást csak azt követően indítsunk, miután az előző batchelt hívás befejeződött, tehát kaptunk responset.
+2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 1000 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
+
+**Az alábbi példa csak szemléltetésképp mutatja be a működést,
+így azok a teljesség igénye nélkül nem tartalmazzák az egész API request-et és response-t!**
+
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>POST</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/batch</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table>
+
+```json
+{
+  "data": {
+    "requests": [
+        {
+            "method": "POST",
+            "uri": "http://shopname.api.shoprenter.hu/productExtend",
+            "data": {...}
+        },
+        {
+            "method": "POST",
+            "uri": "http://shopname.api.shoprenter.hu/productExtend",
+            "data": {...}
+        },
+        {
+            "method": "POST",
+            "uri": "http://shopname.api.shoprenter.hu/productExtend",
+            "data": {...}
+        }
+    ]
+  }
+}
+```
+
+**Response**
+
+```json
+{
+    "requests": {
+        "request": [
+            {
+                "method": "POST",
+                "uri": "http://shopname.api.shoprenter.hu/productExtend",
+                "response": {
+                    "header": {
+                        "statusCode": 200
+                    },
+                    "body": {...}
+                }
+            },
+            {
+                "method": "POST",
+                "uri": "http://shopname.api.shoprenter.hu/productExtend",
+                "response": {
+                    "header": {
+                        "statusCode": 200
+                    },
+                    "body": {...}
+                }
+            },
+            {
+                "method": "POST",
+                "uri": "http://shopname.api.shoprenter.hu/productExtend",
+                "response": {
+                    "header": {
+                        "statusCode": 200
+                    },
+                    "body": {...}
+                }
+            }
+        ]
+    }
+}
+```
