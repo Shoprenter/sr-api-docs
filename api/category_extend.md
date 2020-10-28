@@ -92,4 +92,4 @@
 ## Példák
 
 - [**Termék hozzáadása kategóriához**](../development/api-examples/04_attach_product_to_category.md)
-- [**API Batch feldolgozó**](../development/api/04_batch.md)
+- [**Termék hozzáadása kategóriához batchelve OuterID-val**](../development/api/04_batch.md#termék-hozzáadása-kategóriához-outer-id-segítségével)
