@@ -2,7 +2,7 @@
 
 Felmerült az igény, hogy egyes ügyfeleink saját egyedi azonosítókkal (OUTER_ID) szeretnék ellátni és használni a resource-okat, az általunk generáltakkal (API_ID) szemben, erre az alább ismertetett módon biztosítunk lehetőséget.
 
-Az Outer ID használatát **csak** olyan batch kérés esetén javasoljuk, amikor egy resource egyed létrehozása során további hozzá kapcsolódó resource egyedet kell létrehozni.
+Az Outer ID használatát **csak** olyan [**batch**](./04_batch.md) kérés esetén javasoljuk, amikor egy resource egyed létrehozása során további hozzá kapcsolódó resource egyedet kell létrehozni.
 Outer ID nélkül a batchben a kérésekre a válaszok csak együtt fognak visszaérkezni a batch folyamat végén, ezért például egy termék (Product resource egyed) felvétele után, nem tudjuk, hogy a hozzá tartozó termék leírást (Product Description resource egyedet) milyen resource id-val vegyük fel.
 Ellenben ha **Outer ID**-val hozzuk létre a terméket, akkor ezzel később tudunk hivatkozni a leírás létrehozásánál, függetlenül attól, hogy tudnánk, mi lesz a tényleges belső resource azonosítója a létrehozni kívánt terméknek.
 Ez a megoldás még az egyszerűbb használatú [Resource Extend](06_extend_resource.md) megjelenése előtt lesz használva, így amennyibe egy resource-nak van extendelt változata pl: [Product Extend Resource](../../api/product_extend.md), úgy annak használatát javasoljuk az Outer ID-s batcheléssel szemben.
@@ -211,3 +211,9 @@ GET kérés esetén hivatkozhatunk az URI-ben OUTER_ID-ra:
 ### DELETE
 
 Törlés esetén ha létezik a resource-hoz OUTER_ID, azt töröljük vele egyetemben.
+
+## Outer ID helytelen használata
+
+**Nagyon fontos kiemelni, hogy az Outer ID a batchelt kérések küldésére készült és nem olyan speciális műveletekre, mint például cikkszámok szinkronizálására.
+Ennek oka pedig az, hogy a bolt adminisztrációs felületén történt tevékenységek nincsenek szinkronban az Outer ID-k törlésével, felülírásával és használatával.
+Ebből kifolyólag, ha a bolt adminisztrációs felületén törölnek egy terméket, akkor annak az Outer ID-ja nem fog törlődni.**   
