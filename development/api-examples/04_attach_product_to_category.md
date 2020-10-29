@@ -1,6 +1,7 @@
 # Termék hozzáadása kategóriához
 
 Az alábbi példában bemutatásra kerül, hogy miként lehet egy újonnan létrehozott kategóriához hozzáadni egy újonnan létrehozott terméket.
+A dokumentáción belül ennek a példának a hatékonyabb batchelt Outer ID-s változata elérhető ezen a [**linken**](../api/04_batch.md#termék-hozzáadása-kategóriához-outer-id-segítségével)
 
 A feladat 3 lépésből áll.
 1. Kategória létrehozása a [**Category Extend Resource**](../../api/category_extend.md) segítségével.
