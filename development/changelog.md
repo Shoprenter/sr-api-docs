@@ -2,6 +2,7 @@
 
 #### 2020.10.29.
 - Az [**API Batch feldolgozó**](api/04_batch.md) menüpont kiegészült további példákkal: [**Tömeges termékfeltöltés**](api/04_batch.md#tomeges-termekfeltoltes), [**Termék hozzáadása kategóriához Outer ID segítségével**](api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)
+- Az [**Outer ID használata**](api/05_outer_id.md) kiegészült egy bejegyzéssel, amelyben leírja milyen esetekben helytelen az Outer ID-t használni.
 
 #### 2020.10.27.
 - Az API menüpont kiegészült a [**Postman használatát példakódokkal bemutató bejegyzéssel**](api/08_postman.md)
