@@ -215,5 +215,5 @@ Törlés esetén ha létezik a resource-hoz OUTER_ID, azt töröljük vele egyet
 ## Outer ID helytelen használata
 
 **Nagyon fontos kiemelni, hogy az Outer ID a batchelt kérések küldésére készült és nem olyan speciális műveletekre, mint például cikkszámok szinkronizálására.
-Ennek oka pedig az, hogy az admin tevékenységek nincsenek szinkronban az Outer ID-k törlésével, felülírásával és használatával.
-Ebből kifolyólag, ha az adminon törölnek egy terméket, akkor annak az Outer ID-ja nem fog törlődni.**   
+Ennek oka pedig az, hogy a bolt adminisztrációs felületén történt tevékenységek nincsenek szinkronban az Outer ID-k törlésével, felülírásával és használatával.
+Ebből kifolyólag, ha a bolt adminisztrációs felületén törölnek egy terméket, akkor annak az Outer ID-ja nem fog törlődni.**   
