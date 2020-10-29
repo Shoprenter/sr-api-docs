@@ -75,7 +75,7 @@ A webhook kiküldése azonnali, amit úgy adhatunk meg, hogy a posztolás során
 }
 ```
 
-Ezt követően ha új rendelés leadás történik, akkor a webhook.siteon látható a beérkezett webhook.
+Ezt követően ha új rendelés leadás történik, akkor a webhook.site-on látható a beérkezett webhook.
 
 ![webhook_webhooksite_post](./images/webhook_webhooksite_post.png)
 
