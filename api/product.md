@@ -95,5 +95,5 @@
 - [**Termékkép hozzáadása termékhez**](../development/api-examples/05_attach_uploaded_image_to_product.md)
 - [**Akciós termék**](../development/api-examples/01_0_product_special.md)
 - [**Nap terméke**](../development/api-examples/01_1_product_special_product_of_day.md)
-- [**Tömeges termékfeltöltés**](../development/api/04_batch.md#tömeges-termékfeltöltés)
-- [**Termék hozzáadása kategóriához batchelve OuterID-val**](../development/api/04_batch.md#termék-hozzáadása-kategóriához-outer-id-segítségével)
+- [**Tömeges termékfeltöltés**](../development/api/04_batch.md#tomeges-termekfeltoltes)
+- [**Termék hozzáadása kategóriához batchelve OuterID-val**](../development/api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)
