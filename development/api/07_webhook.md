@@ -260,3 +260,7 @@ Példa webhook:
    }
 }
 ```
+
+## További példák
+
+- [**"Új rendelés feladás" webhook működése**](../development/api-examples/06_webhook.md)
