@@ -30,7 +30,7 @@ fázisait.
 elhagyhatjuk.
 
 **Fontos megjegyzés:** Lehetőség van egy termék egyedi tulajdonságinak egyszerűsített lekérésére
-a [Product Extend Resource](https://doc.shoprenter.hu/api/product_extend.html) segítségével. 
+a [Product Extend Resource](../../api/product_extend.md) segítségével. 
 A **productAttributeExtend** mező egy listát tartalmaz, amely a termékhez tartozó egyedi tulajdonságokat jeleníti meg.
 
 #### Példa, amivel levezetjük a folyamatot:
@@ -57,7 +57,7 @@ _A változat képző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tá
 
 #### Használt Resource
 
-[Product Class](https://doc.shoprenter.hu/api/product_class.html)
+[Product Class](../../api/product_class.md)
 
 #### Request
 
@@ -122,7 +122,7 @@ egy termék esetén.
 
 #### Használt Resource
 
-[Number Attribute Resource](https://doc.shoprenter.hu/api/number_attribute.html)
+[Number Attribute Resource](../../api/number_attribute.md)
 
 #### Request
 
@@ -201,7 +201,7 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
 
 #### Használt Resource
 
-[Text Attribute Resource](https://doc.shoprenter.hu/api/text_attribute.html)
+[Text Attribute Resource](../../api/text_attribute.md)
 
 #### Request
 
@@ -284,9 +284,9 @@ A két választható érték: "Hegyes", "Kerek".
 
 #### Használt Resource
 
-- [List Attribute Resource](https://doc.shoprenter.hu/api/list_attribute.html)
-- [List Attribute Value Resource](https://doc.shoprenter.hu/api/list_attribute_value.html)
-- [List Attribute Value Description Resource](https://doc.shoprenter.hu/api/list_attribute_value_description.html)
+- [List Attribute Resource](../../api/list_attribute.md)
+- [List Attribute Value Resource](../../api/list_attribute_value.md)
+- [List Attribute Value Description Resource](../../api/list_attribute_value_description.md)
 
 #### Request - List Attribute Resource
 
@@ -551,7 +551,7 @@ Amire szükségünk lesz:
 
 #### Használt Resoruce
 
-[Attribute Description Resource](https://doc.shoprenter.hu/api/attribute_description.html)
+[Attribute Description Resource](../../api/attribute_description.md)
 
 #### Request
 
@@ -617,7 +617,7 @@ Illetve, természetesen a Szobanövény termék típus resource id-jára: cHJvZH
 
 #### Használt resource
 
-[Product Class Attribute Relation Resource](https://doc.shoprenter.hu/api/product_class_attribute_relation.html)
+[Product Class Attribute Relation Resource](../../api/product_class_attribute_relation.md)
 
 #### Request
 
@@ -682,7 +682,7 @@ mezőjét. Természetesen, új termék létrehozásánál is hozzárendelhetjük
 
 #### Használt resource
 
-[Product Extend Resource](https://doc.shoprenter.hu/api/product_extend.html)
+[Product Extend Resource](../../api/product_extend.md)
 
 #### Request
 
@@ -756,7 +756,7 @@ Amire szükségünk van:
 
 #### Használt Resouce
 
-[Number Attribute Value](https://doc.shoprenter.hu/api/number_attribute_value.html)
+[Number Attribute Value](../../api/number_attribute_value.md)
 
 #### Request
 <table>
@@ -818,8 +818,8 @@ Amire szükségünk van:
 
 #### Használt Resouce
 
- - [Text Attribute Value Resource](https://doc.shoprenter.hu/api/text_attribute_value.html)
- - [Text Attribute Value Description Resource](https://doc.shoprenter.hu/api/text_attribute_value_description.html)
+ - [Text Attribute Value Resource](../../api/text_attribute_value.md)
+ - [Text Attribute Value Description Resource](../../api/text_attribute_value_description.md)
 
 #### Request - Text Attribute Value Resource
 
@@ -941,7 +941,7 @@ Amire szükségünk van:
 
 #### Használt Resouce
 
-[Product List Attribute Value Relation Resource](https://doc.shoprenter.hu/api/product_list_attribute_value_relation.html)
+[Product List Attribute Value Relation Resource](../../api/product_list_attribute_value_relation.md)
 
 #### Request
 
@@ -1010,7 +1010,7 @@ Szobanövény termék típus resource id-ja: **cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc
 A "levelek formája" egyedi tulajdonság resource id-jára: **bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=**
 
 #### Használt Resource
-[Porduct Class Resource](https://doc.shoprenter.hu/api/product_class.html)
+[Porduct Class Resource](../../api/product_class.md)
 
 #### Request
 
