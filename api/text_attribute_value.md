@@ -89,3 +89,5 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'text_attribute_value'" :endpoint="'delete'" :lang="'hu'"/>
 
+## Példa
+- [**Termék típusok, egyedi tulajdonságok és termékváltozatok kezelése**](../development/api-examples/08_product_attribute_handling.md)
