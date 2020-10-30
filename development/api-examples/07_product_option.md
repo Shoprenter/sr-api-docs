@@ -261,7 +261,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 }
 ```
 
-**Response a 10 szeletes változatra magyar nyelven**
+**Response a 10 szeletes változatra**
 
 ```json
 {
@@ -277,7 +277,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 }
 ```
 
-**Request a 12 szeletes változatra magyar nyelven**
+**Request a 12 szeletes változatra**
 
 <table>
   <tr>
@@ -309,7 +309,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 }
 ```
 
-**Response a 12 szeletes változatra magyar nyelven**
+**Response a 12 szeletes változatra**
 
 ```json
 {
