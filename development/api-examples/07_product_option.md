@@ -64,7 +64,7 @@ A [**Product Option Resource**](../../api/product_option.md) segítségével lé
 ## 2. lépés
 
 A [**Product Option Description Resource**](../../api/product_option_description.md) segítségével elkészítjük a létrehozott termékopcióhoz tartozó nyelvesítést.
-A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken szeretnénk hozzárendelni nevet az adott termék opcióhoz, úgy az alábbi lépést meg kell ismételni a kívánt nyelv resource id-jával.   
+A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken szeretnénk hozzárendelni nevet az adott termékopcióhoz, úgy az alábbi lépést meg kell ismételni a kívánt nyelv resource id-jával.   
 
 **Request**
 
