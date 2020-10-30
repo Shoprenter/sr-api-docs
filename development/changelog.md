@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.10.30.
+- Az API példák kiegészültek egy [**"Új rendelés feladás" webhook működése**](./api-examples/06_webhook.md) példával.
+
 #### 2020.10.29.
 - Az [**API Batch feldolgozó**](api/04_batch.md) menüpont kiegészült további példákkal: [**Tömeges termékfeltöltés**](api/04_batch.md#tomeges-termekfeltoltes), [**Termék hozzáadása kategóriához Outer ID segítségével**](api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)
 - Az [**Outer ID használata**](api/05_outer_id.md) kiegészült egy bejegyzéssel, amelyben leírja milyen esetekben helytelen az Outer ID-t használni.
