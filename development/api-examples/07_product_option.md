@@ -1,5 +1,7 @@
 # Termékopció kezelése
 
+A példa megértése érdekében érdemes előzetesen elolvasni az alábbi [cikket](https://support.shoprenter.hu/hc/hu/articles/215106128).
+
 Az alábbi példában bemutatásra kerül, hogy miként lehet egy termékhez különböző termékopciókat megadni.
 
 A feladat 4 lépésből áll.
