@@ -3,8 +3,8 @@
 _Mielőtt belekezdünk a típusok és tulajdonságok API-n keresztül történő kezelésének a megismerkedésébe:_
 
 **Ajánlatos** a Shoprenter Akadémián megtalálható [cikk](https://support.shoprenter.hu/hc/hu/articles/215106088-T%C3%ADpusok-tulajdons%C3%A1gok-sz%C5%B1r%C5%91k-matric%C3%A1k)
- áttanulmányozása. **Értenünk kell**, mi történik a kezelt bolt admin felületén, hogy teljesen biztos legyünk a dolgunkba,
- mikor API-n keresztül kezeljük ezt a részt!
+ áttanulmányozása. **Értenünk kell**, mi történik a kezelt bolt adminisztrációs felületén, hogy teljesen biztosak 
+ legyünk a dolgunkban, mialatt API-n keresztül kezeljük ezt a részt!
 
 A boltokban található termékek mindegyikének lehetnek olyan jellemzői,
 mely meghatározzák a termék jellegét pl. színét, méretét stb. Ezeket a jellemzőket
@@ -34,8 +34,8 @@ a [Product Extend Resource](../../api/product_extend.md) segítségével.
 A **productAttributeExtend** mező egy listát tartalmaz, amely a termékhez tartozó egyedi tulajdonságokat jeleníti meg.
 
 #### Példa, amivel levezetjük a folyamatot:
-Növényeket forgalmazó boltban, létre akarok hozni egy olyan nevü termék típust, hogy **Szobanövény**. 
-A jövőben minden olyan növényhez hozzá akarom, majd rendelni ezt a típust, amely jellegéből adódóan,
+Növényeket forgalmazó boltban, létre akarok hozni egy olyan nevű termék típust, hogy **Szobanövény**. 
+A jövőben minden olyan növényhez hozzá akarom majd rendelni ezt a típust, amely jellegéből adódóan,
  szobanövénynek mondható.
 
 Hogy a példa egyszerű legyen, és minden tulajdonság típust végig vegyünk,
@@ -53,7 +53,7 @@ hogyan adhatjuk meg a termék tulajdonságainak az értékeit.
 Egy egyszerű kéréssel létrehozzuk a termék típusunkat, amely összefogja majd egy Szobanövény
 egyedi tulajdonságait.
 
-_A változat képző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tárgyaljuk._ 
+_A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tárgyaljuk._ 
 
 #### Használt Resource
 
@@ -263,7 +263,7 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
 így csak a termékoldalon fog megjelenni.
 - A **required** mező értéke 0, mert nem biztos, hogy minden növénynek tudni fogjuk a latin nevét, ezért nem is 
 tesszük kötelezővé
-- A **textFieldType** mezővenek INPUT értéket adtunk, így a termékszerkesztő oldalon, a tulajdonság értéket
+- A **textFieldType** mezőnek INPUT értéket adtunk, így a termékszerkesztő oldalon, a tulajdonság értéket
  egy egysoros, szövegbeviteli mezőben tudjuk felvenni.
 - A **translateable** mező mondja meg, hogy a megadható-e az érték több nyelven, vagy sem. Mivel nyelvtől független 
 a tulajdonság értékünk (latin nyelvű), 0 értéket kap.
@@ -532,9 +532,9 @@ a "Kerek" érték.
 }
 ```
 
-Természetesen, ha szeretnénk, hogy a bolt aktuális nyelvi beállításaihoz igazodva jelenlen meg az érték termék oldalon,
+Természetesen, ha szeretnénk, hogy a bolt aktuális nyelvi beállításaihoz igazodva jelenjen meg az érték termék oldalon,
 pl.: angol nyelven a "Hegyes" úgy, hogy "Sharp", akkor ugyan ezt a lépést kell megismételnünk, az angol nyelv resource id-jával
-és a **name** mezőnek adott "Sharp" értékkel, példáúl.
+és a **name** mezőnek adott "Sharp" értékkel, például.
 
 ### Attribute Description Resource
 
@@ -543,7 +543,7 @@ nyelven a tulajonság neve.
 
 Természetesen, a címkék több nyelven megadhatóak. Egy példát mutatunk a Napsütötte órák száma tulajdonság,
  magyar nyelvű felcímkézésére.
-Ugyna így járjunk el a másik két tulajdonság esetén is.
+Ugyanígy járjunk el a másik két tulajdonság esetén is.
 
 Amire szükségünk lesz:
  - A Napsütötte órák száma tulajdonság resource id-jára: **bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==**
@@ -666,7 +666,7 @@ Illetve, természetesen a Szobanövény termék típus resource id-jára: cHJvZH
 ```
 
 A példa a "Napsütötte órák száma" tulajdonságot kapcsolta a "Szobanövény" termék típushoz.
-Természetesen, **a két másik tulajdonsággal is hasonlóképen járunk el**.
+Természetesen, **a két másik tulajdonsággal is hasonlóképpen járunk el**.
 
 Ha mindhárom tulajdonság kapcsolódik a típushoz, a Szobanövény termék típust beállíthatjuk bármelyik termékhez.
 
@@ -741,7 +741,7 @@ Levelek formája és Latin megnevezés egyedi tulajdonságok, milyen aktuális �
 Tegyük fel, hogy szeretnénk a **Napsütötte órák számát** (Number Attribute) 3-ra, a **Levelek formáját** (List Attribute) 
 "Kerek"-re és a **Latin megnevezést** (Text Attribute) pedig "Lorem ipsum"-ra állítani.
 
-Úgy kell elképzelni, mintha egy formot töltenénk ki API-on keresztül: két beviteli mezőbe beírom a kívánt értékeket 
+Úgy kell elképzelni, mintha egy formot töltenénk ki API-n keresztül: két beviteli mezőbe beírom a kívánt értékeket 
 (Number Attribute, Text Attribute), illetve egy listából kiválasztom a kívánt értéket (List Attribute).
 
 A 3 különböző terméktulajdonság aktuális értékeit egymástól eltérő módon tudjuk beállítani a termékhez.
@@ -808,7 +808,7 @@ Amire szükségünk van:
 ### Latin megnevezés (Text Attribute)
 
 Az értékadás nagyon hasonlít ahhoz, amikor a Szöveg (választólista) típusú tulajdonságot töltöttük fel értékekkel.
-Itt is először az értékadás tényét kell "jelezni" a Text Attribute Value Resource segítségével, majd a konkretizálni
+Itt is először az értékadás tényét kell "jelezni" a Text Attribute Value Resource segítségével, majd konkretizálni
 a Text Attribute Value Description Resource-al, hogy egyes nyelveken, mi lesz a tényleges érték.
 
 Amire szükségünk van:
@@ -999,7 +999,7 @@ az összes változatra.
 Az előző lépésekben elkészített **Levelek formája** egyedi tulajdonsággal, és a szülő-gyerek viszonnyal, 
 egyszerűen megtehetjük ezt.
 
-### Változat képző paraméterek beállítása termék típushoz
+### változatképző paraméterek beállítása termék típushoz
 
 A 2. lépésben létrehozott Szobanövény termék típust fogjuk módosítani úgy, hogy beállítjuk az első változatképző paraméterének
 a Levelek formája egyedi tulajdonságot. Tehát a Szobanövény tipusba tartozó termékek Levelek formája tulajdonság értékének
@@ -1062,7 +1062,7 @@ A "levelek formája" egyedi tulajdonság resource id-jára: **bGlzdEF0dHJpYnV0ZS
 
 **Fontosabb mezők:**
 A **firstVariantParameter** mezőben adjuk az egyedi tulajdonság resource id-ját. **Ez csak a típus által összefogott tulajdonságokból származhat!**
-A **firstVariantSelectType** határozza meg, hogy termékoldalon hogyan fog megjellenni termékváltozat választó select mező
+A **firstVariantSelectType** határozza meg, hogy termékoldalon hogyan fog megjelenni termékváltozat választó select mező
 
 **Megjegyzés:** Lehetőség van második változatképző paraméter megadására is. Ilyenkor két tényező határozza meg a 
 különböző változatokat.
