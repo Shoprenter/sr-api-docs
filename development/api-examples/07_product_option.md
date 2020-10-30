@@ -125,7 +125,7 @@ A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken sz
 
 A [**Product Option Value Resource**](../../api/product_option_value.md) segítségével elkészítjük a létrehozott termékopcióhoz tartozó értékeket.
 
-Az alábbi requestben létehozunk két változatot: egy 10 és 12 szeletes változatot.
+Az alábbi requestben létrehozunk két változatot: egy 10 és egy 12 szeletes változatot.
 A 10 szeletes változat nem módosítja a termék árát, úgy vesszük, hogy ez a termék eredeti árával azonos.
 A 12 szeletes változat árát megnöveljük az eredeti termék árához képest 2000 forinttal.
 
@@ -151,7 +151,6 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 
 ```json
 {
-    "price": "4000.0000",
     "sortOrder": "1",
     "productOption": {
         "id": "cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
@@ -165,8 +164,8 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 {
     "href": "http://shopname.api.shoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
-    "price": "4000.0000",
-    "prefix": null,
+    "price": "0000.0000",
+    "prefix": "",
     "sortOrder": "1",
     "productOption": {
         "href": "http://shopname.api.shoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
