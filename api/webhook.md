@@ -89,3 +89,6 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'webhook'" :endpoint="'delete'" :lang="'hu'"/>
 
+## Példák
+
+- [**"Új rendelés feladás" webhook működése**](../development/api-examples/06_webhook.md)
