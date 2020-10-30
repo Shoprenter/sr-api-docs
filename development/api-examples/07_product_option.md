@@ -8,6 +8,11 @@ A feladat 4 lépésből áll.
 3. A létrehozott termékopció értékeinek létrehozása a [**Product Option Value Resource**](../../api/product_option_value.md) segítségével.
 4. A létrehozott termékopció értékeinek nyelvesítése a [**Product Option Value Description Resource**](../../api/product_option_value_description.md) segítségével.
 
+Példa, amivel levezetjük az elkészítés folyamatát:
+
+Tegyük fel, hogy a boltunkban tortákat árulunk és a Dobos torta termékből szeretnénk egy 10 és egy 12 szeletes változatát értékesíteni.
+A 10 szeletes változat ára megegyezik a termék alapárával, viszont a 12 szeletes változatot 2000 forinttal drágábban szeretnénk árusítani. 
+
 ## 1. lépés
 
 A [**Product Option Resource**](../../api/product_option.md) segítségével létrehozzuk az új termékopciót.
