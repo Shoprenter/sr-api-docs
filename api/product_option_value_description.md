@@ -89,3 +89,7 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'delete'" :lang="'hu'"/>
 
+## Példák
+
+- [**Termékopció kezelése**](../development/api-examples/07_product_option.md)
+
