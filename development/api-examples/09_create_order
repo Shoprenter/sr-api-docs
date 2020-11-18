@@ -1,0 +1,29 @@
+Rendelés felvétele
+
+Az alábbi példában bemutatásra kerü, hogy miként lehet egy rendelést felvenni api kapcsolaton keresztül.
+
+A feladat az alábbi lépésekből áll:
+
+1. Rendelés létrehozása az Order Resource segítségével
+2, További tételek hozzáadása az Order Total segítségével
+3, Rendelt termékek hozzáadása a Order Product segítségével
+
+1. lépés
+
+Az Order Resource segítségével létrehozzuk az új rendelést.
+Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
+ - nyelvet
+ - valutát
+ - rendelés státuszt (OrderStatus)
+ - szállítási módot (ShippingMode csatolásakor ügyeljünk arra, hogy a megfelelő ShippingMethodName ID-t adjunk meg.)
+ 
+ 2, 
+ 
+Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelések listában, az ilyen típusú Order Totalnak léteznie kell. Legyen a neve "Bruttó végösszeg" és a rendelés "Price" mezőjében felvett értéket írjuk be. Ezután már rendelés oldalon listázódik is a rendelés, függetlenül attól, hogy NINCS termék a rendelésben.
+
+
+3,
+
+Vegyük fel egy tetszőleges terméket. Szándékosan az orderTotal felvétele után tesszük ezt. Ezt az orderProduct resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk mindent, nem elég hogy csak a terméket linkeljük. Kövessük a rendelésben megadott árakat, és ne figyeljük, hogy mennyibe kerül a kiválasztott termék. az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db adunk, úgy a 'total' legyen 'stock1' * 'price')
+
+FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is megnéznünk miképp jelenik meg. A rendelésen belül érdemes módosítani a Termékek fül alatt a darabszámot. Amennyiben bekerül az ÁFA mező dinamikusan és teljesen irreális árak fognak megjelenni, annak az lesz az oka, hogy hiányos az OrderTotal, illetve nem követtük a termék árát az OrderProductsban. 
