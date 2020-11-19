@@ -12,11 +12,15 @@ A feladat az alábbi lépésekből áll:
 
 Az [**Order Resource**](../../api/order.md) segítségével létrehozzuk az új rendelést.
 Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
- - nyelvet
- - valutát
- - rendelési státuszt (OrderStatus)
- - szállítási módot (ShippingMode csatolásakor ügyeljünk arra, hogy a megfelelő ShippingMethodName ID-t adjunk meg.)
- - amennyiben regisztrált vásárlóról van szó abban az esetben meg kell adni a customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges.  
+ - Nyelvet [Language Resource](../../api/language.md) resource id-t
+ - Valutát [Currency Resource](../../api/currency.md) resource id-t
+ - Rendelés státuszt [Order Status Resource](../../api/order_status.md) resource id-t
+ - Szállítási módot (([Shipping Mode Extend Resource](../../api/shipping_mode_extend.md) )csatolásakor ügyeljünk arra, 
+   hogy a megfelelő shippingMethodName-et adjunk meg)
+ - Vásárlót és vásárlói csoportot [Customer Extend Resource](../../api/customer_extend.md) 
+   és [Customer Group Resource](../../api/customer_group.md). (Amennyiben regisztrált vásárlóról van szó abban az 
+   esetben meg kell adni a 
+   customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges.  
  
 **Request**
 
