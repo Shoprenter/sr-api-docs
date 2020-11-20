@@ -20,7 +20,7 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
  - Vásárlót és vásárlói csoportot [Customer Extend Resource](../../api/customer_extend.md) 
    és [Customer Group Resource](../../api/customer_group.md). (Amennyiben regisztrált vásárlóról van szó abban az 
    esetben meg kell adni a 
-   customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges.  
+   customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges. 
  
 **Request**
 
