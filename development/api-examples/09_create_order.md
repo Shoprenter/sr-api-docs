@@ -7,6 +7,7 @@ A feladat az alábbi lépésekből áll:
 1, Rendelés létrehozása az [**Order Resource**](../../api/order.md) segítségével
 2, További tételek hozzáadása az [**Order Total**](../../api/order_total.md) segítségével
 3, Rendelt termékek hozzáadása a [**Order Product**](../../api/order_product.md) segítségével
+4, Rendelés total értékének módosítása az [**Order Resource**](../../api/order.md) segítségével
 
 ## 1. lépés
 
@@ -21,6 +22,7 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
    és [Customer Group Resource](../../api/customer_group.md). (Amennyiben regisztrált vásárlóról van szó abban az 
    esetben meg kell adni a 
    customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges. 
+ - a total értéket érdemes 0 értékkel megadni és ha minden lépéssel végeztünk utána megadni a Bruttó végösszeget.
  
 **Request**
 
@@ -213,64 +215,19 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
  
 ## 2. lépés 
  
-Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelések listában, "TOTAL" típusú [**Order Total**](../../api/order_total.md) -nak léteznie kell. Legyen a neve "Bruttó végösszeg" és a rendelés "Price" mezőjében felvett értéket írjuk be. Ezután már rendelés oldalon listázódik is a rendelés, függetlenül attól, hogy NINCS termék a rendelésben.
+Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelések listában, az alábbi típusú [**Order Total**](../../api/order_total.md) -nak léteznie kell:
+ -  "SUB_TOTAL" típusú értéknek, mely a Nettó részösszegnek felel meg
+ -  "TAX" típusú értéknek, mely az ÁFA értékének felel meg
+ -  "SUB_TOTAL_WITH_TAX" típusú értéknek, mely a Bruttó részösszegnek felel meg
+ -  "SHIPPING" típusú értéknek, mely a Szállítási díjnak felel meg
+ -  "TOTAL" típusú értéknek, mely a Bruttó vgéösszegnek felel meg
+ 
+ Az [**Order Total**](../../api/order_total.md)-ban a sortOrder tulajdonsággal tudjuk megadni, hogy a rendelés táblázatában hanyadik sorban szerepeljen a felvett [**Order Total**](../../api/order_total.md) resource. 
+ Az [**Order Total**](../../api/order_total.md) -ban megadott value értékek nem kerülnek automatikus számolásra, így azokat manuálisan szükséges megadni.
+ 
 
-**Request**
+ Az alábbi példa segít abban, hogy "Nettó részösszeg" esetén milyen kérést kell megadnunk:
 
-<table>
-  <tr>
-    <td><b>method:</b></td>
-    <td>POST</td>
-  </tr>
-  <tr>
-    <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
-  </tr>
-  <tr>
-    <td><b>headers:</b></td>
-    <td>
-        Accept:application/json<br>
-        Content-Type:application/json
-    </td>
-  </tr>
-</table> 
-
-```json
-{
-    "name": "Bruttó végösszeg:",
-    "valueText": "24060 Ft",
-    "value": "24060.0000",
-    "sortOrder": "7",
-    "type": "TOTAL",
-    "key": null,
-    "description": null,
-    "order": {
-        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
-    }
-}
-```
-**Response**
-
-```json
-{
-    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
-    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
-    "name": "Bruttó végösszeg:",
-    "valueText": "24060 Ft",
-    "value": "24060.0000",
-    "sortOrder": "7",
-    "type": "TOTAL",
-    "key": "",
-    "description": "",
-    "dateCreated": "2020-11-19T23:19:24",
-    "dateUpdated": "2020-11-19T23:19:24",
-    "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
-    }
-}
-```
-
-Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../api/order_total.md) type értékeket is fel kell venni:
 
 **Request**
 
@@ -326,6 +283,9 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
     }
 }
 ```
+
+ Az alábbi példa segít abban, hogy "ÁFA (27%):" esetén milyen kérést kell megadnunk:
+ 
 **Request**
 
 <table>
@@ -351,7 +311,7 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
     "name": "ÁFA (27%): ",
     "valueText": " 4.860 Ft ",
     "value": "4860.0000",
-    "sortOrder": "3",
+    "sortOrder": "4",
     "type": "TAX",
     "key": null,
     "description": null,
@@ -369,7 +329,7 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
     "name": "ÁFA (27%): ",
     "valueText": " 4.860 Ft ",
     "value": "4860.0000",
-    "sortOrder": "3",
+    "sortOrder": "4",
     "type": "TAX",
     "key": "",
     "description": "",
@@ -380,6 +340,10 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
     }
 }
 ```
+
+Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kérést kell megadnunk:
+
+
 **Request**
 
 <table>
@@ -405,7 +369,7 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
     "name": "Bruttó részösszeg:",
     "valueText": "22.860 Ft",
     "value": "22860.0000",
-    "sortOrder": "4",
+    "sortOrder": "5",
     "type": "SUB_TOTAL_WITH_TAX",
     "key": null,
     "description": null,
@@ -423,7 +387,7 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
     "name": "Bruttó részösszeg:",
     "valueText": "22.860 Ft",
     "value": "22860.0000",
-    "sortOrder": "4",
+    "sortOrder": "5",
     "type": "SUB_TOTAL_WITH_TAX",
     "key": "",
     "description": "",
@@ -434,6 +398,10 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
     }
 }
 ```
+
+Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" esetén milyen kérést kell megadnunk:
+
+
 **Request**
 
 <table>
@@ -490,9 +458,67 @@ Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../
 ```
 
 
+Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kérést kell megadnunk:
+
+
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>POST</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table> 
+
+```json
+{
+    "name": "Bruttó végösszeg:",
+    "valueText": "24060 Ft",
+    "value": "24060.0000",
+    "sortOrder": "7",
+    "type": "TOTAL",
+    "key": null,
+    "description": null,
+    "order": {
+        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Response**
+
+```json
+{
+    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
+    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
+    "name": "Bruttó végösszeg:",
+    "valueText": "24060 Ft",
+    "value": "24060.0000",
+    "sortOrder": "7",
+    "type": "TOTAL",
+    "key": "",
+    "description": "",
+    "dateCreated": "2020-11-19T23:19:24",
+    "dateUpdated": "2020-11-19T23:19:24",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+
 ## 3. lépés 
 
-Vegyünk fel egy tetszőleges terméket.  Ezt az [**Order Product**](../../api/order_product.md) resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk mindent, nem elég hogy csak a terméket linkeljük. Kövessük a rendelésben megadott árakat, és ne figyeljük, hogy mennyibe kerül a kiválasztott termék. az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db adunk, úgy a 'total' legyen 'stock1' * 'price')
+Vegyünk fel egy tetszőleges terméket.  Ezt az [**Order Product**](../../api/order_product.md) resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk mindent, nem elég hogy csak a terméket linkelnünk. Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül a kiválasztott termék. az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db adunk, úgy a 'total' legyen 'stock1' * 'price')
 
 FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is megnéznünk miképp jelenik meg. A rendelésen belül érdemes módosítani a Termékek fül alatt a darabszámot. Amennyiben bekerül plusz ÁFA mező és teljesen irreális árak fognak megjelenni, annak az lesz az oka, hogy hiányos az OrderTotal, illetve nem követtük a termék árát az OrderProductsban. 
 
@@ -574,6 +600,128 @@ FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is
     },
     "orderProductOptions": {
         "href": "http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw"
+    }
+}
+```
+## 4. lépés 
+
+A visszajelzések és a gyakorlat is azta lépést vonta maga után, hogy mikor elvégeztünk minden kérés felvitelével érdemes az [**Order Resource**](../../api/order.md) 
+segítségével a Total értéket módosítani, és ezt az alábbi példa alapján tudjuk megtenni:
+
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>PUT</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/orders</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table> 
+
+```json
+{
+    "total": "24060.0000"
+}
+```
+**Response**
+
+```json
+{
+    "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
+    "id": "b3JkZXItb3JkZXJfaWQ9NDk=",
+    "innerId": "49",
+    "invoiceId": "0",
+    "invoicePrefix": "",
+    "firstname": "Fekete",
+    "lastname": "Márton",
+    "phone": "+36201234567",
+    "fax": "",
+    "email": "teszt@teszt.com",
+    "shippingFirstname": "Teszt",
+    "shippingLastname": "Teszt",
+    "shippingCompany": "",
+    "shippingAddress1": "Teszt út 11",
+    "shippingAddress2": "",
+    "shippingCity": "Teszt",
+    "shippingPostcode": "4033",
+    "shippingZoneName": "",
+    "shippingCountryName": "Magyarország",
+    "shippingAddressFormat": "",
+    "shippingMethodName": "Házhozszállítás futárszolgálattal",
+    "shippingMethodTaxRate": "25.0000",
+    "shippingMethodTaxName": "25 %",
+    "shippingMethodExtension": "WSESHIP",
+    "shippingReceivingPointId": "0",
+    "paymentFirstname": "Teszt",
+    "paymentLastname": "Teszt",
+    "paymentCompany": "",
+    "paymentAddress1": "Teszt út 11",
+    "paymentAddress2": "",
+    "paymentCity": "Teszt",
+    "paymentPostcode": "4033",
+    "paymentZoneName": "",
+    "paymentCountryName": "Magyarország",
+    "paymentAddressFormat": "",
+    "paymentMethodName": "Fizetési mód",
+    "paymentMethodCode": "COD",
+    "paymentMethodTaxRate": "0.0000",
+    "paymentMethodTaxName": "",
+    "paymentMethodAfter": "1",
+    "taxNumber": "",
+    "comment": "Megjegyzés",
+    "total": "24060.0000",
+    "value": "1.00000000",
+    "couponTaxRate": "-1.0000",
+    "dateCreated": "2020-11-19T23:05:26",
+    "dateUpdated": "2020-11-23T17:16:03",
+    "ip": "11.11.11.11",
+    "pickPackPontShopCode": "100010",
+    "loyaltyPointsTaxRate": "-1.0000",
+    "customer": {
+        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+    },
+    "customerGroup": {
+        "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+    },
+    "shippingZone": null,
+    "shippingCountry": {
+        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "paymentZone": null,
+    "paymentCountry": {
+        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+    },
+    "orderStatus": {
+        "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+    },
+    "language": {
+        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    },
+    "currency": {
+        "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+    },
+    "shippingMode": {
+        "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
+    },
+    "furgefutarWaybill": 0,
+    "orderTotals": {
+        "href": "http://shopname.api.shoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+    },
+    "orderProducts": {
+        "href": "http://shopname.api.shoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+    },
+    "orderGiftWrappings": {
+        "href": "http://shopname.api.shoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
