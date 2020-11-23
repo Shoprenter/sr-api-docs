@@ -4,10 +4,10 @@ Az alábbi példában bemutatásra kerül, hogy miként lehet egy rendelést fel
 
 A feladat az alábbi lépésekből áll:
 
-1, Rendelés létrehozása az [**Order Resource**](../../api/order.md) segítségével
-2, További tételek hozzáadása az [**Order Total**](../../api/order_total.md) segítségével
-3, Rendelt termékek hozzáadása a [**Order Product**](../../api/order_product.md) segítségével
-4, Rendelés total értékének módosítása az [**Order Resource**](../../api/order.md) segítségével
+1. Rendelés létrehozása az [**Order Resource**](../../api/order.md) segítségével
+2. További tételek hozzáadása az [**Order Total**](../../api/order_total.md) segítségével
+3. Rendelt termékek hozzáadása a [**Order Product**](../../api/order_product.md) segítségével
+4. Rendelés total értékének módosítása az [**Order Resource**](../../api/order.md) segítségével
 
 ## 1. lépés
 
