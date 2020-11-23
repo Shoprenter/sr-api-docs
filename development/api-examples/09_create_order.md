@@ -22,7 +22,7 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
    és [Customer Group Resource](../../api/customer_group.md). (Amennyiben regisztrált vásárlóról van szó abban az 
    esetben meg kell adni a 
    customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges. 
- - a total értéket érdemes 0 értékkel megadni és ha minden lépéssel végeztünk utána megadni a Bruttó végösszeget.
+ - a total értéket érdemes 0 értékkel megadni és ha minden lépéssel végeztünk utána megadni a Bruttó végösszeget, mert lehetséges, hogy változik ez az érték ha minden lépéssel végeztünk.
  
 **Request**
 
@@ -518,7 +518,7 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
 
 ## 3. lépés 
 
-Vegyünk fel egy tetszőleges terméket.  Ezt az [**Order Product**](../../api/order_product.md) resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk mindent, nem elég hogy csak a terméket linkelnünk. Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül a kiválasztott termék. az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db adunk, úgy a 'total' legyen 'stock1' * 'price')
+Vegyünk fel egy tetszőleges terméket.  Ezt az [**Order Product**](../../api/order_product.md) resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk mindent, nem elég hogy csak a terméket linkelünk. Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db-ot adunk, úgy a 'total' legyen 'stock1' * 'price')
 
 FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is megnéznünk miképp jelenik meg. A rendelésen belül érdemes módosítani a Termékek fül alatt a darabszámot. Amennyiben bekerül plusz ÁFA mező és teljesen irreális árak fognak megjelenni, annak az lesz az oka, hogy hiányos az OrderTotal, illetve nem követtük a termék árát az OrderProductsban. 
 
@@ -605,8 +605,8 @@ FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is
 ```
 ## 4. lépés 
 
-A visszajelzések és a gyakorlat is azta lépést vonta maga után, hogy mikor elvégeztünk minden kérés felvitelével érdemes az [**Order Resource**](../../api/order.md) 
-segítségével a Total értéket módosítani, és ezt az alábbi példa alapján tudjuk megtenni:
+A visszajelzések és a gyakorlat is azt a lépést vonta maga után, hogy mikor elvégeztünk minden kérés felvitelével, érdemes az [**Order Resource**](../../api/order.md) 
+segítségével a total értéket módosítani, és ezt az alábbi példa alapján tudjuk megtenni:
 
 **Request**
 
