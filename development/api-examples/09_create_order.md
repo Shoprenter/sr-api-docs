@@ -62,8 +62,8 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "shippingCountryName": "Magyarország",
     "shippingAddressFormat": null,
     "shippingMethodName": "Házhozszállítás futárszolgálattal",
-    "shippingMethodTaxRate": "25.0000",
-    "shippingMethodTaxName": "25 %",
+    "shippingMethodTaxRate": "27.0000",
+    "shippingMethodTaxName": "27 %",
     "shippingMethodExtension": "WSESHIP",
     "shippingReceivingPointId": "0",
     "paymentFirstname": "Teszt",
@@ -82,11 +82,11 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "paymentMethodTaxName": null,
     "paymentMethodAfter": "1",
     "comment": "Megjegyzés",
-    "total": "3990.0000",
+    "total": "24060.0000",
     "value": "1.00000000",
     "couponTaxRate": "-1.0000",
-    "dateCreated": "2012-09-27T18:13:31",
-    "dateUpdated": "2012-09-27T18:13:31",
+    "dateCreated": "2020-11-19T18:13:31",
+    "dateUpdated": "2020-11-19T18:13:31",
     "ip": "11.11.11.11",
     "pickPackPontShopCode": "100010",
     "customer": {
@@ -122,13 +122,13 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
 ```json
 
 {
-    "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTcy",
-    "id": "b3JkZXItb3JkZXJfaWQ9MTcy",
-    "innerId": "172",
+    "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
+    "id": "b3JkZXItb3JkZXJfaWQ9NDk=",
+    "innerId": "49",
     "invoiceId": "0",
     "invoicePrefix": "",
-    "firstname": "Teszt",
-    "lastname": "Teszt",
+    "firstname": "Fekete",
+    "lastname": "Márton",
     "phone": "+36201234567",
     "fax": "",
     "email": "teszt@teszt.com",
@@ -143,8 +143,8 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "shippingCountryName": "Magyarország",
     "shippingAddressFormat": "",
     "shippingMethodName": "Házhozszállítás futárszolgálattal",
-    "shippingMethodTaxRate": "25.0000",
-    "shippingMethodTaxName": "25 %",
+    "shippingMethodTaxRate": "27.0000",
+    "shippingMethodTaxName": "27 %",
     "shippingMethodExtension": "WSESHIP",
     "shippingReceivingPointId": "0",
     "paymentFirstname": "Teszt",
@@ -164,16 +164,16 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "paymentMethodAfter": "1",
     "taxNumber": "",
     "comment": "Megjegyzés",
-    "total": "3990.0000",
+    "total": "24060.0000",
     "value": "1.00000000",
     "couponTaxRate": "-1.0000",
-    "dateCreated": "2019-09-06T15:47:59",
-    "dateUpdated": "2019-09-06T15:47:59",
+    "dateCreated": "2020-11-19T23:05:26",
+    "dateUpdated": "2020-11-19T23:05:26",
     "ip": "11.11.11.11",
     "pickPackPontShopCode": "100010",
     "loyaltyPointsTaxRate": "-1.0000",
     "customer": {
-        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
     },
     "customerGroup": {
         "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
@@ -198,14 +198,15 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "shippingMode": {
         "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
     },
+    "furgefutarWaybill": 0,
     "orderTotals": {
-        "href": "http://shopname.api.shoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+        "href": "http://shopname.api.shoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderProducts": {
-        "href": "http://shopname.api.shoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+        "href": "http://shopname.api.shoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderGiftWrappings": {
-        "href": "http://shopname.api.shoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+        "href": "http://shopname.api.shoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -237,14 +238,14 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 ```json
 {
     "name": "Bruttó végösszeg:",
-    "valueText": "2.400 Ft",
-    "value": "2400.0000",
-    "sortOrder": "1",
+    "valueText": "24060 Ft",
+    "value": "24060.0000",
+    "sortOrder": "7",
     "type": "TOTAL",
     "key": null,
     "description": null,
     "order": {
-        "id": "b3JkZXItb3JkZXJfaWQ9Mw=="
+        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -252,22 +253,242 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
-    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
+    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
+    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
     "name": "Bruttó végösszeg:",
-    "valueText": "2.400 Ft",
-    "value": "2400.0000",
-    "sortOrder": "1",
+    "valueText": "24060 Ft",
+    "value": "24060.0000",
+    "sortOrder": "7",
     "type": "TOTAL",
-    "key": {},
-    "description": {},
-    "dateCreated": "2020-01-01T01:00:00",
-    "dateUpdated": "2020-01-01T01:00:00",
+    "key": "",
+    "description": "",
+    "dateCreated": "2020-11-19T23:19:24",
+    "dateUpdated": "2020-11-19T23:19:24",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
+
+Illetve ahhoz, hogy a rendelés teljes legyen, további [**Order Total**](../../api/order_total.md) type értékeket is fel kell venni:
+
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>POST</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table> 
+
+```json
+{
+    "name": "Nettó részösszeg:",
+    "valueText": "18.000 Ft ",
+    "value": "18000.0000",
+    "sortOrder": "3",
+    "type": "SUB_TOTAL ",
+    "key": null,
+    "description": null,
+    "order": {
+        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Response**
+
+```json
+{
+    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
+    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
+    "name": "Nettó részösszeg:",
+    "valueText": "18.000 Ft ",
+    "value": "18000.0000",
+    "sortOrder": "3",
+    "type": "",
+    "key": "",
+    "description": "",
+    "dateCreated": "2020-11-19T23:22:46",
+    "dateUpdated": "2020-11-19T23:22:46",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>POST</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table> 
+
+```json
+{
+    "name": "ÁFA (27%): ",
+    "valueText": " 4.860 Ft ",
+    "value": "4860.0000",
+    "sortOrder": "3",
+    "type": "TAX",
+    "key": null,
+    "description": null,
+    "order": {
+        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Response**
+
+```json
+{
+    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
+    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
+    "name": "ÁFA (27%): ",
+    "valueText": " 4.860 Ft ",
+    "value": "4860.0000",
+    "sortOrder": "3",
+    "type": "TAX",
+    "key": "",
+    "description": "",
+    "dateCreated": "2020-11-19T23:23:46",
+    "dateUpdated": "2020-11-19T23:23:46",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>POST</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table> 
+
+```json
+{
+    "name": "Bruttó részösszeg:",
+    "valueText": "22.860 Ft",
+    "value": "22860.0000",
+    "sortOrder": "4",
+    "type": "SUB_TOTAL_WITH_TAX",
+    "key": null,
+    "description": null,
+    "order": {
+        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Response**
+
+```json
+{
+    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
+    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
+    "name": "Bruttó részösszeg:",
+    "valueText": "22.860 Ft",
+    "value": "22860.0000",
+    "sortOrder": "4",
+    "type": "SUB_TOTAL_WITH_TAX",
+    "key": "",
+    "description": "",
+    "dateCreated": "2020-11-19T23:24:59",
+    "dateUpdated": "2020-11-19T23:24:59",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Request**
+
+<table>
+  <tr>
+    <td><b>method:</b></td>
+    <td>POST</td>
+  </tr>
+  <tr>
+    <td><b>url:</b></td>
+    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+  </tr>
+  <tr>
+    <td><b>headers:</b></td>
+    <td>
+        Accept:application/json<br>
+        Content-Type:application/json
+    </td>
+  </tr>
+</table> 
+
+```json
+{
+    "name": "Házhozszállítás futárszolgálattal:",
+    "valueText": "1.200 Ft",
+    "value": "1200.0000",
+    "sortOrder": "6",
+    "type": "SHIPPING",
+    "key": null,
+    "description": null,
+    "order": {
+        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+**Response**
+
+```json
+{
+    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
+    "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
+    "name": "Házhozszállítás futárszolgálattal:",
+    "valueText": "1.200 Ft",
+    "value": "1200.0000",
+    "sortOrder": "6",
+    "type": "SHIPPING",
+    "key": "",
+    "description": "",
+    "dateCreated": "2020-11-19T23:27:05",
+    "dateUpdated": "2020-11-19T23:27:05",
+    "order": {
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+    }
+}
+```
+
 
 ## 3. lépés 
 
@@ -298,25 +519,25 @@ FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is
 ```json
 
 {
-    "name": "Termék név",
-    "sku": "9789639715615",
+    "name": "Bőrnadrág, Mango",
+    "sku": "9950000051",
     "modelNumber": null,
-    "originalPrice": "2400.0000",
-    "price": "2400.0000",
-    "total": "2400.0000",
-    "taxRate": "25.0000",
-    "stock1": "0",
-    "stock2": "1",
+    "originalPrice": "18000.0000",
+    "price": "18000.0000",
+    "total": "18000.0000",
+    "taxRate": "27.0000",
+    "stock1": "1",
+    "stock2": "0",
     "subtractStock": "1",
     "width": "1.0",
     "height": "1.0",
     "length": "1.0",
     "weight": "1.0",
     "order": {
-        "id": "b3JkZXItb3JkZXJfaWQ9Mw=="
+        "id": "b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "product": {
-        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTM3MA=="
     }
 }
 ```
@@ -325,32 +546,34 @@ FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
-    "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
-    "name": "Termék név",
-    "sku": "9789639715615",
-    "modelNumber": {},
-    "originalPrice": "2400.0000",
-    "price": "2400.0000",
-    "total": "2400.0000",
-    "taxRate": "25.0000",
-    "stock1": "0",
-    "stock2": "1",
+    "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
+    "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
+    "name": "Bőrnadrág, Mango",
+    "sku": "9950000051",
+    "modelNumber": "",
+    "originalPrice": "18000.0000",
+    "price": "18000.0000",
+    "total": "18000.0000",
+    "taxRate": "27.0000",
+    "stock1": "1",
+    "stock2": "0",
+    "stock3": "0",
+    "stock4": "0",
     "subtractStock": "1",
-    "dateCreated": "2013-01-01T01:00:00",
-    "dateUpdated": "2013-01-01T01:00:00",
+    "dateCreated": "2020-11-19T23:32:52",
+    "dateUpdated": "2020-11-19T23:32:52",
     "width": "1.00",
     "height": "1.00",
     "length": "1.00",
     "weight": "1.00",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
+        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM3MA=="
     },
     "orderProductOptions": {
-        "href": "http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw=="
+        "href": "http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw"
     }
 }
 ```
