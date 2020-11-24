@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2020.11.24
+- Az API példák kiegészültek egy [**Rendelés felvétele**](./api-examples/09_create_order.md) példával.
+
 #### 2020.10.30.
 - Az API példák kiegészültek egy [**"Új rendelés feladás" webhook működése**](./api-examples/06_webhook.md) példával.
 - Az API példák kiegészültek egy [**termékopció kezelése**](./api-examples/07_product_option.md) példával.
