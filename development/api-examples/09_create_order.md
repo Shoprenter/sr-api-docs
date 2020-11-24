@@ -1,6 +1,6 @@
 # Rendelés felvétele
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy rendelést felvenni api kapcsolaton keresztül.
+Az alábbi példában bemutatásra kerül, hogy miként lehet egy rendelést felvenni Shoprenter API segítségével.
 
 A feladat az alábbi lépésekből áll:
 
@@ -22,7 +22,10 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
    és [Customer Group Resource](../../api/customer_group.md). (Amennyiben regisztrált vásárlóról van szó abban az 
    esetben meg kell adni a 
    customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges. 
- - a total értéket érdemes 0 értékkel megadni és ha minden lépéssel végeztünk utána megadni a Bruttó végösszeget, mert lehetséges, hogy változik ez az érték ha minden lépéssel végeztünk.
+ - a total értéket érdemes 0 értékkel megadni és ha minden lépéssel végeztünk utána megadni a Bruttó végösszeget, 
+   mert lehetséges, hogy változik ez az érték, ha minden lépéssel végeztünk.
+ - Itt még nem feltétlenül szükséges a "total" mezőt felvenni. Mikor a rendeléshez tartozó minden al-resource megadásra
+   került, és pontosan megvan a rendelés végösszege, ezután vesszük fel a rendeléshez. 
  
 **Request**
 
@@ -84,7 +87,7 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "paymentMethodTaxName": null,
     "paymentMethodAfter": "1",
     "comment": "Megjegyzés",
-    "total": "24060.0000",
+    "total": null,
     "value": "1.00000000",
     "couponTaxRate": "-1.0000",
     "dateCreated": "2020-11-19T18:13:31",
@@ -226,8 +229,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
  Az [**Order Total**](../../api/order_total.md) -ban megadott value értékek nem kerülnek automatikus számolásra, így azokat manuálisan szükséges megadni.
  
 
- Az alábbi példa segít abban, hogy "Nettó részösszeg" esetén milyen kérést kell megadnunk:
-
+ Az alábbi példa segít abban, hogy "Nettó részösszeg" esetén milyen kérést kell elküldenünk:
 
 **Request**
 
@@ -341,7 +343,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 }
 ```
 
-Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kérést kell megadnunk:
+Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kérést kell elküldenünk:
 
 
 **Request**
@@ -399,7 +401,7 @@ Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kér
 }
 ```
 
-Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" esetén milyen kérést kell megadnunk:
+Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" esetén milyen kérést kell elküldenünk:
 
 
 **Request**
@@ -518,9 +520,16 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
 
 ## 3. lépés 
 
-Vegyünk fel egy tetszőleges terméket.  Ezt az [**Order Product**](../../api/order_product.md) resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk mindent, nem elég hogy csak a terméket linkelünk. Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db-ot adunk, úgy a 'total' legyen 'stock1' * 'price')
+Küssünk össze egy tetszőleges terméket a rendeléssel.  Ezt az [**Order Product Resource**](../../api/order_product.md) 
+resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk külön néhány termék adatot, nem elég csak 
+a terméket resource id-t megadnunk. Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül 
+a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db-ot adunk, 
+úgy a 'total' legyen 'stock1' * 'price')
 
-FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is megnéznünk miképp jelenik meg. A rendelésen belül érdemes módosítani a Termékek fül alatt a darabszámot. Amennyiben bekerül plusz ÁFA mező és teljesen irreális árak fognak megjelenni, annak az lesz az oka, hogy hiányos az OrderTotal, illetve nem követtük a termék árát az OrderProductsban. 
+**FONTOS**, hogy az első rendelés felvétele után érdemes a kérdéses bolt adminisztrációs felületen is ellenőriznünk,
+ miképp jelenik meg. A rendelésen belül érdemes módosítani a Termékek fül alatt a darabszámot. 
+ Amennyiben bekerül plusz "ÁFA" mező és teljesen irreális árak fognak megjelenni, 
+ annak az lesz az oka, hogy hiányos az OrderTotal, illetve nem követtük a termék árát az OrderProducts-ban. 
 
 **Request**
 
@@ -605,8 +614,8 @@ FONTOS, hogy az első rendelés felvétele után érdemes az admin felületen is
 ```
 ## 4. lépés 
 
-A visszajelzések és a gyakorlat is azt a lépést vonta maga után, hogy mikor elvégeztünk minden kérés felvitelével, érdemes az [**Order Resource**](../../api/order.md) 
-segítségével a total értéket módosítani, és ezt az alábbi példa alapján tudjuk megtenni:
+Mikor elvégeztünk minden al-resource felvitelével, az [**Order Resource**](../../api/order.md) 
+segítségével a "total" értéket módosítjuk, és ezt az alábbi példa alapján tudjuk megtenni:
 
 **Request**
 
@@ -617,7 +626,7 @@ segítségével a total értéket módosítani, és ezt az alábbi példa alapj�
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orders</td>
+    <td>http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
