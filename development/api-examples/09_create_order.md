@@ -16,8 +16,8 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
  - Nyelvet [Language Resource](../../api/language.md) resource id-t
  - Valutát [Currency Resource](../../api/currency.md) resource id-t
  - Rendelés státuszt [Order Status Resource](../../api/order_status.md) resource id-t
- - Szállítási módot (([Shipping Mode Extend Resource](../../api/shipping_mode_extend.md) )csatolásakor ügyeljünk arra, 
-   hogy a megfelelő shippingMethodName-et adjunk meg)
+ - Szállítási módot [Shipping Mode Extend Resource](../../api/shipping_mode_extend.md) csatolásakor ügyeljünk arra, 
+   hogy a megfelelő shippingMethodName-et adjunk meg
  - Vásárlót és vásárlói csoportot [Customer Extend Resource](../../api/customer_extend.md) 
    és [Customer Group Resource](../../api/customer_group.md). (Amennyiben regisztrált vásárlóról van szó abban az 
    esetben meg kell adni a 
@@ -522,9 +522,9 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
 
 Küssünk össze egy tetszőleges terméket a rendeléssel.  Ezt az [**Order Product Resource**](../../api/order_product.md) 
 resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk külön néhány termék adatot, nem elég csak 
-a terméket resource id-t megadnunk. Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül 
+a terméket resource id-t megadnunk) Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül 
 a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db-ot adunk, 
-úgy a 'total' legyen 'stock1' * 'price')
+úgy a 'total' legyen 'stock1' * 'price'
 
 **FONTOS**, hogy az első rendelés felvétele után érdemes a kérdéses bolt adminisztrációs felületen is ellenőriznünk,
  miképp jelenik meg. A rendelésen belül érdemes módosítani a Termékek fül alatt a darabszámot. 
@@ -614,7 +614,7 @@ a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra p
 ```
 ## 4. lépés 
 
-Mikor elvégeztünk minden al-resource felvitelével, az [**Order Resource**](../../api/order.md) 
+Mikor elvégeztünk minden al-resource felvételével, az [**Order Resource**](../../api/order.md) 
 segítségével a "total" értéket módosítjuk, és ezt az alábbi példa alapján tudjuk megtenni:
 
 **Request**
