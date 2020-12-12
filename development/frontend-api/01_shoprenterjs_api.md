@@ -147,7 +147,8 @@ Kimenet:
         code: "HUF", 
         rate: 1
     }, 
-    domain: "tokyo.shoprenter.hu"
+    domain: "tokyo.shoprenter.hu",
+    taxRate: 27
 }
 ```
 
@@ -164,7 +165,7 @@ Egyes mezők jelentése:
     <tr>
         <td>locale</td>
         <td>A bolt aktuális frontend nyelve</td>
-    </tr>  
+    </tr>
     <tr>
         <td>currency</td>
         <td>
@@ -182,6 +183,10 @@ Egyes mezők jelentése:
         <td>
            A bolt rendszer domain-ja
         </td>
+    </tr>
+    <tr>
+        <td>taxRate</td>
+        <td>A bolt aktuális ÁFA kulcsa</td>
     </tr>
 </table>
 
