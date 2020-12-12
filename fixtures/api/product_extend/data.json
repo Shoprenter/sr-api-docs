@@ -48,7 +48,7 @@
         {
             "name": "orderable",
             "description": {
-                "hu": "Rendelhetőség.",
+                "hu": "Rendelhetőség.<br>Értékei: 0 (Nem), 1 (Igen), 3 (Ajánlatkérés), 4 (Megrendelem)",
                 "en": "Rendelhetőség."
             },
             "required": false,
