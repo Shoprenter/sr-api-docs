@@ -20,11 +20,11 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
 - **A tesztbolt neve:** A fejlesztés legelején igényelni kell egy próbaboltot a [shoprenter.hu](https://www.shoprenter.hu/) oldalon. 
   Itt megadható a boltnév, ami a bolt domain első részeben - `[boltNev].shoprenter.hu` - lesz látható.
 
-**Az alkalmazás rendszerbe való felvétele után a következő adatokat a Shoprenter küldi el:**
-- **AppId:** alkalmazás azonosítója a Shoprenteren belül. 
-- **ClientId:** alkalmazás azonosító.
-- **ClientSecret:** Kulcs a kérések azonosításához.
-- **App URL:** Az alkalmazás Shoprenter-es URL-e.
+**Az alkalmazás rendszerbe való felvétele után a következő adatokat küldi el a Shoprenter:**
+- **AppId:** az alkalmazás azonosítója a Shoprenteren belül. 
+- **ClientId:** az alkalmazás azonosító.
+- **ClientSecret:** kulcs a kérések azonosításához.
+- **App URL:** az alkalmazás admin oldali Shoprenter-es URL-je.
 
 ### Alkalmazás telepítésének menete:
 1. A felhasználó az alkalmazás telepítésére kattint a Shoprenter admin felületén.
