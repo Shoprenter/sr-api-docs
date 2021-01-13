@@ -14,7 +14,9 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
 - **Alkalmazás logo:** az alkalmazás listában megjelenő logó kép (**250x150px**).
 - **Alkalmazás rövid leírása:** Maximum 70 karakteres rövid szöveg.
 - **Alkalmazás részletek link:** Az alkalmazás részleteire/sales oldalára mutató link.
-- **Alakalmazás típusa:** Az alkalmazás lehet admin felületbe ágyazott vagy átírányításos. Beágyazásnál az apphoz tartozó, Shoprenter adminonos URL-jére érkezve, az EntryPoint-nak megadott URL-t hívjuk be egy iframe-be. Átírányításnál pedig szimplán átírányítunk az EntryPoint-ra.
+- **Alakalmazás típusa:** Az alkalmazásnak két formája van:
+  - Beágyazott: Az EntryPoint-nak megadott URL-t betöltjük egy Iframe-be, amit az alkalmazáshoz tartozó URL-en lehet elérni, a Shoprenter admin felületén (pl. `https://shopname.shoprenter.hu/admin/app/1`).
+  - Átírányított: Átírányításnál a felhasználót szimplán átírányítjuk a megadott EntryPoint URL-re.
 - **A tesztbolt neve:** Az alkalmazás fejelsztése elején igényelni kell a [shoprenter.hu](https://www.shoprenter.hu/) oldalon egy próbaboltot. 
   Itt megadható a boltnév, amit a bolt domain-ja első részeben - `[boltNev].shoprenter.hu` - lesz látható.
 
