@@ -49,10 +49,12 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
     - Ha a telepítés közben hiba merült fel, akkor  `{"message":"App is not installed","code":409}` választ fog adni.
 5. Amennyiben a Shoprenter megfelelőnek találja a POST Request-et egy `username`, `password` párossal fog válaszolni, amivel az alkalmazás hozzáfér az adott bolt API-jához. 
    A 2. lépésben indított Shoprenteres kérésben lévő timestamp arra szolgál, hogy megvizsgáljuk, a kliens alkalmazás **30 másodpercen belül** megkezdi-e a API hozzáférés kérését!
-6. Ha az alkalmazás megkapta az authentikációs adatokat, átirányít a `https://[primaryDomain]/admin/app/[appId]` URL-re, ahol a primaryDomain-t a [Domain Resource](https://doc.shoprenter.hu/api/domain.html#tulajdonsagok)-ból lehet lekérdezni.
-   Ez azért fontos, mert a boltoknak egyedi domain neve is lehet!
-
-    **Megjegyzés:** Van lehetőség az app Shoprenteres URL-jére való redirect alkalmával tetszőleges query paramétereket küldeni. Ezek a paraméterek az entryPoint URL-jében jelennek meg, az authentikációhoz használt (shopname, code, timestamp, hmac) paramétereken felül.
+6. Ha az alkalmazás megkapta az authentikációs adatokat, át kell irányítania a `https://[primaryDomain]/admin/app/[appId]` URL-re.
+   - A "primaryDomain" jelzi, hogy a boltoknak **egyedi domain neve** is lehet.
+   - Tehát a bolt admin oldalának URL-je eltérhet a rendszer domain URL-től (pl. `https://shopname.shoprenter.hu/admin/`).
+   - Szerencsénkre az authentikációs adatokhoz hozzá lett még fűzve az `app_url` (a QueryString-ben), ami az aktuális alkalmazás elérésének az URL-jét tartalmazza. 
+   - Alternatív megoldás lehet még, hogy a "primaryDomain" értékét a [Domain Resource](https://doc.shoprenter.hu/api/domain.html#tulajdonsagok)-ból is le lehet kérdezni.
+   - **Megjegyzés:** Van lehetőség az app Shoprenteres URL-jére való redirect alkalmával tetszőleges query paramétereket küldeni. Ezek a paraméterek az entryPoint URL-jében jelennek meg, az authentikációhoz használt (shopname, code, timestamp, hmac) paramétereken felül.
 
     Példa: 
     Legyen az EntryPoint: `https://app.example.com/entryPoint`
