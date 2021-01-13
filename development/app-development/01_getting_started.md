@@ -18,7 +18,7 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
   - Beágyazott: Az EntryPoint-nak megadott URL-t betöltjük egy Iframe-be, amit az alkalmazáshoz tartozó URL-en lehet elérni, a Shoprenter admin felületén (pl. `https://shopname.shoprenter.hu/admin/app/1`).
   - Átírányított: Átírányításnál a felhasználót szimplán átírányítjuk a megadott EntryPoint URL-re.
 - **A tesztbolt neve:** Az alkalmazás fejelsztése elején igényelni kell a [shoprenter.hu](https://www.shoprenter.hu/) oldalon egy próbaboltot. 
-  Itt megadható a boltnév, amit a bolt domain-ja első részeben - `[boltNev].shoprenter.hu` - lesz látható.
+  Itt megadható a boltnév, ami a bolt domain első részeben - `[boltNev].shoprenter.hu` - lesz látható.
 
 **Az alkalmazás rendszerbe való felvétele után a következő adatokat a Shoprenter küldi el:**
 - **AppId:** alkalmazás azonosítója a Shoprenteren belül. 
