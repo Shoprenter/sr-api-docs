@@ -7,13 +7,16 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
 **Az alkalmazás tulajának a következő adatokat kell biztosítania.**
 - **Alkalmazás neve:** ez fog megjelenni a telepíthető alkalmazások listájába.
 - **EntryPoint:** Az alkalmazás belépési pontja. Az alkalmazás fejlesztője adja. HTTPS-protokollon keresztül elérhetőnek kell lennie.
-- **RedirectUri:** Az alkalmazás authentikációs belépési pontja ezen az URL-en keresztül fogja az authentikációs adatokat igényelni az adott Shoprenter-es bolt API-jához. HTTPS protokollon keresztül elérhetőnek kell lennie. **Figyelem!** Ha pl. single-page application lesz a kliens, ahol URL resource azonosítóval van megadva egy-egy route (https://example.com/shoprenter#redirect), azt technikai okokból, nem tudjuk elfogadni.
-- **UninstallUri:** Az alkalmazás törlése után egy GET kérés lesz elküldve erre az URL-re, hogy az alkalmazás még egy utolsó műveletet tudjon végrehajtani. (Megjegyzés: QueryString-ben hozzá lesznek fűzve a következő adatok: shopname, code, timestamp, hmac.)
+- **RedirectUri:** Az alkalmazás authentikációs belépési pontja ezen az URL-en keresztül fogja az authentikációs adatokat igényelni az adott Shoprenter-es bolt API-jához. HTTPS protokollon keresztül elérhetőnek kell lennie. 
+  **Figyelem!** Ha pl. egy Single-Page Application (SPA) lesz a kliens, ahol URL resource azonosítóval van megadva egy-egy route (`https://example.com/shoprenter#redirect`), azt technikai okok miatt nem tudjuk elfogadni.
+- **UninstallUri:** Az alkalmazás törlése után egy GET kérés lesz elküldve erre az URL-re, hogy az alkalmazás még egy utolsó műveletet tudjon végrehajtani. 
+  (Megjegyzés: QueryString-ben hozzá lesznek fűzve a következő adatok: `shopname`, `code`, `timestamp`, `hmac`.)
 - **Alkalmazás logo:** az alkalmazás listában megjelenő logó kép (**250x150px**).
 - **Alkalmazás rövid leírása:** Maximum 70 karakteres rövid szöveg.
 - **Alkalmazás részletek link:** Az alkalmazás részleteire/sales oldalára mutató link.
-- **Alakalmazás típusa:** Az alkalmazás lehet admin felületbe ágyazott vagy átírányításos. Beágyazásnál az apphoz tartozó, Shoprenter adminonos URL-jére érkezve, az entry point-nak megadott URL-t hívjuk be egy iframe-be. Átírányításnál pedig szimplán átírányítunk az entry pointra.
-- **A tesztbolt neve:** Az alkalmazás fejelsztése elején igényelni kell a shoprenter.hu oldalon egy próbaboltot. Itt megadható a boltnév, amit a bolt domainja első részeben - <bolt_nev>.shoprenter.hu - lesz látható.
+- **Alakalmazás típusa:** Az alkalmazás lehet admin felületbe ágyazott vagy átírányításos. Beágyazásnál az apphoz tartozó, Shoprenter adminonos URL-jére érkezve, az EntryPoint-nak megadott URL-t hívjuk be egy iframe-be. Átírányításnál pedig szimplán átírányítunk az EntryPoint-ra.
+- **A tesztbolt neve:** Az alkalmazás fejelsztése elején igényelni kell a [shoprenter.hu](https://www.shoprenter.hu/) oldalon egy próbaboltot. 
+  Itt megadható a boltnév, amit a bolt domain-ja első részeben - `[boltNev].shoprenter.hu` - lesz látható.
 
 **Az alkalmazás rendszerbe való felvétele után a következő adatokat a Shoprenter küldi el:**
 - **AppId:** alkalmazás azonosítója a Shoprenteren belül. 
@@ -34,8 +37,8 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
    A QueryString HMAC nélküli részének (`code=0907a61c0c8d55e99db179b68161bc00&shopname=example&timestamp=1337178173`) a **ClientSecret**-el sha256 algoritmussal elkódolva egyenértékűnek kell lennie a QueryString HMAC paraméterének értékével.
 4. Ha a kiszolgáló fél rendben találta a kérést. Küld egy POST Request-et a Shoprenter felé a `https://[shopname].shoprenter.hu/admin/oauth/access_credential` URL-re. 
    A POST Request-nek tartalmaznia kell az alábbi mezőket:
-    - **client_id:** Az Alkalmazás ClientId-ja
-    - **client_secret:** Az Alkalmazás ClientSecret-e 
+    - **client_id:** Az alkalmazás ClientId-ja
+    - **client_secret:** Az alkalmazás ClientSecret értéke 
     - **code:** a Request-ben kapod code
     - **timestamp:** a Request-ben kapott timestamp
     - **hmac:** a Request-ben kapott HMAC
@@ -54,7 +57,8 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
    - Tehát a bolt admin oldalának URL-je eltérhet a rendszer domain URL-től (pl. `https://shopname.shoprenter.hu/admin/`).
    - Szerencsénkre az authentikációs adatokhoz hozzá lett még fűzve az `app_url` (a QueryString-ben), ami az aktuális alkalmazás elérésének az URL-jét tartalmazza. 
    - Alternatív megoldás lehet még, hogy a "primaryDomain" értékét a [Domain Resource](https://doc.shoprenter.hu/api/domain.html#tulajdonsagok)-ból is le lehet kérdezni.
-   - **Megjegyzés:** Van lehetőség az app Shoprenteres URL-jére való redirect alkalmával tetszőleges query paramétereket küldeni. Ezek a paraméterek az entryPoint URL-jében jelennek meg, az authentikációhoz használt (shopname, code, timestamp, hmac) paramétereken felül.
+   - **Megjegyzés:** Van lehetőség egyedi QueryString paraméterekkel dekorálni az `app_url` értékét (az alkalmazás Shoprenteres URL-jét).
+     Ezek a paraméterek az EntryPoint URL-ben is meg fognak jelenni, az authentikációhoz használt paraméterek (`shopname`, `code`, `timestamp`, `hmac`) mellett.
 
     Példa: 
     Legyen az EntryPoint: `https://app.example.com/entryPoint`
