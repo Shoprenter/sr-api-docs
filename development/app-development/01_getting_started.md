@@ -41,7 +41,7 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
    A POST Request-nek tartalmaznia kell az alábbi mezőket:
     - **client_id:** Az alkalmazás ClientId-ja
     - **client_secret:** Az alkalmazás ClientSecret értéke 
-    - **code:** a Request-ben kapod code
+    - **code:** a Request-ben kapott code
     - **timestamp:** a Request-ben kapott timestamp
     - **hmac:** a Request-ben kapott HMAC
     
