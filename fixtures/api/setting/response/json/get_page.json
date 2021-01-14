@@ -132,6 +132,13 @@
             "value": "hu"
         },
         {
+            "href": "http://shopname.api.shoprenter.hu/settings/c2V0dGluZy1zZXR0aW5nX2lkPTEwNTUyMg==",
+            "id": "c2V0dGluZy1zZXR0aW5nX2lkPTEwNTUyMg==",
+            "group": "config",
+            "key": "config_timezone",
+            "value": "Europe/Budapest"
+        },
+        {
             "href": "http://shopname.api.shoprenter.hu/settings/c2V0dGluZy1zZXR0aW5nX2lkPTY0MDgy",
             "id": "c2V0dGluZy1zZXR0aW5nX2lkPTY0MDgy",
             "group": "config",

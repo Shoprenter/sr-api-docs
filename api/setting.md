@@ -32,6 +32,7 @@ Az alábbi táblázatban az API által visszaadott kulcsok jelentései találhat
 |config_address|A bolt üzemeltetőjének a címe|
 |config_email|Kapcsolati e-mail cím, ahová a kapcsolat menüpontban megírt üzenetek fognak érkezni|
 |config_language|A bolt nyelvének ISO kódja pl: hu|
+|config_timezone|Az áruház időzónája|
 |config_currency|A bolt által használt pénznem pl: HUF|
 |config_tax_class_id|A bolt által használt ÁFA kulcs Tax Class Resource azonosítója|
 |config_maintenance|A karbantartás oldal státusza. Értékei:<br>0 - Karbantartás oldal kikapcsolva.<br>1 - Karbantartás oldal bekapcsolva.|

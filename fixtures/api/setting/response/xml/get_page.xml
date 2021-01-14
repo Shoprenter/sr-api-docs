@@ -309,6 +309,23 @@
         </item>
         <item>
             <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/settings/c2V0dGluZy1zZXR0aW5nX2lkPTEwNTUyMg==]]>
+            </href>
+            <id>
+                <![CDATA[c2V0dGluZy1zZXR0aW5nX2lkPTEwNTUyMg==]]>
+            </id>
+            <group>
+                <![CDATA[config]]>
+            </group>
+            <key>
+                <![CDATA[config_timezone]]>
+            </key>
+            <value>
+                <![CDATA[Europe/Budapest]]>
+            </value>
+        </item>
+        <item>
+            <href>
                 <![CDATA[http://shopname.api.shoprenter.hu/settings/c2V0dGluZy1zZXR0aW5nX2lkPTY0MDgy]]>
             </href>
             <id>
