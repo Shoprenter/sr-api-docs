@@ -1,6 +1,9 @@
 # API changelog
 
-#### 2020.11.24
+#### 2021.01.19.
+- A [**Kezdeti lépések**](./app-development/01_getting_started.md) dokumentum javítva lett, és ki lett egészítve az "app_url" leírással.
+
+#### 2020.11.24.
 - Az API példák kiegészültek egy [**Rendelés felvétele**](./api-examples/09_create_order.md) példával.
 
 #### 2020.10.30.
