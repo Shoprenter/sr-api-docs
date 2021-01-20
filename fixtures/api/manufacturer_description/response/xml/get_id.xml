@@ -7,6 +7,7 @@
 	<customTitle><![CDATA[Egyedi cím]]></customTitle>
     <metaDescription><![CDATA[Meta leírás.]]></metaDescription>
 	<metaKeywords><![CDATA[kulcsszó_1, kulcsszó_2]]></metaKeywords>
+	<heading><![CDATA[H1 cím]]></heading>
     <manufacturer>
         <href><![CDATA[http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02]]></href>
     </manufacturer>

@@ -57,8 +57,8 @@
         {
             "name": "sortValuesBy",
             "description": {
-                "hu": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC.",
-                "en": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC."
+                "hu": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC, CUSTOM_ORDER_ASC.",
+                "en": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC, CUSTOM_ORDER_ASC."
             },
             "required": false,
             "readonly": false
