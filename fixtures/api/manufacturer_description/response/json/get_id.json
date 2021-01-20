@@ -7,6 +7,7 @@
     "customTitle": "Egyedi cím",
     "metaDescription": "Meta leírás.",
     "metaKeywords": "kulcsszó_1, kulcsszó_2",
+    "heading": "H1 cím",
     "manufacturer": {
         "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02"
     },

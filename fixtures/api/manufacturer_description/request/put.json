@@ -3,6 +3,7 @@
     "customTitle": "Egyedi title",
     "metaDescription": "Meta leírás.",
     "metaKeywords": "kulcsszó_1, kulcsszó_2",
+    "heading": "H1 cím",
     "manufacturer": {
         "id": "bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02"
     },

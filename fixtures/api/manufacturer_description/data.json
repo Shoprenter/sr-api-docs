@@ -46,6 +46,15 @@
             "readonly": false
         },
         {
+            "name": "heading",
+            "description": {
+                "hu": "H1 cím. Az oldal forrásában ez a szöveg lesz a H1 címsor. A gyártó nevét nem befolyásolja.",
+                "en": "H1 heading. This text will be the heading H1 in page source. Manufacturer name will not be affected."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "metaDescription",
             "description": {
                 "hu": "Egyedi meta leírás.",
