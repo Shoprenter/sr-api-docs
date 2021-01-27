@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2021.01.27.
+- A Product és Product Extend Resource POST és PUT kéréseinél immáron frissül a árszorzó, a "sávos árszorzók" funkció beállításai szerint.
+
 #### 2021.01.19.
 - A [**Kezdeti lépések**](./app-development/01_getting_started.md) dokumentum javítva lett, és ki lett egészítve az "app_url" leírással.
 - Setting resource kiegészült az áruház időzónájával (**config_timezone**). [dokumentáció](../api/setting.md)
