@@ -4,8 +4,10 @@
 - A [**Order Product Resource**](../api/order_product.md) kiegészült egy **parentProduct** tulajdonsággal. 
   Tipikusan olyan feladatok ihlették, amikor rendelés feldolgozásnál tudnunk kell, hogya rendelt terméknek 
   van-e szülőterméke. Csak olvasható!
-- A [**Order Extend Resource**](../api/order_product.md) kiegészült egy **coupon** tulajdonsággal. A használt kupon összes adatát
+- A [**Order Extend Resource**](../api/order_extend.md) kiegészült egy **coupon** tulajdonsággal. A használt kupon összes adatát
   tartalmazza. Csak olvasható!
+- A [**Order Extend Resource**](../api/order_product.md) -ban a **paymentCountry**, a **shippingCountry**, 
+  a **language** és a **currency** tulajdonságot kinyítottuk.  Csak olvashatóak!
 
 #### 2021.01.27.
 - A Product és Product Extend Resource POST és PUT kéréseinél immáron frissül a árszorzó, a "sávos árszorzók" funkció beállításai szerint.
