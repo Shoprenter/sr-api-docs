@@ -451,10 +451,10 @@
             "readonly": true
         },
         {
-            "name": "shippingCountry",
+            "name": "shippingCountry *",
             "description": {
-                "hu": "Szállítási cím országának linkje.",
-                "en": "Szállítási cím országának linkje."
+                "hu": "Objektum formában megadott, a rendeléshez tartozó szállítási cím országának adatai.",
+                "en": "Objektum formában megadott, a rendeléshez tartozó szállítási cím országának adatai."
             },
             "required": false,
             "readonly": true
@@ -469,10 +469,10 @@
             "readonly": true
         },
         {
-            "name": "paymentCountry",
+            "name": "paymentCountry *",
             "description": {
-                "hu": "Számlázási cím országának linkje.",
-                "en": "Számlázási cím országának linkje."
+                "hu": "Objektum formában megadott, a rendeléshez tartozó számlázási cím országának adatai.",
+                "en": "Objektum formában megadott, a rendeléshez tartozó számlázási cím országának adatai."
             },
             "required": false,
             "readonly": true
@@ -496,19 +496,19 @@
             "readonly": true
         },
         {
-            "name": "language",
+            "name": "language *",
             "description": {
-                "hu": "Nyelv linkje.",
-                "en": "Nyelv linkje."
+                "hu": "Objektum formában megadott, a rendeléshez tartozó nyelv adatai.",
+                "en": "Objektum formában megadott, a rendeléshez tartozó nyelv adatai."
             },
             "required": false,
             "readonly": true
         },
         {
-            "name": "currency",
+            "name": "currency *",
             "description": {
-                "hu": "Pénznem linkje.",
-                "en": "Pénznem linkje."
+                "hu": "Objektum formában megadott, a rendeléshez tartozó pénznem adatai.",
+                "en": "Objektum formában megadott, a rendeléshez tartozó pénznem adatai."
             },
             "required": false,
             "readonly": true
