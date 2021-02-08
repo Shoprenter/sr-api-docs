@@ -92,6 +92,33 @@
             "href": "http://shopname.api.shoprenter.hu/shippingLanes?shippingModeId=c2hpcHBpbmdNb2RlLWlkPTE4"
         }
     },
+    "coupon": {
+        "href": "http://shopname.api.shoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x",
+        "id": "Y291cG9uLWNvdXBvbl9pZD0x",
+        "code": "COUPONCODE",
+        "discountType": "PERCENT",
+        "percentDiscountValue": "10.0000",
+        "loginRequired": "0",
+        "freeShipping": "0",
+        "fixDiscountValue": "0.0000",
+        "dateStart": "2018-05-06",
+        "dateEnd": "2021-03-31",
+        "totalNumberOfCoupons": "1",
+        "totalNumberOfCouponsPerCustomer": "1",
+        "status": "1",
+        "dateCreated": "2018-05-07 16:29:02",
+        "dateUpdated": "0000-00-00 00:00:00",
+        "email": "",
+        "minOrderLimit": "0.00",
+        "targetType": "PRODUCT",
+        "validToSpecialProducts": "1",
+        "taxClass": {
+            "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
+        },
+        "couponDescriptions": {
+            "href": "http://shopname.api.shoprenter.hu/couponDescriptions?couponId=Y291cG9uLWNvdXBvbl9pZD0x"
+        }
+    },
     "orderTotals": [
         {
             "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDE=",

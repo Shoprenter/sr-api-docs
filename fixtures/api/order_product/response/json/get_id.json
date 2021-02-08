@@ -10,6 +10,8 @@
     "taxRate": "25.0000",
     "stock1": "0",
     "stock2": "1",
+    "stock3": "0",
+    "stock4": "0",
     "subtractStock": "1",
     "dateCreated": "2013-01-01T01:00:00",
     "dateUpdated": "2013-01-01T01:00:00",
@@ -17,6 +19,9 @@
     "height": "1.00",
     "length": "1.00",
     "weight": "1.00",
+    "parentProduct": {
+        "href": "http://shopname.api.shoprenter.hu/product/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+    },
     "order": {
         "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
     },

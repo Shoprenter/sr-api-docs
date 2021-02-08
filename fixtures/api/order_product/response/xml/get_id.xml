@@ -10,6 +10,8 @@
     <taxRate><![CDATA[25.0000]]></taxRate>
     <stock1><![CDATA[0]]></stock1>
     <stock2><![CDATA[1]]></stock2>
+    <stock3><![CDATA[0]]></stock3>
+    <stock4><![CDATA[0]]></stock4>
     <subtractStock><![CDATA[1]]></subtractStock>
     <dateCreated><![CDATA[2013-01-01T01:00:00]]></dateCreated>
     <dateUpdated><![CDATA[2013-01-01T01:00:00]]></dateUpdated>
@@ -17,6 +19,9 @@
     <height><![CDATA[1.00]]></height>
     <length><![CDATA[1.00]]></length>
     <weight><![CDATA[1.00]]></weight>
+    <parentProduct>
+        <href><![CDATA[http://shopname.api.shoprenter.hu/product/cHJvZHVjdC1wcm9kdWN0X2lkPTUw]]></href>
+    </parentProduct>
     <order>
         <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
     </order>

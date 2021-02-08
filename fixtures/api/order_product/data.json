@@ -91,6 +91,24 @@
             "readonly": false
         },
         {
+            "name": "stock3",
+            "description": {
+                "hu": "3. raktárból rendelt mennyiség. (Elhagyott kosár esetén mindig 0 lesz.)",
+                "en": "3. raktárból rendelt mennyiség. (Elhagyott kosár esetén mindig 0 lesz.)"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "stock4",
+            "description": {
+                "hu": "4. raktárból rendelt mennyiség. (Elhagyott kosár esetén mindig 0 lesz.)",
+                "en": "4. raktárból rendelt mennyiség. (Elhagyott kosár esetén mindig 0 lesz.)"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "subtractStock",
             "description": {
                 "hu": "Rendelt mennyiség levonása a raktárkészletekből. (1\/0)",
@@ -152,6 +170,15 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "parentProduct",
+            "description": {
+                "hu": "A megrendelt termék szülő terméke. Ha nincs szülő, megegyezik a 'product' tulajdonság értékével.",
+                "en": "A megrendelt termék szülő terméke. Ha nincs szülő, megegyezik a 'product' tulajdonság értékével."
+            },
+            "required": false,
+            "readonly": true
         },
         {
             "name": "order",

@@ -7,7 +7,7 @@
                 "en": "Rendelés azonosító."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "innerId",
@@ -25,7 +25,7 @@
                 "en": "Számla azonosító."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "invoiceIdPrefix",
@@ -34,7 +34,7 @@
                 "en": "Számla azonosító prefix."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "firstname",
@@ -43,7 +43,7 @@
                 "en": "Vezetéknév."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "lastname",
@@ -52,7 +52,7 @@
                 "en": "Keresztnév."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "phone",
@@ -61,7 +61,7 @@
                 "en": "Telefonszám."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "fax",
@@ -70,7 +70,7 @@
                 "en": "Fax."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "email",
@@ -79,7 +79,7 @@
                 "en": "Email cím."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingFirstname",
@@ -88,7 +88,7 @@
                 "en": "Szállítási cím vezetékneve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingLastname",
@@ -97,7 +97,7 @@
                 "en": "Szállítási cím keresztneve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingCompany",
@@ -106,7 +106,7 @@
                 "en": "Szállítási cím cégneve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingAddress1",
@@ -115,7 +115,7 @@
                 "en": "Szállítási cím utcája, házszáma."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingAddress2",
@@ -124,7 +124,7 @@
                 "en": "Szállítási cím kiegészítő adatai."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingCity",
@@ -133,7 +133,7 @@
                 "en": "Szállítási cím városa."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingPostcode",
@@ -142,7 +142,7 @@
                 "en": "Szállítási cím irányítószáma."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingCountryName",
@@ -151,7 +151,7 @@
                 "en": "Szállítási cím országának neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingZoneName",
@@ -160,7 +160,7 @@
                 "en": "Szállítási cím megyéjének neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingAddressFormat",
@@ -169,7 +169,7 @@
                 "en": "Szállítási cím megjelenítésének formátuma."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingMethodName",
@@ -178,7 +178,7 @@
                 "en": "Szállítási mód neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingMethodTaxRate",
@@ -187,7 +187,7 @@
                 "en": "Szállítás mód áfakulcsa."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingMethodTaxName",
@@ -196,7 +196,7 @@
                 "en": "Szállítás mód áfakulcsának neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingMethodExtension",
@@ -205,7 +205,7 @@
                 "en": "Szállítás mód típusa. Lehetséges értékek: WSESHIP, MPLPOSTPOINT, MPLPOSTSTAY, RECEIVINGPOINT, PICKPACKPONT."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingReceivingPointId",
@@ -214,7 +214,7 @@
                 "en": "Átvevőpont azonosítója."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentFirstname",
@@ -223,7 +223,7 @@
                 "en": "Számlázási cím vezetéknév."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentLastname",
@@ -232,7 +232,7 @@
                 "en": "Számlázási cím keresztnév."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentCompany",
@@ -241,7 +241,7 @@
                 "en": "Számlázási cím cégneve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentAddress1",
@@ -250,7 +250,7 @@
                 "en": "Számlázási cím utcája, házszáma."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentAddress2",
@@ -259,7 +259,7 @@
                 "en": "Számlázási cím kiegészítő adatai."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentCity",
@@ -268,7 +268,7 @@
                 "en": "Számlázási cím városa."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentPostcode",
@@ -277,7 +277,7 @@
                 "en": "Számlázási cím irányítószáma."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentCountryName",
@@ -286,7 +286,7 @@
                 "en": "Számlázási cím országának neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentZoneName",
@@ -295,7 +295,7 @@
                 "en": "Számlázási cím megyéjének neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentAddressFormat",
@@ -304,7 +304,7 @@
                 "en": "Számlázási cím megjelenítésének formátuma."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentMethodName",
@@ -313,7 +313,7 @@
                 "en": "Fizetési mód neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentMethodCode",
@@ -322,7 +322,7 @@
                 "en": "Fizetési mód neve. Lehetséges értékek: PAYU, OTP, CIB, COD, COD2, NOCHEX, BANK_TRANSFER, PAYPAL, CHEQUE, FREE_CHECKOUT, TCOM, LOYALTYPOINT, ESCALION, UNICREDIT, EUPLATESC, PAYSECURE, PICKPACKPONT, KHB, OTPAY, TELENOR_MOBILE, MASTERCARD_MOBILE, WIRECARD_QPAY, SOFORT, BARION."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentMethodTaxRate",
@@ -331,7 +331,7 @@
                 "en": "Fizetési mód áfakulcsa."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentMethodTaxName",
@@ -340,7 +340,7 @@
                 "en": "Fizetési mód áfakulcsának neve."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentMethodAfter",
@@ -349,7 +349,7 @@
                 "en": "Utólag kell fizetni vagy előre."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "taxNumber",
@@ -358,7 +358,7 @@
                 "en": "Adószám"
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "comment",
@@ -367,7 +367,7 @@
                 "en": "Megjegyzés."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "total",
@@ -376,7 +376,7 @@
                 "en": "Rendelés eredeti bruttó összege."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "value",
@@ -385,7 +385,7 @@
                 "en": "Rendelés árszorzója. Pénznemek között váltást szolgálja."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "couponTaxRate",
@@ -394,7 +394,7 @@
                 "en": "Kupon áfakulcsa. (-1)"
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "dateCreated",
@@ -421,7 +421,7 @@
                 "en": "Az IP cím, amelyről a rendelés érkezett."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "pickPackPontShopCode",
@@ -430,7 +430,7 @@
                 "en": "A PickPackPont-os átvételi pont azonosítója."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "customer",
@@ -439,7 +439,7 @@
                 "en": "Vásárló linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "customerGroup",
@@ -448,7 +448,7 @@
                 "en": "Vásárlói csoport linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingCountry",
@@ -457,7 +457,7 @@
                 "en": "Szállítási cím országának linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingZone",
@@ -466,7 +466,7 @@
                 "en": "Szállítási cím megyéjének linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentCountry",
@@ -475,7 +475,7 @@
                 "en": "Számlázási cím országának linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "paymentZone",
@@ -484,7 +484,7 @@
                 "en": "Számlázási cím megyéjének linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "orderStatus",
@@ -493,7 +493,7 @@
                 "en": "Rendelés státusz linkje. Ha nincs státusz, akkor az nem befejezett rendelés."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "language",
@@ -502,7 +502,7 @@
                 "en": "Nyelv linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "currency",
@@ -511,7 +511,7 @@
                 "en": "Pénznem linkje."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "shippingMode *",
@@ -520,7 +520,16 @@
                 "en": "Objektum formában megadott, a rendeléshez tartozó szállítási mód adatai."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
+        },
+        {
+            "name": "coupon *",
+            "description": {
+                "hu": "Objektum formában megadott, a rendeléshez tartozó kupon adatai.",
+                "en": "Objektum formában megadott, a rendeléshez tartozó kupon adatai."
+            },
+            "required": false,
+            "readonly": true
         },
         {
             "name": "orderTotals *",
@@ -529,7 +538,7 @@
                 "en": "Kosárérték módosító tételek adatai"
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
             "name": "orderProducts *",
@@ -538,7 +547,7 @@
                 "en": "Rendelt termékek adatai"
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         }
     ],
     "endpoints": {
