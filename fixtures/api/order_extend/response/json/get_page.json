@@ -73,20 +73,52 @@
             },
             "shippingZone": null,
             "shippingCountry": {
-                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+                "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+                "name": "Magyarország",
+                "isoCode2": "HU",
+                "isoCode3": "HUN",
+                "status": "1",
+                "zones": {
+                    "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                }
             },
             "paymentZone": null,
             "paymentCountry": {
-                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+                "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+                "name": "Magyarország",
+                "isoCode2": "HU",
+                "isoCode3": "HUN",
+                "status": "1",
+                "zones": {
+                    "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                }
             },
             "orderStatus": {
                 "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==",
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==",
+                "innerId": "1",
+                "name": "Hungarian",
+                "code": "hu",
+                "locale": "hu_HUN.UTF-8,hu_HUN,hu-hun,hungarian",
+                "sortOrder": "2",
+                "status": "1"
             },
             "currency": {
-                "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+                "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
+                "id": "Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
+                "name": "HUF",
+                "code": "HUF",
+                "symbolLeft": "",
+                "symbolRight": " Ft",
+                "decimalPlace": "0",
+                "value": "1.00000000",
+                "status": "1",
+                "dateUpdated": "2017-11-29 10:44:07"
             },
             "shippingMode": {
                 "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"

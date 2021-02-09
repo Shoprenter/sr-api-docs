@@ -140,12 +140,52 @@
         <href>
             <![CDATA[http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
         </href>
+        <id>
+            <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+        </id>
+        <name>
+            <![CDATA[Magyarország]]>
+        </name>
+        <isoCode2>
+            <![CDATA[HU]]>
+        </isoCode2>
+        <isoCode3>
+            <![CDATA[HUN]]>
+        </isoCode3>
+        <status>
+            <![CDATA[1]]>
+        </status>
+        <zones>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+            </href>
+        </zones>
     </shippingCountry>
     <paymentZone/>
     <paymentCountry>
         <href>
             <![CDATA[http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
         </href>
+        <id>
+            <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+        </id>
+        <name>
+            <![CDATA[Magyarország]]>
+        </name>
+        <isoCode2>
+            <![CDATA[HU]]>
+        </isoCode2>
+        <isoCode3>
+            <![CDATA[HUN]]>
+        </isoCode3>
+        <status>
+            <![CDATA[1]]>
+        </status>
+        <zones>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+            </href>
+        </zones>
     </paymentCountry>
     <orderStatus>
         <href>
@@ -156,11 +196,57 @@
         <href>
             <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
         </href>
+        <id>
+            <![CDATA[bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+        </id>
+        <innerId>
+            <![CDATA[1]]>
+        </innerId>
+        <name>
+            <![CDATA[Hungarian]]>
+        </name>
+        <code>
+            <![CDATA[hu]]>
+        </code>
+        <locale>
+            <![CDATA[hu_HUN.UTF-8,hu_HUN,hu-hun,hungarian]]>
+        </locale>
+        <sortOrder>
+            <![CDATA[2]]>
+        </sortOrder>
+        <status>
+            <![CDATA[1]]>
+        </status>
     </language>
     <currency>
         <href>
             <![CDATA[http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]>
         </href>
+        <id>
+            <![CDATA[Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]>
+        </id>
+        <name>
+            <![CDATA[HUF]]>
+        </name>
+        <code>
+            <![CDATA[HUF]]>
+        </code>
+        <symbolLeft/>
+        <symbolRight>
+            <![CDATA[ Ft]]>
+        </symbolRight>
+        <decimalPlace>
+            <![CDATA[0]]>
+        </decimalPlace>
+        <value>
+            <![CDATA[1.00000000]]>
+        </value>
+        <status>
+            <![CDATA[1]]>
+        </status>
+        <dateUpdated>
+            <![CDATA[2017-11-29 10:44:07]]>
+        </dateUpdated>
     </currency>
     <shippingMode>
         <href>
