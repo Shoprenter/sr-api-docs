@@ -1,0 +1,41 @@
+<response>
+    <href><![CDATA[http://shopname.api.shoprenter.hu/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
+    <id><![CDATA[dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></id>
+    <name><![CDATA[Adó osztály név]]></name>
+    <description><![CDATA[Leírás]]></description>
+    <dateCreated><![CDATA[2013-08-08T12:30:00]]></dateCreated>
+    <dateUpdated><![CDATA[2013-08-08T12:30:00]]></dateUpdated>
+    <taxRates>
+        <href>
+            <![CDATA[http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
+        </href>
+        <id>
+            <![CDATA[dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
+        </id>
+        <priority>
+            <![CDATA[1]]>
+        </priority>
+        <rate>
+            <![CDATA[27.0000]]>
+        </rate>
+        <description>
+            <![CDATA[ÁFA (27%)]]>
+        </description>
+        <dateCreated>
+            <![CDATA[2012-01-12T12:11:42]]>
+        </dateCreated>
+        <dateUpdated>
+            <![CDATA[-0001-11-30T00:00:00]]>
+        </dateUpdated>
+        <geoZone>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
+            </href>
+        </geoZone>
+        <taxClass>
+            <href>
+                <![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
+            </href>
+        </taxClass>
+    </taxRates>
+</response>

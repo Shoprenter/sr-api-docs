@@ -1,0 +1,25 @@
+{
+    "href": "http://shopname.api.shoprenter.hu/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
+    "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
+    "name": "Adó osztály név",
+    "description": "Leírás",
+    "dateCreated": "2013-08-08T12:30:00",
+    "dateUpdated": "2013-08-08T12:30:00",
+    "taxRates": [
+        {
+            "href": "http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
+            "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
+            "priority": "1",
+            "rate": "27.0000",
+            "description": "ÁFA (27%)",
+            "dateCreated": "2012-01-12T12:11:42",
+            "dateUpdated": "2012-01-12T12:11:42",
+            "geoZone": {
+                "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+            },
+            "taxClass": {
+                "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+            }
+        }
+    ]
+}
