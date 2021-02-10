@@ -227,10 +227,31 @@
                     }
                 },
                 {
+                    "name": "createdAtMin",
+                    "description": {
+                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
+                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                    }
+                },
+                {
+                    "name": "createdAtMax",
+                    "description": {
+                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
+                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                    }
+                },
+                {
                     "name": "updatedAtMin",
                     "description": {
                         "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
                         "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                    }
+                },
+                {
+                    "name": "updatedAtMax",
+                    "description": {
+                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum előtt módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
+                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum előtt módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
                     }
                 }
             ],

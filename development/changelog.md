@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2021.02.11.
+- A **Customer/Customer Extend** és az **Order/OrderExtend Resource**-ok dátum szűrői kiegészültek.
+A kollekció lekérés dátum szerinti szűkítése sokkal testreszabhatóbbá vált.
+
 #### 2021.02.09.
 - A [**Order Product Resource**](../api/order_product.md) kiegészült egy **parentProduct** tulajdonsággal. 
   Tipikusan olyan feladatok ihlették, amikor rendelés feldolgozásnál tudnunk kell, hogya rendelt terméknek 
