@@ -3,6 +3,8 @@
 #### 2021.02.11.
 - A **Customer/Customer Extend** és az **Order/OrderExtend Resource**-ok dátum szűrői kiegészültek.
 A kollekció lekérés dátum szerinti szűkítése sokkal testreszabhatóbbá vált.
+- Bekerült egy új API végpont: [**Tax Class Extend Resource**](../api/tax_class_extend.md)
+Így az áfakulcsokat nem kell linken keresztül lekérni.
 
 #### 2021.02.09.
 - A [**Order Product Resource**](../api/order_product.md) kiegészült egy **parentProduct** tulajdonsággal. 
