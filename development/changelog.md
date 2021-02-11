@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2021.02.11.
+Bekerült egy új API végpont: [**Tax Class Extend Resource**](../api/tax_class_extend.md)
+Így az áfakulcsokat nem kell linken keresztül lekérni.
+
 #### 2021.02.09.
 - A [**Order Product Resource**](../api/order_product.md) kiegészült egy **parentProduct** tulajdonsággal. 
   Tipikusan olyan feladatok ihlették, amikor rendelés feldolgozásnál tudnunk kell, hogya rendelt terméknek 
