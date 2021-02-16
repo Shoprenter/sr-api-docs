@@ -174,11 +174,20 @@
         {
             "name": "shippingMethodName",
             "description": {
-                "hu": "Szállítási mód neve.",
-                "en": "Szállítási mód neve."
+                "hu": "Szállítási mód neve. Csomagpontos szállítási mód esetén tartalmazhatja a csomagpont elérhetőségét is!",
+                "en": "Szállítási mód neve. Csomagpontos szállítási mód esetén tartalmazhatja a csomagpont elérhetőségét is!"
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "shippingMethodLocalizedName",
+            "description": {
+                "hu": "Szállítási mód neve. 'shippingMethodName' -el szemben nem tartalmazza adott esetben a csomagpont címét. Ha időközben a szállítás mód neve megváltozik, ez a tulajdonság követni fogja a változást.",
+                "en": "Szállítási mód neve. 'shippingMethodName' -el szemben nem tartalmazza adott esetben a csomagpont címét. Ha időközben a szállítás mód neve megváltozik, ez a tulajdonság követni fogja a változást."
+            },
+            "required": false,
+            "readonly": true
         },
         {
             "name": "shippingMethodTaxRate",

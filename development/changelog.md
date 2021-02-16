@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2021.02.16.
+Az [**Order**](../api/order.md) és az [**Order Extend**](../api/order_extend.md) Resource egy új tulajdonsággal bővült:
+**shippingMethodLocalizedName**
+Ez a rendelés nyelvén tartalmazza a szállítási mód **aktuális** nevét.
+
+
 #### 2021.02.11.
 - A **Customer/Customer Extend** és az **Order/OrderExtend Resource**-ok dátum szűrői kiegészültek.
 A kollekció lekérés dátum szerinti szűkítése sokkal testreszabhatóbbá vált.
