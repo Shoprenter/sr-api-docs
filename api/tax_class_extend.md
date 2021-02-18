@@ -1,4 +1,4 @@
-# Tax Class Resource
+# Tax Class Extend Resource
 
 ## Tulajdonságok
 
