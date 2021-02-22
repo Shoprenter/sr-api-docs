@@ -10,6 +10,15 @@
             "readonly": false
         },
         {
+            "name": "innerId",
+            "description": {
+                "hu": "Rendelt termék belső azonosítója",
+                "en": "Rendelt termék belső azonosítója"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
             "name": "name",
             "description": {
                 "hu": "Termék név.",
