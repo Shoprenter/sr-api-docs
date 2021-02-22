@@ -10,6 +10,15 @@
             "readonly": false
         },
         {
+            "name": "innerId",
+            "description": {
+                "hu": "Rendelés állapot belső azonosító.",
+                "en": "Rendelés állapot belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
             "name": "orderStatusDescriptions",
             "description": {
                 "hu": "Rendelés állapot leírások linkjei.",
