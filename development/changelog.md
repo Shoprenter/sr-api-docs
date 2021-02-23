@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2021.02.23
+Az [Order Product Resource](../api/order_product.md) -ba bekerült az innerId mező.
+Természetesen, ez a rendelés és a termék közötti kapcsolatot leíró egyedek belső azonosítója,
+nem a terméké!
+
 #### 2021.02.16.
 Az [**Order**](../api/order.md) és az [**Order Extend**](../api/order_extend.md) Resource egy új tulajdonsággal bővült:
 **shippingMethodLocalizedName**

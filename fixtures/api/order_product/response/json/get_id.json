@@ -1,6 +1,7 @@
 {
     "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
     "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+    "innerId": "3",
     "name": "Termék név",
     "sku": "9789639715615",
     "modelNumber": {},
