@@ -37,6 +37,15 @@
             "readonly": false
         },
         {
+            "name": "productInnerId",
+            "description": {
+                "hu": "A megrendelt termék belső azonosítója.",
+                "en": "A megrendelt termék belső azonosítója."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
             "name": "modelNumber",
             "description": {
                 "hu": "Gyártói cikkszám.",

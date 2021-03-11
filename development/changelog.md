@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2021.03.10
+Az [Order Product Resource](../api/order_product.md) -ba bekerült az productInnerId mező.
+Ez a megrendelt termék belső azonosítója, így nincs szükség a product resource linket meghívni, ha csak erre vagyunk
+kíváncsiak
+
 #### 2021.02.23
 Az [Order Product Resource](../api/order_product.md) -ba bekerült az innerId mező.
 Természetesen, ez a rendelés és a termék közötti kapcsolatot leíró egyedek belső azonosítója,
