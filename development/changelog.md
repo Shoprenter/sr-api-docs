@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2021.05.06.
+- A Product és Product Extend Resource POST és PUT kéréseinél immáron frissül a árszorzó, a "sávos árszorzók" funkció beállításai szerint.
+
 #### 2021.03.10
 Az [Order Product Resource](../api/order_product.md) -ba bekerült az productInnerId mező.
 Ez a megrendelt termék belső azonosítója, így nincs szükség a product resource linket meghívni, ha csak erre vagyunk
