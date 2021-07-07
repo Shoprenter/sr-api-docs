@@ -9,7 +9,15 @@
         "url": "http://shoprenter.hu",
         "webHook": {
             "href": "http://shopname.api.shoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0"
-        }
+        },
+        "fields" : [
+            "order_storeName",
+            "order_innerId",
+            "order_innerResourceId",
+            "order_outerResourceId",
+            "order_firstname",
+            "order_lastname"
+        ]
     },
     "webHookDelay": {
         "delay": "10",

@@ -26,6 +26,24 @@
                 <![CDATA[http://shopname.api.shoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
             </href>
         </webHook>
+        <fields>
+            <![CDATA[order_storeName]]>
+        </fields>
+        <fields>
+            <![CDATA[order_innerId]]>
+        </fields>
+        <fields>
+            <![CDATA[order_innerResourceId]]>
+        </fields>
+        <fields>
+            <![CDATA[order_outerResourceId]]>
+        </fields>
+        <fields>
+            <![CDATA[order_firstname]]>
+        </fields>
+        <fields>
+            <![CDATA[order_lastname]]>
+        </fields>
     </webHookParameters>
     <webHookDelay>
         <delay>
