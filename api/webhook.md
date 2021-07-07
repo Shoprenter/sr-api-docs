@@ -91,9 +91,9 @@
 
 ## Fields property használta
 
-Szabályozni tudjuk, mely mezőket küldje el a Shoprenter az egyes események bekövetkezésének pillanatában.
+Szabályozni tudjuk, mely mezőket küldje el a Shoprenter az egyes események bekövetkeztének pillanatában.
 
-A következő táblázat tartalmazza az összes felhasználható mezőt és hogy az egyes eseményeknél, mely mező leeht használni:
+A következő táblázat tartalmazza az összes felhasználható mezőt és hogy, az egyes eseményeknél, mely mezőt lehet használni:
 
 |Mező neve|Rendelés státusz váltás (order_confirm)|Új rendelés leadás (order_status_change)|Leírás|
 |:---| :---: | :---: | --- |
