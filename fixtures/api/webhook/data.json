@@ -39,8 +39,8 @@
         {
             "name": "webHookParameters *",
             "description": {
-                "hu": "Adatküldés formátuma és cél url",
-                "en": "Adatküldés formátuma és cél url"
+                "hu": "Adatküldés formátuma, cél url és elküldetni kívánt mezők",
+                "en": "Adatküldés formátuma, cél url és elküldetni kívánt mezők"
             },
             "required": true,
             "readonly": false

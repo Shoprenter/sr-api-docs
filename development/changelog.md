@@ -1,7 +1,10 @@
 # API changelog
 
+#### 2021.07.07
+Immáron a [Webhook Resource](../api/webhook.md) -ban, a webHookParameters **fields** property-jével szabályozni tudjuk, hogy a Shoprenter milyen mezőket küldjön el az általunk megadott url-re.
+
 #### 2021.05.06.
-- A Product és Product Extend Resource POST és PUT kéréseinél immáron frissül a árszorzó, a "sávos árszorzók" funkció beállításai szerint.
+A Product és Product Extend Resource POST és PUT kéréseinél immáron frissül a árszorzó, a "sávos árszorzók" funkció beállításai szerint.
 
 #### 2021.03.10
 Az [Order Product Resource](../api/order_product.md) -ba bekerült az productInnerId mező.

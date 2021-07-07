@@ -5,7 +5,15 @@
     "webHookParameters": [
         {
             "type": "json",
-            "url": "http:\/\/shoprenter.hu\n"
+            "url": "http:\/\/shoprenter.hu\n",
+            "fields": [
+                "order_storeName",
+                "order_innerId",
+                "order_innerResourceId",
+                "order_outerResourceId",
+                "order_firstname",
+                "order_lastname"
+            ]
         }
     ],
     "webHookDelay": [
