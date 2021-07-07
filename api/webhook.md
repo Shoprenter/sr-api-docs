@@ -89,7 +89,7 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'webhook'" :endpoint="'delete'" :lang="'hu'"/>
 
-## Fields property használta
+## Fields property használata
 
 Szabályozni tudjuk, mely mezőket küldje el a Shoprenter az egyes események bekövetkeztének pillanatában.
 
