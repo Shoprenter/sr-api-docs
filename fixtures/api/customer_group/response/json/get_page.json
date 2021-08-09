@@ -1,21 +1,21 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/customerGroups?page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/customerGroups?page=0&limit=25",
     "page": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/customerGroups?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/customerGroups?page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/customerGroups?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/customerGroups?page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02"
+            "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+            "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
         }
     ]
 }

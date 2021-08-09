@@ -1,6 +1,6 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/shippingModeExtend/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+        <![CDATA[http://shopname.api.myshoprenter.hu/shippingModeExtend/c2hpcHBpbmdNb2RlLWlkPTg0]]>
     </href>
     <id>
         <![CDATA[c2hpcHBpbmdNb2RlLWlkPTg0]]>
@@ -25,17 +25,17 @@
     </shippingType>
     <taxClass>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
         </href>
     </taxClass>
     <geoZone>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02]]>
         </href>
     </geoZone>
     <shippingModeDescriptions>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODQmbGFuZ3VhZ2VfaWQ9MQ==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODQmbGFuZ3VhZ2VfaWQ9MQ==]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODQmbGFuZ3VhZ2VfaWQ9MQ==]]>
@@ -48,18 +48,18 @@
         </description>
         <shippingMode>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
             </href>
         </shippingMode>
         <language>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
             </href>
         </language>
     </shippingModeDescriptions>
     <shippingLanes>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MA==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MA==]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdMYW5lLWlkPTM2MA==]]>
@@ -84,13 +84,13 @@
         </weightMaximum>
         <shippingMode>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
             </href>
         </shippingMode>
     </shippingLanes>
     <shippingLanes>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MQ==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MQ==]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdMYW5lLWlkPTM2MQ==]]>
@@ -115,13 +115,13 @@
         </weightMaximum>
         <shippingMode>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
             </href>
         </shippingMode>
     </shippingLanes>
     <shippingLanes>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mg==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mg==]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdMYW5lLWlkPTM2Mg==]]>
@@ -146,13 +146,13 @@
         </weightMaximum>
         <shippingMode>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
             </href>
         </shippingMode>
     </shippingLanes>
     <shippingLanes>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mw==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mw==]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdMYW5lLWlkPTM2Mw==]]>
@@ -177,13 +177,13 @@
         </weightMaximum>
         <shippingMode>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
             </href>
         </shippingMode>
     </shippingLanes>
     <shippingLanes>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NA==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NA==]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdMYW5lLWlkPTM2NA==]]>
@@ -208,13 +208,13 @@
         </weightMaximum>
         <shippingMode>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
             </href>
         </shippingMode>
     </shippingLanes>
     <shippingLanes>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NQ==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NQ==]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdMYW5lLWlkPTM2NQ==]]>
@@ -239,7 +239,7 @@
         </weightMaximum>
         <shippingMode>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0]]>
             </href>
         </shippingMode>
     </shippingLanes>

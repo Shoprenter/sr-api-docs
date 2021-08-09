@@ -23,7 +23,7 @@ Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befo
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/batch</td>
+    <td>http://shopname.api.myshoprenter.hu/batch</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -40,15 +40,15 @@ Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befo
       "requests": [
          {
             "method": "GET",
-            "uri": "http://shopname.api.shoprenter.hu/geoZones?full=1"
+            "uri": "http://shopname.api.myshoprenter.hu/geoZones?full=1"
          },
          {
             "method": "GET",
-            "uri": "http://shopname.api.shoprenter.hu/taxRates?full=1"
+            "uri": "http://shopname.api.myshoprenter.hu/taxRates?full=1"
          },
          {
             "method": "GET",
-            "uri": "http://shopname.api.shoprenter.hu/currencies?full=1"
+            "uri": "http://shopname.api.myshoprenter.hu/currencies?full=1"
          }
       ]
    }
@@ -63,26 +63,26 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
 {
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01",
+            "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD01",
             "name": "Magyarország",
             "description": "HUN",
             "countries": [
                 {
-                    "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+                    "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
                     "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3",
                     "name": "Magyarország",
                     "isoCode2": "HU",
                     "isoCode3": "HUN",
                     "status": "1",
                     "zones": {
-                        "href": "http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                        "href": "http://shopname.api.myshoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3"
                     }
                 }
             ]
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02",
+            "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD02",
             "name": "Európai Unió",
             "description": "EU",
@@ -98,7 +98,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
 {
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
+            "href": "http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
             "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
             "priority": "1",
             "rate": "0.0000",
@@ -106,14 +106,14 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
             "dateCreated": "2020-01-01T12:00:00",
             "dateUpdated": "2020-01-01T12:00:00",
             "geoZone": {
-                "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+                "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
             },
             "taxClass": {
-                "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
+                "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
+            "href": "http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
             "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
             "priority": "1",
             "rate": "27.0000",
@@ -121,10 +121,10 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
             "dateCreated": "2020-01-01T12:00:00",
             "dateUpdated": "2020-01-01T12:00:00",
             "geoZone": {
-                "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+                "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
             },
             "taxClass": {
-                "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+                "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             }
         }
     ]
@@ -137,7 +137,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
 {
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
+            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
             "id": "Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
             "name": "HUF",
             "code": "HUF",
@@ -149,7 +149,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
             "dateUpdated": "2020-01-01 12:00:00"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==",
+            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==",
             "id": "Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==",
             "name": "EUR",
             "code": "EUR",
@@ -177,7 +177,7 @@ Az aktuális termék lekérdezése a [**productExtend**](../../api/product_exten
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYx</td>
+    <td>http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYx</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>

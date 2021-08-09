@@ -1,27 +1,27 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25",
     "page": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05&page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05MA=="
+            "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05MA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05Mg=="
+            "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05Mg=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05Mw=="
+            "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05Mw=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05NA=="
+            "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTkmcHJvZHVjdF9pZD05NA=="
         }
     ]
 }

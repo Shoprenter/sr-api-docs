@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/shippingModeExtend/c2hpcHBpbmdNb2RlLWlkPTg0",
+    "href": "http://shopname.api.myshoprenter.hu/shippingModeExtend/c2hpcHBpbmdNb2RlLWlkPTg0",
     "id": "c2hpcHBpbmdNb2RlLWlkPTg0",
     "innerId": "84",
     "sortOrder": "3",
@@ -8,28 +8,28 @@
     "freeShippingFrom": "0.0000",
     "shippingType": "COURIER_SERVICE",
     "taxClass": {
-        "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+        "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
     },
     "geoZone": {
-        "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
+        "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
     },
     "shippingModeDescriptions": [
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODQmbGFuZ3VhZ2VfaWQ9MQ==",
+            "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODQmbGFuZ3VhZ2VfaWQ9MQ==",
             "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODQmbGFuZ3VhZ2VfaWQ9MQ==",
             "name": "Saját szállítási mód neve",
             "description": "Saját szállítási mód leírás",
             "shippingMode": {
-                "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
+                "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         }
     ],
     "shippingLanes": [
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MA==",
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MA==",
             "id": "c2hpcHBpbmdMYW5lLWlkPTM2MA==",
             "innerId": "360",
             "cartMinimumGross": "0.0000",
@@ -38,11 +38,11 @@
             "weightMinimum": "0.0000",
             "weightMaximum": "50.0000",
             "shippingMode": {
-                "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
+                "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MQ==",
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2MQ==",
             "id": "c2hpcHBpbmdMYW5lLWlkPTM2MQ==",
             "innerId": "361",
             "cartMinimumGross": "0.0000",
@@ -51,11 +51,11 @@
             "weightMinimum": "51.0000",
             "weightMaximum": "75.0000",
             "shippingMode": {
-                "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
+                "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mg==",
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mg==",
             "id": "c2hpcHBpbmdMYW5lLWlkPTM2Mg==",
             "innerId": "362",
             "cartMinimumGross": "0.0000",
@@ -64,11 +64,11 @@
             "weightMinimum": "76.0000",
             "weightMaximum": "100.0000",
             "shippingMode": {
-                "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
+                "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mw==",
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2Mw==",
             "id": "c2hpcHBpbmdMYW5lLWlkPTM2Mw==",
             "innerId": "363",
             "cartMinimumGross": "0.0000",
@@ -77,11 +77,11 @@
             "weightMinimum": "101.0000",
             "weightMaximum": "150.0000",
             "shippingMode": {
-                "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
+                "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NA==",
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NA==",
             "id": "c2hpcHBpbmdMYW5lLWlkPTM2NA==",
             "innerId": "364",
             "cartMinimumGross": "0.0000",
@@ -90,11 +90,11 @@
             "weightMinimum": "151.0000",
             "weightMaximum": "200.0000",
             "shippingMode": {
-                "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
+                "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NQ==",
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTM2NQ==",
             "id": "c2hpcHBpbmdMYW5lLWlkPTM2NQ==",
             "innerId": "365",
             "cartMinimumGross": "0.0000",
@@ -103,7 +103,7 @@
             "weightMinimum": "201.0000",
             "weightMaximum": "300.0000",
             "shippingMode": {
-                "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
+                "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTg0"
             }
         }
     ]

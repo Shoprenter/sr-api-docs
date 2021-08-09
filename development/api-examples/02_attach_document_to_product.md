@@ -19,7 +19,7 @@ A [File Resource](../../api/file.md) segítségével töltsük fel a kívánt do
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/files</td>
+    <td>http://shopname.api.myshoprenter.hu/files</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -64,7 +64,7 @@ Ezt követően az előbb feltöltött képhez a [Document Resource](../../api/do
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/documents</td>
+    <td>http://shopname.api.myshoprenter.hu/documents</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -85,7 +85,7 @@ Ezt követően az előbb feltöltött képhez a [Document Resource](../../api/do
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ==",
+    "href": "http://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ==",
     "id": "ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ==",
     "innerId": "5",
     "dateCreated": "2019-09-11T15:12:47",
@@ -108,7 +108,7 @@ A Document resource ID birtokában, a [Document Description Resource](../../api/
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/documentDescriptions</td>
+    <td>http://shopname.api.myshoprenter.hu/documentDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -139,16 +139,16 @@ A Document resource ID birtokában, a [Document Description Resource](../../api/
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/documentDescriptions/ZG9jdW1lbnREZXNjcmlwdGlvbi1kb2N1bWVudF9pZD01Jmxhbmd1YWdlX2lkPTE=",
+    "href": "http://shopname.api.myshoprenter.hu/documentDescriptions/ZG9jdW1lbnREZXNjcmlwdGlvbi1kb2N1bWVudF9pZD01Jmxhbmd1YWdlX2lkPTE=",
     "id": "ZG9jdW1lbnREZXNjcmlwdGlvbi1kb2N1bWVudF9pZD01Jmxhbmd1YWdlX2lkPTE=",
     "name": "Teszt pdf neve",
     "filename": "test.pdf",
     "mask": "test.pdf",
     "document": {
-        "href": "http://shopname.api.shoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
+        "href": "http://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```
@@ -168,7 +168,7 @@ Ha mindez megvan, akkor a [Product Document Relation Resource](../../api/product
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productDocumentRelations</td>
+    <td>http://shopname.api.myshoprenter.hu/productDocumentRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -196,13 +196,13 @@ Ha mindez megvan, akkor a [Product Document Relation Resource](../../api/product
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productDocumentRelations/cHJvZHVjdERvY3VtZW50LWlkPTY=",
+    "href": "http://shopname.api.myshoprenter.hu/productDocumentRelations/cHJvZHVjdERvY3VtZW50LWlkPTY=",
     "id": "cHJvZHVjdERvY3VtZW50LWlkPTY=",
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "document": {
-        "href": "http://shopname.api.shoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
+        "href": "http://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
     }
 }
 ```

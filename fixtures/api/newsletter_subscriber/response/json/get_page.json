@@ -1,51 +1,51 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers?page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers?page=0&limit=25",
     "page": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers?page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers?page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x"
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD03"
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD03"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD04"
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD04"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD05"
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD05"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMA=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMQ=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMg=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMg=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMw=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xMw=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xNA=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xNA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xNQ=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xNQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xNg=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0xNg=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0yMg=="
+            "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0yMg=="
         }
     ]
 }

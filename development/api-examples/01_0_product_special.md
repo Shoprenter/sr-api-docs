@@ -22,7 +22,7 @@ A minimum mennyiség és maximum mennyiség értékének csak abban az esetben s
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productSpecials</td>
+    <td>http://shopname.api.myshoprenter.hu/productSpecials</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -90,7 +90,7 @@ Amennyiben a vevőcsoportot szeretnénk módosítani "Mindenki" vevőcsoportra, 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productSpecials/product_special_id</td>
+    <td>http://shopname.api.myshoprenter.hu/productSpecials/product_special_id</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -157,7 +157,7 @@ Akciós ár törléséhez szükségünk lesz a korábban felvitt akciós ár res
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productSpecials/product_special_id</td>
+    <td>http://shopname.api.myshoprenter.hu/productSpecials/product_special_id</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>

@@ -1,32 +1,32 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/zones?page=0&limit=5]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/zones?page=0&limit=5]]></href>
     <page>0</page>
     <limit>5</limit>
     <first>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/zones?page=0&limit=5]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/zones?page=0&limit=5]]></href>
     </first>
     <previous/>
     <next>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/zones?page=1&limit=5]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/zones?page=1&limit=5]]></href>
     </next>
     <last>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/zones?page=781&limit=5]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/zones?page=781&limit=5]]></href>
     </last>
     <items>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTE=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTI=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTI=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTM=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTM=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTQ=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTQ=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTU=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTU=]]></href>
         </item>
     </items>
 </response>

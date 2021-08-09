@@ -1,25 +1,25 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/geoZones?page=0&limit=5",
+    "href": "http://shopname.api.myshoprenter.hu/geoZones?page=0&limit=5",
     "page": 0,
     "pageCount": 1,
     "limit": 5,
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/geoZones?page=0&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/geoZones?page=0&limit=5"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/geoZones?page=0&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/geoZones?page=0&limit=5"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+            "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
+            "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD03"
+            "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD03"
         }
     ]
 }

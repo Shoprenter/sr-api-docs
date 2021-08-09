@@ -1,13 +1,13 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/
+        <![CDATA[http://shopname.api.myshoprenter.hu/
         productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25]]>
     </href>
     <page>0</page>
     <limit>25</limit>
     <first>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/
+            <![CDATA[http://shopname.api.myshoprenter.hu/
             productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25]]>
         </href>
     </first>
@@ -15,26 +15,26 @@
     <next/>
     <last>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/
+            <![CDATA[http://shopname.api.myshoprenter.hu/
             productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productCollateralProductRelations/
+                <![CDATA[http://shopname.api.myshoprenter.hu/productCollateralProductRelations/
                 cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzEzNA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productCollateralProductRelations/
+                <![CDATA[http://shopname.api.myshoprenter.hu/productCollateralProductRelations/
                 cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzM2NA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productCollateralProductRelations/
+                <![CDATA[http://shopname.api.myshoprenter.hu/productCollateralProductRelations/
                 cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzgyOA==]]>
             </href>
         </item>

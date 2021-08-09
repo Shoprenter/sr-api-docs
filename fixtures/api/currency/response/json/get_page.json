@@ -1,27 +1,27 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/currencies?page=0&limit=5",
+    "href": "http://shopname.api.myshoprenter.hu/currencies?page=0&limit=5",
     "page": "0",
     "limit": "5",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/currencies?page=0&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/currencies?page=0&limit=5"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/currencies?page=0&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/currencies?page=0&limit=5"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ=="
+            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Ng=="
+            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Ng=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Nw=="
+            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Nw=="
         }
     ]
 }

@@ -39,7 +39,7 @@ A hét napjai:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productSpecials</td>
+    <td>http://shopname.api.myshoprenter.hu/productSpecials</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -66,7 +66,7 @@ A hét napjai:
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
+    "href": "http://shopname.api.myshoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "priority": "-1",
     "price": "1000.0000",
@@ -78,7 +78,7 @@ A hét napjai:
     "type": "day_spec",
     "dayOfWeek": "4",
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "customerGroup": null
 }
@@ -100,7 +100,7 @@ Amennyiben a vevőcsoportot szeretnénk módosítani "Mindenki" vevőcsoportra, 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productSpecials/[ProductSpecialResourceID]</td>
+    <td>http://shopname.api.myshoprenter.hu/productSpecials/[ProductSpecialResourceID]</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -125,7 +125,7 @@ Amennyiben a vevőcsoportot szeretnénk módosítani "Mindenki" vevőcsoportra, 
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
+    "href": "http://shopname.api.myshoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "priority": "-1",
     "price": 900.0000,
@@ -137,7 +137,7 @@ Amennyiben a vevőcsoportot szeretnénk módosítani "Mindenki" vevőcsoportra, 
     "type": "day_spec",
     "dayOfWeek": 5,
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "customerGroup": null
 }

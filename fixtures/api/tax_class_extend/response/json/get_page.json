@@ -1,19 +1,19 @@
 {
-    "href": "http://shopname.api.shoprenter/taxClassExtend?full=1&page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter/taxClassExtend?full=1&page=0&limit=25",
     "page": 0,
     "pageCount": 1,
     "limit": 25,
     "first": {
-        "href": "http://shopname.api.shoprenter/taxClassExtend?full=1&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter/taxClassExtend?full=1&page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter/taxClassExtend?full=1&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter/taxClassExtend?full=1&page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
+            "href": "http://shopname.api.myshoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
             "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
             "name": "27 %",
             "description": "27%-os adókulcs",
@@ -21,7 +21,7 @@
             "dateUpdated": "2012-01-12T12:11:42",
             "taxRates": [
                 {
-                    "href": "http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
+                    "href": "http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
                     "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
                     "priority": "1",
                     "rate": "27.0000",
@@ -29,16 +29,16 @@
                     "dateCreated": "2012-01-12T12:11:42",
                     "dateUpdated": "2012-01-12T12:11:42",
                     "geoZone": {
-                        "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+                        "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
                     },
                     "taxClass": {
-                        "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+                        "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
                     }
                 }
             ]
         },
         {
-            "href": "http://shopname.api.shoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx",
+            "href": "http://shopname.api.myshoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx",
             "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx",
             "name": "0 %",
             "description": "0%-os adókulcs",
@@ -46,7 +46,7 @@
             "dateUpdated": "2010-09-23T11:06:49",
             "taxRates": [
                 {
-                    "href": "http://shopname.api.shoprenter/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
+                    "href": "http://shopname.api.myshoprenter/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
                     "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
                     "priority": "1",
                     "rate": "0.0000",
@@ -54,16 +54,16 @@
                     "dateCreated": "2010-09-23T11:06:49",
                     "dateUpdated": "2010-09-23T11:06:49",
                     "geoZone": {
-                        "href": "http://shopname.api.shoprenter/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+                        "href": "http://shopname.api.myshoprenter/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
                     },
                     "taxClass": {
-                        "href": "http://shopname.api.shoprenter/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
+                        "href": "http://shopname.api.myshoprenter/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
                     }
                 }
             ]
         },
         {
-            "href": "http://shopname.api.shoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy",
+            "href": "http://shopname.api.myshoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy",
             "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy",
             "name": "Teszt",
             "description": "Teszt",
@@ -71,7 +71,7 @@
             "dateUpdated": "2019-07-04T09:25:34",
             "taxRates": [
                 {
-                    "href": "http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
+                    "href": "http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
                     "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
                     "priority": "1",
                     "rate": "27.0000",
@@ -79,10 +79,10 @@
                     "dateCreated": "2012-01-12T12:11:42",
                     "dateUpdated": "2012-01-12T12:11:42",
                     "geoZone": {
-                        "href": "http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+                        "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
                     },
                     "taxClass": {
-                        "href": "http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+                        "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
                     }
                 }
             ]

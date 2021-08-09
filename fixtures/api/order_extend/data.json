@@ -618,8 +618,8 @@
                 {
                     "name": "orderStatusId",
                     "description": {
-                        "hu": "Kereső paraméter. Rendelés állapot azonosító.<br>Példa használat:http://shopname.api.shoprenter.hu/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=<br>Tehát az adott rendelés státus resource azonosítóját szükséges megadni.",
-                        "en": "Kereső paraméter. Rendelés állapot azonosító.<br>Példa használat:http://shopname.api.shoprenter.hu/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=<br>Tehát az adott rendelés státus resource azonosítóját szükséges megadni."
+                        "hu": "Kereső paraméter. Rendelés állapot azonosító.<br>Példa használat:http://shopname.api.myshoprenter.hu/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=<br>Tehát az adott rendelés státus resource azonosítóját szükséges megadni.",
+                        "en": "Kereső paraméter. Rendelés állapot azonosító.<br>Példa használat:http://shopname.api.myshoprenter.hu/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=<br>Tehát az adott rendelés státus resource azonosítóját szükséges megadni."
                     }
                 },
                 {

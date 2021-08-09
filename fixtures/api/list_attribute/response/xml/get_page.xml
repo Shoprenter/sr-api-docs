@@ -1,21 +1,21 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributes?page=0&limit=25]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributes?page=0&limit=25]]></href>
     <page>0</page>
     <limit>25</limit>
     <first>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributes?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributes?page=0&limit=25]]></href>
     </first>
     <previous/>
     <next/>
     <last>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributes?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributes?page=0&limit=25]]></href>
     </last>
     <items>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MjA=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MjA=]]></href>
         </item>
     </items>
 </response>

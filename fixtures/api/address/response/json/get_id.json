@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
+    "href": "http://shopname.api.myshoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
     "id": "YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
     "innerId": "1",
     "company": "Cégnév",
@@ -15,12 +15,12 @@
     "dateUpdated": "2013-08-03T07:30:00",
     "telephone": "+36301234567",
     "customer": {
-        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzU="
+        "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzU="
     },
     "country": {
-        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "zone": {
-        "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
+        "href": "http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
     }
 }

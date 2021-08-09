@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/scriptTags/c2NyaXB0VGFnLWlkPTc=",
+    "href": "http://shopname.api.myshoprenter.hu/scriptTags/c2NyaXB0VGFnLWlkPTc=",
     "id": "c2NyaXB0VGFnLWlkPTc=",
     "event": "ONLOAD",
     "src": "https://somedomain.hu/somedir/example.js",

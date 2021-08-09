@@ -1,19 +1,19 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/couponCategoryRelations?page=0&limit=25]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/couponCategoryRelations?page=0&limit=25]]></href>
     <page>0</page>
     <limit>25</limit>
     <first>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/couponCategoryRelations?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/couponCategoryRelations?page=0&limit=25]]></href>
     </first>
     <previous/>
     <next/>
     <last>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/couponCategoryRelations?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/couponCategoryRelations?page=0&limit=25]]></href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/couponCategoryRelations/
+                <![CDATA[http://shopname.api.myshoprenter.hu/couponCategoryRelations/
                 Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw==]]>
             </href>
         </item>

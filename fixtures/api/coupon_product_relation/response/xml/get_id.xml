@@ -1,13 +1,13 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/couponProductRelations/
+        <![CDATA[http://shopname.api.myshoprenter.hu/couponProductRelations/
         Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE=]]>
     </href>
     <id><![CDATA[Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE=]]></id>
     <coupon>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0y]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0y]]></href>
     </coupon>
     <product>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTIxMTA=]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTIxMTA=]]></href>
     </product>
 </response>

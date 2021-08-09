@@ -28,7 +28,7 @@ A [**Product Option Resource**](../../api/product_option.md) segítségével lé
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productOptions</td>
+    <td>http://shopname.api.myshoprenter.hu/productOptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -52,18 +52,18 @@ A [**Product Option Resource**](../../api/product_option.md) segítségével lé
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00",
+    "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00",
     "id": "cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00",
     "innerId": "4",
     "sortOrder": "1",
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
     },
     "productOptionDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/productOptionDescriptions?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "http://shopname.api.myshoprenter.hu/productOptionDescriptions?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "productOptionValues": {
-        "href": "http://shopname.api.shoprenter.hu/productOptionValues?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "http://shopname.api.myshoprenter.hu/productOptionValues?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     }
 }
 ```
@@ -82,7 +82,7 @@ A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken sz
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productOptionDescriptions</td>
+    <td>http://shopname.api.myshoprenter.hu/productOptionDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -109,14 +109,14 @@ A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken sz
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productOptionDescriptions/cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD0x",
+    "href": "http://shopname.api.myshoprenter.hu/productOptionDescriptions/cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD0x",
     "id": "cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD01",
     "name": "Szeletek száma",
     "productOption": {
-        "href": "http://shopname.api.shoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```
@@ -138,7 +138,7 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productOptionValues</td>
+    <td>http://shopname.api.myshoprenter.hu/productOptionValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -162,16 +162,16 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
+    "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "price": "0000.0000",
     "prefix": "",
     "sortOrder": "1",
     "productOption": {
-        "href": "http://shopname.api.shoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "productOptionValueDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     }
 }
 ```
@@ -185,7 +185,7 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productOptionValues</td>
+    <td>http://shopname.api.myshoprenter.hu/productOptionValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -211,16 +211,16 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
+    "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "price": "2000.0000",
     "prefix": "+",
     "sortOrder": "2",
     "productOption": {
-        "href": "http://shopname.api.shoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "productOptionValueDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     }
 }
 ```
@@ -238,7 +238,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productOptionValueDescriptions</td>
+    <td>http://shopname.api.myshoprenter.hu/productOptionValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -265,14 +265,14 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTE=",
+    "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTE=",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTQ=",
     "name": "10 szeletes",
     "productOptionValue": {
-        "href": "http://shopname.api.shoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```
@@ -286,7 +286,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productOptionValueDescriptions</td>
+    <td>http://shopname.api.myshoprenter.hu/productOptionValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -313,14 +313,14 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ5Jmxhbmd1YWdlX2lkPTE=",
+    "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ5Jmxhbmd1YWdlX2lkPTE=",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTQ=",
     "name": "12 szeletes",
     "productOptionValue": {
-        "href": "http://shopname.api.shoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```

@@ -1,5 +1,5 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x]]></href>
     <id><![CDATA[bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x]]></id>
     <firstname><![CDATA[Teszt]]></firstname>
     <lastname><![CDATA[Teszt]]></lastname>
@@ -13,7 +13,7 @@
     <dateCreated><![CDATA[2015-06-15T11:35:48]]></dateCreated>
     <dateUpdated><![CDATA[2015-08-18T15:05:23]]></dateUpdated>
     <language>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
     </language>
 </response>
 

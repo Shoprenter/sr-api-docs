@@ -1,19 +1,19 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/addresses?full=1&page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/addresses?full=1&page=0&limit=25",
     "page": "0",
     "pageCount": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/addresses?full=1&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/addresses?full=1&page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/addresses?full=1&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/addresses?full=1&page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
+            "href": "http://shopname.api.myshoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
             "id": "YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
             "innerId": "1",
             "company": "Cégnév",
@@ -29,17 +29,17 @@
             "dateUpdated": "2013-08-03T07:30:00",
             "telephone": "+36301234567",
             "customer": {
-                "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzU="
+                "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzU="
             },
             "country": {
-                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
             },
             "zone": {
-                "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
+                "href": "http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTcw",
+            "href": "http://shopname.api.myshoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTcw",
             "id": "YWRkcmVzcy1hZGRyZXNzX2lkPTcw",
             "innerId": "2",
             "company": [],
@@ -55,17 +55,17 @@
             "dateUpdated": "2013-08-03T07:30:00",
             "telephone": [],
             "customer": {
-                "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzV="
+                "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzV="
             },
             "country": {
-                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
             },
             "zone": {
-                "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
+                "href": "http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTcy",
+            "href": "http://shopname.api.myshoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTcy",
             "id": "YWRkcmVzcy1hZGRyZXNzX2lkPTcy",
             "innerId": "3",
             "company": [],
@@ -81,13 +81,13 @@
             "dateUpdated": "2013-08-03T07:30:00",
             "telephone": "+36707654321",
             "customer": {
-                "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzW="
+                "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzW="
             },
             "country": {
-                "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
             },
             "zone": {
-                "href": "http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
+                "href": "http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE="
             }
         }
     ]

@@ -1,6 +1,6 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/orderExtend/b3JkZXItb3JkZXJfaWQ9MTcy]]>
+        <![CDATA[http://shopname.api.myshoprenter.hu/orderExtend/b3JkZXItb3JkZXJfaWQ9MTcy]]>
     </href>
     <id>
         <![CDATA[b3JkZXItb3JkZXJfaWQ9MTcy]]>
@@ -127,18 +127,18 @@
     </loyaltyPointsTaxRate>
     <customer>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=]]>
         </href>
     </customer>
     <customerGroup>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04]]>
         </href>
     </customerGroup>
     <shippingZone/>
     <shippingCountry>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
         </href>
         <id>
             <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
@@ -157,14 +157,14 @@
         </status>
         <zones>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
             </href>
         </zones>
     </shippingCountry>
     <paymentZone/>
     <paymentCountry>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
         </href>
         <id>
             <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
@@ -183,18 +183,18 @@
         </status>
         <zones>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
             </href>
         </zones>
     </paymentCountry>
     <orderStatus>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]>
         </href>
     </orderStatus>
     <language>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
         </href>
         <id>
             <![CDATA[bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
@@ -220,7 +220,7 @@
     </language>
     <currency>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]>
         </href>
         <id>
             <![CDATA[Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]>
@@ -250,7 +250,7 @@
     </currency>
     <shippingMode>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4]]>
         </href>
         <id>
             <![CDATA[c2hpcHBpbmdNb2RlLWlkPTE4]]>
@@ -275,24 +275,24 @@
         </shippingType>
         <taxClass>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
             </href>
         </taxClass>
         <geoZone/>
         <shippingModeDescriptions>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingModeDescriptions?shippingModeId=c2hpcHBpbmdNb2RlLWlkPTE4]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingModeDescriptions?shippingModeId=c2hpcHBpbmdNb2RlLWlkPTE4]]>
             </href>
         </shippingModeDescriptions>
         <shippingLanes>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes?shippingModeId=c2hpcHBpbmdNb2RlLWlkPTE4]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?shippingModeId=c2hpcHBpbmdNb2RlLWlkPTE4]]>
             </href>
         </shippingLanes>
     </shippingMode>
     <coupon>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x]]>
         </href>
         <id>
             <![CDATA[Y291cG9uLWNvdXBvbl9pZD0x]]>
@@ -348,18 +348,18 @@
         </validToSpecialProducts>
         <taxClass>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx]]>
             </href>
         </taxClass>
         <couponDescriptions>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/couponDescriptions?couponId=Y291cG9uLWNvdXBvbl9pZD0x]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/couponDescriptions?couponId=Y291cG9uLWNvdXBvbl9pZD0x]]>
             </href>
         </couponDescriptions>
     </coupon>
     <orderTotals>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDE=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDE=]]>
         </href>
         <id>
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDE=]]>
@@ -389,13 +389,13 @@
         </dateUpdated>
         <order>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
     </orderTotals>
     <orderTotals>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDI=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDI=]]>
         </href>
         <id>
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDI=]]>
@@ -425,13 +425,13 @@
         </dateUpdated>
         <order>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
     </orderTotals>
     <orderTotals>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDM=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDM=]]>
         </href>
         <id>
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDM=]]>
@@ -461,13 +461,13 @@
         </dateUpdated>
         <order>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
     </orderTotals>
     <orderTotals>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=]]>
         </href>
         <id>
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=]]>
@@ -497,13 +497,13 @@
         </dateUpdated>
         <order>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
     </orderTotals>
     <orderTotals>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDU=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDU=]]>
         </href>
         <id>
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDU=]]>
@@ -533,13 +533,13 @@
         </dateUpdated>
         <order>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
     </orderTotals>
     <orderProducts>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3]]>
         </href>
         <id>
             <![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3]]>
@@ -583,23 +583,23 @@
         </dateUpdated>
         <order>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
         <product>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE4NQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE4NQ==]]>
             </href>
         </product>
         <orderProductOptions>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3]]>
             </href>
         </orderProductOptions>
     </orderProducts>
     <orderProducts>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1]]>
         </href>
         <id>
             <![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1]]>
@@ -643,17 +643,17 @@
         </dateUpdated>
         <order>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
         <product>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTExNw==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTExNw==]]>
             </href>
         </product>
         <orderProductOptions>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1]]>
             </href>
         </orderProductOptions>
     </orderProducts>

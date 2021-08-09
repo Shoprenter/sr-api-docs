@@ -1,33 +1,33 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/manufacturers?page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/manufacturers?page=0&limit=25",
     "page": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/manufacturers?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/manufacturers?page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/manufacturers?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/manufacturers?page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x"
+            "href": "http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0y"
+            "href": "http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0y"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0z"
+            "href": "http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0z"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD00"
+            "href": "http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD00"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD01"
+            "href": "http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD01"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02"
+            "href": "http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02"
         }
     ]
 }

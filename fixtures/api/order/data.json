@@ -623,8 +623,8 @@
                 {
                     "name": " ",
                     "description": {
-                        "hu": "http:\/\/shopname.api.shoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=",
-                        "en": "http:\/\/shopname.api.shoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+                        "hu": "http:\/\/shopname.api.myshoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=",
+                        "en": "http:\/\/shopname.api.myshoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
                     }
                 },
                 {

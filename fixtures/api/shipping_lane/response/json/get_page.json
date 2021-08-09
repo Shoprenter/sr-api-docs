@@ -1,93 +1,93 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/shippingLanes?page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25",
     "page": 0,
     "pageCount": 7,
     "limit": 25,
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/shippingLanes?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25"
     },
     "previous": null,
     "next": {
-        "href": "http://shopname.api.shoprenter.hu/shippingLanes?page=1&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/shippingLanes?page=1&limit=25"
     },
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/shippingLanes?page=6&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/shippingLanes?page=6&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYw"
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYw"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx"
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYz"
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYz"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTY0"
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTY0"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOA=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOQ=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMA=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMQ=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMg=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMg=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMw=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMw=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNA=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNQ=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNg=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNg=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNw=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNw=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOA=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOQ=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OA=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OQ=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MA=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MQ=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mg=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mg=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mw=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mw=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MA=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MQ=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MQ=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2Mg=="
+            "href": "http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2Mg=="
         }
     ]
 }

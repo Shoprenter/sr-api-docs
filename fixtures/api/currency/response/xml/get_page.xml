@@ -1,27 +1,27 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/currencies?page=0&limit=5]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/currencies?page=0&limit=5]]></href>
     <page>0</page>
     <limit>5</limit>
     <first>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/currencies?page=0&limit=5]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/currencies?page=0&limit=5]]></href>
     </first>
     <previous/>
     <next/>
     <last>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/currencies?page=0&limit=5]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/currencies?page=0&limit=5]]></href>
     </last>
     <items>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Ng==]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Ng==]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Nw==]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9Nw==]]></href>
         </item>
     </items>
 </response>

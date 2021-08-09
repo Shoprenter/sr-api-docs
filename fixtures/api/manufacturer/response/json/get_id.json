@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x",
+    "href": "http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x",
     "id": "bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x",
     "innerId": "1",
     "name": "Manufacturer name",
@@ -9,6 +9,6 @@
     "dateCreated": "2013-08-08T12:30:00",
     "dateUpdated": "2013-08-08T12:30:00",
     "manufacturerDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/manufacturerDescriptions?manufacturerId=bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x"
+        "href": "http://shopname.api.myshoprenter.hu/manufacturerDescriptions?manufacturerId=bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x"
     }
 }

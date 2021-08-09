@@ -1,42 +1,42 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges?page=0&limit=25]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges?page=0&limit=25]]></href>
     <page>0</page>
     <limit>25</limit>
     <first>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges?page=0&limit=25]]></href>
     </first>
     <previous/>
     <next/>
     <last>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges?page=0&limit=25]]></href>
     </last>
     <items>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTE=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTE=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTM=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTM=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTU=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTU=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTY=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTY=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTg=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTg=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTk=]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTk=]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTEw]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTEw]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTEx]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTEx]]></href>
         </item>
     </items>
 </response>

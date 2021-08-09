@@ -1,317 +1,317 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/informationDescriptions?full=1&page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/informationDescriptions?full=1&page=0&limit=25",
     "page": 0,
     "pageCount": 2,
     "limit": 25,
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/informationDescriptions?full=1&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/informationDescriptions?full=1&page=0&limit=25"
     },
     "previous": null,
     "next": {
-        "href": "http://shopname.api.shoprenter.hu/informationDescriptions?full=1&page=1&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/informationDescriptions?full=1&page=1&limit=25"
     },
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/informationDescriptions?full=1&page=1&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/informationDescriptions?full=1&page=1&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=",
             "title": "Adatvédelmi nyilatkozat",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTI=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTI=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTI=",
             "title": "Privacy Policy",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=",
             "title": "Rólunk",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTI=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTI=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTI=",
             "title": "Rólunk",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=",
             "title": "Vásárlási feltételek",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTI=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTI=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTI=",
             "title": "Vásárlási feltételek",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=",
             "title": "Egyéb információk",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTI=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTI=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTI=",
             "title": "Egyéb információk",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=",
             "title": "Garancia",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTI=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTI=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTI=",
             "title": "Warranty",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=",
             "title": "Hibabejelentés",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTI=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTI=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTI=",
             "title": "Hibabejelentés",
             "description": "&lt;p&gt;\r\n\tasdas&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD05Jmxhbmd1YWdlX2lkPTE=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD05Jmxhbmd1YWdlX2lkPTE=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD05Jmxhbmd1YWdlX2lkPTE=",
             "title": "Főoldal",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OQ=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OQ=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD05Jmxhbmd1YWdlX2lkPTI=",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD05Jmxhbmd1YWdlX2lkPTI=",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD05Jmxhbmd1YWdlX2lkPTI=",
             "title": "Főoldal",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OQ=="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OQ=="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMCZsYW5ndWFnZV9pZD0x",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMCZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMCZsYW5ndWFnZV9pZD0x",
             "title": "Kapcsolat",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTA="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTA="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMCZsYW5ndWFnZV9pZD0y",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMCZsYW5ndWFnZV9pZD0y",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMCZsYW5ndWFnZV9pZD0y",
             "title": "Kapcsolat",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTA="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTA="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMSZsYW5ndWFnZV9pZD0x",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMSZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMSZsYW5ndWFnZV9pZD0x",
             "title": "Oldaltérkép",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTE="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTE="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMSZsYW5ndWFnZV9pZD0y",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMSZsYW5ndWFnZV9pZD0y",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMSZsYW5ndWFnZV9pZD0y",
             "title": "Oldaltérkép",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTE="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTE="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMiZsYW5ndWFnZV9pZD0x",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMiZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMiZsYW5ndWFnZV9pZD0x",
             "title": "",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTI="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTI="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMiZsYW5ndWFnZV9pZD0y",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMiZsYW5ndWFnZV9pZD0y",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMiZsYW5ndWFnZV9pZD0y",
             "title": "",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTI="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTI="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMyZsYW5ndWFnZV9pZD0x",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMyZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMyZsYW5ndWFnZV9pZD0x",
             "title": "Hírek 1",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTM="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTM="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMyZsYW5ndWFnZV9pZD0y",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMyZsYW5ndWFnZV9pZD0y",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xMyZsYW5ndWFnZV9pZD0y",
             "title": "Hírek 1",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTM="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTM="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNCZsYW5ndWFnZV9pZD0x",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNCZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNCZsYW5ndWFnZV9pZD0x",
             "title": "",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTQ="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTQ="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNCZsYW5ndWFnZV9pZD0y",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNCZsYW5ndWFnZV9pZD0y",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNCZsYW5ndWFnZV9pZD0y",
             "title": "",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTQ="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTQ="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsYW5ndWFnZV9pZD0x",
+            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsYW5ndWFnZV9pZD0x",
             "title": "Szöveges menüpont címe",
             "description": "&lt;p&gt;\r\n\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor, tortor a mattis pharetra, ipsum urna aliquam odio, eu elementum lacus massa ullamcorper ipsum. Donec leo libero, bibendum eget tempus sed, convallis et nunc. Integer mollis, elit vel tempus iaculis, justo ante lacinia odio, sed condimentum mi odio a nulla.&lt;/p&gt;\r\n",
             "information": {
-                "href": "http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTU="
+                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTU="
             },
             "language": {
-                "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         }
     ]

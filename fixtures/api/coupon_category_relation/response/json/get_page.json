@@ -1,16 +1,16 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/couponCategoryRelations?page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/couponCategoryRelations?page=0&limit=25",
     "page": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/couponCategoryRelations?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/couponCategoryRelations?page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/couponCategoryRelations?page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/couponCategoryRelations?page=0&limit=25"
     },
     "items": {
-        "href": "http://shopname.api.shoprenter.hu/couponCategoryRelations/Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw=="
+        "href": "http://shopname.api.myshoprenter.hu/couponCategoryRelations/Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw=="
     }
 }
