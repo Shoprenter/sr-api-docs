@@ -1,12 +1,12 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/stockStatusDescriptions/c3RvY2tTdGF0dXNEZXNjcmlwdGlvbi1zdG9ja19zdGF0dXNfaWQ9NSZsYW5ndWFnZV9pZD0x",
+    "href": "http://shopname.api.myshoprenter.hu/stockStatusDescriptions/c3RvY2tTdGF0dXNEZXNjcmlwdGlvbi1zdG9ja19zdGF0dXNfaWQ9NSZsYW5ndWFnZV9pZD0x",
     "id": "c3RvY2tTdGF0dXNEZXNjcmlwdGlvbi1zdG9ja19zdGF0dXNfaWQ9NSZsYW5ndWFnZV9pZD0x",
     "name": "Előrendelhető",
     "color": "#f00540",
     "stockStatus": {
-        "href": "http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU="
+        "href": "http://shopname.api.myshoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU="
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }

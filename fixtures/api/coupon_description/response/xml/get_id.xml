@@ -1,15 +1,15 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/couponDescriptions/
+        <![CDATA[http://shopname.api.myshoprenter.hu/couponDescriptions/
         Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==]]>
     </href>
     <id><![CDATA[Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==]]></id>
     <name><![CDATA[free_delivery]]></name>
     <description><![CDATA[Ingyenes szállítás]]></description>
     <coupon>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x]]></href>
     </coupon>
     <language>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
     </language>
 </response>

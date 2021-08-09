@@ -1,10 +1,10 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD04JnZhbHVlX2lkPTI=]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD04JnZhbHVlX2lkPTI=]]></href>
     <id><![CDATA[bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD04JnZhbHVlX2lkPTI=]]></id>
     <listAttribute>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==]]></href>
     </listAttribute>
     <listAttributeValueDescriptions>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD04JnZhbHVlX2lkPTI=]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD04JnZhbHVlX2lkPTI=]]></href>
     </listAttributeValueDescriptions>
 </response>

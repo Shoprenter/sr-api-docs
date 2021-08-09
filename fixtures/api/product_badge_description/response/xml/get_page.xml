@@ -1,28 +1,28 @@
 
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions?page=0&limit=25]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadgeDescriptions?page=0&limit=25]]></href>
     <page>0</page>
     <limit>25</limit>
     <first>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadgeDescriptions?page=0&limit=25]]></href>
     </first>
     <previous/>
     <next/>
     <last>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions?page=0&limit=25]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadgeDescriptions?page=0&limit=25]]></href>
     </last>
     <items>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MSZsYW5ndWFnZV9pZD0x]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MSZsYW5ndWFnZV9pZD0x]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MSZsYW5ndWFnZV9pZD0y]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MSZsYW5ndWFnZV9pZD0y]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MiZsYW5ndWFnZV9pZD0x]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MiZsYW5ndWFnZV9pZD0x]]></href>
         </item>
         <item>
-            <href><![CDATA[http://shopname.api.shoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MjAmbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadgeDescriptions/cHJvZHVjdEJhZGdlRGVzY3JpcHRpb24tYmFkZ2VfaWQ9MjAmbGFuZ3VhZ2VfaWQ9MQ==]]></href>
         </item>
     </items>
 </response>

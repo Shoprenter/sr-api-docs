@@ -1,38 +1,38 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/productTags?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy&page=0&limit=25]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/productTags?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy&page=0&limit=25]]></href>
     <page>0</page>
     <limit>25</limit>
     <first>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/productTags?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy&page=0&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/productTags?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy&page=0&limit=25]]>
         </href>
     </first>
     <previous/>
     <next/>
     <last>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/productTags?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy&page=0&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/productTags?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy&page=0&limit=25]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTEx]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTEx]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE3]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE3]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE4]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE4]]>
             </href>
         </item>
     </items>

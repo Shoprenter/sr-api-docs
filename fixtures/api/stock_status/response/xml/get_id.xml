@@ -1,7 +1,7 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=]]></href>
     <id><![CDATA[c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=]]></id>
     <stockStatusDescriptions>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/stockStatusDescriptions?stockStatusId=c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/stockStatusDescriptions?stockStatusId=c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=]]></href>
     </stockStatusDescriptions>
 </response>

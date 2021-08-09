@@ -25,7 +25,7 @@ Példa:
             "name": "Potted Double Stem Kaleidoscope Orchid",
             "quantity": 1,
             "image": "product/00011.jpg",
-            "href": "https://demo.shoprenter.hu/potted-double-stem-kaleidoscope-orchid-409",
+            "href": "https://demo.myshoprenter.hu/potted-double-stem-kaleidoscope-orchid-409",
             "price": 2476.5,
             "total": 2476.5,
             "totalOriginal": 2476.5,
@@ -63,7 +63,7 @@ Példakód a használatra:
 ```javascript
 $.ajax({
     type: 'GET',
-    url: 'https://demo.shoprenter.hu/cart.json',
+    url: 'https://demo.myshoprenter.hu/cart.json',
     success: function(res) {
         console.log(res);
     },

@@ -1,10 +1,10 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTI=]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTI=]]></href>
     <id><![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTI=]]></id>
     <type><![CDATA[PRODUCT]]></type>
     <urlAlias><![CDATA[brother_patron_lc_1220y_dcp_j525j725j925_300oldal_sarga_23460]]></urlAlias>
     <urlAliasEntity>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTIzNDYw]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTIzNDYw]]></href>
     </urlAliasEntity>
 </response>
 

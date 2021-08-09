@@ -4,9 +4,9 @@
     "firstVariantSelectType": "SELECT",
     "secondVariantSelectType": "SELECT",
     "firstVariantParameter": {
-        "href": "http:\/\/shopname.api.shoprenter.hu\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
+        "href": "http:\/\/shopname.api.myshoprenter.hu\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
     },
     "secondVariantParameter": {
-        "href": "http:\/\/shopname.api.shoprenter.hu\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
+        "href": "http:\/\/shopname.api.myshoprenter.hu\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05"
     }
 }

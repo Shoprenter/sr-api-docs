@@ -1,7 +1,7 @@
 <response>
     <href>
         <![CDATA[
-            http://shopname.api.shoprenter.hu/productProductBadgeRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTM5NQ==&page=0&limit=25
+            http://shopname.api.myshoprenter.hu/productProductBadgeRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTM5NQ==&page=0&limit=25
         ]]>
     </href>
     <page>0</page>
@@ -9,7 +9,7 @@
     <first>
         <href>
             <![CDATA[
-                http://shopname.api.shoprenter.hu/productProductBadgeRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTM5NQ==&page=0&limit=25
+                http://shopname.api.myshoprenter.hu/productProductBadgeRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTM5NQ==&page=0&limit=25
             ]]>
         </href>
     </first>
@@ -18,14 +18,14 @@
     <last>
         <href>
             <![CDATA[
-                http://shopname.api.shoprenter.hu/productProductBadgeRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTM5NQ==&page=0&limit=25
+                http://shopname.api.myshoprenter.hu/productProductBadgeRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTM5NQ==&page=0&limit=25
             ]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/productProductBadgeRelations/
+                <![CDATA[http://shopname.api.myshoprenter.hu/productProductBadgeRelations/
                 cHJvZHVjdFByb2R1Y3RCYWRnZS1wcm9kdWN0X2lkPTM5NSZiYWRnZV9pZD03Jmxhbmd1YWdlX2lkPTE=]]>
             </href>
         </item>

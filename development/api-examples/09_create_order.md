@@ -36,7 +36,7 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orders</td>
+    <td>http://shopname.api.myshoprenter.hu/orders</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -127,7 +127,7 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
 ```json
 
 {
-    "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
+    "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
     "id": "b3JkZXItb3JkZXJfaWQ9NDk=",
     "innerId": "49",
     "invoiceId": "0",
@@ -178,40 +178,40 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "pickPackPontShopCode": "100010",
     "loyaltyPointsTaxRate": "-1.0000",
     "customer": {
-        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
     },
     "customerGroup": {
-        "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+        "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
     },
     "shippingZone": null,
     "shippingCountry": {
-        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "paymentZone": null,
     "paymentCountry": {
-        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "orderStatus": {
-        "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+        "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "currency": {
-        "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+        "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
     },
     "shippingMode": {
-        "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
+        "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
     },
     "furgefutarWaybill": 0,
     "orderTotals": {
-        "href": "http://shopname.api.shoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderProducts": {
-        "href": "http://shopname.api.shoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderGiftWrappings": {
-        "href": "http://shopname.api.shoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -240,7 +240,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -269,7 +269,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
+    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
     "name": "Nettó részösszeg:",
     "valueText": "18.000 Ft ",
@@ -281,7 +281,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
     "dateCreated": "2020-11-19T23:22:46",
     "dateUpdated": "2020-11-19T23:22:46",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -297,7 +297,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -326,7 +326,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
+    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
     "name": "ÁFA (27%): ",
     "valueText": " 4.860 Ft ",
@@ -338,7 +338,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
     "dateCreated": "2020-11-19T23:23:46",
     "dateUpdated": "2020-11-19T23:23:46",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -355,7 +355,7 @@ Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kér
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -384,7 +384,7 @@ Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kér
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
+    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
     "name": "Bruttó részösszeg:",
     "valueText": "22.860 Ft",
@@ -396,7 +396,7 @@ Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kér
     "dateCreated": "2020-11-19T23:24:59",
     "dateUpdated": "2020-11-19T23:24:59",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -413,7 +413,7 @@ Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -442,7 +442,7 @@ Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" 
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
+    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
     "name": "Házhozszállítás futárszolgálattal:",
     "valueText": "1.200 Ft",
@@ -454,7 +454,7 @@ Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" 
     "dateCreated": "2020-11-19T23:27:05",
     "dateUpdated": "2020-11-19T23:27:05",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -472,7 +472,7 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orderTotals</td>
+    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -501,7 +501,7 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
+    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
     "name": "Bruttó végösszeg:",
     "valueText": "24060 Ft",
@@ -513,7 +513,7 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
     "dateCreated": "2020-11-19T23:19:24",
     "dateUpdated": "2020-11-19T23:19:24",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -540,7 +540,7 @@ a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra p
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orderProducts</td>
+    <td>http://shopname.api.myshoprenter.hu/orderProducts</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -581,7 +581,7 @@ a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra p
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
+    "href": "http://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
     "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
     "name": "Bőrnadrág, Mango",
     "sku": "9950000051",
@@ -602,13 +602,13 @@ a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra p
     "length": "1.00",
     "weight": "1.00",
     "order": {
-        "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM3MA=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM3MA=="
     },
     "orderProductOptions": {
-        "href": "http://shopname.api.shoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw"
+        "href": "http://shopname.api.myshoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw"
     }
 }
 ```
@@ -626,7 +626,7 @@ segítségével a "total" értéket módosítjuk, és ezt az alábbi példa alap
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=</td>
+    <td>http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -646,7 +646,7 @@ segítségével a "total" értéket módosítjuk, és ezt az alábbi példa alap
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
+    "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
     "id": "b3JkZXItb3JkZXJfaWQ9NDk=",
     "innerId": "49",
     "invoiceId": "0",
@@ -697,40 +697,40 @@ segítségével a "total" értéket módosítjuk, és ezt az alábbi példa alap
     "pickPackPontShopCode": "100010",
     "loyaltyPointsTaxRate": "-1.0000",
     "customer": {
-        "href": "http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
     },
     "customerGroup": {
-        "href": "http://shopname.api.shoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+        "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
     },
     "shippingZone": null,
     "shippingCountry": {
-        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "paymentZone": null,
     "paymentCountry": {
-        "href": "http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "orderStatus": {
-        "href": "http://shopname.api.shoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+        "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "currency": {
-        "href": "http://shopname.api.shoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+        "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
     },
     "shippingMode": {
-        "href": "http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
+        "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
     },
     "furgefutarWaybill": 0,
     "orderTotals": {
-        "href": "http://shopname.api.shoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderProducts": {
-        "href": "http://shopname.api.shoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderGiftWrappings": {
-        "href": "http://shopname.api.shoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "http://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```

@@ -1,10 +1,10 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE=]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTE=]]></href>
     <id><![CDATA[em9uZS16b25lX2lkPTE=]]></id>
     <code><![CDATA[BDS]]></code>
     <name><![CDATA[Badakhshan]]></name>
     <status><![CDATA[1]]></status>
     <country>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE=]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTE=]]></href>
     </country>
 </response>

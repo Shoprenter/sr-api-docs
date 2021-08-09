@@ -1,6 +1,6 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx]]>
+        <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx]]>
     </href>
     <id>
         <![CDATA[c2hpcHBpbmdMYW5lLWlkPTYx]]>
@@ -25,7 +25,7 @@
     </weightMaximum>
     <shippingMode>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTM=]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTM=]]>
         </href>
     </shippingMode>
 </response>

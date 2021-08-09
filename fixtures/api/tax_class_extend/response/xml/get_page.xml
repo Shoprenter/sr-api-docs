@@ -1,26 +1,26 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter/taxClassExtend?full=1&page=0&limit=25]]>
+        <![CDATA[http://shopname.api.myshoprenter/taxClassExtend?full=1&page=0&limit=25]]>
     </href>
     <page>0</page>
     <pageCount>1</pageCount>
     <limit>25</limit>
     <first>
         <href>
-            <![CDATA[http://shopname.api.shoprenter/taxClassExtend?full=1&page=0&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter/taxClassExtend?full=1&page=0&limit=25]]>
         </href>
     </first>
     <previous/>
     <next/>
     <last>
         <href>
-            <![CDATA[http://shopname.api.shoprenter/taxClassExtend?full=1&page=0&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter/taxClassExtend?full=1&page=0&limit=25]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
+                <![CDATA[http://shopname.api.myshoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
             </href>
             <id>
                 <![CDATA[dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
@@ -39,7 +39,7 @@
             </dateUpdated>
             <taxRates>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
                 </href>
                 <id>
                     <![CDATA[dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
@@ -61,19 +61,19 @@
                 </dateUpdated>
                 <geoZone>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
                     </href>
                 </geoZone>
                 <taxClass>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
                     </href>
                 </taxClass>
             </taxRates>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx]]>
+                <![CDATA[http://shopname.api.myshoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx]]>
             </href>
             <id>
                 <![CDATA[dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx]]>
@@ -92,7 +92,7 @@
             </dateUpdated>
             <taxRates>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
                 </href>
                 <id>
                     <![CDATA[dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
@@ -114,18 +114,18 @@
                 </dateUpdated>
                 <geoZone>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
                     </href>
                 </geoZone>
                 <taxClass>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
                     </href>
                 </taxClass>
             </taxRates>
             <taxRates>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==]]>
                 </href>
                 <id>
                     <![CDATA[dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==]]>
@@ -159,7 +159,7 @@
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy]]>
+                <![CDATA[http://shopname.api.myshoprenter/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy]]>
             </href>
             <id>
                 <![CDATA[dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy]]>
@@ -178,7 +178,7 @@
             </dateUpdated>
             <taxRates>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
                 </href>
                 <id>
                     <![CDATA[dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==]]>
@@ -200,12 +200,12 @@
                 </dateUpdated>
                 <geoZone>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
                     </href>
                 </geoZone>
                 <taxClass>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
                     </href>
                 </taxClass>
             </taxRates>

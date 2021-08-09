@@ -1,5 +1,5 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03]]></href>
     <id><![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03]]></id>
     <name><![CDATA[Nettó részösszeg:]]></name>
     <valueText><![CDATA[2.400 Ft]]></valueText>
@@ -11,6 +11,6 @@
     <dateCreated><![CDATA[2013-01-01T01:00:00]]></dateCreated>
     <dateUpdated><![CDATA[2013-01-01T01:00:00]]></dateUpdated>
     <order>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
     </order>
 </response>

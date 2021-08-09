@@ -1,5 +1,5 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTY5]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTY5]]></href>
     <id><![CDATA[YWRkcmVzcy1hZGRyZXNzX2lkPTY5]]></id>
     <innerId><![CDATA[1]]></innerId>
     <company><![CDATA[Cégnév]]></company>
@@ -15,12 +15,12 @@
     <dateUpdated><![CDATA[2013-08-03T07:30:00]]></dateUpdated>
     <telephone><![CDATA[+36301234567]]></telephone>
     <customer>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzU=]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzU=]]></href>
     </customer>
     <country>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]></href>
     </country>
     <zone>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE=]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/zones/em9uZS16b25lX2lkPTE0NDE=]]></href>
     </zone>
 </response>

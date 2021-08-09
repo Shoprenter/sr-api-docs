@@ -1,12 +1,12 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
+    "href": "http://shopname.api.myshoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
     "id": "Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
     "name": "free_delivery",
     "description": "Ingyenes szállítás",
     "coupon": {
-        "href": "http://shopname.api.shoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x"
+        "href": "http://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x"
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }

@@ -15,10 +15,10 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
 - **Alkalmazás rövid leírása:** Maximum 70 karakteres rövid szöveg.
 - **Alkalmazás részletek link:** Az alkalmazás részleteire/sales oldalára mutató link.
 - **Alakalmazás típusa:** Az alkalmazásnak két formája van:
-  - Beágyazott: Az EntryPoint-nak megadott URL-t betöltjük egy Iframe-be, amit az alkalmazáshoz tartozó URL-en lehet elérni, a Shoprenter admin felületén (pl. `https://shopname.shoprenter.hu/admin/app/1`).
+  - Beágyazott: Az EntryPoint-nak megadott URL-t betöltjük egy Iframe-be, amit az alkalmazáshoz tartozó URL-en lehet elérni, a Shoprenter admin felületén (pl. `https://shopname.myshoprenter.hu/admin/app/1`).
   - Átírányított: Átírányításnál a felhasználót szimplán átírányítjuk a megadott EntryPoint URL-re.
 - **A tesztbolt neve:** A fejlesztés legelején igényelni kell egy próbaboltot a [shoprenter.hu](https://www.shoprenter.hu/) oldalon. 
-  Itt megadható a boltnév, ami a bolt domain első részeben - `[boltNev].shoprenter.hu` - lesz látható.
+  Itt megadható a boltnév, ami a bolt domain első részeben - `[boltNev].myshoprenter.hu` - lesz látható.
 
 **Az alkalmazás rendszerbe való felvétele után a következő adatokat küldi el a Shoprenter:**
 - **AppId:** az alkalmazás azonosítója a Shoprenteren belül. 
@@ -37,7 +37,7 @@ Az alkalmazás beregisztrálásához szükséges adatokat kérjük elküldeni a 
 3. Kiszolgáló félnek célszerű ellenőrizni, hogy a kérést valóban a Shoprenter küldte.
    Annak ellenőrzése, hogy a kérést a Shoprenter küldte:
    A QueryString HMAC nélküli részének (`code=0907a61c0c8d55e99db179b68161bc00&shopname=example&timestamp=1337178173`) a **ClientSecret**-el sha256 algoritmussal elkódolva egyenértékűnek kell lennie a QueryString HMAC paraméterének értékével.
-4. Ha a kiszolgáló fél rendben találta a kérést. Küld egy POST Request-et a Shoprenter felé a `https://[shopname].shoprenter.hu/admin/oauth/access_credential` URL-re. 
+4. Ha a kiszolgáló fél rendben találta a kérést. Küld egy POST Request-et a Shoprenter felé a `https://[shopname].myshoprenter.hu/admin/oauth/access_credential` URL-re. 
    A POST Request-nek tartalmaznia kell az alábbi mezőket:
     - **client_id:** Az alkalmazás ClientId-ja
     - **client_secret:** Az alkalmazás ClientSecret értéke 

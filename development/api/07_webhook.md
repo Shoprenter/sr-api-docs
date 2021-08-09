@@ -181,7 +181,7 @@ Példa webhook:
                      "currency":"HUF",
                      "taxRate":"27.0000",
                      "quantity":"1",
-                     "image":"https:\/\/shopname.api.shoprenter.hu\/custom\/demo\/image\/data\/product\/PF_11_00000000M232_VA0211_W1_PF.jpg",
+                     "image":"https:\/\/shopname.api.myshoprenter.hu\/custom\/demo\/image\/data\/product\/PF_11_00000000M232_VA0211_W1_PF.jpg",
                      "category":"Vir\u00e1gok, Tulip\u00e1nok",
                      "volume":{  
                         "height":"0.00",
@@ -222,7 +222,7 @@ Példa webhook:
                      "currency":"HUF",
                      "taxRate":"0.0000",
                      "quantity":"1",
-                     "image":"https:\/\/shopname.api.shoprenter.hu\/custom\/demo\/image\/no_image.jpg",
+                     "image":"https:\/\/shopname.api.myshoprenter.hu\/custom\/demo\/image\/no_image.jpg",
                      "category":"FISHER-PRICE j\u00e1t\u00e9kok",
                      "volume":{  
                         "height":"0.00",

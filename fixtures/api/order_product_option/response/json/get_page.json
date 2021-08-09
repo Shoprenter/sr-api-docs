@@ -1,32 +1,32 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/orderProductOptions?page=0&limit=5",
+    "href": "http://shopname.api.myshoprenter.hu/orderProductOptions?page=0&limit=5",
     "page": "0",
     "limit": "5",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/orderProductOptions?page=0&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/orderProductOptions?page=0&limit=5"
     },
     "previous": null,
     "next": {
-        "href": "http://shopname.api.shoprenter.hu/orderProductOptions?page=1&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/orderProductOptions?page=1&limit=5"
     },
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/orderProductOptions?page=2&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/orderProductOptions?page=2&limit=5"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0x"
+            "href": "http://shopname.api.myshoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0x"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0y"
+            "href": "http://shopname.api.myshoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0y"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0z"
+            "href": "http://shopname.api.myshoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0z"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD00"
+            "href": "http://shopname.api.myshoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD00"
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD01"
+            "href": "http://shopname.api.myshoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD01"
         }
     ]
 }

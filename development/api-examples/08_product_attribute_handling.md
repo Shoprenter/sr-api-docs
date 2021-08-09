@@ -68,7 +68,7 @@ _A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tár
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productClasses</td>
+    <td>http://shopname.api.myshoprenter.hu/productClasses</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -90,7 +90,7 @@ _A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tár
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
+    "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "id": "cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "name": "Szobanövény",
     "description": "Ez a szobanoveny típus leírása",
@@ -99,7 +99,7 @@ _A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tár
     "firstVariantParameter": null,
     "secondVariantParameter": null,
     "productClassAttributeRelations": {
-        "href": "http://shopname.api.shoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "http://shopname.api.myshoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     }
 }
 ```
@@ -133,7 +133,7 @@ egy termék esetén.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/numberAttributes</td>
+    <td>http://shopname.api.myshoprenter.hu/numberAttributes</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -162,7 +162,7 @@ egy termék esetén.
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
+    "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
     "id": "bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
     "type": "INTEGER",
     "name": "napsutotte_orak_szama",
@@ -175,13 +175,13 @@ egy termék esetén.
     "showValueIfZero": null,
     "valuePrecision": null,
     "numberAttributeWidget": {
-        "href": "http://shopname.api.shoprenter.hu/numberAttributeWidgets/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "http://shopname.api.myshoprenter.hu/numberAttributeWidgets/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "attributeDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/attributeDescriptions?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "numberAttributeValues": {
-        "href": "http://shopname.api.shoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     }
 }
 ```
@@ -212,7 +212,7 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/textAttributes</td>
+    <td>http://shopname.api.myshoprenter.hu/textAttributes</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -239,7 +239,7 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
+    "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
     "id": "dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
     "type": "TEXT",
     "name": "latin_megnevezes",
@@ -249,10 +249,10 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
     "textFieldType": "INPUT",
     "translateable": "0",
     "attributeDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/attributeDescriptions?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     },
     "textAttributeValues": {
-        "href": "http://shopname.api.shoprenter.hu/textAttributeValues?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "http://shopname.api.myshoprenter.hu/textAttributeValues?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     }
 }
 ```
@@ -299,7 +299,7 @@ Az előző példákhoz hasonlóan, először magát a tulajdonságot hozzuk lét
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/listAttributes</td>
+    <td>http://shopname.api.myshoprenter.hu/listAttributes</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -325,7 +325,7 @@ Az előző példákhoz hasonlóan, először magát a tulajdonságot hozzuk lét
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
+    "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
         "id": "bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
         "type": "LIST",
         "name": "levelek_formaja",
@@ -334,14 +334,14 @@ Az előző példákhoz hasonlóan, először magát a tulajdonságot hozzuk lét
         "required": "1",
         "presentation": "TEXT",
         "listAttributeWidget": {
-            "href": "http://shopname.api.shoprenter.hu/listAttributeWidgets/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9MTY="
+            "href": "http://shopname.api.myshoprenter.hu/listAttributeWidgets/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9MTY="
         },
         "defaultListAttributeValue": null,
         "attributeDescriptions": {
-            "href": "http://shopname.api.shoprenter.hu/attributeDescriptions?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+            "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
         },
         "listAttributeValues": {
-            "href": "http://shopname.api.shoprenter.hu/listAttributeValues?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+            "href": "http://shopname.api.myshoprenter.hu/listAttributeValues?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
         }
 }
 ```
@@ -375,7 +375,7 @@ a két új értéket a "Levelek formája" egyedi tulajdonsághoz.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/listAttributeValues</td>
+    <td>http://shopname.api.myshoprenter.hu/listAttributeValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -398,26 +398,26 @@ a két új értéket a "Levelek formája" egyedi tulajdonsághoz.
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x",
+    "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x",
     "listAttribute": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+        "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
     },
     "listAttributeValueDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x"
+        "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x"
     }
 }
 ```
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
+    "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "listAttribute": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+        "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
     },
     "listAttributeValueDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -445,7 +445,7 @@ a "Kerek" érték.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/listAttributeValueDescription</td>
+    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescription</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -472,14 +472,14 @@ a "Kerek" érték.
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
+    "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "name": "Hegyes",
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "listAttributeValue": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -493,7 +493,7 @@ a "Kerek" érték.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/listAttributeValueDescription</td>
+    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescription</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -520,14 +520,14 @@ a "Kerek" érték.
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
+    "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "name": "Kerek",
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "listAttributeValue": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -562,7 +562,7 @@ Amire szükségünk lesz:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/attributeDescriptions</td>
+    <td>http://shopname.api.myshoprenter.hu/attributeDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -590,15 +590,15 @@ Amire szükségünk lesz:
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+    "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
     "id": "YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
     "name": "Napsütötte órák száma",
     "description": "Megmondja, naponta, hány óra szükséges a növénynek napfényben töltenie",
     "attribute": {
-        "href": "http://shopname.api.shoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "language": {
-        "href": "http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9NA=="
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9NA=="
     }
 }
 ```
@@ -628,7 +628,7 @@ Illetve, természetesen a Szobanövény termék típus resource id-jára: cHJvZH
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productClassAttributeRelations</td>
+    <td>http://shopname.api.myshoprenter.hu/productClassAttributeRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -654,13 +654,13 @@ Illetve, természetesen a Szobanövény termék típus resource id-jára: cHJvZH
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productClassAttributeRelations/cHJvZHVjdENsYXNzQXR0cmlidXRlUmVsYXRpb24tcHJvZHVjdF9jbGFzc19pZD0xNCZhdHRyaWJ1dGVfaWQ9MTM=",
+    "href": "http://shopname.api.myshoprenter.hu/productClassAttributeRelations/cHJvZHVjdENsYXNzQXR0cmlidXRlUmVsYXRpb24tcHJvZHVjdF9jbGFzc19pZD0xNCZhdHRyaWJ1dGVfaWQ9MTM=",
     "id": "cHJvZHVjdENsYXNzQXR0cmlidXRlUmVsYXRpb24tcHJvZHVjdF9jbGFzc19pZD0xNCZhdHRyaWJ1dGVfaWQ9MTM=",
     "productClass": {
-        "href": "http://shopname.api.shoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     },
     "attribute": {
-        "href": "http://shopname.api.shoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     }
 }
 ```
@@ -693,7 +693,7 @@ mezőjét. Természetesen, új termék létrehozásánál is hozzárendelhetjük
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
+    <td>http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -716,11 +716,11 @@ mezőjét. Természetesen, új termék létrehozásánál is hozzárendelhetjük
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
+    "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
 ...
  "productClass": {
-        "href": "http://shopname.api.shoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     },
 ...
 
@@ -766,7 +766,7 @@ Amire szükségünk van:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/numberAttributeValues</td>
+    <td>http://shopname.api.myshoprenter.hu/numberAttributeValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -793,14 +793,14 @@ Amire szükségünk van:
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTEzJnByb2R1Y3RfaWQ9NjE0",
+    "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTEzJnByb2R1Y3RfaWQ9NjE0",
     "id": "bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTEzJnByb2R1Y3RfaWQ9NjE0",
     "value": "3",
     "numberAttribute": {
-        "href": "http://shopname.api.shoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     }
 }
 ```
@@ -830,7 +830,7 @@ Amire szükségünk van:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/textAttributeValues</td>
+    <td>http://shopname.api.myshoprenter.hu/textAttributeValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -856,16 +856,16 @@ Amire szükségünk van:
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
+    "href": "http://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "id": "dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "textAttribute": {
-        "href": "http://shopname.api.shoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     },
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     },
     "textAttributeValueDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
+        "href": "http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
     }
 }
 ```
@@ -891,7 +891,7 @@ Mivel megadtuk, hogy a **latin_megnevezes** nevű egyedi tulajdonság egynyelvű
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/textAttributeValueDescriptions</td>
+    <td>http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -916,16 +916,16 @@ Mivel megadtuk, hogy a **latin_megnevezes** nevű egyedi tulajdonság egynyelvű
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
+    "href": "http://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "id": "dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "textAttribute": {
-        "href": "http://shopname.api.shoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     },
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     },
     "textAttributeValueDescriptions": {
-        "href": "http://shopname.api.shoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
+        "href": "http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
     }
 }
 ```
@@ -952,7 +952,7 @@ Amire szükségünk van:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productListAttributeValueRelations</td>
+    <td>http://shopname.api.myshoprenter.hu/productListAttributeValueRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -978,13 +978,13 @@ Amire szükségünk van:
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productListAttributeValueRelations/cHJvZHVjdExpc3RBdHRyaWJ1dGVWYWx1ZVJlbGF0aW9uLXByb2R1Y3RfaWQ9NjE0JmF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
+    "href": "http://shopname.api.myshoprenter.hu/productListAttributeValueRelations/cHJvZHVjdExpc3RBdHRyaWJ1dGVWYWx1ZVJlbGF0aW9uLXByb2R1Y3RfaWQ9NjE0JmF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "id": "cHJvZHVjdExpc3RBdHRyaWJ1dGVWYWx1ZVJlbGF0aW9uLXByb2R1Y3RfaWQ9NjE0JmF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "product": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     },
     "listAttributeValue": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -1021,7 +1021,7 @@ A "levelek formája" egyedi tulajdonság resource id-jára: **bGlzdEF0dHJpYnV0ZS
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ</td>
+    <td>http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -1044,18 +1044,18 @@ A "levelek formája" egyedi tulajdonság resource id-jára: **bGlzdEF0dHJpYnV0ZS
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
+    "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "id": "cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "name": "Szobanövény",
     "description": "Ez a szobanoveny típus leírása",
     "firstVariantSelectType": "SELECT",
     "secondVariantSelectType": "SELECT",
     "firstVariantParameter": {
-        "href": "http://shopname.api.shoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+        "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
     },
     "secondVariantParameter": null,
     "productClassAttributeRelations": {
-        "href": "http://shopname.api.shoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "http://shopname.api.myshoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     }
 }
 ```
@@ -1103,7 +1103,7 @@ Tegyük fel, hogy létezik két termékünk és előre beállítottuk a Levelek 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
+    <td>http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -1126,14 +1126,14 @@ Tegyük fel, hogy létezik két termékünk és előre beállítottuk a Levelek 
 
 ```json
 {
-    "href": "http://shopname.api.shoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
+    "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
      ...
      "parentProduct": {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxMg=="
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxMg=="
      },
      "volumeUnit": {
-        "href": "http://shopname.api.shoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE="
+        "href": "http://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE="
      },
      ...
    }

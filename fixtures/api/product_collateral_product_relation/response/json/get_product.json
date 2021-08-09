@@ -1,24 +1,24 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25",
+    "href": "http://shopname.api.myshoprenter.hu/productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25",
     "page": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25"
+        "href": "http://shopname.api.myshoprenter.hu/productCollateralProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTg0NTY=&page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzEzNA=="
+            "href": "http://shopname.api.myshoprenter.hu/productCollateralProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzEzNA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzM2NA=="
+            "href": "http://shopname.api.myshoprenter.hu/productCollateralProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzM2NA=="
         },
         {
-            "href": "http://shopname.api.shoprenter.hu/productCollateralProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzgyOA=="
+            "href": "http://shopname.api.myshoprenter.hu/productCollateralProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzgyOA=="
         }
     ]
 }

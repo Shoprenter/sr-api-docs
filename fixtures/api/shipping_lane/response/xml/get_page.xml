@@ -1,150 +1,150 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes?page=0&limit=25]]>
+        <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25]]>
     </href>
     <page>0</page>
     <pageCount>7</pageCount>
     <limit>25</limit>
     <first>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes?page=0&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25]]>
         </href>
     </first>
     <previous/>
     <next>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes?page=1&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=1&limit=25]]>
         </href>
     </next>
     <last>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes?page=6&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=6&limit=25]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYw]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYw]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYz]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYz]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTY0]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTY0]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMg==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMg==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMw==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMw==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNg==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNg==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNw==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNw==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mg==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mg==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mw==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mw==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2Mg==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2Mg==]]>
             </href>
         </item>
     </items>

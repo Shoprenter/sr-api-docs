@@ -1,14 +1,14 @@
 <response>
-    <href><![CDATA[http://shopname.api.shoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTE=]]></href>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/loyaltyPoints/bG95YWx0eVBvaW50LWlkPTE=]]></href>
     <id><![CDATA[bG95YWx0eVBvaW50LWlkPTE=]]></id>
     <dateAdded><![CDATA[2013-04-30T10:52:36]]></dateAdded>
     <dateExpiration><![CDATA[2013-08-08T10:52:36]]></dateExpiration>
     <value><![CDATA[100]]></value>
     <description><![CDATA[Leírás]]></description>
     <order>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MQ==]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MQ==]]></href>
     </order>
     <customer>
-        <href><![CDATA[http://shopname.api.shoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=]]></href>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=]]></href>
     </customer>
 </response>

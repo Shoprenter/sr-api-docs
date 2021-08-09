@@ -1,26 +1,26 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/informationExtend?full=1&page=0&limit=25]]>
+        <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend?full=1&page=0&limit=25]]>
     </href>
     <page>0</page>
     <pageCount>1</pageCount>
     <limit>25</limit>
     <first>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/informationExtend?full=1&page=0&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend?full=1&page=0&limit=25]]>
         </href>
     </first>
     <previous/>
     <next/>
     <last>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/informationExtend?full=1&page=0&limit=25]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend?full=1&page=0&limit=25]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw==]]>
             </href>
             <id>
                 <![CDATA[aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw==]]>
@@ -51,7 +51,7 @@
             </showInFooter>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTE=]]>
@@ -72,18 +72,18 @@
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
                     </href>
                 </language>
             </informationDescriptions>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTI=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTI=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0zJmxhbmd1YWdlX2lkPTI=]]>
@@ -104,12 +104,12 @@
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Mw==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
                     </href>
                 </language>
             </informationDescriptions>
@@ -135,7 +135,7 @@
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==]]>
             </href>
             <id>
                 <![CDATA[aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==]]>
@@ -166,7 +166,7 @@
             </showInFooter>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTE=]]>
@@ -223,18 +223,18 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
                     </href>
                 </language>
             </informationDescriptions>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTI=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTI=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD00Jmxhbmd1YWdlX2lkPTI=]]>
@@ -291,12 +291,12 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NA==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
                     </href>
                 </language>
             </informationDescriptions>
@@ -322,7 +322,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==]]>
             </href>
             <id>
                 <![CDATA[aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==]]>
@@ -353,7 +353,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
             </showInFooter>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTE=]]>
@@ -426,18 +426,18 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
                     </href>
                 </language>
             </informationDescriptions>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTI=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTI=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD01Jmxhbmd1YWdlX2lkPTI=]]>
@@ -510,12 +510,12 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9NQ==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
                     </href>
                 </language>
             </informationDescriptions>
@@ -541,7 +541,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==]]>
             </href>
             <id>
                 <![CDATA[aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==]]>
@@ -572,7 +572,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
             </showInFooter>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTE=]]>
@@ -587,18 +587,18 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
                     </href>
                 </language>
             </informationDescriptions>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTI=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTI=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD02Jmxhbmd1YWdlX2lkPTI=]]>
@@ -613,12 +613,12 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Ng==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
                     </href>
                 </language>
             </informationDescriptions>
@@ -644,7 +644,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==]]>
             </href>
             <id>
                 <![CDATA[aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==]]>
@@ -675,7 +675,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
             </showInFooter>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTE=]]>
@@ -728,18 +728,18 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
                     </href>
                 </language>
             </informationDescriptions>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTI=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTI=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD03Jmxhbmd1YWdlX2lkPTI=]]>
@@ -792,12 +792,12 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9Nw==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
                     </href>
                 </language>
             </informationDescriptions>
@@ -823,7 +823,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.shoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==]]>
+                <![CDATA[http://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==]]>
             </href>
             <id>
                 <![CDATA[aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==]]>
@@ -854,7 +854,7 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
             </showInFooter>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTE=]]>
@@ -869,18 +869,18 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
                     </href>
                 </language>
             </informationDescriptions>
             <informationDescriptions>
                 <href>
-                    <![CDATA[http://shopname.api.shoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTI=]]>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTI=]]>
                 </href>
                 <id>
                     <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD04Jmxhbmd1YWdlX2lkPTI=]]>
@@ -895,12 +895,12 @@ Hat&amp;oacute;s&amp;aacute;gi eng. sz&amp;aacute;m (amennyiben sz&amp;uuml;ks&a
                 </description>
                 <information>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9OA==]]>
                     </href>
                 </information>
                 <language>
                     <href>
-                        <![CDATA[http://shopname.api.shoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
+                        <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==]]>
                     </href>
                 </language>
             </informationDescriptions>

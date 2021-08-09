@@ -1,6 +1,6 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.shoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+        <![CDATA[http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
     </href>
     <id>
         <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
@@ -19,12 +19,12 @@
     </status>
     <zones>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
         </href>
     </zones>
     <geoZones>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
         </href>
         <id>
             <![CDATA[Z2VvWm9uZS1nZW9fem9uZV9pZD01]]>
@@ -38,7 +38,7 @@
     </geoZones>
     <geoZones>
         <href>
-            <![CDATA[http://shopname.api.shoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02]]>
+            <![CDATA[http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02]]>
         </href>
         <id>
             <![CDATA[Z2VvWm9uZS1nZW9fem9uZV9pZD02]]>

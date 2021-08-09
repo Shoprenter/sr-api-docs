@@ -1,9 +1,9 @@
 {
-    "href": "http://shopname.api.shoprenter.hu/textAttributeValueDescriptions/dGV4dEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmcHJvZHVjdF9pZD01MSZsYW5ndWFnZV9pZD0w",
+    "href": "http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions/dGV4dEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmcHJvZHVjdF9pZD01MSZsYW5ndWFnZV9pZD0w",
     "id": "dGV4dEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmcHJvZHVjdF9pZD01MSZsYW5ndWFnZV9pZD0w",
     "name": "Név",
     "language": {},
     "textAttributeValue": {
-        "href": "http://shopname.api.shoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD03JnByb2R1Y3RfaWQ9NTE="
+        "href": "http://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD03JnByb2R1Y3RfaWQ9NTE="
     }
 }

@@ -15,7 +15,7 @@ a terméklista lekérdezése során az alábbi eredménnyel találkozhatunk:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/products</td>
+    <td>http://shopname.api.myshoprenter.hu/products</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -28,10 +28,10 @@ a terméklista lekérdezése során az alábbi eredménnyel találkozhatunk:
   "response": {
     "items": [
       {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQ5"
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQ5"
       },
       {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
       }
     ]
   }
@@ -48,7 +48,7 @@ A `full=1` paraméter alkalmazásával a link-lista helyett a meghívott linkek 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.shoprenter.hu/products?full=1</td>
+    <td>http://shopname.api.myshoprenter.hu/products?full=1</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -61,13 +61,13 @@ A `full=1` paraméter alkalmazásával a link-lista helyett a meghívott linkek 
   "response": {
     "items": [
       {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQ5",
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQ5",
         "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTQ5",
         "innerId": "49",
         "sku": "9789639884328"
       },
       {
-        "href": "http://shopname.api.shoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQ5",
+        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQ5",
         "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTQ5",
         "innerId": "49",
         "sku": "9789639884328"
