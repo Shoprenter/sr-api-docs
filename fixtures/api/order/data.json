@@ -210,8 +210,8 @@
         {
             "name": "shippingMethodExtension",
             "description": {
-                "hu": "Szállítás mód típusa. Lehetséges értékek: WSESHIP, MPLPOSTPOINT, MPLPOSTSTAY, RECEIVINGPOINT, PICKPACKPONT, MPLPARCELMACHINE, FOXPOST, FURGEFUTAR, GLSPARCELSHOP, TOFPARCELSHOP, FOXPOSTAUTOMATA, WEBOX",
-                "en": "Szállítás mód típusa. Lehetséges értékek: WSESHIP, MPLPOSTPOINT, MPLPOSTSTAY, RECEIVINGPOINT, PICKPACKPONT, MPLPARCELMACHINE, FOXPOST, FURGEFUTAR, GLSPARCELSHOP, TOFPARCELSHOP, FOXPOSTAUTOMATA, WEBOX"
+                "hu": "Szállítás mód típusa. Lehetséges értékeit lásd lentebb.",
+                "en": "Szállítás mód típusa. Lehetséges értékeit lásd lentebb."
             },
             "required": false,
             "readonly": false
@@ -327,8 +327,8 @@
         {
             "name": "paymentMethodCode",
             "description": {
-                "hu": "Fizetési mód neve. Lehetséges értékek: PAYU, OTP, CIB, COD, COD2, NOCHEX, BANK_TRANSFER, PAYPAL, CHEQUE, FREE_CHECKOUT, TCOM, LOYALTYPOINT, ESCALION, UNICREDIT, EUPLATESC, PAYSECURE, PICKPACKPONT, KHB, OTPAY, TELENOR_MOBILE, MASTERCARD_MOBILE, WIRECARD_QPAY, SOFORT, BARION.",
-                "en": "Fizetési mód neve. Lehetséges értékek: PAYU, OTP, CIB, COD, COD2, NOCHEX, BANK_TRANSFER, PAYPAL, CHEQUE, FREE_CHECKOUT, TCOM, LOYALTYPOINT, ESCALION, UNICREDIT, EUPLATESC, PAYSECURE, PICKPACKPONT, KHB, OTPAY, TELENOR_MOBILE, MASTERCARD_MOBILE, WIRECARD_QPAY, SOFORT, BARION."
+                "hu": "Fizetési mód típusa. Lehetséges értékeit lásd lentebb.",
+                "en": "Fizetési mód típusa. Lehetséges értékeit lásd lentebb."
             },
             "required": false,
             "readonly": false
