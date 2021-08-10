@@ -57,8 +57,8 @@
         {
             "name": "price",
             "description": {
-                "hu": "Nettó ár.",
-                "en": "Nettó ár."
+                "hu": "A termék nettó ára.",
+                "en": "A termék nettó ára."
             },
             "required": false,
             "readonly": false
@@ -66,8 +66,8 @@
         {
             "name": "cost",
             "description": {
-                "hu": "Költség",
-                "en": "Költség"
+                "hu": "Költség: A termék beszerzési ára adható meg itt. Az itt megjelenő összeg az admin tájékoztatására szolgál, a webáruházban nem lesz látható.",
+                "en": "Költség: A termék beszerzési ára adható meg itt. Az itt megjelenő összeg az admin tájékoztatására szolgál, a webáruházban nem lesz látható."
             },
             "required": false,
             "readonly": false
@@ -192,8 +192,8 @@
         {
             "name": "status",
             "description": {
-                "hu": "Státusz.",
-                "en": "Státusz."
+                "hu": "A termék állapota. Lehetségek értékei: 1 Engedélyezett, 0 Letiltott, 2 Kifutott",
+                "en": "A termék állapota. Lehetségek értékei: 1 Engedélyezett, 0 Letiltott, 2 Kifutott"
             },
             "required": false,
             "readonly": false
@@ -201,8 +201,8 @@
         {
             "name": "shipped",
             "description": {
-                "hu": "Szállítandó?",
-                "en": "Szállítandó?"
+                "hu": "A termék kiszállítható, vagyis vállalják a kiszállítását. (1/0)",
+                "en": "A termék kiszállítható, vagyis vállalják a kiszállítását. (1/0)"
             },
             "required": false,
             "readonly": false

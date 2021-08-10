@@ -1,5 +1,12 @@
 # API changelog
 
+#### 2010.08.10
+
+- Hamarosan meg fog szünni a ***.api.shoprenter.hu** rendszer domain, helyette a ***.api.myshoprenter.hu** domain-en lesznek elérhetőek az API Resource-ok. Így érdemes lesz mielőbb váltani és frissíteni az integrációkat.
+- A [Order Resource](../api/order.md) és a [Order Extend Resource](../api/order_extend.md) dokumentációjában feltüntettük **shippingMethodExtension** és **paymentMethodCode** lehetséges értékeit, táblázatba foglalva.
+- Az [Order Resource](../api/order.md),  [Order Extend Resource](../api/order_extend.md), [Product  Resource](../api/product.md) és [Product Extend Resource](../api/product_extend.md) egyes tulajdonságainak leírását pontosítottuk.
+- Pontosítottuk a API limitre vonatkozó megszorításokat
+
 #### 2021.07.07
 Immáron a [Webhook Resource](../api/webhook.md) -ban, a webHookParameters **fields** property-jével szabályozni tudjuk, hogy a Shoprenter milyen mezőket küldjön el az általunk megadott url-re.
 

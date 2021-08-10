@@ -28,7 +28,7 @@
             "readonly": false
         },
         {
-            "name": "invoiceIdPrefix",
+            "name": "invoicePrefix",
             "description": {
                 "hu": "Szállítólevél azonosító előtag.",
                 "en": "Szállítólevél azonosító előtag."
