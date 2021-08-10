@@ -4,6 +4,63 @@
 
 <ResourceProperties :resource="'order_extend'" :lang="'hu'"/>
 
+## Szállítási mód típusok
+
+A **shippingMethodExtension** lehetséges értékei:
+
+| Megnevezés |  Érték |
+|------------|--------|
+|      Átvevőpontok      |    RECEIVINGPOINT    |
+|       Csomagküldő - (Béta)     |    CSOMAGKULDO    |
+|       DHL Express     |    DHLEXPRESS    |
+|       DPD csomagpont     |     DPDPARCELSHOP   |
+|      FoxPost Csomagautomata      |    FOXPOSTAUTOMATA     |
+|      FoxPost Házhozszállítás      |    FOXPOST    |
+|      GLS csomagpont      |    GLSPARCELSHOP    |
+|       MPL Csomagautomata     |    MPLPARCELMACHINE    |
+|     MPL Posta Pont szállítás       |    MPLPOSTPOINT    |
+|      MPL Postán maradó szállítás      |    MPLPOSTSTAY    |
+|      Pick Pack Pont szállítás      |    PICKPACKPONT    |
+|      Express One csomagpont      |    TOFPARCELSHOP     |
+|      Házhozszállítás futárszolgálattal      |    WSESHIP    |
+|       Személyes átvétel     |     WSESHIP   |
+
+## Fízetés mód típusok
+
+A **paymentMethodCode** lehetséges értékei:
+
+| Megnevezés |  Érték |
+|------------|--------|
+|      PayU      |    PAYU    |
+|       OTP online áruhitel     |    OTP    |
+|       CIB bankkártyás fizetés     |    CIB    |
+|       Utánvétel    |     COD, COD2, COD3, COD4   |
+|      Cetelem fizetési mód      |    CETELEM   |
+|      Banki átutalás     |    BANK_TRANSFER    |
+|      PayPal      |    PAYPAL    |
+|       Csekkbefizetés     |    CHEQUE    |
+|     Hűségpont beváltás     |    LOYALTYPOINT    |
+|      Escalion      |    ESCALION    |
+|      Unicredit      |    UNICREDIT    |
+|     Euplatesc      |    EUPLATESC   |
+|      PaySecure      |    PAYSECURE    |
+|       Fizetés a Pick Pack Ponton     |     PICKPACKPONT   |
+|       K&H Bank kártyás fizetés    |     KHB   |
+|       Barion bankkártyás fizetés     |     BARION   |
+|       Fizetés FoxPoston bankkártyával    |     FOXPOST_CREDIT_CARD   |
+|       Simple     |     SIMPLE   |
+|       Simple átutalás     |     SIMPLEWIRE   |
+|       Sofort banking    |     SOFORT   |
+|       Borgun (B-payment)     |     SRPAY   |
+|       Borgun     |     BORGUN   |
+|       Budapest Bank online áruhitel     |     BUDAPESTBANK   |
+|       Global Payments     |     GP   |
+|       Paysafecard    |     PAYSAFECARD   |
+|       Paysafecash     |     PAYSAFECASH   |
+|       Global Payments     |     GP   |
+|       Wirecard QPAY     |     QPAY   |
+|       Saferpay - SIX Payment Services     |     SAFERPAY   |
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

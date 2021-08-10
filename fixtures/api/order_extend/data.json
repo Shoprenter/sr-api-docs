@@ -28,7 +28,7 @@
             "readonly": true
         },
         {
-            "name": "invoiceIdPrefix",
+            "name": "invoicePrefix",
             "description": {
                 "hu": "Számla azonosító prefix.",
                 "en": "Számla azonosító prefix."

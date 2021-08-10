@@ -6,4 +6,4 @@ A alábbi formátumok elérhetőek, majd ez a kiválasztott formátum fogja megh
   + FormData: **multipart/form-data**
 - API hívás válaszát alapértelmezetten XML formátumban kapja meg az alkalmazás
 - Amennyiben az API hívás válaszát JSON formátumban szeretnénk visszakapni, akkor már az API hívásnál a Headerben meg kell adni, hogy **Accept: application/json**
-- **A maximálisan indítható requestek limitje 180/alkalmazás/bolt/perc**. Túllépés esetén 429-as hibakódot kapunk válaszként
+- **A maximálisan indítható requestek limitje 3/alkalmazás/bolt/másodperc**. Túllépés esetén 429-as hibakódot kapunk válaszként. Ez percenként 180 request-et jelent.
