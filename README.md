@@ -11,5 +11,7 @@ features:
   link: /api/address.html
 - title: '<i class="far fa-list-alt"></i> API Changelog'
   link: /development/changelog.html
-footer: © 2011 - 2020 ShopRenter.hu Kft.
+- title: '<i class="fas fa-money-check"></i> SR Payment API'
+  link: /paymentapi/docs/a_introduce.html
+  footer: © 2011 - 2021 ShopRenter.hu Kft.
 ---
