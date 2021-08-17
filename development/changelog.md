@@ -1,10 +1,10 @@
 # API changelog
 
-#### 2010.08.17
+#### 2021.08.17
 
 A Shoprenter Payment API dokumentáció elérhetővé tettük az oldalon. [SR Payment API](../paymentapi/docs/a_introduce.md)
 
-#### 2010.08.10
+#### 2021.08.10
 
 - Hamarosan meg fog szünni a ***.api.shoprenter.hu** rendszer domain, helyette a ***.api.myshoprenter.hu** domain-en lesznek elérhetőek az API Resource-ok. Így érdemes lesz mielőbb váltani és frissíteni az integrációkat.
 - A [Order Resource](../api/order.md) és a [Order Extend Resource](../api/order_extend.md) dokumentációjában feltüntettük **shippingMethodExtension** és **paymentMethodCode** lehetséges értékeit, táblázatba foglalva.
