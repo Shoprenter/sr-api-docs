@@ -2,7 +2,7 @@
 
 #### 2010.08.17
 
-A Shoprenter Payment API dokumentáció elérhetővé tettük az oldalon. 
+A Shoprenter Payment API dokumentáció elérhetővé tettük az oldalon. [SR Payment API](../paymentapi/docs/a_introduce.md)
 
 #### 2010.08.10
 
