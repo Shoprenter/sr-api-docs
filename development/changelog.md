@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2010.08.17
+
+A Shoprenter Payment API dokumentáció elérhetővé tettük az oldalon. 
+
 #### 2010.08.10
 
 - Hamarosan meg fog szünni a ***.api.shoprenter.hu** rendszer domain, helyette a ***.api.myshoprenter.hu** domain-en lesznek elérhetőek az API Resource-ok. Így érdemes lesz mielőbb váltani és frissíteni az integrációkat.
