@@ -698,7 +698,7 @@
                     }
                 },
                 {
-                    "name": "shippingMode",
+                    "name": "shippingModeInnerId",
                     "description": {
                         "hu": "Kereső paraméter. Szállítási mód belső azonosító.",
                         "en": "Kereső paraméter. Szállítási mód belső azonosító."
