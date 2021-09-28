@@ -3,8 +3,8 @@
         {
             "name": "filePath",
             "description": {
-                "hu": "A fájl relatív elérési útvonala.",
-                "en": "A fájl relatív elérési útvonala."
+                "hu": "A fájl relatív elérési útvonala. <strong>FIGYELEM!<\/strong> A feltöltendő fájlok csak az angol ABC betűit és (),_,-, karaktereket, illetve számokat tartalmazhatnak!",
+                "en": "A fájl relatív elérési útvonala. <strong>FIGYELEM!<\/strong> A feltöltendő fájlok csak az angol ABC betűit és (),_,-, karaktereket, illetve számokat tartalmazhatnak!"
             },
             "required": false,
             "readonly": false

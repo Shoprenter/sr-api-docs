@@ -8,6 +8,8 @@ Fájlfeltöltéshez példa az alábbi [linken](https://support.shoprenter.hu/hc/
 
 A [File Resource](../../api/file.md) segítségével töltsük fel a kívánt dokumentumot. Fontos, hogy a request **body**-ban megadott **filePath** értékének adjuk meg a `srattached\/` mappát, illetve a **type** értéke mindenképp `image` legyen, mégha szöveges dokumentumról is van szó.
 
+**filePath**: <strong>FIGYELEM!</strong> A feltöltendő fájlok csak az angol ABC betűit és (),_,-, karaktereket, illetve számokat tartalmazhatnak!
+
 ### Példa
 
 #### Request

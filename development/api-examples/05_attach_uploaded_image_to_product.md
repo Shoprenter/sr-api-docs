@@ -14,6 +14,8 @@ A feladat 3 lépésből áll.
 A [**File Resource**](../../api/file.md) segítségével feltöltjük az elsődleges fő termékképet. Mivel a képet a terméknek szeretnénk beállítani, így fontos, hogy a **filePath property az alábbi alakú legyen "product\/[kép neve]", pl: "filePath": "product\/termekkep.jpg"**. Továbbá a kép fájlformátumának a jpg kiterjesztést javasoljuk. A képet base64-elve kell elküldeni.
 A feltöltést követően a termékkép megtalálható adminon felületen a Filemanageren belül a product mappában.
 
+**filePath**: <strong>FIGYELEM!</strong> A feltöltendő fájlok csak az angol ABC betűit és (),_,-, karaktereket, illetve számokat tartalmazhatnak!
+
 **Request**
 
 <table>
