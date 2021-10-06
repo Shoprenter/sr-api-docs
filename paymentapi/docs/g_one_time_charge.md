@@ -26,7 +26,7 @@
 
 ## Belépési pont
 
-POST https://<shop_name>.api.shoprenter.hu/billing/oneTimeCharges
+POST https://<shop_name>.api.myshoprenter.hu/billing/oneTimeCharges
 
 Példa payload:
 
@@ -64,6 +64,38 @@ Erre adott válasz:
     "deletedAt": null,
     "test": true,
     "confirmationUrl": "https://<shop_name>.shoprenter.hu/admin/app/payment/onetime/5"
+}
+```
+
+## A fizetés lekérdezése
+
+GET https://<shop_name>.api.myshoprenter.hu/billing/oneTimeCharges/<charge_id>
+
+Példa kérés:
+GET https://exampleshop.api.myshoprenter.hu/billing/oneTimeCharges/12
+
+Erre adott válasz:
+
+```javascript
+{
+    "id": 12,
+    "name": "ACME alkalmazás megvétele",
+    "status": "pending",
+    "price": {
+        "grossAmount": 12700,
+        "vatAmount": 2700,
+        "netPrice": 10000,
+        "roundedGrossAmount": 12700
+    },
+    "netPrice": 10000,
+    "paymentUrl": "",
+    "notificationUrl": "https://notification-webhook-url.com",
+    "successUrl": "https://successUrl.com",
+    "failedUrl": "https://failedUrl.com",
+    "updatedAt": "2020-02-24 15:13:15",
+    "createdAt": "2020-02-24 15:13:15",
+    "deletedAt": null,
+    "test": true
 }
 ```
 

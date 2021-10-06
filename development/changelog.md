@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2021.10.11
+A Payment API [Egyszeri](../paymentapi/docs/g_one_time_charge.md) és [Ismételődő díjfizetései](../paymentapi/docs/i_recurring_charge.md) immáron lekérdezhetőek GET kéréssel.
+
 #### 2021.08.17
 
 A Shoprenter Payment API dokumentáció elérhetővé tettük az oldalon. [SR Payment API](../paymentapi/docs/a_introduce.md)
