@@ -31,7 +31,7 @@
 
 ## Belépési pont
 
-POST https://<shop_name>.api.shoprenter.hu/billing/recurringCharges
+POST https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges
 
 Példa payload:
 
@@ -77,12 +77,49 @@ Erre adott válasz:
 }
 ```
 
+## A fizetés lekérdezése
+
+GET https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges/<charge_id>
+
+Példa kérés:
+GET https://exampleshop.api.myshoprenter.hu/billing/recurringCharges/12
+
+Erre adott válasz:
+
+```javascript
+{
+    "planId": 1,
+        "billingCycleLength": 1,
+        "billingCycleCount": 12,
+        "expirationDate": null,
+        "trialDays": 10,
+        "id": 12,
+        "name": "ACME alkalmazás Gold Csomagja",
+        "status": "pending",
+        "price": {
+        "grossAmount": 12700,
+            "vatAmount": 2700,
+            "netPrice": 10000,
+            "roundedGrossAmount": 12700
+    },
+    "netPrice": 10000,
+        "paymentUrl": "",
+        "notificationUrl": "https://notification-webhook-url.com",
+        "successUrl": "https://successUrl.com",
+        "failedUrl": "https://failedUrl.com",
+        "updatedAt": "2020-02-24 15:13:15",
+        "createdAt": "2020-02-24 15:13:15",
+        "deletedAt": null,
+        "test": true
+}
+```
+
 ## Recurring Charge megszüntetése
 
 A fejlesztőknek lehetőségük van megszüntetni a Recurring Charge futását, így lezárva a fizetési ciklust.
 Egyszerűen, a fent taglalt belépési pontra, egy DELETE HTTP kérést kell küldeni a recurring charge ID-val.
 
-DELETE https://<shop_name>.api.shoprenter.hu/billing/recurringCharges/<recurring_charge_id>
+DELETE https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges/<recurring_charge_id>
 
 ## Használat
 
