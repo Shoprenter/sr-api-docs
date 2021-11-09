@@ -1,7 +1,7 @@
 # API changelog
 
 #### 2021.11.09
-A [Settings Resource](../paymentapi/docs/g_one_time_charge.md) két, a matricákra vonatkozó beállítással bővült: config_badge_max és config_badge_orientation
+A [Settings Resource](../api/setting.md)) két, a matricákra vonatkozó beállítással bővült: config_badge_max és config_badge_orientation
 
 #### 2021.10.11
 A Payment API [Egyszeri](../paymentapi/docs/g_one_time_charge.md) és [Ismételődő díjfizetései](../paymentapi/docs/i_recurring_charge.md) immáron lekérdezhetőek GET kéréssel.
