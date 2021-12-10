@@ -17,7 +17,7 @@ A szükséges adatokat kérjük elküldeni a partnersupport@shoprenter.hu email 
 - **Alakalmazás típusa:** Az alkalmazásnak két formája van:
   - Beágyazott: Az EntryPoint-nak megadott URL-t betöltjük egy Iframe-be, amit az alkalmazáshoz tartozó URL-en lehet elérni, a Shoprenter admin felületén (pl. `https://shopname.myshoprenter.hu/admin/app/1`).
   - Átírányított: Átírányításnál a felhasználót szimplán átírányítjuk a megadott EntryPoint URL-re.
-- **A tesztbolt neve:** A fejlesztés legelején igényelni kell egy próbaboltot a [shoprenter.hu](https://www.shoprenter.hu/) oldalon. 
+- **A tesztbolt neve:** A fejlesztés legelején igényelni kell egy próbaboltot a [shoprenter.hu](https://www.shoprenter.hu/tesztigenyles/?devstore=1) oldalon. 
   Itt megadható a boltnév, ami a bolt domain első részeben - `[boltNev].myshoprenter.hu` - lesz látható.
 
 **Az alkalmazás regisztrálása után, a következő adatokat küldi el a Partner Support:**
