@@ -1,5 +1,8 @@
 # List Attribute Resource
 
+## FIGYELEM!
+A termék tulajdonságokból maximum 300 db hozható létre!  
+
 ## Tulajdonságok
 
 <ResourceProperties :resource="'list_attribute'" :lang="'hu'"/>

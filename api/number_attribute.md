@@ -1,5 +1,8 @@
 # Number Attribute Resource
 
+## FIGYELEM!
+A termék tulajdonságokból maximum 300 db hozható létre!  
+
 ## Tulajdonságok
 
 <ResourceProperties :resource="'number_attribute'" :lang="'hu'"/>
