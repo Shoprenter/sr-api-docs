@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2021.12.20.
+Egy új korlátozást vezettünk be a terméktulajdonságokra: Összesen maximum 300 db egyed hozható létre
+a [List Attribute](../api/list_attribute.md), [Text Attribute](../api/text_attribute.md) és a [Number Attribute](../api/number_attribute.md) Resource használatával. 
+
 #### 2021.11.09
 A [Settings Resource](../api/setting.md) két, a matricákra vonatkozó beállítással bővült: config_badge_max és config_badge_orientation
 
