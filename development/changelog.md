@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2022.01.10.
+A [WebHook Resource](../api/webhook.md) kapott két új elküldhető mezőt:
+- order_expectedDeliveryDate (Rendelés Állapotváltás)
+- order_newsletterChecked  (Új rendelés feladás
+
 #### 2021.12.20.
 Egy új korlátozást vezettünk be a terméktulajdonságokra: Összesen maximum 300 db egyed hozható létre
 a [List Attribute](../api/list_attribute.md), [Text Attribute](../api/text_attribute.md) és a [Number Attribute](../api/number_attribute.md) Resource használatával. 
