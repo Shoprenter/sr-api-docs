@@ -1,0 +1,25 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/weightClassDescriptions?page=0&limit=25",
+    "page": 0,
+    "pageCount": 1,
+    "limit": 25,
+    "first": {
+        "href": "http://shopname.api.myshoprenter.hu/weightClassDescriptions?page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.myshoprenter.hu/weightClassDescriptions?page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.myshoprenter.hu/weightClassDescriptions/d2VpZ2h0Q2xhc3NEZXNjcmlwdGlvbi13ZWlnaHRfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x"
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/weightClassDescriptions/d2VpZ2h0Q2xhc3NEZXNjcmlwdGlvbi13ZWlnaHRfY2xhc3NfaWQ9MiZsYW5ndWFnZV9pZD0x"
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/weightClassDescriptions/d2VpZ2h0Q2xhc3NEZXNjcmlwdGlvbi13ZWlnaHRfY2xhc3NfaWQ9NyZsYW5ndWFnZV9pZD0x"
+        }
+    ]
+}

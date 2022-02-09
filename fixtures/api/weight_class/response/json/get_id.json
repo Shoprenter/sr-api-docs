@@ -1,5 +1,8 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/weightClasses/d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE=",
     "id": "d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE=",
-    "value": "1.00000000"
+    "value": "1.00000000",
+    "weightClassDescriptions": {
+        "href": "http://shopname.api.myshoprenter.hu/weightClassDescriptions?weightClassId=d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE="
+    }
 }
