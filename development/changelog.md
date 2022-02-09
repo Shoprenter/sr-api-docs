@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2022.02.14.
+A [Weight](../api/weight_class.md) és [Length](../api/length_class.md) Class Resource-ok mellé bekerültek a Description-jeik.
+- [Weight Class Description](../api/weight_class_description.md)
+- [Length Class Description](../api/length_class_description.md)
+
 #### 2022.01.10.
 A [WebHook Resource](../api/webhook.md) kapott két új elküldhető mezőt:
 - order_expectedDeliveryDate (Rendelés Állapotváltás)
