@@ -1,0 +1,24 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.myshoprenter.hu/lengthClassDescriptions/bGVuZ3RoQ2xhc3NEZXNjcmlwdGlvbi1sZW5ndGhfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x]]>
+    </href>
+    <id>
+        <![CDATA[bGVuZ3RoQ2xhc3NEZXNjcmlwdGlvbi1sZW5ndGhfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x]]>
+    </id>
+    <title>
+        <![CDATA[Centimeter]]>
+    </title>
+    <unit>
+        <![CDATA[cm]]>
+    </unit>
+    <lengthClass>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE=]]>
+        </href>
+    </lengthClass>
+    <language>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+        </href>
+    </language>
+</response>

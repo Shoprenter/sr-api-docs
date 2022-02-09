@@ -1,0 +1,12 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/lengthClassDescriptions/bGVuZ3RoQ2xhc3NEZXNjcmlwdGlvbi1sZW5ndGhfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x",
+    "id": "bGVuZ3RoQ2xhc3NEZXNjcmlwdGlvbi1sZW5ndGhfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x",
+    "title": "Centimeter",
+    "unit": "cm",
+    "lengthClass": {
+        "href": "http://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE="
+    },
+    "language": {
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

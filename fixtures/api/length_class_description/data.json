@@ -3,26 +3,44 @@
         {
             "name": "id",
             "description": {
-                "hu": "Hossz mérték azonosító.",
-                "en": "Hossz mérték azonosító."
+                "hu": "Hossz mérték leírás azonosító.",
+                "en": "Hossz mérték leírás azonosító."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
-            "name": "value",
+            "name": "title",
             "description": {
-                "hu": "Érték.",
-                "en": "Érték."
+                "hu": "Hossz mérték megnevezése.",
+                "en": "Hossz mérték megnevezése."
             },
             "required": false,
-            "readonly": false
+            "readonly": true
         },
         {
-            "name": "lengthClassDescriptions",
+            "name": "unit",
             "description": {
-                "hu": "Hossz mérték leírások linkje.",
-                "en": "Hossz mérték leírások linkje."
+                "hu": "Rövidítés.",
+                "en": "Rövidítés."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "lengthClass",
+            "description": {
+                "hu": "Hossz mérték link.",
+                "en": "Hossz mérték link."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Nyelv link.",
+                "en": "Nyelv link."
             },
             "required": false,
             "readonly": true
@@ -32,8 +50,8 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/lengthClasses\/hosszúság mérték id",
-                "en": "\/lengthClasses\/hosszúság mérték id"
+                "hu": "\/lengthClassDescriptions\/Hossz mérték leírás id",
+                "en": "\/lengthClassDescriptions\/Hossz mérték leírés id"
             },
             "description": {
                 "hu": "Egy konkrét elem lekérésére szolgál.",
@@ -41,15 +59,15 @@
             },
             "parameters": [],
             "example": {
-                "url": "\/lengthClasses\/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE=",
+                "url": "\/lengthClassDescriptions\/d2VpZ2h0Q2xhc3NEZXNjcmlwdGlvbi13ZWlnaHRfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x",
                 "statusCode": "200"
             }
         },
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/lengthClasses",
-                "en": "\/lengthClasses"
+                "hu": "\/lengthClassDescriptions",
+                "en": "\/lengthClassDescriptions"
             },
             "description": {
                 "hu": "Elemek kollekciójának lekérésére szolgál.",
@@ -79,7 +97,7 @@
                 }
             ],
             "example": {
-                "url": "\/lengthClasses?page=0&limit=5",
+                "url": "\/lengthClassDescriptions?page=0&limit=5",
                 "statusCode": "200"
             }
         }
