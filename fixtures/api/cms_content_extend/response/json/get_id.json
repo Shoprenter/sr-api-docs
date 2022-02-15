@@ -1,0 +1,30 @@
+{
+    "href": "https://shopname.api.myshoprenter.hu/cmsContentExtend/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNQ==",
+    "id": "Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNQ==",
+    "innerId": "15",
+    "sortOrder": "0",
+    "enabled": "0",
+    "author": "",
+    "dateCreated": "2013-04-10T19:24:18",
+    "dateUpdated": "2013-04-10T19:24:18",
+    "datePublished": "2013-04-10T19:24:18",
+    "showIntroText": "0",
+    "introPicturePath": "data/image.png",
+    "showAuthorName": "0",
+    "showDateCreated": "0",
+    "cmsContentDescriptions": [
+        {
+            "href": "https://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTE1Jmxhbmd1YWdlX2lkPTE=",
+            "id": "Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTE1Jmxhbmd1YWdlX2lkPTE=",
+            "title": "Szöveges tartalom címe",
+            "description": "Szöveges tartalom leírás",
+            "introText": "Bevezető szöveg",
+            "cmsContent": {
+                "href": "https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNQ=="
+            },
+            "language": {
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "title":"Szöveges tartalom címe",
+    "description":"Szöveges tartalom leírása.",
+    "introText":"Szöveges tartalom bevezető szöveg",
+    "cmsContent": {
+        "id": "Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA=="
+    },
+    "language":{
+        "id":"bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

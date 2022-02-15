@@ -1,0 +1,28 @@
+{
+  "sortOrder": "1",
+  "enabled": "1",
+  "author": "John Doe",
+  "datePublished": "2022-10-21 10:00",
+  "showIntroText": "1",
+  "introPicturePath": "/cms_content/path",
+  "showAuthorName": "0",
+  "showDateCreated": "0",
+  "cmsContentDescriptions":[
+    {
+      "title":"Szöveges tartalom címe",
+      "introtext":"Szöveges tartalom bevezető szöveg",
+      "description":"Szöveges tartalom. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
+      "language":{
+        "id":"bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+      }
+    },
+    {
+      "title":"Szöveges tartalom címe angolul",
+      "introtext":"Szöveges tartalom bevezető szöveg angolul",
+      "description":"Szöveges tartalom angolul. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
+      "language":{
+        "id":"bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=",
+    "id": "Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=",
+    "title": "Szöveges tartalom címe",
+    "description": "Szöveges tartalom leírása",
+    "introText": "Szöveges tartalom bevezető szöveg",
+    "cmsContent": {
+        "href": "http://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zNg=="
+    },
+    "language": {
+        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
+}

@@ -1,0 +1,68 @@
+<response>
+    <href>
+        <![CDATA[https://shopname.api.myshoprenter.hu/cmsContentExtend/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOQ==]]>
+    </href>
+    <id>
+        <![CDATA[Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOQ==]]>
+    </id>
+    <innerId>
+        <![CDATA[39]]>
+    </innerId>
+    <sortOrder>
+        <![CDATA[1]]>
+    </sortOrder>
+    <enabled>
+        <![CDATA[1]]>
+    </enabled>
+    <author>
+        <![CDATA[John Doe]]>
+    </author>
+    <dateCreated>
+        <![CDATA[2022-02-14T14:25:01]]>
+    </dateCreated>
+    <dateUpdated>
+        <![CDATA[2022-02-14T14:25:01]]>
+    </dateUpdated>
+    <datePublished>
+        <![CDATA[2022-10-21T10:00:00]]>
+    </datePublished>
+    <showIntroText>
+        <![CDATA[1]]>
+    </showIntroText>
+    <introPicturePath>
+        <![CDATA[/cms_content/path]]>
+    </introPicturePath>
+    <showAuthorName>
+        <![CDATA[0]]>
+    </showAuthorName>
+    <showDateCreated>
+        <![CDATA[0]]>
+    </showDateCreated>
+    <cmsContentDescriptions>
+        <href>
+            <![CDATA[https://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM5Jmxhbmd1YWdlX2lkPTE=]]>
+        </href>
+        <id>
+            <![CDATA[Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM5Jmxhbmd1YWdlX2lkPTE=]]>
+        </id>
+        <title>
+            <![CDATA[Szöveges tartalom címe]]>
+        </title>
+        <description>
+            <![CDATA[Szöveges tartalom leírás]]>
+        </description>
+        <introText>
+            <![CDATA[Bevezető szöveg]]>
+        </introText>
+        <cmsContent>
+            <href>
+                <![CDATA[https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOQ==]]>
+            </href>
+        </cmsContent>
+        <language>
+            <href>
+                <![CDATA[https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+            </href>
+        </language>
+    </cmsContentDescriptions>
+</response>
