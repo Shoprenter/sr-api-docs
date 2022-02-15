@@ -1,0 +1,80 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.myshoprenter.hu/cmsContentDescriptions?full=1&page=0&limit=25]]>
+    </href>
+    <page>0</page>
+    <pageCount>2</pageCount>
+    <limit>25</limit>
+    <first>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/cmsContentDescriptions?full=1&page=0&limit=25]]>
+        </href>
+    </first>
+    <previous/>
+    <next>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/cmsContentDescriptions?full=1&page=1&limit=25]]>
+        </href>
+    </next>
+    <last>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/cmsContentDescriptions?full=1&page=1&limit=25]]>
+        </href>
+    </last>
+    <items>
+        <item>
+            <href>
+                <![CDATA[http://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=]]>
+            </href>
+            <id>
+                <![CDATA[Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=]]>
+            </id>
+            <title>
+                <![CDATA[Szöveges tartalom címe]]>
+            </title>
+            <description>
+                <![CDATA[Szöveges tartalom leírása]]>
+            </description>
+            <introText>
+                <![CDATA[Bevezető szöveg]]>
+            </introText>
+            <cmsContent>
+                <href>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zNg==]]>
+                </href>
+            </cmsContent>
+            <language>
+                <href>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                </href>
+            </language>
+        </item>
+        <item>
+            <href>
+                <![CDATA[http://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM3Jmxhbmd1YWdlX2lkPTE=]]>
+            </href>
+            <id>
+                <![CDATA[Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM3Jmxhbmd1YWdlX2lkPTE=]]>
+            </id>
+            <title>
+                <![CDATA[Szöveges tartalom címe 2]]>
+            </title>
+            <description>
+                <![CDATA[Szöveges tartalom leírása 2]]>
+            </description>
+            <introText>
+                <![CDATA[Szöveges tartalom bevezető szöveg 2]]>
+            </introText>
+            <cmsContent>
+                <href>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zNw==]]>
+                </href>
+            </cmsContent>
+            <language>
+                <href>
+                    <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+                </href>
+            </language>
+        </item>
+    </items>
+</response>

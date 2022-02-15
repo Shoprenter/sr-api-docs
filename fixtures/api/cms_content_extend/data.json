@@ -1,0 +1,232 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "hu": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál.",
+                "en": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "hu": "Szöveges tartalom belső azonosító.",
+                "en": "Szöveges tartalom belső azonosító."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "hu": "Sorrend a többi szöveges tartalomhoz képest.",
+                "en": "Sorrend a többi szöveges tartalomhoz képest."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "enabled",
+            "description": {
+                "hu": "Engedélyezett-e?",
+                "en": "Engedélyezett-e?"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "author",
+            "description": {
+                "hu": "A szerző neve.",
+                "en": "A szerző neve."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "showIntroText",
+            "description": {
+                "hu": "Bevezető megjelenítése.",
+                "en": "Bevezető megjelenítése."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "introPicturePath",
+            "description": {
+                "hu": "Bevezető kép elérési útja.",
+                "en": "Bevezető kép elérési útja."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "showAuthorName",
+            "description": {
+                "hu": "Szerző megjelenítése.",
+                "en": "Szerző megjelenítése."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "showDateCreated",
+            "description": {
+                "hu": "Dátum megjelenítése.",
+                "en": "Dátum megjelenítése."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "datePublished",
+            "description": {
+                "hu": "A közzététel dátuma. (Y-m-d\\TH:i:s)",
+                "en": "A közzététel dátuma. (Y-m-d\\TH:i:s)"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "hu": "A létrohozás dátuma. (Y-m-d\\TH:i:s)",
+                "en": "A létrehozás dátuma. (Y-m-d\\TH:i:s)"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "hu": "A módosítás dátuma. (Y-m-d\\TH:i:s)",
+                "en": "A módosítás dátuma. (Y-m-d\\TH:i:s)"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "cmsContentDescriptions",
+            "description": {
+                "hu": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",
+                "en": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    "
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "hu": "\/cmsContentExtend\/szöveges tartalom id",
+                "en": "\/cmsContentExtend\/szöveges tartalom id"
+            },
+            "description": {
+                "hu": "Egy konkrét elem lekérésére szolgál.",
+                "en": "Egy konkrét elem lekérésére szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "hu": "\/cmsContentExtend",
+                "en": "\/cmsContentExtend"
+            },
+            "description": {
+                "hu": "Elemek kollekciójának lekérésére szolgál.",
+                "en": "Elemek kollekciójának lekérésére szolgál."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "hu": "Az adott oldal sorszáma.",
+                        "en": "Az adott oldal sorszáma."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
+                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
+                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                    }
+                },
+                {
+                    "name": "innerId",
+                    "description": {
+                        "hu": "Kereső paraméter. Szöveges tartalom belső azonosító.",
+                        "en": "Kereső paraméter. Szöveges tartalom belső azonosító."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/cmsContentExtend?full=1&page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/cmsContentExtend[\/szöveges tartalom id]",
+                "en": "\/cmsContentExtend[\/szöveges tartalom id]"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/cmsContentExtend",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "hu": "\/cmsContentExtend\/szöveges tartalom id",
+                "en": "\/cmsContentExtend\/szöveges tartalom id"
+            },
+            "description": {
+                "hu": "Létrehozásra és módosításra is szolgál.",
+                "en": "Létrehozásra és módosításra is szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
+                "statusCode": "200 vagy 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "hu": "\/cmsContentExtend\/szöveges tartalom id",
+                "en": "\/cmsContentExtend\/szöveges tartalom id"
+            },
+            "description": {
+                "hu": "Törlésre szolgál.",
+                "en": "Törlésre szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
+                "statusCode": "204"
+            }
+        }
+    }
+}
