@@ -1,5 +1,8 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE=",
-    "id": "bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE=",
-    "value": "1.00000000"
+    "href": "http://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ=",
+    "id": "bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ=",
+    "value": "100.00000000",
+    "lengthClassDescriptions": {
+        "href": "http://shopname.api.myshoprenter.hu/lengthClassDescriptions?lengthClassId=bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ="
+    }
 }

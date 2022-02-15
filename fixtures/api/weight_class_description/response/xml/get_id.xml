@@ -1,0 +1,24 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.myshoprenter.hu/weightClassDescriptions/d2VpZ2h0Q2xhc3NEZXNjcmlwdGlvbi13ZWlnaHRfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x]]>
+    </href>
+    <id>
+        <![CDATA[d2VpZ2h0Q2xhc3NEZXNjcmlwdGlvbi13ZWlnaHRfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x]]>
+    </id>
+    <title>
+        <![CDATA[Kilogram]]>
+    </title>
+    <unit>
+        <![CDATA[kg]]>
+    </unit>
+    <weightClass>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/weightClasses/d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE=]]>
+        </href>
+    </weightClass>
+    <language>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+        </href>
+    </language>
+</response>

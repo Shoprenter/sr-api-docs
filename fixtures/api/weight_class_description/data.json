@@ -3,26 +3,44 @@
         {
             "name": "id",
             "description": {
-                "hu": "Súly mérték azonosító.",
-                "en": "Súly mérték azonosító."
+                "hu": "Súly mérték leírás azonosító.",
+                "en": "Súly mérték leírás azonosító."
             },
             "required": false,
             "readonly": true
         },
         {
-            "name": "value",
+            "name": "title",
             "description": {
-                "hu": "Érték.",
-                "en": "Érték."
+                "hu": "Súlymérték megnevezése.",
+                "en": "Súlymérték megnevezése."
             },
             "required": false,
             "readonly": true
         },
         {
-            "name": "weightClassDescriptions",
+            "name": "unit",
             "description": {
-                "hu": "Súly mérték leírások linkje.",
-                "en": "Súly mérték leírások linkje."
+                "hu": "Rövidítés.",
+                "en": "Rövidítés."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "weightClass",
+            "description": {
+                "hu": "Súly érték link.",
+                "en": "Súly érték link."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "hu": "Nyelv link.",
+                "en": "Nyelv link."
             },
             "required": false,
             "readonly": true
@@ -32,8 +50,8 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/weightClasses\/súly mérték id",
-                "en": "\/weightClasses\/súly mérték id"
+                "hu": "\/weightClassDescriptions\/súly mérték leírás id",
+                "en": "\/weightClassDescriptions\/súly mérték leírés id"
             },
             "description": {
                 "hu": "Egy konkrét elem lekérésére szolgál.",
@@ -41,15 +59,15 @@
             },
             "parameters": [],
             "example": {
-                "url": "\/weightClasses\/d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE=",
+                "url": "\/weightClassDescriptions\/d2VpZ2h0Q2xhc3NEZXNjcmlwdGlvbi13ZWlnaHRfY2xhc3NfaWQ9MSZsYW5ndWFnZV9pZD0x",
                 "statusCode": "200"
             }
         },
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/weightClasses",
-                "en": "\/weightClasses"
+                "hu": "\/weightClassDescriptions",
+                "en": "\/weightClassDescriptions"
             },
             "description": {
                 "hu": "Elemek kollekciójának lekérésére szolgál.",
@@ -79,7 +97,7 @@
                 }
             ],
             "example": {
-                "url": "\/weightClasses?page=0&limit=5",
+                "url": "\/weightClassDescriptions?page=0&limit=5",
                 "statusCode": "200"
             }
         }

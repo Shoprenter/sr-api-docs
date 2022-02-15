@@ -2,4 +2,9 @@
     <href><![CDATA[http://shopname.api.myshoprenter.hu/weightClasses/d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE=]]></href>
     <id><![CDATA[d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE=]]></id>
     <value><![CDATA[1.00000000]]></value>
+    <weightClassDescriptions>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/weightClassDescriptions?weightClassId=d2VpZ2h0Q2xhc3Mtd2VpZ2h0X2NsYXNzX2lkPTE=]]>
+        </href>
+    </weightClassDescriptions>
 </response>

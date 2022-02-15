@@ -3,8 +3,8 @@
         {
             "name": "id",
             "description": {
-                "hu": "Hosszúság mérték azonosító.",
-                "en": "Hosszúság mérték azonosító."
+                "hu": "Hossz mérték azonosító.",
+                "en": "Hossz mérték azonosító."
             },
             "required": false,
             "readonly": false
@@ -17,6 +17,15 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "lengthClassDescriptions",
+            "description": {
+                "hu": "Hossz mérték leírások linkje.",
+                "en": "Hossz mérték leírások linkje."
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {

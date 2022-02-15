@@ -1,14 +1,15 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/lengthClasses?page=0&limit=5",
-    "page": "0",
-    "limit": "5",
+    "href": "http://shopname.api.myshoprenter.hu/lengthClasses?page=0&limit=25",
+    "page": 0,
+    "pageCount": 1,
+    "limit": 25,
     "first": {
-        "href": "http://shopname.api.myshoprenter.hu/lengthClasses?page=0&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/lengthClasses?page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.myshoprenter.hu/lengthClasses?page=0&limit=5"
+        "href": "http://shopname.api.myshoprenter.hu/lengthClasses?page=0&limit=25"
     },
     "items": [
         {
