@@ -1,9 +1,15 @@
 # API changelog
 
-#### 2022.02.14.
+#### 2022.02.15.
 A [Weight](../api/weight_class.md) és [Length](../api/length_class.md) Class Resource-ok mellé bekerültek a Description-jeik.
 - [Weight Class Description](../api/weight_class_description.md)
 - [Length Class Description](../api/length_class_description.md)
+
+A szöveges tartalmak immáron API-n kresztül is elérhetőek: 
+- [CMS Content Extend Resource](../api/cms_content_extend.md)
+- [CMS Content Description Resource](../api/cms_content_description.md)
+
+Az Webhook API kibővült a Mennyiségi árkedvezmény mezővel. [Webhook Resource](../api/webhook.md)
 
 #### 2022.01.10.
 A [WebHook Resource](../api/webhook.md) kapott két új elküldhető mezőt:
