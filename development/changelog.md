@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2022.03.23.
+Az [Order](../api/order.md) resource-unk ‘DELETE’ metódusát megszüntettük.
+
+#### 2022.03.09.
+2022. március 23-ával az [Order](../api/order.md) resource-unk ‘DELETE’ metódusát megszüntetjük. A dokumentációból a mai nappal kikerül az erre vonatkozó leírás de természetesen az említett dátumig még elérhető és használható gond nélkül a metódus.
+
 #### 2022.02.15.
 A [Weight](../api/weight_class.md) és [Length](../api/length_class.md) Class Resource-ok mellé bekerültek a Description-jeik.
 - [Weight Class Description](../api/weight_class_description.md)

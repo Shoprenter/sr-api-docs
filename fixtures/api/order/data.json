@@ -741,22 +741,6 @@
                 "url": "\/orders\/b3JkZXItb3JkZXJfaWQ9MTcy",
                 "statusCode": "200 vagy 201"
             }
-        },
-        "delete": {
-            "method": "DELETE",
-            "url": {
-                "hu": "\/orders\/rendelés id",
-                "en": "\/orders\/rendelés id"
-            },
-            "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
-            },
-            "parameters": [],
-            "example": {
-                "url": "\/orders\/b3JkZXItb3JkZXJfaWQ9MTcy",
-                "statusCode": "204"
-            }
         }
     }
 }
