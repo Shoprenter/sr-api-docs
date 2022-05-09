@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2022.05.09
+Elérhetővé vált egy új feature a Payment API-hoz, [Bankkártya csere](../paymentapi/docs/j_funding_source_change.md).
+Segítségével az Ismétlődő díjfizetéseinkhez tartozó bankkártyákat cseréltethetjük ki a felhasználóinkkal.
+
 #### 2022.03.23.
 Az [Order](../api/order.md) resource-unk ‘DELETE’ metódusát megszüntettük.
 

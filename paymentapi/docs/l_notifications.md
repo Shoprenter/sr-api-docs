@@ -8,18 +8,43 @@ A lehetséges státuszok itt érhetőek el: [elérhető státuszok](../docs/stat
 
 ## Az üzenet felépítése
 
+### Ismétlődő és egyszeri díjfizetés
+
 | Tulajdonság | Leírás                                                |
 |-------------|-------------------------------------------------------|
 | id          | Fizetés azonosítója. Ez lehet One Time vagy Recurring |
 | status   |    A fizetési mód aktuális állapota |
 
-## Példa
+#### Példa 
 
 ```javascript
 {
     "id": 2,
     "status": "pending",
     "time": 1606740386
+}
+```
+
+### Bankkártya csere
+
+| Tulajdonság    | Leírás                               |
+|----------------|--------------------------------------|
+| changeId       | Kártya csere kérés azonosítója       |
+| subscriptionId | Fizetés azonosítója                  |
+ | status         | A csere állapota. Jelzi, hol tart a folyamat |
+| paymentStatus  | A fizetési mód aktuális állapota     |
+| message | Az esetleges hibákról ad tájékoztatást |
+
+### Példa
+
+```javascript
+{
+    "changeId": 42,
+    "subscriptionId": 12,
+    "status": "declined",
+    "paymentStatus": "active",
+    "message": "The Customer canceled this payment.",
+    "time": 1651662894
 }
 ```
 
