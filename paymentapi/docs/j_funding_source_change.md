@@ -34,7 +34,7 @@ létrejött előfizetések esetén lehet kérvényezni a kártyacserét.
 
 ## Belépési pont
 
-POST https://<bolt_név>.api.myshoprenter.hu/billing/fundingSourceChange
+POST https://<bolt_név>.api.myshoprenter.hu/billing/fundingSourceChanges
 
 Példa payload:
 
