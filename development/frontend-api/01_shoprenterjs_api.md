@@ -18,7 +18,6 @@ Tartalomjegyzék
     * [onCheckoutPaymentInfoAdded](#oncheckoutpaymentinfoadded)
     * [onCheckoutOrderConfirmed](#oncheckoutorderconfirmed)
     * [onCheckoutOrderPaid](#oncheckoutorderpaid)
-    * [onCheckoutPaymentUnsuccessful](#oncheckoutpaymentunsuccessful)
     * [onProductPageViewed](#onproductpageviewed)
     * [onMarketingConsentChanged](#onmarketingconsentchanged)
     * [Események használata](#esem%C3%A9nyek-haszn%C3%A1lata)
@@ -809,69 +808,6 @@ Példa:
           "quantityName": "db",
           "name": "Termék 2"
         },
-        {
-          "type": "product",
-          "id": 306,
-          "sku": "6600000",
-          "grossUnitPrice": 787.4,
-          "grossTotalPrice": 787.4,
-          "currency": "HUF",
-          "quantity": 1,
-          "quantityName": "db",
-          "name": "Termék 1"
-        }
-      ]
-    }
-  }
-}
-```
-
-### onCheckoutPaymentUnsuccessful
-Sikertelen online fizetés esetén bekövetkező esemény.
-
-Példa:
-```json
-{
-  "detail": {
-    "user": {
-      "id": 5,
-      "email": "teszt@shoprenter.hu",
-      "phoneNumber": "+36201234567",
-      "name": {
-        "firstName": "TesztKeresztnév",
-        "lastName": "TesztVezetéknév"
-      },
-      "ipAddress": "172.30.128.0",
-      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
-    },
-    "shop": {
-      "name": "demo",
-      "locale": "hu",
-      "currency": {
-        "code": "HUF",
-        "rate": 1
-      },
-      "domain": "demo.myshoprenter.hu"
-    },
-    "event": {
-      "id": "1661259127824-8278",
-      "time": 1661259127,
-      "sourceUrl": "https://demo.myshoprenter.hu/index.php?route=payment/paymentcompany/sendOrderInfo&orderId=157",
-      "name": "Purchase"
-    },
-    "order": {
-      "id": 157,
-      "currency": "HUF",
-      "total": 788.6716,
-      "customer": {
-        "name": {
-          "firstName": "TesztKeresztnév",
-          "lastName": "TesztVezetéknév"
-        },
-        "phoneNumber": "+36201234567",
-        "email": "teszt@shoprenter.hu"
-      },
-      "items": [
         {
           "type": "product",
           "id": 306,
