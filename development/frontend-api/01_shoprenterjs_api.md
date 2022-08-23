@@ -782,7 +782,7 @@ Példa:
       "id": "1661255423710-6465",
       "time": 1661255423,
       "sourceUrl": "https://demo.myshoprenter.hu/index.php?route=checkout/success",
-      "name": "Purchase"
+      "name": "CheckoutOrderPaid"
     },
     "order": {
       "id": 156,
