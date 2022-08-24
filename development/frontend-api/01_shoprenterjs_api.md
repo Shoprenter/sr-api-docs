@@ -644,7 +644,8 @@ Példa:
           "name": "Termék 1"
         }
       ],
-      "grossTotalPrice": 8661.4
+      "grossTotalPrice": 8661.4,
+      "couponCode": "TEST1234"
     }
   }
 }
@@ -707,7 +708,11 @@ Példa:
           "quantityName": "db",
           "name": "Termék 1"
         }
-      ]
+      ],
+      "paymentMethod": {
+        "name": "Barion"
+      },
+      "couponCode": "TEST1234"
     }
   }
 }
@@ -781,7 +786,8 @@ Példa:
           "quantityName": "db",
           "name": "Termék 1"
         }
-      ]
+      ],
+      "couponCode": "TEST1234"
     }
   }
 }
@@ -855,7 +861,8 @@ Példa:
           "quantityName": "db",
           "name": "Termék 1"
         }
-      ]
+      ],
+      "couponCode": "TEST1234"
     }
   }
 }
