@@ -18,9 +18,13 @@ Tartalomjegyzék
     * [onCheckoutPaymentInfoAdded](#oncheckoutpaymentinfoadded)
     * [onCheckoutOrderConfirmed](#oncheckoutorderconfirmed)
     * [onCheckoutOrderPaid](#oncheckoutorderpaid)
+    * [onCheckoutOrderPaidUnsuccessful](#oncheckoutorderpaidunsuccessful)
     * [onProductPageViewed](#onproductpageviewed)
     * [onMarketingConsentChanged](#onmarketingconsentchanged)
-    * [Események használata](#esem%C3%A9nyek-haszn%C3%A1lata)
+    * [onCustomerRegistered](#oncustomerregistered)
+    * [onCustomerLoggedIn](#oncustomerloggedin)
+    * [onCustomerUpdated](#oncustomerupdated)
+    * [Események használata](#esemenyek-hasznalata)
 
 ## ShopRenter Object
 A frontendre beépülő alkalmazásoknál szükség lehet olyan adatokra, melyek elengedhetetlenek az alkalmazás üzleti logikájához.
@@ -868,6 +872,81 @@ Példa:
 }
 ```
 
+### onCheckoutOrderPaidUnsuccessful
+Sikertelen online bankkártyás fizetéskor végbemenő esemény.
+
+Példa:
+```json
+{
+  "detail": {
+    "user": {
+      "id": 5,
+      "email": "teszt@shoprenter.hu",
+      "phoneNumber": "+36201234567",
+      "name": {
+        "firstName": "TesztKeresztnév",
+        "lastName": "TesztVezetéknév"
+      },
+      "ipAddress": "172.30.128.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+    },
+    "shop": {
+      "name": "demo",
+      "locale": "hu",
+      "currency": {
+        "code": "HUF",
+        "rate": 1
+      },
+      "domain": "demo.myshoprenter.hu"
+    },
+    "event": {
+      "id": "1661255423710-6465",
+      "time": 1661255423,
+      "sourceUrl": "https://demo.myshoprenter.hu/index.php?route=checkout/success",
+      "name": "CheckoutOrderPaymentUnsuccessful"
+    },
+    "order": {
+      "id": 156,
+      "currency": "HUF",
+      "total": 9762.6696,
+      "customer": {
+        "name": {
+          "firstName": "TesztKeresztnév",
+          "lastName": "TesztVezetéknév"
+        },
+        "phoneNumber": "+36201234567",
+        "email": "teszt@shoprenter.hu"
+      },
+      "items": [
+        {
+          "type": "product",
+          "id": 311,
+          "sku": "7700000",
+          "grossUnitPrice": 3937,
+          "grossTotalPrice": 7874,
+          "currency": "HUF",
+          "quantity": 2,
+          "quantityName": "db",
+          "name": "Termék 2"
+        },
+        {
+          "type": "product",
+          "id": 306,
+          "sku": "6600000",
+          "grossUnitPrice": 787.4,
+          "grossTotalPrice": 787.4,
+          "currency": "HUF",
+          "quantity": 1,
+          "quantityName": "db",
+          "name": "Termék 1"
+        }
+      ],
+      "couponCode": "TEST1234"
+    }
+  }
+}
+```
+
 ### onProductPageViewed
 Termékoldal megtekintéskor bekövetkező esemény.
 
@@ -950,6 +1029,117 @@ Példa:
       "name": "MarketingConsentChanged"
     },
     "isAccepted": true
+  }
+}
+```
+
+### onCustomerRegistered
+A vásárló regisztráció bekövetkező esemény.
+
+Példa:
+```json
+{
+  "detail": {
+    "user": {
+      "id": 5,
+      "email": "teszt@shoprenter.hu",
+      "phoneNumber": "+36201234567",
+      "name": {
+        "firstName": "TesztVezetéknév",
+        "lastName": "TesztKeresztnév"
+      },
+      "ipAddress": "172.30.128.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+    },
+    "shop": {
+      "name": "demo",
+      "locale": "hu",
+      "currency": {
+        "code": "HUF",
+        "rate": 1
+      },
+      "domain": "demo.myshoprenter.hu"
+    },
+    "event": {
+      "id": "1661258401667-6059",
+      "time": 1661258401,
+      "sourceUrl": "https://demo.myshoprenter.hu/",
+      "name": "CustomerRegistered"
+    }
+  }
+}
+```
+
+### onCustomerLoggedIn
+A vásárló bejelentkezésekor bekövetkező esemény.
+
+Példa:
+```json
+{
+  "detail": {
+    "user": {
+      "id": 5,
+      "email": "teszt@shoprenter.hu",
+      "phoneNumber": "+36201234567",
+      "name": {
+        "firstName": "TesztVezetéknév",
+        "lastName": "TesztKeresztnév"
+      },
+      "ipAddress": "172.30.128.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+    },
+    "shop": {
+      "name": "demo",
+      "locale": "hu",
+      "currency": {
+        "code": "HUF",
+        "rate": 1
+      },
+      "domain": "demo.myshoprenter.hu"
+    },
+    "event": {
+      "id": "1661258401667-6059",
+      "time": 1661258401,
+      "sourceUrl": "https://demo.myshoprenter.hu/customer/login",
+      "name": "CustomerLoggedIn"
+    }
+  }
+}
+```
+
+### onCustomerUpdated
+A vásárló fiók adatainak módosításakor bekövetkező esemény.
+
+Példa:
+```json
+{
+  "detail": {
+    "user": {
+      "id": 5,
+      "email": "teszt@shoprenter.hu",
+      "phoneNumber": "+36201234567",
+      "name": {
+        "firstName": "TesztVezetéknév",
+        "lastName": "TesztKeresztnév"
+      },
+      "ipAddress": "172.30.128.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+    },
+    "shop": {
+      "name": "demo",
+      "locale": "hu",
+      "currency": {
+        "code": "HUF",
+        "rate": 1
+      },
+      "domain": "demo.myshoprenter.hu"
+    },
+    "event": {
+      "id": "1661258401667-6059",
+      "time": 1661258401,
+      "sourceUrl": "https://demo.myshoprenter.hu/index.php?route=account/account",
+      "name": "CustomerUpdated"
+    }
   }
 }
 ```
