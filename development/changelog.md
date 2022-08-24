@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2022.08.24
+Elérhetővé vált 8 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).
+Az új események segítségével látogatói és vásárlói tevékenységekre íratkozhatunk fel.
+
 #### 2022.05.09
 Elérhetővé vált egy új feature a Payment API-hoz, [Bankkártya csere](../paymentapi/docs/j_funding_source_change.md).
 Segítségével az Ismétlődő díjfizetéseinkhez tartozó bankkártyákat cseréltethetjük ki a felhasználóinkkal.
