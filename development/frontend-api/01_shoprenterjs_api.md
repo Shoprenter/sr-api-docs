@@ -285,8 +285,22 @@ Példa:
             "price": "18415.00",
             "currency": "HUF",
             "quantity": "1",
-            "name": "Sztreccs farmer"
-        }
+            "quantityName": "db",
+            "name": "Sztreccs farmer",
+            "brand": "Farmer Kft."
+        },
+        "addedItems": [
+          {
+            "id": "[532]",
+            "sku": "9950000044",
+            "price": "18415.00",
+            "quantityName": "db",
+            "currency": "HUF",
+            "quantity": 1,
+            "name": "Sztreccs farmer",
+            "brand": "Farmer Kft."
+          }
+        ]
     }
 }
 ```
@@ -377,6 +391,17 @@ Példa:
                     "weight": 0,
                     "weightClass": "kg",
                     "isMaximumQuantityReached": false
+                  }
+                ],
+                "updatedItems": [
+                  {
+                    "sku": "TTA1234",
+                    "name": "Teszt termék akcióhoz",
+                    "quantityName": "db",
+                    "oldQuantity": 11,
+                    "newQuantity": 12,
+                    "grossUnitPrice": 10000,
+                    "brand": "Teszt Kft."
                   }
                 ]
               }
@@ -469,6 +494,17 @@ Példa:
                     "weight": 0,
                     "weightClass": "kg",
                     "isMaximumQuantityReached": false
+                  }
+                ],
+                "removedItems": [
+                  {
+                    "sku": "kerekparos-cipo",
+                    "name": "Kerékpáros cipő",
+                    "quantityName": "db",
+                    "quantity": 7,
+                    "grossUnitPrice": 49990,
+                    "grossTotalPrice": 349930,
+                    "brand": "Teszt Kft."
                   }
                 ]
               }
