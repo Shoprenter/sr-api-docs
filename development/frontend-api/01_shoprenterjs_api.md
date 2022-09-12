@@ -16,6 +16,7 @@ Tartalomjegyzék
     * [onSubscribedForNewsletter](#onsubscribedfornewsletter)
     * [onCheckoutInitiated](#oncheckoutinitiated)
     * [onCheckoutPaymentInfoAdded](#oncheckoutpaymentinfoadded)
+    * [onCheckoutShippingInfoAdded](#oncheckoutshippinginfoadded)
     * [onCheckoutOrderConfirmed](#oncheckoutorderconfirmed)
     * [onCheckoutOrderPaid](#oncheckoutorderpaid)
     * [onCheckoutOrderPaidUnsuccessful](#oncheckoutorderpaidunsuccessful)
@@ -648,6 +649,12 @@ Példa:
           "name": "Termék 1"
         }
       ],
+      "paymentMethod": {
+        "name": "Barion"
+      },
+      "shippingMethod": {
+        "name": "Személyes átvétel"
+      },
       "grossTotalPrice": 8661.4,
       "couponCode": "TEST1234"
     }
@@ -715,6 +722,79 @@ Példa:
       ],
       "paymentMethod": {
         "name": "Barion"
+      },
+      "shippingMethod": {
+        "name": "Személyes átvétel"
+      },
+      "couponCode": "TEST1234"
+    }
+  }
+}
+```
+
+### onCheckoutShippingInfoAdded
+A pénztár folyamatban, sikeres szállítási adatok megadása után bekövetkező esemény.
+
+Példa:
+```json
+{
+  "detail": {
+    "user": {
+      "id": 5,
+      "email": "teszt@shoprenter.hu",
+      "phoneNumber": "+36201234567",
+      "name": {
+        "firstName": "TesztVezetéknév",
+        "lastName": "TesztKeresztnév"
+      },
+      "ipAddress": "172.30.128.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+    },
+    "shop": {
+      "name": "demo",
+      "locale": "hu",
+      "currency": {
+        "code": "HUF",
+        "rate": 1
+      },
+      "domain": "demo.myshoprenter.hu"
+    },
+    "event": {
+      "id": "1662964179898-2566",
+      "time": 1662964179,
+      "sourceUrl": "https://demo.myshoprenter.hu/checkout#/shippingmethod/",
+      "name": "CheckoutShippingInfoAdded"
+    },
+    "cart": {
+      "items": [
+        {
+          "type": "product",
+          "id": 311,
+          "sku": "7700000",
+          "grossTotalPrice": 7874,
+          "grossUnitPrice": 3937,
+          "currency": "HUF",
+          "quantity": 2,
+          "quantityName": "db",
+          "name": "Termék 2"
+        },
+        {
+          "type": "product",
+          "id": 306,
+          "sku": "6600000",
+          "grossTotalPrice": 787.4,
+          "grossUnitPrice": 787.4,
+          "currency": "HUF",
+          "quantity": 1,
+          "quantityName": "db",
+          "name": "Termék 1"
+        }
+      ],
+      "paymentMethod": {
+        "name": "Barion"
+      },
+      "shippingMethod": {
+        "name": "Személyes átvétel"
       },
       "couponCode": "TEST1234"
     }
@@ -791,6 +871,12 @@ Példa:
           "name": "Termék 1"
         }
       ],
+      "paymentMethod": {
+        "name": "Barion"
+      },
+      "shippingMethod": {
+        "name": "Személyes átvétel"
+      },
       "couponCode": "TEST1234"
     }
   }
@@ -1145,6 +1231,8 @@ Példa:
 ```
 
 Nem regisztrált vásárlók esetén a ``user`` objektum egyes tulajdonságai üres stringek lehetnek. Továbbá regisztrálatlan látogató esetén a ``user.id`` nulla.
+
+A ``shippingMethod`` és ``paymentMethod`` objektumok egyes eseményeknél szerepelhetnek üres ``name`` tulajdonsággal. Például értelem szerűen egy pénztár folyamat elkezdésekor még ezeket nem lehet értelmezni, viszont ha a vásárló már megadja ezeket és vissza ugrik az első lépésre, akkor már értelmezhetőek.
 
 Figyelni kell arra, hogy az átadott javascript closure-nek legyen egy paramétere, melynek a neve tetszőleges lehet, pl. event vagy e. Így az e.details property kikéréssel, hozzájutunk az esemény adataihoz.
 
