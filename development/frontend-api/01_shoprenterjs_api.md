@@ -634,7 +634,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2"
+          "name": "Termék 2",
+          "brand": "márka"
         },
         {
           "type": "product",
@@ -645,7 +646,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1"
+          "name": "Termék 1",
+          "brand": "márka"
         }
       ],
       "grossTotalPrice": 8661.4,
@@ -699,7 +701,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2"
+          "name": "Termék 2",
+          "brand": "márka"
         },
         {
           "type": "product",
@@ -710,7 +713,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1"
+          "name": "Termék 1",
+          "brand": "márka"
         }
       ],
       "paymentMethod": {
@@ -777,7 +781,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2"
+          "name": "Termék 2",
+          "brand": "márka"
         },
         {
           "type": "product",
@@ -788,7 +793,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1"
+          "name": "Termék 1",
+          "brand": "márka"
         }
       ],
       "couponCode": "TEST1234"
@@ -852,7 +858,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2"
+          "name": "Termék 2",
+          "brand": "márka"
         },
         {
           "type": "product",
@@ -863,7 +870,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1"
+          "name": "Termék 1",
+          "brand": "márka"
         }
       ],
       "couponCode": "TEST1234"
@@ -927,7 +935,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2"
+          "name": "Termék 2",
+          "brand": "márka"
         },
         {
           "type": "product",
@@ -938,7 +947,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1"
+          "name": "Termék 1",
+          "brand": "márka"
         }
       ],
       "couponCode": "TEST1234"
