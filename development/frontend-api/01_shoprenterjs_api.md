@@ -636,7 +636,7 @@ Példa:
           "quantity": 2,
           "quantityName": "db",
           "name": "Termék 2",
-          "brand": "márka"
+          "brand": "gyártó"
         },
         {
           "type": "product",
@@ -648,7 +648,7 @@ Példa:
           "quantity": 1,
           "quantityName": "db",
           "name": "Termék 1",
-          "brand": "márka"
+          "brand": "gyártó"
         }
       ],
       "paymentMethod": {
@@ -709,7 +709,7 @@ Példa:
           "quantity": 2,
           "quantityName": "db",
           "name": "Termék 2",
-          "brand": "márka"
+          "brand": "gyártó"
         },
         {
           "type": "product",
@@ -721,7 +721,7 @@ Példa:
           "quantity": 1,
           "quantityName": "db",
           "name": "Termék 1",
-          "brand": "márka"
+          "brand": "gyártó"
         }
       ],
       "paymentMethod": {
@@ -862,7 +862,7 @@ Példa:
           "quantity": 2,
           "quantityName": "db",
           "name": "Termék 2",
-          "brand": "márka"
+          "brand": "gyártó"
         },
         {
           "type": "product",
@@ -874,7 +874,7 @@ Példa:
           "quantity": 1,
           "quantityName": "db",
           "name": "Termék 1",
-          "brand": "márka"
+          "brand": "gyártó"
         }
       ],
       "paymentMethod": {
@@ -945,7 +945,7 @@ Példa:
           "quantity": 2,
           "quantityName": "db",
           "name": "Termék 2",
-          "brand": "márka"
+          "brand": "gyártó"
         },
         {
           "type": "product",
@@ -957,7 +957,7 @@ Példa:
           "quantity": 1,
           "quantityName": "db",
           "name": "Termék 1",
-          "brand": "márka"
+          "brand": "gyártó"
         }
       ],
       "couponCode": "TEST1234"
@@ -1022,7 +1022,7 @@ Példa:
           "quantity": 2,
           "quantityName": "db",
           "name": "Termék 2",
-          "brand": "márka"
+          "brand": "gyártó"
         },
         {
           "type": "product",
@@ -1034,7 +1034,7 @@ Példa:
           "quantity": 1,
           "quantityName": "db",
           "name": "Termék 1",
-          "brand": "márka"
+          "brand": "gyártó"
         }
       ],
       "couponCode": "TEST1234"
