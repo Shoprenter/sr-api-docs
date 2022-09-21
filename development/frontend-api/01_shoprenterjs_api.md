@@ -1248,7 +1248,7 @@ A ``shippingMethod`` és ``paymentMethod`` objektumok egyes eseményeknél szere
 Figyelni kell arra, hogy az átadott javascript closure-nek legyen egy paramétere, melynek a neve tetszőleges lehet, pl. event vagy e. Így az e.details property kikéréssel, hozzájutunk az esemény adataihoz.
 
 ### onCartPageViewed
-A vásárló kosár oldal megnyitásakor bekövetkező esemény.
+Az esemény akkor következik be, amikor a vásárló megnyitja a kosár oldalt.
 
 Példa:
 ```json
