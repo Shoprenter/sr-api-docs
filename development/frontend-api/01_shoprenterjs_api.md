@@ -884,7 +884,8 @@ Példa:
       "shippingMethod": {
         "name": "Személyes átvétel"
       },
-      "couponCode": "TEST1234"
+      "couponCode": "TEST1234",
+      "sumValueOfTaxes": 1220
     }
   }
 }
