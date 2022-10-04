@@ -882,10 +882,18 @@ Példa:
         "name": "Barion"
       },
       "shippingMethod": {
-        "name": "Személyes átvétel"
+        "name": "Személyes átvétel",
+        "grossTotal": 990
       },
       "couponCode": "TEST1234",
-      "sumValueOfTaxes": 1220
+      "totals": {
+        "taxes": [
+          {
+            "name": "27%",
+            "value": 250
+          }
+        ]
+      }
     }
   }
 }
