@@ -1,5 +1,13 @@
 # API changelog
 
+#### 2022.10.05
+Elérhetővé vált 2 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).\
+Az új események segítségével további vásárlói tevékenységekre íratkozhatunk fel.
+- [onCheckoutShippingInfoAdded](frontend-api/01_shoprenterjs_api.md#oncheckoutshippinginfoadded)
+- [onCartPageViewed](frontend-api/01_shoprenterjs_api.md#oncartpageviewed)
+
+Továbbá a meglévő [onCheckoutOrderConfirmed](frontend-api/01_shoprenterjs_api.md#oncheckoutorderconfirmed) kibővítésre került a szállítási mód bruttó árával és a rendelés áfa tartalmával.
+
 #### 2022.08.25
 Elérhetővé vált 4 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).\
 Az új események segítségével sikertelen fizetésre és vásárlói profil tevékenységekre íratkozhatunk fel.

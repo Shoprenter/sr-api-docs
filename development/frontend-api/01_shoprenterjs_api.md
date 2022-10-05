@@ -25,6 +25,7 @@ Tartalomjegyzék
     * [onCustomerRegistered](#oncustomerregistered)
     * [onCustomerLoggedIn](#oncustomerloggedin)
     * [onCustomerUpdated](#oncustomerupdated)
+    * [onCartPageViewed](#oncartpageviewed)
     * [Események használata](#esemenyek-hasznalata)
 
 ## ShopRenter Object
@@ -881,9 +882,18 @@ Példa:
         "name": "Barion"
       },
       "shippingMethod": {
-        "name": "Személyes átvétel"
+        "name": "Személyes átvétel",
+        "grossTotal": 990
       },
-      "couponCode": "TEST1234"
+      "couponCode": "TEST1234",
+      "totals": {
+        "taxes": [
+          {
+            "name": "27%",
+            "value": 250
+          }
+        ]
+      }
     }
   }
 }
@@ -1245,6 +1255,71 @@ Nem regisztrált vásárlók esetén a ``user`` objektum egyes tulajdonságai ü
 A ``shippingMethod`` és ``paymentMethod`` objektumok egyes eseményeknél szerepelhetnek üres ``name`` tulajdonsággal. Például értelem szerűen egy pénztár folyamat elkezdésekor még ezeket nem lehet értelmezni, viszont ha a vásárló már megadja ezeket és vissza ugrik az első lépésre, akkor már értelmezhetőek.
 
 Figyelni kell arra, hogy az átadott javascript closure-nek legyen egy paramétere, melynek a neve tetszőleges lehet, pl. event vagy e. Így az e.details property kikéréssel, hozzájutunk az esemény adataihoz.
+
+### onCartPageViewed
+Az esemény akkor következik be, amikor a vásárló megnyitja a kosár oldalt.
+
+Példa:
+```json
+{
+  "detail": {
+    "user": {
+      "id": 5,
+      "email": "teszt@shoprenter.hu",
+      "phoneNumber": "+36201234567",
+      "name": {
+        "firstName": "TesztVezetéknév",
+        "lastName": "TesztKeresztnév"
+      },
+      "ipAddress": "172.30.128.0",
+      "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
+    },
+    "shop": {
+      "name": "demo",
+      "locale": "hu",
+      "currency": {
+        "code": "HUF",
+        "rate": 1
+      },
+      "domain": "demo.myshoprenter.hu"
+    },
+    "event": {
+      "id": "1661254177910-3746",
+      "time": 1661254177,
+      "sourceUrl": "https://demo.myshoprenter.hu/cart",
+      "name": "CartPageViewed"
+    },
+    "cart": {
+      "items": [
+        {
+          "type": "product",
+          "id": 311,
+          "sku": "7700000",
+          "grossTotalPrice": 7874,
+          "grossUnitPrice": 3937,
+          "currency": "HUF",
+          "quantity": 2,
+          "quantityName": "db",
+          "name": "Termék 2",
+          "brand": "gyártó"
+        },
+        {
+          "type": "product",
+          "id": 306,
+          "sku": "6600000",
+          "grossTotalPrice": 787.4,
+          "grossUnitPrice": 787.4,
+          "currency": "HUF",
+          "quantity": 1,
+          "quantityName": "db",
+          "name": "Termék 1",
+          "brand": "gyártó"
+        }
+      ]
+    }
+  }
+}
+```
 
 ### Események használata
 A ShopRenter nevű objektum a frontend egész felületén elérhető, így bármely oldalon fel tudunk iratkozni a kosár eseményekre a következőképpen:
