@@ -15,8 +15,8 @@
                 "hu": "Vásárlói csoport linkje.",
                 "en": "Vásárlói csoport linkje."
             },
-            "required": false,
-            "readonly": false
+            "required": true,
+            "readonly": true
         },
         {
             "name": "product",
@@ -24,8 +24,8 @@
                 "hu": "Termék linkje.",
                 "en": "Termék linkje."
             },
-            "required": false,
-            "readonly": false
+            "required": true,
+            "readonly": true
         },
         {
             "name": "price",
