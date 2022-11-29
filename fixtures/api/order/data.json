@@ -609,8 +609,8 @@
                 {
                     "name": "innerIdMin",
                     "description": {
-                        "hu": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosító azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza.",
-                        "en": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosító azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza."
+                        "hu": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza.",
+                        "en": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza."
                     }
                 },
                 {
