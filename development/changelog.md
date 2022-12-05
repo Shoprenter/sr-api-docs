@@ -1,7 +1,7 @@
 # API changelog
 
 #### 2022.11.30
-Új kereső paraméter került be az Order és OrderExtend Resource-okhoz "innerIdMin" néven.\
+Új kereső paraméter került be az [Order](../api/order.md) és [OrderExtend](../api/order_extend.md) Resource-okhoz "innerIdMin" néven.\
 Ezzel rendelések belső azonosítójára tudunk szűrni, nagyobb vagy egyenlő logikával.
 
 #### 2022.11.21
