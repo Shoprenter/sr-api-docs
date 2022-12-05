@@ -607,6 +607,13 @@
                     }
                 },
                 {
+                    "name": "innerIdMin",
+                    "description": {
+                        "hu": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza.",
+                        "en": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza."
+                    }
+                },
+                {
                     "name": "orderStatusId",
                     "description": {
                         "hu": "Kereső paraméter. Rendelés állapot azonosító.",
