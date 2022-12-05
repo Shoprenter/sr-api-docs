@@ -1,10 +1,14 @@
 # API changelog
 
+#### 2022.11.30
+Új kereső paraméter került be az Order és OrderExtend Resource-okhoz "innerIdMin" néven.\
+Ezzel rendelések belső azonosítójára tudunk szűrni, nagyobb vagy egyenlő logikával.
+
 #### 2022.11.21
-WebHook Resource paraméterek javítása\
+WebHook Resource paraméterek javítása.\
 Mostantól a [WebHook Resource](../api/webhook.md) esetén is megfelelően használhatók a "page", "limit" és "full" paraméterek. Ezek a dokumentációban korábban is így voltak feltüntetve, ennek ellenére nem lehetett használni, ezt a problémát javítottuk.
 
-Customer Group Product Price Resource változás\
+Customer Group Product Price Resource változás.\
 A [Customer Group Product Price Resource](../api/customer_group_product_price.md) használata esetén ezentúl a "customerGroup" és a "product" kötelező tulajdonságok.  Ezek megadása nélkül nem lehet létrehozni vásárlói csoport termék árakat. Ez a követelmény a fejlesztői dokumentációban is feltüntetésre került. A resource módosításakor nem kell kötelezően megadni ezeket.
 
 #### 2022.10.05
