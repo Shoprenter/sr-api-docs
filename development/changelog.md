@@ -19,6 +19,12 @@ Az új események segítségével további vásárlói tevékenységekre íratko
 
 Továbbá a meglévő [onCheckoutOrderConfirmed](frontend-api/01_shoprenterjs_api.md#oncheckoutorderconfirmed) kibővítésre került a szállítási mód bruttó árával és a rendelés áfa tartalmával.
 
+#### 2023.01.25
+Bővítettük a [WebHook resource](../api/webhook.md)-hoz felvehető eseményeket három további lehetőséggel:
+- hírlevél feliratkozás (newsletter_subscribe)
+- hírlevél leiratkozás (newsletter_unsubscribe)
+- hírlevél feliratkozás módosítása (newsletter_update_subscriber)
+
 #### 2022.08.25
 Elérhetővé vált 4 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).\
 Az új események segítségével sikertelen fizetésre és vásárlói profil tevékenységekre íratkozhatunk fel.

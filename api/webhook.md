@@ -96,6 +96,7 @@ Ehhez webHookParameters **fields** propertyjében kell átadnunk egy tömbben a 
 
 A következő táblázat tartalmazza az összes megadható mezőnevet, illetve azt, hogy egyes eseménytípusoknál, melyik adat érhető el.
 
+### A megrendeléshez kapcsolódó események mezői
 | Mező neve                      | Rendelés státusz váltás (order_confirm) |Új rendelés leadás (order_status_change)| Leírás                                                                                                                                                                                                                                                                                                                                                            |
 |:-------------------------------|:---------------------------------------:| :---: |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | order_storeName                |                    x                    |x| Bolt név                                                                                                                                                                                                                                                                                                                                                          |
@@ -176,6 +177,19 @@ A következő táblázat tartalmazza az összes megadható mezőnevet, illetve a
 | orderProductOption_valueName   |                    x                    |x| A termékhez rendelt változat képző paraméter értéke                                                                                                                                                                                                                                                                                                               |
 | orderProductOption_price       |                    x                    |x| Az ármódosítás mértéke nettóban.                                                                                                                                                                                                                                                                                                                                  |
 | orderProductOption_prefix      |                    x                    |x| Az ármodosítás előjele (+ vagy -)                                                                                                                                                                                                                                                                                                                                 |
+
+### A hírlevélhez kapcsolódó események mezői
+| Mező neve                 | newsletter_subscribe | newsletter_unsubscribe | newsletter_update_subscriber | Leírás                                      |
+|:--------------------------|:--------------------:|:----------------------:|:----------------------------:|---------------------------------------------|
+| subscriber_id             |          x           |           x            |              x               | Feliratkozó azonosítója                     |
+| subscriber_firstname      |          x           |           x            |              x               | Vezetéknév                                  |
+| subscriber_lastname       |          x           |           x            |              x               | Keresztnév                                  |
+| subscriber_email          |          x           |           x            |              x               | E-mail cím                                  |
+| subscriber_phone          |          x           |           x            |              x               | Telefonszám                                 |
+| subscriber_status         |          x           |           x            |              x               | Státusz                                     |
+| subscriber_language       |          x           |           x            |              x               | A feliratkozás nyelvének azonosítója        |
+| subscriber_hash           |          x           |           x            |              x               | Aktiváláshoz, leiratkozáshoz szükséges hash |
+| subscriber_subscribe_date |          x           |           x            |              x               | Feliratkozás dátuma                         |
 
 ## Példák
 
