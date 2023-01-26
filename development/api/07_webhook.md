@@ -1,6 +1,6 @@
 # WebHook automatizmus
 
-A WebHook egy olyan automatikus üzenet a webáruháztól egy külső rendszer felé, amely olyan események hatására váltódhat ki, mint például egy rendelés feladása, egy rendelés állapotának megváltozása, hírlevél feliratkozás, hírlevél leiratkozás vagy hírlevél feliratkozás módosítás.
+A WebHook egy olyan automatikus üzenet a webáruháztól egy külső rendszer felé, amely olyan események hatására váltódhat ki, mint például egy rendelés feladása, egy rendelés állapotának megváltozása, hírlevél feliratkozás, hírlevél leiratkozás vagy hírlevél feliratkozó adatmódosítás.
 A [WebHook Resource](/api/webhook.md) segítségével ilyen automatizmusokat hozhatunk létre API-n keresztül. A webhookkal küldött adat formátuma lehet XML vagy JSON. A külső rendszer lehet akár egy ERP rendszer vagy egy számlázó, de számos további felhasználási módja lehetséges.  
 
 ## Tulajdonságok
@@ -11,7 +11,7 @@ A [WebHook Resource](/api/webhook.md) az alábbi tulajdonságokkal rendelkezik
     - **Rendelés állapot váltás (order_status_change)**: Amennyiben a rendelések státuszának változásáról szeretnénk értesíteni az ügyfeleinket vagy kollégáinkat, úgy érdemes ezt a menüpontot  is használni. Illetve ugyanígy használhatjuk ezt a kiváltó eseményt a vevőcsoportok kapcsán is, amikor egy rendelés állapotának változását a vevőcsoportokban történő mozgatás követ.
     - **hírlevél feliratkozás (newsletter_subscribe)**: Amikor egy új feliratkozás történik a hírlevélre.
     - **hírlevél leiratkozás (newsletter_unsubscribe)**: Amikor leiratkozik valaki a hírlevélről.
-    - **hírlevél feliratkozás módosítás (newsletter_update_subscriber)**: Amikor valaki megváltoztatja a hírlevél feliratkozáshoz használt adatait.
+    - **hírlevél feliratkozó adatmódosítás (newsletter_update_subscriber)**: Amikor valaki megváltoztatja a hírlevél feliratkozáshoz használt adatait.
 - **Státusz (status)**: Itt lehet engedélyezni, vagy letiltani az értesítést. Értékei:
     - **0** - Letiltott
     - **1** - Engedélyezett

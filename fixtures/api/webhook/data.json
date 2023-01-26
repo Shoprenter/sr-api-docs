@@ -21,8 +21,8 @@
         {
             "name": "event",
             "description": {
-                "hu": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozás módosítása)</li></ul>",
-                "en": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozás módosítás)</li></ul>"
+                "hu": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozó adatmódosítás)</li></ul>",
+                "en": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozó adatmódosítás)</li></ul>"
             },
             "required": true,
             "readonly": false

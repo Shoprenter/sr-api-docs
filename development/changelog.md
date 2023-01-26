@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2023.01.26
+Bővítettük a [WebHook resource](../api/webhook.md)-hoz felvehető eseményeket három további lehetőséggel:
+- hírlevél feliratkozás (newsletter_subscribe)
+- hírlevél leiratkozás (newsletter_unsubscribe)
+- hírlevél feliratkozó adatmódosítása (newsletter_update_subscriber)
+
 #### 2022.11.30
 Új kereső paraméter került be az [Order](../api/order.md) és [OrderExtend](../api/order_extend.md) Resource-okhoz "innerIdMin" néven.\
 Ezzel rendelések belső azonosítójára tudunk szűrni, nagyobb vagy egyenlő logikával.
@@ -18,12 +24,6 @@ Az új események segítségével további vásárlói tevékenységekre íratko
 - [onCartPageViewed](frontend-api/01_shoprenterjs_api.md#oncartpageviewed)
 
 Továbbá a meglévő [onCheckoutOrderConfirmed](frontend-api/01_shoprenterjs_api.md#oncheckoutorderconfirmed) kibővítésre került a szállítási mód bruttó árával és a rendelés áfa tartalmával.
-
-#### 2023.01.25
-Bővítettük a [WebHook resource](../api/webhook.md)-hoz felvehető eseményeket három további lehetőséggel:
-- hírlevél feliratkozás (newsletter_subscribe)
-- hírlevél leiratkozás (newsletter_unsubscribe)
-- hírlevél feliratkozás módosítása (newsletter_update_subscriber)
 
 #### 2022.08.25
 Elérhetővé vált 4 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).\
