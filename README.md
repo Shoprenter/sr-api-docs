@@ -13,5 +13,5 @@ features:
   link: /paymentapi/docs/a_introduce.html
 - title: '<i class="far fa-list-alt"></i> API Changelog'
   link: /development/changelog.html
-footer: © 2011 - 2021 ShopRenter.hu Kft.
+footer: © 2011 - 2023 ShopRenter.hu Kft.
 ---

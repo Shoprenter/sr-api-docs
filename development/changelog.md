@@ -1,6 +1,6 @@
 # API changelog
 
-#### 2023.01.26
+#### 2023.01.27
 Bővítettük a [WebHook resource](../api/webhook.md)-hoz felvehető eseményeket három további lehetőséggel:
 - hírlevél feliratkozás (newsletter_subscribe)
 - hírlevél leiratkozás (newsletter_unsubscribe)
