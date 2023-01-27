@@ -12,8 +12,8 @@
         {
             "name": "label",
             "description": {
-                "hu": "Név (az admin felületen jelenik meg)",
-                "en": "Név (az admin felületen jelenik meg)"
+                "hu": "Webhook neve (az admin felületen jelenik meg)",
+                "en": "Webhook neve (az admin felületen jelenik meg)"
             },
             "required": true,
             "readonly": false
@@ -21,8 +21,8 @@
         {
             "name": "event",
             "description": {
-                "hu": "Az esemény neve amire feliratkozik. Lehetséges értékek: order_confirm (rendelés feladás),order_status_change (rendelés állapot változás)",
-                "en": "Az esemény neve amire feliratkozik. Lehetséges értékek: order_confirm (rendelés feladás),order_status_change (rendelés állapot változás)"
+                "hu": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozó adatmódosítás)</li></ul>",
+                "en": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozó adatmódosítás)</li></ul>"
             },
             "required": true,
             "readonly": false
@@ -30,8 +30,8 @@
         {
             "name": "status",
             "description": {
-                "hu": "Engedélyezett-e? Lehetséges értékek:0 (nem),1(igen)",
-                "en": "Engedélyezett-e? Lehetséges értékek:0 (nem),1(igen)"
+                "hu": "Engedélyezett-e? Lehetséges értékek: 1 (igen), 0 (nem)",
+                "en": "Engedélyezett-e? Lehetséges értékek: 1 (igen), 0 (nem)"
             },
             "required": true,
             "readonly": false
@@ -39,8 +39,8 @@
         {
             "name": "webHookParameters *",
             "description": {
-                "hu": "Adatküldés formátuma, cél url és elküldetni kívánt mezők (Lásd: Fields property használata)",
-                "en": "Adatküldés formátuma, cél url és elküldetni kívánt mezők (Lásd: Fields property használata)"
+                "hu": "Adatküldés formátuma, cél url és elküldetni kívánt mezők listája (Lásd: Fields property használata)",
+                "en": "Adatküldés formátuma, cél url és elküldetni kívánt mezők listája (Lásd: Fields property használata)"
             },
             "required": true,
             "readonly": false
@@ -48,8 +48,8 @@
         {
             "name": "webHookDelay *",
             "description": {
-                "hu": "Webhook késleltetése, amennyiben nincs megadva azonnali",
-                "en": "Webhook késleltetése, amennyiben nincs megadva azonnali"
+                "hu": "Webhook késleltetése, amennyiben nincs megadva azonnali típus.",
+                "en": "Webhook késleltetése, amennyiben nincs megadva azonnali típus."
             },
             "required": false,
             "readonly": false

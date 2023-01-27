@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2023.01.27
+Bővítettük a [WebHook resource](../api/webhook.md)-hoz felvehető eseményeket három további lehetőséggel:
+- hírlevél feliratkozás (newsletter_subscribe)
+- hírlevél leiratkozás (newsletter_unsubscribe)
+- hírlevél feliratkozó adatmódosítása (newsletter_update_subscriber)
+
 #### 2022.11.30
 Új kereső paraméter került be az [Order](../api/order.md) és [OrderExtend](../api/order_extend.md) Resource-okhoz "innerIdMin" néven.\
 Ezzel rendelések belső azonosítójára tudunk szűrni, nagyobb vagy egyenlő logikával.

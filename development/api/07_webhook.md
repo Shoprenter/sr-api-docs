@@ -1,6 +1,6 @@
 # WebHook automatizmus
 
-A WebHook egy olyan automatikus üzenet a webáruháztól egy külső rendszer felé, amely olyan események hatására váltódhat ki, mint például egy rendelés feladása vagy egy rendelés állapotának megváltozása.
+A WebHook egy olyan automatikus üzenet a webáruháztól egy külső rendszer felé, amely olyan események hatására váltódhat ki, mint például egy rendelés feladása, egy rendelés állapotának megváltozása, hírlevél feliratkozás, hírlevél leiratkozás vagy hírlevél feliratkozó adatmódosítás.
 A [WebHook Resource](/api/webhook.md) segítségével ilyen automatizmusokat hozhatunk létre API-n keresztül. A webhookkal küldött adat formátuma lehet XML vagy JSON. A külső rendszer lehet akár egy ERP rendszer vagy egy számlázó, de számos további felhasználási módja lehetséges.  
 
 ## Tulajdonságok
@@ -8,7 +8,10 @@ A [WebHook Resource](/api/webhook.md) az alábbi tulajdonságokkal rendelkezik
 - **Megnevezés (label)**: Az értesítés belső azonosítására szolgál, az üzenetben nem lesz látható az itt megadott név.
 - **Esemény (event)**: Az általunk kiválasztott esemény típusa, amely az alábbi lehet:
     - **Új rendelés feladás (order_confirm)**: Olyan üzenetet küldhetünk, melynek kiváltó eseménye egy megrendelés. Ezt például használhatjuk arra, hogy vevőinktől véleményeket kérjük a megrendelt termékekre vonatkozóan.
-    - **Rendelés állapot váltás (order_status_change )**: Amennyiben a rendelések státuszának változásáról szeretnénk értesíteni az ügyfeleinket vagy kollégáinkat, úgy érdemes ezt a menüpontot  is használni. Illetve ugyanígy használhatjuk ezt a kiváltó eseményt a vevőcsoportok kapcsán is, amikor egy rendelés állapotának változását a vevőcsoportokban történő mozgatás követ.
+    - **Rendelés állapot váltás (order_status_change)**: Amennyiben a rendelések státuszának változásáról szeretnénk értesíteni az ügyfeleinket vagy kollégáinkat, úgy érdemes ezt a menüpontot  is használni. Illetve ugyanígy használhatjuk ezt a kiváltó eseményt a vevőcsoportok kapcsán is, amikor egy rendelés állapotának változását a vevőcsoportokban történő mozgatás követ.
+    - **hírlevél feliratkozás (newsletter_subscribe)**: Amikor egy új feliratkozás történik a hírlevélre.
+    - **hírlevél leiratkozás (newsletter_unsubscribe)**: Amikor leiratkozik valaki a hírlevélről.
+    - **hírlevél feliratkozó adatmódosítás (newsletter_update_subscriber)**: Amikor valaki megváltoztatja a hírlevél feliratkozáshoz használt adatait.
 - **Státusz (status)**: Itt lehet engedélyezni, vagy letiltani az értesítést. Értékei:
     - **0** - Letiltott
     - **1** - Engedélyezett
@@ -28,7 +31,7 @@ Konkrét példa POST kérésre JSON formátumban:
     "webHookParameters": [
         {
             "type": "json",
-            "url": "http:\/\/shoprenter.hu\n"
+            "url": "http://shoprenter.hu"
         }
     ],
     "webHookDelay": [
@@ -42,7 +45,9 @@ Konkrét példa POST kérésre JSON formátumban:
 
 ## Elküldhető adatok listája
 
-A rendelésről kiküldött webhook értékeinek a jelentése.
+### A megrendeléshez kapcsolódó események mezői
+
+A rendelésről kiküldött webhook mezőinek a jelentése.
 
 |Kulcs|Érték|
 |-----|-----|
@@ -261,6 +266,45 @@ Példa webhook:
 }
 ```
 
+
+### A hírlevélhez kapcsolódó események mezői
+
+A hírlevélhez kapcsolódóan kiküldött webhook mezőinek a jelentése.
+
+| Kulcs                     | Érték                                       |
+|---------------------------|---------------------------------------------|
+| subscriber_id             | Feliratkozó azonosítója                     |
+| subscriber_firstname      | Vezetéknév                                  |
+| subscriber_lastname       | Keresztnév                                  |
+| subscriber_email          | E-mail cím                                  |
+| subscriber_phone          | Telefonszám                                 |
+| subscriber_status         | Státusz                                     |
+| subscriber_language       | A feliratkozás nyelvének azonosítója        |
+| subscriber_hash           | Aktiváláshoz, leiratkozáshoz szükséges hash |
+| subscriber_subscribe_date | Feliratkozás dátuma                         |
+
+Példa webhook:
+
+```json
+{
+  "newsletter": {
+    "subscriber": [
+      {
+        "id": "1",
+        "firstname": "Teszt",
+        "lastname": "P\u00e9ter",
+        "email": "teszt@shoprenter.hu",
+        "phone": "+36201234567",
+        "status": 1,
+        "language": "1",
+        "hash": "b53807cef8e6582bc95c31f4b5ac17f8",
+        "subscribe_date": "2023-01-20 11:11:11"
+      }
+    ]
+  }
+}
+```
+
 ## További példák
 
-- [**"Új rendelés feladás" webhook működése**](../development/api-examples/06_webhook.md)
+- [**"Új rendelés feladás" webhook működése**](../api-examples/06_webhook.md)

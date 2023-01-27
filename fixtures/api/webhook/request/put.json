@@ -5,7 +5,7 @@
     "webHookParameters": [
         {
             "type": "json",
-            "url": "http:\/\/shoprenter.hu\n",
+            "url": "http://shoprenter.hu",
             "fields": [
                 "order_storeName",
                 "order_innerId",
