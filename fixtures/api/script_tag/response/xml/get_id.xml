@@ -14,6 +14,9 @@
     <displayScope>
         <![CDATA[THANK_YOU_PAGE]]>
     </displayScope>
+    <displayArea>
+        <![CDATA[HEADER]]>
+    </displayArea>
     <dateCreated>
         <![CDATA[2018-09-13T12:14:39]]>
     </dateCreated>

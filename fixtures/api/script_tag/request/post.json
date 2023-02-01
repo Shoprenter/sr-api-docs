@@ -1,4 +1,5 @@
 {
     "src": "https:\/\/somedomain.hu\/somedir\/example.js",
-    "displayScope": "THANK_YOU_PAGE"
+    "displayScope": "THANK_YOU_PAGE",
+    "displayArea": "HEADER"
 }
