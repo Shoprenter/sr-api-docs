@@ -37,6 +37,15 @@
             "readonly": false
         },
         {
+            "name": "displayArea",
+            "description": {
+                "hu": "Ez a mező mutatja meg, hogy pontosan hová is lett elhelyezve, vagy hová helyezhető el a hívásban használt script. POST és PUT üzenetek request-jében ha nincs megadva ez a mező, akkor a default érték a “HEADER” lesz a hívásban.  <br \/>Lehetséges értékek: <br \/><b>HEADER<\/b><br \/><b>BODY<\/b><br \/>Alapértelmezett érték: <b>HEADER</b>",
+                "en": "Ez a mező mutatja meg, hogy pontosan hová is lett elhelyezve, vagy hová helyezhető el a hívásban használt script. POST és PUT üzenetek request-jében ha nincs megadva ez a mező, akkor a default érték a “HEADER” lesz a hívásban.  <br \/>Lehetséges értékek: <br \/><b>HEADER<\/b><br \/><b>BODY<\/b><br \/>Alapértelmezett érték: <b>HEADER<\/b>"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "dateCreated",
             "description": {
                 "hu": "Létrehozás dátuma.",

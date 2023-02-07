@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2023.02.01
+Bővítettük a [Script Tag resource](../api/script_tag.md) paramétereit egy további lehetőséggel:
+- **displayArea** - Ez a mező mutatja meg, hogy pontosan hová is lett elhelyezve, vagy hová helyezhető el a hívásban használt script.
+
 #### 2023.01.27
 Bővítettük a [WebHook resource](../api/webhook.md)-hoz felvehető eseményeket három további lehetőséggel:
 - hírlevél feliratkozás (newsletter_subscribe)
