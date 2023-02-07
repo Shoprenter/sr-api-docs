@@ -1,6 +1,6 @@
 # API changelog
 
-#### 2023.02.01
+#### 2023.02.07
 Bővítettük a [Script Tag resource](../api/script_tag.md) paramétereit egy további lehetőséggel:
 - **displayArea** - Ez a mező mutatja meg, hogy pontosan hová is lett elhelyezve, vagy hová helyezhető el a hívásban használt script.
 
