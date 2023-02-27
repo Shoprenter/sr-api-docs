@@ -16,7 +16,9 @@ A **shippingMethodExtension** lehetséges értékei:
 |       DPD csomagpont     |     DPDPARCELSHOP   |
 |      FoxPost Csomagautomata      |    FOXPOST     |
 |      FoxPost Házhozszállítás      |    FOXPOSTAUTOMATA    |
-|      GLS csomagpont      |    GLSPARCELSHOP    |
+|      GLS csomagpont (régi)      |    GLSPARCELSHOP    |
+|      GLS csomagpont      |    GLSPARCELPOINT    |
+|      GLS csomagautomata      |    GLSPARCELLOCKER    |
 |       MPL Csomagautomata     |    MPLPARCELMACHINE    |
 |     MPL Posta Pont szállítás       |    MPLPOSTPOINT    |
 |      MPL Postán maradó szállítás      |    MPLPOSTSTAY    |
