@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2023.03.01
+Bővítettük a [Order extend resource](../api/order_extend.md) és [Order resource](../api/order.md) lehetséges értékeit további lehetőséggel:
+- **shippingMethodExtension** - A GLSPARCELSHOP ketté lett választva, mostantól GLSPARCELPOINT és GLSPARCELLOCKER van helyette.
+- **shippingMethodExtension** - A Foxpost házhozszállítás és Foxpost 
+csomagautomata értéke javítva lett.
+
 #### 2023.02.01
 Bővítettük a [Script Tag resource](../api/script_tag.md) paramétereit egy további lehetőséggel:
 - **displayArea** - Ez a mező mutatja meg, hogy pontosan hová is lett elhelyezve, vagy hová helyezhető el a hívásban használt script.
