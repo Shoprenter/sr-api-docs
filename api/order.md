@@ -14,9 +14,11 @@ A **shippingMethodExtension** lehetséges értékei:
 |       Csomagküldő - (Béta)     |    CSOMAGKULDO    |
 |       DHL Express     |    DHLEXPRESS    |
 |       DPD csomagpont     |     DPDPARCELSHOP   |
-|      FoxPost Csomagautomata      |    FOXPOSTAUTOMATA     |
-|      FoxPost Házhozszállítás      |    FOXPOST    |
-|      GLS csomagpont      |    GLSPARCELSHOP    |
+|      FoxPost Csomagautomata      |    FOXPOST     |
+|      FoxPost Házhozszállítás      |    FOXPOSTAUTOMATA    |
+|      GLS csomagpont (régi)      |    GLSPARCELSHOP    |
+|      GLS csomagpont      |    GLSPARCELPOINT    |
+|      GLS csomagautomata      |    GLSPARCELLOCKER    |
 |       MPL Csomagautomata     |    MPLPARCELMACHINE    |
 |     MPL Posta Pont szállítás       |    MPLPOSTPOINT    |
 |      MPL Postán maradó szállítás      |    MPLPOSTSTAY    |
