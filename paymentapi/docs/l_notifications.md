@@ -4,7 +4,7 @@ A Payment API, a fizetési folyamat közben történő események üzeneteit a n
 A webhook tartalmazza a fizetési mód azonosítóját és a aktuális állapotát. A Payment API által küldött webhook kérés HTTP metódusa **POST**.
 
 A státuszok vizsgálatával következtethetünk egy fizetési mód életciklusában bekövetkezett változásokra, esetleges hibákra.
-A lehetséges státuszok itt érhetőek el: [elérhető státuszok](../docs/statuses.md).
+A lehetséges státuszok itt érhetőek el: [elérhető státuszok](../docs/k_statuses.md).
 
 ## Az üzenet felépítése
 
@@ -13,15 +13,18 @@ A lehetséges státuszok itt érhetőek el: [elérhető státuszok](../docs/stat
 | Tulajdonság | Leírás                                                |
 |-------------|-------------------------------------------------------|
 | id          | Fizetés azonosítója. Ez lehet One Time vagy Recurring |
-| status   |    A fizetési mód aktuális állapota |
+| status   | A fizetési mód aktuális állapota                      |
+| time | A webhook küldésének ideje, unix formátumban          |
+| reason | A státusz váltás indoklása                            |
 
 #### Példa 
 
 ```javascript
 {
     "id": 2,
-    "status": "pending",
-    "time": 1606740386
+    "status": "declined",
+    "time": 1606740386,
+    "reason": "The Customer canceled this payment."
 }
 ```
 
