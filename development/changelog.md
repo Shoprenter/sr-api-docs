@@ -1,7 +1,7 @@
 # API changelog
 
 #### 2023.03.29
-Bővítettük az app fejlesztőket értesítő webhookok tartalmán. Mostmár a küldés oka is benne van
+Bővítettük az app fejlesztőket értesítő [webhookok](../paymentapi/docs/l_notifications.md) tartalmán. Mostmár a küldés oka is benne van azokban a webhookokban, amiket előfizetés leállításakor küldünk.
 
 Továbbfejlesztettük az app fejlesztők által definiálható [Fizetési tervek](../paymentapi/docs/h_plan.md) működését. Mostmár, hogyha változik a Fizetési terv ára vagy neve, akkor a meglévő app előfizetések a módosításokkal újjulnak meg.  
 
