@@ -100,33 +100,17 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/attributeWidgetCategoryRelations[\/kapcsolat id]",
-                "en": "\/attributeWidgetCategoryRelations[\/kapcsolat id]"
+                "hu": "\/attributeWidgetCategoryRelations",
+                "en": "\/attributeWidgetCategoryRelations"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "hu": "Csak létrehozásra szolgál.",
+                "en": "Csak létrehozásra szolgál."
             },
             "parameters": [],
             "example": {
                 "url": "\/attributeWidgetCategoryRelations",
-                "statusCode": "200 vagy 201"
-            }
-        },
-        "put": {
-            "method": "PUT",
-            "url": {
-                "hu": "\/attributeWidgetCategoryRelations\/kapcsolat id",
-                "en": "\/attributeWidgetCategoryRelations\/kapcsolat id"
-            },
-            "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
-            },
-            "parameters": [],
-            "example": {
-                "url": "\/attributeWidgetCategoryRelations\/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9MzY=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "201"
             }
         },
         "delete": {

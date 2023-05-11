@@ -106,22 +106,6 @@
                 "statusCode": "201"
             }
         },
-        "put": {
-            "method": "PUT",
-            "url": {
-                "hu": "\/categoryCustomerGroupRelations\/Y2F0ZWdvcnlDdXN0b21lckdyb3VwLWNhdGVnb3J5X2lkPTEyJmN1c3RvbWVyX2dyb3VwX2lkPTY=",
-                "en": "\/categoryCustomerGroupRelations\/Y2F0ZWdvcnlDdXN0b21lckdyb3VwLWNhdGVnb3J5X2lkPTEyJmN1c3RvbWVyX2dyb3VwX2lkPTY="
-            },
-            "description": {
-                "hu": "Csak létrehozásra szolgál.",
-                "en": "Csak létrehozásra szolgál."
-            },
-            "parameters": [],
-            "example": {
-                "url": "\/categoryCustomerGroupRelations",
-                "statusCode": "201"
-            }
-        },
         "delete": {
             "method": "DELETE",
             "url": {

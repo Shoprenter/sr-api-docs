@@ -113,22 +113,6 @@
                 "statusCode": "201"
             }
         },
-        "put": {
-            "method": "PUT",
-            "url": {
-                "hu": "\/productRelatedProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
-                "en": "\/productRelatedProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg=="
-            },
-            "description": {
-                "hu": "Csak létrehozásra szolgál.",
-                "en": "Csak létrehozásra szolgál."
-            },
-            "parameters": [],
-            "example": {
-                "url": "\/productRelatedProductRelations",
-                "statusCode": "201"
-            }
-        },
         "delete": {
             "method": "DELETE",
             "url": {

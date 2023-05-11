@@ -1,8 +1,8 @@
 {
-    "product": [
-
-    ],
-    "collateralProduct": [
-
-    ]
+    "product": {
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTQ5"
+    },
+    "collateralProduct": {
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+    }
 }
