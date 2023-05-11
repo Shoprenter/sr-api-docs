@@ -93,33 +93,17 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/couponCategoryRelations[\/kapcsolat id]",
-                "en": "\/couponCategoryRelations[\/kapcsolat id]"
+                "hu": "\/couponCategoryRelations",
+                "en": "\/couponCategoryRelations"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "hu": "Csak létrehozásra szolgál",
+                "en": "Csak létrehozásra szolgál"
             },
             "parameters": [],
             "example": {
                 "url": "\/couponCategoryRelations",
-                "statusCode": "200 vagy 201"
-            }
-        },
-        "put": {
-            "method": "PUT",
-            "url": {
-                "hu": "\/couponCategoryRelations\/kapcsolat id",
-                "en": "\/couponCategoryRelations\/kapcsolat id"
-            },
-            "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
-            },
-            "parameters": [],
-            "example": {
-                "url": "\/couponCategoryRelations\/Y291cG9uQ2F0ZWdvcnlSZWxhdGlvbi1jb3Vwb25faWQ9MSZjYXRlZ29yeV9pZD0yMw==",
-                "statusCode": "200 vagy 201"
+                "statusCode": "201"
             }
         },
         "delete": {
