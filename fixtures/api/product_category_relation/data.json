@@ -100,33 +100,17 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/productCategoryRelations[\/kapcsolat id]",
-                "en": "\/productCategoryRelations[\/kapcsolat id]"
+                "hu": "\/productCategoryRelations",
+                "en": "\/productCategoryRelations"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "hu": "Csak létrehozásra szolgál.",
+                "en": "Csak létrehozásra szolgál."
             },
             "parameters": [],
             "example": {
                 "url": "\/productCategoryRelations",
-                "statusCode": "200 vagy 201"
-            }
-        },
-        "put": {
-            "method": "PUT",
-            "url": {
-                "hu": "\/productCategoryRelations\/kapcsolat id",
-                "en": "\/productCategoryRelations\/kapcsolat id"
-            },
-            "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
-            },
-            "parameters": [],
-            "example": {
-                "url": "\/productCategoryRelations\/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDkmY2F0ZWdvcnlfaWQ9MjA=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "201"
             }
         },
         "delete": {

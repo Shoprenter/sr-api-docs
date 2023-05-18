@@ -116,33 +116,17 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/productProductBadgeRelations[\/kapcsolat id]",
-                "en": "\/productProductBadgeRelations[\/kapcsolat id]"
+                "hu": "\/productProductBadgeRelations",
+                "en": "\/productProductBadgeRelations"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "hu": "Csak létrehozásra szolgál.",
+                "en": "Csak létrehozásra szolgál."
             },
             "parameters": [],
             "example": {
                 "url": "\/productProductBadgeRelations",
-                "statusCode": "200 vagy 201"
-            }
-        },
-        "put": {
-            "method": "PUT",
-            "url": {
-                "hu": "\/productProductBadgeRelations\/kapcsolat id",
-                "en": "\/productProductBadgeRelations\/kapcsolat id"
-            },
-            "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
-            },
-            "parameters": [],
-            "example": {
-                "url": "\/productProductBadgeRelations\/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "201"
             }
         },
         "delete": {
