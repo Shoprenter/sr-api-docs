@@ -1,0 +1,40 @@
+{
+    "properties": [
+        {
+            "name": "order.id",
+            "description": {
+                "hu": "Rendelés egyedi azonosítója.",
+                "en": "Rendelés egyedi azonosítója."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "customer.id",
+            "description": {
+                "hu": "Vásárló egyedi azonosítója.",
+                "en": "Vásárló egyedi azonosítója."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "post": {
+            "method": "POST",
+            "url": {
+                "hu": "\/reloadUrl",
+                "en": "\/reloadUrl"
+            },
+            "description": {
+                "hu": "Reload order url létrehozásra szolgál.",
+                "en": "Reload order url létrehozásra szolgál."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/reloadUrl",
+                "statusCode": "200"
+            }
+        }
+    }
+}
