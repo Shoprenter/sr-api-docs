@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2023.05.10
+[Product List Attribute Value Relation Resource](../api/product_list_attribute_value_relation.md) esetében javítottuk a “page” paraméter használatát és ezentúl az összes oldal találata lekérdezhető lesz.
+
 #### 2023.03.29
 Bővítettük az app fejlesztőket értesítő [webhookok](../paymentapi/docs/l_notifications.md) tartalmán. Mostmár a küldés oka is benne van azokban a webhookokban, amiket előfizetés leállításakor küldünk.
 

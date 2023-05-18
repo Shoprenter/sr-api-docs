@@ -1,11 +1,11 @@
 {
-    "product": [
-
-    ],
-    "productBadge": [
-
-    ],
-    "language": [
-
-    ]
+    "product": {
+        "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+    },
+    "productBadge": {
+        "id": "cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTI="
+    },
+    "language": {
+        "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+    }
 }
