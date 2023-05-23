@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2023.05.23
+Létrehoztuk a [Reload Order Url resource-ot](../api/reload_order_url.md). Ennek a resource-nak a segítségével létre lehet hozni egyedi url-t a be nem fejezett rendelésekhez (Elhagyott kosarakhoz).
+
 #### 2023.05.10
 [Product List Attribute Value Relation Resource](../api/product_list_attribute_value_relation.md) esetében javítottuk a “page” paraméter használatát és ezentúl az összes oldal találata lekérdezhető lesz.
 
