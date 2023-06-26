@@ -12,7 +12,7 @@ Az API kérések számának csökkentése, valamint a kérések gyorsabb kiszolg
 
 4. Miután lefutott az összes kérés feldolgozása, a válaszokat tartalmazó tömböt a kérésnek megfelelő formátumban (javasoltan JSON, esetleg XML) a kimenetre küldi a szerver, amit aztán a kliens megkap és feldolgoz.
 
-Batch kérés esetén az **ajánlott request szám 1000** legyen.
+Batch kérés esetén az **ajánlott request szám 200** legyen.
 
 Egy post mérete *(max_post_size)* **32MB** lehet. Érdemes figyelni kép feltöltés esetén, hogy ezt ne lépjük túl.
 
@@ -315,7 +315,7 @@ Annak érdekében, hogy a termék feltöltés során minden a termékhez kapcsol
 
 **Fontos megjegyezni, hogy a batchelésnek vannak korlátai, amit a gördülékeny hívások érdekében ajánlott betartani. Ilyenek például:**
 1. A batchelt kéréseket lehetőség szerint ne aszinkron módon küldjük el, azaz egy batchelt hívást csak azt követően indítsunk, miután az előző batchelt hívás befejeződött, tehát kaptunk responset.
-2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 1000 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
+2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 200 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
 
 **Az alábbi példa csak szemléltetésképp mutatja be a működést,
 így azok a teljesség igénye nélkül nem tartalmazzák az egész API request-et és response-t!**
@@ -415,7 +415,7 @@ anélkül, hogy tudnánk például a kategória resource azonosítóját.
 
 **Fontos megjegyezni, hogy a batchelésnek vannak korlátai, amit a gördülékeny hívások érdekében ajánlott betartani. Ilyenek például:**
 1. A batchelt kéréseket lehetőség szerint ne aszinkron módon küldjük el, azaz egy batchelt hívást csak azt követően indítsunk, miután az előző batchelt hívás befejeződött, tehát kaptunk responset.
-2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 1000 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
+2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 200 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
 
 **Az alábbi példa csak szemléltetésképp mutatja be a működést,
 így azok a teljesség igénye nélkül nem tartalmazzák az egész API request-et és response-t!**
