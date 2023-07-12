@@ -557,6 +557,15 @@
             },
             "required": false,
             "readonly": true
+        },
+        {
+            "name": "externalInfo",
+            "description": {
+                "hu": "Külső marketplace azonosítók",
+                "en": "Külső marketplace azonosítók"
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {
@@ -697,6 +706,13 @@
                     "description": {
                         "hu": "Kereső paraméter. Szállítási mód belső azonosító.",
                         "en": "Kereső paraméter. Szállítási mód belső azonosító."
+                    }
+                },
+                {
+                    "name": "externalInfo",
+                    "description": {
+                        "hu": "Külső marketplace azonosítók",
+                        "en": "Külső marketplace azonosítók"
                     }
                 }
             ],

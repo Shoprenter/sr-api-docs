@@ -659,4 +659,12 @@
     </orderProducts>
     <orderGiftWrappings/>
     <orderAddressIdentifications/>
+    <externalInfo>
+        <partner_order_id>
+            <![CDATA[12345]]>
+        </partner_order_id>
+        <partner_order_id>
+            <![CDATA[EMAG]]>
+        </partner_order_id>
+    </externalInfo>
 </response>

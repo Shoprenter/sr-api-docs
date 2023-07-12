@@ -148,4 +148,3 @@ A **paymentMethodCode** lehetséges értékei:
 
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'order'" :endpoint="'delete'" :lang="'hu'"/>
-
