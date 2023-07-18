@@ -135,7 +135,7 @@
             "parameters": [],
             "example": {
                 "url": "\/productDocumentRelations\/cHJvZHVjdERvY3VtZW50LWlkPTE4",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

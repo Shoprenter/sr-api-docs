@@ -196,7 +196,7 @@
             "parameters": [],
             "example": {
                 "url": "\/manufacturers\/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

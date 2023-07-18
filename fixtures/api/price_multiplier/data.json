@@ -155,7 +155,7 @@
             "parameters": [],
             "example": {
                 "url": "\/priceMultipliers\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

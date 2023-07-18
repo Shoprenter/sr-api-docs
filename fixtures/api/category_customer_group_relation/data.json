@@ -119,7 +119,7 @@
             "parameters": [],
             "example": {
                 "url": "\/categoryCustomerGroupRelations\/Y2F0ZWdvcnlDdXN0b21lckdyb3VwLWNhdGVnb3J5X2lkPTEyJmN1c3RvbWVyX2dyb3VwX2lkPTY=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

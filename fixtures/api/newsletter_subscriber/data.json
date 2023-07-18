@@ -239,7 +239,7 @@
             "parameters": [],
             "example": {
                 "url": "\/newsletterSubscribers\/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

@@ -164,7 +164,7 @@
             "parameters": [],
             "example": {
                 "url": "\/shippingLanes\/c2hpcHBpbmdNb2RlLWlkPTg0",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }
