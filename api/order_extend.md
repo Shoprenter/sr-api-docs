@@ -101,4 +101,3 @@ A **paymentMethodCode** lehetséges értékei:
 </template>
 
 </ResourceEndpoint>
-
