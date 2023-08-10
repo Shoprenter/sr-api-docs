@@ -69,5 +69,9 @@
     },
     "shippingMode" : {
         "id": "c2hpcHBpbmdNb2RlLWlkPTE4"
+    },
+    "externalInfo": {
+        "partner_order_id": "12345",
+        "partner_prefix": "EMAG"
     }
 }

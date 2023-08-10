@@ -3,6 +3,10 @@
 #### 2023.08.01
 Ha többször próbálunk egy tulajdonságot DELETE metódussal törölni, akkor minden kérés után az API 204-es, azaz sikeres törlést jelző státuszkódot ad vissza. Ezen hibajavítás értelmében csak az első sikeres törlés után fog visszaadni 204-es válaszkódot az API, minden további törlési kérés pedig 404-es válaszkóddal tér vissza.
 
+#### 2023.07.10
+Az [Order](../api/order.md) és az [OrderExtended](../api/order_extend.md) resource kiegészült egy új, opcionális mezővel, `externalInfo`. Ez a mező két kötelező paramétert tartalmaz: `partner_order_id` és `partner_prefix`.
+Ezek az azonosítók akkor lehetnek hasznosak, ha egy külső marketplace-en (pl. Emag marketplace) leadott rendelést a Shoprenter webáruházban is létrehozzuk API segítségével. Ha ezek az azonosítók megadásra kerülnek a rendeléshez, erre keresve is van lehetőség szűrni a rendelés lista oldalon.
+
 #### 2023.05.23
 Létrehoztuk a [Reload Order Url resource-ot](../api/reload_order_url.md). Ennek a resource-nak a segítségével létre lehet hozni egyedi url-t a be nem fejezett rendelésekhez (Elhagyott kosarakhoz).
 
