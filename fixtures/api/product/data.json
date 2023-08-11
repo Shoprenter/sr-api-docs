@@ -660,7 +660,7 @@
             "parameters": [],
             "example": {
                 "url": "\/products\/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

@@ -144,7 +144,7 @@
             "parameters": [],
             "example": {
                 "url": "\/documents\/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9OQ==",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

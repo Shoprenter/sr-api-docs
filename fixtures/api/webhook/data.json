@@ -155,7 +155,7 @@
             "parameters": [],
             "example": {
                 "url": "\/webHooks\/cHJvZHVjdC1wcm9kdWN0X2lkPTUw",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

@@ -172,7 +172,7 @@
             "parameters": [],
             "example": {
                 "url": "\/urlAliases\/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTI=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

@@ -279,7 +279,7 @@
             "parameters": [],
             "example": {
                 "url": "\/coupons\/Y291cG9uLWNvdXBvbl9pZD0x",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

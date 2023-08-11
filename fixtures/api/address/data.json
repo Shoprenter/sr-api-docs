@@ -268,7 +268,7 @@
             "parameters": [],
             "example": {
                 "url": "\/addresses\/YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

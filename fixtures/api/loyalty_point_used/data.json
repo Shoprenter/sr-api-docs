@@ -178,7 +178,7 @@
             "parameters": [],
             "example": {
                 "url": "\/loyaltyPointsUsed\/bG95YWx0eVBvaW50VXNlZC1pZD0y",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

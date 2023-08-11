@@ -225,7 +225,7 @@
             "parameters": [],
             "example": {
                 "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

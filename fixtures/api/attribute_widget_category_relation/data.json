@@ -126,7 +126,7 @@
             "parameters": [],
             "example": {
                 "url": "\/attributeWidgetCategoryRelations\/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9MzY=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }
