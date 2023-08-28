@@ -28,5 +28,10 @@
                 "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         }
-    ]
+    ],
+    "paymentDuty": {
+        "dutyFix": "100",
+        "dutyPercent": "2.5",
+        "dutyType": "fix"
+    }
 }

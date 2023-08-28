@@ -83,6 +83,17 @@
                     </id>
                 </language>
             </paymentDescription>
+            <paymentDuty>
+                <dutyFix>
+                    <![CDATA[100]]>
+                </dutyFix>
+                <dutyPercent>
+                    <![CDATA[2.5]]>
+                </dutyPercent>
+                <dutyType>
+                    <![CDATA[fix]]>
+                </dutyType>
+            </paymentDuty>
         </item>
     </items>
 </response>
