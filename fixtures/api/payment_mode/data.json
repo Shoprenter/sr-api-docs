@@ -62,6 +62,15 @@
             },
             "required": false,
             "readonly": true
+        },
+        {
+            "name": "paymentDuty",
+            "description": {
+                "hu": "\n A fizetési mód illetékének mértéke és típusa. Az illeték típusa fix vagy százalékos.  \n ",
+                "en": "\n A fizetési mód illetékének mértéke és típusa. Az illeték típusa fix vagy százalékos.\n "
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {
