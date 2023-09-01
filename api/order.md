@@ -22,6 +22,7 @@ A **shippingMethodExtension** lehetséges értékei:
 | MPL Csomagautomata                | MPLPARCELMACHINE |
 | MPL Posta Pont szállítás          | MPLPOSTPOINT     |
 | MPL Postán maradó szállítás       | MPLPOSTSTAY      |
+| Sameday házhozszállítás           | SAMEDAYSHIPPING  |
 | Pick Pack Pont szállítás          | PICKPACKPONT     |
 | Express One csomagpont            | TOFPARCELSHOP    |
 | Házhozszállítás futárszolgálattal | WSESHIP          |
