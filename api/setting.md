@@ -59,6 +59,7 @@ Az alábbi táblázatban az API által visszaadott kulcsok jelentései találhat
 |product_url_without_category|Kategória oldali URL-ek felépítése. Értékei:<br>0 - Teljes elérési út<br>1 - Csak termékoldal|
 |config_badge_max|Termékkártyákon maximálisan megjeleníthetett matricák száma|
 |config_badge_orientation|Matricák megjelenítésének sorrendje: Fentről-lefele (vertical) v. balról-jobbra (horizontal)|
+|config_display_quantity_in_category|Kategória oldalon kosárbarakásnál a mennyiség mező megjelenítése. Értékei: <br>0 - Nem, <br>1 - Igen (itt figyeljünk, hogy a megjelenés/formázás illeszkedjen a többi sorhoz)|
 
 ## Endpoints
 

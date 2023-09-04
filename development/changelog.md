@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2023.09.04
+A Setting Resource az alábbi beállítással bővült:
+- **config_display_quantity_in_category** -  Kategória oldalon kosárbarakásnál a mennyiség mező megjelenítése.
+
 #### 2023.08.01
 Ha többször próbálunk egy tulajdonságot DELETE metódussal törölni, akkor minden kérés után az API 204-es, azaz sikeres törlést jelző státuszkódot ad vissza. Ezen hibajavítás értelmében csak az első sikeres törlés után fog visszaadni 204-es válaszkódot az API, minden további törlési kérés pedig 404-es válaszkóddal tér vissza.
 
