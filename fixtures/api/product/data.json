@@ -608,6 +608,13 @@
                         "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított termékeket adja vissza. Formátum: 2013-01-01.",
                         "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított termékeket adja vissza. Formátum: 2013-01-01."
                     }
+                },
+                {
+                    "name": "parentProductId",
+                    "description": {
+                        "hu": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza.",
+                        "en": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza."
+                    }
                 }
             ],
             "example": {
