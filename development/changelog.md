@@ -1,5 +1,14 @@
 # API changelog
 
+#### 2023.09.05
+Ha gyártót töröltünk a [Manufacturer](../api/manufacturer.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a gyártó törlésével, a hozzá tartozó url is törlődni fog.
+
+#### 2023.08.21
+Abban az esetben, ha szöveges tartalmat töröltünk a [CMS Extend](../api/cms_content_extend.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően szöveges tartalom törlésével, a hozzá tartozó url is törlődni fog.
+
+#### 2023.08.05
+Ha kategóriát töröltünk a [Category Extend](../api/category_extend.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a kategória törlésével, a hozzá tartozó url is törlődni fog.
+
 #### 2023.08.01
 Ha többször próbálunk egy tulajdonságot DELETE metódussal törölni, akkor minden kérés után az API 204-es, azaz sikeres törlést jelző státuszkódot ad vissza. Ezen hibajavítás értelmében csak az első sikeres törlés után fog visszaadni 204-es válaszkódot az API, minden további törlési kérés pedig 404-es válaszkóddal tér vissza.
 
