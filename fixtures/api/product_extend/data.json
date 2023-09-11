@@ -670,6 +670,13 @@
                         "hu": "Kereső paraméter. Termék állapotára lehet szűrni. Értékei: 0 (Letiltott), 1 (Engedélyezett), 2 (Kifutott). Alapértelmezetten minden terméket listáz.",
                         "en": "Kereső paraméter. Termék állapotára lehet szűrni. Értékei: 0 (Letiltott), 1 (Engedélyezett), 2 (Kifutott). Alapértelmezetten minden terméket listáz."
                     }
+                },
+                {
+                    "name": "parentProductId",
+                    "description": {
+                        "hu": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza.",
+                        "en": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza."
+                    }
                 }
             ],
             "example": {

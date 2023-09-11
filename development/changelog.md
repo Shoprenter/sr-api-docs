@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2023.09.05
+Egyszerűbbé tettük a szülő-gyerek termékkapcsolatok lekérését és kezelését a Shoprenter API-ban. A [Product](../api/product.md) és [ProductExtend](../api/product_extend.md) resourceokban lehetővé vált egy filterezés. A `parentProductId`-t paraméterként megadva a szűrésben, visszakapjuk az azonos `parentProductId`-val rendelkező termékeket.
+
 #### 2023.09.04
 A Setting Resource az alábbi beállítással bővült:
 - **config_display_quantity_in_category** -  Kategória oldalon kosárbarakásnál a mennyiség mező megjelenítése.
