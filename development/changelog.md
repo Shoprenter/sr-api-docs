@@ -3,7 +3,6 @@
 #### 2023.09.05
 Egyszerűbbé tettük a szülő-gyerek termékkapcsolatok lekérését és kezelését a Shoprenter API-ban. A [Product](../api/product.md) és [ProductExtend](../api/product_extend.md) resourceokban lehetővé vált egy filterezés. A `parentProductId`-t paraméterként megadva a szűrésben, visszakapjuk az azonos `parentProductId`-val rendelkező termékeket.
 
-#### 2023.09.05
 Ha gyártót töröltünk a [Manufacturer](../api/manufacturer.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a gyártó törlésével, a hozzá tartozó url is törlődni fog.
 
 #### 2023.08.21
