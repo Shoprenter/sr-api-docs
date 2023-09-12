@@ -5,6 +5,10 @@ Egyszerűbbé tettük a szülő-gyerek termékkapcsolatok lekérését és kezel
 
 Ha gyártót töröltünk a [Manufacturer](../api/manufacturer.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a gyártó törlésével, a hozzá tartozó url is törlődni fog.
 
+#### 2023.09.04
+A Setting Resource az alábbi beállítással bővült:
+- **config_display_quantity_in_category** -  Kategória oldalon kosárbarakásnál a mennyiség mező megjelenítése.
+
 #### 2023.08.21
 Abban az esetben, ha szöveges tartalmat töröltünk a [CMS Extend](../api/cms_content_extend.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően szöveges tartalom törlésével, a hozzá tartozó url is törlődni fog.
 
