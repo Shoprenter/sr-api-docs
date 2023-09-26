@@ -11,8 +11,7 @@ Example:
 console.log(ShopRenter.lastOrder);
 ```
 
-### Meaning of some fields
-:
+### Meaning of some fields:
 
 <table> 
     <tr>

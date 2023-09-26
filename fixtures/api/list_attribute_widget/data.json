@@ -19,7 +19,7 @@
         {
             "name": "displayToAllCategory",
             "description": {
-                "en": "Should it be displayed in all categories?."
+                "en": "Should it be displayed in all categories?"
             },
             "required": false,
             "readonly": false

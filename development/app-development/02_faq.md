@@ -80,7 +80,7 @@ We get a 'Refused to display' error in the DevTools console. Rendering is probab
 ---
 
 #### cUrl call not working with Batch API in terminal, what's the problem?
-I send the POST data with the `-F' switch, but I get the error `40014 - 'POST is either empty or content length exceeds the limit of %s bytes''.
+I send the POST data with the `-F` switch, but I get the error `40014 - 'POST is either empty or content length exceeds the limit of %s bytes``.
 The `-F' switch sends the data as `multipart/form-data', so you don't need to include the 'content-type' header.
 (More about this: [https://ec.haxx.se/http-postvspost.html](https://ec.haxx.se/http-postvspost.html))
 
