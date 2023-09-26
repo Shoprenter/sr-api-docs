@@ -8,7 +8,7 @@ The price calculation consists of three steps:
 2. Querying the current product.
 3. Performing the specific price calculation.
 
-## 1st step
+## Step 1.
 
 In a batch request, you need to retrieve all the influencing factors required for the calculation:
 - all [**GeoZone**-t (Geo Zone)](../../api/geo_zone.md),
