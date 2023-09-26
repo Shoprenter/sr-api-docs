@@ -4,7 +4,7 @@ The example below shows how to upload a document and attach it to the selected p
 
 An example of file upload can be found in the [link](https://support.shoprenter.hu/hc/hu/articles/215106038-F%C3%A1jlok-felt%C3%B6lt%C3%A9se-%C3%A9s-kezel%C3%A9se) below
 
-### 1st step
+### Step 1.
 
 Upload the desired document using [File Resource](../../api/file.md). It is important that the `srattached\/` folder is specified as the **filePath** value of the request **body**, and the **type** value must be `image`, even if it is a text document.
 

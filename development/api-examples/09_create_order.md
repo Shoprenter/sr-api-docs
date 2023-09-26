@@ -9,7 +9,7 @@ The task consists of the following steps:
 3. Add ordered products using [**Order Product**](../../api/order_product.md)
 4. Changing the total value of an order using [**Order Resource**](../../api/order.md)
 
-## 1st step
+## Step 1.
 
 We create the new order using [**Order Resource**](../../api/order.md).
 Here we must pay attention to the fact that the order must already be added at this time

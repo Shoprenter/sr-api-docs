@@ -15,7 +15,7 @@ An example that demonstrates the preparation process:
 Let's say that we sell cakes in our store and we want to sell a 10- and a 12-slice version of the Dobos cake product.
 The price of the 10-slice version is the same as the base price of the product, but we would like to sell the 12-slice version HUF 2,000 more expensive.
 
-## 1st step
+## Step 1.
 
 We create the new product option using [**Product Option Resource**](../../api/product_option.md).
 

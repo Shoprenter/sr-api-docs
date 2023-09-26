@@ -8,7 +8,7 @@ The task consists of three steps.
 2. Creating a product using the [**Product Extend Resource**](../../api/product_extend.md) and specifying the category during creation.
 3. Adding additional categories to the product using the [**Product Category Relation Resource**](../../api/product_category_relation.md) Resource.
 
-## 1st step
+## Step 1.
 
 Creating a category using the [**Category Extend Resource**](../../api/category_extend.md).
 

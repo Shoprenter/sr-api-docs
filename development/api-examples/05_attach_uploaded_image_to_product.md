@@ -9,7 +9,7 @@ The task consists of 3 steps.
 2. Create a product using [**Product Extend Resource**](../../api/product_extend.md), for which we already specify the primary main product image during creation.
 3. Add additional product images to the product using [**Product Image Resource**](../../api/product_image.md).
 
-## 1st step
+## Step 1.
 
 We use [**File Resource**](../../api/file.md) to upload the primary main product image. Since we want to set the image as the product, it is important that the **filePath property has the following form "product\/[image name]", eg: "filePath": "product\/termekkep.jpg"**. We also recommend the jpg extension for the image file format. The image must be sent in base64.
 After uploading, the product image can be found on the admin interface in the Filemanager in the product folder.
