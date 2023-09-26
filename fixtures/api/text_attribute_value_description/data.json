@@ -132,7 +132,7 @@
             "parameters": [],
             "example": {
                 "url": "\/textAttributeValueDescriptions\/dGV4dEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmcHJvZHVjdF9pZD01MSZsYW5ndWFnZV9pZD0w",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

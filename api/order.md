@@ -64,6 +64,8 @@ Possible values for **paymentMethodCode**:
 | Wirecard QPAY | QPAY |
 | Saferpay - SIX Payment Services | SAFERPAY |
 | InstaCash | INSTACASH |
+| IzzyPay                         | IZZYPAY               |
+| PastPay                         | PASTPAY  
 
 ## Endpoints
 
@@ -149,4 +151,3 @@ Possible values for **paymentMethodCode**:
 
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'order'" :endpoint="'delete'" :lang="'en'"/>
-

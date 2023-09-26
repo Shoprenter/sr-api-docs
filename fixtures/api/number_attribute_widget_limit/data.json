@@ -134,7 +134,7 @@
             "parameters": [],
             "example": {
                 "url": "\/numberAttributeWidgetLimits\/bnVtYmVyQXR0cmlidXRlV2lkZ2V0TGltaXQtYXR0cmlidXRlX2lkPTE5JmxpbWl0X2lkPTA=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

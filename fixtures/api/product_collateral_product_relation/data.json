@@ -110,7 +110,7 @@
             "parameters": [],
             "example": {
                 "url": "\/productCollateralProductRelations\/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD04NDU2JmNvbGxhdGVyYWxfaWQ9MzEzNA==",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

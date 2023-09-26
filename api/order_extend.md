@@ -55,14 +55,16 @@ Possible values of **paymentMethodCode**:
 | Sofort banking                  | SOFORT                |
 | Borgun (B-payment)              | SRPAY                 |
 | Borgun                          | BORGUN                |
-| Budapest Bank online áruhitel   | BUDAPESTBANK          |
+| MBH online áruhitel             | MBH                   |
 | Global Payments                 | GP                    |
 | Paysafecard                     | PAYSAFECARD           |
 | Paysafecash                     | PAYSAFECASH           |
 | Global Payments                 | GP                    |
-| Wirecard QPAY                   | QPAY                  |
+| QENTA QPAY                      | QENTA_QPAY            |
 | Saferpay - SIX Payment Services | SAFERPAY              |
 | InstaCash részletfizetés        | INSTACASH             |
+| IzzyPay                         | IZZYPAY               |
+| PastPay                         | PASTPAY               |
 
 ## Endpoints
 
@@ -99,4 +101,3 @@ Possible values of **paymentMethodCode**:
 </template>
 
 </ResourceEndpoint>
-

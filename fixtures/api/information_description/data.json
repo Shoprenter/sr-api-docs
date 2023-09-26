@@ -128,7 +128,7 @@
             "parameters": [],
             "example": {
                 "url": "\/informationDescriptions\/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

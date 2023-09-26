@@ -190,7 +190,7 @@
             "parameters": [],
             "example": {
                 "url": "\/numberAttributeWidgets\/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD05",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

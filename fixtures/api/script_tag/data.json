@@ -144,7 +144,7 @@
             "parameters": [],
             "example": {
                 "url": "\/scriptTags\/c2NyaXB0VGFnLWlkPTc=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

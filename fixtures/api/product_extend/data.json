@@ -592,6 +592,13 @@
                     "description": {
                         "en": "Search parameter. You can filter by product status. Values: 0 (Disabled), 1 (Enabled), 2 (Deprecated). By default, it lists all products."
                     }
+                },
+                {
+                    "name": "parentProductId",
+                    "description": {
+                        "hu": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza.",
+                        "en": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza."
+                    }
                 }
             ],
             "example": {
@@ -638,7 +645,7 @@
             "parameters": [],
             "example": {
                 "url": "\/productExtend\/cHJvZHVjdC1wcm9kdWN0X2lkPTUw",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

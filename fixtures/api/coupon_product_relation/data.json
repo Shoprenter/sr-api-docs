@@ -104,7 +104,7 @@
             "parameters": [],
             "example": {
                 "url": "\/couponProductRelations\/Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }

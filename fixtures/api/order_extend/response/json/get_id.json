@@ -288,5 +288,9 @@
         }
     ],
     "orderGiftWrappings": [],
-    "orderAddressIdentifications": []
+    "orderAddressIdentifications": [],
+    "externalInfo": {
+        "partner_order_id": "12345",
+        "partner_prefix": "EMAG"
+    }
 }

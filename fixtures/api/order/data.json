@@ -487,6 +487,15 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "externalInfo",
+            "description": {
+                "hu": "Külső marketplace azonosítók",
+                "en": "Külső marketplace azonosítók"
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {
@@ -625,6 +634,13 @@
                     "name": "shippingModeInnerId",
                     "description": {
                         "en": "Search parameter. Shipping method internal identifier."
+                    }
+                },
+                {
+                    "name": "externalInfo",
+                    "description": {
+                        "hu": "Külső marketplace azonosítók",
+                        "en": "Külső marketplace azonosítók"
                     }
                 }
             ],

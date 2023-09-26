@@ -538,6 +538,13 @@
                     "description": {
                         "en": "Search parameter. It can be used for search the modification date. Returns products modified on the specified date. Format: 2013-01-01."
                     }
+                },
+                {
+                    "name": "parentProductId",
+                    "description": {
+                        "hu": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza.",
+                        "en": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza."
+                    }
                 }
             ],
             "example": {
@@ -584,7 +591,7 @@
             "parameters": [],
             "example": {
                 "url": "\/products\/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
-                "statusCode": "204"
+                "statusCode": "204 vagy 404"
             }
         }
     }
