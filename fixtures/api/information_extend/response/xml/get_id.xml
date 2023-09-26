@@ -37,10 +37,10 @@
             <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x]]>
         </id>
         <title>
-            <![CDATA[Szöveges menüpont címe]]>
+            <![CDATA[Text menu item title]]>
         </title>
         <description>
-            <![CDATA[Szöveges menüpont. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.]]>
+            <![CDATA[Text menu item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.]]>
         </description>
         <information>
             <href>
@@ -61,10 +61,10 @@
             <![CDATA[aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0y]]>
         </id>
         <title>
-            <![CDATA[Szöveges menüpont címe angolul]]>
+            <![CDATA[Text menu item title in English]]>
         </title>
         <description>
-            <![CDATA[Szöveges menüpont angolul. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.]]>
+            <![CDATA[Text menu item title in English. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.]]>
         </description>
         <information>
             <href>

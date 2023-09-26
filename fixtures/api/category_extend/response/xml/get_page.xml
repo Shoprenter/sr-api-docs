@@ -59,7 +59,7 @@
                     <![CDATA[Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD05MjQmbGFuZ3VhZ2VfaWQ9MQ==]]>
                 </id>
                 <name>
-                    <![CDATA[Teszt Kategória]]>
+                    <![CDATA[Test Category]]>
                 </name>
                 <metaKeywords/>
                 <metaDescription/>
@@ -158,7 +158,7 @@
                 <href><![CDATA[http://shopname.api.myshoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTU0NA==]]></href>
                 <id><![CDATA[dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTU0NA==]]></id>
                 <type><![CDATA[CATEGORY]]></type>
-                <urlAlias><![CDATA[teszt_kategoria_924]]></urlAlias>
+                <urlAlias><![CDATA[test_kategoria_924]]></urlAlias>
                 <urlAliasEntity>
                     <href><![CDATA[http://shopname.api.myshoprenter.hu/products/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc=]]></href>
                 </urlAliasEntity>
@@ -204,7 +204,7 @@
                     <![CDATA[Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD05MjQmbGFuZ3VhZ2VfaWQ9MQ==]]>
                 </id>
                 <name>
-                    <![CDATA[Könyvek]]>
+                    <![CDATA[Books]]>
                 </name>
                 <metaKeywords/>
                 <metaDescription/>

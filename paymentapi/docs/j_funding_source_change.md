@@ -1,42 +1,40 @@
-# Bankkártya csere
+# Bank card change
 
-Az Ismétlődő díjfizetések esetén problémát jelenthetnek az olyan bankkártyák, amelyek meghaladták a lejárati idejüket, esetleg más probléma miatt nem terhelhetőek.
+In the case of Recurring payments, bank cards that have exceeded their expiration date or cannot be charged due to other problems can be a problem..
 
-## Működése
+## In operation
 
-Nagyon hasonló az [Ismétlődő díjfizetés](./i_recurring_charge.md) folyamatához.
-Az alkalmazás egy hívást indít a billing/fundingSourceChange végpontra, ahova elküldi az Ismétlődő díjfizetés azonosítóját.
-Ekkor a visszakap egy **changeUrl**-t, amelyre az alkalmazás átirányítja az előfizetőt.
+It is very similar to the [Recurring Charge Payment](./i_recurring_charge.md) process.
+The application makes a call to the billing/fundingSourceChange endpoint, where it sends the ID of the Recurring payment.
+It then returns a **changeUrl** to which the application redirects the customer.
 
-A bolt tualjdonos megérkezik a kártya csere megerősítő oldalára, amely a Shoprenter admin felületén lesz elérhető.
-A kártya cserét elfogadhatja vagy elutasíthatja.
+The admin will arrive at the card replacement confirmation page, which will be available on the Shoprenter admin interface.
+You can accept or reject the exchange of the card.
 
-Az elfogadás után, a Barion Gatewayen megadja az új kártyájának az adatait, és 10 Ft-os tranzakcióval regisztráljuk az új fizető eszközt az adott előfizetéshez.
+After acceptance, you enter the details of your new card on the Barion Gateway, and we register the new payment device for the given subscription with a HUF 10 transaction.
 
-Sikeres fizetés esetén **azonnal** visszautaljuk a levont 10 Ft-ot.
+In case of successful payment, we will **immediately** return the deducted HUF 10.
 
-A folyamat végén a bolt tulajdonost visszairányítjuk egy, sikerességet vagy sikertelenséget jelző oldalra.
+At the end of the process, the admin is redirected to a page indicating success or failure.
 
-Csak Ismétlődő díjfizetések esetén cserélhető a bankkártya!
+The bank card can only be changed in the case of recurring payments!
 
-## Használata
+## Usage
 
-Szükségünk van:
-- Az alkalmazásunk felületén egy gombra, amivel elindíthatja az előfizető a cserét
-- Az Ismétlődő fizetés azonosítójára - recurringChargeId
-- Egy nofication url-re (opcionális) - notificationUrl
+We need:
+- A button on the interface of our application, with which the subscriber can start the exchange
+- For the identifier of the Recurring payment - recurringChargeId
+- To a notification url (optional) - notificationUrl
 
-**Fontos:** 
-- Csak a ACTIVE és FROZEN státuszú és
-- csak a 2021.05.19-ke után 
+**Important:**
+- Only ACTIVE and FROZEN status and
+- you can only apply for a card change for subscriptions created after 19.05.2021.
 
-létrejött előfizetések esetén lehet kérvényezni a kártyacserét.
+## Entry point
 
-## Belépési pont
+POST https://<shopname>.api.myshoprenter.hu/billing/fundingSourceChanges
 
-POST https://<bolt_név>.api.myshoprenter.hu/billing/fundingSourceChanges
-
-Példa payload:
+Example payload:
 
 ```javascript
 {
@@ -45,7 +43,7 @@ Példa payload:
 }
 ```
 
-Példa response:
+Example response:
 
 ```javascript
 {
@@ -59,13 +57,13 @@ Példa response:
 }
 ```
 
-A kártyacsere folyamat során generálódó státuszokról itt olvashatsz: [Kártya csere státuszok](./k_statuses.md) 
+You can read about the statuses generated during the card change process here: [Card exchange statuses](./k_statuses.md)
 
-## Tesztelés
+## Testing
 
-Teszteléshez szükségünk van egy teszt Ismétlődő díjfizetésre, erről [itt](./e_test.md) olvashatsz bővebben. Ezen a fizetésen végrehajtott bankkártya csere is a teszt rendszerben fog történni.
+For testing, we need a test Recurring payment, you can read more about it [here](./e_test.md). The bank card change performed on this payment will also take place in the test system.
 
 ## Webhook
 
-Itt is van lehetőség értesítést kérni az állapot változásokról a kártyacsere folyamattal kapcsolatosan.
-További információt itt találsz: [Értesítés webhookok - a notificationUrl](./l_notifications.md)
+Here, too, it is possible to request a notification about status changes related to the card replacement process.
+More information can be found here: [Notification webhooks - a notificationUrl](./l_notifications.md)

@@ -1,20 +1,20 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTM1ODAmbGFuZ3VhZ2VfaWQ9MQ==]]></href>
     <id><![CDATA[cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTM1ODAmbGFuZ3VhZ2VfaWQ9MQ==]]></id>
-    <name><![CDATA[Termék név]]></name>
+    <name><![CDATA[Product name]]></name>
     <metaTitle><![CDATA[Meta title]]></metaTitle>
-    <metaKeywords><![CDATA[Meta kulcsszavak]]></metaKeywords>
-    <metaDescription><![CDATA[Meta leírás]]></metaDescription>
-    <shortDescription><![CDATA[Rövid leírás]]></shortDescription>
-    <description><![CDATA[Hosszú leírás]]></description>
-    <customContentTitle><![CDATA[Egyedi tartalom címe]]></customContentTitle>
-    <customContent><![CDATA[Egyedi tartalom]]></customContent>
-    <parameters><![CDATA[Paraméterek]]></parameters>
-    <packagingUnit><![CDATA[csomag]]></packagingUnit>
+    <metaKeywords><![CDATA[Meta keywords]]></metaKeywords>
+    <metaDescription><![CDATA[Meta description]]></metaDescription>
+    <shortDescription><![CDATA[LongShortdescription]]></shortDescription>
+    <description><![CDATA[Long description]]></description>
+    <customContentTitle><![CDATA[Custom content title]]></customContentTitle>
+    <customContent><![CDATA[Custom content]]></customContent>
+    <parameters><![CDATA[Parameters]]></parameters>
+    <packagingUnit><![CDATA[package]]></packagingUnit>
     <measurementUnit><![CDATA[db]]></measurementUnit>
     <dateCreated><![CDATA[2013-08-08T12:30:00]]></dateCreated>
     <dateUpdated><![CDATA[2013-08-08T12:30:00]]></dateUpdated>
-    <videoCode><![CDATA[Youtube videók kódja]]></videoCode>
+    <videoCode><![CDATA[Youtube video code]]></videoCode>
     <product>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTEzNTgw]]></href>
     </product>

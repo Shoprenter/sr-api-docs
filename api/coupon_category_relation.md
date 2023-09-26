@@ -1,13 +1,13 @@
 # Coupon Category Relation Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'coupon_category_relation'" :lang="'hu'"/>
+<ResourceProperties :resource="'coupon_category_relation'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'coupon_category_relation'" :endpoint="'delete'" :lang="'en'"/>
 

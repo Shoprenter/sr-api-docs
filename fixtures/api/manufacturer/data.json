@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Gyártó azonosító. Az OuterID módosítására szolgál.",
-                "en": "Gyártó azonosító. Az OuterID módosítására szolgál."
+                "en": "Manufacturer identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Gyártó belső azonosító.",
-                "en": "Gyártó belső azonosító."
+                "en": "Manufacturer internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név.",
-                "en": "Név."
+                "en": "Name."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "picture",
             "description": {
-                "hu": "Kép.",
-                "en": "Kép."
+                "en": "Image."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend.",
-                "en": "Sorrend."
+                "en": "Order."
             },
             "required": false,
             "readonly": false
@@ -48,7 +43,6 @@
         {
             "name": "robotsMetaTag",
             "description": {
-                "hu": "Robots meta tag.",
                 "en": "Robots meta tag."
             },
             "required": false,
@@ -57,8 +51,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -66,8 +59,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": true
@@ -75,8 +67,7 @@
         {
             "name": "manufacturerDescriptions",
             "description": {
-                "hu": "Gyártó leírások linkje.",
-                "en": "Gyártó leírások linkje."
+                "en": "Manufacturer descriptions link."
             },
             "required": false,
             "readonly": false
@@ -86,12 +77,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/manufacturers\/gyártó id",
-                "en": "\/manufacturers\/gyártó id"
+                "en": "\/manufacturers\/manufacturer id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -102,47 +91,40 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/manufacturers",
                 "en": "\/manufacturers"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Gyártó belső azonosító.",
-                        "en": "Kereső paraméter. Gyártó belső azonosító."
+                        "en": "Search parameter. Manufacturer internal identifier."
                     }
                 },
                 {
                     "name": "name",
                     "description": {
-                        "hu": "Kereső paraméter. Gyártó neve.",
-                        "en": "Kereső paraméter. Gyártó neve."
+                        "en": "Search parameter. Manufacturer name."
                     }
                 }
             ],
@@ -154,49 +136,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/manufacturers[\/gyártó id]",
-                "en": "\/manufacturers[\/gyártó id]"
+                "en": "\/manufacturers[\/manufacturer id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/manufacturers",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/manufacturers\/gyártó id",
-                "en": "\/manufacturers\/gyártó id"
+                "en": "\/manufacturers\/manufacturer id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/manufacturers\/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/manufacturers\/gyártó id",
-                "en": "\/manufacturers\/gyártó id"
+                "en": "\/manufacturers\/manufacturer id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/manufacturers\/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD0x",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

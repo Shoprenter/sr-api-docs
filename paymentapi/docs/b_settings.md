@@ -1,43 +1,41 @@
-# Szükséges beállítások
+# Required settings
 
-A Payment API-t csak a Shoprenteres alkalmazások értékesítésére használható. Következésképpen, ahhoz, hogy hozzáférjünk és fizetéseket hozzunk létre, használatához szükséges a Shoprenter API hozzáférés.
+The Payment API can only be used to sell Shoprenter applications. Consequently, in order to access and create payments, you need access to the Shoprenter API.
 
-A Payment API két legfontosabb végpontja a
-- [boltnev].api.myshoprenter.hu/billing/recurringCharges
-- [boltnev].api.myshoprenter.hu/billing/oneTimeCharges
+The two most important endpoints of the Payment API are a
+- [store name].api.myshoprenter.hu/billing/recurringCharges
+- [store name].api.myshoprenter.hu/billing/oneTimeCharges
 
-Ezek elérésehez szükséges az adott alkalmazás telepítése során megszerzett username/password páros, amellyekkel bármely más Shoprenter API resource-ot is használjuk.
+To access them, you need the username/password pair obtained during the installation of the given application, with which we also use any other Shoprenter API resource.
 
-A Payment API használata előtt - ha már van alkalmazásunk - igényelnünk kell a partnersupport@shoprenter.hu
-email címen keresztül egy felhasználó nevet és egy token-t. A ShopRenter munkatársai regisztrálják a kérést
-és ezután használatba vehető az API. Ekkor egy felhasználó név és token párost készítünk el ami a ShopRenter
-Partner Dashboard oldalra való belépést biztosítja.
+Before using the Payment API - if we already have an application - we must apply to partnersupport@shoprenter.hu
+a username and a token via email address. ShopRenter employees register the request
+and then the API can be used. Then we create a username and token pair, which is ShopRenter
+Provides access to the Partner Dashboard page.
 
-A tokent a fent említett két, fizetés létrehozására szolgáló végpont hívásainál se header-ben, se pedig a POST kérés payload-jában nem kell elhelyezni!
+The token does not have to be placed either in the header or in the payload of the POST request when calling the two endpoints mentioned above for creating payments!
 
-A Shoprenter Partner Dashboardon tekinthetőek meg a pénzügyi kimutatások az alkalmazásra vonatkozóan és
- kezelhetőek a fizetési tervek is: https://billing.shoprenter.hu/login
+Financial statements for the application can be viewed on the Shoprenter Partner Dashboard and
+payment plans can also be managed: https://billing.shoprenter.hu/login
 
+*Important!** **The username and password are application specific!**
+So if we have multiple apps, each app needs separate access.
 
-**Fontos!** **A felhasználó név és jelszó alkalmazás specifikus!**
-Tehát ha több alkalmazásunk van, minden alkalmazáshoz külön hozzáférést kell igényelni.
+In any case, fill in the billing data of the requested test store with the correct data, since in the case of incomplete billing data, the system cannot issue an invoice, so the lack of these settings also prevents the creation of payments.
+The most important data is the email address, as the system will send it here in test mode
+the billing data summary test email.
 
+All relevant data can be modified in the "My Account" menu item on the test shop's admin interface. Link: https://Something.shoprenter.hu/admin/sales/account#/billingAddress
 
-Az igényelt teszt bolt számlázási adatait minden esetben a megfelelő adatokkal töltsük ki, hiszen hiányos számlázási adatok esetén, a rendszer nem képes számlát kiállítani, így ezen beállítások hiánya a fizetések létrehozását is gátolja.
-A legfontosabb adat az email cím, mivel teszt üzemmódban ide fogja kiküldeni a rendszer
-a számlázási adat-összesítő teszt emailt. 
+It is recommended to store the identifier of the prepared payments, which
+the
+- [shop name].api.myshoprenter.hu/billing/recurringCharges ( [Recurring charge payment](../docs/recurring_charge.md) )
+- [shop name].api.myshoprenter.hu/billing/oneTimeCharges ( [One-time charge payment](../docs/one_time_charge.md) )
 
-Minden ide vonatkozó adatot a teszt bolt admin felületén a "Fiókom" menüpontban tudnak módosítani. Link: https://valami.shoprenter.hu/admin/sales/account#/billingAddress
+they arrive in endpoint responses.
 
-Ajánlott letárolni az elkészített fizetések azonosítóját, amelyek 
-a
-- [boltnev].api.myshoprenter.hu/billing/recurringCharges ( [Ismétlődő díjfizetés](../docs/recurring_charge.md) )
-- [boltnev].api.myshoprenter.hu/billing/oneTimeCharges ( [Egyszeri díjfizetés](../docs/one_time_charge.md) )
+From the messages received in [Notification webhooks](../docs/notifications.md), the partner is informed which status the given payment has changed to.
 
-végpontok válaszaiban érkeznek.
+E.g.: In the case of a Recurring fee payment, some problem occurred with the card to be charged during the next charging attempt, so a webhook is received from the Payment API informing the user that the Recurring Charge with ID 2345 has switched to FROZEN status.
 
-Az [Értesítési webhookokban](../docs/notifications.md)  érkező üzenetekből értesül a partner, hogy az adott fizetés, mely státuszba váltott át.
-
-Pl.: Egy Ismétlődő díjfizetés esetén a terhelendő kártyával valamilyen probléma történt a soron következő terhelési kisérlet alatt, így a Payment API-tól érkezik egy webhook, melyben értesül a felhasználó, hogy a 2345-ös azonosítóval rendelkező Recurring Charge FROZEN állapotra váltott át.
-
-Így ahhoz, hogy követni tudják az állapot változásokat, az alkalmazás fejlesztőknek szükséges saját adatbázist kialakítani a futó fizetések nyomonkövetéséhez.
+Thus, in order to be able to follow the status changes, the application developers need to create their own database to track ongoing payments.

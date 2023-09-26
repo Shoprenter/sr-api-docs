@@ -1,13 +1,13 @@
 # Product Special Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'product_special'" :lang="'hu'"/>
+<ResourceProperties :resource="'product_special'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'product_special'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_special'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'product_special'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_special'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'product_special'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_special'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'product_special'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_special'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,9 +87,9 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_special'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'product_special'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példák
+## Examples
 
-- [**Akciós termék**](../development/api-examples/01_0_product_special.md)
-- [**Nap terméke**](../development/api-examples/01_1_product_special_product_of_day.md)
+- [**Product Special**](../development/api-examples/01_0_product_special.md)
+- [**Product of day**](../development/api-examples/01_1_product_special_product_of_day.md)

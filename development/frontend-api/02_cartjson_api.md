@@ -4,11 +4,11 @@
 GET /cart.json
 ```
 
-Ezt az endpointot lehet használni, ha szeretnénk kikérni a kosár tartalmát JavaScripttel.
+This endpoint can be used if we want to retrieve the contents of the shopping cart with JavaScript.
 
-A válasz JSON formátumban kerül átadásra.
+The response is passed in JSON format.
 
-Példa:
+Example:
 ```json
 {
     "subTotal": 1950,
@@ -46,7 +46,7 @@ Példa:
 }
 ```
 
-Példa üres kosárra:
+Example of an empty basket:
 ```json
 {
     "subTotal": 0,
@@ -59,7 +59,7 @@ Példa üres kosárra:
 }
 ```
 
-Példakód a használatra:
+Example code to use:
 ```javascript
 $.ajax({
     type: 'GET',
@@ -76,7 +76,7 @@ $.ajax({
 GET /cart/reload/{token}
 ```
 
-Ez az endpoint a kosár visszatöltésére szolgál.
-A token helyére a cart tokent kell megadni.
-Ha helyes tokent adtunk meg, akkor visszakapjuk az adott tokenhez tartozó kosár tartalmat, majd átirányít minket a kosár oldalra.
-Ha rossz tokent adunk át, akkor nem változik a kosár tartalma, de szintén átirányít a kosár oldalra.
+This endpoint is used to refill the cart.
+The cart token must be entered instead of the token.
+If we have entered the correct token, we will get back the basket contents corresponding to the given token, and then we will be redirected to the basket page.
+If the wrong token is handed over, the contents of the basket will not change, but you will also be redirected to the basket page.

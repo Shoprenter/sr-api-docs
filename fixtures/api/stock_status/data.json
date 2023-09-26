@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Raktár állapot azonosító.",
-                "en": "Raktár állapot azonosító."
+                "en": "Stock status identifier."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "stockStatusDescriptions",
             "description": {
-                "hu": "Raktár állapot leírások linkjei.",
-                "en": "Raktár állapot leírások linkjei."
+                "en": "Stock status descriptions link."
             },
             "required": false,
             "readonly": false
@@ -23,12 +21,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/stockStatuses\/Raktár állapot id",
-                "en": "\/stockStatuses\/Raktár állapot id"
+                "en": "\/stockStatuses\/Stock status id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -39,33 +35,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/stockStatuses",
                 "en": "\/stockStatuses"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],

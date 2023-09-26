@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Adó kulcs azonosító.",
-                "en": "Adó kulcs azonosító."
+                "en": "Tax rate identifier."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "priority",
             "description": {
-                "hu": "Prioritás.",
-                "en": "Prioritás."
+                "en": "Priority."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "rate",
             "description": {
-                "hu": "Ráta.",
-                "en": "Ráta."
+                "en": "Rate."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "description",
             "description": {
-                "hu": "Hosszú leírás.",
-                "en": "Hosszú leírás."
+                "en": "Length description."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "geoZone",
             "description": {
-                "hu": "Geo Zóna linkje.",
-                "en": "Geo Zóna linkje."
+                "en": "Geo zone link."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": true,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": true,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "taxClass",
             "description": {
-                "hu": "Adó osztály linkje.",
-                "en": "Adó osztály linkje."
+                "en": "Tax class link."
             },
             "required": false,
             "readonly": false
@@ -77,12 +69,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/taxRates\/adó kulcs id",
-                "en": "\/taxRates\/adó kulcs id"
+                "en": "\/taxRates\/tax rate id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -93,40 +83,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/taxRates",
                 "en": "\/taxRates"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "taxClassId",
                     "description": {
-                        "hu": "Kereső paraméter (Adó osztály azonosító).",
-                        "en": "Kereső paraméter (Adó osztály azonosító)."
+                        "en": "Search parameter (Tax class identifier)."
                     }
                 }
             ],

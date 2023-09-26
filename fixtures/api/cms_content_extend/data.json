@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szöveges tartalom azonosító. Az OuterID módosítására szolgál."
+                "en": "Text content identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Szöveges tartalom belső azonosító.",
-                "en": "Szöveges tartalom belső azonosító."
+                "en": "Text content internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend a többi szöveges tartalomhoz képest.",
-                "en": "Sorrend a többi szöveges tartalomhoz képest."
+                "en": "Order relative to other textual content."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "enabled",
             "description": {
-                "hu": "Engedélyezett-e?",
-                "en": "Engedélyezett-e?"
+                "en": "Is it enabled?"
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "author",
             "description": {
-                "hu": "A szerző neve.",
-                "en": "A szerző neve."
+                "en": "The name of the author."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "showIntroText",
             "description": {
-                "hu": "Bevezető megjelenítése.",
-                "en": "Bevezető megjelenítése."
+                "en": "Show intro text."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "introPicturePath",
             "description": {
-                "hu": "Bevezető kép elérési útja.",
-                "en": "Bevezető kép elérési útja."
+                "en": "Intro picture path."
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "showAuthorName",
             "description": {
-                "hu": "Szerző megjelenítése.",
-                "en": "Szerző megjelenítése."
+                "en": "Show author name."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "showDateCreated",
             "description": {
-                "hu": "Dátum megjelenítése.",
-                "en": "Dátum megjelenítése."
+                "en": "Show date created."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "datePublished",
             "description": {
-                "hu": "A közzététel dátuma. (Y-m-d\\TH:i:s)",
-                "en": "A közzététel dátuma. (Y-m-d\\TH:i:s)"
+                "en": "The date when published. (Y-m-d\\TH:i:s)"
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "A létrohozás dátuma. (Y-m-d\\TH:i:s)",
-                "en": "A létrehozás dátuma. (Y-m-d\\TH:i:s)"
+                "en": "The date when created. (Y-m-d\\TH:i:s)"
             },
             "required": false,
             "readonly": true
@@ -102,8 +91,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "A módosítás dátuma. (Y-m-d\\TH:i:s)",
-                "en": "A módosítás dátuma. (Y-m-d\\TH:i:s)"
+                "en": "The date when updated. (Y-m-d\\TH:i:s)"
             },
             "required": false,
             "readonly": true
@@ -111,8 +99,7 @@
         {
             "name": "cmsContentDescriptions",
             "description": {
-                "hu": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",
-                "en": "\n                        A szöveges tartalomhoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    "
+                "en": "\n                        Links of the descriptions belong to the text content.<br>\n                        In case of adding javascript, it must use a <strong>type=\"text/javascript\"</strong> attribute in the script tag.\n                    "
             },
             "required": true,
             "readonly": false
@@ -122,12 +109,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/cmsContentExtend\/szöveges tartalom id",
-                "en": "\/cmsContentExtend\/szöveges tartalom id"
+                "en": "\/cmsContentExtend\/text content id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -138,40 +123,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/cmsContentExtend",
                 "en": "\/cmsContentExtend"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Szöveges tartalom belső azonosító.",
-                        "en": "Kereső paraméter. Szöveges tartalom belső azonosító."
+                        "en": "Search parameter. Text content internal identifier."
                     }
                 }
             ],
@@ -183,49 +162,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/cmsContentExtend[\/szöveges tartalom id]",
-                "en": "\/cmsContentExtend[\/szöveges tartalom id]"
+                "en": "\/cmsContentExtend[\/text content id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/cmsContentExtend",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/cmsContentExtend\/szöveges tartalom id",
-                "en": "\/cmsContentExtend\/szöveges tartalom id"
+                "en": "\/cmsContentExtend\/text content id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/cmsContentExtend\/szöveges tartalom id",
-                "en": "\/cmsContentExtend\/szöveges tartalom id"
+                "en": "\/cmsContentExtend\/text content id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

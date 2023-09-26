@@ -1,13 +1,13 @@
 # CMS Content Description Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'cms_content_description'" :lang="'hu'"/>
+<ResourceProperties :resource="'cms_content_description'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'cms_content_description'" :endpoint="'delete'" :lang="'en'"/>
 

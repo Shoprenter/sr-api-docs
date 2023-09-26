@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Súly mérték leírás azonosító.",
-                "en": "Súly mérték leírás azonosító."
+                "en": "Weight class description identifier."
             },
             "required": false,
             "readonly": true
@@ -12,8 +11,7 @@
         {
             "name": "title",
             "description": {
-                "hu": "Súlymérték megnevezése.",
-                "en": "Súlymérték megnevezése."
+                "en": "Weight class title."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "unit",
             "description": {
-                "hu": "Rövidítés.",
-                "en": "Rövidítés."
+                "en": "unit."
             },
             "required": false,
             "readonly": true
@@ -30,8 +27,7 @@
         {
             "name": "weightClass",
             "description": {
-                "hu": "Súly érték link.",
-                "en": "Súly érték link."
+                "en": "Weight value link."
             },
             "required": false,
             "readonly": true
@@ -39,8 +35,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Nyelv link.",
-                "en": "Nyelv link."
+                "en": "Language link."
             },
             "required": false,
             "readonly": true
@@ -50,12 +45,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/weightClassDescriptions\/súly mérték leírás id",
-                "en": "\/weightClassDescriptions\/súly mérték leírés id"
+                "en": "\/weightClassDescriptions\/weight class description id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -66,33 +59,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/weightClassDescriptions",
                 "en": "\/weightClassDescriptions"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],

@@ -1,6 +1,6 @@
 {
-    "name": "Név",
-    "valueName": "A Verzió",
+    "name": "Name",
+    "valueName": "A Version",
     "price": "1000.0000",
     "prefix": "+",
     "orderProduct": {

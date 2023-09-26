@@ -17,9 +17,9 @@
         {
             "href": "http://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=",
             "id": "Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=",
-            "title": "Szöveges tartalom címe",
-            "description": "Szöveges tartalom leírása",
-            "introText": "Szöveges tartalom bevezető szöveg",
+            "title": "Text content title",
+            "description": "Text content description",
+            "introText": "Text content Introductory text",
             "cmsContent": {
                 "href": "http://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zNg=="
             },
@@ -30,9 +30,9 @@
         {
             "href": "http://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM3Jmxhbmd1YWdlX2lkPTE=",
             "id": "Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM3Jmxhbmd1YWdlX2lkPTE=",
-            "title": "Szöveges tartalom címe 2",
-            "description": "Szöveges tartalom leírása 2",
-            "introText": "Szöveges tartalom bevezető szöveg 2",
+            "title": "Text content title 2",
+            "description": "Text content description 2",
+            "introText": "Text content Introductory text 2",
             "cmsContent": {
                 "href": "http://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zNw=="
             },

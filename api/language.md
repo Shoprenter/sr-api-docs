@@ -1,13 +1,13 @@
 # Language Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'language'" :lang="'hu'"/>
+<ResourceProperties :resource="'language'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'language'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'language'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'language'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'language'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

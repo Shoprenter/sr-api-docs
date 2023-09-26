@@ -1,92 +1,93 @@
-# Gyakori kérdések
+# Frequently asked Questions
 
-#### Ha le akarom kérdezni egy resource adatait, akkor nekem kell a base64-es resource kódot legenerálnom?
+#### If I want to query the data of a resource, do I have to generate the base64 resource code?
 
-Ez a legelső lépés, amit el szoktak rontani az API-ra történő fejlesztésnél. Ne generáld magadnak az azonosítókat! Miért? Időközben a resource azonosítás változhat az API-ban, esetleg teljesen átalakulhat a linkek generálása részünkről. URL visszafejtéssel sose foglalkozz. Bár így több lekérdezést kell elvégezned, de nem fogsz függeni a resource azonosításának funkcionalitásától.
+This is the very first step that is often messed up when developing for the API. Do not generate IDs for yourself! Why? In the meantime, the resource identification may change in the API, or the generation of links may be completely transformed on our part. Never deal with URL decryption. Although you have to perform more queries this way, you will not depend on the resource identification functionality.
 
 ---
 
-#### Mi a helyes megoldás, ha mégis konkrét resource-ra szeretnék rákérdezni?
+#### What is the correct solution if I still want to ask about a specific resource?
 
-Ez helyzetfüggő, ha konkrétan tudod, mire akarsz rákérdezni az API-ból, akkor már legalább egy resource ID-d van. A termékeknél például van lehetőség **_sku_** szerint lekérdezni. Még egy lehetőség az Outer ID használata. Arról, hogy hogyan tudsz kereső paramétereket használni egy adott resource-nál vagy hogyan lehet létrehozni Outer ID-kat, a dokumentációban olvashatsz bővebben:
+This depends on the situation, if you know specifically what you want to ask from the API, then you already have at least one resource ID. For products, for example, it is possible to query by **_sku_**. Another option is to use Outer ID. You can read more about how you can use search parameters for a specific resource or how to create Outer IDs in the documentation:
 
 - [Product Resource](../../api/product.md)
 - [Outer ID](../api/05_outer_id.md)
 
 ---
 
-#### Az Outer ID-t is base64 formában kellene létrehoznunk?
+#### Should we also create the Outer ID in base64 format?
 
-Nem, az Outer ID bármilyen string lehet. A lényeg, hogy ezt a ti oldalatokon letárolva, 
-könnyen lekérdezhettek resource-okat, nem kell a base64-es resource azonosítókkal bajlódnotok.
-
----
-
-#### Az app fejlesztésekor nekünk kell kérni a felhasználótól az API autentikációs adatokat?
-
-Nem, ez teljesen automatikus. Mikor települ az appotok, az autentikációs URL-eken lévő kód
- fogja elkérni az aktuális ShopRenter bolthoz az API autentikációs adatokat. Itt le kell 
- mentenetek ezeket és ezt használva tudjátok elérni a bolt API-ját.
+No, Outer ID can be any string. The point is that by storing this on your pages,
+you could easily query resources, you don't have to worry about base64 resource identifiers.
 
 ---
 
-#### Mire szolgál a client secret és a client id, ha az API-nak van külön autentikációs adata?
+#### When developing the app, do we need to ask the user for API authentication data?
 
-A ShopRenter az appokkal való kommunikáció során Oauth szabványú hitelesítést használ.
-Ez arra szolgál, hogy az ShopRenter tudja, hogy tőletek származnak a kérések,
- illetve hogy ti is megbizonyosodjatok, hogy az ShopRenter kérések valóban az ShopRentertől érkeznek.
-
----
-
-#### Az ShopRenter adminon ugye az Integrációk menüpontban kellene látnom az appunkat. Miért nem látom?
-
-Nem ott fog megjelenni. Az applikációk az Alkalmazások menüpont alatt találhatóak meg.
+No, it's completely automatic. When the app is installed, the code on the authentication URLs
+will request the API authentication data for the current ShopRenter store. You have to get off here
+save these and use this to access the store's API.
 
 ---
 
-#### Új Vevő resource létrehozásánál milyen formátumú telefonszám az elfogadott?
+#### What is the use of client secret and client id if the API has separate authentication data?
 
-[https://github.com/googlei18n/libphonenumber](https://github.com/googlei18n/libphonenumber) package-et használjuk a 
-telefonszámok kezelésére. Érdemes áttanulmányozni, illetve ezt használni a telefonszámok 
-bevitelénél, így a formátum probléma elkerülhető.
-
----
-
-#### Új Vevő resource létrehozásánál, a jelszavakat miképpen kezeli a ShopRenter?
-
-A jelszavak kódolására bcryptet használunk, azaz nektek is így kell felvenni új Vevő (Customer) esetén.
+ShopRenter uses Oauth standard authentication when communicating with apps.
+This is to let ShopRenter know that the requests are coming from you,
+and for you to make sure that ShopRenter requests really come from ShopRenter.
 
 ---
 
-#### Ha rendelésekkel dolgozok, és nyomon akarom követni az újonnan beérkezett rendeléseket, mindig le kell kérdeznem az API-n keresztül az összes rendelést?
+#### I should see our app in the Integrations menu item on the ShopRenter admin. Why can not I see?
 
-Nem szükséges. Van lehetőség webhook-ot létrehozni például “Új rendelés feladás” eseményre, melynek megadható
-egy endpoint. Az esemény kiváltása után az általatok megadott URL-re a rendszer elküldi az új rendelés adatait. Bővebb információ a [WebHook Resource](../../api/webhook.md) oldalán.
-
----
-
-#### Mi a különbség az Extend resource-ok és a full kapcsoló között?
-**Extend resource:** Egy konkrét resource egyed adatainak kapcsolódó adatainak a lekérdezését, illetve módosítását tudjuk egyetlen egy kéréssel végrehajtani. (Pl. így megkaphatjuk egy termék adatait, illetve a hozzátartozó leírásokat és nem csak egy link-et kapunk a termék leírását tartalmazó resource egyedre.)
-
-**A full paraméter:** Egy resource egyed kollekció lekérdezésénél a normál resource-ok esetén a kapott listában csak a resource egyedekre mutató link-et látjuk. Ahhoz hogy elérjük a konkrét adatokat, egyedenként még egy kérést kell intéznünk a szerverhez. Hogy spórolni tudjunk a szükséges kérések számával, a `full=1` paraméterrel 1 lépésben kikérhetjük a kollekcióban az egyes resource egyedek adatait.
+It won't appear there. The applications can be found under the Applications menu item.
 
 ---
 
-#### Nem látjuk az alkalmazásunkat az iframe-ben, mi lehet a gond?
-'Refused to display' hibát kapunk a DevTools console-ban. A megjelenítést valószínűleg a 'X-Frame-Options' HTTP response header blokkolja, mivel ez jelzi a böngészőnek, hogy engedélyeznie kell-e az oldal megjelenítését.
-(Bővebben erről: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options))
+#### When creating a new Customer resource, which phone number format is accepted?
+
+[https://github.com/googlei18n/libphonenumber](https://github.com/googlei18n/libphonenumber) package is used for
+to manage phone numbers. It is worth studying and using the phone numbers
+input, so the format problem can be avoided.
 
 ---
 
-#### A cUrl hívás nem működik Batch API-val a terminálban, mi a gond?
-`-F` kapcsolóval küldöm a POST adatokat, de `40014 - 'POST is either empty or content length exceeds the limit of %s bytes'` hibát kapom.
-Az `-F` kapcsoló eleve `multipart/form-data`-ként küldi el az adatot, így nem kell a 'content-type' header-t mellékelned.
-(Bővebben erről: [https://ec.haxx.se/http-postvspost.html](https://ec.haxx.se/http-postvspost.html))
+#### When creating a new Customer resource, how does ShopRenter handle passwords?
+
+We use bcrypt to encode passwords, which means that you also have to enter them in the same way if you are a new customer.
 
 ---
 
-#### Új szöveges tartalom (Information Extend resource) felvétele után a tartalomban megadott javascript nem fut le és még csak hibát sem jelez ki, mi lehet a gond? 
-Amennyiben a szöveges tartalom rendelkezik script taggel, úgy kötelező megadni a **type="text/javascript"** attribute-ot. Példa:
+#### If I work with orders and want to track newly received orders, do I always have to query all orders through the API?
+
+Not necessary. It is possible to create a webhook, for example, for the "Order confirm" event, which can be specified
+an endpoint. After triggering the event, the system will send the data of the new order to the URL you specified. More information at [WebHook Resource](../../api/webhook.md).
+
+---
+
+#### What is the difference between Extend resources and the full switch?
+
+**Extend resource:** We can query and modify the related data of a specific resource individual with a single request. (For example, this way we can get the data of a product and the associated descriptions and not just a link to the individual resource containing the description of the product.)
+
+**The full parameter:** When querying a resource individual collection, in the case of normal resources, we only see links to resource individuals in the resulting list. In order to reach the specific data, we have to make one more request to the server for each individual. In order to save on the number of necessary requests, we can request the data of individual resource individuals in the collection in 1 step with the `full=1` parameter.
+
+---
+
+#### We don't see our application in the iframe, what could be the problem?
+We get a 'Refused to display' error in the DevTools console. Rendering is probably blocked by the 'X-Frame-Options' HTTP response header, as this tells the browser whether to allow the page to be rendered.
+(More on this: [https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options](https://developer.mozilla.org/en-US/docs/ Web/HTTP/Headers/X-Frame-Options))
+
+---
+
+#### cUrl call not working with Batch API in terminal, what's the problem?
+I send the POST data with the `-F' switch, but I get the error `40014 - 'POST is either empty or content length exceeds the limit of %s bytes''.
+The `-F' switch sends the data as `multipart/form-data', so you don't need to include the 'content-type' header.
+(More about this: [https://ec.haxx.se/http-postvspost.html](https://ec.haxx.se/http-postvspost.html))
+
+---
+
+#### After adding new text content (Information Extend resource), the javascript specified in the content does not run and does not even display an error, what could be the problem?
+If the text content has a script tag, it is mandatory to enter the **type="text/javascript"** attribute. Example:
 
 ```js
 <script type="text/javascript">

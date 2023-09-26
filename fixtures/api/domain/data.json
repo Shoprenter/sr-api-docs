@@ -3,8 +3,7 @@
         {
             "name": "url",
             "description": {
-                "hu": "Az adott domain url-je",
-                "en": "Az adott domain url-je"
+                "en": "The url of the domain"
             },
             "required": false,
             "readonly": true
@@ -12,8 +11,7 @@
         {
             "name": "primary",
             "description": {
-                "hu": "Az adott domain-e elsődleges domain-e? Ha nincs szülő domain, ez az érték '1'",
-                "en": "Az adott domain-e elsődleges domain-e? Ha nincs szülő domain, ez az érték '1'"
+                "en": "is this the primary domain? If no parent domain, then the value is '1'"
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Az adott domain nyelve",
-                "en": "Az adott domain nyelve"
+                "en": "Language link."
             },
             "required": false,
             "readonly": true
@@ -32,12 +29,10 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/domains",
                 "en": "\/domains"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [],
             "example": {

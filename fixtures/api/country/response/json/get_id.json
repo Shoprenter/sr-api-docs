@@ -1,7 +1,7 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
     "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3",
-    "name": "Magyarország",
+    "name": "Hungary",
     "isoCode2": "HU",
     "isoCode3": "HUN",
     "status": "1",
@@ -12,13 +12,13 @@
         {
             "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD01",
-            "name": "Magyarország",
+            "name": "Hungary",
             "description": "HUN"
         },
         {
             "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD02",
-            "name": "Európai Unió",
+            "name": "European Union",
             "description": "EU"
         }
     ]

@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szállítási  azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szállítási  azonosító. Az OuterID módosítására szolgál."
+                "en": "Shipping identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Belső azonosító.",
-                "en": "Belső azonosító."
+                "en": "internal identifier."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "cartMinimumGross",
             "description": {
-                "hu": "Minimum bruttó ár.",
-                "en": "Minimum bruttó ár."
+                "en": "Minimum gross price in cart."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "cartMaximumGross",
             "description": {
-                "hu": "Maximum bruttó ár.",
-                "en": "Maximum bruttó ár."
+                "en": "Maximum gross price in cart."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "costNet",
             "description": {
-                "hu": "Nettó költség.",
-                "en": "Nettó költség."
+                "en": "Net cost."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "weightMinimum",
             "description": {
-                "hu": "Minimum súly (kg).",
-                "en": "Minimum súly (kg)."
+                "en": "Minimum weight (kg)."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "weightMaximum",
             "description": {
-                "hu": "Maximum súly (kg).",
-                "en": "Maximum súly (kg)."
+                "en": "Maximum weight (kg)."
             },
             "required": false,
             "readonly": false
@@ -68,12 +61,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/shippingLanes\/szállítási mód fizetési sáv id",
-                "en": "\/shippingLanes\/szállítási mód fizetési sáv id"
+                "en": "\/shippingLanes\/shipping lane id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -84,33 +75,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/shippingLanes",
                 "en": "\/shippingLanes"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],
@@ -122,49 +108,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/shippingLanes[\/szállítási mód fizetési sáv id]",
-                "en": "\/shippingLanes[\/szállítási mód fizetési sáv id]"
+                "en": "\/shippingLanes[\/shipping lane id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/shippingLanes",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/shippingLanes\/szállítási mód fizetési sáv id",
-                "en": "\/shippingLanes\/szállítási mód fizetési sáv id"
+                "en": "\/shippingLanes\/shipping lane id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/shippingLanes\/c2hpcHBpbmdNb2RlLWlkPTg0",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/shippingLanes\/szállítási mód fizetési sáv id",
-                "en": "\/shippingLanes\/szállítási mód fizetési sáv id"
+                "en": "\/shippingLanes\/shipping lane id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/shippingLanes\/c2hpcHBpbmdNb2RlLWlkPTg0",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

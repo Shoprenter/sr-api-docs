@@ -1,13 +1,13 @@
 # Customer Group Product Price Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'customer_group_product_price'" :lang="'hu'"/>
+<ResourceProperties :resource="'customer_group_product_price'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'customer_group_product_price'" :endpoint="'delete'" :lang="'en'"/>
 

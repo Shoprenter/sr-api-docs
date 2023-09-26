@@ -1,6 +1,6 @@
 # ShopRenter.js
 
-Tartalomjegyzék
+Contents:
 * [ShopRenter Object](#shoprenter-object)
   * [Properties](#properties)
     * [customer](#customer)
@@ -26,25 +26,25 @@ Tartalomjegyzék
     * [onCustomerLoggedIn](#oncustomerloggedin)
     * [onCustomerUpdated](#oncustomerupdated)
     * [onCartPageViewed](#oncartpageviewed)
-    * [Események használata](#esemenyek-hasznalata)
+    * [Using_events](#esemenyek-hasznalata)
 
 ## ShopRenter Object
-A frontendre beépülő alkalmazásoknál szükség lehet olyan adatokra, melyek elengedhetetlenek az alkalmazás üzleti logikájához.
-A ShopRenter globális JavaScript objektum frontenden elérhető minden oldalbetöltődésnél, amely webshop adatokat tároló objektumokat és eseményfigyelőket tartalmaz.
+Applications that are integrated into the front end may require data that is essential for the business logic of the application.
+The ShopRenter global JavaScript object is available on the frontend for every page load, which contains objects and event monitors that store webshop data.
 
 ## Properties
 
 ### customer
-A bolt frontendjének minden oldalán lekérhető az aktuális Vevő néhány adata,
-melyet ShopRenter javascript objektum **customer** property-je tartalmazza. 
-Az objektum szenzitív adatokat nem tartalmaz, amely alapján azonosítható lenne a Vevő.
+Some data of the current Customer can be requested on each page of the store's frontend,
+which is contained in the **customer** property of the ShopRenter javascript object.
+The object does not contain sensitive data on the basis of which the Buyer could be identified.
 
-Példa:
+Example:
 ```javascript
 console.log(ShopRenter.customer);
 ```
 
-Kimenet:
+Output:
 ```javascript
 {
     userId: 0, 
@@ -59,61 +59,61 @@ Kimenet:
 }
 ```
 
-Egyes mezők jelentése:
+Meaning of some fields:
 <table> 
     <tr>
         <th>property</th>
-        <th>jelentés</th>
+        <th>meaning</th>
     </tr>
     <tr>
         <td>userId</td>
-        <td>A Vevő belső id-ja. Ha 0, akkor a Vevő nem regisztrált felhasználó</td>
+        <td>Internal ID of the Customer. If 0, then the Customer is not a registered user</td>
     </tr>
     <tr>
         <td>userGroupId</td>
-        <td>A vevő vásárlói csoportjának azonosítója</td>
+        <td>The customer's customer group ID</td>
     </tr>  
     <tr>
         <td>customerGroupTaxMode</td>
         <td>
-           Megadja az aktuális Vevő vásárlói csoportja szerint, hogy a <strong>termékoldalon kívül</strong>, milyen módon jelenjen meg az ár
+           According to the customer group of the current Buyer, you specify how the price should be displayed outside of the product page
            <ul>
-              <li><strong>gross</strong>: Bruttó ár</li>
-              <li><strong>net</strong>: Nettó ár</li>
+              <li><strong>gross</strong>: Gross price</li>
+              <li><strong>net</strong>: Net price</li>
            </ul>
         </td>
     </tr> 
     <tr>
         <td>customerGroupPriceMode</td>
         <td>
-           Megadja az aktuális Vevő vásárlói csoportja szerint, hogy a <strong>termékoldalon</strong>, milyen módon jelenjen meg az ár
-              <li><strong>only_gross</strong>: Csak a bruttó ár kiírása</li>
-              <li><strong>gross_net_tax</strong>: Bruttó ár, mögötte zárójelben a nettó + ÁFA kiírása</li>
-              <li><strong>only_net</strong>: Csak a nettó ár kiírása</li>
-              <li><strong>net_tax</strong>: A nettó ár és mögötte a + ÁFA kiírása</li>
-              <li><strong>net_tax_gross</strong>: A nettó ár és mögötte a + ÁFA kiírása, illetve zárójelben a bruttó ár kiírása</li>
+           Specifies how the price should be displayed on the <strong>product page</strong> according to the customer group of the current Customer
+              <li><strong>only_gross</strong>: Only listing the gross price</li>
+              <li><strong>gross_net_tax</strong>: Gross price, followed by the net price + VAT in brackets</li>
+              <li><strong>only_net</strong>: Only display the net price</li>
+              <li><strong>net_tax</strong>: The net price and the +VAT behind it</li>
+              <li><strong>net_tax_gross</strong>: The net price followed by +VAT, and the gross price in parentheses</li>
         </td>
     </tr>
     <tr>
         <td>email</td>
-        <td>A vevő e-mail címe</td>
+        <td>Buyer's e-mail address</td>
     </tr>
     <tr>
         <td>name</td>
-        <td>A name objektum tartalmazza a vevő vezeték, illetve keresztnevét</td>
+        <td>The name object contains the line and first name of the receiver</td>
     </tr>
 </table>
 
 ### theme
-A bolt frontendjének minden oldalán lekérhető az aktuális sablon néhány adata,
-melyet ShopRenter javascript objektum **theme** property-je tartalmazza. 
+Some data of the current template can be requested on each page of the store's frontend,
+which is contained in the **theme** property of the ShopRenter javascript object.
 
-Példa:
+Example:
 ```javascript
 console.log(ShopRenter.theme);
 ```
 
-Kimenet:
+Output:
 ```javascript
 {
     name: "tokyo_glacierblue", 
@@ -122,37 +122,37 @@ Kimenet:
 }
 ```
 
-Egyes mezők jelentése:
+Meaning of some fields:
 
 <table> 
     <tr>
         <th>property</th>
-        <th>jelentés</th>
+        <th>meaning</th>
     </tr>
     <tr>
         <td>name</td>
-        <td>A sablon neve</td>
+        <td>Name</td>
     </tr>
     <tr>
         <td>family</td>
-        <td>A sablon család neve, amelybe az aktuális sablon tartozik</td>
+        <td>The name of the template family to which the current template belongs</td>
     </tr>  
     <tr>
         <td>parent</td>
-        <td>A szülő sablon neve</td>
+        <td>The name of the parent template</td>
     </tr>
 </table>
 
 ### shop
-A bolt frontendjének minden oldalán lekérhető a bolt fontosabb adata,
-melyet ShopRenter javascript objektum **theme** property-je tartalmazza. 
+The store's most important data can be requested on all pages of the store's frontend,
+which is contained in the **theme** property of the ShopRenter javascript object.
 
-Példa:
+Example:
 ```javascript
 console.log(ShopRenter.shop);
 ```
 
-Kimenet:
+Output:
 ```javascript
 {
     name: "tokyo", 
@@ -165,28 +165,28 @@ Kimenet:
 }
 ```
 
-Egyes mezők jelentése:
+Meaning of some fields:
 <table> 
     <tr>
         <th>property</th>
-        <th>jelentés</th>
+        <th>meaning</th>
     </tr>
     <tr>
         <td>name</td>
-        <td>A bolt neve</td>
+        <td>Name of the shop</td>
     </tr>
     <tr>
         <td>locale</td>
-        <td>A bolt aktuális frontend nyelve</td>
+        <td>The shop's current frontend language</td>
     </tr>  
     <tr>
         <td>currency</td>
         <td>
-           A bolt aktuális valutájára vonatkozó adatok:
+           Data on the current currency of the shop::
            <ul>
-              <li><strong>code</strong>: A valuta nyelvi kódja</li>
-              <li><strong>rate</strong>: A bolt alapértelmezett valutájához mérten használt pénznem váltó érték.
-                  Pl.: 1-et kell elosztanunk az adott pénznem árfolyamának értékével, például ha a valuta árfolyama 195 Ft, akkor az értékmező: 1/195, tehát 0,005128 lesz a rate
+              <li><strong>code</strong>: The language code of the currency</li>
+              <li><strong>rate</strong>: Currency exchange value used for the shop's default currency.
+                  E.g.: we must divide 1 by the value of the exchange rate of the given currency, for example, if the exchange rate of the currency is HUF 195, then the value field is: 1/195, so the rate will be 0.005128
               </li>
            </ul>
         </td>
@@ -194,47 +194,47 @@ Egyes mezők jelentése:
     <tr>
         <td>domain</td>
         <td>
-           A bolt rendszer domain-ja
+           The system domain of the shop
         </td>
     </tr>
 </table>
 
 ### page
-A ShopRenter objektum **page** property tartalmazza az aktuális oldal adatait.
+The **page** property of the ShopRenter object contains the data of the current page.
 
-Példa:
+Example:
 ```javascript
 console.log(ShopRenter.page);
 ```
 
-Kimenet:
+Output:
 ```javascript
 {
     route: "product/list"
 }
 ```
 
-Egyes mezők jelentése:
+Meaning of some fields:
 <table> 
     <tr>
         <th>property</th>
-        <th>jelentés</th>
+        <th>meaning</th>
     </tr>
     <tr>
         <td>route</td>
-        <td>Az adott aloldal route értéke</td>
+        <td>The route value of the given subpage</td>
     </tr>
 </table>
 
 ### product
-A ShopRenter objektum **product** property tartalmazza a termékhez tartozó információkat. Ez a property csak termékoldalon érhető el!
+The **product** property of the ShopRenter object contains the information related to the product. This property is only available on the product page!
 
-Példa:
+Example:
 ```javascript
 console.log(ShopRenter.product);
 ```
 
-Kimenet:
+Output:
 ```javascript
 {
     id: "201",
@@ -246,41 +246,41 @@ Kimenet:
 }
 ```
 
-Egyes mezők jelentése:
+Meaning of some fields:
 <table> 
     <tr>
         <th>property</th>
-        <th>jelentés</th>
+        <th>meaning</th>
     </tr>
     <tr>
         <td>id</td>
-        <td>Az aktuális termék azonosítója</td>
+        <td>The identifier of the current product</td>
     </tr>
     <tr>
         <td>sku</td>
-        <td>Az aktuális termék cikkszáma</td>
+        <td>The sku of the current product</td>
     </tr>
     <tr>
         <td>parent.id</td>
-        <td>Az szülő termék azonosítója</td>
+        <td>The ID of the parent product</td>
     </tr>
     <tr>
         <td>parent.sku</td>
-        <td>Az szülő termék cikkszáma</td>
+        <td>The sku of the parent product</td>
     </tr>
 </table>
 
 ## Events
-A ShopRenter egyes kosár és vásárlótól származó események bekövetkezésekor kiváltanak olyan javascript eseményeket, melyre feliratkozva, azok kiváltódása után, további viselkedést valósíthatunk meg.
+ShopRenter triggers javascript events when certain shopping cart and customer events occur, to which additional behavior can be implemented by subscribing to them.
 
-Az új, hozzáadott eseményfigyelők (Event Listener) megkapják az eseményhez tartozó adatokat.
+Newly added event listeners (Event Listeners) receive the data associated with the event.
 
-A rendszer az eseményt egy CustomEvent objektumba adja vissza, melynek a **detail** property-je tartalmazza az adott eseménnyel kapcsolatos adatokat.
+The system returns the event to a CustomEvent object, whose **detail** property contains the data related to the given event.
 
 ### onItemAdd
-Kosárba helyezés a bolt bármely részéről (modul termékkártya, termékoldal, kategóriaoldal). Megkapja a kosárba helyezett termék adatait.
+Add to cart from any part of the store (module product card, product page, category page). You will receive the data of the product placed in the basket.
 
-Példa:
+Example:
 ```json
 {
     "detail": {
@@ -312,9 +312,9 @@ Példa:
 ```
 
 ### onCartUpdate
-A kosár módosításakor (termék hozzáadásakor/törlésekor/módosításakor) végbemenő eseményre lehet feliratkozni. A feliratkozott eventlistener paraméterben megkapja a módosított kosár adatait.
+You can subscribe to an event that occurs when the basket is changed (when a product is added/deleted/changed). You will receive the modified basket data in the subscribed eventlistener parameter.
 
-Példa:
+Example:
 ```json
 {
     "detail": {
@@ -332,7 +332,7 @@ Példa:
                     "cartKey": "S7QytqrOtDKwzrQyNrQAkoYgbAQkjKwTrQytqoutzK2U8gtKMvPzipWAQgZW1bW1tQA=",
                     "download": [],
                     "cartItemType": "Product",
-                    "name": "Teszt termék akcióhoz",
+                    "name": "test product for sale",
                     "thumbWidth": "60",
                     "thumbHeight": "60",
                     "imageUrl": "https://demo.shoprenter.hu/custom/demo/image/cache/w60h60/no_image.jpg?lastmod=0.1560858478",
@@ -349,7 +349,7 @@ Példa:
                     "totalOriginalNumber": 120000,
                     "originalPriceNumber": 10000,
                     "isSpecial": false,
-                    "href": "https://demo.shoprenter.hu/teszt_termek_akciohoz_318",
+                    "href": "https://demo.shoprenter.hu/test_termek_akciohoz_318",
                     "values": [],
                     "displaySpecialPrice": false,
                     "isModified": false,
@@ -371,7 +371,7 @@ Példa:
                     "cartKey": "S7QytqrOtDKwzrQyNjQHkoZQbGSdaGVoVV1sZW6llF9QkpmfV6wEFDKwqq6trQUA",
                     "download": [],
                     "cartItemType": "Product",
-                    "name": "Teszt opciós termék",
+                    "name": "Test opciós termék",
                     "thumbWidth": "60",
                     "thumbHeight": "60",
                     "imageUrl": "https://demo.shoprenter.hu/custom/demo/image/cache/w60h60/no_image.jpg?lastmod=0.1560858478",
@@ -388,7 +388,7 @@ Példa:
                     "totalOriginalNumber": 10000,
                     "originalPriceNumber": 10000,
                     "isSpecial": false,
-                    "href": "https://demo.shoprenter.hu/teszt_opcios_termek_317",
+                    "href": "https://demo.shoprenter.hu/test_opcios_termek_317",
                     "values": [],
                     "displaySpecialPrice": false,
                     "isModified": false,
@@ -402,12 +402,12 @@ Példa:
                 "updatedItems": [
                   {
                     "sku": "TTA1234",
-                    "name": "Teszt termék akcióhoz",
+                    "name": "Test product for sale",
                     "quantityName": "db",
                     "oldQuantity": 11,
                     "newQuantity": 12,
                     "grossUnitPrice": 10000,
-                    "brand": "Teszt Kft."
+                    "brand": "Test Kft."
                   }
                 ]
               }
@@ -415,9 +415,9 @@ Példa:
 ```
 
 ### onItemDelete
-A kosárból való törlés eseményre lehet feliratkozni. A feliratkozott eventlistener paraméterben megkapja a törlés utáni kosár adatait.
+You can subscribe to the cart deletion event. In the subscribed eventlistener parameter, you will receive the data of the basket after deletion.
 
-Példa:
+Example:
 ```json
 {
     "detail": {
@@ -435,7 +435,7 @@ Példa:
                     "cartKey": "S7QytqrOtDKwzrQyNrQAkoYgbAQkjKwTrQytqoutzK2U8gtKMvPzipWAQgZW1bW1tQA=",
                     "download": [],
                     "cartItemType": "Product",
-                    "name": "Teszt termék akcióhoz",
+                    "name": "Test product for sale",
                     "thumbWidth": "60",
                     "thumbHeight": "60",
                     "imageUrl": "https://demo.shoprenter.hu/custom/demo/image/cache/w60h60/no_image.jpg?lastmod=0.1560858478",
@@ -452,7 +452,7 @@ Példa:
                     "totalOriginalNumber": 120000,
                     "originalPriceNumber": 10000,
                     "isSpecial": false,
-                    "href": "https://demo.shoprenter.hu/teszt_termek_akciohoz_318",
+                    "href": "https://demo.shoprenter.hu/test_termek_akciohoz_318",
                     "values": [],
                     "displaySpecialPrice": false,
                     "isModified": false,
@@ -474,7 +474,7 @@ Példa:
                     "cartKey": "S7QytqrOtDKwzrQyNjQHkoZQbGSdaGVoVV1sZW6llF9QkpmfV6wEFDKwqq6trQUA",
                     "download": [],
                     "cartItemType": "Product",
-                    "name": "Teszt opciós termék",
+                    "name": "Test product with option",
                     "thumbWidth": "60",
                     "thumbHeight": "60",
                     "imageUrl": "https://demo.shoprenter.hu/custom/demo/image/cache/w60h60/no_image.jpg?lastmod=0.1560858478",
@@ -491,7 +491,7 @@ Példa:
                     "totalOriginalNumber": 10000,
                     "originalPriceNumber": 10000,
                     "isSpecial": false,
-                    "href": "https://demo.shoprenter.hu/teszt_opcios_termek_317",
+                    "href": "https://demo.shoprenter.hu/test_opcios_termek_317",
                     "values": [],
                     "displaySpecialPrice": false,
                     "isModified": false,
@@ -510,7 +510,7 @@ Példa:
                     "quantity": 7,
                     "grossUnitPrice": 49990,
                     "grossTotalPrice": 349930,
-                    "brand": "Teszt Kft."
+                    "brand": "Test Kft."
                   }
                 ]
               }
@@ -518,19 +518,19 @@ Példa:
 ```
 
 ### onSearchResultViewed
-Termék keresési eredmény megjelenésekor bekövetkező esemény. Fontos, hogy nem a keresés pillanatában, hanem a keresési eredmény megjelenésekor váltódik ki az esemény.
+Event that occurs when a product search result appears. It is important that the event is not triggered at the moment of the search, but when the search result appears.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -556,19 +556,19 @@ Példa:
 ```
 
 ### onSubscribedForNewsletter
-Hírlevél feliratkozáskor bekövetkező esemény.
+Event that occurs when signing up for a newsletter.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test Firstname",
+        "lastName": "Test Lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -593,19 +593,19 @@ Példa:
 ```
 
 ### onCheckoutInitiated
-Pénztár folyamat elkezdésekor bekövetkező esemény.
+Event that occurs when the checkout process starts.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test First Name",
+        "lastName": "Test Last Name"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -636,8 +636,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2",
-          "brand": "gyártó"
+          "name": "Product 2",
+          "brand": "brand"
         },
         {
           "type": "product",
@@ -648,15 +648,15 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1",
-          "brand": "gyártó"
+          "name": "Product 1",
+          "brand": "branch"
         }
       ],
       "paymentMethod": {
         "name": "Barion"
       },
       "shippingMethod": {
-        "name": "Személyes átvétel"
+        "name": "Personal Pickup"
       },
       "grossTotalPrice": 8661.4,
       "couponCode": "TEST1234"
@@ -666,19 +666,19 @@ Példa:
 ```
 
 ### onCheckoutPaymentInfoAdded
-A pénztár folyamatban, sikeres fizetési adatok megadása után bekövetkező esemény.
+An event that occurs during the checkout process, after successful payment data has been entered.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test First Name",
+        "lastName": "Test Last Name"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -709,8 +709,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2",
-          "brand": "gyártó"
+          "name": "Product 2",
+          "brand": "brand"
         },
         {
           "type": "product",
@@ -721,15 +721,15 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1",
-          "brand": "gyártó"
+          "name": "Product 1",
+          "brand": "brand"
         }
       ],
       "paymentMethod": {
         "name": "Barion"
       },
       "shippingMethod": {
-        "name": "Személyes átvétel"
+        "name": "Personal pickup"
       },
       "couponCode": "TEST1234"
     }
@@ -738,19 +738,19 @@ Példa:
 ```
 
 ### onCheckoutShippingInfoAdded
-A pénztár folyamatban, sikeres szállítási adatok megadása után bekövetkező esemény.
+Event that occurs during the checkout process, after successful delivery data has been entered.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -781,7 +781,7 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2"
+          "name": "Product 2"
         },
         {
           "type": "product",
@@ -792,14 +792,14 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1"
+          "name": "Product 1"
         }
       ],
       "paymentMethod": {
         "name": "Barion"
       },
       "shippingMethod": {
-        "name": "Személyes átvétel"
+        "name": "Personal pickup"
       },
       "couponCode": "TEST1234"
     }
@@ -808,19 +808,19 @@ Példa:
 ```
 
 ### onCheckoutOrderConfirmed
-Rendelés rögzítésekor bekövetkező esemény. Fontos, hogy ekkor kerül rögzítésre a rendelés viszont a fizetettség ténye még nem ismert.
+Event that occurs when an order is recorded. It is important that the order is recorded at this time, but the fact of payment is not yet known.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztKeresztnév",
-        "lastName": "TesztVezetéknév"
+        "firstName": "Test lastname",
+        "lastName": "Test firstname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -846,11 +846,11 @@ Példa:
       "total": 9762.6696,
       "customer": {
         "name": {
-          "firstName": "TesztKeresztnév",
-          "lastName": "TesztVezetéknév"
+          "firstName": "Test lastname",
+          "lastName": "Test firstname"
         },
         "phoneNumber": "+36201234567",
-        "email": "teszt@shoprenter.hu"
+        "email": "test@shoprenter.hu"
       },
       "items": [
         {
@@ -862,8 +862,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2",
-          "brand": "gyártó"
+          "name": "Product 2",
+          "brand": "brand"
         },
         {
           "type": "product",
@@ -874,15 +874,15 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1",
-          "brand": "gyártó"
+          "name": "Product 1",
+          "brand": "brand"
         }
       ],
       "paymentMethod": {
         "name": "Barion"
       },
       "shippingMethod": {
-        "name": "Személyes átvétel",
+        "name": "Personal pickup",
         "grossTotal": 990
       },
       "couponCode": "TEST1234",
@@ -900,19 +900,19 @@ Példa:
 ```
 
 ### onCheckoutOrderPaid
-Sikeres rendelés kifizetéskor végbemenő esemény. Az esemény a rendelés leadásakor párhuzamosan végbe megy, ha offline fizetési formát választottak például Banki Átutalás, mert a nem bankártyával történő fizetéseket automatikusan sikeres fizetésként értelmezzük.
+Event that occurs when a successful order is paid. The event takes place in parallel when the order is placed, if an offline payment method has been chosen, for example Bank Transfer, because payments made without a bank card are automatically interpreted as a successful payment.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztKeresztnév",
-        "lastName": "TesztVezetéknév"
+        "firstName": "Test lastname",
+        "lastName": "Test firstname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -938,11 +938,11 @@ Példa:
       "total": 9762.6696,
       "customer": {
         "name": {
-          "firstName": "TesztKeresztnév",
-          "lastName": "TesztVezetéknév"
+          "firstName": "Test lastname",
+          "lastName": "Test firstname"
         },
         "phoneNumber": "+36201234567",
-        "email": "teszt@shoprenter.hu"
+        "email": "test@shoprenter.hu"
       },
       "items": [
         {
@@ -954,8 +954,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2",
-          "brand": "gyártó"
+          "name": "Product 2",
+          "brand": "brand"
         },
         {
           "type": "product",
@@ -966,8 +966,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1",
-          "brand": "gyártó"
+          "name": "Product 1",
+          "brand": "brand"
         }
       ],
       "couponCode": "TEST1234"
@@ -977,19 +977,19 @@ Példa:
 ```
 
 ### onCheckoutOrderPaidUnsuccessful
-Sikertelen online bankkártyás fizetéskor végbemenő esemény.
+Event that occurs when an online bank card payment fails.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztKeresztnév",
-        "lastName": "TesztVezetéknév"
+        "firstName": "Test lastname",
+        "lastName": "Test firstname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -1015,11 +1015,11 @@ Példa:
       "total": 9762.6696,
       "customer": {
         "name": {
-          "firstName": "TesztKeresztnév",
-          "lastName": "TesztVezetéknév"
+          "firstName": "Test lastname",
+          "lastName": "Test firstname"
         },
         "phoneNumber": "+36201234567",
-        "email": "teszt@shoprenter.hu"
+        "email": "test@shoprenter.hu"
       },
       "items": [
         {
@@ -1031,8 +1031,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2",
-          "brand": "gyártó"
+          "name": "Product 2",
+          "brand": "brand"
         },
         {
           "type": "product",
@@ -1043,8 +1043,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1",
-          "brand": "gyártó"
+          "name": "Product 1",
+          "brand": "brand"
         }
       ],
       "couponCode": "TEST1234"
@@ -1054,19 +1054,19 @@ Példa:
 ```
 
 ### onProductPageViewed
-Termékoldal megtekintéskor bekövetkező esemény.
+Event that occurs when viewing a product page.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -1083,7 +1083,7 @@ Példa:
     "event": {
       "id": "1661256412700-752",
       "time": 1661256412,
-      "sourceUrl": "https://demo.myshoprenter.hu/teszt-termek",
+      "sourceUrl": "https://demo.myshoprenter.hu/test-termek",
       "name": "ProductPageViewed"
     },
     "product": {
@@ -1093,7 +1093,7 @@ Példa:
       "grossUnitPrice": 787.4,
       "currency": "HUF",
       "quantity": 1,
-      "name": "Termék 1",
+      "name": "Product 1",
       "brand": "ShopRenter",
       "unit": "db"
     }
@@ -1102,19 +1102,19 @@ Példa:
 ```
 
 ### onMarketingConsentChanged
-Marketing cookiek elfogadás/tiltása esetén bekövetkező esemény.
+Event that occurs when marketing cookies are accepted/disallowed.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -1140,19 +1140,19 @@ Példa:
 ```
 
 ### onCustomerRegistered
-A vásárló regisztráció bekövetkező esemény.
+Customer registration is an event that occurs.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -1177,19 +1177,19 @@ Példa:
 ```
 
 ### onCustomerLoggedIn
-A vásárló bejelentkezésekor bekövetkező esemény.
+Event that occurs when the customer logs in.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -1214,19 +1214,19 @@ Példa:
 ```
 
 ### onCustomerUpdated
-A vásárló fiók adatainak módosításakor bekövetkező esemény.
+Event that occurs when customer account data is changed.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -1250,26 +1250,26 @@ Példa:
 }
 ```
 
-Nem regisztrált vásárlók esetén a ``user`` objektum egyes tulajdonságai üres stringek lehetnek. Továbbá regisztrálatlan látogató esetén a ``user.id`` nulla.
+In the case of unregistered customers, some properties of the ``user'' object can be empty strings. Furthermore, ``user.id'' is zero in the case of an unregistered visitor.
 
-A ``shippingMethod`` és ``paymentMethod`` objektumok egyes eseményeknél szerepelhetnek üres ``name`` tulajdonsággal. Például értelem szerűen egy pénztár folyamat elkezdésekor még ezeket nem lehet értelmezni, viszont ha a vásárló már megadja ezeket és vissza ugrik az első lépésre, akkor már értelmezhetőek.
+The ``shippingMethod'' and ``paymentMethod'' objects can be included in some events with an empty ``name'' property. For example, by definition, these cannot be interpreted at the start of a checkout process, but if the customer has already entered them and jumps back to the first step, they can already be interpreted.
 
-Figyelni kell arra, hogy az átadott javascript closure-nek legyen egy paramétere, melynek a neve tetszőleges lehet, pl. event vagy e. Így az e.details property kikéréssel, hozzájutunk az esemény adataihoz.
+Make sure that the passed javascript closure has a parameter, the name of which can be arbitrary, e.g. event or e. Thus, by requesting the e.details property, we get access to the event data.
 
 ### onCartPageViewed
-Az esemény akkor következik be, amikor a vásárló megnyitja a kosár oldalt.
+The event occurs when the customer opens the cart page.
 
-Példa:
+Example:
 ```json
 {
   "detail": {
     "user": {
       "id": 5,
-      "email": "teszt@shoprenter.hu",
+      "email": "test@shoprenter.hu",
       "phoneNumber": "+36201234567",
       "name": {
-        "firstName": "TesztVezetéknév",
-        "lastName": "TesztKeresztnév"
+        "firstName": "Test firstname",
+        "lastName": "Test lastname"
       },
       "ipAddress": "172.30.128.0",
       "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -1300,8 +1300,8 @@ Példa:
           "currency": "HUF",
           "quantity": 2,
           "quantityName": "db",
-          "name": "Termék 2",
-          "brand": "gyártó"
+          "name": "Product 2",
+          "brand": "brand"
         },
         {
           "type": "product",
@@ -1312,8 +1312,8 @@ Példa:
           "currency": "HUF",
           "quantity": 1,
           "quantityName": "db",
-          "name": "Termék 1",
-          "brand": "gyártó"
+          "name": "Product 1",
+          "brand": "brand"
         }
       ]
     }
@@ -1322,7 +1322,7 @@ Példa:
 ```
 
 ### Események használata
-A ShopRenter nevű objektum a frontend egész felületén elérhető, így bármely oldalon fel tudunk iratkozni a kosár eseményekre a következőképpen:
+The object called ShopRenter is available on the entire interface of the frontend, so we can subscribe to cart events on any page as follows:
 
 ```html
 <script type="application/javascript">

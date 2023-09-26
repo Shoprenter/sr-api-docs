@@ -1,7 +1,7 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions/dGV4dEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmcHJvZHVjdF9pZD01MSZsYW5ndWFnZV9pZD0w]]></href>
     <id><![CDATA[dGV4dEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmcHJvZHVjdF9pZD01MSZsYW5ndWFnZV9pZD0w]]></id>
-    <name><![CDATA[Név]]></name>
+    <name><![CDATA[Name]]></name>
     <language/>
     <textAttributeValue>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD03JnByb2R1Y3RfaWQ9NTE=]]></href>

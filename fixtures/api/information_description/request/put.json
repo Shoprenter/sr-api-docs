@@ -1,6 +1,6 @@
 {
-    "title":"Szöveges menüpont címe",
-    "description":"Szöveges menüpont. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
+    "title":"Text menu item title",
+    "description":"Text menu item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
     "information": {
         "id": "aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY="
     },

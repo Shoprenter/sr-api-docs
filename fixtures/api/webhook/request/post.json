@@ -1,7 +1,7 @@
 {
     "event": "order_confirm",
     "status": "1",
-    "label": "teszt webhook",
+    "label": "test webhook",
     "webHookParameters": [
         {
             "type": "json",

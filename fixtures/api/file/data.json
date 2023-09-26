@@ -3,8 +3,7 @@
         {
             "name": "filePath",
             "description": {
-                "hu": "A fájl relatív elérési útvonala. <strong>FIGYELEM!<\/strong> A feltöltendő fájlok csak az angol ABC betűit és (),_,-, karaktereket, illetve számokat tartalmazhatnak!",
-                "en": "A fájl relatív elérési útvonala. <strong>FIGYELEM!<\/strong> A feltöltendő fájlok csak az angol ABC betűit és (),_,-, karaktereket, illetve számokat tartalmazhatnak!"
+                "en": "Relative file path for the file. <strong>Important!<\/strong> The filename can only contain english alphabet's characters and (),_,-, karaktereket, and numbers!"
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "type",
             "description": {
-                "hu": "A fájl típusa. Lehetséges értékek: image, download.",
-                "en": "A fájl típusa. Lehetséges értékek: image, download."
+                "en": "File type. Possible values: image, download."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "attachment",
             "description": {
-                "hu": "A fájl tartalma base64 encodolva.",
-                "en": "A fájl tartalma base64 encodolva."
+                "en": "Attachment with base64 encode."
             },
             "required": false,
             "readonly": false
@@ -32,26 +29,22 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/files?type=[típus]&filePath=[fájl elérési útvonala]",
-                "en": "\/files?type=[típus]&filePath=[fájl elérési útvonala]"
+                "en": "\/files?type=[type]&filePath=[path]"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [
                 {
                     "name": "type",
                     "description": {
-                        "hu": "Fájl típusa.",
-                        "en": "Fájl típusa."
+                        "en": "Type."
                     }
                 },
                 {
                     "name": "filePath",
                     "description": {
-                        "hu": "Fájl elérési útvonala.",
-                        "en": "Fájl elérési útvonala."
+                        "en": "path."
                     }
                 }
             ],
@@ -63,12 +56,10 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/files",
                 "en": "\/files"
             },
             "description": {
-                "hu": "Létrehoz\/Módosít. Ha az adott filePath-on már van fájl, akkor azt lecseréli.",
-                "en": "Létrehoz\/Módosít. Ha az adott filePath-on már van fájl, akkor azt lecseréli."
+                "en": "Create\/Modify. If file exists on the path, then it will be replaced."
             },
             "parameters": [],
             "example": {
@@ -79,32 +70,28 @@
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/files",
                 "en": "\/files"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [
                 {
                     "name": "type",
                     "description": {
-                        "hu": "A fájl típusa.",
-                        "en": "A fájl típusa."
+                        "en": "Type."
                     }
                 },
                 {
                     "name": "filePath",
                     "description": {
-                        "hu": "A fájl relatív elérési útvonala.",
-                        "en": "A fájl relatív elérési útvonala."
+                        "en": "Relative path."
                     }
                 }
             ],
             "example": {
                 "url": "\/files?type=image&filePath=product\/image.jpg",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

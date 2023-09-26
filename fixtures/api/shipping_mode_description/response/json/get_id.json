@@ -1,8 +1,8 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTAxJmxhbmd1YWdlX2lkPTE=",
     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTAxJmxhbmd1YWdlX2lkPTE=",
-    "name": "Saját szállítási mód neve",
-    "description": "Saját szállítási mód leírás",
+    "name": "Custom shipping method name",
+    "description": "Custom shipping method description",
     "shippingMode": {
         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTEwMQ=="
     },

@@ -13,42 +13,42 @@
     </invoiceId>
     <invoicePrefix/>
     <firstname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </firstname>
     <lastname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </lastname>
     <phone>
         <![CDATA[+36201234567]]>
     </phone>
     <fax/>
     <email>
-        <![CDATA[teszt@teszt.com]]>
+        <![CDATA[test@test.com]]>
     </email>
     <shippingFirstname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </shippingFirstname>
     <shippingLastname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </shippingLastname>
     <shippingCompany/>
     <shippingAddress1>
-        <![CDATA[Teszt út 11]]>
+        <![CDATA[Test street 11]]>
     </shippingAddress1>
     <shippingAddress2/>
     <shippingCity>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </shippingCity>
     <shippingPostcode>
         <![CDATA[4033]]>
     </shippingPostcode>
     <shippingZoneName/>
     <shippingCountryName>
-        <![CDATA[Magyarország]]>
+        <![CDATA[Hungary]]>
     </shippingCountryName>
     <shippingAddressFormat/>
     <shippingMethodName>
-        <![CDATA[Házhozszállítás futárszolgálattal]]>
+        <![CDATA[Home delivery with courier service]]>
     </shippingMethodName>
     <shippingMethodTaxRate>
         <![CDATA[25.0000]]>
@@ -63,29 +63,29 @@
         <![CDATA[0]]>
     </shippingReceivingPointId>
     <paymentFirstname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </paymentFirstname>
     <paymentLastname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </paymentLastname>
     <paymentCompany/>
     <paymentAddress1>
-        <![CDATA[Teszt út 11]]>
+        <![CDATA[Test street 11]]>
     </paymentAddress1>
     <paymentAddress2/>
     <paymentCity>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </paymentCity>
     <paymentPostcode>
         <![CDATA[4033]]>
     </paymentPostcode>
     <paymentZoneName/>
     <paymentCountryName>
-        <![CDATA[Magyarország]]>
+        <![CDATA[Hungary]]>
     </paymentCountryName>
     <paymentAddressFormat/>
     <paymentMethodName>
-        <![CDATA[Fizetési mód]]>
+        <![CDATA[Payment method]]>
     </paymentMethodName>
     <paymentMethodCode>
         <![CDATA[cod]]>
@@ -99,7 +99,7 @@
     </paymentMethodAfter>
     <taxNumber/>
     <comment>
-        <![CDATA[Megjegyzés]]>
+        <![CDATA[Comment]]>
     </comment>
     <total>
         <![CDATA[3990.0000]]>
@@ -144,7 +144,7 @@
             <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
         </id>
         <name>
-            <![CDATA[Magyarország]]>
+            <![CDATA[Hungary]]>
         </name>
         <isoCode2>
             <![CDATA[HU]]>
@@ -170,7 +170,7 @@
             <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
         </id>
         <name>
-            <![CDATA[Magyarország]]>
+            <![CDATA[Hungary]]>
         </name>
         <isoCode2>
             <![CDATA[HU]]>
@@ -233,7 +233,7 @@
         </code>
         <symbolLeft/>
         <symbolRight>
-            <![CDATA[ Ft]]>
+            <![CDATA[ Huf]]>
         </symbolRight>
         <decimalPlace>
             <![CDATA[0]]>
@@ -365,10 +365,10 @@
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDE=]]>
         </id>
         <name>
-            <![CDATA[Nettó részösszeg:]]>
+            <![CDATA[Net partial amount:]]>
         </name>
         <valueText>
-            <![CDATA[6.400 Ft]]>
+            <![CDATA[6.400 Huf]]>
         </valueText>
         <value>
             <![CDATA[6400.0000]]>
@@ -401,10 +401,10 @@
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDI=]]>
         </id>
         <name>
-            <![CDATA[ÁFA (27%):]]>
+            <![CDATA[VAT (27%):]]>
         </name>
         <valueText>
-            <![CDATA[1.728 Ft]]>
+            <![CDATA[1.728 Huf]]>
         </valueText>
         <value>
             <![CDATA[1728.0000]]>
@@ -437,10 +437,10 @@
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDM=]]>
         </id>
         <name>
-            <![CDATA[Bruttó részösszeg:]]>
+            <![CDATA[Gross partial amount:]]>
         </name>
         <valueText>
-            <![CDATA[8.128 Ft]]>
+            <![CDATA[8.128 Huf]]>
         </valueText>
         <value>
             <![CDATA[8128.0000]]>
@@ -473,10 +473,10 @@
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=]]>
         </id>
         <name>
-            <![CDATA[Személyes átvétel (1025 Budapest, Teszt u. 25):]]>
+            <![CDATA[Személyes átvétel (1025 Budapest, Test u. 25):]]>
         </name>
         <valueText>
-            <![CDATA[0 Ft]]>
+            <![CDATA[0 Huf]]>
         </valueText>
         <value>
             <![CDATA[0.0000]]>
@@ -509,10 +509,10 @@
             <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDU=]]>
         </id>
         <name>
-            <![CDATA[Összesen bruttó:]]>
+            <![CDATA[Totally gross:]]>
         </name>
         <valueText>
-            <![CDATA[8.128 Ft]]>
+            <![CDATA[8.128 Huf]]>
         </valueText>
         <value>
             <![CDATA[8128.0000]]>
@@ -545,7 +545,7 @@
             <![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTU3]]>
         </id>
         <name>
-            <![CDATA[Mini Tündér karkötő]]>
+            <![CDATA[Mini Fairy bracelet]]>
         </name>
         <sku>
             <![CDATA[997000004]]>
@@ -605,7 +605,7 @@
             <![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTg1]]>
         </id>
         <name>
-            <![CDATA[Borotválkozó Ken]]>
+            <![CDATA[Shaver Ken]]>
         </name>
         <sku>
             <![CDATA[99400000]]>

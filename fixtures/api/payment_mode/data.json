@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Fizetési mód azonosítója.",
-                "en": "Fizetési mód azonosítója."
+                "en": "Payment method identifier."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Fizetési mód belső azonosítója.",
-                "en": "Fizetési mód belső azonosítója."
+                "en": "Payment method internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "status",
             "description": {
-                "hu": "Engedélyezett-e a fizetési mód, vagy sem. Értéke 1 vagy 0.",
-                "en": "Engedélyezett-e a fizetési mód, vagy sem. Értéke 1 vagy 0."
+                "en": "Allowed the payment method, or not. Possible value 1 or 0."
             },
             "required": false,
             "readonly": true
@@ -30,8 +27,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend. A többi fizetési módhoz képest, hol jelenik meg a checkoutban.",
-                "en": "Sorrend. A többi fizetési módhoz képest, hol jelenik meg a checkoutban."
+                "en": "Order. Where should be in order in the checkout."
             },
             "required": false,
             "readonly": true
@@ -39,8 +35,7 @@
         {
             "name": "geoZone",
             "description": {
-                "hu": "A földrajzi zóna linkje.",
-                "en": "A földrajzi zóna linkje."
+                "en": "Geo zone link."
             },
             "required": false,
             "readonly": true
@@ -48,8 +43,7 @@
         {
             "name": "orderStatus",
             "description": {
-                "hu": "Azon rendelési státusz linkje, amibe a rendelés fog átváltódni a fizetési mód használata után.",
-                "en": "Azon rendelési státusz linkje, amibe a rendelés fog átváltódni a fizetési mód használata után."
+                "en": "The order status link that the order will be converted to after using the payment method."
             },
             "required": false,
             "readonly": true
@@ -57,8 +51,7 @@
         {
             "name": "paymentDescriptions",
             "description": {
-                "hu": "\n                        A fizetési mód neve és leírása, nyelvenként. Ha üres, az azt jelenti, hogy - bár telepített fizetési mód - a bolt admin felületén még nem történt meg a beállítások mentése egyszer sem.\n                    ",
-                "en": "\n                        A fizetési mód neve és leírása, nyelvenként. Ha üres, az azt jelenti, hogy - bár telepített fizetési mód - a bolt admin felületén még nem történt meg a beállítások mentése egyszer sem.\n                    "
+                "en": "Payment method name and description, by language. If it is empty, it means that - although a payment method is installed - the settings have not been saved on the store's admin interface."
             },
             "required": false,
             "readonly": true
@@ -68,12 +61,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/paymentModes\/fizetési mód id",
-                "en": "\/paymentModes\/fizetési mód id"
+                "en": "\/paymentModes\/payment method id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -84,33 +75,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/paymentModes",
                 "en": "\/paymentModes"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],

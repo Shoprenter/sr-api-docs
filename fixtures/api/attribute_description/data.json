@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Attribútum leírás azonosító. Az OuterID módosítására szolgál.",
-                "en": "Attribútum leírás azonosító. Az OuterID módosítására szolgál."
+                "en": "Attribute description identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név.",
-                "en": "Név."
+                "en": "Name."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "description",
             "description": {
-                "hu": "Leírás.",
-                "en": "Leírás."
+                "en": "Description."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "prefix",
             "description": {
-                "hu": "Érték előtt álló szöveg.",
-                "en": "Érték előtt álló szöveg."
+                "en": "Text before value."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "postfix",
             "description": {
-                "hu": "Érték után álló szöveg.",
-                "en": "Érték után álló szöveg."
+                "en": "Text after value."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "attribute",
             "description": {
-                "hu": "Attribútum linkje.",
-                "en": "Attribútum linkje."
+                "en": "Attribute link."
             },
             "required": true,
             "readonly": true
@@ -57,8 +51,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Nyelv linkje.",
-                "en": "Nyelv linkje."
+                "en": "Language link."
             },
             "required": true,
             "readonly": true
@@ -68,12 +61,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/attributeDescriptions\/attribútum leírás id",
-                "en": "\/attributeDescriptions\/attribútum leírás id"
+                "en": "\/attributeDescriptions\/attribute descriprtion id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -84,61 +75,52 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/attributeDescriptions",
                 "en": "\/attributeDescriptions"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "numberAttributeId",
                     "description": {
-                        "hu": "Attribútum azonosító.",
-                        "en": "Attribútum azonosító."
+                        "en": "Attribute identifier."
                     }
                 },
                 {
                     "name": "listAttributeId",
                     "description": {
-                        "hu": "Attribútum azonosító.",
-                        "en": "Attribútum azonosító."
+                        "en": "Attribute identifier."
                     }
                 },
                 {
                     "name": "textAttributeId",
                     "description": {
-                        "hu": "Attribútum azonosító.",
-                        "en": "Attribútum azonosító."
+                        "en": "Attribute identifier."
                     }
                 },
                 {
                     "name": "languageId",
                     "description": {
-                        "hu": "Nyelv azonosító.",
-                        "en": "Nyelv azonosító."
+                        "en": "Language identifier."
                     }
                 }
             ],
@@ -150,49 +132,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/attributeDescriptions[\/attribútum leírás id]",
-                "en": "\/attributeDescriptions[\/attribútum leírás id]"
+                "en": "\/attributeDescriptions[\/attribute descriprtion id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/attributeDescriptions",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/attributeDescriptions\/attribútum leírás id",
-                "en": "\/attributeDescriptions\/attribútum leírás id"
+                "en": "\/attributeDescriptions\/attribute descriprtion id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/attributeDescriptions\/attribútum leírás id",
-                "en": "\/attributeDescriptions\/attribútum leírás id"
+                "en": "\/attributeDescriptions\/attribute descriprtion id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

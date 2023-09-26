@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Kapcsolat azonosító. Az OuterID módosítására szolgál.",
-                "en": "Kapcsolat azonosító. Az OuterID módosítására szolgál."
+                "en": "Relation identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "attributeWidget",
             "description": {
-                "hu": "Attributútum widget link.",
-                "en": "Attributútum widget link."
+                "en": "Attribute widget link."
             },
             "required": true,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "category",
             "description": {
-                "hu": "Kategória link.",
-                "en": "Kategória link."
+                "en": "Category link."
             },
             "required": true,
             "readonly": true
@@ -32,12 +29,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/attributeWidgetCategoryRelations\/kapcsolat id",
-                "en": "\/attributeWidgetCategoryRelations\/kapcsolat id"
+                "en": "\/attributeWidgetCategoryRelations\/relation id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -48,47 +43,40 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/attributeWidgetCategoryRelations",
                 "en": "\/attributeWidgetCategoryRelations"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "numberAttributeWidgetId",
                     "description": {
-                        "hu": "Szám típusú attribútum widget azonosító.",
-                        "en": "Szám típusú attribútum widget azonosító."
+                        "en": "Number type attribute widget identifier."
                     }
                 },
                 {
                     "name": "listAttributeWidgetId",
                     "description": {
-                        "hu": "Válaszható érték típusú attribútum widget azonosító.",
-                        "en": "Válaszható érték típusú attribútum widget azonosító."
+                        "en": "Selectable value type attribute widget identifier."
                     }
                 }
             ],
@@ -100,12 +88,10 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/attributeWidgetCategoryRelations",
                 "en": "\/attributeWidgetCategoryRelations"
             },
             "description": {
-                "hu": "Csak létrehozásra szolgál.",
-                "en": "Csak létrehozásra szolgál."
+                "en": "For creation only."
             },
             "parameters": [],
             "example": {
@@ -116,17 +102,15 @@
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/attributeWidgetCategoryRelations\/kapcsolat id",
-                "en": "\/attributeWidgetCategoryRelations\/kapcsolat id"
+                "en": "\/attributeWidgetCategoryRelations\/relation id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/attributeWidgetCategoryRelations\/YXR0cmlidXRlV2lkZ2V0Q2F0ZWdvcnktYXR0cmlidXRlX2lkPTgmY2F0ZWdvcnlfaWQ9MzY=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

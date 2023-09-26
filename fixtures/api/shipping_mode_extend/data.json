@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szállítási mód azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szállítási mód azonosító. Az OuterID módosítására szolgál."
+                "en": "Shipping method identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Szállítási mód belső azonosító.",
-                "en": "Szállítási mód belső azonosító."
+                "en": "Shipping method internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend, a többi szállítási módhoz képest.",
-                "en": "Sorrend, a többi szállítási módhoz képest."
+                "en": "Sort order."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "enabled",
             "description": {
-                "hu": "Engedélyezett-e?",
-                "en": "Engedélyezett-e?"
+                "en": "Is it enabled?"
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "costCalculationBy",
             "description": {
-                "hu": "\n                        Mi alapján kalkuláljuk a szállítási költség? Lehetséges értékek:<br>\n                        <strong>PRICE:<\/strong> Kosár érték szerint<br>\n                        <strong>WEIGHT:<\/strong> Kosár súlya szerint<br>\n                        <strong>PRICE_WEIGHT:<\/strong> Kosár értéke és súlya szerint\n                    ",
-                "en": "\n                        Mi alapján kalkuláljuk a szállítási költség? Lehetséges értékek:<br>\n                        <strong>PRICE:<\/strong> Kosár érték szerint<br>\n                        <strong>WEIGHT:<\/strong> Kosár súlya szerint<br>\n                        <strong>PRICE_WEIGHT:<\/strong> Kosár értéke és súlya szerint\n                    "
+                "en": "\n                        MHow do we calculate the shipping cost?? Possible values:<br>\n                        <strong>PRICE:<\/strong> Ba cart value<br>\n                        <strong>WEIGHT:<\/strong> Ba cart weight<br>\n                        <strong>PRICE_WEIGHT:<\/strong> By cart value and weight\n                    "
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "freeShippingFrom",
             "description": {
-                "hu": "Ha a vásárlás értéke elér ennyi forintot, akkor súlytól függetlenül ingyenes a szállítás. Csak akkor vesszük figyelembe, ha a costCalculationBy értéke WEIGHT.",
-                "en": "Ha a vásárlás értéke elér ennyi forintot, akkor súlytól függetlenül ingyenes a szállítás. Csak akkor vesszük figyelembe, ha a costCalculationBy értéke WEIGHT."
+                "en": "If the value of the purchase reaches this HUF, the delivery is free, regardless of the weight. Only considered if costCalculationBy is WEIGHT."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "shippingType",
             "description": {
-                "hu": "\n                        Ez az opció határozza meg, hogy a szállítási mód beleszámít-e a termékoldali szállítási díj számításba, illetve a termék megosztónak továbbított feedekbe, mint átadott szállítási díj. Több \"Futárszolgálat\" típusú szállítási mód esetén a rendszer mindig a legkedvezőbbet ajánlja ki.<br>\n                        Lehetséges értéke:<br>\n                        <strong>COURIER_SERVICE:<\/strong> Futárszolgálat<br>\n                        <strong>PERSONAL_RECEIPT:<\/strong> Személyes átvétel\n                    ",
-                "en": "\n                        Ez az opció határozza meg, hogy a szállítási mód beleszámít-e a termékoldali szállítási díj számításba, illetve a termék megosztónak továbbított feedekbe, mint átadott szállítási díj. Több \"Futárszolgálat\" típusú szállítási mód esetén a rendszer mindig a legkedvezőbbet ajánlja ki.<br>\n                        Lehetséges értéke:<br>\n                        <strong>COURIER_SERVICE:<\/strong> Futárszolgálat<br>\n                        <strong>PERSONAL_RECEIPT:<\/strong> Személyes átvétel\n                    "
+                "en": "\nThis option determines whether the shipping method is included in the calculation of the shipping fee on the product side or in the feeds forwarded to the product sharer as a shipping fee. In the case of several shipping methods of the \"Courier\" type, the system always recommends the most favorable one.<br>\n                        Lehetséges értéke:<br>\n                        <strong>COURIER_SERVICE:<\/strong> Courier Service<br>\n                        <strong>PERSONAL_RECEIPT:<\/strong> Personal\n                    "
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "taxClass",
             "description": {
-                "hu": "Áfakulcs resource id-ja.",
-                "en": "Áfakulcs resource id-ja."
+                "en": "Tax class link."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "geoZone",
             "description": {
-                "hu": "Földrajzi zóna resource id-ja.",
-                "en": "Földrajzi zóna resource id-ja."
+                "en": "Geo zone link."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "shippingModeDescriptions",
             "description": {
-                "hu": "A szállítási módhoz tartozó szöveges tartalmak.",
-                "en": "A szállítási módhoz tartozó szöveges tartalmak."
+                "en": "Text content for the shipping mode\n."
             },
             "required": true,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "shippingLanes",
             "description": {
-                "hu": "A szállítási sávok.",
-                "en": "A szállítási sávok."
+                "en": "Shipping lanes."
             },
             "required": true,
             "readonly": false
@@ -104,12 +93,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/shippingModeExtend\/szállítási mód id",
-                "en": "\/shippingModeExtend\/szállítási mód id"
+                "en": "\/shippingModeExtend\/shipping method id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -120,40 +107,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/shippingModeExtend",
                 "en": "\/shippingModeExtend"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Szállítási mód belső azonosító.",
-                        "en": "Kereső paraméter. Szállítási mód belső azonosító."
+                        "en": "Search parameter. Shipping method internal identifier."
                     }
                 }
             ],
@@ -165,49 +146,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/shippingModeExtend[\/szállítási mód id]",
-                "en": "\/shippingModeExtend[\/szállítási mód id]"
+                "en": "\/shippingModeExtend[\/shipping method id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/shippingModeExtend",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/shippingModeExtend\/szállítási mód id",
-                "en": "\/shippingModeExtend\/szállítási mód id"
+                "en": "\/shippingModeExtend\/shipping method id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/shippingModeExtend\/c2hpcHBpbmdNb2RlLWlkPTg0",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/shippingModeExtend\/szállítási mód id",
-                "en": "\/shippingModeExtend\/szállítási mód id"
+                "en": "\/shippingModeExtend\/shipping method id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/shippingModeExtend\/c2hpcHBpbmdNb2RlLWlkPTg0",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

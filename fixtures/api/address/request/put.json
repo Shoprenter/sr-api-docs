@@ -1,11 +1,11 @@
 {
-    "company": "Cégnév",
-    "firstname": "Keresztnév",
-    "lastname": "Vezetéknév",
-    "address1": "Teszt u. 1.",
-    "address2": "1. emelet 10. ajtó",
+    "company": "Company name",
+    "firstname": "Firstname",
+    "lastname": "Lastname",
+    "address1": "Test u. 1.",
+    "address2": "1. floor 10. door",
     "postcode": "1234",
-    "city": "Város",
+    "city": "City",
     "customer": {
         "id": "Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzU="
     },

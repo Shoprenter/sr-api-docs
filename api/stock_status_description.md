@@ -1,13 +1,13 @@
 # Stock Status Description Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'stock_status_description'" :lang="'hu'"/>
+<ResourceProperties :resource="'stock_status_description'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'stock_status_description'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'stock_status_description'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'stock_status_description'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'stock_status_description'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

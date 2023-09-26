@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szöveges menüpont leírás azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szöveges menüpont leírás azonosító. Az OuterID módosítására szolgál."
+                "en": "Text menu description identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "title",
             "description": {
-                "hu": "Szöveges menüpont címe.",
-                "en": "Szöveges menüpont címe."
+                "en": "Text menu title."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "description",
             "description": {
-                "hu": "Szöveges menüpont.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.",
-                "en": "Szöveges menüpont.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező."
+                "en": "Text menu.<br>When adding executable javascript, the <strong>type=\"text/javascript\"</strong> attribute must be specified within the script tag."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Nyelv resource linkje.",
-                "en": "Nyelv resource linkje."
+                "en": "Language resource link."
             },
             "required": true,
             "readonly": true
@@ -39,8 +35,7 @@
         {
             "name": "information",
             "description": {
-                "hu": "Szöveges menüpont belső azonosítója.",
-                "en": "Szöveges menüpont belső azonosítója."
+                "en": "Text menu internal identifier."
             },
             "required": true,
             "readonly": true
@@ -50,12 +45,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/informationDescriptions\/szöveges menüpont leírás id",
-                "en": "\/informationDescriptions\/szöveges menüpont leírás id"
+                "en": "\/informationDescriptions\/text menu description id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -66,33 +59,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/informationDescriptions",
                 "en": "\/informationDescriptions"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],
@@ -104,49 +92,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/informationDescriptions[\/szöveges menüpont leírás id]",
-                "en": "\/informationDescriptions[\/szöveges menüpont leírás id]"
+                "en": "\/informationDescriptions[\/text menu description id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/informationDescriptions",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/informationDescriptions\/szöveges menüpont leírás id",
-                "en": "\/informationDescriptions\/szöveges menüpont leírás id"
+                "en": "\/informationDescriptions\/text menu description id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/informationDescriptions\/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/informationDescriptions\/szöveges menüpont leírás id",
-                "en": "\/informationDescriptions\/szöveges menüpont leírás id"
+                "en": "\/informationDescriptions\/text menu description id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/informationDescriptions\/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

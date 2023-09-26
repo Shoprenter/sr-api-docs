@@ -1,13 +1,13 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/manufacturerDescriptions/bWFudWZhY3R1cmVyRGVzY3JpcHRpb24tbWFudWZhY3R1cmVyX2lkPTYmbGFuZ3VhZ2VfaWQ9MQ==]]></href>
     <id><![CDATA[bWFudWZhY3R1cmVyRGVzY3JpcHRpb24tbWFudWZhY3R1cmVyX2lkPTYmbGFuZ3VhZ2VfaWQ9MQ==]]></id>
-    <description><![CDATA[Leírás]]></description>
+    <description><![CDATA[Description]]></description>
     <dateCreated><![CDATA[2013-08-08T12:30:00]]></dateCreated>
     <dateUpdated><![CDATA[2013-08-08T12:30:00]]></dateUpdated>
-	<customTitle><![CDATA[Egyedi cím]]></customTitle>
-    <metaDescription><![CDATA[Meta leírás.]]></metaDescription>
-	<metaKeywords><![CDATA[kulcsszó_1, kulcsszó_2]]></metaKeywords>
-	<heading><![CDATA[H1 cím]]></heading>
+	<customTitle><![CDATA[Custom title]]></customTitle>
+    <metaDescription><![CDATA[Meta description.]]></metaDescription>
+	<metaKeywords><![CDATA[keyword_1, keyword_2]]></metaKeywords>
+	<heading><![CDATA[H1 title]]></heading>
     <manufacturer>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/manufacturers/bWFudWZhY3R1cmVyLW1hbnVmYWN0dXJlcl9pZD02]]></href>
     </manufacturer>

@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Webhook azonosító.",
-                "en": "Webhook azonosító."
+                "en": "Webhook identifier."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "label",
             "description": {
-                "hu": "Webhook neve (az admin felületen jelenik meg)",
-                "en": "Webhook neve (az admin felületen jelenik meg)"
+                "en": "Webhook name (it will show in the admin)"
             },
             "required": true,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "event",
             "description": {
-                "hu": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozó adatmódosítás)</li></ul>",
-                "en": "Az esemény azonosítója, amire feliratkozik. Lehetséges értékek: <ul><li>order_confirm (rendelés feladás)</li><li>order_status_change (rendelés állapot változás)</li><li>newsletter_subscribe (hírlevél feliratkozás)</li><li>newsletter_unsubscribe (hírlevél leiratkozás)</li><li>newsletter_update_subscriber (hírlevél feliratkozó adatmódosítás)</li></ul>"
+                "en": "The event identifier subscribe for. Possible values: <ul><li>order_confirm (order confirm)</li><li>order_status_change (order status change)</li><li>newsletter_subscribe (newsletter subscribe)</li><li>newsletter_unsubscribe (newsletter unsubscribe)</li><li>newsletter_update_subscriber (newsletter subscriber data change)</li></ul>"
             },
             "required": true,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "status",
             "description": {
-                "hu": "Engedélyezett-e? Lehetséges értékek: 1 (igen), 0 (nem)",
-                "en": "Engedélyezett-e? Lehetséges értékek: 1 (igen), 0 (nem)"
+                "en": "Is it enabled? Possible values: 1 (yes), 0 (no)"
             },
             "required": true,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "webHookParameters *",
             "description": {
-                "hu": "Adatküldés formátuma, cél url és elküldetni kívánt mezők listája (Lásd: Fields property használata)",
-                "en": "Adatküldés formátuma, cél url és elküldetni kívánt mezők listája (Lásd: Fields property használata)"
+                "en": "The format for the webhook request, target url and requested fields (See in the: Fields property usage)"
             },
             "required": true,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "webHookDelay *",
             "description": {
-                "hu": "Webhook késleltetése, amennyiben nincs megadva azonnali típus.",
-                "en": "Webhook késleltetése, amennyiben nincs megadva azonnali típus."
+                "en": "Webhook delay, if not set, it is immediate."
             },
             "required": false,
             "readonly": false
@@ -59,12 +53,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/webHooks\/webhook id",
                 "en": "\/webHooks\/webhook id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -75,33 +67,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/webHooks",
                 "en": "\/webHooks"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],
@@ -113,49 +100,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/webHooks[\/webhook id]",
                 "en": "\/webHooks[\/webhook id]"
             },
             "description": {
-                "hu": "Létrehozásra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig létrehozza.",
-                "en": "Létrehozásra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig létrehozza."
+                "en": "It is used to create. Resources marked as Related Resources are always created."
             },
             "parameters": [],
             "example": {
                 "url": "\/webHooks",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/webHooks\/webhook id",
                 "en": "\/webHooks\/webhook id"
             },
             "description": {
-                "hu": "Módosításra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig felülírja.",
-                "en": "Módosításra szolgál. A Kapcsolódó Resource-ként megjelölt resource-okat mindig felülírja."
+                "en": "It is for modification. Resources marked as Related Resources are always overwritten."
             },
             "parameters": [],
             "example": {
                 "url": "\/webHooks\/cHJvZHVjdC1wcm9kdWN0X2lkPTUw",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/webHooks\/webhook id",
                 "en": "\/webHooks\/webhook id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/webHooks\/cHJvZHVjdC1wcm9kdWN0X2lkPTUw",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

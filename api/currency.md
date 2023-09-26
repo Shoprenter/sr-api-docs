@@ -1,13 +1,13 @@
 # Currency Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'currency'" :lang="'hu'"/>
+<ResourceProperties :resource="'currency'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'currency'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'currency'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'currency'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'currency'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

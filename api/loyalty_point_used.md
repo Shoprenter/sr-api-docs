@@ -1,13 +1,13 @@
 # Loyalty Point Used Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'loyalty_point_used'" :lang="'hu'"/>
+<ResourceProperties :resource="'loyalty_point_used'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'loyalty_point_used'" :endpoint="'delete'" :lang="'en'"/>
 

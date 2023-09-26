@@ -1,13 +1,13 @@
 # Price Multiplier Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'price_multiplier'" :lang="'hu'"/>
+<ResourceProperties :resource="'price_multiplier'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'price_multiplier'" :endpoint="'delete'" :lang="'en'"/>
 

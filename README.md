@@ -1,11 +1,11 @@
 ---
 home: true
 heroImage: /images/logo.svg
-heroText: Fejlesztői dokumentáció
-actionText: Kezdés →
+heroText: Developer documentation
+actionText: Start →
 actionLink: /development/app-development/01_getting_started.html
 features:
-- title: '<i class="fas fa-wrench"></i> App fejlesztés'
+- title: '<i class="fas fa-wrench"></i> App development'
   link: /development/app-development/01_getting_started.html
 - title: '<i class="fas fa-book"></i> API Resources'
   link: /api/address.html

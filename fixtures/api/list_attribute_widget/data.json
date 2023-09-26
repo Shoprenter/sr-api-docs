@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Attribútum widget azonosító. Az OuterID módosítására szolgál.",
-                "en": "Attribútum widget azonosító. Az OuterID módosítására szolgál."
+                "en": "Attribute widget identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "active",
             "description": {
-                "hu": "Látható-e a widget.",
-                "en": "Látható-e a widget."
+                "en": "Visible the widget."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "displayToAllCategory",
             "description": {
-                "hu": "Minden kategóriára meg legyen jelenítve-e.",
-                "en": "Minden kategóriára meg legyen jelenítve-e."
+                "en": "Should it be displayed in all categories?."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "displayMode",
             "description": {
-                "hu": "Megjelenítés módja. Lehetséges értékek: CHECKBOX, RADIO, SELECT.",
-                "en": "Megjelenítés módja. Lehetséges értékek: CHECKBOX, RADIO, SELECT."
+                "en": "Display mode. Possible values: CHECKBOX, RADIO, SELECT."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend.",
-                "en": "Sorrend."
+                "en": "Order."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "maxlistOfOptions",
             "description": {
-                "hu": "A választható opciók maximális száma.",
-                "en": "A választható opciók maximális száma."
+                "en": "The max number of selectable options."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "sortValuesBy",
             "description": {
-                "hu": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC, CUSTOM_ORDER_ASC.",
-                "en": "Az értékek sorbarakásának módja. Lehetséges értékek: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC, CUSTOM_ORDER_ASC."
+                "en": "The sorting method for values . Possible values: COUNT_ASC, COUNT_DESC, ALPHABET_ASC, ALPHABET_DESC, CUSTOM_ORDER_ASC."
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "attribute",
             "description": {
-                "hu": "Attribútum linkje.",
-                "en": "Attribútum linkje."
+                "en": "Attribute link."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "attributeWidgetCategoryRelations",
             "description": {
-                "hu": "A widgethez tartozó kategóriák linkjei.",
-                "en": "A widgethez tartozó kategóriák linkjei."
+                "en": "The category link according to the widget."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "attributeWidgetDescriptions",
             "description": {
-                "hu": "A widgethez tartozó leírások linkjei.",
-                "en": "A widgethez tartozó leírások linkjei."
+                "en": "The description link according to the widget."
             },
             "required": false,
             "readonly": false
@@ -95,12 +85,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/listAttributeWidgets\/attribútum widget id",
-                "en": "\/listAttributeWidgets\/attribútum widget id"
+                "en": "\/listAttributeWidgets\/attribute widget id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -111,40 +99,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/listAttributeWidgets",
                 "en": "\/listAttributeWidgets"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "listAttributeId",
                     "description": {
-                        "hu": "Attribútum azonosító.",
-                        "en": "Attribútum azonosító."
+                        "en": "Attribute identifier."
                     }
                 }
             ],
@@ -156,49 +138,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/listAttributeWidgets[\/attribútum widget id]",
-                "en": "\/listAttributeWidgets[\/attribútum widget id]"
+                "en": "\/listAttributeWidgets[\/attribute widget id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/listAttributeWidgets",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/listAttributeWidgets\/attribútum widget id",
-                "en": "\/listAttributeWidgets\/attribútum widget id"
+                "en": "\/listAttributeWidgets\/attribute widget id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/listAttributeWidgets\/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA==",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/listAttributeWidgets\/attribútum widget id",
-                "en": "\/listAttributeWidgets\/attribútum widget id"
+                "en": "\/listAttributeWidgets\/attribute widget id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/listAttributeWidgets\/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9OA==",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

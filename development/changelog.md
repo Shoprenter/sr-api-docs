@@ -1,315 +1,314 @@
 # API changelog
 
 #### 2023.09.05
-Egyszerűbbé tettük a szülő-gyerek termékkapcsolatok lekérését és kezelését a Shoprenter API-ban. A [Product](../api/product.md) és [ProductExtend](../api/product_extend.md) resourceokban lehetővé vált egy filterezés. A `parentProductId`-t paraméterként megadva a szűrésben, visszakapjuk az azonos `parentProductId`-val rendelkező termékeket.
+We made it easier to retrieve and manage parent-child product relationships in the Shoprenter API. Filtering has become possible in the [Product](../api/product.md) and [ProductExtend](../api/product_extend.md) resources. Specifying `parentProductId` as a parameter in the filter returns products with the same `parentProductId`.
 
-Ha gyártót töröltünk a [Manufacturer](../api/manufacturer.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a gyártó törlésével, a hozzá tartozó url is törlődni fog.
+If we deleted a manufacturer using the [Manufacturer](../api/manufacturer.md) Resource, the corresponding search-friendly url value remained in the database and could be queried. Thanks to a fix, when the manufacturer is deleted, the corresponding url will also be deleted.
 
 #### 2023.09.04
-A Setting Resource az alábbi beállítással bővült:
-- **config_display_quantity_in_category** -  Kategória oldalon kosárbarakásnál a mennyiség mező megjelenítése.
+The following setting has been added to the Setting Resource:
+- **config_display_quantity_in_category** - Display the quantity field on the category page when shopping.
 
 #### 2023.08.21
-Abban az esetben, ha szöveges tartalmat töröltünk a [CMS Extend](../api/cms_content_extend.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően szöveges tartalom törlésével, a hozzá tartozó url is törlődni fog.
+In the event that textual content was deleted using the [CMS Extend](../api/cms_content_extend.md) Resource, the corresponding search-friendly url value remained in the database and could be queried. Thanks to a fix, when text content is deleted, the associated url will also be deleted.
 
 #### 2023.08.05
-Ha kategóriát töröltünk a [Category Extend](../api/category_extend.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a kategória törlésével, a hozzá tartozó url is törlődni fog.
+If a category was deleted using the [Category Extend](../api/category_extend.md) Resource, the corresponding search-friendly url value remained in the database and could be queried. Thanks to a fix, when you delete the category, the corresponding url will also be deleted.
 
 #### 2023.08.01
-Ha többször próbálunk egy tulajdonságot DELETE metódussal törölni, akkor minden kérés után az API 204-es, azaz sikeres törlést jelző státuszkódot ad vissza. Ezen hibajavítás értelmében csak az első sikeres törlés után fog visszaadni 204-es válaszkódot az API, minden további törlési kérés pedig 404-es válaszkóddal tér vissza.
+If we try to delete a property several times with the DELETE method, after each request the API returns a status code of 204, i.e. a successful deletion. According to this bugfix, the API will return a 204 response code only after the first successful deletion, and all subsequent deletion requests will return with a 404 response code.
 
 #### 2023.07.10
-Az [Order](../api/order.md) és az [OrderExtended](../api/order_extend.md) resource kiegészült egy új, opcionális mezővel, `externalInfo`. Ez a mező két kötelező paramétert tartalmaz: `partner_order_id` és `partner_prefix`.
-Ezek az azonosítók akkor lehetnek hasznosak, ha egy külső marketplace-en (pl. Emag marketplace) leadott rendelést a Shoprenter webáruházban is létrehozzuk API segítségével. Ha ezek az azonosítók megadásra kerülnek a rendeléshez, erre keresve is van lehetőség szűrni a rendelés lista oldalon.
+[Order](../api/order.md) and [OrderExtended](../api/order_extend.md) resource added a new optional field `externalInfo`. This field contains two required parameters: `partner_order_id` and `partner_prefix`.
+These identifiers can be useful if an order placed on an external marketplace (e.g. Emag marketplace) is also created in the Shoprenter web store using an API. If these identifiers are entered for the order, it is also possible to search for them on the order list page.
 
 #### 2023.05.23
-Létrehoztuk a [Reload Order Url resource-ot](../api/reload_order_url.md). Ennek a resource-nak a segítségével létre lehet hozni egyedi url-t a be nem fejezett rendelésekhez (Elhagyott kosarakhoz).
+We have created the [Reload Order Url resource](../api/reload_order_url.md). This resource can be used to create a unique url for incomplete orders (Abandoned carts).
 
 #### 2023.05.10
-[Product List Attribute Value Relation Resource](../api/product_list_attribute_value_relation.md) esetében javítottuk a “page” paraméter használatát és ezentúl az összes oldal találata lekérdezhető lesz.
+In the case of [Product List Attribute Value Relation Resource](../api/product_list_attribute_value_relation.md), we have improved the use of the “page” parameter and from now on the results of all pages can be queried.
 
 #### 2023.03.29
-Bővítettük az app fejlesztőket értesítő [webhookok](../paymentapi/docs/l_notifications.md) tartalmán. Mostmár a küldés oka is benne van azokban a webhookokban, amiket előfizetés leállításakor küldünk.
+We expanded the content of [webhooks](../paymentapi/docs/l_notifications.md) that notify app developers. The reason for sending is now also included in the webhooks that we send when a subscription is stopped.
 
-Továbbfejlesztettük az app fejlesztők által definiálható [Fizetési tervek](../paymentapi/docs/h_plan.md) működését. Mostmár, hogyha változik a Fizetési terv ára vagy neve, akkor a meglévő app előfizetések a módosításokkal újjulnak meg.  
+We have improved the functionality of [Payment plans](../paymentapi/docs/h_plan.md) that can be defined by app developers. Now, if the price or name of the Payment plan changes, the existing app subscriptions will be renewed with the changes.
 
 #### 2023.03.01
-Bővítettük a [Order extend resource](../api/order_extend.md) és [Order resource](../api/order.md) lehetséges értékeit további lehetőséggel:
-- **shippingMethodExtension** - A GLSPARCELSHOP ketté lett választva, mostantól GLSPARCELPOINT és GLSPARCELLOCKER van helyette.
-- **shippingMethodExtension** - A Foxpost házhozszállítás és Foxpost 
-csomagautomata értéke javítva lett.
+We have expanded the possible values of [Order extend resource](../api/order_extend.md) and [Order resource](../api/order.md) with an additional option:
+- **shippingMethodExtension** - GLSPARCELSHOP has been split into two, it now has GLSPARCELPOINT and GLSPARCELLOCKER instead.
+- **shippingMethodExtension** - Foxpost home delivery and Foxpost
+  parcel machine value has been improved.
 
-#### 2023.02.01
-Bővítettük a [Script Tag resource](../api/script_tag.md) paramétereit egy további lehetőséggel:
-- **displayArea** - Ez a mező mutatja meg, hogy pontosan hová is lett elhelyezve, vagy hová helyezhető el a hívásban használt script.
+#### 2023.01.02
+We expanded the [Script Tag resource](../api/script_tag.md) parameters with an additional option:
+- **displayArea** - This field shows exactly where the script used in the call was or can be placed.
 
 #### 2023.01.27
-Bővítettük a [WebHook resource](../api/webhook.md)-hoz felvehető eseményeket három további lehetőséggel:
-- hírlevél feliratkozás (newsletter_subscribe)
-- hírlevél leiratkozás (newsletter_unsubscribe)
-- hírlevél feliratkozó adatmódosítása (newsletter_update_subscriber)
+We have expanded the events that can be added to [WebHook resource](../api/webhook.md) with three additional options:
+- newsletter subscription (newsletter_subscribe)
+- newsletter unsubscribe (newsletter_unsubscribe)
+- change newsletter subscriber data (newsletter_update_subscriber)
 
 #### 2022.11.30
-Új kereső paraméter került be az [Order](../api/order.md) és [OrderExtend](../api/order_extend.md) Resource-okhoz "innerIdMin" néven.\
-Ezzel rendelések belső azonosítójára tudunk szűrni, nagyobb vagy egyenlő logikával.
+A new search parameter has been added to the [Order](../api/order.md) and [OrderExtend](../api/order_extend.md) Resources called "innerIdMin".\
+With this, we can filter by the internal identifier of orders, with greater than or equal logic.
 
 #### 2022.11.21
-WebHook Resource paraméterek javítása.\
-Mostantól a [WebHook Resource](../api/webhook.md) esetén is megfelelően használhatók a "page", "limit" és "full" paraméterek. Ezek a dokumentációban korábban is így voltak feltüntetve, ennek ellenére nem lehetett használni, ezt a problémát javítottuk.
+Fix WebHook Resource Parameters.\
+From now on [WebHook Resource](../api/webhook.md) "page", "limit" and "full" Parameters can be used properly. These were indicated in the documentation as such before, however, it was not possible to use them, we fixed this problem.
 
-Customer Group Product Price Resource változás.\
-A [Customer Group Product Price Resource](../api/customer_group_product_price.md) használata esetén ezentúl a "customerGroup" és a "product" kötelező tulajdonságok.  Ezek megadása nélkül nem lehet létrehozni vásárlói csoport termék árakat. Ez a követelmény a fejlesztői dokumentációban is feltüntetésre került. A resource módosításakor nem kell kötelezően megadni ezeket.
+Customer Group Product Price Resource change.\
+When using [Customer Group Product Price Resource](../api/customer_group_product_price.md) "customerGroup" and "product" are now required properties. Without specifying them, it is not possible to create customer group product prices. This requirement is also stated in the developer documentation. It is not mandatory to enter them when changing the resource.
 
 #### 2022.10.05
-Elérhetővé vált 2 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).\
-Az új események segítségével további vásárlói tevékenységekre íratkozhatunk fel.
+2 new [Frontend API Events](frontend-api/01_shoprenterjs_api.md) have become available.\
+With the help of new events, we can subscribe to additional customer activities.
 - [onCheckoutShippingInfoAdded](frontend-api/01_shoprenterjs_api.md#oncheckoutshippinginfoadded)
 - [onCartPageViewed](frontend-api/01_shoprenterjs_api.md#oncartpageviewed)
 
-Továbbá a meglévő [onCheckoutOrderConfirmed](frontend-api/01_shoprenterjs_api.md#oncheckoutorderconfirmed) kibővítésre került a szállítási mód bruttó árával és a rendelés áfa tartalmával.
+Furthermore, the existing [onCheckoutOrderConfirmed](frontend-api/01_shoprenterjs_api.md#oncheckoutorderconfirmed) has been expanded with the gross price of the delivery method and the VAT content of the order.
 
 #### 2022.08.25
-Elérhetővé vált 4 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).\
-Az új események segítségével sikertelen fizetésre és vásárlói profil tevékenységekre íratkozhatunk fel.
+4 new [Frontend API Events](frontend-api/01_shoprenterjs_api.md) have become available.\
+With the help of new events, we can subscribe to failed payment and customer profile activities.
 - [onCheckoutOrderPaidUnsuccessful](frontend-api/01_shoprenterjs_api.md#oncheckoutorderpaidunsuccessful)
 - [onCustomerRegistered](frontend-api/01_shoprenterjs_api.md#oncustomerregistered)
 - [onCustomerLoggedIn](frontend-api/01_shoprenterjs_api.md#oncustomerloggedin)
 - [onCustomerUpdated](frontend-api/01_shoprenterjs_api.md#oncustomerupdated)
 
 #### 2022.08.24
-Elérhetővé vált 8 új [Frontend API Event](frontend-api/01_shoprenterjs_api.md).
-Az új események segítségével látogatói és vásárlói tevékenységekre íratkozhatunk fel.
+8 new [Frontend API Events](frontend-api/01_shoprenterjs_api.md) became available.
+With the help of new events, we can subscribe to visitor and customer activities.
 
 #### 2022.05.09
-Elérhetővé vált egy új feature a Payment API-hoz, [Bankkártya csere](../paymentapi/docs/j_funding_source_change.md).
-Segítségével az Ismétlődő díjfizetéseinkhez tartozó bankkártyákat cseréltethetjük ki a felhasználóinkkal.
+A new feature has become available for the Payment API, [Bank card change](../paymentapi/docs/j_funding_source_change.md).
+With its help, we can exchange the bank cards for our Recurring fee payments with our users.
 
 #### 2022.03.23.
-Az [Order](../api/order.md) resource-unk ‘DELETE’ metódusát megszüntettük.
+The 'DELETE' method of our [Order](../api/order.md) resource has been removed.
 
 #### 2022.03.09.
-Az [Order](../api/order.md) resource-unk ‘DELETE’ metódusát megszüntetjük 2022. március 23-ával. A dokumentációból a mai nappal kikerül az erre vonatkozó leírás de természetesen az említett dátumig még elérhető és használható gond nélkül a metódus.
+The 'DELETE' method of our [Order](../api/order.md) resource will be discontinued on March 23, 2022. The relevant description will be removed from the documentation as of today, but of course the method is still available and can be used without any problems until the mentioned date.
 
 #### 2022.02.15.
-A [Weight](../api/weight_class.md) és [Length](../api/length_class.md) Class Resource-ok mellé bekerültek a Description-jeik.
+Descriptions have been added to the [Weight](../api/weight_class.md) and [Length](../api/length_class.md) Class Resources.
 - [Weight Class Description](../api/weight_class_description.md)
 - [Length Class Description](../api/length_class_description.md)
 
-A szöveges tartalmak immáron API-n kresztül is elérhetőek: 
+Texts contents are now also available via API:
 - [CMS Content Extend Resource](../api/cms_content_extend.md)
 - [CMS Content Description Resource](../api/cms_content_description.md)
 
-Az Webhook API kibővült a Mennyiségi árkedvezmény mezővel. [Webhook Resource](../api/webhook.md)
+The Webhook API has been extended with a Volume Discount field. [Webhook Resource](../api/webhook.md)
 
 #### 2022.01.10.
-A [WebHook Resource](../api/webhook.md) kapott két új elküldhető mezőt:
-- order_expectedDeliveryDate (Rendelés Állapotváltás)
-- order_newsletterChecked  (Új rendelés feladás
+[WebHook Resource](../api/webhook.md) got two new sendable fields:
+- order_expectedDeliveryDate (Order Status Change)
+- order_newsletterChecked (Send new order
 
 #### 2021.12.20.
-Egy új korlátozást vezettünk be a terméktulajdonságokra: Összesen maximum 300 db egyed hozható létre
-a [List Attribute](../api/list_attribute.md), [Text Attribute](../api/text_attribute.md) és a [Number Attribute](../api/number_attribute.md) Resource használatával. 
+We have introduced a new limitation on product properties: A maximum of 300 units can be created
+using [List Attribute](../api/list_attribute.md), [Text Attribute](../api/text_attribute.md) and [Number Attribute](../api/number_attribute.md) Resource.
 
 #### 2021.11.09
-A [Settings Resource](../api/setting.md) két, a matricákra vonatkozó beállítással bővült: config_badge_max és config_badge_orientation
+Added two badge settings to [Settings Resource](../api/setting.md): config_badge_max and config_badge_orientation
 
 #### 2021.10.11
-A Payment API [Egyszeri](../paymentapi/docs/g_one_time_charge.md) és [Ismételődő díjfizetései](../paymentapi/docs/i_recurring_charge.md) immáron lekérdezhetőek GET kéréssel.
+Payment API [One-time](../paymentapi/docs/g_one_time_charge.md) and [Recurring charges](../paymentapi/docs/i_recurring_charge.md) can now be queried with a GET request.
 
 #### 2021.08.17
 
-A Shoprenter Payment API dokumentáció elérhetővé tettük az oldalon. [SR Payment API](../paymentapi/docs/a_introduce.md)
+The Shoprenter Payment API documentation has been made available on the site. [SR Payment API](../paymentapi/docs/a_introduce.md)
 
 #### 2021.08.10
 
-- Hamarosan meg fog szünni a ***.api.shoprenter.hu** rendszer domain, helyette a ***.api.myshoprenter.hu** domain-en lesznek elérhetőek az API Resource-ok. Így érdemes lesz mielőbb váltani és frissíteni az integrációkat.
-- A [Order Resource](../api/order.md) és a [Order Extend Resource](../api/order_extend.md) dokumentációjában feltüntettük **shippingMethodExtension** és **paymentMethodCode** lehetséges értékeit, táblázatba foglalva.
-- Az [Order Resource](../api/order.md),  [Order Extend Resource](../api/order_extend.md), [Product  Resource](../api/product.md) és [Product Extend Resource](../api/product_extend.md) egyes tulajdonságainak leírását pontosítottuk.
-- Pontosítottuk a API limitre vonatkozó megszorításokat
+- The ***.api.shoprenter.hu** system domain will soon cease to exist, the API Resources will be available on the ***.api.myshoprenter.hu** domain instead. So it will be worthwhile to switch and update the integrations as soon as possible.
+- In the documentation of [Order Resource](../api/order.md) and [Order Extend Resource](../api/order_extend.md), we indicated the possible values of **shippingMethodExtension** and **paymentMethodCode**, in a table reserved.
+- [Order Resource](../api/order.md), [Order Extend Resource](../api/order_extend.md), [Product Resource](../api/product.md) and [Product We clarified the description of some of the properties of Extend Resource](../api/product_extend.md).
+- We clarified the API limit restrictions
 
 #### 2021.07.07
-Immáron a [Webhook Resource](../api/webhook.md) -ban, a webHookParameters **fields** property-jével szabályozni tudjuk, hogy a Shoprenter milyen mezőket küldjön el az általunk megadott url-re.
+Now in [Webhook Resource](../api/webhook.md), with the **fields** property of webHookParameters, we can control which fields Shoprenter sends to the url we specify.
 
-#### 2021.05.06.
-A Product és Product Extend Resource POST és PUT kéréseinél immáron frissül a árszorzó, a "sávos árszorzók" funkció beállításai szerint.
+#### 2021.05.06
+For POST and PUT requests of Product and Product Extend Resource, the price multiplier is now updated according to the settings of the "band price multipliers" function.
 
 #### 2021.03.10
-Az [Order Product Resource](../api/order_product.md) -ba bekerült az productInnerId mező.
-Ez a megrendelt termék belső azonosítója, így nincs szükség a product resource linket meghívni, ha csak erre vagyunk
-kíváncsiak
+Added productInnerId field to [Order Product Resource](../api/order_product.md).
+This is the internal identifier of the ordered product, so there is no need to call the product resource link if that's all we're after
+they are curious
 
 #### 2021.02.23
-Az [Order Product Resource](../api/order_product.md) -ba bekerült az innerId mező.
-Természetesen, ez a rendelés és a termék közötti kapcsolatot leíró egyedek belső azonosítója,
-nem a terméké!
+Added innerId field to [Order Product Resource](../api/order_product.md).
+Of course, this is the internal identifier of the individuals describing the relationship between the order and the product,
+not the product!
 
-#### 2021.02.16.
-Az [**Order**](../api/order.md) és az [**Order Extend**](../api/order_extend.md) Resource egy új tulajdonsággal bővült:
+#### 2021.02.16
+Added a new property to [**Order**](../api/order.md) and [**Order Extend**](../api/order_extend.md) Resource:
 **shippingMethodLocalizedName**
-Ez a rendelés nyelvén tartalmazza a szállítási mód **aktuális** nevét.
+This contains the **current** name of the delivery method in the language of the order.
 
+#### 2021.02.11
+- Date filters for **Customer/Customer Extend** and **Order/OrderExtend Resource** have been added.
+  Narrowing the collection by date has become much more customizable.
+- Added a new API endpoint: [**Tax Class Extend Resource**](../api/tax_class_extend.md)
+  Thus, the VAT rates do not have to be retrieved via a link.
+- 
+#### 2021.02.09
+- Added a **parentProduct** property to [**Order Product Resource**](../api/order_product.md).
+  It is typically inspired by tasks where we need to know what the ordered product is when processing an order
+  does it have a parent product. Read only!
+- Added a **coupon** property to [**Order Extend Resource**](../api/order_extend.md). All data of the used coupon
+  included. Read only!
+- In [**Order Extend Resource**](../api/order_product.md) **paymentCountry**, **shippingCountry**,
+  **language** and **currency** properties have been opened. They are read only!
 
-#### 2021.02.11.
-- A **Customer/Customer Extend** és az **Order/OrderExtend Resource**-ok dátum szűrői kiegészültek.
-A kollekció lekérés dátum szerinti szűkítése sokkal testreszabhatóbbá vált.
-- Bekerült egy új API végpont: [**Tax Class Extend Resource**](../api/tax_class_extend.md)
-Így az áfakulcsokat nem kell linken keresztül lekérni.
+#### 2021.01.27
+- For POST and PUT requests of Product and Product Extend Resource, the price multiplier is now updated according to the settings of the "band price multipliers" function.
 
-#### 2021.02.09.
-- A [**Order Product Resource**](../api/order_product.md) kiegészült egy **parentProduct** tulajdonsággal. 
-  Tipikusan olyan feladatok ihlették, amikor rendelés feldolgozásnál tudnunk kell, hogya rendelt terméknek 
-  van-e szülőterméke. Csak olvasható!
-- A [**Order Extend Resource**](../api/order_extend.md) kiegészült egy **coupon** tulajdonsággal. A használt kupon összes adatát
-  tartalmazza. Csak olvasható!
-- A [**Order Extend Resource**](../api/order_product.md) -ban a **paymentCountry**, a **shippingCountry**, 
-  a **language** és a **currency** tulajdonságot kinyítottuk.  Csak olvashatóak!
+#### 2021.01.19
+- The [**Getting started**](./app-development/01_getting_started.md) document has been corrected and the "app_url" description has been added.
+- Setting resource was added with the store's time zone (**config_timezone**). [documentation](../api/setting.md)
 
-#### 2021.01.27.
-- A Product és Product Extend Resource POST és PUT kéréseinél immáron frissül a árszorzó, a "sávos árszorzók" funkció beállításai szerint.
+#### 2020.11.24
+- Added a [**Add Order**](./api-examples/09_create_order.md) example to the API examples.
 
-#### 2021.01.19.
-- A [**Kezdeti lépések**](./app-development/01_getting_started.md) dokumentum javítva lett, és ki lett egészítve az "app_url" leírással.
-- Setting resource kiegészült az áruház időzónájával (**config_timezone**). [dokumentáció](../api/setting.md)
+#### 2020.10.30
+- The API examples have been supplemented with an example [**"Send new order" webhook operation**](./api-examples/06_webhook.md).
+- Added a [**Handling product option**](./api-examples/07_product_option.md) example to the API examples.
+- Added a [**Product attribute handling**](./api-examples/08_product_attribute_handling.md) example to the API examples.
 
-#### 2020.11.24.
-- Az API példák kiegészültek egy [**Rendelés felvétele**](./api-examples/09_create_order.md) példával.
+#### 2020.10.29
+- The [**API Batch processing**](api/04_batch.md) menu item has been added with additional examples: [**Product creation with batch**](api/04_batch.md#tomeges-termekeftolttes), [**Attach product to category using Outer ID**](api/04_batch.md#product-add-to-category-with-outer-id-help)
+- [**Usage of Outer ID**](api/05_outer_id.md) has been added with an entry describing in which cases it is wrong to use Outer ID.
 
-#### 2020.10.30.
-- Az API példák kiegészültek egy [**"Új rendelés feladás" webhook működése**](./api-examples/06_webhook.md) példával.
-- Az API példák kiegészültek egy [**termékopció kezelése**](./api-examples/07_product_option.md) példával.
-- Az API példák kiegészültek egy [**Termék típusok, egyedi tulajdonságok és termékváltozatok kezelése**](./api-examples/08_product_attribute_handling.md) példával.
+#### 2020.10.27
+- The API menu item has been supplemented with [**postman usage example code entry**](api/08_postman.md)
 
-#### 2020.10.29.
-- Az [**API Batch feldolgozó**](api/04_batch.md) menüpont kiegészült további példákkal: [**Tömeges termékfeltöltés**](api/04_batch.md#tomeges-termekfeltoltes), [**Termék hozzáadása kategóriához Outer ID segítségével**](api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)
-- Az [**Outer ID használata**](api/05_outer_id.md) kiegészült egy bejegyzéssel, amelyben leírja milyen esetekben helytelen az Outer ID-t használni.
+#### 2020.10.26
+- Added an [**Attach image to product**](./api-examples/05_attach_uploaded_image_to_product.md) example to the API examples.
+- Added a [**Product Special**](./api-examples/01_0_product_special.md) example to the API examples.
 
-#### 2020.10.27.
-- Az API menüpont kiegészült a [**Postman használatát példakódokkal bemutató bejegyzéssel**](api/08_postman.md)
+#### 2020.10.22
+- Added an [**Attach product to category**](./api-examples/04_attach_product_to_category.md) example to the API examples.
 
-#### 2020.10.26.
-- Az API példák kiegészültek egy [**termékkép hozzáadása termékhez**](./api-examples/05_attach_uploaded_image_to_product.md) példával.
-- Az API példák kiegészültek egy [**akciós termék**](./api-examples/01_0_product_special.md) példával.
+#### 2020.13.10
+- The page search engine has been changed, in which you can now search not only for the name of the page, but also for its contents.
 
-#### 2020.10.22.
-- Az API példák kiegészültek egy [**termék hozzáadása kategóriához**](./api-examples/04_attach_product_to_category.md) példával.
+#### 2020.07.21
+- The value of the Product Extend Resource "productPrices" has changed. Description of the operation [link](./api-examples/03_price_calculation.md)
 
-#### 2020.10.13.
-- Az oldalkeresője módosult, amelyen belül most már nem csak az oldal nevére, hanem a benne lévő tartalmakra is rá lehet keresni.
+#### 2020.05.18
+- Integrated shipping modes have become available through the Shipping Mode Extend Resource. Important: only shipping methods edited on the Shoprenter admin are available and WSESHIP (custom, created by users) types can be changed via API.
 
-#### 2020.07.21.
-- A Product Extend Resource "productPrices" értéke megváltozott. Leírás a működésről [link](./api-examples/03_price_calculation.md)
-
-#### 2020.05.18.
-- A Shipping Mode Extend Resource-on keresztül elérhetőek lettek  integrált szállítási módok is. Fontos: csak, a Shoprenter adminon szerkesztett, szállítási módok érhetőek el és a WSESHIP (egyedi, felhasználók által létrehozott) típusúak módosíthatóak API-on keresztül.
-
-#### 2020.05.14.
-- Az Information Extend Resource-ba bekerült az UrlAliases property, illetve szabályozhatóvá vált a láthatósága a resouce-al felvett Szöveges menüpontoknak:
+#### 2020.05.14
+- The UrlAliases property was added to the Information Extend Resource, and the visibility of the Text menu items added with resouce became controllable:
 
 https://doc.shoprenter.hu/api/information_extend.html
 
-Természetesen bővült az URL Alias Resource is. Ezentúl INFORMATION típusú alias is kezelhető:
+Of course, the URL Alias Resource has also been expanded. From now on, INFORMATION type alias can also be handled:
 
 https://doc.shoprenter.hu/api/url_alias.html
 
-#### 2020.04.15.
-- A példa alkalmazások menüpont kiegészült egy bővebb Slim keretrendszerre épülő demo alkalmazással.
+#### 2020.04.15
+- The example applications menu item has been supplemented with a demo application based on a wider Slim framework.
 
-#### 2020.04.07.
-- Product Description Resource kiegészült a metaTitle propertyvel.
+#### 2020.07.04
+- Product Description Resource was added with the metaTitle property.
 
-#### 2020.01.22.
-- Pótolva lett a CustomerGroup Resource és a Product Extend Resource ProductPrice adataiban a Customer Group InnerId-t.
+#### 2020.01.22
+- The Customer Group InnerId has been replaced in the CustomerGroup Resource and Product Extend Resource ProductPrice data.
 
-#### 2019.11.21.
-- [WebHook automatizmus](api/07_webhook.md) dokumentációja hozzáadva.
+#### 2019.11.21
+- [WebHook automation](api/07_webhook.md) documentation added.
 
-#### 2019.11.20.
-- A Product Extend Resource GET endpoint hívása kiegészült egy **productPrices** tömbbel, amellyel a termékek árait kaphatjuk meg vevőcsoportokra szétbontva. [dokumentáció](../api/product_extend.md)
+#### 2019.11.20
+- The call to the Product Extend Resource GET endpoint has been supplemented with a **productPrices** array, with which we can get the prices of the products broken down into customer groups. [documentation](../api/product_extend.md)
 
-- Ha a Customer Resource-t használva új vevőt szeretnénk létrehozni, és nem adunk meg **customerGroup**-t, akkor a vevő az alapértelmezett vevőcsoportba fog kerülni.
+- If we want to create a new customer using Customer Resource and do not specify **customerGroup**, then the customer will be included in the default customer group.
 
-#### 2019.10.24.
-- Elérhető vált a **Payment Mode Resource** API végpont, amellyel kikérhetjük az aktuális bolt **telepített** fizetési módjait. Mivel a rendszer nem támogatja a saját fizetési módok létrehozását, így ez a resource teljesen readOnly. [dokumentáció](../api/payment_mode.md)
+#### 2019.10.24
+- The **Payment Mode Resource** API endpoint has become available, with which we can retrieve the **installed** payment methods of the current store. Since the system does not support creating your own payment methods, this resource is completely readOnly. [documentation](../api/payment_mode.md)
 
-#### 2019.10.21.
-- A **ProductExtend** resource-ba bekerült egy új property, a "**productAttributeExtend**" nevű lista, ami tartalmazza a termékhez tartozó tulajdonságokat. Fontos megjegyezni, hogy ez jelenleg csak readonly, tehát nem lehet küldeni rá POST adatokat. [dokumentáció](../api/product_extend.md)
+#### 2019.10.21
+- A new property, the "**productAttributeExtend**" list, containing the properties belonging to the product, was added to the **ProductExtend** resource. It's important to note that this is currently readonly, so you can't POST data to it. [documentation](../api/product_extend.md)
 
-#### 2019.10.17.
-- Setting resource kiegészült a bolt üzemeltetőjének címével (**config_address**) és telefonszámával (**config_telephone**). [dokumentáció](../api/setting.md)
+#### 2019.10.17
+- Setting resource was supplemented with the title (**config_address**) and telephone number (**config_telephone**) of the store operator. [documentation](../api/setting.md)
 
 #### 2019.10.14
-- Elérhetővé vált a szöveges tartalmak menedzseléséhez szükséges API végpont Information Extend néven. [dokumentáció](../api/information_extend.md)
+- The API endpoint required for managing texts content has become available under the name Information Extend. [documentation](../api/information_extend.md)
 
 #### 2019.09.23
-- Sok problémát okozott ügyfeleinknek az egyes fő resoruce-ok (Product, Order, Category stb.) törlése esetén, hogy bár a rájuk küldött DELETE kérések esetén, a hozzájuk tartozó OuterID megfelelelően törlődött. Viszont, ha volt kapcsolódó resource-a, pl. egy termék esetén a termék leírások, így ehhez is tartozott külön OuterID, ez sajnos nem törlődött automatikusan. Ezt oldottuk meg, így most már nem kell tartani attól, hogy később név ütközésbe futnak bele a fejlesztők, OuterID felvételekor.
+- It caused a lot of problems for our customers when deleting individual main resources (Product, Order, Category, etc.) that although in the case of DELETE requests sent to them, the corresponding OuterID was deleted accordingly. However, if you had a related resource, e.g. in the case of a product, the product descriptions, so this also included a separate OuterID, unfortunately this was not deleted automatically. We solved this, so now you don't have to worry about the fact that developers will later run into a Name conflict when adding an OuterID.
 
 #### 2019.09.10
-- Bekerült a Shipping Mode Extend resource, amellyel a szállítási módokkal kapcsolatos műveleteket lehet végrehajtani. [dokumentáció](../api/shipping_mode_extend.md)
-- Bekerült a Shipping Mode Description resource, amellyel a szállítási módokkal kapcsolatos adatokat (név, leírás, nyelv) lehet kezelni. [dokumentáció](../api/shipping_mode_description.md)
-- Bekerült a Shipping Lane resource, amellyel a szállítási módokkal kapcsolatos szállítási sávokat lehet kezelni. [dokumentáció](../api/shipping_lane.md)
-- Order resource kiegészült egy shippingMode kereső paraméterrel és egy shippingMode propertyvel. [dokumentáció](../api/order.md)
-- Order Extend resource kiegészült egy shippingMode kereső paraméterrel és egy shippingMode propertyvel. [dokumentáció](../api/order_extend.md)
+- Added the Shipping Mode Extend resource, which can be used to perform operations related to shipping modes. [documentation](../api/shipping_mode_extend.md)
+- The Shipping Mode Description resource has been added, which can be used to manage data related to shipping modes (Name, description, language). [documentation](../api/shipping_mode_description.md)
+- The Shipping Lane resource has been added, which can be used to manage shipping lanes related to shipping methods. [documentation](../api/shipping_lane.md)
+- Order resource was added with a shippingMode search parameter and a shippingMode property. [documentation](../api/order.md)
+- Order Extend resource was added with a shippingMode search parameter and a shippingMode property. [documentation](../api/order_extend.md)
 
-#### 2019.09.03
-- Bekerült a GeoZone resource, amellyel le lehet kérdezni, hogy milyen földrajzi zónához milyen országok tartoznak. [dokumentáció](../api/geo_zone.md)
-- A Country resource kiegészült a geoZones propertyvel, amellyel megkaphatjuk, hogy egy adott ország milyen földrajzi zónákhoz tartozik. [dokumentáció](../api/country.md)
-- Az OrderProduct resource kiegészült további propertykkel, amellyel megkaphatjuk a rendelt termék szélességét (**width**), magasságát (**height**), hosszát (**length**) és súlyát (**weight**). [dokumentáció](../api/order_product.md)
-- A ProductImage resource kiegészült egy sortOrder propertyvel, amellyel meg lehet adni a termékképek sorrendjét. [dokumentáció](../api/product_image.md)
-- Elérhetővé vált a Domain Resource. Ezzel kikérhető az adott bolthoz felvett domainek adatai: a domain-ek nyelve és hogy elsődleges domain-ek vagy sem. [dokumentáció](../api/domain.md)
+#### 2019.03.09
+- The GeoZone resource has been added, which can be used to query which countries belong to which geographic zone. [documentation](../api/geo_zone.md)
+- The Country resource has been supplemented with the geoZones property, with which we can get the geographic zones a given country belongs to. [documentation](../api/country.md)
+- The OrderProduct resource has been supplemented with additional properties with which we can obtain the width (**width**), height (**height**), length (**length**) and weight (**weight**) of the ordered product. [documentation](../api/order_product.md)
+- The ProductImage resource has been supplemented with a sortOrder property, which can be used to specify the order of product images. [documentation](../api/product_image.md)
+- Domain Resource has become available. With this you can request the data of the domains registered for the given store: the language of the domains and whether they are primary domains or not. [documentation](../api/domain.md)
 
 #### 2019.08.08
-- Bekerült a **Json-alapú** kommunikáció az API-val. Emellett az API dokumentáció ki lett bővítve **Json** formátumú példákkal.
+- Added **Json-based** communication with the API. In addition, the API documentation has been expanded with examples in **Json** format.
 
 #### 2019.08.06
-- A Product és Product Extend resource-ban elérhető lett az **allImages** property, mely az adott terméhez tartozó fő termékkép (mainImage) és a hozzá tartozó további képek (image1, image2,...) **teljes** url elérését tartalmazza, cache-elt formában.
+- The **allImages** property has become available in the Product and Product Extend resource, which is the main product image (mainImage) of the given room and the additional images (image1, image2,...) **full** url access, in cached form.
 
-#### 2019.07.05.
-- Customer és Customer Extend resource-khoz elkészült egy **updatedAtMin** filter, ami a megadott dátum után módosított 
-vásárlókat adja vissza. [dokumentáció](../api/customer_extend.md)
+#### 2019.05.07
+- An **updatedAtMin** filter was created for Customer and Customer Extend resources, which was modified after the specified date
+  returns customers. [documentation](../api/customer_extend.md)
 
-#### 2019.06.23. 
-- **Product Extend** resource-ba belekerült a **manufacturer** kibontva, hogy ne kelljen újabb lekérés hozzá 
-[dokumentáció](../api/product_extend.md)    
+#### 2019.06.23
+- **manufacturer** was included in the **Product Extend** resource expanded so that it does not need to be requested again
+  [documentation](../api/product_extend.md)
 
-#### 2019.06.21.
-- **API batch feldolgozó**nál memória optimalizálás történt, hogy egyszerre több request-et is tudjon kezelni. 
-[dokumentáció](./api/04_batch.md)
+#### 2019.06.21
+- **API batch processor** has been memory optimized so that it can handle several requests at the same time.
+  [documentation](./api/04_batch.md)
 
-#### 2019.05.30.
-- Order resource-ba bekerült az **originalPrice** mező [dokumentáció](../api/order.md)
+#### 2019.05.30
+- **originalPrice** field added to Order resource [documentation](../api/order.md)
 
-#### 2019.05.03.
-- Product és ProductExtend resource-ba bekerült a **cost** mező [dokumentáció](../api/product.md)
+#### 2019.03.05
+- **cost** field added to Product and ProductExtend resource [documentation](../api/product.md)
 
-#### 2019.04.29.
-- A **full** paraméter segítségével a lista lekéréseknél már egy requestben elérjük a lista elemek tartalmát, 
-análkül hogy újabb kéréseket kellene indítani. Ez minden resource esetén elérhető. 
-[dokumentáció](./api/03_full_parameter.md)
+#### 2019.04.29
+- With the help of the **full** parameter, when retrieving a list, the content of the list elements can be reached in one request,
+  without having to start new requests. This is available for all resources.
+  [documentation](./api/03_full_parameter.md)
 
-#### 2019.02.01.
-- **Address resource**-ba bekerült a telephone mező [dokumentáció](../api/address.md)
+#### 2019.01.02
+- The telephone field was added to **Address resource** [documentation](../api/address.md)
 
-#### 2018.12.05.
-- **CategoryExtend resource** elkészítése [dokumentáció](../api/category_extend.md)
-- **CustomerExtend resource** elkészítése [dokumentáció](../api/customer_extend.md)  
-- [Mire használhatóak a kiterjesztett Resourceok?](./api/06_extend_resource.md)
+#### 2018.12.05
+- Create **CategoryExtend resource** [documentation](../api/category_extend.md)
+- Creating **CustomerExtend resource** [documentation](../api/customer_extend.md)
+- [What can extended Resources be used for?](./api/06_extend_resource.md)
 
-#### 2018.09.25.
-- **Webhook resource** elkészítése, aminek segítségével webhook-ot lehet létrehozni
- [dokumentáció](../api/webhook.md)
+#### 2018.25.09
+- Creation of a **Webhook resource**, which can be used to create a webhook
+  [documentation](../api/webhook.md)
 
-#### 2018.09.13.
-- **ScriptTag resource** elkészítése, aminek segítségével a frontendre lehet API-n keresztül script-et elhelyezni
- [dokumentáció](../api/script_tag.md)
+#### 2018.09.13
+- Preparation of **ScriptTag resource**, which can be used to place scripts on the front end via API
+  [documentation](../api/script_tag.md)
 
-#### 2017.10.20.
-- **ProductExtend resource** elkészítése [dokumentáció](../api/product_extend.md)
-- **OrderExtend resource** elkészítése [dokumentáció](../api/order_extend.md)
-- [Mire használhatóak a kiterjesztett Resourceok?](./api/06_extend_resource.md)
+#### 2017.10.20
+- Create **ProductExtend resource** [documentation](../api/product_extend.md)
+- Create **OrderExtend resource** [documentation](../api/order_extend.md)
+- [What can extended Resources be used for?](./api/06_extend_resource.md)
 
-#### 2017.07.27. 
-- **Többnyelvűség** lekezelése a **Document Description** resource-nál
- [dokumentáció](../api/document_description.md)
+#### 2017.07.27
+- Handling of **Multilingualism** at the **Document Description** resource
+  [documentation](../api/document_description.md)
 
-#### 2017.06.30. 
-- Beszédes **hibaüzenetek** visszaadása [dokumentáció](./api/02_status_codes.md)
+#### 2017.06.30
+- Return verbose **error messages** [documentation](./api/02_status_codes.md)

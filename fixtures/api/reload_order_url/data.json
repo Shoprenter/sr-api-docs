@@ -3,8 +3,7 @@
         {
             "name": "order.id",
             "description": {
-                "hu": "Rendelés egyedi azonosítója.",
-                "en": "Rendelés egyedi azonosítója."
+                "en": "Order identifier."
             },
             "required": true,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "customer.id",
             "description": {
-                "hu": "Vásárló egyedi azonosítója.",
-                "en": "Vásárló egyedi azonosítója."
+                "en": "Customer identifier."
             },
             "required": false,
             "readonly": false
@@ -23,12 +21,10 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/reloadUrl",
                 "en": "\/reloadUrl"
             },
             "description": {
-                "hu": "Reload order url létrehozásra szolgál.",
-                "en": "Reload order url létrehozásra szolgál."
+                "en": "Used to create a reload order url."
             },
             "parameters": [],
             "example": {

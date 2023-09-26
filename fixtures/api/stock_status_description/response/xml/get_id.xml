@@ -1,7 +1,7 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/stockStatusDescriptions/c3RvY2tTdGF0dXNEZXNjcmlwdGlvbi1zdG9ja19zdGF0dXNfaWQ9NSZsYW5ndWFnZV9pZD0x]]></href>
     <id><![CDATA[c3RvY2tTdGF0dXNEZXNjcmlwdGlvbi1zdG9ja19zdGF0dXNfaWQ9NSZsYW5ndWFnZV9pZD0x]]></id>
-    <name><![CDATA[Előrendelhető]]></name>
+    <name><![CDATA[Available for pre-order]]></name>
     <color><![CDATA[#f00540]]></color>
     <stockStatus>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/stockStatuses/c3RvY2tTdGF0dXMtc3RvY2tfc3RhdHVzX2lkPTU=]]></href>

@@ -1,13 +1,13 @@
 # Product Option Value Description Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'product_option_value_description'" :lang="'hu'"/>
+<ResourceProperties :resource="'product_option_value_description'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,9 +87,9 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'product_option_value_description'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példák
+## Examples
 
-- [**Termékopció kezelése**](../development/api-examples/07_product_option.md)
+- [**Handling product option**](../development/api-examples/07_product_option.md)
 

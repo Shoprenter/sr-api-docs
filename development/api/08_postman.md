@@ -2,7 +2,7 @@
 
 ## API használatához példák
 
-- PHP teszteléshez használható API klienst [ide kattintva](https://github.com/Shoprenter/api-client) érheti el.
+- PHP testeléshez használható API klienst [ide kattintva](https://github.com/Shoprenter/api-client) érheti el.
 - Shoprenter API példa kollekciók. (Használatáról bővebben a cikkben) [Letöltés](https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json)
 - [További példák](../api-examples/01_0_product_special.md)
 
@@ -42,7 +42,7 @@ Amennyiben további információ szükséges az induláshoz, az
 [itt lévő dokumentációban](https://learning.postman.com/docs/getting-started/introduction/) ezekre rá tudunk keresni.
 
 
-#### Példa kollekció importálása
+#### Example kollekció importálása
 
 Shoprenter részről előre elkészítettünk egy kollekciót amit be lehet importálni és használni. A kérdéses JSON file ezen az URL-en érhető el: https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json
 

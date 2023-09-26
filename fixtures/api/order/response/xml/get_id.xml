@@ -13,42 +13,42 @@
     </invoiceId>
     <invoicePrefix/>
     <firstname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </firstname>
     <lastname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </lastname>
     <phone>
         <![CDATA[+36201234567]]>
     </phone>
     <fax/>
     <email>
-        <![CDATA[teszt@teszt.com]]>
+        <![CDATA[test@test.com]]>
     </email>
     <shippingFirstname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </shippingFirstname>
     <shippingLastname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </shippingLastname>
     <shippingCompany/>
     <shippingAddress1>
-        <![CDATA[Teszt út 11]]>
+        <![CDATA[Test street 11]]>
     </shippingAddress1>
     <shippingAddress2/>
     <shippingCity>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </shippingCity>
     <shippingPostcode>
         <![CDATA[4033]]>
     </shippingPostcode>
     <shippingZoneName/>
     <shippingCountryName>
-        <![CDATA[Magyarország]]>
+        <![CDATA[Hungary]]>
     </shippingCountryName>
     <shippingAddressFormat/>
     <shippingMethodName>
-        <![CDATA[Házhozszállítás futárszolgálattal]]>
+        <![CDATA[Home delivery with courier service]]>
     </shippingMethodName>
     <shippingMethodTaxRate>
         <![CDATA[25.0000]]>
@@ -63,29 +63,29 @@
         <![CDATA[0]]>
     </shippingReceivingPointId>
     <paymentFirstname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </paymentFirstname>
     <paymentLastname>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </paymentLastname>
     <paymentCompany/>
     <paymentAddress1>
-        <![CDATA[Teszt út 11]]>
+        <![CDATA[Test street 11]]>
     </paymentAddress1>
     <paymentAddress2/>
     <paymentCity>
-        <![CDATA[Teszt]]>
+        <![CDATA[Test]]>
     </paymentCity>
     <paymentPostcode>
         <![CDATA[4033]]>
     </paymentPostcode>
     <paymentZoneName/>
     <paymentCountryName>
-        <![CDATA[Magyarország]]>
+        <![CDATA[Hungary]]>
     </paymentCountryName>
     <paymentAddressFormat/>
     <paymentMethodName>
-        <![CDATA[Fizetési mód]]>
+        <![CDATA[Payment method]]>
     </paymentMethodName>
     <paymentMethodCode>
         <![CDATA[COD]]>
@@ -99,7 +99,7 @@
     </paymentMethodAfter>
     <taxNumber/>
     <comment>
-        <![CDATA[Megjegyzés]]>
+        <![CDATA[Comment]]>
     </comment>
     <total>
         <![CDATA[3990.0000]]>

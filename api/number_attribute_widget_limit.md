@@ -1,13 +1,13 @@
 # Number Attribute Widget Limit Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'number_attribute_widget_limit'" :lang="'hu'"/>
+<ResourceProperties :resource="'number_attribute_widget_limit'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'number_attribute_widget_limit'" :endpoint="'delete'" :lang="'en'"/>
 

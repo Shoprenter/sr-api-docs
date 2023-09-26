@@ -1,13 +1,13 @@
 # Zone Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'zone'" :lang="'hu'"/>
+<ResourceProperties :resource="'zone'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'zone'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'zone'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'zone'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'zone'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

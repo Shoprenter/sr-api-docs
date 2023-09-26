@@ -1,9 +1,9 @@
-# Teszt üzemmód
+# Test mode
 
-Lehetőséget adunk arra, hogy a Payment API integrációját - annak fejlesztése közben - biztonságosan lehessen tesztelni.
-Ahhoz, hogy egy fizetést teszt üzemmódban indítsuk el, az új fizetést létrehozásánál, ami lehet [egyszeri](../docs/one_time_charge.md) vagy akár [ismétlődő](../docs/recurring_charge.md), a payload-nak tartalmaznia kell a **test** tulajdonságot **true** értékkel.
+We provide an opportunity to safely test the integration of the Payment API - during its development.
+To start a payment in test mode, when creating a new payment, which can be [one-time](../docs/one_time_charge.md) or even [recurring](../docs/recurring_charge.md), the payload must contain the **test** property with a value of **true**.
 
-Példa POST adatokra recurring charge esetén:
+Example of POST data in case of recurring charge:
 
 ```javascript
 {
@@ -14,19 +14,19 @@ Példa POST adatokra recurring charge esetén:
     "test": true
 }
 ```
-Ebben az esetben a bankkártyás fizetés sandbox üzemmódban indul. Számlakiállítás nem történik.
-Ehelyett, a bolt számlázási adataiban megadott email címre, egy adat összesítőt küld ki a rendszer.
-Így ellenőrízhető, hogy éles fizetés esetén is, megfelelő adatokkal állítódna ki a számla.
+In this case, bank card payment starts in sandbox mode. No invoice is issued.
+Instead, the system sends a data summary to the email address specified in the store's billing information.
+In this way, it can be checked that the invoice is issued with the correct data, even in the case of live payment.
 
-Teszt Barion kártyaadatok:
+Test Barion card data:
 https://docs.barion.com/Sandbox
 
-Sikeres teszt kártyás fizetési adatok:<br>
-Kártyaszám: **4444 8888 8888 5559**<br>
-Lejárati idő: **Bármilyen jövőbeli dátum pl: 12/25**<br>
-CVC: **Bármilyen háromjegyű szám pl: 123**<br>
+Successful test card payment details:<br>
+Card number: **4444 8888 8888 5559**<br>
+Expiration date: **Any future date eg: 12/25**<br>
+CVC: **Any three-digit number eg: 123**<br>
 
-Sikertelen teszt kártyás fizetési adatok:<br>
-Kártyaszám: **4444 8888 8888 4446**<br>
-Lejárati idő: **Bármilyen jövőbeli dátum pl: 12/25**<br>
-CVC: **Bármilyen háromjegyű szám pl: 123**<br>
+Unsuccessful test card payment data:<br>
+Card number: **4444 8888 8888 4446**<br>
+Expiration date: **Any future date eg: 12/25**<br>
+CVC: **Any three-digit number eg: 123**<br>

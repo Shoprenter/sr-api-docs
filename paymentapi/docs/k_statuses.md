@@ -1,31 +1,31 @@
-# Státuszok
+# Statuses
 
-## Fizetések
+## Payments
 
-A két fizetési típushoz tartoznak státuszok, melyek az adott fizetés életciklusának állapotáról adnak információt.
-Bár az első sikeres tranzakció után a két típusnak eltérő az életpályája, a fizetések által felvehető állapotok nagyrészt megegyeznek
+Statuses belong to the two payment types, which provide information about the status of the life cycle of the given payment.
+Although the two types have different life paths after the first successful transaction, the states that can be recorded by payments are largely the same
 
-|Státusz                    |Leírás                                                                                                                                                                                                                                         |
-|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|pending                    | Az újonnan létrehozott függőben lévő fizetés státusza.                                                                                                                                                                                        |
-|accepted                   | A fizetés előtti állapot, amikor a bolt tulajdonos az 'approve oldalon' elfogadta a fizetési feltételeket.                                                                                                                                               |
-|active                     | Sikeres fizetés utáni állapot.                                                                                                                                                                                                                 |
-|declined                   | Elutasított fizetés. Ez megtörténhet a fizetést megerősítő oldalon vagy a tranzakciót lebonyolító szolgáltatás felületén.                                                                                                                      |
-|expired                    | Az az Ismételt díjfizetés kerülhet ebbe a státuszba, amely véglegesen lejárt. (Nem kell tovább díjat levonni.)                                                                                                                             |
-|frozen                     | Az Ismételt díjfizetés esetén jöhet elő, ha a tranzakció lebonyolítása közben olyan hiba lép fel, mely a bolt tulajdonos problémás banki adatai miatt következik be.                                                                                  |
-|failed                     | A bankkártyás fizetést lebonyolító szolgáltatásban történt olyan hiba, amely nem feloldható, nem folytatható.                                                                                                                                  |
-|cancelled                  | Ha az Ismételt díjfizetés FROZEN állapotú, 15 nap után - ha nem sikerült ACTIVE állapotra visszaállítani - úgy ebbe az állapotba kerül. Ezen felül, ha a fizetés direkt megszakításra kerül pl. alkalmazás törlésénél, úgy CANCELLED lesz a státusz.  |
+|Status                    | Description                                                                                                                                                                                                                                                                |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|pending                    | The status of the newly created pending payment.                                                                                                                                                                                                                           |
+|accepted                   | The state before payment, when the store owner has accepted the payment conditions on the 'approve page'.                                                                                                                                                                  |
+|active                     | Status after successful payment.                                                                                                                                                                                                                                           |
+|declined | Declined payment. This can happen on the page confirming the payment or on the interface of the service that handles the transaction.                                                                                                                                      |
+|expired | Recurring payments that have permanently expired can be assigned to this status. (No further charges need to be deducted.)                                                                                                                                                 |
+|frozen | It can occur in the case of recurring payments, if an error occurs during the transaction due to problematic bank details of the store owner.                                                                                                                              |
+|failed | An error occurred in the bank card payment service that cannot be resolved or continued.                                                                                                                                                                                   |
+|cancelled | If the Recurring payment is in FROZEN status, after 15 days - if it has not been possible to restore it to ACTIVE status - it will be in this status. In addition, if the payment is directly interrupted, e.g. when deleting an application, the status will be CANCELED. |
 
-## Bankkártya csere
+## Bank card change
 
-Egy adott Ismétlődő díjfizetésen végrehajtott bankkártya csere életciklusának állapotáról adnak információt.
-Hasonló állapotokat figyelhetünk meg, mint a normál fizetések esetén, hiszen technikailag minden csere egy bankkártyás fizetésnek felel meg.
+They provide information on the status of the life cycle of a bank card exchange carried out for a specific Recurring fee payment.
+Similar situations can be observed as in the case of normal payments, since technically every exchange corresponds to a bank card payment.
 
-|Státusz                    | Leírás                                                                                                                                                         |
+|Status                    | Description                                                                                                                                                    |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|pending                    | Az újonnan létrehozott, függőben lévő bannkártya csere státusza.                                                                                               |
-|accepted                   | A fizetés előtti állapot, amikor a bolt tulajdonos a megerősítő elfogadta a cserét.                                                                            |
-|active                     | Sikeres csere tranzakció utáni állapot. Ekkora a 10 Ft-os díj levonásra került és már az Ismétlődő díjfizetés a következő terhelésnél az új kártyáról történik |
-|declined                   | Elutasított csere. Ez megtörténhet a fizetést megerősítő oldalon vagy a tranzakciót lebonyolító szolgáltatás felületén.                                        |
-|failed                     | Vagy bankkártyás fizetést lebonyolító szolgáltatásban vagy a Payment API-ban történt olyan hiba, amely nem feloldható, nem folytatható.                        |
+|pending | The status of the newly created, pending ban card replacement. |
+|accepted | The state before payment, when the store owner has accepted the exchange as the confirmer. |
+|active | Status after a successful exchange transaction. The fee of HUF 10 has been deducted and the Recurring fee payment will be made from the new card at the next charge |
+|declined | Rejected exchange. This can happen on the page confirming the payment or on the interface of the service that handles the transaction. |
+|failed | Or an error occurred in the bank card payment service or in the Payment API that cannot be resolved or continued. |
 

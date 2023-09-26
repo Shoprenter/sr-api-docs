@@ -1,13 +1,13 @@
 # Product Tag Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'product_tag'" :lang="'hu'"/>
+<ResourceProperties :resource="'product_tag'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'product_tag'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_tag'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'product_tag'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_tag'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'product_tag'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_tag'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'product_tag'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_tag'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_tag'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'product_tag'" :endpoint="'delete'" :lang="'en'"/>
 

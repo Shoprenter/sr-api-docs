@@ -1,34 +1,36 @@
-# Nap terméke
+# Product of the day
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy terméket nap termékeként felvinni és módosítani.
+The example below shows how to add and modify a product as a product of the day.
 
-### Bevezetés
+### Introduction
 
-Az akciós termékek kezeléséről korábban volt már szó (lásd bővebbben: [**Akciós termék**](./01_0_product_special.md) példa). A nap terméke egy olyan speciális akciós árnak számít, ahol megadhatjuk, hogy a hét egy adott napján melyik termék legyen kiemelve, aminek akciós ára van.
- Ennek megadása az akciós árnál ismert [Product Special Resource](../../api/product_special.md) segítségével történik.
- A nap termékét a webshop admin felületén a **Beállítások > Megjelenés > Modul beállítása** menüpont alatt lehet beállítani. [Bővebb információ](https://support.shoprenter.hu/hc/hu/articles/215106328-Aj%C3%A1nl%C3%B3-modulok#nap_termeke)
- 
-### Nap terméke hozzáadása
+### Introduction
 
-Habár a nap termék ugyanazt a **Product Special resource**-t használja, mint amikor akciós árakat veszünk fel, viszont a küldendő request az alábbiakban eltér:
-- **A priority értéke -1**. Ennek az oka, hogy egy beállítandó nap terméken már lehetséges, hogy van akció beállítva.
-- Kiegészül egy **type** mezővel, aminek `day_spec` értéket kell megadni.
-- Kiegészül egy **dayOfWeek** mezővel, aminek 1-7 közötti egész számnak kell lennie.<br>
-A hét napjai: 
-  - 1 - hétfő;
-  - 2 - kedd; 
-  - 3 - szerda;
-  - 4 - csütörtök;
-  - 5 - péntek;
-  - 6 - szombat;
-  - 7 - vasárnap.
-- Nem kötelező megadni a dateFrom mezőt.
-- Nem kötelező megadni a dateTo mezőt.
-- Nem kötelező megadni a minQuantity mezőt.
-- Nem kötelező megadni a maxQuantity mezőt.
-- Nem kötelező megadni a customerGroup mezőt.
+The management of discount products has already been discussed (see: [**Product Special**](./01_0_product_special.md) example). The product of the day is considered a special discount price, where you can specify which product with a discount price should be highlighted on a given day of the week.
+This is specified using the [Product Special Resource](../../api/product_special.md) known for the discount price.
+The product of the day can be set on the admin interface of the webshop under **Settings > Appearance > Module settings**. [More information](https://support.shoprenter.hu/hc/hu/articles/215106328-Aj%C3%A1nl%C3%B3-modulok#nap_termeke)
 
-### Példa
+### Add product of the day
+
+Although the product of the day uses the same **Product Special resource** as when we charge discount prices, the request to be sent differs as follows:
+- **The value of priority is -1**. The reason for this is that a sale may already be set on a product for the day to be set.
+- A **type** field is added, which must be set to `day_spec`.
+- A **dayOfWeek** field is added, which must be an integer between 1-7.<br>
+  The days of the week:
+    - 1 - Monday;
+    - 2 - Tuesday;
+    - 3 - Wednesday;
+    - 4 - Thursday;
+    - 5 - Friday;
+    - 6 - Saturday;
+    - 7 - Sunday.
+- The dateFrom field is optional.
+- It is not mandatory to enter the dateTo field.
+- The minQuantity field is optional.
+- The maxQuantity field is optional.
+- It is not mandatory to enter the customerGroup field.
+
+### Example
 
 #### Request
 
@@ -84,12 +86,12 @@ A hét napjai:
 }
 ```
 
-### Nap terméke módosítása
+### Change product of the day
 
-Módosítás esetén a módosítandó mezők mellett kötelező elemként meg kell adni a product resource azonosítóját.
-Amennyiben a vevőcsoportot szeretnénk módosítani "Mindenki" vevőcsoportra, úgy érdemes törölni előbb a nap termékét és egy újat létrehozni. Minden más vevőcsoport esetén a módosítás végrehajtható.
+In case of modification, the identifier of the product resource must be entered as a mandatory element next to the fields to be modified.
+If we want to change the customer group to the "Everyone" customer group, it is worth first deleting the product of the day and creating a new one. Modifications can be made for all other customer groups.
  
-### Példa
+### Example
 
 #### Request
 

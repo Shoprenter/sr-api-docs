@@ -36,7 +36,7 @@
             "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==",
             "id": "bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==",
             "type": "LIST",
-            "name": "szin",
+            "name": "color",
             "value": [
                 {
                     "value": "Magenta",
@@ -158,12 +158,12 @@
         {
             "href": "http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
             "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
-            "name": "Termék Név",
+            "name": "Product name",
             "metaKeywords": {},
             "metaDescription": {},
-            "shortDescription": "Rövid Leírás",
-            "description": "Hosszú Leírás",
-            "parameters": "Szín: zöld Méret: XL",
+            "shortDescription": "Short description",
+            "description": "Long description",
+            "parameters": "Color: green Size: XL",
             "packagingUnit": {},
             "measurementUnit": "db",
             "customContentTitle": {},

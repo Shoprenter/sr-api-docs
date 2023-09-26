@@ -1,8 +1,8 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9Mw==]]></href>
     <id><![CDATA[cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9Mw==]]></id>
-    <name><![CDATA[Név]]></name>
-    <description><![CDATA[Leírás]]></description>
+    <name><![CDATA[Name]]></name>
+    <description><![CDATA[Description]]></description>
     <firstVariantSelectType><![CDATA[SELECT]]></firstVariantSelectType>
     <secondVariantSelectType><![CDATA[SELECT]]></secondVariantSelectType>
     <firstVariantParameter>

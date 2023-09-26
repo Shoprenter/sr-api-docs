@@ -29,8 +29,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MyZsYW5ndWFnZV9pZD0x",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MyZsYW5ndWFnZV9pZD0x",
-                    "name": "Szem&eacute;lyes &aacute;tv&eacute;tel (1025 Budapest, Teszt u. 25)",
-                    "description": "A rendelt term&eacute;keket &aacute;tveheti szem&eacute;lyesen boltunkban is egy előre egyeztetett időpontban.",
+                    "name": "Personal pick-up (1025 Budapest, Test u. 25)",
+                    "description": "You can also pick up the ordered products in person at our store at a pre-arranged time.",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTM="
                     },
@@ -41,8 +41,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MyZsYW5ndWFnZV9pZD0y",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MyZsYW5ndWFnZV9pZD0y",
-                    "name": "Szem&eacute;lyes &aacute;tv&eacute;tel (1025 Budapest, Teszt u. 25)",
-                    "description": "A rendelt term&eacute;keket &aacute;tveheti szem&eacute;lyesen boltunkban is egy előre egyeztetett időpontban.",
+                    "name": "Personal pick-up (1025 Budapest, Test u. 25)",
+                    "description": "You can also pick up the ordered products in person at our store at a pre-arranged time.",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTM="
                     },
@@ -84,8 +84,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTgmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTgmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "H&aacute;zhozsz&aacute;ll&iacute;t&aacute;s fut&aacute;rszolg&aacute;lattal",
-                    "description": "Csomagj&aacute;t a GLS fut&aacute;rszolg&aacute;lat munkat&aacute;rsai fogj&aacute;k kisz&aacute;ll&iacute;tani &Ouml;nnek.",
+                    "name": "Home delivery with courier service",
+                    "description": "Your package will be delivered to you by the employees of the GLS courier service.",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
                     },
@@ -96,8 +96,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTgmbGFuZ3VhZ2VfaWQ9Mg==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MTgmbGFuZ3VhZ2VfaWQ9Mg==",
-                    "name": "H&aacute;zhozsz&aacute;ll&iacute;t&aacute;s fut&aacute;rszolg&aacute;lattal",
-                    "description": "Csomagj&aacute;t a GLS fut&aacute;rszolg&aacute;lat munkat&aacute;rsai fogj&aacute;k kisz&aacute;ll&iacute;tani &Ouml;nnek.",
+                    "name": "Home delivery with courier service",
+                    "description": "Your package will be delivered to you by the employees of the GLS courier service.",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
                     },
@@ -137,7 +137,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjImbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjImbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Budapest I. ker. házhozszállítás",
+                    "name": "Budapest I. ker. home delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTIy"
@@ -149,7 +149,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjImbGFuZ3VhZ2VfaWQ9Mg==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjImbGFuZ3VhZ2VfaWQ9Mg==",
-                    "name": "Budapest I. ker. házhozszállítás",
+                    "name": "Budapest I. ker. home delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTIy"
@@ -190,7 +190,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjMmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjMmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Személyes átvétel készpénzes utánvéttel",
+                    "name": "Personal collection with cash on delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTIz"
@@ -202,7 +202,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjMmbGFuZ3VhZ2VfaWQ9Mg==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9MjMmbGFuZ3VhZ2VfaWQ9Mg==",
-                    "name": "Személyes átvétel készpénzes utánvéttel",
+                    "name": "Personal collection with cash on delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTIz"
@@ -243,7 +243,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NDQmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NDQmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Futar.hu - Túlméretes házhozszállítás",
+                    "name": "Futar.hu - Oversized home delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTQ0"
@@ -349,7 +349,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NDUmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NDUmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Futar.hu - Túlméretes házhozszállítás",
+                    "name": "Futar.hu - Oversized home delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTQ1"
@@ -455,8 +455,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NDkmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NDkmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTQ5"
                     },
@@ -561,7 +561,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NTEmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NTEmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Futar.hu - Túlméretes házhozszállítás",
+                    "name": "Futar.hu - Oversized home delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTUx"
@@ -667,7 +667,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NTImbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NTImbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Futar.hu - Túlméretes házhozszállítás",
+                    "name": "Futar.hu - Oversized home delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTUy"
@@ -773,7 +773,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NTMmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NTMmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Futar.hu - Túlméretes házhozszállítás",
+                    "name": "Futar.hu - Oversized home delivery",
                     "description": "",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTUz"
@@ -881,8 +881,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjMmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjMmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "FFFFFFFFFFFFFFFFF Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "FFFFFFFFFFFFFFFFF Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTYz"
                     },
@@ -989,8 +989,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjQmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjQmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "FFFFFFFFFFFFFFFFF Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "FFFFFFFFFFFFFFFFF Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTY0"
                     },
@@ -1097,8 +1097,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjUmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjUmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "FFFFFFFFFFFFFFFFF Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "FFFFFFFFFFFFFFFFF Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTY1"
                     },
@@ -1205,8 +1205,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjcmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjcmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTY3"
                     },
@@ -1313,8 +1313,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjgmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjgmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTY4"
                     },
@@ -1421,8 +1421,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjkmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NjkmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTY5"
                     },
@@ -1531,8 +1531,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzAmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzAmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTcw"
                     },
@@ -1641,8 +1641,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzEmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzEmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTcx"
                     },
@@ -1747,8 +1747,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzQmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzQmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTc0"
                     },
@@ -1853,8 +1853,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzUmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzUmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTc1"
                     },
@@ -1959,8 +1959,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzYmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzYmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTc2"
                     },
@@ -2069,8 +2069,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzcmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzcmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Túlméretes házhozszállítás",
-                    "description": "Ez a teszt leírása",
+                    "name": "AAAAAAAAAAAAAAAAAAAAA Futar.hu - Oversized home delivery",
+                    "description": "This is a description of the body",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTc3"
                     },
@@ -2179,8 +2179,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzgmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzgmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Saját szállítási mód neve",
-                    "description": "Saját szállítási mód leírás",
+                    "name": "Custom shipping method name",
+                    "description": "Custom shipping method description",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTc4"
                     },
@@ -2285,8 +2285,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzkmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9NzkmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Saját szállítási mód neve",
-                    "description": "Saját szállítási mód leírás",
+                    "name": "Custom shipping method name",
+                    "description": "Custom shipping method description",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTc5"
                     },
@@ -2395,8 +2395,8 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/shippingModeDescriptions/c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODAmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODAmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Saját szállítási mód neve",
-                    "description": "Saját szállítási mód leírás",
+                    "name": "Custom shipping method name",
+                    "description": "Custom shipping method description",
                     "shippingMode": {
                         "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTgw"
                     },

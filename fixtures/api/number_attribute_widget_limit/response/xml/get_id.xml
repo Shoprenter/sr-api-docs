@@ -3,7 +3,7 @@
     <id><![CDATA[bnVtYmVyQXR0cmlidXRlV2lkZ2V0TGltaXQtYXR0cmlidXRlX2lkPTE5JmxpbWl0X2lkPTA=]]></id>
     <minValue>10</minValue>
     <maxValue>200</maxValue>
-    <label><![CDATA[Kicsi]]></label>
+    <label><![CDATA[Small]]></label>
     <numberAttributeWidget>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/numberAttributeWidgets/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD0xOQ==]]></href>
     </numberAttributeWidget>

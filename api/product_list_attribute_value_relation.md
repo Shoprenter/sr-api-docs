@@ -1,13 +1,13 @@
 # Product List Attribute Value Relation Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'product_list_attribute_value_relation'" :lang="'hu'"/>
+<ResourceProperties :resource="'product_list_attribute_value_relation'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,7 +87,7 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'product_list_attribute_value_relation'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példa
-- [**Termék típusok, egyedi tulajdonságok és termékváltozatok kezelése**](../development/api-examples/08_product_attribute_handling.md)
+## Examples
+- [**Product attribute handling**](../development/api-examples/08_product_attribute_handling.md)

@@ -1,13 +1,13 @@
 # Payment Mode Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'payment_mode'" :lang="'hu'"/>
+<ResourceProperties :resource="'payment_mode'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'payment_mode'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'payment_mode'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'payment_mode'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'payment_mode'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

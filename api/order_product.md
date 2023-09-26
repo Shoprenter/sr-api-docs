@@ -1,13 +1,13 @@
 # Order Product Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'order_product'" :lang="'hu'"/>
+<ResourceProperties :resource="'order_product'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'order_product'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_product'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'order_product'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_product'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'order_product'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_product'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'order_product'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_product'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'order_product'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'order_product'" :endpoint="'delete'" :lang="'en'"/>
 

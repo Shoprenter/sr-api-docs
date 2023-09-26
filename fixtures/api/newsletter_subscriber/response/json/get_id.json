@@ -1,9 +1,9 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
     "id": "bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x",
-    "firstname": "Teszt",
-    "lastname": "Teszt",
-    "email": "teszt@wteszt.hu",
+    "firstname": "Test",
+    "lastname": "Test",
+    "email": "test@wtest.hu",
     "phone": "36303336699",
     "status": "1",
     "blacklisted": "0",

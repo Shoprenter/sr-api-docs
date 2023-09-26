@@ -1,7 +1,7 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/documentDescriptions/ZG9jdW1lbnREZXNjcmlwdGlZD0yJmxhbmd1YWdlX2lkPTE=]]></href>
     <id><![CDATA[ZG9jdW1lbnREZXNjcmlwdGlZD0yJmxhbmd1YWdlX2lkPTE=]]></id>
-    <name><![CDATA[Dokumentum szövege]]></name>
+    <name><![CDATA[Document text]]></name>
     <filename><![CDATA[document_name.pdf.123]]></filename>
     <mask><![CDATA[document_name.pdf]]></mask>
     <document>

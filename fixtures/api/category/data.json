@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Kategória azonosító. Az OuterID módosítására szolgál.",
-                "en": "Kategória azonosító. Az OuterID módosítására szolgál."
+                "en": "Category identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Kategória belső azonosító.",
-                "en": "Kategória belső azonosító."
+                "en": "Category internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "picture",
             "description": {
-                "hu": "Kép.",
-                "en": "Kép."
+                "en": "Image."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend.",
-                "en": "Sorrend."
+                "en": "Order."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "status",
             "description": {
-                "hu": "Státusz.",
-                "en": "Státusz."
+                "en": "Status."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "productsStatus",
             "description": {
-                "hu": "A kategória termékeinek státusza.",
-                "en": "A kategória termékeinek státusza."
+                "en": "The status of the products in the category."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -66,8 +59,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": true
@@ -75,8 +67,7 @@
         {
             "name": "parentCategory",
             "description": {
-                "hu": "Szülő kategória linkje.",
-                "en": "Szülő kategória linkje."
+                "en": "Parent category link."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "centralCategory",
             "description": {
-                "hu": "Középponti kategória linkje.",
-                "en": "Középponti kategória linkje."
+                "en": "Central category link."
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "categoryDescriptions",
             "description": {
-                "hu": "Kategória leírások linkje.",
-                "en": "Kategória leírások linkje."
+                "en": "Category descriptions link."
             },
             "required": false,
             "readonly": false
@@ -102,8 +91,7 @@
         {
             "name": "customerGroups",
             "description": {
-                "hu": "Vásárlói csoportok linkje.",
-                "en": "Vásárlói csoportok linkje."
+                "en": "Customer groups link."
             },
             "required": false,
             "readonly": false
@@ -111,8 +99,7 @@
         {
             "name": "categoryCustomerGroupRelations",
             "description": {
-                "hu": "A kategóriákat és a vásárlói csoportokat összekapcsoló kapcsolatok linkje.",
-                "en": "A kategóriákat és a vásárlói csoportokat összekapcsoló kapcsolatok linkje."
+                "en": "Links linking categories and customer groups."
             },
             "required": false,
             "readonly": false
@@ -122,12 +109,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/categories\/kategória id",
-                "en": "\/categories\/kategória id"
+                "en": "\/categories\/category id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -138,40 +123,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/categories",
                 "en": "\/categories"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Kategória belső azonosító.",
-                        "en": "Kereső paraméter. Kategória belső azonosító."
+                        "en": "Search parameter. Category internal identifier."
                     }
                 }
             ],
@@ -183,49 +162,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/categories[\/kategória id]",
-                "en": "\/categories[\/kategória id]"
+                "en": "\/categories[\/category id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/categories",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/categories\/kategória id",
-                "en": "\/categories\/kategória id"
+                "en": "\/categories\/category id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/categories\/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/categories\/kategória id",
-                "en": "\/categories\/kategória id"
+                "en": "\/categories\/category id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/categories\/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

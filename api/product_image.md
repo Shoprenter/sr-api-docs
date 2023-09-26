@@ -1,13 +1,13 @@
 # Product Image Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'product_image'" :lang="'hu'"/>
+<ResourceProperties :resource="'product_image'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'product_image'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_image'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'product_image'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_image'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'product_image'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_image'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'product_image'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_image'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,8 +87,8 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_image'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'product_image'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példák
+## Examples
 
-- [**Termékkép hozzáadása termékhez**](../development/api-examples/05_attach_uploaded_image_to_product.md)
+- [**Attach image to product**](../development/api-examples/05_attach_uploaded_image_to_product.md)

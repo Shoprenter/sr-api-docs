@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Termék azonosító. Az OuterID módosítására szolgál.",
-                "en": "Termék azonosító. Az OuterID módosítására szolgál."
+                "en": "Product identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Termék belső azonosító.",
-                "en": "Termék belső azonosító."
+                "en": "Product internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "sku",
             "description": {
-                "hu": "Cikkszám.",
-                "en": "Cikkszám."
+                "en": "Sku."
             },
             "required": true,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "modelNumber",
             "description": {
-                "hu": "Gyártói cikkszám.",
-                "en": "Gyártói cikkszám."
+                "en": "Model number."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "gtin",
             "description": {
-                "hu": "Vonalkód\/GTIN Azonosító",
-                "en": "Vonalkód\/GTIN Azonosító"
+                "en": "GTIN identifier"
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "orderable",
             "description": {
-                "hu": "Rendelhetőség.",
-                "en": "Rendelhetőség."
+                "en": "Orderable."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "price",
             "description": {
-                "hu": "A termék nettó ára.",
-                "en": "A termék nettó ára."
+                "en": "Net price."
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "cost",
             "description": {
-                "hu": "Költség: A termék beszerzési ára adható meg itt. Az itt megjelenő összeg az admin tájékoztatására szolgál, a webáruházban nem lesz látható.",
-                "en": "Költség : A termék beszerzési ára adható meg itt. Az itt megjelenő összeg az admin tájékoztatására szolgál, a webáruházban nem lesz látható."
+                "en": "The purchase price of the product can be entered here. The amount displayed here is for the information of the admin, it will not be visible in the online store."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "multiplier",
             "description": {
-                "hu": "Árszorzó.",
-                "en": "Árszorzó."
+                "en": "Price multiplier."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "multiplierLock",
             "description": {
-                "hu": "Árszorzó lock.",
-                "en": "Árszorzó lock."
+                "en": "Price multiplier lock."
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "loyaltyPoints",
             "description": {
-                "hu": "A termékért járó hűségpontok száma.",
-                "en": "A termékért járó hűségpontok száma."
+                "en": "Number of loyalty points for the product."
             },
             "required": false,
             "readonly": false
@@ -102,8 +91,7 @@
         {
             "name": "stock1",
             "description": {
-                "hu": "Raktár 1 készlet.",
-                "en": "Raktár 1 készlet."
+                "en": "Stock 1 set."
             },
             "required": false,
             "readonly": false
@@ -111,8 +99,7 @@
         {
             "name": "stock2",
             "description": {
-                "hu": "Raktár 2 készlet.",
-                "en": "Raktár 2 készlet."
+                "en": "Stock 2 set."
             },
             "required": false,
             "readonly": false
@@ -120,8 +107,7 @@
         {
             "name": "stock3",
             "description": {
-                "hu": "Raktár 3 készlet.",
-                "en": "Raktár 3 készlet."
+                "en": "Stock 3 set."
             },
             "required": false,
             "readonly": false
@@ -129,8 +115,7 @@
         {
             "name": "stock4",
             "description": {
-                "hu": "Raktár 4 készlet.",
-                "en": "Raktár 4 készlet."
+                "en": "Stock 4 set."
             },
             "required": false,
             "readonly": false
@@ -138,8 +123,7 @@
         {
             "name": "subtractStock",
             "description": {
-                "hu": "Készlet csökkentés kapcsoló.",
-                "en": "Készlet csökkentés kapcsoló."
+                "en": "Stock reduction switch."
             },
             "required": false,
             "readonly": false
@@ -147,8 +131,7 @@
         {
             "name": "mainPicture",
             "description": {
-                "hu": "Elsődleges kép.",
-                "en": "Elsődleges kép."
+                "en": "Main picture."
             },
             "required": false,
             "readonly": false
@@ -156,8 +139,7 @@
         {
             "name": "width",
             "description": {
-                "hu": "Szélesség.",
-                "en": "Szélesség."
+                "en": "Width."
             },
             "required": false,
             "readonly": false
@@ -165,8 +147,7 @@
         {
             "name": "height",
             "description": {
-                "hu": "Magasság.",
-                "en": "Magasság."
+                "en": "Height."
             },
             "required": false,
             "readonly": false
@@ -174,8 +155,7 @@
         {
             "name": "length",
             "description": {
-                "hu": "Hossz.",
-                "en": "Hossz."
+                "en": "Length."
             },
             "required": false,
             "readonly": false
@@ -183,8 +163,7 @@
         {
             "name": "weight",
             "description": {
-                "hu": "Súly.",
-                "en": "Súly."
+                "en": "Weight."
             },
             "required": false,
             "readonly": false
@@ -192,8 +171,7 @@
         {
             "name": "status",
             "description": {
-                "hu": "A termék állapota. Lehetségek értékei: 1 Engedélyezett, 0 Letiltott, 2 Kifutott",
-                "en": "A termék állapota. Lehetségek értékei: 1 Engedélyezett, 0 Letiltott, 2 Kifutott"
+                "en": "Product status. Option values: 1 Enabled, 0 Disabled, 2 Deprecated"
             },
             "required": false,
             "readonly": false
@@ -201,8 +179,7 @@
         {
             "name": "shipped",
             "description": {
-                "hu": "A termék kiszállítható, vagyis vállalják a kiszállítását. (1/0)",
-                "en": "A termék kiszállítható, vagyis vállalják a kiszállítását. (1/0)"
+                "en": "The product can be delivered, that is, they undertake to deliver it. (1/0)"
             },
             "required": false,
             "readonly": false
@@ -210,8 +187,7 @@
         {
             "name": "minimalOrderNumber",
             "description": {
-                "hu": "Legkisebb rendelhető mennyiség.",
-                "en": "Legkisebb rendelhető mennyiség."
+                "en": "Minimal order quantity."
             },
             "required": false,
             "readonly": false
@@ -219,8 +195,7 @@
         {
             "name": "maximalOrderNumber",
             "description": {
-                "hu": "Legnagyobb rendelhető mennyiség.",
-                "en": "Legnagyobb rendelhető mennyiség."
+                "en": "Maximal order quantity."
             },
             "required": false,
             "readonly": false
@@ -228,8 +203,7 @@
         {
             "name": "minimalOrderNumberMultiply",
             "description": {
-                "hu": "Csak a legkisebb rendelhető mennyiség rendelhető?",
-                "en": "Csak a legkisebb rendelhető mennyiség rendelhető?"
+                "en": "Can only multiples of the smallest orderable quantity be ordered?"
             },
             "required": false,
             "readonly": false
@@ -237,8 +211,7 @@
         {
             "name": "availableDate",
             "description": {
-                "hu": "Mióta kapható.",
-                "en": "Mióta kapható."
+                "en": "Since when is it available."
             },
             "required": false,
             "readonly": false
@@ -246,8 +219,7 @@
         {
             "name": "quantity",
             "description": {
-                "hu": "Kiszerelés",
-                "en": "Kiszerelés"
+                "en": "Quantity"
             },
             "required": false,
             "readonly": false
@@ -255,8 +227,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend",
-                "en": "Sorrend"
+                "en": "Sort order"
             },
             "required": false,
             "readonly": false
@@ -264,8 +235,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -273,8 +243,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": true
@@ -282,8 +251,7 @@
         {
             "name": "imageAlt",
             "description": {
-                "hu": "Termék kép alt.",
-                "en": "Termék kép alt."
+                "en": "Product image alt."
             },
             "required": false,
             "readonly": false
@@ -291,8 +259,7 @@
         {
             "name": "freeShipping",
             "description": {
-                "hu": "Ingyenesen szállítható-e?",
-                "en": "Ingyenesen szállítható-e?"
+                "en": "Is it free shipping?"
             },
             "required": false,
             "readonly": false
@@ -300,8 +267,7 @@
         {
             "name": "taxClass",
             "description": {
-                "hu": "Áfa kulcs linkje.",
-                "en": "Áfa kulcs linkje."
+                "en": "Tax class."
             },
             "required": false,
             "readonly": false
@@ -309,8 +275,7 @@
         {
             "name": "noStockStatus",
             "description": {
-                "hu": "Nincs készleten állapot linkje.",
-                "en": "Nincs készleten állapot linkje."
+                "en": "Out of stock status link."
             },
             "required": false,
             "readonly": false
@@ -318,8 +283,7 @@
         {
             "name": "inStockStatus",
             "description": {
-                "hu": "Készleten van állapot linkje.",
-                "en": "Készleten van állapot linkje."
+                "en": "In stock status link."
             },
             "required": false,
             "readonly": false
@@ -327,8 +291,7 @@
         {
             "name": "productClass",
             "description": {
-                "hu": "Termék típus linkje.",
-                "en": "Termék típus linkje."
+                "en": "Product type link."
             },
             "required": false,
             "readonly": false
@@ -336,8 +299,7 @@
         {
             "name": "parentProduct",
             "description": {
-                "hu": "Szülő termék linkje.",
-                "en": "Szülő termék linkje."
+                "en": "Parent product link."
             },
             "required": false,
             "readonly": false
@@ -345,8 +307,7 @@
         {
             "name": "volumeUnit",
             "description": {
-                "hu": "Hosszúság mérték linkje.",
-                "en": "Hosszúság mérték linkje."
+                "en": "Length measure link."
             },
             "required": false,
             "readonly": false
@@ -354,8 +315,7 @@
         {
             "name": "weightUnit",
             "description": {
-                "hu": "Súly mérték linkje.",
-                "en": "Súly mérték linkje."
+                "en": "Weight measure link."
             },
             "required": false,
             "readonly": false
@@ -363,8 +323,7 @@
         {
             "name": "manufacturer",
             "description": {
-                "hu": "Gyártó linkje.",
-                "en": "Gyártó linkje."
+                "en": "Manufacturer link."
             },
             "required": false,
             "readonly": false
@@ -372,8 +331,7 @@
         {
             "name": "onlyStock1Status",
             "description": {
-                "hu": "Csak a Raktár 1-ben van raktáron állapot linkje.",
-                "en": "Csak a Raktár 1-ben van raktáron állapot linkje."
+                "en": "Only Warehouse 1 has an in-stock status link."
             },
             "required": false,
             "readonly": false
@@ -381,8 +339,7 @@
         {
             "name": "onlyStock2Status",
             "description": {
-                "hu": "Csak a Raktár 2-ben van raktáron állapot linkje.",
-                "en": "Csak a Raktár 2-ben van raktáron állapot linkje."
+                "en": "Only Warehouse 2 has an in-stock status link."
             },
             "required": false,
             "readonly": false
@@ -390,8 +347,7 @@
         {
             "name": "onlyStock3Status",
             "description": {
-                "hu": "Csak a Raktár 3-ban van raktáron állapot linkje.",
-                "en": "Csak a Raktár 3-ban van raktáron állapot linkje."
+                "en": "Only Warehouse 3 has an in-stock status link."
             },
             "required": false,
             "readonly": false
@@ -399,8 +355,7 @@
         {
             "name": "onlyStock4Status",
             "description": {
-                "hu": "Csak a Raktár 4-ben van raktáron állapot linkje.",
-                "en": "Csak a Raktár 4-ben van raktáron állapot linkje."
+                "en": "Only Warehouse 4 has an in-stock status link."
             },
             "required": false,
             "readonly": false
@@ -408,8 +363,7 @@
         {
             "name": "allImages",
             "description": {
-                "hu": "A termékhez tartozó fő termékkép és további képek teljes url-je.",
-                "en": "A termékhez tartozó fő termékkép és további képek teljes url-je."
+                "en": "The full url of the main product image and additional images for the product."
             },
             "required": false,
             "readonly": true
@@ -417,8 +371,7 @@
         {
             "name": "productDescriptions",
             "description": {
-                "hu": "Termék leírások linkje.",
-                "en": "Termék leírások linkje."
+                "en": "Product descriptions link."
             },
             "required": false,
             "readonly": true
@@ -426,8 +379,7 @@
         {
             "name": "productRelatedProductRelations",
             "description": {
-                "hu": "A termék és a kapcsolódó termékek kapcsolatát leíró Resource-ok linkjei.",
-                "en": "A termék és a kapcsolódó termékek kapcsolatát leíró Resource-ok linkjei."
+                "en": "Links to Resources describing the relationship between the product and related products."
             },
             "required": false,
             "readonly": true
@@ -435,8 +387,7 @@
         {
             "name": "productCategoryRelations",
             "description": {
-                "hu": "A termék és kategória kapcsolatát leíró Resource-ok linkjei.",
-                "en": "A termék és kategória kapcsolatát leíró Resource-ok linkjei."
+                "en": "Links to Resources describing the relationship between the product and the category."
             },
             "required": false,
             "readonly": true
@@ -444,8 +395,7 @@
         {
             "name": "productSpecials",
             "description": {
-                "hu": "Termék akciós árak linkjei.",
-                "en": "Termék akciós árak linkjei."
+                "en": "Product discount price links."
             },
             "required": false,
             "readonly": true
@@ -453,8 +403,7 @@
         {
             "name": "productProductBadgeRelations",
             "description": {
-                "hu": "A termék és matricák kapcsolatát leíró Resource-ok linkjei.",
-                "en": "A termék és matricák kapcsolatát leíró Resource-ok linkjei."
+                "en": "Links to Resources describing the relationship between the product and stickers."
             },
             "required": false,
             "readonly": true
@@ -462,8 +411,7 @@
         {
             "name": "productListAttributeValueRelations",
             "description": {
-                "hu": "A termékhez tartozó list típusú értékek linkjei.",
-                "en": "A termékhez tartozó list típusú értékek linkjei."
+                "en": "Links of list type values belonging to the product."
             },
             "required": false,
             "readonly": true
@@ -471,8 +419,7 @@
         {
             "name": "numberAttributeValues",
             "description": {
-                "hu": "A termékhez tartozó integer vagy float típusú értékek linkjei.",
-                "en": "A termékhez tartozó integer vagy float típusú értékek linkjei."
+                "en": "Links to integer or float values belonging to the product."
             },
             "required": false,
             "readonly": true
@@ -480,8 +427,7 @@
         {
             "name": "textAttributeValues",
             "description": {
-                "hu": "A termékhez tartozó text típusú értékek linkjei.",
-                "en": "A termékhez tartozó text típusú értékek linkjei."
+                "en": "Links to text type values belonging to the product."
             },
             "required": false,
             "readonly": true
@@ -489,8 +435,7 @@
         {
             "name": "productTags",
             "description": {
-                "hu": "Termék címkék linkjei.",
-                "en": "Termék címkék linkjei."
+                "en": "Product tags link."
             },
             "required": false,
             "readonly": true
@@ -498,8 +443,7 @@
         {
             "name": "productCollateralProductRelations",
             "description": {
-                "hu": "A termék és a kiegészítő termékek kapcsolatát leíró Resource-ok linkjei.",
-                "en": "A termék és a kiegészítő termékek kapcsolatát leíró Resource-ok linkjei."
+                "en": "Links to Resources describing the relationship between the product and additional products."
             },
             "required": false,
             "readonly": true
@@ -507,8 +451,7 @@
         {
             "name": "customerGroupProductPrices",
             "description": {
-                "hu": "Termék vásárlói csoport árainak linkjei.",
-                "en": "Termék vásárlói csoport árainak linkjei."
+                "en": "Product prices link for the Customer group."
             },
             "required": false,
             "readonly": true
@@ -516,8 +459,7 @@
         {
             "name": "relatedProducts",
             "description": {
-                "hu": "Kapcsolódó termékek linkje.",
-                "en": "Kapcsolódó termékek linkje."
+                "en": "Related products link."
             },
             "required": false,
             "readonly": true
@@ -525,8 +467,7 @@
         {
             "name": "collateralProducts",
             "description": {
-                "hu": "A kiegészítő termékek linkjei.",
-                "en": "A kiegészítő termékek linkjei."
+                "en": "The additional product link."
             },
             "required": false,
             "readonly": true
@@ -536,12 +477,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/products\/termék id",
-                "en": "\/products\/termék id"
+                "en": "\/products\/product id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -552,61 +491,52 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/products",
                 "en": "\/products"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Termék belső azonosító.",
-                        "en": "Kereső paraméter. Termék belső azonosító."
+                        "en": "Search parameter. Product internal identifier."
                     }
                 },
                 {
                     "name": "sku",
                     "description": {
-                        "hu": "Kereső paraméter. Termék cikkszáma.",
-                        "en": "Kereső paraméter. Termék cikkszáma."
+                        "en": "Search parameter. Product sku."
                     }
                 },
                 {
                     "name": "createdAt",
                     "description": {
-                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum napján létrehozott termékeket adja vissza. Formátum: 2013-01-01.",
-                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum napján létrehozott termékeket adja vissza. Formátum: 2013-01-01."
+                        "en": "Search parameter. It can be used for search the creation date. Returns products created on the specified date. Format: 2013-01-01."
                     }
                 },
                 {
                     "name": "updatedAt",
                     "description": {
-                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított termékeket adja vissza. Formátum: 2013-01-01.",
-                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított termékeket adja vissza. Formátum: 2013-01-01."
+                        "en": "Search parameter. It can be used for search the modification date. Returns products modified on the specified date. Format: 2013-01-01."
                     }
                 },
                 {
@@ -625,49 +555,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/products[\/termék id]",
-                "en": "\/products[\/termék id]"
+                "en": "\/products[\/product id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/products",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/products\/termék id",
-                "en": "\/products\/termék id"
+                "en": "\/products\/product id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/products\/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/products\/termék id",
-                "en": "\/products\/termék id"
+                "en": "\/products\/product id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/products\/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }
