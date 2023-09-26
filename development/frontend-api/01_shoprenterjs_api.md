@@ -1250,9 +1250,9 @@ Example:
 }
 ```
 
-In the case of unregistered customers, some properties of the ``user'' object can be empty strings. Furthermore, ``user.id'' is zero in the case of an unregistered visitor.
+In the case of unregistered customers, some properties of the ``user`` object can be empty strings. Furthermore, ``user.id`` is zero in the case of an unregistered visitor.
 
-The ``shippingMethod'' and ``paymentMethod'' objects can be included in some events with an empty ``name'' property. For example, by definition, these cannot be interpreted at the start of a checkout process, but if the customer has already entered them and jumps back to the first step, they can already be interpreted.
+The ``shippingMethod`` and ``paymentMethod`` objects can be included in some events with an empty ``name`` property. For example, by definition, these cannot be interpreted at the start of a checkout process, but if the customer has already entered them and jumps back to the first step, they can already be interpreted.
 
 Make sure that the passed javascript closure has a parameter, the name of which can be arbitrary, e.g. event or e. Thus, by requesting the e.details property, we get access to the event data.
 
@@ -1321,7 +1321,7 @@ Example:
 }
 ```
 
-### Események használata
+### Using events
 The object called ShopRenter is available on the entire interface of the frontend, so we can subscribe to cart events on any page as follows:
 
 ```html

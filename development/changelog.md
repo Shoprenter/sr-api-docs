@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2023.09.26
+We translated the whole developer documentation to english.
+
 #### 2023.09.05
 We made it easier to retrieve and manage parent-child product relationships in the Shoprenter API. Filtering has become possible in the [Product](../api/product.md) and [ProductExtend](../api/product_extend.md) resources. Specifying `parentProductId` as a parameter in the filter returns products with the same `parentProductId`.
 
