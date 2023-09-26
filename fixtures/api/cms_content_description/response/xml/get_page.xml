@@ -30,13 +30,13 @@
                 <![CDATA[Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=]]>
             </id>
             <title>
-                <![CDATA[Szöveges tartalom címe]]>
+                <![CDATA[Text content title]]>
             </title>
             <description>
-                <![CDATA[Szöveges tartalom leírása]]>
+                <![CDATA[Text content description]]>
             </description>
             <introText>
-                <![CDATA[Bevezető szöveg]]>
+                <![CDATA[Introductory text]]>
             </introText>
             <cmsContent>
                 <href>
@@ -57,13 +57,13 @@
                 <![CDATA[Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM3Jmxhbmd1YWdlX2lkPTE=]]>
             </id>
             <title>
-                <![CDATA[Szöveges tartalom címe 2]]>
+                <![CDATA[Text content title 2]]>
             </title>
             <description>
-                <![CDATA[Szöveges tartalom leírása 2]]>
+                <![CDATA[Text content description 2]]>
             </description>
             <introText>
-                <![CDATA[Szöveges tartalom bevezető szöveg 2]]>
+                <![CDATA[Text content Introductory text 2]]>
             </introText>
             <cmsContent>
                 <href>

@@ -2,15 +2,15 @@
     <href><![CDATA[http://shopname.api.myshoprenter.hu/addresses/YWRkcmVzcy1hZGRyZXNzX2lkPTY5]]></href>
     <id><![CDATA[YWRkcmVzcy1hZGRyZXNzX2lkPTY5]]></id>
     <innerId><![CDATA[1]]></innerId>
-    <company><![CDATA[Cégnév]]></company>
-    <firstname><![CDATA[Keresztnév]]></firstname>
-    <lastname><![CDATA[Vezetéknév]]></lastname>
+    <company><![CDATA[Company name]]></company>
+    <firstname><![CDATA[Firstname]]></firstname>
+    <lastname><![CDATA[Lastname]]></lastname>
     <taxNumber><![CDATA[12345678-9-00]]></taxNumber>
     <type><![CDATA[business]]></type>
-    <address1><![CDATA[Teszt u. 1.]]></address1>
-    <address2><![CDATA[1. emelet 10. ajtó]]></address2>
+    <address1><![CDATA[Test u. 1.]]></address1>
+    <address2><![CDATA[1. floor 10. door]]></address2>
     <postcode><![CDATA[1234]]></postcode>
-    <city><![CDATA[Város]]></city>
+    <city><![CDATA[City]]></city>
     <dateCreated><![CDATA[2013-08-02T01:20:00]]></dateCreated>
     <dateUpdated><![CDATA[2013-08-03T07:30:00]]></dateUpdated>
     <telephone><![CDATA[+36301234567]]></telephone>

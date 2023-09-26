@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "URL alias azonosító. Az OuterID módosítására szolgál.",
-                "en": "URL alias azonosító. Az OuterID módosítására szolgál."
+                "en": "URL alias identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "type",
             "description": {
-                "hu": "Típus. Lehetséges értékek: PRODUCT, CATEGORY, MANUFACTURER, INFORMATION.",
-                "en": "Típus. Lehetséges értékek: PRODUCT, CATEGORY, MANUFACTURER, INFORMATION."
+                "en": "Type. Possible values: PRODUCT, CATEGORY, MANUFACTURER, INFORMATION."
             },
             "required": true,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "urlAliasEntity",
             "description": {
-                "hu": "Az URL alias entitás linkje.",
-                "en": "Az URL alias entitás linkje."
+                "en": "Az URL alias entity link."
             },
             "required": true,
             "readonly": true
@@ -30,8 +27,7 @@
         {
             "name": "urlAlias",
             "description": {
-                "hu": "Keresőbarát URL.",
-                "en": "Keresőbarát URL."
+                "en": "Search engine friendly URL."
             },
             "required": true,
             "readonly": false
@@ -41,12 +37,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/urlAliases\/URL alias id",
                 "en": "\/urlAliases\/URL alias id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -57,68 +51,58 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/urlAliases",
                 "en": "\/urlAliases"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "type",
                     "description": {
-                        "hu": "Kereső paraméter (URL alias típusa: PRODUCT | CATGORY | MANUFACTURER).",
-                        "en": "Kereső paraméter (URL alias típusa: PRODUCT | CATGORY | MANUFACTURER)."
+                        "en": "Search parameter (URL alias type: PRODUCT | CATEGORY | MANUFACTURER)."
                     }
                 },
                 {
                     "name": "productId",
                     "description": {
-                        "hu": "Kereső paraméter (Termék azonosító).",
-                        "en": "Kereső paraméter (Termék azonosító)."
+                        "en": "Search parameter (Product identifier)."
                     }
                 },
                 {
                     "name": "categoryId",
                     "description": {
-                        "hu": "Kereső paraméter (Kategória azonosító).",
-                        "en": "Kereső paraméter (Kategória azonosító)."
+                        "en": "Search parameter (Category identifier)."
                     }
                 },
                 {
                     "name": "manufacturerId",
                     "description": {
-                        "hu": "Kereső paraméter (Gyártó azonosító).",
-                        "en": "Kereső paraméter (Gyártó azonosító)."
+                        "en": "Search parameter (Manufacturer identifier)."
                     }
                 },
                 {
                     "name": "urlAlias",
                     "description": {
-                        "hu": "Kereső paraméter (Keresőbarát URL).",
-                        "en": "Kereső paraméter (Keresőbarát URL)."
+                        "en": "Search parameter (Search Engine Friendly URL)."
                     }
                 }
             ],
@@ -130,44 +114,38 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/urlAliases[\/URL alias id]",
                 "en": "\/urlAliases[\/URL alias id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/urlAliases",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/urlAliases\/URL alias id",
                 "en": "\/urlAliases\/URL alias id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/urlAliases\/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTI=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/urlAliases\/URL alias id",
                 "en": "\/urlAliases\/URL alias id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {

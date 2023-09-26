@@ -39,7 +39,7 @@
                 <![CDATA[001]]>
             </invoicePrefix>
             <firstname>
-                <![CDATA[Teszt]]>
+                <![CDATA[Test]]>
             </firstname>
             <lastname>
                 <![CDATA[Elek]]>
@@ -49,13 +49,13 @@
             </phone>
             <fax/>
             <email>
-                <![CDATA[tesztelek@teszt.hu]]>
+                <![CDATA[testelek@test.hu]]>
             </email>
             <shippingFirstname>
-                <![CDATA[tesztvsz]]>
+                <![CDATA[testvsz]]>
             </shippingFirstname>
             <shippingLastname>
-                <![CDATA[tesztvsz]]>
+                <![CDATA[testvsz]]>
             </shippingLastname>
             <shippingCompany/>
             <shippingAddress1>
@@ -70,11 +70,11 @@
             </shippingPostcode>
             <shippingZoneName/>
             <shippingCountryName>
-                <![CDATA[Magyarország]]>
+                <![CDATA[Hungary]]>
             </shippingCountryName>
             <shippingAddressFormat/>
             <shippingMethodName>
-                <![CDATA[Házhozszállítás futárszolgálattal]]>
+                <![CDATA[Home delivery with courier service]]>
             </shippingMethodName>
             <shippingMethodTaxRate>
                 <![CDATA[25.0000]]>
@@ -85,10 +85,10 @@
                 <![CDATA[0]]>
             </shippingReceivingPointId>
             <paymentFirstname>
-                <![CDATA[tesztvsz]]>
+                <![CDATA[testvsz]]>
             </paymentFirstname>
             <paymentLastname>
-                <![CDATA[tesztvsz]]>
+                <![CDATA[testvsz]]>
             </paymentLastname>
             <paymentCompany/>
             <paymentAddress1>
@@ -103,11 +103,11 @@
             </paymentPostcode>
             <paymentZoneName/>
             <paymentCountryName>
-                <![CDATA[Magyarország]]>
+                <![CDATA[Hungary]]>
             </paymentCountryName>
             <paymentAddressFormat/>
             <paymentMethodName>
-                <![CDATA[Utánvétel]]>
+                <![CDATA[Cash on delivery]]>
             </paymentMethodName>
             <paymentMethodCode>
                 <![CDATA[cod]]>
@@ -121,7 +121,7 @@
             </paymentMethodAfter>
             <taxNumber/>
             <comment>
-                <![CDATA[teszt rendelés]]>
+                <![CDATA[test rendelés]]>
             </comment>
             <total>
                 <![CDATA[4038.0000]]>
@@ -164,7 +164,7 @@
                     <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
                 </id>
                 <name>
-                    <![CDATA[Magyarország]]>
+                    <![CDATA[Hungary]]>
                 </name>
                 <isoCode2>
                     <![CDATA[HU]]>
@@ -190,7 +190,7 @@
                     <![CDATA[Y291bnRyeS1jb3VudHJ5X2lkPTk3]]>
                 </id>
                 <name>
-                    <![CDATA[Magyarország]]>
+                    <![CDATA[Hungary]]>
                 </name>
                 <isoCode2>
                     <![CDATA[HU]]>
@@ -253,7 +253,7 @@
                 </code>
                 <symbolLeft/>
                 <symbolRight>
-                    <![CDATA[ Ft]]>
+                    <![CDATA[ Huf]]>
                 </symbolRight>
                 <decimalPlace>
                     <![CDATA[0]]>
@@ -348,10 +348,10 @@
                     <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD01Mg==]]>
                 </id>
                 <name>
-                    <![CDATA[Nettó részösszeg:]]>
+                    <![CDATA[Net partial amount:]]>
                 </name>
                 <valueText>
-                    <![CDATA[2.400 Ft]]>
+                    <![CDATA[2.400 Huf]]>
                 </valueText>
                 <value>
                     <![CDATA[2400.0000]]>
@@ -384,10 +384,10 @@
                     <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD01Mw==]]>
                 </id>
                 <name>
-                    <![CDATA[ÁFA (27%):]]>
+                    <![CDATA[VAT (27%):]]>
                 </name>
                 <valueText>
-                    <![CDATA[648 Ft]]>
+                    <![CDATA[648 Huf]]>
                 </valueText>
                 <value>
                     <![CDATA[648.0000]]>
@@ -420,10 +420,10 @@
                     <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD01NA==]]>
                 </id>
                 <name>
-                    <![CDATA[Bruttó részösszeg:]]>
+                    <![CDATA[Gross partial amount:]]>
                 </name>
                 <valueText>
-                    <![CDATA[3.048 Ft]]>
+                    <![CDATA[3.048 Huf]]>
                 </valueText>
                 <value>
                     <![CDATA[3048.0000]]>
@@ -456,10 +456,10 @@
                     <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD01NQ==]]>
                 </id>
                 <name>
-                    <![CDATA[H&aacute;zhozsz&aacute;ll&iacute;t&aacute;s fut&aacute;rszolg&aacute;lattal:]]>
+                    <![CDATA[Home delivery with courier service:]]>
                 </name>
                 <valueText>
-                    <![CDATA[990 Ft]]>
+                    <![CDATA[990 Huf]]>
                 </valueText>
                 <value>
                     <![CDATA[990.0000]]>
@@ -492,10 +492,10 @@
                     <![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD01Ng==]]>
                 </id>
                 <name>
-                    <![CDATA[Összesen bruttó:]]>
+                    <![CDATA[Totally gross:]]>
                 </name>
                 <valueText>
-                    <![CDATA[4.038 Ft]]>
+                    <![CDATA[4.038 Huf]]>
                 </valueText>
                 <value>
                     <![CDATA[4038.0000]]>
@@ -591,7 +591,7 @@
                     <![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTM=]]>
                 </id>
                 <name>
-                    <![CDATA[Törölt termék]]>
+                    <![CDATA[Deleted product]]>
                 </name>
                 <sku>
                     <![CDATA[9789639715615]]>

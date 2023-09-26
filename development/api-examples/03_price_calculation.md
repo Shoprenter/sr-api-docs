@@ -1,18 +1,19 @@
-# Árszámítás
+# Price calculation
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy termék árát kiszámolni az alapértelmezett pénznemről egy számunkra ideális másik pénznemre.
+The following example demonstrates how to calculate the price of a product from the default currency to another currency that is ideal for you.
 
-Az árszámolás 3 lépésből áll.
-1. Az összes számoláshoz szükséges adat lekérdezése
-2. Az aktuális termék lekérdezése
-3. A konkrét árszámítás
+The price calculation consists of three steps:
 
-## 1. lépés
+1. Retrieving all the necessary data for the calculation.
+2. Querying the current product.
+3. Performing the specific price calculation.
 
-Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befolyásoló tényezőt:
-- az összes [**GeoZone**-t (Földrajzi zóna)](../../api/geo_zone.md),
-- az összes [**TaxRate**-et (ÁFA kulcs)](../../api/tax_rate.md),
-- az összes [**Currency**-t (Pénznem)](../../api/currency.md).
+## 1st step
+
+In a batch request, you need to retrieve all the influencing factors required for the calculation:
+- all [**GeoZone**-t (Geo Zone)](../../api/geo_zone.md),
+- all [**TaxRate**-et (Tax class)](../../api/tax_rate.md),
+- all [**Currency**-t (Currency)](../../api/currency.md).
 
 **Request**
 
@@ -55,9 +56,9 @@ Egy batch kérésben le kell kérdezni az összes számoláshoz szükséges befo
 }
 ```
 
-A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen beállításokat tartalmaz:
+The response from the [Batch API](../api/04_batch.md) reveals the settings contained in the store:
 
-### Földrajzi zónák (GeoZone):
+### Geo Zone:
 
 ```json
 {
@@ -65,13 +66,13 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
         {
             "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD01",
-            "name": "Magyarország",
+            "name": "Hungary",
             "description": "HUN",
             "countries": [
                 {
                     "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
                     "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3",
-                    "name": "Magyarország",
+                    "name": "Hungary",
                     "isoCode2": "HU",
                     "isoCode3": "HUN",
                     "status": "1",
@@ -84,7 +85,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
         {
             "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD02",
-            "name": "Európai Unió",
+            "name": "European Union",
             "description": "EU",
             "countries": [...]
         }
@@ -92,7 +93,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
 }
 ```
 
-### ÁFA kulcsok (TaxRate):
+### Tax class:
 
 ```json
 {
@@ -102,7 +103,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
             "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
             "priority": "1",
             "rate": "0.0000",
-            "description": "ÁFA (0%)",
+            "description": "VAT (0%)",
             "dateCreated": "2020-01-01T12:00:00",
             "dateUpdated": "2020-01-01T12:00:00",
             "geoZone": {
@@ -117,7 +118,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
             "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
             "priority": "1",
             "rate": "27.0000",
-            "description": "ÁFA (27%)",
+            "description": "TAX (27%)",
             "dateCreated": "2020-01-01T12:00:00",
             "dateUpdated": "2020-01-01T12:00:00",
             "geoZone": {
@@ -131,7 +132,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
 }
 ```
 
-### Pénznemek (Currency):
+### Currency:
 
 ```json
 {
@@ -142,7 +143,7 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
             "name": "HUF",
             "code": "HUF",
             "symbolLeft": "",
-            "symbolRight": " Ft",
+            "symbolRight": " HUF",
             "decimalPlace": "0",
             "value": "311.85000000",
             "status": "1",
@@ -164,9 +165,9 @@ A [Batch API](../api/04_batch.md) válaszából kiderül, hogy a bolt milyen be�
 }
 ```
 
-## 2. lépés
+## Step 2.
 
-Az aktuális termék lekérdezése a [**productExtend**](../../api/product_extend.md) resource segítségével.
+Querying the current product using the [**productExtend**](../../api/product_extend.md) resource.
 
 **Request**
 
@@ -225,39 +226,38 @@ Az aktuális termék lekérdezése a [**productExtend**](../../api/product_exten
 }
 ```
 
-A válasz **productPrices** értéke lesz csak számunkra fontos.
-A **productPrices** lista tartalmazza a bolt alapértelmezett pénznemével kiszámolt árakat, vevői csoportok szerint lebontva.
+The value of **productPrices** in the response is the one that is important for us. 
+The **productPrices** list contains prices calculated in the store's default currency, broken down by customer groups.
 
-## 3. lépés
+## Step 3.
 
-Az utolsó lépés maga az árszámítás, mivel az összes szükséges adatunk meg van hozzá.
+The last step is the actual price calculation since we have all the necessary data for it.
 
-A fenti példában látható, hogy a termék alapértelmezett pénzneme az euró ("EUR"). Valamint tudjuk, hogy melyik az alapértelmezett vevői csoport (CustomerGroup), 8-as innerId-val.
+In the example above, it's evident that the default currency for the product is the Euro ("EUR"). Additionally, we know the default customer group (CustomerGroup) with an innerId of 8.
 
-Ha pl. meg akarom kapni magyar forintban ("HUF") a példában látható termék **bruttó árát** az **alapértelmezett vevői csoporttal**, 
-akkor a lekérdezett **földrajzi zónák** (GeoZone) közül ki kell keresnem, hogy melyikhez tartozik Magyarország.
+If, for example, you want to retrieve the **gross price** of the product shown in the example in Hungarian HUF ("HUF") for **the default customer group*, you would need to look up which **geographic zone** (GeoZone) corresponds to Hungary among the queried ones.
 
-Ha megvan a **földrajzi zóna** (GeoZone), akkor az alapján behatárolom az **adó kulcsot** (TaxRate).
+If I have the **geographical zone** (GeoZone), then I will define the **tax rate** (TaxRate) based on it
 
-Ezután a termék nettó árát megszorzom a már lekérdezett **pénznemek** (Currency) között megtalálható magyar forint **értékével**.
-Végül az **adó kulcs ráta** (TaxRate) segítségével kiszámolom a termék árát Áfával együtt.
+Next, I multiply the net price of the product by the Hungarian forint **value** found in the already queried **currencies** (Currency).
+Finally, I calculate the price of the product including VAT using the **tax rate** (TaxRate).
 
-**Néhány példa:**
+**Some example:**
 
-- Nettó (net):
+- Net (net):
 
-`termék nettó ára * pénznem értéke = nettó ár`
+`product net price * currency value = net price`
 
-`1200.000 * 311.85000000 = 374220 Ft`
+`1200.000 * 311.85000000 = HUF 374220`
 
-- Bruttó (gross):
+- Gross:
 
-`termék nettó ára * pénznem értéke * (ÁFA kulcs / 100 + 1.0) = bruttó ár`
+`product net price * currency value * (VAT rate / 100 + 1.0) = gross price`
 
-`1200.000 * 311.85000000 * (27.0000 / 100 + 1.0) = 475259.4 Ft`
+`1200.000 * 311.85000000 * (27.0000 / 100 + 1.0) = HUF 475259.4`
 
-- ÁFA összeg:
+- VAT amount:
 
-`termék nettó ára * pénznem értéke * (ÁFA kulcs / 100) = ÁFA összeg`
+`product net price * currency value * (VAT rate / 100) = VAT amount`
 
-`1200.000 * 311.85000000 * (27.0000 / 100) = 101039.4 Ft`
+`1200.000 * 311.85000000 * (27.0000 / 100) = HUF 101039.4`

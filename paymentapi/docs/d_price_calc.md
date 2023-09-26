@@ -1,34 +1,34 @@
-# Számlázási adatok és ÁFA kalkuláció
+# Billing data and VAT calculation
 
-A számlázási adatokat a ShopRenter automatikusan kéri le a tulajdonos boltjából. Így külön nem igényel további intézkedést
-az alkalmazás fejlesztő részéről.
+ShopRenter automatically retrieves the invoicing data from the owner's store. Therefore, it does not require any further action
+by the application developer.
 
-Amit viszont feltétlen tudni kell, az az, hogy a számlázási adatok hogyan befolyásolják az aktuális ÁFA kiszámítását.
+However, what you absolutely need to know is how the invoicing data affects the calculation of the current VAT.
 
-### Ki állítja ki a számlát?
+### Who issues the invoice?
 
-Minden esetben a ShopRenter nevében kerül kiállításra a számla.
+In all cases, the invoice is issued in the name of ShopRenter.
 
-### Milyen esetekben térhet el a mindenkori magyar ÁFA tartalomtól a bruttó végösszeg?
+### In what cases can the gross sum differ from the current Hungarian VAT content?
 
-Két tényező határozza meg: bolthoz bejegyzett **ország** és a **közösségi adószám** megléte.
+It is determined by two factors: the **country** registered for the store and the existence of the **community tax number**.
 
-**Eszerint 4 eset lehetséges:**
-1. A bolt üzemeltetője egy magyarországi cég és nincs közösségi adószáma: **27% ÁFA**
+**Accordingly, 4 cases are possible:**
+1. The store is operated by a Hungarian company and does not have a community tax number: **27% VAT**
 
-2. A bolt üzemeltetője uniós tagországhoz tartozik, de nincs közösségi adószáma: **27% ÁFA**
+2. The store operator belongs to an EU member state, but does not have a community tax number: **27% VAT**
 
-3. A bolt üzemeltetője uniós tagországhoz tartozik és van közösségi adószáma: **0%**
+3. The store operator belongs to an EU member state and has a community tax number: **0%**
 
-4. A bolt üzemeltetője 3. országbeli: **0%**
+4. The store operator is from 3rd country: **0%**
 
-### Hiányos számlázási adatok
+### Incomplete billing information
 
-Előfordulhat, hogy az adott boltban, ahol a kérdéses alkalmazást telepíteni szeretnék,
-hiányos számlázási adatokkal rendelkezik. 
-Tehát [One Time](../docs/one_time_charge.md) és [Recurring Charge](../docs/recurring_charge.md) létrehozásakor kaphatunk olyan hibaüzenetet, hogy hiányzó számlázási adatokat lát a rendszer. Ez a 40019-es hibakód.
+It may happen that in the specific store where I want to install the application in question,
+has incomplete billing data.
+So when creating [One Time](../docs/one_time_charge.md) and [Recurring Charge](../docs/recurring_charge.md), we can get an error message that the system sees missing billing data. This is error code 40019.
 
-Ebben az esetben az alkalmazásnak kell felhívnia a bolt üzemeltetőjének figyelmét arra, hogy az admin felület "Fiókom" menüpontjában pótolja a hiányzó számlázási adatokat.
+In this case, the application must draw the attention of the store operator to replace the missing billing data in the "My Account" menu item of the admin interface.
 
-**Az üzenet tartalmazni fog egy logId-t, melyet a partnersupport@shoprenter.hu email címre kell elküldeni.
-ShopRenteres kollégák intézkedni fognak a hiányos adatok pótlásának az ügyében.**
+**The message will contain a logId, which must be sent to the email address partnersupport@shoprenter.hu.
+ShopRenters colleagues will take care of filling in the missing data.**

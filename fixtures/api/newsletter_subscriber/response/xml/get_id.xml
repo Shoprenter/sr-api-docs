@@ -1,9 +1,9 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/newsletterSubscribers/bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x]]></href>
     <id><![CDATA[bmV3c2xldHRlclN1YnNjcmliZXItc3Vic2NyaWJlcl9pZD0x]]></id>
-    <firstname><![CDATA[Teszt]]></firstname>
-    <lastname><![CDATA[Teszt]]></lastname>
-    <email><![CDATA[teszt@wteszt.hu]]></email>
+    <firstname><![CDATA[Test]]></firstname>
+    <lastname><![CDATA[Test]]></lastname>
+    <email><![CDATA[test@wtest.hu]]></email>
     <phone><![CDATA[36303336699]]></phone>
     <status><![CDATA[1]]></status>
     <blacklisted><![CDATA[0]]></blacklisted>

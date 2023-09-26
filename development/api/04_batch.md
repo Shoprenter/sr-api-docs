@@ -1,24 +1,24 @@
-# API Batch feldolgozó
+# API Batch processor
 
-Az API kérések számának csökkentése, valamint a kérések gyorsabb kiszolgálása érdekében, az API kéréseket kötegelt (batch) módon is fel tudjuk dolgozni. Ahhoz, hogy a batch feldolgozót igénybe tudjuk venni, egy speciális szerkezetű tömböt kell elküldenünk POST metódussal, az `[API_DOMAIN]/batch` URL-re.
+In order to decrease the number of API requests, and to fasten the processing of requests, we can process API requests in batches as well. In order to do so, we have to send a specially structured block with POST method to the `[API_DOMAIN]/batch` URL.
 
-## Működés
+## Operation
 
-1. A kliens elküldi **POST** metódus segítségével, a kéréseket tartalmazó tömböt a `[API_DOMAIN]/batch` URL-re.
+1. The client forwards the bunch of requests with the help of **POST** method to the `[API_DOMAIN]/batch` URL.
 
-2. Az API ellenőrzi hogy a kliens rendelkezik-e megfelelő jogosultsággal a kérések kiszolgáláshoz, valamint hogy a kérések megfelelő szerkezetűk-e. Ha igen, akkor megkezdődik a kérések feldolgozása, ellenkező esetben a válasz valamilyen hibaüzenet formájában, a válaszoknak megfelelő struktúrában kerül visszaküldésre a kliensnek.
+2. API checks if the client has permission to process the requests, and if the structure of the requests is suitable. Processing will start if yes, otherwise an error message will be sent to the client, corresponding to the structure of responses.
 
-3. Egy ciklusban feldolgozza a szerver a kéréseket és egy speciális szerkezetű tömbben összegyűjti a kapott válaszokat.
+3. The server processes the requests in a cycle and collects the responses in a specially structured block.
 
-4. Miután lefutott az összes kérés feldolgozása, a válaszokat tartalmazó tömböt a kérésnek megfelelő formátumban (javasoltan JSON, esetleg XML) a kimenetre küldi a szerver, amit aztán a kliens megkap és feldolgoz.
+4. Once the processing of requests is finished, the server will forward the block of responses to the output in the appropriate format (recommendation: JSON, maybe XML).
 
-Batch kérés esetén az **ajánlott request szám 200** legyen.
+The **recommended number of requests should be 200** in case of Batch requests.
 
-Egy post mérete *(max_post_size)* **32MB** lehet. Érdemes figyelni kép feltöltés esetén, hogy ezt ne lépjük túl.
+The size limit of a post is *(max_post_size)* **32MB**. Please pay attention to this in case of photo upload, not to exceed the limit.
 
-**A lenti példákat szemléltetésképp mutatjuk be, ezért nem tartalmazzák az egész API request-et és response-t!**
+**The following examples are only illustrations, therefore the complete API request and response is not included.**
 
-## API kérés
+## API request
 
 <table>
   <tr>
@@ -38,7 +38,7 @@ Egy post mérete *(max_post_size)* **32MB** lehet. Érdemes figyelni kép feltö
   </tr>
 </table>
 
-A API kérés a következő struktúrát kell hogy kövesse:
+The API request should follow the below structure:
 
 ```json
 {
@@ -59,10 +59,10 @@ A API kérés a következő struktúrát kell hogy kövesse:
 ```
 
 - **method:** GET, POST, PUT, DELETE
-- **uri:** A resource-okhoz kapcsolódó API URI
-- **data:** POST vagy PUT esetén az adatokat tartalmazó objektum
+- **uri:** The resources’  API URI
+- **data:** The object including data in case of POST or PUT
 
-## API válasz
+## API response
 
 ```json
 {
@@ -88,17 +88,16 @@ A API kérés a következő struktúrát kell hogy kövesse:
   }
 }
 ```
+- **statusCode:** Code of HTTP status. If request processing was correct, the value is 200, 201 or 204, otherwise the status code implying error.
+- **body:** includes the response, text message of the error in case of failure.
 
-- **statusCode:** HTTP státusz kódja. Ha rendben volt a kérés kiszolgálása, ennek az értéke 200, 201 vagy 204 egyébként a hibára utaló státuszkód
-- **body:** a választ tartalmazza, hiba esetén a hiba szöveges üzenete
+**Any error of technical reason in requests within batch API results in 200 status code, therefore statusCodes of batch requests should be checked in the client application.**
 
-**Bármilyen error keletkezik a batch API-n belüli kérésekben, technikai okok miatt, minden esetben 200-as státuszkóddal tér vissza, így a batch requestekben szereplő statusCode-okat a kliens alkalmazásban kell vizsgálni.**
+Further practical examples for the use of batch requests.
 
-További gyakorlati példák a tömeges küldés használatára.
+Request
 
-Kérés
-
-<details class="example-dropdown"><summary>PÉLDA</summary>
+<details class="example-dropdown"><summary>Example</summary>
 <p>
 
 ```php
@@ -149,9 +148,9 @@ Array(
 </p>
 </details>
 
-Válasz
+Response
 
-<details class="example-dropdown"><summary>PÉLDA</summary>
+<details class="example-dropdown"><summary>Example</summary>
 <p>
 
 ```xml
@@ -297,28 +296,26 @@ Válasz
 </p>
 </details>
 
-## Gyakori problémák
+## frequent issues
 
-1. **Üres válasz, vagy "Data parameter not found in POST/PUT!" hibaüzenet 400-as státusz kóddal:**<br>
-Értelemszerűen nem található **data** paraméter a küldött tömbben.
+1. **Empty response, or "Data parameter not found in POST/PUT!" error message with 400 status code:**<br>
+   Obviously **data** parameter cannot be found in the batch.
 
 
 ###
 
-## További példák
+## Further examples
 
-### Tömeges termékfeltöltés
+### Mass product upload
 
-A következő példában az előzőhöz példához hasonló gyakori művelet kerül bemutatásra, ahol is batchelés segítségével több terméket töltünk fel egyszerre.
-Annak érdekében, hogy a termék feltöltés során minden a termékhez kapcsolódó további adat is feltöltésre kerüljön (pl: képek, tulajdonságok stb.), így érdemes a
-[**Product Extend Resource-t**](../../api/product_extend.md) használni.
+The following example illustrates a frequent action similar to the aforementioned, in which multiple products are being uploaded at the same time with the help of batching.
+In order to upload all further data of the products (e.g. pictures, details, etc.), [**Product Extend Resource**](../../api/product_extend.md) is recommended to be used.
 
-**Fontos megjegyezni, hogy a batchelésnek vannak korlátai, amit a gördülékeny hívások érdekében ajánlott betartani. Ilyenek például:**
-1. A batchelt kéréseket lehetőség szerint ne aszinkron módon küldjük el, azaz egy batchelt hívást csak azt követően indítsunk, miután az előző batchelt hívás befejeződött, tehát kaptunk responset.
-2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 200 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
+**It is important to note, that batching has its limits, that are recommended to be applied in order to ensure the smooth operation of requests. Such as:**
+1. If possible, batch requests should not be sent asynchronously, new requests should be initiated after the receipt of the response to the previous one.
+2. As mentioned previously, the number of requests should not exceed 200, and the size limit of the post (max_post_size) is 32 MB.
 
-**Az alábbi példa csak szemléltetésképp mutatja be a működést,
-így azok a teljesség igénye nélkül nem tartalmazzák az egész API request-et és response-t!**
+**The following examples are only illustrations, therefore the complete API request and response is not included!**
 
 **Request**
 
@@ -405,119 +402,3 @@ Annak érdekében, hogy a termék feltöltés során minden a termékhez kapcsol
 }
 ```
 
-### Termék hozzáadása kategóriához Outer ID segítségével
-
-Ennek a példának a dokumentáción belül ugyan már létezik egy hasonló Outer ID nélküli részletes ([**Termék hozzáadása kategóriához**](../api-examples/04_attach_product_to_category.md)) leírása,
-de az API hívások csökkentése érdekében az alábbi példában bemutatásra kerül, hogyan is lehet batchelve egyetlen kérés elküldésével ugyanezt megvalósítani.
-Mind a kategóriat mind a terméket külsős azonosítókkal, azaz [**Outer ID-kal**](./05_outer_id.md) fogjuk létrehozni.
-Az Outer ID szerepe azért lényeges a batchelt kérések küldése során, mivel előfordulhat, hogy egymáshoz kapcsolódó resourceokat (pl: termék-kategória) kell megadni
-anélkül, hogy tudnánk például a kategória resource azonosítóját. 
-
-**Fontos megjegyezni, hogy a batchelésnek vannak korlátai, amit a gördülékeny hívások érdekében ajánlott betartani. Ilyenek például:**
-1. A batchelt kéréseket lehetőség szerint ne aszinkron módon küldjük el, azaz egy batchelt hívást csak azt követően indítsunk, miután az előző batchelt hívás befejeződött, tehát kaptunk responset.
-2. A dokumentáció elején megemlített egyszerre történő maximum megadható request szám 200 legyen, illetve a post maximális mérete (max_post_size) 32 MB legyen.
-
-**Az alábbi példa csak szemléltetésképp mutatja be a működést,
-így azok a teljesség igénye nélkül nem tartalmazzák az egész API request-et és response-t!**
-
-**Request**
-
-<table>
-  <tr>
-    <td><b>method:</b></td>
-    <td>POST</td>
-  </tr>
-  <tr>
-    <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/batch</td>
-  </tr>
-  <tr>
-    <td><b>headers:</b></td>
-    <td>
-        Accept:application/json<br>
-        Content-Type:application/json
-    </td>
-  </tr>
-</table>
-
-```json{6,11,14-20}
-{
-  "data": {
-    "requests": [
-        {
-            "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/categoryExtend/123",
-            "data": {...}
-        },
-        {
-            "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/productExtend/456",
-            "data": {
-                ...
-                "productCategoryRelations": [
-                    {
-                        "category": {
-                            "id": "123"
-                        }
-                    }
-                ]
-            }
-        }
-    ]
-  }
-}
-```
-
-**Response**
-
-```json{6,12,13,21,27,28,31-42}
-{
-    "requests": {
-        "request": [
-            {
-                "method": "POST",
-                "uri": "http://shopname.api.myshoprenter.hu/categoryExtend/123",
-                "response": {
-                    "header": {
-                        "statusCode": 200
-                    },
-                    "body": {
-                        "href": "http://shopname.api.myshoprenter.hu/categoryExtend/123",
-                        "id": "123",
-                        "innerId": "8797",
-                        ...
-                    }
-                }
-            },
-            {
-                "method": "POST",
-                "uri": "http://shopname.api.myshoprenter.hu/productExtend/456",
-                "response": {
-                    "header": {
-                        "statusCode": 200
-                    },
-                    "body": {
-                        "href": "http://shopname.api.myshoprenter.hu/productExtend/456",
-                        "id": "456",
-                        "innerId": "41706",
-                        ...
-                        "productCategoryRelations": [
-                            {
-                                "href": "http://shopname.api.myshoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDE3MDYmY2F0ZWdvcnlfaWQ9MTIy",
-                                "id": "cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9NDE3MDYmY2F0ZWdvcnlfaWQ9MTIy",
-                                "product": {
-                                    "href": "http://shopname.api.myshoprenter.hu/products/456"
-                                },
-                                "category": {
-                                    "href": "http://shopname.api.myshoprenter.hu/categories/123"
-                                }
-                            }
-                        ],
-                        ...
-                    }
-                }
-            }
-        ]
-    }
-}
-```

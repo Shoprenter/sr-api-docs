@@ -1,31 +1,31 @@
-# Rendelés felvétele
+# Order creating
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy rendelést felvenni Shoprenter API segítségével.
+The example below shows how to place an order using the Shoprenter API.
 
-A feladat az alábbi lépésekből áll:
+The task consists of the following steps:
 
-1. Rendelés létrehozása az [**Order Resource**](../../api/order.md) segítségével
-2. További tételek hozzáadása az [**Order Total**](../../api/order_total.md) segítségével
-3. Rendelt termékek hozzáadása a [**Order Product**](../../api/order_product.md) segítségével
-4. Rendelés total értékének módosítása az [**Order Resource**](../../api/order.md) segítségével
+1. Create an order using [**Order Resource**](../../api/order.md).
+2. Add more items using [**Order Total**](../../api/order_total.md)
+3. Add ordered products using [**Order Product**](../../api/order_product.md)
+4. Changing the total value of an order using [**Order Resource**](../../api/order.md)
 
-## 1. lépés
+## 1st step
 
-Az [**Order Resource**](../../api/order.md) segítségével létrehozzuk az új rendelést.
-Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
- - Nyelvet [Language Resource](../../api/language.md) resource id-t
- - Valutát [Currency Resource](../../api/currency.md) resource id-t
- - Rendelés státuszt [Order Status Resource](../../api/order_status.md) resource id-t
- - Szállítási módot [Shipping Mode Extend Resource](../../api/shipping_mode_extend.md) csatolásakor ügyeljünk arra, 
-   hogy a megfelelő shippingMethodName-et adjunk meg
- - Vásárlót és vásárlói csoportot [Customer Extend Resource](../../api/customer_extend.md) 
-   és [Customer Group Resource](../../api/customer_group.md). (Amennyiben regisztrált vásárlóról van szó abban az 
-   esetben meg kell adni a 
-   customer ID-t és customerGroup ID-t. Ha nem regisztrált abban az esetben nem szükséges. 
- - a total értéket érdemes 0 értékkel megadni és ha minden lépéssel végeztünk utána megadni a Bruttó végösszeget, 
-   mert lehetséges, hogy változik ez az érték, ha minden lépéssel végeztünk.
- - Itt még nem feltétlenül szükséges a "total" mezőt felvenni. Mikor a rendeléshez tartozó minden al-resource megadásra
-   került, és pontosan megvan a rendelés végösszege, ezután vesszük fel a rendeléshez. 
+We create the new order using [**Order Resource**](../../api/order.md).
+Here we must pay attention to the fact that the order must already be added at this time
+- Language [Language Resource](../../api/language.md) resource id
+- Currency [Currency Resource](../../api/currency.md) resource id
+- Order status [Order Status Resource](../../api/order_status.md) resource id
+- When attaching the shipping mode [Shipping Mode Extend Resource](../../api/shipping_mode_extend.md), make sure
+  to specify the correct shippingMethodName
+- Customer and customer group [Customer Extend Resource](../../api/customer_extend.md)
+  and [Customer Group Resource](../../api/customer_group.md). (If it is a registered customer
+  in this case, the
+  customer ID and customerGroup ID. If you are not registered, it is not necessary.
+- the total value should be entered as 0 and when all steps have been completed, enter the Gross total afterwards,
+  because it is possible that this value changes when we are done with each step.
+- It is not absolutely necessary to add the "total" field here. When all sub-resources belonging to the order are specified
+  and we have the exact total amount of the order, then we will add it to the order.
  
 **Request**
 
@@ -51,42 +51,42 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
 {
     "invoiceId": "0",
     "invoicePrefix": null,
-    "firstname": "Teszt",
-    "lastname": "Teszt",
+    "firstname": "Test",
+    "lastname": "Test",
     "phone": "+36201234567",
     "fax": null,
-    "email": "teszt@teszt.com",
-    "shippingFirstname": "Teszt",
-    "shippingLastname": "Teszt",
+    "email": "test@test.com",
+    "shippingFirstname": "Test",
+    "shippingLastname": "Test",
     "shippingCompany": null,
-    "shippingAddress1": "Teszt út 11",
+    "shippingAddress1": "Test street 11",
     "shippingAddress2": null,
-    "shippingCity": "Teszt",
+    "shippingCity": "Test",
     "shippingPostcode": "4033",
     "shippingZoneName": null,
-    "shippingCountryName": "Magyarország",
+    "shippingCountryName": "Hungary",
     "shippingAddressFormat": null,
-    "shippingMethodName": "Házhozszállítás futárszolgálattal",
+    "shippingMethodName": "Home delivery with courier service",
     "shippingMethodTaxRate": "27.0000",
     "shippingMethodTaxName": "27 %",
     "shippingMethodExtension": "WSESHIP",
     "shippingReceivingPointId": "0",
-    "paymentFirstname": "Teszt",
-    "paymentLastname": "Teszt",
+    "paymentFirstname": "Test",
+    "paymentLastname": "Test",
     "paymentCompany": null,
-    "paymentAddress1": "Teszt út 11",
+    "paymentAddress1": "Test street 11",
     "paymentAddress2": null,
-    "paymentCity": "Teszt",
+    "paymentCity": "Test",
     "paymentPostcode": "4033",
     "paymentZoneName": null,
-    "paymentCountryName": "Magyarország",
+    "paymentCountryName": "Hungary",
     "paymentAddressFormat": null,
-    "paymentMethodName": "Fizetési mód",
+    "paymentMethodName": "Payment method",
     "paymentMethodCode": "COD",
     "paymentMethodTaxRate": "0.0000",
     "paymentMethodTaxName": null,
     "paymentMethodAfter": "1",
-    "comment": "Megjegyzés",
+    "comment": "Comment",
     "total": null,
     "value": "1.00000000",
     "couponTaxRate": "-1.0000",
@@ -136,39 +136,39 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     "lastname": "Márton",
     "phone": "+36201234567",
     "fax": "",
-    "email": "teszt@teszt.com",
-    "shippingFirstname": "Teszt",
-    "shippingLastname": "Teszt",
+    "email": "test@test.com",
+    "shippingFirstname": "Test",
+    "shippingLastname": "Test",
     "shippingCompany": "",
-    "shippingAddress1": "Teszt út 11",
+    "shippingAddress1": "Test street 11",
     "shippingAddress2": "",
-    "shippingCity": "Teszt",
+    "shippingCity": "Test",
     "shippingPostcode": "4033",
     "shippingZoneName": "",
-    "shippingCountryName": "Magyarország",
+    "shippingCountryName": "Hungary",
     "shippingAddressFormat": "",
-    "shippingMethodName": "Házhozszállítás futárszolgálattal",
+    "shippingMethodName": "Home delivery with courier service",
     "shippingMethodTaxRate": "27.0000",
     "shippingMethodTaxName": "27 %",
     "shippingMethodExtension": "WSESHIP",
     "shippingReceivingPointId": "0",
-    "paymentFirstname": "Teszt",
-    "paymentLastname": "Teszt",
+    "paymentFirstname": "Test",
+    "paymentLastname": "Test",
     "paymentCompany": "",
-    "paymentAddress1": "Teszt út 11",
+    "paymentAddress1": "Test street 11",
     "paymentAddress2": "",
-    "paymentCity": "Teszt",
+    "paymentCity": "Test",
     "paymentPostcode": "4033",
     "paymentZoneName": "",
-    "paymentCountryName": "Magyarország",
+    "paymentCountryName": "Hungary",
     "paymentAddressFormat": "",
-    "paymentMethodName": "Fizetési mód",
+    "paymentMethodName": "Payment method",
     "paymentMethodCode": "COD",
     "paymentMethodTaxRate": "0.0000",
     "paymentMethodTaxName": "",
     "paymentMethodAfter": "1",
     "taxNumber": "",
-    "comment": "Megjegyzés",
+    "comment": "Comment",
     "total": "24060.0000",
     "value": "1.00000000",
     "couponTaxRate": "-1.0000",
@@ -215,21 +215,21 @@ Itt figyelnünk kell arra, hogy a rendeléshez már ilyenkor hozzá kell adni a
     }
 }
 ```
- 
-## 2. lépés 
- 
-Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelések listában, az alábbi típusú [**Order Total**](../../api/order_total.md) -nak léteznie kell:
- -  "SUB_TOTAL" típusú értéknek, mely a Nettó részösszegnek felel meg
- -  "TAX" típusú értéknek, mely az ÁFA értékének felel meg
- -  "SUB_TOTAL_WITH_TAX" típusú értéknek, mely a Bruttó részösszegnek felel meg
- -  "SHIPPING" típusú értéknek, mely a Szállítási díjnak felel meg
- -  "TOTAL" típusú értéknek, mely a Bruttó vgéösszegnek felel meg
- 
- Az [**Order Total**](../../api/order_total.md)-ban a sortOrder tulajdonsággal tudjuk megadni, hogy a rendelés táblázatában hanyadik sorban szerepeljen a felvett [**Order Total**](../../api/order_total.md) resource. 
- Az [**Order Total**](../../api/order_total.md) -ban megadott value értékek nem kerülnek automatikus számolásra, így azokat manuálisan szükséges megadni.
- 
 
- Az alábbi példa segít abban, hogy "Nettó részösszeg" esetén milyen kérést kell elküldenünk:
+## Step 2
+
+In order for the order to appear within the admin interface in the Shop > Orders list, the following type [**Order Total**](../../api/order_total.md) must exist:
+- "SUB_TOTAL" type value, which corresponds to the Net subtotal
+- "TAX" type value, which corresponds to the VAT value
+- "SUB_TOTAL_WITH_TAX" type value, which corresponds to the Gross subtotal
+- "SHIPPING" type value, which corresponds to the Shipping fee
+- "TOTAL" type value, which corresponds to the Gross final amount
+
+In [**Order Total**](../../api/order_total.md) we can specify with the sortOrder property that the recorded [**Order Total**](.. /../api/order_total.md) resource.
+The values specified in [**Order Total**](../../api/order_total.md) are not calculated automatically, so they must be entered manually.
+
+
+The following example will help you determine what kind of request we should send in the case of "Net partial amount":
 
 **Request**
 
@@ -253,8 +253,8 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 
 ```json
 {
-    "name": "Nettó részösszeg:",
-    "valueText": "18.000 Ft ",
+    "name": "Net partial amount:",
+    "valueText": "18.000 Huf ",
     "value": "18000.0000",
     "sortOrder": "3",
     "type": "SUB_TOTAL ",
@@ -271,8 +271,8 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 {
     "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
-    "name": "Nettó részösszeg:",
-    "valueText": "18.000 Ft ",
+    "name": "Net partial amount:",
+    "valueText": "18.000 Huf ",
     "value": "18000.0000",
     "sortOrder": "3",
     "type": "",
@@ -286,7 +286,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 }
 ```
 
- Az alábbi példa segít abban, hogy "ÁFA (27%):" esetén milyen kérést kell megadnunk:
+The following example will help you determine what kind of request we should enter in the case of "VAT (27%):":
  
 **Request**
 
@@ -310,8 +310,8 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 
 ```json
 {
-    "name": "ÁFA (27%): ",
-    "valueText": " 4.860 Ft ",
+    "name": "VAT (27%): ",
+    "valueText": " 4.860 HUF ",
     "value": "4860.0000",
     "sortOrder": "4",
     "type": "TAX",
@@ -328,8 +328,8 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 {
     "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
-    "name": "ÁFA (27%): ",
-    "valueText": " 4.860 Ft ",
+    "name": "VAT (27%): ",
+    "valueText": " 4.860 Huf ",
     "value": "4860.0000",
     "sortOrder": "4",
     "type": "TAX",
@@ -343,8 +343,7 @@ Ahhoz, hogy a rendelés megjelenjen az admin felületen belül Bolt > Rendelése
 }
 ```
 
-Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kérést kell elküldenünk:
-
+The following example will help you determine what kind of request we should send in the case of "Gross partial amount:":
 
 **Request**
 
@@ -368,8 +367,8 @@ Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kér
 
 ```json
 {
-    "name": "Bruttó részösszeg:",
-    "valueText": "22.860 Ft",
+    "name": "Gross partial amount:",
+    "valueText": "22.860 Huf",
     "value": "22860.0000",
     "sortOrder": "5",
     "type": "SUB_TOTAL_WITH_TAX",
@@ -386,8 +385,8 @@ Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kér
 {
     "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
-    "name": "Bruttó részösszeg:",
-    "valueText": "22.860 Ft",
+    "name": "Gross partial amount:",
+    "valueText": "22.860 Huf",
     "value": "22860.0000",
     "sortOrder": "5",
     "type": "SUB_TOTAL_WITH_TAX",
@@ -401,8 +400,7 @@ Az alábbi példa segít abban, hogy "Bruttó részösszeg:" esetén milyen kér
 }
 ```
 
-Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" esetén milyen kérést kell elküldenünk:
-
+The following example will help you with what kind of request we should send in the case of "Home delivery with courier service:":
 
 **Request**
 
@@ -426,8 +424,8 @@ Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" 
 
 ```json
 {
-    "name": "Házhozszállítás futárszolgálattal:",
-    "valueText": "1.200 Ft",
+    "name": "Home delivery with courier service:",
+    "valueText": "1.200 Huf",
     "value": "1200.0000",
     "sortOrder": "6",
     "type": "SHIPPING",
@@ -444,8 +442,8 @@ Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" 
 {
     "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
-    "name": "Házhozszállítás futárszolgálattal:",
-    "valueText": "1.200 Ft",
+    "name": "Home delivery with courier service:",
+    "valueText": "1.200 Huf",
     "value": "1200.0000",
     "sortOrder": "6",
     "type": "SHIPPING",
@@ -459,9 +457,7 @@ Az alábbi példa segít abban, hogy "Házhozszállítás futárszolgálattal:" 
 }
 ```
 
-
-Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kérést kell megadnunk:
-
+The following example will help you determine what kind of request we should enter in the case of "Gross total:":
 
 **Request**
 
@@ -485,8 +481,8 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
 
 ```json
 {
-    "name": "Bruttó végösszeg:",
-    "valueText": "24060 Ft",
+    "name": "Gross total:",
+    "valueText": "24060 Huf",
     "value": "24060.0000",
     "sortOrder": "7",
     "type": "TOTAL",
@@ -503,8 +499,8 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
 {
     "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
-    "name": "Bruttó végösszeg:",
-    "valueText": "24060 Ft",
+    "name": "Gross total:",
+    "valueText": "24060 Huf",
     "value": "24060.0000",
     "sortOrder": "7",
     "type": "TOTAL",
@@ -518,18 +514,18 @@ Az alábbi példa segít abban, hogy "Bruttó végösszeg:" esetén milyen kér�
 }
 ```
 
-## 3. lépés 
+## Step 3
 
-Küssünk össze egy tetszőleges terméket a rendeléssel.  Ezt az [**Order Product Resource**](../../api/order_product.md) 
-resoruce-al tegyük. (Láthatjuk, hogy resourceba újra fel kell vennünk külön néhány termék adatot, nem elég csak 
-a terméket resource id-t megadnunk) Kövessük a rendelésben megadott árakat, és figyeljük, hogy mennyibe kerül 
-a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra pl., hogy ha 'stock1'-nek 3 db-ot adunk, 
-úgy a 'total' legyen 'stock1' * 'price'
+Combine any product with your order. This [**Order Product Resource**](../../api/order_product.md)
+do it with resource. (We can see that we have to re-add some product data separately to the resource, it's not enough
+we must specify the resource id of the product) Follow the prices specified in the order and watch how much it costs
+the selected product. When entering the data of OrderProducts, pay attention to, for example, that if we add 3 pcs to 'stock1',
+so 'total' should be 'stock1' * 'price'
 
-**FONTOS**, hogy az első rendelés felvétele után érdemes a kérdéses bolt adminisztrációs felületen is ellenőriznünk,
- miképp jelenik meg. A rendelésen belül érdemes módosítani a Termékek fül alatt a darabszámot. 
- Amennyiben bekerül plusz "ÁFA" mező és teljesen irreális árak fognak megjelenni, 
- annak az lesz az oka, hogy hiányos az OrderTotal, illetve nem követtük a termék árát az OrderProducts-ban. 
+**IMPORTANT** that after placing the first order, we should also check the administration interface of the store in question,
+how it appears. Within the order, it is worth changing the number of pieces under the Products tab.
+If an additional "VAT" field is entered and completely unrealistic prices will appear,
+the reason will be that the OrderTotal is incomplete or that we did not track the price of the product in OrderProducts.
 
 **Request**
 
@@ -612,10 +608,11 @@ a kiválasztott termék. Az OrderProducts adatai megadásakor figyeljünk arra p
     }
 }
 ```
-## 4. lépés 
 
-Mikor elvégeztünk minden al-resource felvételével, az [**Order Resource**](../../api/order.md) 
-segítségével a "total" értéket módosítjuk, és ezt az alábbi példa alapján tudjuk megtenni:
+## Step 4
+
+When we are done adding all sub-resources, [**Order Resource**](../../api/order.md)
+change the "total" value using the following example:
 
 **Request**
 
@@ -655,39 +652,39 @@ segítségével a "total" értéket módosítjuk, és ezt az alábbi példa alap
     "lastname": "Márton",
     "phone": "+36201234567",
     "fax": "",
-    "email": "teszt@teszt.com",
-    "shippingFirstname": "Teszt",
-    "shippingLastname": "Teszt",
+    "email": "test@test.com",
+    "shippingFirstname": "Test",
+    "shippingLastname": "Test",
     "shippingCompany": "",
-    "shippingAddress1": "Teszt út 11",
+    "shippingAddress1": "Test street 11",
     "shippingAddress2": "",
-    "shippingCity": "Teszt",
+    "shippingCity": "Test",
     "shippingPostcode": "4033",
     "shippingZoneName": "",
-    "shippingCountryName": "Magyarország",
+    "shippingCountryName": "Hungary",
     "shippingAddressFormat": "",
-    "shippingMethodName": "Házhozszállítás futárszolgálattal",
+    "shippingMethodName": "Home delivery with courier service",
     "shippingMethodTaxRate": "25.0000",
     "shippingMethodTaxName": "25 %",
     "shippingMethodExtension": "WSESHIP",
     "shippingReceivingPointId": "0",
-    "paymentFirstname": "Teszt",
-    "paymentLastname": "Teszt",
+    "paymentFirstname": "Test",
+    "paymentLastname": "Test",
     "paymentCompany": "",
-    "paymentAddress1": "Teszt út 11",
+    "paymentAddress1": "Test street 11",
     "paymentAddress2": "",
-    "paymentCity": "Teszt",
+    "paymentCity": "Test",
     "paymentPostcode": "4033",
     "paymentZoneName": "",
-    "paymentCountryName": "Magyarország",
+    "paymentCountryName": "Hungary",
     "paymentAddressFormat": "",
-    "paymentMethodName": "Fizetési mód",
+    "paymentMethodName": "Payment method",
     "paymentMethodCode": "COD",
     "paymentMethodTaxRate": "0.0000",
     "paymentMethodTaxName": "",
     "paymentMethodAfter": "1",
     "taxNumber": "",
-    "comment": "Megjegyzés",
+    "comment": "Comment",
     "total": "24060.0000",
     "value": "1.00000000",
     "couponTaxRate": "-1.0000",

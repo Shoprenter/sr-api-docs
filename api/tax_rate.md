@@ -1,13 +1,13 @@
 # Tax Rate Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'tax_rate'" :lang="'hu'"/>
+<ResourceProperties :resource="'tax_rate'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'tax_rate'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'tax_rate'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'tax_rate'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'tax_rate'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

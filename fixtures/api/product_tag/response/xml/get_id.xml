@@ -1,7 +1,7 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=]]></href>
     <id><![CDATA[cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=]]></id>
-    <tags><![CDATA[csaptelep,hideg-meleg]]></tags>
+    <tags><![CDATA[faucet,cold-hot]]></tags>
     <product>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy]]></href>
     </product>

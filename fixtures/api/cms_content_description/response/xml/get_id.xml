@@ -6,13 +6,13 @@
         <![CDATA[Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTMmbGFuZ3VhZ2VfaWQ9MQ==]]>
     </id>
     <title>
-        <![CDATA[Szöveges tartalom címe]]>
+        <![CDATA[Text content title]]>
     </title>
     <description>
-        <![CDATA[Szöveges tartalom leírása]]>
+        <![CDATA[Text content description]]>
     </description>
     <introText>
-        <![CDATA[Szöveges tartalom bevezető szöveg]]>
+        <![CDATA[Text content Introductory text]]>
     </introText>
     <cmsContent>
         <href>

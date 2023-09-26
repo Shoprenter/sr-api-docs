@@ -1,4 +1,4 @@
-# API Státuszkódok
+# API Status Codes
 
 ### 2xx Success
 

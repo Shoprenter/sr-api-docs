@@ -1,13 +1,13 @@
 # File Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'file'" :lang="'hu'"/>
+<ResourceProperties :resource="'file'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'file'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'file'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'file'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'file'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -47,9 +47,9 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'file'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'file'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példák
+## Examples
 
-- [**Termékkép hozzáadása termékhez**](../development/api-examples/05_attach_uploaded_image_to_product.md)
+- [**Attach image to product**](../development/api-examples/05_attach_uploaded_image_to_product.md)
 

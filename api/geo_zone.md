@@ -1,13 +1,13 @@
 # Geo Zone Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'geo_zone'" :lang="'hu'"/>
+<ResourceProperties :resource="'geo_zone'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'geo_zone'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'geo_zone'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'geo_zone'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'geo_zone'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

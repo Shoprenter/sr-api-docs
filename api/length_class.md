@@ -1,13 +1,13 @@
 # Length Class Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'length_class'" :lang="'hu'"/>
+<ResourceProperties :resource="'length_class'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'length_class'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'length_class'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'length_class'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'length_class'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

@@ -1,7 +1,7 @@
 {
     "minValue": "10",
     "maxValue": "200",
-    "label": "Kicsi",
+    "label": "Small",
     "numberAttributeWidget": {
         "id": "bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD0x"
     }

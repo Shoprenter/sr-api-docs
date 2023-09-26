@@ -2,7 +2,7 @@
     "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
     "id": "Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
     "innerId": "6",
-    "name": "Törzsvásárló",
+    "name": "Regular customer",
     "percentDiscount": "20",
     "percentDiscountSpecialPrices": "0"
 }

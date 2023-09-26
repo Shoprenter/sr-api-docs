@@ -13,7 +13,7 @@
     },
     "paymentDescription": [
         {
-            "name": "Utánvétel",
+            "name": "Cash on delivery",
             "description": "Etiam velit erat, dapibus luctus enim non, pellentesque ullamcorper nunc. Nullam in ex eget purus fringilla maximus blandit ut diam.",
             "language": {
                 "href": "http://demo.api.aurora.rosti/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==",
@@ -21,7 +21,7 @@
             }
         },
         {
-            "name": "Utánvétel",
+            "name": "Cash on delivery",
             "description": "Etiam velit erat, dapibus luctus enim non, pellentesque ullamcorper nunc. Nullam in ex eget purus fringilla maximus blandit ut diam.",
             "language": {
                 "href": "http://demo.api.aurora.rosti/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==",

@@ -1,11 +1,11 @@
 {
-    "name": "Kategória név",
-    "metaKeywords": "Meta kulcsszavak",
-    "metaDescription": "Meta leírás",
-    "description": "Hosszú leírás",
-    "customTitle": "Egyedi title.",
+    "name": "Category name",
+    "metaKeywords": "Meta keywords",
+    "metaDescription": "Meta description",
+    "description": "Long description",
+    "customTitle": "Custom title.",
     "robotsMetaTag": "0",
-    "footerSeoText": "Seo szöveg",
+    "footerSeoText": "Seo text",
     "heading": "Heading",
     "category": {
         "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTI="

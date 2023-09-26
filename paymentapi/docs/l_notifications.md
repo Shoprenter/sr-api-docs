@@ -1,23 +1,23 @@
-# Értesítés webhookok - a notificationUrl
+# Notification webhooks - the notificationUrl
 
-A Payment API, a fizetési folyamat közben történő események üzeneteit a notificationUrl tulajdonságnál megadott URL-re küldi el.
-A webhook tartalmazza a fizetési mód azonosítóját és a aktuális állapotát. A Payment API által küldött webhook kérés HTTP metódusa **POST**.
+The Payment API sends messages about events during the payment process to the URL specified in the notificationUrl property.
+The webhook contains the ID of the payment method and its current status. The HTTP method of the webhook request sent by the Payment API is **POST**.
 
-A státuszok vizsgálatával következtethetünk egy fizetési mód életciklusában bekövetkezett változásokra, esetleges hibákra.
-A lehetséges státuszok itt érhetőek el: [elérhető státuszok](../docs/k_statuses.md).
+By examining the statuses, we can infer changes and possible errors in the life cycle of a payment method.
+Possible statuses are available here: [available statuses](../docs/k_statuses.md).
 
-## Az üzenet felépítése
+## Structure of the message
 
-### Ismétlődő és egyszeri díjfizetés
+### Recurring and One Time payment
 
-| Tulajdonság | Leírás                                                |
+| Property | Description |
 |-------------|-------------------------------------------------------|
-| id          | Fizetés azonosítója. Ez lehet One Time vagy Recurring |
-| status   | A fizetési mód aktuális állapota                      |
-| time | A webhook küldésének ideje, unix formátumban          |
-| reason | A státusz váltás indoklása                            |
+| id | Payment ID. This can be One Time or Recurring |
+| status | The current status of the payment method |
+| time | The time the webhook was sent, in unix format |
+| reason | Reason for changing status |
 
-#### Példa 
+#### Example 
 
 ```javascript
 {
@@ -28,17 +28,17 @@ A lehetséges státuszok itt érhetőek el: [elérhető státuszok](../docs/k_st
 }
 ```
 
-### Bankkártya csere
+### Bank card change
 
-| Tulajdonság    | Leírás                               |
+| Property | Description |
 |----------------|--------------------------------------|
-| changeId       | Kártya csere kérés azonosítója       |
-| subscriptionId | Fizetés azonosítója                  |
- | status         | A csere állapota. Jelzi, hol tart a folyamat |
-| paymentStatus  | A fizetési mód aktuális állapota     |
-| message | Az esetleges hibákról ad tájékoztatást |
+| changeId | ID of card replacement request |
+| subscriptionId | Payment ID |
+| status | The status of the exchange. Indicates where the process is |
+| paymentStatus | The current status of the payment method |
+| message | Provides information on possible errors |
 
-### Példa
+### Example
 
 ```javascript
 {
@@ -51,21 +51,21 @@ A lehetséges státuszok itt érhetőek el: [elérhető státuszok](../docs/k_st
 }
 ```
 
-## Webhook hitelesítése
+## Webhook authentication
 
-A Payment API-tól érkező webhookok hitelesítését legkönnyebben a kiküldött url-hez hozzáfűzött **hmac** query paraméter és a post payloadban található time property közös ellenőrzésével lehet megvalósítani.
+The authentication of webhooks from the Payment API can be most easily implemented by jointly checking the **hmac** query parameter added to the sent url and the time property in the post payload.
 
-A hmac generálás a gyakorlatban úgy néz, hogy az alkalmazás felvétele során regisztrált **WebhookSecretKey*** használatával az elküldött post payloadot hash_hmac függvénnyel (sha256 algoritmussal) egy sztringet generálunk.
-Amennyiben a fogadó fél, azaz alkalmazás elvégzi az előbbi műveletet és összeveti a webhookban található **hmac-kel** és az egyezik, akkor a webhook a Payment API-tól származhat.
+The hmac generation in practice looks like using the **WebhookSecretKey*** registered during the application registration to generate a string of the sent post payload with the hash_hmac function (sha256 algorithm).
+If the receiving party, i.e. application, performs the above operation and compares it with the **hmac** found in the webhook and it matches, then the webhook can come from the Payment API.
 
-Az autentikálás második felében továbbá érdemes ellenőrizni, hogy a post payloadban található **time** propertyben tárolt timestamp körülbelül egybeesik-e a webhook beérkezésének timestampjével.
-A time property és a beérkezés ideje között pár másodperc különbség is adódhat. Az ideális időkülönbség kialakítása az alkalmazás fejlesztő feladata.
+In the second half of the authentication, it is also worth checking whether the timestamp stored in the **time** property in the post payload approximately coincides with the timestamp of the arrival of the webhook.
+There may be a difference of a few seconds between the time property and the arrival time. Creating the ideal time difference is the task of the application developer.
 
-**Fontos megjegyezni, hogy a Payment API kiküldéskor előállított timestampje a Etc/UTC (UTC, +0000) időzóna alapján van generálva!**
+**It is important to note that the timestamp generated by the Payment API when it is sent is generated based on the Etc/UTC (UTC, +0000) time zone!**
 
-*Ha még nem rendelkezünk WebhookSecretKey-el, a partnersupport@shoprenter.hu email címen megtehetjük.
+*If we do not yet have a WebhookSecretKey, we can do so by emailing partnersupport@shoprenter.hu.
 
-## Példa HMAC generálás
+## Example HMAC generation
 
 <table>
     <tr>
@@ -73,7 +73,7 @@ A time property és a beérkezés ideje között pár másodperc különbség is
         <td>https://example.com/</td>
     </tr>
     <tr>
-        <td>Post payload (one-line stringként szóközök nélkül)</td>
+        <td>Post payload (one-line as string without spaces)</td>
         <td>{"id":69,"status":"pending","time":1606740386}</td>
     </tr>
     <tr>
@@ -85,7 +85,7 @@ A time property és a beérkezés ideje között pár másodperc különbség is
         <td>317a52549acd37817dfdf2d8989c9386b3d448faa6bc2ff597c71eaa37c76ee3</td>
     </tr>
     <tr>
-        <td>Teljes URL</td>
+        <td>The full url</td>
         <td>https://example.com?hmac=317a52549acd37817dfdf2d8989c9386b3d448faa6bc2ff597c71eaa37c76ee3</td>
     </tr>
 </table>

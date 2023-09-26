@@ -1,16 +1,16 @@
 # Number Attribute Resource
 
-## FIGYELEM!
-A termék tulajdonságokból maximum 300 db hozható létre!  
+## ATTENTION!
+A maximum of 300 product attributes can be created!
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'number_attribute'" :lang="'hu'"/>
+<ResourceProperties :resource="'number_attribute'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -27,7 +27,7 @@ A termék tulajdonságokból maximum 300 db hozható létre!
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -44,7 +44,7 @@ A termék tulajdonságokból maximum 300 db hozható létre!
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -67,7 +67,7 @@ A termék tulajdonságokból maximum 300 db hozható létre!
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'number_attribute'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -90,7 +90,7 @@ A termék tulajdonságokból maximum 300 db hozható létre!
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'number_attribute'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'number_attribute'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példa
-- [**Termék típusok, egyedi tulajdonságok és termékváltozatok kezelése**](../development/api-examples/08_product_attribute_handling.md)
+## Examples
+- [**Product attribute handling**](../development/api-examples/08_product_attribute_handling.md)

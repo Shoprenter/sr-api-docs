@@ -8,17 +8,17 @@
   "showInFooter": "0",
   "informationDescriptions":[
     {
-      "title":"Szöveges menüpont címe",
-      "introtext":"Szöveges menüpont bevezető szöveg",
-      "description":"Szöveges menüpont. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
+      "title":"Text menu item title",
+      "introtext":"Text menu item Introductory text",
+      "description":"Text menu item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
       "language":{
         "id":"bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
       }
     },
     {
-      "title":"Szöveges menüpont címe angolul",
-      "introtext":"Szöveges menüpont bevezető szöveg angolul",
-      "description":"Szöveges menüpont angolul. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
+      "title":"Text menu item title in English",
+      "introtext":"Text menu item Introductory text in English",
+      "description":"Text menu item in English. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
       "language":{
         "id":"bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
       }

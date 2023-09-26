@@ -4,7 +4,7 @@
     <dateAdded><![CDATA[2013-04-30T10:52:36]]></dateAdded>
     <dateExpiration><![CDATA[2013-08-08T10:52:36]]></dateExpiration>
     <value><![CDATA[100]]></value>
-    <description><![CDATA[Leírás]]></description>
+    <description><![CDATA[Description]]></description>
     <order>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MQ==]]></href>
     </order>

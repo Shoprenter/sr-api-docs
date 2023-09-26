@@ -1,13 +1,13 @@
-# Elérés
+# Access
 
-A fizetési rendszer három ShopRenter API resource-on keresztül érhető el.
+The payment system is available through three ShopRenter API resources.
 - POST _**https://<shop_name>.api.myshoprenter.hu/billing/oneTimeCharges**_
 - POST _**https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges**_
 - DELETE _**https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges/{recurring_charge_id}**_
 
-A Shoprenter Partner Dashboardon tekinthetőek meg a pénzügyi kimutatások és kezelhetőek a [Fizetési tervek](../docs/plan.md):
+On the Shoprenter Partner Dashboard, financial statements can be viewed and [Payment plans](../docs/plan.md) can be managed:
 http://billing.shoprenter.hu/login
 
-A login felületen, a már [korábban említett regisztráció](../docs/settings.md) során kapott felhasználó név/token párossal tudunk belépni az alkalmazáshoz tartozó dashboardra.
+On the login interface, we can enter the dashboard of the application with the username/token pair received during the [previously mentioned registration](../docs/settings.md).
 
-FONTOS: A Payment API integrációja után az alkalmazások újratelepítése nem szükséges.
+IMPORTANT: It is not necessary to reinstall the applications after the integration of the Payment API.

@@ -1,8 +1,8 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9Mw==",
     "id": "cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9Mw==",
-    "name": "Név",
-    "description": "Leírás",
+    "name": "Name",
+    "description": "Description",
     "firstVariantSelectType": "SELECT",
     "secondVariantSelectType": "SELECT",
     "firstVariantParameter": {

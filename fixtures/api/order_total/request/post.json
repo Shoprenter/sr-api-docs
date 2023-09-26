@@ -1,6 +1,6 @@
 {
-    "name": "Nettó részösszeg:",
-    "valueText": "2.400 Ft",
+    "name": "Net partial amount:",
+    "valueText": "2.400 Huf",
     "value": "2400.0000",
     "sortOrder": "1",
     "type": "SUB_TOTAL",

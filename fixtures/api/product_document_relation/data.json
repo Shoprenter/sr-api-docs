@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Egyedi azonosító. Az OuterID módosítására szolgál.",
-                "en": "Egyedi azonosító. Az OuterID módosítására szolgál."
+                "en": "Custom identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "document",
             "description": {
-                "hu": "Dokumentum azonosító.",
-                "en": "Dokumentum azonosító."
+                "en": "Document identifier."
             },
             "required": true,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "product",
             "description": {
-                "hu": "Termék azonosító.",
-                "en": "Termék azonosító."
+                "en": "Product identifier."
             },
             "required": true,
             "readonly": false
@@ -32,12 +29,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/productDocumentRelations\/id",
                 "en": "\/productDocumentRelations\/id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -48,40 +43,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/productDocumentRelations",
                 "en": "\/productDocumentRelations"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Dokumentum belső azonosító.",
-                        "en": "Kereső paraméter. Dokumentum belső azonosító."
+                        "en": "Search parameter. Document internal identifier."
                     }
                 }
             ],
@@ -93,44 +82,38 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/productDocumentRelations[\/id]",
                 "en": "\/productDocumentRelations[\/id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/productDocumentRelations",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/productDocumentRelations\/id",
                 "en": "\/productDocumentRelations\/id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/productDocumentRelations\/cHJvZHVjdERvY3VtZW50LWlkPTE4",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/productDocumentRelations\/id",
                 "en": "\/productDocumentRelations\/id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {

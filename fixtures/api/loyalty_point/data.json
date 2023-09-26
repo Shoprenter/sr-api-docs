@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Hűségpont azonosító. Az OuterID módosítására szolgál.",
-                "en": "Hűségpont azonosító. Az OuterID módosítására szolgál."
+                "en": "Loyalty point identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "dateAdded",
             "description": {
-                "hu": "Hűségpont megszerzésének ideje.",
-                "en": "Hűségpont megszerzésének ideje."
+                "en": "The date when the Loyalty point added."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "dateExpiration",
             "description": {
-                "hu": "Lejárat.",
-                "en": "Lejárat."
+                "en": "Expiration."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "value",
             "description": {
-                "hu": "Érték.",
-                "en": "Érték."
+                "en": "Value."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "description",
             "description": {
-                "hu": "Leírás.",
-                "en": "Leírás."
+                "en": "Description."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "order",
             "description": {
-                "hu": "Rendelés linkje.",
-                "en": "Rendelés linkje."
+                "en": "Order link."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "customer",
             "description": {
-                "hu": "Vásárló linkje.",
-                "en": "Vásárló linkje."
+                "en": "Customer link."
             },
             "required": false,
             "readonly": false
@@ -68,12 +61,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/loyaltyPoints\/hűségpont id",
-                "en": "\/loyaltyPoints\/hűségpont id"
+                "en": "\/loyaltyPoints\/loyalty point id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -84,47 +75,40 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/loyaltyPoints",
                 "en": "\/loyaltyPoints"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "orderId",
                     "description": {
-                        "hu": "Kereső paraméter. Rendelés azonosító.",
-                        "en": "Kereső paraméter. Rendelés azonosító."
+                        "en": "Search parameter. Order identifier."
                     }
                 },
                 {
                     "name": "customerId",
                     "description": {
-                        "hu": "Kereső paraméter. Vásárló azonosító.",
-                        "en": "Kereső paraméter. Vásárló azonosító."
+                        "en": "Search parameter. Customer identifier."
                     }
                 }
             ],
@@ -136,44 +120,38 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/loyaltyPoints[\/hűségpont id]",
-                "en": "\/loyaltyPoints[\/hűségpont id]"
+                "en": "\/loyaltyPoints[\/loyalty point id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/loyaltyPoints",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/loyaltyPoints\/hűségpont id",
-                "en": "\/loyaltyPoints\/hűségpont id"
+                "en": "\/loyaltyPoints\/loyalty point id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/loyaltyPoints\/bG95YWx0eVBvaW50LWlkPTE=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/loyaltyPoints\/hűségpont id",
-                "en": "\/loyaltyPoints\/hűségpont id"
+                "en": "\/loyaltyPoints\/loyalty point id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {

@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Pénznem azonosító. Az OuterID módosítására szolgál.",
-                "en": "Pénznem azonosító. Az OuterID módosítására szolgál."
+                "en": "Currency identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név.",
-                "en": "Név."
+                "en": "Name."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "code",
             "description": {
-                "hu": "Pénznem kódja, pl: USD, EUR, HUF.",
-                "en": "Pénznem kódja, pl: USD, EUR, HUF."
+                "en": "Currency code, pl: USD, EUR, HUF."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "symbolLeft",
             "description": {
-                "hu": "Összeg előtt szereplő szimbólum.",
-                "en": "Összeg előtt szereplő szimbólum."
+                "en": "The symbol before the value."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "symbolRight",
             "description": {
-                "hu": "Összeg után szereplő szimbólum.",
-                "en": "Összeg után szereplő szimbólum."
+                "en": "The symbol after the value."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "decimalPlace",
             "description": {
-                "hu": "Az összegben a tizedes jegyek száma.",
-                "en": "Az összegben a tizedes jegyek száma."
+                "en": "The number of decimal used in the value."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "value",
             "description": {
-                "hu": "Váltószám.",
-                "en": "Váltószám."
+                "en": "The value used for change."
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "status",
             "description": {
-                "hu": "Státusz.",
-                "en": "Státusz."
+                "en": "Status."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": false
@@ -86,12 +77,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/currencies\/pénznem id",
-                "en": "\/currencies\/pénznem id"
+                "en": "\/currencies\/currency id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -102,40 +91,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/currencies",
                 "en": "\/currencies"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "code",
                     "description": {
-                        "hu": "Kereső paraméter. A pénznem kódja.",
-                        "en": "Kereső paraméter. A pénznem kódja."
+                        "en": "Search parameter. A currency's code."
                     }
                 }
             ],

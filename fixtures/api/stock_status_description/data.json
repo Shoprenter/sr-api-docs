@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Raktár állapot leírás azonosító.",
-                "en": "Raktár állapot leírás azonosító."
+                "en": "Stock status description identifier."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név.",
-                "en": "Név."
+                "en": "Name."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "color",
             "description": {
-                "hu": "Szín.",
-                "en": "Szín."
+                "en": "Color."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "stockStatus",
             "description": {
-                "hu": "Raktár állapot link.",
-                "en": "Raktár állapot link."
+                "en": "Stock status link."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Nyelv link.",
-                "en": "Nyelv link."
+                "en": "Language link."
             },
             "required": false,
             "readonly": false
@@ -50,12 +45,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/stockStatusDescriptions\/Raktár állapot leírás id",
-                "en": "\/stockStatusDescriptions\/Raktár állapot leírás id"
+                "en": "\/stockStatusDescriptions\/Stock status description id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -66,47 +59,40 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/stockStatusDescriptions",
                 "en": "\/stockStatusDescriptions"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "stockStatusId",
                     "description": {
-                        "hu": "Kereső paraméter. (Raktár állapot azonosító).",
-                        "en": "Kereső paraméter. (Raktár állapot azonosító)."
+                        "en": "Search parameter. (Stock status identifier)."
                     }
                 },
                 {
                     "name": "languageId",
                     "description": {
-                        "hu": "Kereső paraméter. (Nyelv azonosító).",
-                        "en": "Kereső paraméter. (Nyelv azonosító)."
+                        "en": "Search parameter. (Language identifier)."
                     }
                 }
             ],

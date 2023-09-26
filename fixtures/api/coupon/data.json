@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Kupon azonosító. Az OuterID módosítására szolgál.",
-                "en": "Kupon azonosító. Az OuterID módosítására szolgál."
+                "en": "Coupon identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "code",
             "description": {
-                "hu": "Kupon kód.",
-                "en": "Kupon kód."
+                "en": "Coupon code."
             },
             "required": true,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "discountType",
             "description": {
-                "hu": "A kedvezmény típusa. Lehetséges értékek: PERCENT, FIX.",
-                "en": "A kedvezmény típusa. Lehetséges értékek: PERCENT, FIX."
+                "en": "Discount type. Possible values: PERCENT, FIX."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "percentDiscountValue",
             "description": {
-                "hu": "A százalékos kedvezmény értéke.",
-                "en": "A százalékos kedvezmény értéke."
+                "en": "Percent discount value."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "loginRequired",
             "description": {
-                "hu": "Szükséges-e a bejelentkezés a felhasználáshoz.",
-                "en": "Szükséges-e a bejelentkezés a felhasználáshoz."
+                "en": "Is login required for the using?"
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "freeShipping",
             "description": {
-                "hu": "Ingyenes szállítást biztosít-e.",
-                "en": "Ingyenes szállítást biztosít-e."
+                "en": "Is it giving free shipping?"
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "fixDiscountValue",
             "description": {
-                "hu": "Fix kedvezmény értéke.",
-                "en": "Fix kedvezmény értéke."
+                "en": "Fix discount value."
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "dateStart",
             "description": {
-                "hu": "A kupon felhasználhatóságának kezdete.",
-                "en": "A kupon felhasználhatóságának kezdete."
+                "en": "The date when the coupon is became usable."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "dateEnd",
             "description": {
-                "hu": "A kupon felhasználhatóságának vége.",
-                "en": "A kupon felhasználhatóságának vége."
+                "en": "The date when the coupon is not usable."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "totalNumberOfCoupons",
             "description": {
-                "hu": "Az összes felhasználható kupon száma.",
-                "en": "Az összes felhasználható kupon száma."
+                "en": "Number of all usable coupons"
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "totalNumberOfCouponsPerCustomer",
             "description": {
-                "hu": "Egy vevő által felhasználható kuponok száma.",
-                "en": "Egy vevő által felhasználható kuponok száma."
+                "en": "Number of coupons that can be used by one customer."
             },
             "required": false,
             "readonly": false
@@ -102,8 +91,7 @@
         {
             "name": "status",
             "description": {
-                "hu": "A kuponok használata engedélyezett-e.",
-                "en": "A kuponok használata engedélyezett-e."
+                "en": "Are coupons allowed?"
             },
             "required": false,
             "readonly": false
@@ -111,8 +99,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -120,8 +107,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Módosítás dátuma.",
-                "en": "Módosítás dátuma."
+                "en": "Updated date."
             },
             "required": false,
             "readonly": true
@@ -129,8 +115,7 @@
         {
             "name": "email",
             "description": {
-                "hu": "Csak ezzel az email címmel rendelkező vásárló használhatja a kupont.",
-                "en": "Csak ezzel az email címmel rendelkező vásárló használhatja a kupont."
+                "en": "Only customers with this email address can use the coupon."
             },
             "required": false,
             "readonly": false
@@ -138,8 +123,7 @@
         {
             "name": "minOrderLimit",
             "description": {
-                "hu": "Minimális rendelés értéke, amelytől érvényesíthető a kupon.",
-                "en": "Minimális rendelés értéke, amelytől érvényesíthető a kupon."
+                "en": "\nMinimum order value from which the coupon can be validated."
             },
             "required": false,
             "readonly": false
@@ -147,8 +131,7 @@
         {
             "name": "targetType",
             "description": {
-                "hu": "A kupon termékre (PRODUCT) vagy kategóriára (CATEGORY) vonatkozik. Lehetséges értékek: PRODUCT, CATEGORY.",
-                "en": "A kupon termékre (PRODUCT) vagy kategóriára (CATEGORY) vonatkozik. Lehetséges értékek: PRODUCT, CATEGORY."
+                "en": "The coupon applies to a product (PRODUCT) or a category (CATEGORY). Possible values: PRODUCT, CATEGORY."
             },
             "required": false,
             "readonly": false
@@ -156,8 +139,7 @@
         {
             "name": "taxClass",
             "description": {
-                "hu": "ÁFA kulcs linkje.",
-                "en": "ÁFA kulcs linkje."
+                "en": "Tax class link."
             },
             "required": false,
             "readonly": false
@@ -165,8 +147,7 @@
         {
             "name": "couponDescriptions",
             "description": {
-                "hu": "Kupon leírások linkje.",
-                "en": "Kupon leírások linkje."
+                "en": "Coupon descriptions link."
             },
             "required": false,
             "readonly": false
@@ -176,12 +157,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/coupons\/kupon id",
-                "en": "\/coupons\/kupon id"
+                "en": "\/coupons\/coupon id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -192,40 +171,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/coupons",
                 "en": "\/coupons"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "code",
                     "description": {
-                        "hu": "Kereső paraméter. Kupon kód.",
-                        "en": "Kereső paraméter. Kupon kód."
+                        "en": "Search parameter. Coupon code."
                     }
                 }
             ],
@@ -237,44 +210,38 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/coupons[\/kupon id]",
-                "en": "\/coupons[\/kupon id]"
+                "en": "\/coupons[\/coupon id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/coupons",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/coupons\/kupon id",
-                "en": "\/coupons\/kupon id"
+                "en": "\/coupons\/coupon id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/coupons\/Y291cG9uLWNvdXBvbl9pZD0x",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/coupons\/kupon id",
-                "en": "\/coupons\/kupon id"
+                "en": "\/coupons\/coupon id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {

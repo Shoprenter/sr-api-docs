@@ -1,17 +1,17 @@
-# Akciós termék
+# Sale product
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy termékhez akciós árat rendelni, módosítani és törölni.
+The following example shows how to assign, modify and delete a discount price for a product.
 
-## Akciós ár felvétele
+## Add discount price
 
-Akciós árat egy termékhez a [**Product Special Resource**](../../api/product_special.md) segítségével lehet megadni. 
-A posztolás során szükségünk van a korábban felvett termék ([**Product Resource**](../../api/product.md)) resource azonosítójára,
-illetve annak a vevőcsoportnak ([**Customer Group Resource**](../../api/customer_group.md)) resource azonosítójára, akiknek az akciót szeretnénk biztosítani.
-A minimum mennyiség és maximum mennyiség értékének csak abban az esetben szükséges 0-nál magasabb számot megadni, ha mennyiségi árkedvezmény kerül beállításra.
+A discount price for a product can be specified using [**Product Special Resource**](../../api/product_special.md).
+When posting, we need the resource ID of the previously uploaded product ([**Product Resource**](../../api/product.md)),
+and to the resource ID of the customer group ([**Customer Group Resource**](../../api/customer_group.md)) to whom we want to provide the promotion.
+It is only necessary to enter a number higher than 0 for the value of the minimum quantity and maximum quantity if a quantity discount is set.
 
-**Megjegyzés:** A nap terméke egy speciális akciós árnak számít (lásd bővebben a [**Nap terméke**](./01_1_product_special_product_of_day.md) példában) 
+**Note:** Product of the day is considered a special sale price (see more in the example [**Product of day**](./01_1_product_special_product_of_day.md))
 
-### Példa
+### Example
 
 #### Request
 
@@ -74,12 +74,12 @@ A minimum mennyiség és maximum mennyiség értékének csak abban az esetben s
 }
 ```
 
-## Akciós ár módosítása
+## Modification of promotional price
 
-Akciós ár módosításához szükségünk lesz a korábban felvitt akciós ár resource azonosítójára.
-Amennyiben a vevőcsoportot szeretnénk módosítani "Mindenki" vevőcsoportra, úgy érdemes törölni előbb az akciót és egy újat létrehozni. Minden más vevőcsoport esetén a módosítás végrehajtható.
+To change a special price, we will need the resource ID of the previously entered special price.
+If we want to change the customer group to "Everyone" customer group, it is worth deleting the action first and creating a new one. Modifications can be made for all other customer groups.
 
-### Példa
+### Example
 
 #### Request
 
@@ -142,11 +142,11 @@ Amennyiben a vevőcsoportot szeretnénk módosítani "Mindenki" vevőcsoportra, 
 }
 ```
 
-## Akciós ár törlése
+## Delete special price
 
-Akciós ár törléséhez szükségünk lesz a korábban felvitt akciós ár resource azonosítójára.
+To delete a special price, we will need the resource identifier of the previously entered special price.
 
-### Példa
+### Example
 
 #### Request
 

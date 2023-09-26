@@ -1,61 +1,61 @@
-# Termék típusok, egyedi tulajdonságok és termékváltozatok kezelése
+# Management of product types, unique properties and product variants
 
-_Mielőtt belekezdünk a típusok és tulajdonságok API-n keresztül történő kezelésének a megismerkedésébe:_
+_Before we start learning about handling types and properties via API:_
 
-**Ajánlatos** a Shoprenter Akadémián megtalálható [cikk](https://support.shoprenter.hu/hc/hu/articles/215106088-T%C3%ADpusok-tulajdons%C3%A1gok-sz%C5%B1r%C5%91k-matric%C3%A1k)
- áttanulmányozása. **Értenünk kell**, mi történik a kezelt bolt adminisztrációs felületén, hogy teljesen biztosak 
- legyünk a dolgunkban, mialatt API-n keresztül kezeljük ezt a részt!
+**Recommended** [article] found on the Shoprenter Academy (https://support.shoprenter.hu/hc/hu/articles/215106088-T%C3%ADpusok-tluodnosts%C3%A1gok-sz%C5%B1r%C5 %91k-matrix%C3%A1k)
+study. **We need to understand** what happens in the administration interface of the managed store, so that they are completely secure
+let's get down to business while we handle this part via API!
 
-A boltokban található termékek mindegyikének lehetnek olyan jellemzői,
-mely meghatározzák a termék jellegét pl. színét, méretét stb. Ezeket a jellemzőket
-a termék **egyedi tulajdonságának** hívjuk. Ezek segítségével a bolt tulajdonos képes megoldani pl.:
-a termék jellemzőinek struktúrált megjelenítését a termék oldalon, illetve megkönnyíteni a Vásárlók számára 
-a termékek szűrését.
- 
-A Shoprenter ezeket a tulajdonságokat
-**termék típusokba** csoportosítja, aminek a célja, hogy egy tulajdonság-együttessel
-leírhatóak legyenek a hasonló termékek közös vonásai.
-Fontos megemlíteni, hogy egy egyedi terméktulajdonság több termék típus alá tartozhat.
+Each of the products in the stores may have characteristics that
+which determine the nature of the product, e.g. color, size, etc. These characteristics
+we call it the **unique feature** of the product. With the help of these, the store owner can solve, for example:
+the structured presentation of the product's characteristics on the product page, and to make it easier for the Buyers
+product filtering.
 
-A termék típusok és egyedi tulajdonságoknak a termékváltozatok képzésében is nagy szerepük van.
-Egy egyedi tulajdonság mentén, képezhetjük egy termék több másik változatát, amelyek valójában önálló termékeknek számítanak.
+The Shoprenter has these qualities
+It is grouped into **product types**, the purpose of which is to have a set of properties
+the common features of similar products should be described.
+It is important to mention that a single product property can belong to several product types.
 
-A Shoprenter API segítségével képesek vagyunk kialakítani saját tulajdonság-rendszereinket.
-A kialakítás folyamata **nagy odafigyelést igényel**, így egy példával fogjuk szemléltetni az építkezés egyes
-fázisait.
+Product types and unique features also play a major role in the formation of product variants.
+Along a unique feature, we can form several other versions of a product, which are actually considered independent products.
 
-1.-5. lépés: Termék típus és egyedi tulajdonságok kezelése, összekapcsolásuk termékekkel.
+With the help of the Shoprenter API, we are able to create our own property systems.
+The design process **requires a lot of attention**, so we will use an example to illustrate the construction process
+phases.
 
-6.lépés (opcionális): A termékváltozatok kialakítása. Ha nincs szükség termékváltozatok képzésére, ezt a lépést
-elhagyhatjuk.
+1.-5. step: Management of product type and unique properties, connecting them with products.
 
-**Fontos megjegyzés:** Lehetőség van egy termék egyedi tulajdonságinak egyszerűsített lekérésére
-a [Product Extend Resource](../../api/product_extend.md) segítségével. 
-A **productAttributeExtend** mező egy listát tartalmaz, amely a termékhez tartozó egyedi tulajdonságokat jeleníti meg.
+Step 6 (optional): Creating the product variants. If there is no need to train product variants, skip this step
+we can leave it.
 
-#### Példa, amivel levezetjük a folyamatot:
-Növényeket forgalmazó boltban, létre akarok hozni egy olyan nevű termék típust, hogy **Szobanövény**. 
-A jövőben minden olyan növényhez hozzá akarom majd rendelni ezt a típust, amely jellegéből adódóan,
- szobanövénynek mondható.
+**Important note:** It is possible to retrieve the unique properties of a product in a simplified manner
+with [Product Extend Resource](../../api/product_extend.md).
+The **productAttributeExtend** field contains a list that displays unique attributes for the product.
 
-Hogy a példa egyszerű legyen, és minden tulajdonság típust végig vegyünk,
- ez a típus 3 egyedi tulajdonságot fog tartalmazni:
+#### An example to demonstrate the process:
+In a store selling plants, I want to create a product type named **Houseplant**.
+In the future, I will want to assign this type to all plants that, due to their nature,
+it can be said to be a houseplant.
 
- * Napsütötte órák száma - **Egész szám** típusú tulajdonság
- * Levelek formája - **Szöveges (választólista)** típusú tulajdonság: "Hegyes" és "Kerek" választható értékekkel
- * Latin megnevezés: **Tetszőleges** típusú tulajdonság
- 
-Ezután, egy létező termékhez hozzárendeljük az elkészült termék típusunkat, majd megnézzük,
-hogyan adhatjuk meg a termék tulajdonságainak az értékeit.
+To keep the example simple and go through all property types,
+this type will contain 3 unique properties:
 
-## 1. lépés - Termék típus létrehozása
+* Number of hours of sunshine - **Integer** type property
+* Shape of letters - **Text (selection list)** type property: "Pointed" and "Round" with selectable values
+* Latin designation: **Arbitrary** type property
 
-Egy egyszerű kéréssel létrehozzuk a termék típusunkat, amely összefogja majd egy Szobanövény
-egyedi tulajdonságait.
+Next, we assign our completed product type to an existing product, and then check
+how to enter the values of the product properties.
 
-_A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tárgyaljuk._ 
+## Step 1 - Create a product type
 
-#### Használt Resource
+With a simple request, we create our product type, which will be combined with a Houseplant
+its unique properties.
+
+_The versioning parameters are discussed [here](#6-lps---termkltozatok-eilaktsa)._
+
+#### Used Resource
 
 [Product Class](../../api/product_class.md)
 
@@ -81,7 +81,7 @@ _A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tár
 
 ```json
 {
-    "name": "Szobanövény",
+    "name": "houseplant",
     "description": "Ez a szobanoveny típus leírása"
 }
 ```
@@ -92,8 +92,8 @@ _A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tár
 {
     "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "id": "cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
-    "name": "Szobanövény",
-    "description": "Ez a szobanoveny típus leírása",
+    "name": "houseplant",
+    "description": "This is the houseplant type description",
     "firstVariantSelectType": "SELECT",
     "secondVariantSelectType": "SELECT",
     "firstVariantParameter": null,
@@ -104,23 +104,23 @@ _A változatképző paramétereket [itt](#6-lps---termkvltozatok-kialaktsa) tár
 }
 ```
 
-## 2. lépés - Egyedi tulajdonságok létrehozása
+## Step 2 - Create custom properties
 
-Ebben a lépésben megismerkedünk 3 egyedi tulajdonság API Resource-ával:
- - Number Attribute Resource - Egész/Tört szám típusú tulajdonság
- - Text Attribute Resource - Tetszőleges típusú tulajdonság
- - List Attribute Resouce - Szöveges (választólista) típusú tulajdonság
- 
-Elkészítjük a 3 egyedi tulajdonságunkat, ezután mindhárom tulajdonsághoz rendelünk címkét az 
-Attribute Description Resource-al.
+In this step, we get to know the API Resource of 3 unique properties:
+- Number Attribute Resource - Integer/Fraction number type attribute
+- Text Attribute Resource - Any type of attribute
+- List Attribute Resource - Text (selection list) type attribute
+
+We create our 3 unique properties, then assign a label to all three properties
+With Attribute Description Resource.
 
 ### Number Attribute Resource
-A Resource-al olyan tulajdonságokat vehetünk fel, melyek értékei egész vagy tört szám típusúak lehetnek.
+With Resource, we can add properties whose values can be of integer or fractional number type.
 
-A példát követve, nekünk egy egész típusú tulajdonságra lesz szükségünk, mely a napsütötte órák számát adja meg
-egy termék esetén.
+Following the example, we will need an Integer property that specifies the number of hours of sunshine
+for a product.
 
-#### Használt Resource
+#### Used Resource
 
 [Number Attribute Resource](../../api/number_attribute.md)
 
@@ -148,7 +148,7 @@ egy termék esetén.
 ```json
 {
     "type": "INTEGER",
-    "name": "napsutotte_orak_szama",
+    "name": "number_of_sunny_hours",
     "priority": "NORMAL",
     "sortOrder": "1",
     "defaultValue": "4",
@@ -165,7 +165,7 @@ egy termék esetén.
     "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
     "id": "bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
     "type": "INTEGER",
-    "name": "napsutotte_orak_szama",
+    "name": "number_of_sunny_hours",
     "priority": "NORMAL",
     "sortOrder": "1",
     "defaultValue": "10",
@@ -185,21 +185,21 @@ egy termék esetén.
     }
 }
 ```
-**Fontosabb mezők:**
-- A **type** mező értéke INTEGER vagy FLOAT. Ez határozza meg, hogy a 
-Resource egész vagy tört szám típusú tulajdonságot hozzon-e létre.
-- A **priority** mezővel a láthatóságát NORMAL típusúra állítottuk, 
-így csak a termékoldalon fog megjelenni.
-- A **required** mező értéke 1, hogy annál a terméknél, ahol felhasználják a tulajdonságot, legyen kötelező a kitöltése.
-- A **minValue** és **maxValue** mezőkkel behatároltuk az értéktartományt 24 órára.
+**More important fields:**
+- The value of the **type** field is INTEGER or FLOAT. This determines whether a
+  Whether to create an Integer or Fraction type Resource property.
+- With the **priority** field, its visibility was set to NORMAL type,
+  so it will only appear on the product page.
+- The value of the **required** field is 1 so that it is mandatory for the product where the property is used.
+- With the **minValue** and **maxValue** fields, we limited the value range to 24 hours.
 
 ### Text Attribute Resource 
 
-A Resource-al olyan tulajdonságokat vehetünk fel, melyek értékei tetszőleges _string_ értékek lehetnek.
+With Resource we can include properties whose values can be arbitrary _string_ values.
 
-A példát követve, most létrehozunk egy tulajdonságot, amely a latin megnevezését fogja tartalmaznia a növénynek.
+Following the example, we will now create a property that will contain the Latin name of the plant.
 
-#### Használt Resource
+#### Used Resource
 
 [Text Attribute Resource](../../api/text_attribute.md)
 
@@ -226,7 +226,7 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
 ```json
 {
     "type": "TEXT",
-    "name": "latin_megnevezes",
+    "name": "latin_name",
     "priority": "NORMAL",
     "sortOrder": "3",
     "required": "0",
@@ -242,7 +242,7 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
     "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
     "id": "dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
     "type": "TEXT",
-    "name": "latin_megnevezes",
+    "name": "latin_name",
     "priority": "NORMAL",
     "sortOrder": "2",
     "required": "0",
@@ -257,32 +257,32 @@ A példát követve, most létrehozunk egy tulajdonságot, amely a latin megneve
 }
 ```
 
-**Fontosabb mezők:**
-- A **type** mező értéke TEXT. Kötelező megadni.
-- A **priority** mezővel a láthatóságát NORMAL típusúra állítottuk, 
-így csak a termékoldalon fog megjelenni.
-- A **required** mező értéke 0, mert nem biztos, hogy minden növénynek tudni fogjuk a latin nevét, ezért nem is 
-tesszük kötelezővé
-- A **textFieldType** mezőnek INPUT értéket adtunk, így a termékszerkesztő oldalon, a tulajdonság értéket
- egy egysoros, szövegbeviteli mezőben tudjuk felvenni.
-- A **translateable** mező mondja meg, hogy a megadható-e az érték több nyelven, vagy sem. Mivel nyelvtől független 
-a tulajdonság értékünk (latin nyelvű), 0 értéket kap.
+**More important fields:**
+- The value of the **type** field is TEXT. Required.
+- With the **priority** field, its visibility was set to NORMAL type,
+  so it will only appear on the product page.
+- The value of the **required** field is 0, because it is not certain that we will know the Latin name of every plant, so we do not
+  we make it mandatory
+- The **textFieldType** field was given an INPUT value, so on the product editor page, the property value
+  we can record it in a one-line text input field.
+- The **translateable** field tells whether the value can be entered in several languages or not. Because it is independent of language
+  our property value (in Latin), is given a value of 0.
 
 ### List Attribute Resource 
 
-A Resource-al olyan tulajdonságokat vehetünk fel, melyeknek értékeit egy előre meghatározott listából választhatjuk ki.
+With Resource, we can add properties whose values can be selected from a predefined list.
 
-A taglalt egyedi tulajdonság elkészítése komplexebb, mint az előző két tulajdonság esetén tapasztaltuk:
-- Létre kell hoznunk az tulajdonságot List Attribute Resource-al.
-- Meg kell adnunk, hány darab értéket vehet fel a tulajdonság List Attribute Value Resource-al. Tehát annyi 
-List Attribute Value Resource egyedet kell létrehoznunk, amennyi értéket szeretnénk választhatóvá tenni.
-- Amikor az értékeket egyesével létrehoztuk, a List Attribute Value Description Resource-al megadjuk, hogy egyes 
-nyelvek esetén, mi lesz a konkrét érték.
+The preparation of the detailed unique property is more complex than we experienced in the case of the previous two properties:
+- We need to create the property with List Attribute Resource.
+- We need to specify how many values the property can take with List Attribute Value Resource. So that's it
+  We need to create a List Attribute Value Resource individual, as many values as we want to make selectable.
+- When the values were created individually, we specify that they are single with the List Attribute Value Description Resource
+  languages, what will be the specific value.
 
-A példát követve, most létrehozunk egy tulajdonságot, amely a növény leveleinek a formáját fogja megadni.
-A két választható érték: "Hegyes", "Kerek".
+Following the example, we will now create a property that will specify the shape of the plant's leaves.
+The two possible values are: "Pointed", "Round".
 
-#### Használt Resource
+#### Used Resource
 
 - [List Attribute Resource](../../api/list_attribute.md)
 - [List Attribute Value Resource](../../api/list_attribute_value.md)
@@ -290,7 +290,7 @@ A két választható érték: "Hegyes", "Kerek".
 
 #### Request - List Attribute Resource
 
-Az előző példákhoz hasonlóan, először magát a tulajdonságot hozzuk létre.
+As with the previous examples, we first create the attribute itself.
 
 <table>
   <tr>
@@ -313,7 +313,7 @@ Az előző példákhoz hasonlóan, először magát a tulajdonságot hozzuk lét
 ```json
 {
     "type": "LIST",
-    "name": "levelek_formaja",
+    "name": "shape_of_leaves",
     "priority": "NORMAL",
     "sortOrder": "2",
     "required": "1",
@@ -328,7 +328,7 @@ Az előző példákhoz hasonlóan, először magát a tulajdonságot hozzuk lét
     "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
         "id": "bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
         "type": "LIST",
-        "name": "levelek_formaja",
+        "name": "shape_of_leaves",
         "priority": "NORMAL",
         "sortOrder": "2",
         "required": "1",
@@ -346,27 +346,27 @@ Az előző példákhoz hasonlóan, először magát a tulajdonságot hozzuk lét
 }
 ```
 
-Az elkészült tulajdonság resource id-ját megjegyezzük: **bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=**
-Szükségünk lesz rá a következő lépésben, hogy értékekkel töltsük fel a választó listás tulajdonságunkat.
+Note the resource id of the completed property: **bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=**
+We will need it in the next step to populate our picklist property with values.
 
-**Fontosabb mezők:**
-- A **type** mező értéke LIST. Kötelező megadni.
-- A **priority** mezővel a láthatóságát NORMAL típusúra állítottuk, 
-így csak a termékoldalon fog megjelenni.
-- A **presentation** mezőnek akkor van szerepe, ha ezt a tulajdonságot termékváltozat képzésére használjuk.
-A termékoldalon megjelenő termékváltozat választó típusát adja meg. Jelen esetben TEXT lesz, tehát szöveges
-választólista jelenne meg.
+**More important fields:**
+- The value of the **type** field is LIST. Required.
+- With the **priority** field, its visibility was set to NORMAL type,
+  so it will only appear on the product page.
+- The **presentation** field has a role if this property is used to create a product version.
+  Enter the selector type of the product variant displayed on the product page. In this case, it will be TEXT, so it is textual
+  a selection list would appear.
 
 #### Request - List Attribute Value Resource
 
-Két értéket szeretnénk a kiválaszthatóvá tenni választólistában: "Hegyes" és "Kerek".
-Ahogy említettem, a Resource-al csak létrehozunk két "üres" értéket, amiknek még konkrétan nem adjuk meg,
-melyik fogja a "Hegyes" és melyik a "Kerek" értéket reprezentálni.
+We want to make two values selectable in the picklist: "Pointed" and "Round".
+As I mentioned, with Resource we only create two "empty" values, which we do not specify yet,
+which will represent "Pointed" and which will represent "Round".
 
-Az előző lépésben létrehozott List Attribute tulajdonság resource id-ját fogjuk használni, hogy hozzákapcsoljuk
-a két új értéket a "Levelek formája" egyedi tulajdonsághoz.
+We will use the resource id of the List Attribute property created in the previous step to attach it
+the two new values for the "Form of letters" unique property.
 
-**A következő requestet ismételjük meg kétszer:**
+**Repeat the following request twice:**
 
 <table>
   <tr>
@@ -394,7 +394,7 @@ a két új értéket a "Levelek formája" egyedi tulajdonsághoz.
 }
 ```
 
-**A két request Response-a:**
+**Response of the two requests:**
 
 ```json
 {
@@ -422,21 +422,21 @@ a két új értéket a "Levelek formája" egyedi tulajdonsághoz.
 }
 ```
 
-Megjegyezzük a két, létrehozott érték resource id-ját:
+Note the resource id of the two created values:
 - **bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x**
 - **bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y**
 
-A következő lépésben fogjuk felhasználni őket, hogy konkretizáljuk a két értéket.
+We will use them in the next step to instantiate the two values.
 
 #### Request - List Attribute Value Description Resource
 
-A választó lista konkrét értékeit kell megadnunk. Az egyszerűség kedvéért csak egy nyelvvel mutatjuk meg a 
-folyamatot.
+We need to specify the specific values of the selection list. For the sake of simplicity, we show a with only one language
+process.
 
-Az előző lépésben megjegyzett két List Attribute Value resource id-hoz felveszem, hogy, **magyar** nyelven, melyik legyen a "Hegyes" és melyik legyen
-a "Kerek" érték.
+For the two List Attribute Value resource ids noted in the previous step, I add, in **Hungarian** language, which should be "Pointed" and which should be
+the "Round" value.
 
-**A "Hegyes" érték - Request:**
+**The "Pointed" value - Request:**
 
 <table>
   <tr>
@@ -458,7 +458,7 @@ a "Kerek" érték.
 
 ```json
 {
-    "name": "Hegyes",
+    "name": "spiky",
     "language": {
         "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
@@ -474,7 +474,7 @@ a "Kerek" érték.
 {
     "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
-    "name": "Hegyes",
+    "name": "spiky",
     "language": {
         "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
@@ -484,7 +484,7 @@ a "Kerek" érték.
 }
 ```
 
-**A "Kerek" érték - Request:**
+**The "rounded" value - Request:**
 
 <table>
   <tr>
@@ -506,7 +506,7 @@ a "Kerek" érték.
 
 ```json
 {
-    "name": "Kerek",
+    "name": "rounded",
     "language": {
         "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
@@ -522,7 +522,7 @@ a "Kerek" érték.
 {
     "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
-    "name": "Kerek",
+    "name": "rounded",
     "language": {
         "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
@@ -532,24 +532,24 @@ a "Kerek" érték.
 }
 ```
 
-Természetesen, ha szeretnénk, hogy a bolt aktuális nyelvi beállításaihoz igazodva jelenjen meg az érték termék oldalon,
-pl.: angol nyelven a "Hegyes" úgy, hogy "Sharp", akkor ugyan ezt a lépést kell megismételnünk, az angol nyelv resource id-jával
-és a **name** mezőnek adott "Sharp" értékkel, például.
+Of course, if we want the value to appear on the product page in line with the store's current language settings,
+e.g.: "spiky" in English as "Sharp", then we have to repeat this step, with the resource id of the English language
+and with the value "Sharp" given to the **name** field, for example.
 
 ### Attribute Description Resource
 
-Mindhárom egyedi tulajdonságot fel kell címkéznünk, hogy mind admin felületen, mind pedig a boltban látható legyen adott
-nyelven a tulajonság neve.
+We need to label all three unique properties so that they are visible both on the admin interface and in the store
+in language the name of the property.
 
-Természetesen, a címkék több nyelven megadhatóak. Egy példát mutatunk a Napsütötte órák száma tulajdonság,
- magyar nyelvű felcímkézésére.
-Ugyanígy járjunk el a másik két tulajdonság esetén is.
+Of course, labels can be entered in several languages. We show an example of the number of sunny hours property,
+labeling in Hungarian.
+Do the same for the other two properties.
 
-Amire szükségünk lesz:
- - A Napsütötte órák száma tulajdonság resource id-jára: **bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==**
- - A magyar nyelv resource id-ja: **bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==**
+What we will need:
+- Number of sunny hours for resource id: **bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==**
+- Hungarian language resource id: **bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==**
 
-#### Használt Resoruce
+#### Used Resource
 
 [Attribute Description Resource](../../api/attribute_description.md)
 
@@ -575,8 +575,8 @@ Amire szükségünk lesz:
 
 ```json
 {
-    "name": "Napsütötte órák száma",
-    "description": "Megmondja, naponta, hány óra szükséges a növénynek napfényben töltenie",
+    "name": "Number of sunny hours",
+    "description": "It tells you how many hours per day the plant needs to spend in sunlight",
     "attribute": {
         "id": "bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
@@ -592,8 +592,8 @@ Amire szükségünk lesz:
 {
     "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
     "id": "YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
-    "name": "Napsütötte órák száma",
-    "description": "Megmondja, naponta, hány óra szükséges a növénynek napfényben töltenie",
+    "name": "Number of sunny hours",
+    "description": "It tells you how many hours per day the plant needs to spend in sunlight",
     "attribute": {
         "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
@@ -603,19 +603,19 @@ Amire szükségünk lesz:
 }
 ```
 
-## 3. lépés - Egyedi tulajdonságok hozzárendelése termék típushoz
+## Step 3 - Assign unique properties to product type
 
-Most, hogy elkészült a 3 egyedi tulajdonságunk, a következő lépésben hozzákapcsoljuk őket az első lépésben létrehozott,
-Szobanövény termék típushoz.
+Now that our 3 unique properties are ready, in the next step we will connect them to the created in the first step,
+For indoor plant product type.
 
-Szükségünk lesz a 3 egyedi tulajdonság resource id-jára:
-- Napsütötte órák száma - Number Attribute Resource: **bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==**
-- Latin megnevezés - Text Attribute Resource: **dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=**
-- Levelek formája - List Attribute Resource : b**GlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=**
+We will need the resource id of the 3 unique properties:
+- Number of sunny hours - Number Attribute Resource: **bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==**
+- Latin name - Text Attribute Resource: **dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=**
+- Form of letters - List Attribute Resource : b**GlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=**
 
-Illetve, természetesen a Szobanövény termék típus resource id-jára: cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=
+Or, of course, for the resource id of the Indoor plant product type: cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=
 
-#### Használt resource
+#### Used resource
 
 [Product Class Attribute Relation Resource](../../api/product_class_attribute_relation.md)
 
@@ -665,22 +665,22 @@ Illetve, természetesen a Szobanövény termék típus resource id-jára: cHJvZH
 }
 ```
 
-A példa a "Napsütötte órák száma" tulajdonságot kapcsolta a "Szobanövény" termék típushoz.
-Természetesen, **a két másik tulajdonsággal is hasonlóképpen járunk el**.
+The example linked the property "Number of sunny hours" to the product type "Houseplant".
+Of course, **we do the same with the other two properties**.
 
-Ha mindhárom tulajdonság kapcsolódik a típushoz, a Szobanövény termék típust beállíthatjuk bármelyik termékhez.
+If all three properties are related to the type, the Indoor plant product type can be set to any product.
 
-## 4. lépés - Termék típus hozzárendelése egy termékhez
+## Step 4 - Assign a product type to a product
 
-Most, hogy elkészült a Szobanövény termék típus és hozzá az egyedi tulajdonságai, következő lépésben megnézzük,
-hogyan lehet egy termékhez hozzárendelni.
+Now that the Indoor plant product type and its unique properties have been completed, in the next step we will look at
+how to assign it to a product.
 
-Ehhez szükségünk lesz a Szobanövény termék típus resource id-jára: **cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ**=.
+For this we will need the resource id of the Indoor plant product type: **cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ**=.
 
-A következőkben, egy létező termékhez rendeljük hozzá a termék típust. Tehát, Egy PUT kéréssel módosítjuk a productClass
-mezőjét. Természetesen, új termék létrehozásánál is hozzárendelhetjük a termék típust.
+In the following, we assign the product type to an existing product. So, we change the productClass with a PUT request
+field. Of course, we can also assign the product type when creating a new product.
 
-#### Használt resource
+#### Used resource
 
 [Product Extend Resource](../../api/product_extend.md)
 
@@ -727,34 +727,34 @@ mezőjét. Természetesen, új termék létrehozásánál is hozzárendelhetjük
 }
 ```
 
-Most már minden készen áll, hogy valóban használni tudjuk az egyedi terméktulajdonságainkat.
+Now everything is ready to really use our unique product features.
 
-## 5. lépés - Egyedi tulajdonság értékek felvétele
+## Step 5 - Adding custom property values
 
-Ebben a lépésben nyer értelmet az eddig elkészített termék típus és egyedi tulajdonságok.
-Az előző lépésben, egy tetszőleges termékhez megadtuk a Szobanövény termék típust. Nevezzük most ezt a terméket
-Szobanövény 1-nek.
+In this step, the product type and unique features created so far gain meaning.
+In the previous step, we entered the Indoor plant product type for any product. Now let's name this product
+Indoor plant for 1.
 
-Ebben a lépésben megadjuk, hogy a Szobanövény 1 termék esetén, a Szobanövény termék típus által összefogott Napsütötte órák száma, 
-Levelek formája és Latin megnevezés egyedi tulajdonságok, milyen aktuális értéket kapjanak.
+In this step, we specify that in the case of Indoor Plant 1 product, the Number of sunny hours summarized by the Indoor Plant product type,
+The shape of the letters and the Latin name are unique properties, what current value should they be given.
 
-Tegyük fel, hogy szeretnénk a **Napsütötte órák számát** (Number Attribute) 3-ra, a **Levelek formáját** (List Attribute) 
-"Kerek"-re és a **Latin megnevezést** (Text Attribute) pedig "Lorem ipsum"-ra állítani.
+Let's say we want **Number of hours of sunshine** (Number Attribute) to 3, **Form of letters** (List Attribute)
+to "rounded" and the **Latin name** (Text Attribute) to "Lorem ipsum".
 
-Úgy kell elképzelni, mintha egy formot töltenénk ki API-n keresztül: két beviteli mezőbe beírom a kívánt értékeket 
-(Number Attribute, Text Attribute), illetve egy listából kiválasztom a kívánt értéket (List Attribute).
+It should be imagined as if we were filling out a form via API: I enter the desired values in two input fields
+(Number Attribute, Text Attribute), or I select the desired value from a list (List Attribute).
 
-A 3 különböző terméktulajdonság aktuális értékeit egymástól eltérő módon tudjuk beállítani a termékhez.
+We can set the current values of the 3 different product properties for the product in different ways.
 
-### Napsütötte órák száma (Number Attribute)
+### Number of sunny hours (Number Attribute)
 
-Az érték megadása ennél a Resource-nál a legegyszerűbb.
+Entering the value is the easiest for this Resource.
 
-Amire szükségünk van:
-- Napsütötte órák száma tulajdonság resource id-jára: **bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==**
-- A termék resource id-jára: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
+What we need:
+- Number of sunny hours property for resource id: **bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==**
+- For the resource id of the product: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
 
-#### Használt Resouce
+#### Used Resource
 
 [Number Attribute Value](../../api/number_attribute_value.md)
 
@@ -805,18 +805,18 @@ Amire szükségünk van:
 }
 ```
 
-### Latin megnevezés (Text Attribute)
+### Latin name (Text Attribute)
 
-Az értékadás nagyon hasonlít ahhoz, amikor a Szöveg (választólista) típusú tulajdonságot töltöttük fel értékekkel.
-Itt is először az értékadás tényét kell "jelezni" a Text Attribute Value Resource segítségével, majd konkretizálni
-a Text Attribute Value Description Resource-al, hogy egyes nyelveken, mi lesz a tényleges érték.
+Giving a value is very similar to when we filled the Text (picklist) type property with values.
+Here, too, the fact of assigning a value must first be "indicated" using the Text Attribute Value Resource, and then specified
+with the Text Attribute Value Description Resource to see what the actual value will be in some languages.
 
-Amire szükségünk van:
-- Latin megnevezés tulajdonság resource id-jára: **dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=**
-- A termék resource id-jára: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
+What we need:
+- Latin name for property resource id: **dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=**
+- For the resource id of the product: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
 
 
-#### Használt Resouce
+#### Used Resouce
 
  - [Text Attribute Value Resource](../../api/text_attribute_value.md)
  - [Text Attribute Value Description Resource](../../api/text_attribute_value_description.md)
@@ -872,16 +872,16 @@ Amire szükségünk van:
 
 #### Request - Text Attribute Value Description Resource
 
-Most, hogy elkészült az "üres" érték a termékhez, meg kell adnunk az értékhez tartozó szöveges tartalmat.
+Now that the "empty" value for the product is ready, we need to enter the text content for the value.
 
-A kérdés jogos: Miért kell külön Resource a tényleges érték megadásához? A válasz az, hogy a tulajdonság 
-értéke többnyelvesíthető.
-Tehát egy érték, más-más nyelven, másképpen reprezentálódik. Ezért, ha Tetszőleges típusú tulajdonságot úgy hozom létre,
-hogy többnyelvűsíthető legyen, akkor nyelvenként fel kellene vinnünk az érték reprezentációit.
+The question is valid: Why do you need a separate Resource to enter the actual value? The answer is that property
+value can be multilingual.
+So a value is represented differently in different languages. Therefore, if I create an Arbitrary type property as
+in order to be multilingual, we would have to upload the representations of the value per language.
 
-Amire szükségünk lesz, az az előbb készített Text Attribute Value egyed resource id-ja: **dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==**
+What we will need is the individual resource id of the Text Attribute Value created earlier: **dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==**
 
-Mivel megadtuk, hogy a **latin_megnevezes** nevű egyedi tulajdonság egynyelvű lesz, így a **language** mezőt **null** értékre állítjuk.
+Since we specified that the unique property named **latin_name** will be monolingual, we set the **language** field to **null**.
 
 
 <table>
@@ -930,16 +930,16 @@ Mivel megadtuk, hogy a **latin_megnevezes** nevű egyedi tulajdonság egynyelvű
 }
 ```
 
-### Levelek formája (List Attribute)
+### Shape of leaves (List Attribute)
 
-A kérdéses tulajdonság egy választó lista, amiből a "Kerek" értéket szeretnénk kiválasztani a termékünkhöz. 
-Tehát, ez esetben, a kiválasztott értéket és a terméket kell összekapcsolnunk.
+The property in question is a selection list from which we want to select the "rounded" value for our product.
+So, in this case, we have to connect the selected value and the product.
 
-Amire szükségünk van:
-- Levelek formája tulajdonság azon értékének (List Attribute Value) resource id-ja, amelynek magyar megfelelője "Kerek": bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x
-- A termék resource id-ja: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
+What we need:
+- The resource id of the List Attribute Value, whose Hungarian equivalent is "rounded": bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x
+- Product resource id: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
 
-#### Használt Resouce
+#### Used Resouce
 
 [Product List Attribute Value Relation Resource](../../api/product_list_attribute_value_relation.md)
 
@@ -989,27 +989,27 @@ Amire szükségünk van:
 }
 ```
 
-## 6. lépés - Termékváltozatok kialakítása
+## Step 6 - Creating product variants
 
-Gondoljuk tovább a példánkat. Tegyük fel, hogy van két növényünk, amely ugyanazon növényfajba tartoznak, viszont 
-leveleiknek a formája eltérő. A két növénynek különböző cikkszáma, ára, raktárkészlete van, 
-de nem akarjuk külön termékoldalon kínálni őket. Szeretnénk, hogy a Vásárló egy termékoldalról tudjon navigálni
-az összes változatra.
+Let's think about our example further. Suppose we have two plants that belong to the same plant species, on the other hand
+the shape of their leaves is different. The two plants have different article numbers, prices, and stocks,
+but we don't want to offer them on a separate product page. We would like the Customer to be able to navigate from a product page
+for all versions.
 
-Az előző lépésekben elkészített **Levelek formája** egyedi tulajdonsággal, és a szülő-gyerek viszonnyal, 
-egyszerűen megtehetjük ezt.
+The **Form of Letters** created in the previous steps with a unique property and the parent-child relationship,
+we can easily do this.
 
-### változatképző paraméterek beállítása termék típushoz
+### setting of versioning parameters for product type
 
-A 2. lépésben létrehozott Szobanövény termék típust fogjuk módosítani úgy, hogy beállítjuk az első változatképző paraméterének
-a Levelek formája egyedi tulajdonságot. Tehát a Szobanövény tipusba tartozó termékek Levelek formája tulajdonság értékének
-a különbözősége határozza majd meg a változatainkat.
+We will modify the Houseplant product type created in step 2 by setting it as the parameter of the first variant
+The shape of the leaves is a unique feature. So the value of the Leaf shape property of products belonging to the Houseplant type
+its difference will define our versions.
 
-Amire szükségünk van:
-Szobanövény termék típus resource id-ja: **cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=**
-A "levelek formája" egyedi tulajdonság resource id-jára: **bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=**
+What we need:
+Resource id of indoor plant product type: **cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=**
+For the resource id of the unique property "form of letters": **bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=**
 
-#### Használt Resource
+#### Used Resource
 [Porduct Class Resource](../../api/product_class.md)
 
 #### Request
@@ -1046,8 +1046,8 @@ A "levelek formája" egyedi tulajdonság resource id-jára: **bGlzdEF0dHJpYnV0ZS
 {
     "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "id": "cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
-    "name": "Szobanövény",
-    "description": "Ez a szobanoveny típus leírása",
+    "name": "houseplant",
+    "description": "This is the houseplant type description",
     "firstVariantSelectType": "SELECT",
     "secondVariantSelectType": "SELECT",
     "firstVariantParameter": {
@@ -1060,39 +1060,39 @@ A "levelek formája" egyedi tulajdonság resource id-jára: **bGlzdEF0dHJpYnV0ZS
 }
 ```
 
-**Fontosabb mezők:**
-A **firstVariantParameter** mezőben adjuk az egyedi tulajdonság resource id-ját. **Ez csak a típus által összefogott tulajdonságokból származhat!**
-A **firstVariantSelectType** határozza meg, hogy termékoldalon hogyan fog megjelenni termékváltozat választó select mező
+**More important fields:**
+In the **firstVariantParameter** field, we enter the resource id of the unique property. **This can only come from the properties summarized by the type!**
+**firstVariantSelectType** determines how the product variant select field will appear on the product page
 
-**Megjegyzés:** Lehetőség van második változatképző paraméter megadására is. Ilyenkor két tényező határozza meg a 
-különböző változatokat.
+**Note:** It is also possible to enter a second versioning parameter. In this case, two factors determine the
+different versions.
 
-### Szülő-gyerek viszony kialakítása
+### Establishing a parent-child relationship
 
-Az utolsó lépés a szülő-gyerek viszony kialakítása. Ezzel a speciális kapcsolattal tudjuk a változatokat egy csokorba
-szedni.
-A levelek formája tulajdonságnak két értéke van: "Hegyes" és "Kerek"
+The last step is to establish the parent-child relationship. With this special connection, we can bundle the variants
+collect.
+The leaf shape property has two values: "spiky" and "rounded"
 
-Két lehetőségünk van:
-- Létrehozunk egy terméket, amelyet kijelölünk szülőnek és további kettőt, amely a két gyerek termék lesz.
-- Lérehozunk egy terméket, amelynek a Levelek formája tulajdonsága "Hegyes" értéket vesz fel. Majd létrehozunk egy másik
-terméket, amelyet gyerek terméknek nevezünk ki és a Levelek formája tulajdonsága "Kerek" értéket vesz fel.
+We have two options:
+- We create one product that we designate as the parent and two more that will be the two child products.
+- We create a product whose Shape of Leaves property takes on the value "spiky". We will create another one
+  product, which is designated as a child product and the Shape of Letters property takes the value "rounded".
 
-A példa egyszerűsége végett a második lehetőséget mutatjuk meg.
-A beállítás API-on keresztül nagyon egyszerű: végig kell mennünk az összes gyerekterméken és a Product Extend Resource-al
-a parentProduct mezőben megadjuk annak a terméknek a resource id-ját, amelyet szülőnek akarunk nyílvánitani.
+For the simplicity of the example, we show the second option.
+The setup via API is very simple: we need to go through all the child products and the Product Extend Resource
+in the parentProduct field, we enter the resource id of the product that we want to open as a parent.
 
-Tegyük fel, hogy létezik két termékünk és előre beállítottuk a Levelek formája tulajdonságait:
- - Szobanövény 1 - "Hegyes"
- - Szobanövény 2 - "Kerek"
- 
- Természetesen, mindkettőnek a termék típusa Szobanövény.
+Let's say that we have two products and we have pre-set the properties of the Form of Letters:
+- Indoor plant 1 - "spiky"
+- Houseplant 2 - "rounded"
 
- Képezzünk úgy egy termékváltozatot, hogy:
- - Szobanövény 1 lesz a Szülő termék  | Product resource id: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxMg==**
- - Szobanövény 2 lesz a Gyerek termék  | Product resource id: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
- 
- **Tehát, a Szobanövény 2 terméknek beállítom a parentProduct mezőjébe a Szobanövény 1 resource id-ját!**
+Of course, the product type for both is Indoor plant.
+
+Let's create a product variant in such a way that:
+- Indoor plant 1 will be the Parent product | Product resource id: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxMg==**
+- Houseplant 2 will be the Children's product | Product resource id: **cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==**
+
+**So, for the Indoor Plant 2 product, I set the resource id of Indoor Plant 1 in the parentProduct field!**
  
  #### Request
  
@@ -1138,4 +1138,4 @@ Tegyük fel, hogy létezik két termékünk és előre beállítottuk a Levelek 
      ...
    }
 ```
-Ezzel el is készültünk!
+We are done with that!

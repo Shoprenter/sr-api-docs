@@ -1,7 +1,7 @@
 {
-    "firstname": "Teszt",
-    "lastname": "Teszt",
-    "email": "teszt@teszt.hu",
+    "firstname": "Test",
+    "lastname": "Test",
+    "email": "test@test.hu",
     "phone": "36303336699",
     "status": "1",
     "blacklisted": "0",

@@ -1,13 +1,13 @@
 # Weight Class Description Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'weight_class'" :lang="'hu'"/>
+<ResourceProperties :resource="'weight_class'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'weight_class_description'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'weight_class_description'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'weight_class_description'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'weight_class_description'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

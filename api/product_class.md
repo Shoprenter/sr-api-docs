@@ -1,13 +1,13 @@
 # Product Class Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'product_class'" :lang="'hu'"/>
+<ResourceProperties :resource="'product_class'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'product_class'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_class'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'product_class'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_class'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'product_class'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_class'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'product_class'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_class'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,7 +87,7 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_class'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'product_class'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példa
-- [**Termék típusok, egyedi tulajdonságok és termékváltozatok kezelése**](../development/api-examples/08_product_attribute_handling.md)
+## Examples
+- [**Product attribute handling**](../development/api-examples/08_product_attribute_handling.md)

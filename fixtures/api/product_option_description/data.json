@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Termék opció leírás azonosító. Az OuterID módosítására szolgál.",
-                "en": "Termék opció leírás azonosító. Az OuterID módosítására szolgál."
+                "en": "Product option description identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név.",
-                "en": "Név."
+                "en": "Name."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "productOption",
             "description": {
-                "hu": "Termék opció linkje.",
-                "en": "Termék opció linkje."
+                "en": "Product option link."
             },
             "required": true,
             "readonly": true
@@ -30,8 +27,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Nyelv linkje.",
-                "en": "Nyelv linkje."
+                "en": "Language link."
             },
             "required": true,
             "readonly": true
@@ -41,12 +37,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/productOptionDescriptions\/id",
                 "en": "\/productOptionDescriptions\/id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -57,47 +51,40 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/productOptionDescriptions",
                 "en": "\/productOptionDescriptions"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "productOptionId",
                     "description": {
-                        "hu": "Kereső paraméter. Termék opció azonosító.",
-                        "en": "Kereső paraméter. Termék opció azonosító."
+                        "en": "Search parameter. Product option identifier."
                     }
                 },
                 {
                     "name": "languageId",
                     "description": {
-                        "hu": "Kereső paraméter. Nyelv azonosító.",
-                        "en": "Kereső paraméter. Nyelv azonosító."
+                        "en": "Search parameter. Language identifier."
                     }
                 }
             ],
@@ -109,44 +96,38 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/productOptionDescriptions[\/id]",
                 "en": "\/productOptionDescriptions[\/id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/productOptionDescriptions",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/productOptionDescriptions\/id",
                 "en": "\/productOptionDescriptions\/id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/productOptionDescriptions\/cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD01",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/productOptionDescriptions\/id",
                 "en": "\/productOptionDescriptions\/id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {

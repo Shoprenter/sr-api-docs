@@ -1,13 +1,13 @@
 # Document Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'document'" :lang="'hu'"/>
+<ResourceProperties :resource="'document'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'document'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'document'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'document'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'document'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'document'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'document'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'document'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'document'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'document'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'document'" :endpoint="'delete'" :lang="'en'"/>
 

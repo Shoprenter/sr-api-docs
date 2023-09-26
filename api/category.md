@@ -1,13 +1,13 @@
 # Category Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'category'" :lang="'hu'"/>
+<ResourceProperties :resource="'category'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'category'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'category'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'category'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'category'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'category'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'category'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'category'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'category'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,9 +87,9 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'category'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'category'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példák
+## Examples
 
-- [**Termék hozzáadása kategóriához**](../development/api-examples/04_attach_product_to_category.md)
-- [**Termék hozzáadása kategóriához batchelve OuterID-val**](../development/api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)
+- [**Attach product to category**](../development/api-examples/04_attach_product_to_category.md)
+- [**Attach product to category using batch with OuterId**](../development/api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)

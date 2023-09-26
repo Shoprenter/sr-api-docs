@@ -2,7 +2,7 @@
     "href": "http://shopname.api.myshoprenter.hu/couponDescriptions/Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
     "id": "Y291cG9uRGVzY3JpcHRpb24tY291cG9uX2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
     "name": "free_delivery",
-    "description": "Ingyenes szállítás",
+    "description": "Free shipping",
     "coupon": {
         "href": "http://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x"
     },

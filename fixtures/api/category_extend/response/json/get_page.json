@@ -31,7 +31,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD05MjQmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD05MjQmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Teszt Kategória",
+                    "name": "Test Category",
                     "metaKeywords": [],
                     "metaDescription": [],
                     "description": [],
@@ -96,7 +96,7 @@
                 "href": "http://shopname.api.myshoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTU0NA==",
                 "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTU0NA==",
                 "type": "CATEGORY",
-                "urlAlias": "teszt_kategoria_924",
+                "urlAlias": "test_kategoria_924",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/products/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc="
                 }
@@ -122,7 +122,7 @@
                 {
                     "href": "http://shopname.api.myshoprenter.hu/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD05MjQmbGFuZ3VhZ2VfaWQ9MQ==",
                     "id": "Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD05MjQmbGFuZ3VhZ2VfaWQ9MQ==",
-                    "name": "Könyvek",
+                    "name": "Books",
                     "metaKeywords": [],
                     "metaDescription": [],
                     "description": [],

@@ -1,47 +1,47 @@
 # Order Extend Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'order_extend'" :lang="'hu'"/>
+<ResourceProperties :resource="'order_extend'" :lang="'en'"/>
 
-## Szállítási mód típusok
+## Types of shipping method
 
-A **shippingMethodExtension** lehetséges értékei:
+Possible values for **shippingMethodExtension**:
 
-| Megnevezés                        | Érték            |
-|-----------------------------------|------------------|
-| Átvevőpontok                      | RECEIVINGPOINT   |
-| Csomagküldő - (Béta)              | CSOMAGKULDO      |
-| DHL Express                       | DHLEXPRESS       |
-| DPD csomagpont                    | DPDPARCELSHOP    |
-| FoxPost Csomagautomata            | FOXPOST          |
-| FoxPost Házhozszállítás           | FOXPOSTAUTOMATA  |
-| GLS csomagpont (régi)             | GLSPARCELSHOP    |
-| GLS csomagpont                    | GLSPARCELPOINT   |
-| GLS csomagautomata                | GLSPARCELLOCKER  |
-| MPL Csomagautomata                | MPLPARCELMACHINE |
-| MPL Posta Pont szállítás          | MPLPOSTPOINT     |
-| MPL Postán maradó szállítás       | MPLPOSTSTAY      |
-| Pick Pack Pont szállítás          | PICKPACKPONT     |
-| Express One csomagpont            | TOFPARCELSHOP    |
-| Házhozszállítás futárszolgálattal | WSESHIP          |
-| Személyes átvétel                 | WSESHIP          |
+| Name                                | Value             |
+|-------------------------------------|-------------------|
+| Receiving points                    | RECEIVINGPOINT    |
+| Parcel Sender - (Beta)              | PARCEL DELIVERY   |
+| DHL Express                         | DHL EXPRESS       |
+| DPD parcel point                    | DPDPARCELSHOP     |
+| FoxPost Parcel Vending Machine      | FOXPOST           |
+| FoxPost Home Delivery               | FOXPOST AUTOMATIC |
+| GLS package point (old)             | GLSPARCELSHOP     |
+| GLS package point                   | GLSPARCELPOINT    |
+| GLS parcel machine                  | GLSPARCELLOCKER   |
+| MPL Parcel Vending Machine          | MPLPARCELMACHINE  |
+| MPL Posta Point delivery            | MPLPOSTPOINT      |
+| MPL Delivery in post office         | MPLPOSTSTAY       |
+| Pick Pack Point Delivery            | PICKUP POINT      |
+| Express One package point           | TOFPARCELSHOP     |
+| Home delivery with courier service  | WSESHIP           |
+| Personal collection                 | WSESHIP           |
 
-## Fízetés mód típusok
+## Payment method types
 
-A **paymentMethodCode** lehetséges értékei:
+Possible values of **paymentMethodCode**:
 
-| Megnevezés                      | Érték                 |
+| Megnevezés                      | Value                 |
 |---------------------------------|-----------------------|
 | PayU                            | PAYU                  |
 | OTP online áruhitel             | OTP                   |
 | CIB bankkártyás fizetés         | CIB                   |
-| Utánvétel                       | COD, COD2, COD3, COD4 |
+| Cash on delivery                       | COD, COD2, COD3, COD4 |
 | Cetelem fizetési mód            | CETELEM               |
 | Banki átutalás                  | BANK_TRANSFER         |
 | PayPal                          | PAYPAL                |
 | Csekkbefizetés                  | CHEQUE                |
-| Hűségpont beváltás              | LOYALTYPOINT          |
+| Loyaltypoint beváltás              | LOYALTYPOINT          |
 | Escalion                        | ESCALION              |
 | Unicredit                       | UNICREDIT             |
 | Euplatesc                       | EUPLATESC             |
@@ -67,7 +67,7 @@ A **paymentMethodCode** lehetséges értékei:
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'order_extend'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_extend'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -84,7 +84,7 @@ A **paymentMethodCode** lehetséges értékei:
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'order_extend'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_extend'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

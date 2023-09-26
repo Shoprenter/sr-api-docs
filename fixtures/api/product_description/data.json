@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Termék leírás azonosító. Az OuterID módosítására szolgál.",
-                "en": "Termék leírás azonosító. Az OuterID módosítására szolgál."
+                "en": "Product description identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név.",
-                "en": "Név."
+                "en": "Name."
             },
             "required": false,
             "readonly": false
@@ -21,7 +19,6 @@
         {
             "name": "metaTitle",
             "description": {
-                "hu": "Meta title.",
                 "en": "Meta title."
             },
             "required": false,
@@ -30,8 +27,7 @@
         {
             "name": "metaKeywords",
             "description": {
-                "hu": "Meta kulcsszavak.",
-                "en": "Meta kulcsszavak."
+                "en": "Meta keywords."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "metaDescription",
             "description": {
-                "hu": "Meta leírás.",
-                "en": "Meta leírás."
+                "en": "Meta description."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "shortDescription",
             "description": {
-                "hu": "Rövid leírás.",
-                "en": "Rövid leírás."
+                "en": "Short description."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "description",
             "description": {
-                "hu": "Hosszú Leírás.",
-                "en": "Hosszú Leírás."
+                "en": "Long description."
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "customContentTitle",
             "description": {
-                "hu": "Egyedi tartalom címe.",
-                "en": "Egyedi tartalom címe."
+                "en": "Custom content title."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "customContent",
             "description": {
-                "hu": "Egyedi tartalom.",
-                "en": "Egyedi tartalom."
+                "en": "Custom content."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "parameters",
             "description": {
-                "hu": "Paraméterek.",
-                "en": "Paraméterek."
+                "en": "Parameters."
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "packagingUnit",
             "description": {
-                "hu": "Kiszerelés név.",
-                "en": "Kiszerelés név."
+                "en": "Packaging name."
             },
             "required": false,
             "readonly": false
@@ -102,8 +91,7 @@
         {
             "name": "measurementUnit",
             "description": {
-                "hu": "Mértékegység név.",
-                "en": "Mértékegység név."
+                "en": "Measurement name."
             },
             "required": false,
             "readonly": false
@@ -111,8 +99,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -120,8 +107,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": true
@@ -129,8 +115,7 @@
         {
             "name": "videoCode",
             "description": {
-                "hu": "Youtube videók kódja.",
-                "en": "Youtube videók kódja."
+                "en": "Youtube video code."
             },
             "required": false,
             "readonly": false
@@ -138,8 +123,7 @@
         {
             "name": "product",
             "description": {
-                "hu": "A termék linkje.",
-                "en": "A termék linkje."
+                "en": "A Product link."
             },
             "required": true,
             "readonly": true
@@ -147,8 +131,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "A nyelv linkje.",
-                "en": "A nyelv linkje."
+                "en": "Language link."
             },
             "required": true,
             "readonly": true
@@ -158,12 +141,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/productDescriptions\/termék leírás id",
-                "en": "\/productDescriptions\/termék leírás id"
+                "en": "\/productDescriptions\/product description id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -174,54 +155,46 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/productDescriptions",
                 "en": "\/productDescriptions"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "productId",
                     "description": {
-                        "hu": "Kereső paraméter (Termék azonosító).",
-                        "en": "Kereső paraméter (Termék azonosító)."
+                        "en": "Search parameter (Product identifier)."
                     }
                 },
                 {
                     "name": "languageId",
                     "description": {
-                        "hu": "Kereső paraméter (Nyelv azonosító).",
-                        "en": "Kereső paraméter (Nyelv azonosító)."
+                        "en": "Search parameter (Language identifier)."
                     }
                 },
                 {
                     "name": "name",
                     "description": {
-                        "hu": "Kereső paraméter (Termék neve).",
-                        "en": "Kereső paraméter (Termék neve)."
+                        "en": "Search parameter (Product name)."
                     }
                 }
             ],
@@ -233,44 +206,38 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/productDescriptions[\/termék leírás id]",
-                "en": "\/productDescriptions[\/termék leírás id]"
+                "en": "\/productDescriptions[\/product description id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/productDescriptions",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/productDescriptions\/termék leírás id",
-                "en": "\/productDescriptions\/termék leírás id"
+                "en": "\/productDescriptions\/product description id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra szolgál.",
-                "en": "Létrehozásra és módosításra szolgál."
+                "en": "It is used to create and modify."
             },
             "parameters": [],
             "example": {
                 "url": "\/productDescriptions\/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTM1ODAmbGFuZ3VhZ2VfaWQ9MQ==",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/productDescriptions\/termék leírás id",
-                "en": "\/productDescriptions\/termék leírás id"
+                "en": "\/productDescriptions\/product description id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {

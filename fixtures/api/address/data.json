@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Cím azonosító. Az OuterID módosítására szolgál.",
-                "en": "Cím azonosító. Az OuterID módosítására szolgál."
+                "en": "Address identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Cím belső azonosító.",
-                "en": "Cím belső azonosító."
+                "en": "Address internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "company",
             "description": {
-                "hu": "Cégnév.",
-                "en": "Cégnév."
+                "en": "Company."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "firstname",
             "description": {
-                "hu": "Vezetéknév.",
-                "en": "Vezetéknév."
+                "en": "Lastname."
             },
             "required": true,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "lastname",
             "description": {
-                "hu": "Keresztnév.",
-                "en": "Keresztnév."
+                "en": "Firstname."
             },
             "required": true,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "taxNumber",
             "description": {
-                "hu": "Adószám",
-                "en": "Adószám"
+                "en": "Taxnumber."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "type",
             "description": {
-                "hu": "Vásárló típusa: private (magánszemély) vagy business (cég)",
-                "en": "Vásárló típusa: private (magánszemély) vagy business (cég)"
+                "en": "The type of the customer: private(private person), business (company)"
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "address1",
             "description": {
-                "hu": "Utca, házszám.",
-                "en": "Utca, házszám."
+                "en": "Street, number."
             },
             "required": true,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "address2",
             "description": {
-                "hu": "Kiegészítő cím adatok (emelet, ajtó)",
-                "en": "Kiegészítő cím adatok (emelet, ajtó)"
+                "en": "Additional address data (floor, door)"
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "postcode",
             "description": {
-                "hu": "Irányítószám.",
-                "en": "Irányítószám."
+                "en": "Postcode."
             },
             "required": true,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "city",
             "description": {
-                "hu": "Város.",
-                "en": "Város."
+                "en": "City."
             },
             "required": true,
             "readonly": false
@@ -102,8 +91,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -111,8 +99,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": true
@@ -120,8 +107,7 @@
         {
             "name": "telephone",
             "description": {
-                "hu": "A címhez tartozó telefonszám.",
-                "en": "A címhez tartozó telefonszám."
+                "en": "Telephone."
             },
             "required": false,
             "readonly": false
@@ -129,8 +115,7 @@
         {
             "name": "customer",
             "description": {
-                "hu": "Vásárló linkje.",
-                "en": "Vásárló linkje."
+                "en": "Customer link."
             },
             "required": true,
             "readonly": false
@@ -138,8 +123,7 @@
         {
             "name": "country",
             "description": {
-                "hu": "Ország linkje.",
-                "en": "Ország linkje."
+                "en": "Country link."
             },
             "required": true,
             "readonly": false
@@ -147,8 +131,7 @@
         {
             "name": "zone",
             "description": {
-                "hu": "Megye linkje.",
-                "en": "Megye linkje."
+                "en": "Zone link."
             },
             "required": false,
             "readonly": false
@@ -158,12 +141,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/addresses\/cím id",
-                "en": "\/addresses\/cím id"
+                "en": "\/addresses\/address id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -174,47 +155,40 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/addresses",
                 "en": "\/addresses"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Cím belső azonosító.",
-                        "en": "Kereső paraméter. Cím belső azonosító."
+                        "en": "Search parameter. Address internal identifier."
                     }
                 },
                 {
                     "name": "customerId",
                     "description": {
-                        "hu": "Kereső paraméter. Vásárló azonosító.",
-                        "en": "Kereső paraméter. Vásárló azonosító."
+                        "en": "Search parameter. Customer identifier."
                     }
                 }
             ],
@@ -226,44 +200,38 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/addresses[\/cím id]",
-                "en": "\/addresses[\/cím id]"
+                "en": "\/addresses[\/Address id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/addresses",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/addresses\/cím id",
-                "en": "\/addresses\/cím id"
+                "en": "\/addresses\/Address id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/addresses\/YWRkcmVzcy1hZGRyZXNzX2lkPTY5",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/addresses\/cím id",
-                "en": "\/addresses\/cím id"
+                "en": "\/addresses\/Address id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {

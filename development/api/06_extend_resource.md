@@ -1,55 +1,55 @@
-# Kiterjesztett Resource (Extend Resource)
+# Extend Resource
 
-A kiterjesztett resurceokkal könnyebb az adatcsere. Jelenleg két ilyen resourceunk van a **productExtend** és az **orderExtend**.
-Ezeknek a resourceoknak a lényege, hogy a kapcsolódó adataikat is visszaadjuk a response-ban. 
-Tehát például egy termék esetén nem kell külön kéréseket indítani, ha le akarjuk kérni a leírását, akcióit, vevőcsoportárait, stb.
+Extended resources make data exchange easier. We have two such resources currently, **productExtend** and **orderExtend**.
+The point of these resources is that their related data is also returned in the response.
+So, e.g. in case of a product, no further request is necessary to receive its description, discount, customer group price,  etc.
 
-Sőt ezeket módosíthatjuk is egy resourceon belül egyetlen kéréssel.
-Viszont itt merőben más működése van a kérés típusoknak.
+Furthermore, these details can be modified within a resource with a single request.
+However, request types have completely different operations here.
 
-**POST** kérés esetén a kapcsolódó adatokat (Resource dokumentációban * Kapcsolódó Resource jelölés) mindig létrehozzuk.
-Egy példán keresztül szemléltetve. Egy termék 2 kategóriában van. POST kéréssel küldünk 3 kategóriát, akkor azokat pluszban vesszük fel, tehát a termék már 5 kategóriában fog szerepelni. Ha valamelyik kategória kapcsolata már létezett, akkor nem fogjuk végrehajtani a POST kérést azzal a hibaüzenettel, hogy az adott kategória kapcsolat már létezik.
+In the case of a **POST** request, we always create the related data (*Related Resource in Resource documentation).
+Illustrated with an example: A product is in 2 categories. If we send 3 categories with a POST request, then these will be assigned in addition, therefore the product will be included in 5 categories. If the relation of a category already exists, then we will not perform the POST request, receiving the error message that the connection of the current category already exists.
 
-**PUT** kérés esetén a kapcsolódó adatokat (Resource dokumentációban * Kapcsolódó Resource jelölés) felülírjuk.
-Egy hasonló példán bemutatva. Egy termék 2 kategóriában van. PUT kéréssel küldünk 3 kategóriát, akkor a meglévő 2 kategóriát felül fogjuk írni a küldött 3 kategóriával. Tehát a sikeres kérés után a termék csak abban a 3 kategóriában fog szerepelni, amelyik a kérésben szerepelt. Ekkor nincs hibaüzenet akkor sem, ha meglévő kategóriákat küldtünk. Egyszerűen a meglévőek le vannak cserélve a küldöttre.
-Továbbá PUT kéréssel tudjuk azt megoldani, az előző példáknál maradva, ha azt szeretnénk elérni hogy egyetlen kategóriában sem szerepeljen a termék. Akkor a kategóriák helyett egy üres tömböt küldünk. Ekkor a meglévő kategóriáit lecseréljük üresre azaz nem lesznek kategóriái.
+In the case of a **PUT** request, the related data (*Related Resource in Resource documentation) is overwritten.
+Illustrated with a similar example: A product is in 2 categories. If we send 3 categories with a PUT request, then the already existing categories will be overwritten by the sent 3. So after the successful request, the product will only be listed in those 3 categories that were included in the request. In this case we will not receive any error message, even if we sent already existing categories. The existing categories are simply replaced by the sent ones.
+Furthermore, we can exclude the product from categories with a PUT request. Then we send an empty block instead of categories. This way we replace the existing categories with empty ones, so there will be no categories.
 
-Az API fejlesztői dokumentációban a resource nevek mögötti **Extend** szó jelzi, mely resource-ok rendelkeznek ezzel a funkcionalitással.
-Tehát a resource-oknak lényege, hogy a kapcsolódó adataikat is lekérdezhessük a közvetlenül response-ban. Így egy termék esetén nem kell külön kéréseket indítani, ha le akarjuk kérni a leírását, akcióit, vevőcsoportárait, stb.
+In the API technical documentation, the word **Extend** after the resource names indicates which resources have this functionality.
+So, the essence of resources is to be able to query their related data as well directly in the response. Therefore in case of a product, no further request is necessary to receive its description, discount, customer group price,  etc.
 
-Ezeket módosíthatjuk is egy resource-on belül egyetlen kéréssel, viszont itt merőben más működése van a kérés típusoknak attól függően, hogy a kapcsolt resource-ok milyen kapcsolatban állnak az aktuális resource-szal.
+These details can also be modified within a resource with a single request, however request types have completely different functions, depending on the relationship between the related and the current resource.
 
-## OneToMany kapcsolat
+## OneToMany relation
 
-Pl. egy termékhez több termékleírás tartozhat. Product Extend esetén a Product Descriptions
+E.g. more descriptions may belong to a product. Product Descriptions in the case of Product Extend.
 
-**POST kérés esetén** a kapcsolódó adatokat (Resource dokumentációban * Kapcsolódó Resource jelölés) mindig létrehozzuk.
-Egy példán keresztül szemléltetve: Egy termék 2 kategóriában van. POST kéréssel küldünk 3 kategóriát, akkor azokat pluszban vesszük fel, tehát a termék már 5 kategóriában fog szerepelni. Ha valamelyik kategória kapcsolata már létezett, akkor nem fogjuk végrehajtani a POST kérést azzal a hibaüzenettel, hogy az adott kategória kapcsolat már létezik.
+In the case of a **POST** request, we always create the related data (*Related Resource in Resource documentation).
 
-**PUT kérés esetén** a kapcsolódó adatokat (Resource dokumentációban * Kapcsolódó Resource jelölés) felülírjuk.
-Egy hasonló példán bemutatva: Egy termék 2 kategóriában van. PUT kéréssel küldünk 3 kategóriát, akkor a meglévő 2 kategóriát felül fogjuk írni a küldött 3 kategóriával. Tehát a sikeres kérés után a termék csak abban a 3 kategóriában fog szerepelni, amelyik a kérésben szerepelt. Ekkor nincs hibaüzenet akkor sem, ha meglévő kategóriákat küldtünk. Egyszerűen a meglévőek le vannak cserélve a küldöttre.
-Ha azt szeretnénk elérni, hogy egyetlen kategóriában sem szerepeljen a termék azt PUT kéréssel tudjuk megoldani. Ekkor a kategóriák helyett egy üres tömböt küldünk, tehát az adott termék meglévő kategóriáit lecseréljük üresre így nem lesznek kategóriái.
+Illustrated with an example: A product is in 2 categories. If we send 3 categories with a POST request, then these will be assigned in addition, therefore the product will be included in 5 categories. If the relation of a category already exists, then we will not perform the POST request, receiving the error message that the connection of the current category already exists.
 
-## OneToOne kapcsolat
+In the case of a **PUT** request, the related data (*Related Resource in Resource documentation) is overwritten.
+Illustrated with a similar example: A product is in 2 categories. If we send 3 categories with a PUT request, then the already existing categories will be overwritten by the sent 3. So after the successful request, the product will only be listed in those 3 categories that were included in the request. In this case we will not receive any error message, even if we sent already existing categories. The existing categories are simply replaced by the sent ones.
+Furthermore, we can exclude the product from categories with a PUT request. Then we send an empty block instead of categories. This way we replace the existing categories with empty ones, so there will be no categories.
 
-Pl. egy termék egy gyártó alá tartozhat. Product Extend esetén a Manufacturer. (Egyenlőre ez az egyetlen ilyen kinyitott, OneToOne kapcsolat)
+## OneToOne relation
 
-POST és PUT működése megegyezik egy ilyen tipusú, Extend resoruce-hoz tartozó mező esetén.
+E.g. A product may belong to only one producer. Manufacturer in the case of Product Extend. (This is the only available OneToOne relation at the moment.)
 
-1. Ha a OneToOne mezőhöz tartozó, elküldött adattömb csak egy resource id-t tartalmaz, úgy a kapcsolt resource egyed létezése esetén, erre cseréljük ki az előző resource id-t.<br>
-Pl.: Ha az Product Extend resoruce-ra POST-ot küldünk, melyben a **manufacturer**-el kapcsolatos adatokban csak egy resource id található, akkor a rendszer megpróbálja lecserélni az előző gyártót az újonnan elküldöttel.
+The operation of POST and PUT is the same in the case of an Extend resource field of such.
 
-2. Ha a OneToOne mezőhöz tartozó, elküldött adattömb csak mezőket és hozzá tartozó értékeket tartalmaz, de resouce id-t nem, úgy új kapcsolt resource egyedet hozunk létre, és ezt kötjük az eredeti Extend resourcehoz.<br>
-Pl.: Ha az Product Extend resoruce-ra POST-ot küldünk, melyben a **manufacturer**-el kapcsolatos adatok találhatóak, de resource id nem, akkor a rendszer létrehozza az új gyártót, és a terméhez kapcsolja.
+1. If the sent data block that belongs to a OneToOne field includes only one resource id, then if a related resource exists, the previous one will be replaced.
+   E.g. If we send a POST request in which there is only one resource id related to the **manufacturer** data, to a Product Extend resource, then the system will try to replace the previous manufacturer with the newly sent one.
 
-3. Ha a OneToOne mezőhöz tartozó, elküldött adattömb resource id-t, mezőket és hozzá tartozó értékeket tartalmaz, úgy a resource id-hoz tartozó, létező resource egyedet próbálja a rendszer frissíteni, egyébként létrehozza azt.
+2. If the sent data block that belongs to a OneToOne field includes only fields and corresponding values, but no resource id, then we create a new related resource and link this one to the original Extend resource.
+   E.g. If send a POST request that includes only data related to the **manufacturer** but no resource id, to an Extend resource, then the system creates the new manufacturer and connects it to the product.
 
-## ManyToMany kapcsolat
+3. If the sent data block that belongs to a OneToOne field includes resource id, fields and corresponding values as well, then the system will try to update the already existing resource related to the resource id, otherwise the resource will be created.
 
-Pl: egy földrajzi zónához több ország is tartozhat, illetve egy ország több földrajzi zónához is tartozhat.
+## ManyToMany relation
 
-Jelenleg csak a GeoZone és Country resource között létezik ilyen kapcsolat. Csak GET-es egyedi és kollekció kéréseket tud fogadni.
+E.g. Several countries may belong to a geographical zone, and a country may belong to several geographical zones.
 
-1. **GeoZone** resourceból kiindulva **GET** kérés esetén egy földrajzi zóna resource id-ját kell átadnunk pl: Európai Unió földrajzi zónáét. A válaszban az egyszerű propertyk mellett megtaláljuk a **countries** propertyben, hogy mely országok tartoznak hozzá. Jelen esetben pl: Magyarország, Ausztria... stb.
+Currently, only GeoZone and Country resources have such a relationship. It can only accept GET individual and collection requests.
+1. Starting from the **GeoZone** resource, in the case of a **GET** request, we have to provide the resource id of a geographic zone, e.g. the geographical zone of the European Union. In the response, in addition to the simple properties, we can find which countries belong to it in the **countries** property. In this case, for example: Hungary, Austria... etc.
 
-2. **Country** resourceból kiindulva **GET** kérés esetén egy ország resource id-ját kell átadnunk pl: Magyarország. A válaszban az egyszerű propertyk mellett megkapjuk a **geoZones** propertyben, hogy mely földrajzi zónákban szerepel. Jelen esetben a Magyarország és az Európai Unió földrajzi zónákhoz.
+2. Starting from the **Country** resource, in the case of a **GET** request, we have to provide the resource id of a country, e.g. Hungary. In the response, in addition to the simple properties, we will receive which geographical zones include the country, in the **geoZones** property. In this case, for the geographic zones of Hungary and the European Union.

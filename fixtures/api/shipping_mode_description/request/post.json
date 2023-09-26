@@ -1,7 +1,7 @@
 {
   "data": {
-    "name": "Saját szállítási mód neve",
-    "description": "Saját szállítási mód leírás",
+    "name": "Custom shipping method name",
+    "description": "Custom shipping method description",
     "language": {
       "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },

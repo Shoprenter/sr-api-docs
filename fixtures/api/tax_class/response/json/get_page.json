@@ -16,7 +16,7 @@
             "href": "http://shopname.api.myshoprenter/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
             "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
             "name": "27 %",
-            "description": "27%-os adókulcs",
+            "description": "27% tax rate",
             "dateCreated": "2010-08-11T15:43:16",
             "dateUpdated": "2012-01-12T12:11:42",
             "taxRates": {
@@ -27,7 +27,7 @@
             "href": "http://shopname.api.myshoprenter/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx",
             "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx",
             "name": "0 %",
-            "description": "0%-os adókulcs",
+            "description": "0% tax rate",
             "dateCreated": "2010-08-11T15:43:16",
             "dateUpdated": "2010-09-23T11:06:49",
             "taxRates": {
@@ -37,8 +37,8 @@
         {
             "href": "http://shopname.api.myshoprenter/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy",
             "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEy",
-            "name": "Teszt",
-            "description": "Teszt",
+            "name": "Test",
+            "description": "Test",
             "dateCreated": "2019-07-04T09:25:34",
             "dateUpdated": "-0001-11-30T00:00:00",
             "taxRates": {

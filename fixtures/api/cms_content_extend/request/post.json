@@ -9,17 +9,17 @@
   "showDateCreated": "0",
   "cmsContentDescriptions":[
     {
-      "title":"Szöveges tartalom címe",
-      "introText":"Szöveges tartalom bevezető szöveg",
-      "description":"Szöveges tartalom. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
+      "title":"Text content title",
+      "introText":"Text content Introductory text",
+      "description":"Text content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
       "language":{
         "id":"bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
       }
     },
     {
-      "title":"Szöveges tartalom címe angolul",
-      "introText":"Szöveges tartalom bevezető szöveg angolul",
-      "description":"Szöveges tartalom angolul. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
+      "title":"Text content title in English",
+      "introText":"Text content Introductory text in English",
+      "description":"Text content in English. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
       "language":{
         "id":"bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
       }
