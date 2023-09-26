@@ -268,7 +268,7 @@
             "parameters": [],
             "example": {
                 "url": "\/customerExtend\/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

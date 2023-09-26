@@ -34,35 +34,35 @@ Possible values of **paymentMethodCode**:
 | Megnevezés                      | Value                 |
 |---------------------------------|-----------------------|
 | PayU                            | PAYU                  |
-| OTP online áruhitel             | OTP                   |
-| CIB bankkártyás fizetés         | CIB                   |
-| Cash on delivery                       | COD, COD2, COD3, COD4 |
-| Cetelem fizetési mód            | CETELEM               |
-| Banki átutalás                  | BANK_TRANSFER         |
+| OTP online goods loan           | OTP                   |
+| CIB credit card payment         | CIB                   |
+| Cash on delivery                | COD, COD2, COD3, COD4 |
+| Cetelem payment method          | CETELEM               |
+| Bank Transfer                   | BANK_TRANSFER         |
 | PayPal                          | PAYPAL                |
-| Csekkbefizetés                  | CHEQUE                |
-| Loyaltypoint beváltás              | LOYALTYPOINT          |
+| Check payments                  | CHEQUE                |
+| Loyalty point redemption        | LOYALTYPOINT          |
 | Escalion                        | ESCALION              |
 | Unicredit                       | UNICREDIT             |
 | Euplatesc                       | EUPLATESC             |
 | PaySecure                       | PAYSECURE             |
-| Fizetés a Pick Pack Ponton      | PICKPACKPONT          |
-| K&H Bank kártyás fizetés        | KHB                   |
-| Barion bankkártyás fizetés      | BARION                |
-| Fizetés FoxPoston bankkártyával | FOXPOST_CREDIT_CARD   |
+| Payment at the Pick Pack Point  | PICKPACKPONT          |
+| K&H Bank credit card payment    | KHB                   |
+| Barion credit card payment      | BARION                |
+| Payment by FoxPoston bank card  | FOXPOST_CREDIT_CARD   |
 | Simple                          | SIMPLE                |
-| Simple átutalás                 | SIMPLEWIRE            |
+| Simple transfer                 | SIMPLEWIRE            |
 | Sofort banking                  | SOFORT                |
 | Borgun (B-payment)              | SRPAY                 |
 | Borgun                          | BORGUN                |
-| MBH online áruhitel             | MBH                   |
+| MBH online goods credit         | MBH                   |
 | Global Payments                 | GP                    |
 | Paysafecard                     | PAYSAFECARD           |
 | Paysafecash                     | PAYSAFECASH           |
 | Global Payments                 | GP                    |
 | QENTA QPAY                      | QENTA_QPAY            |
 | Saferpay - SIX Payment Services | SAFERPAY              |
-| InstaCash részletfizetés        | INSTACASH             |
+| InstaCash installment payment   | INSTACASH             |
 | IzzyPay                         | IZZYPAY               |
 | PastPay                         | PASTPAY               |
 

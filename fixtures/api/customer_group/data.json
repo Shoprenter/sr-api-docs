@@ -134,7 +134,7 @@
             "parameters": [],
             "example": {
                 "url": "\/customerGroups\/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

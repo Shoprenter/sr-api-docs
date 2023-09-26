@@ -182,7 +182,7 @@
             "parameters": [],
             "example": {
                 "url": "\/orderTotals\/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

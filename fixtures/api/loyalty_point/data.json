@@ -156,7 +156,7 @@
             "parameters": [],
             "example": {
                 "url": "\/loyaltyPoints\/bG95YWx0eVBvaW50LWlkPTE=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

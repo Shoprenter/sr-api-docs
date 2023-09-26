@@ -91,7 +91,7 @@
             ],
             "example": {
                 "url": "\/files?type=image&filePath=product\/image.jpg",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

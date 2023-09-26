@@ -34,38 +34,38 @@ Possible values for **paymentMethodCode**:
 
 | Description                     | Value                 |
 |---------------------------------|-----------------------|
-| PayU | PAY |
-| OTP online goods loan | OTP |
-| CIB bank card CIB |
-| Cash on delivery | COD, COD2, COD3, COD4 |
-| Cetelem payment method | CETELEM |
-| Bank transfer | BANK_TRANSFER |
-| PayPal | PAYPAL |
-| Check Deposit | CHECK |
-| Loyalty points using | LOYALTYPOINT |
-| Escalion | ESCALION |
-| Unicredit | UNICREDIT |
-| Euplatesc | EUPLATESC |
-| PaySecure | PAYSECURE |
-| Payment at the Pick Pack Point | PICKUP POINT |
-| K&H Bank card card | KHB |
-| Barion bank card payment | BARION |
-| Payment by FoxPoston bank card | FOXPOST_CREDIT_CARD |
-| Simple | SIMPLE |
-| Simple transfer | SIMPLEWIRE |
-| Sofort banking | DRIVE |
-| Borgun (B-payment) | SRPAY |
-| Borgun | BORGUN |
-| Budapest Bank online goods loan | BUDAPEST BANK |
-| Global Payments | GP |
-| Paysafecard | PAYSAFECARD |
-| Paysafecash | PAYSAFECASH |
-| Global Payments | GP |
-| Wirecard QPAY | QPAY |
-| Saferpay - SIX Payment Services | SAFERPAY |
-| InstaCash | INSTACASH |
+| PayU                            | PAY                   |
+| OTP online goods loan           | OTP                   |
+| CIB bank card CIB               |
+| Cash on delivery                | COD, COD2, COD3, COD4 |
+| Cetelem payment method          | CETELEM               |
+| Bank transfer                   | BANK_TRANSFER         |
+| PayPal                          | PAYPAL                |
+| Check Deposit                   | CHECK                 |
+| Loyalty points using            | LOYALTYPOINT          |
+| Escalion                        | ESCALION              |
+| Unicredit                       | UNICREDIT             |
+| Euplatesc                       | EUPLATESC             |
+| PaySecure                       | PAYSECURE             |
+| Payment at the Pick Pack Point  | PICKUP POINT          |
+| K&H Bank card card              | KHB                   |
+| Barion bank card payment        | BARION                |
+| Payment by FoxPoston bank card  | FOXPOST_CREDIT_CARD   |
+| Simple                          | SIMPLE                |
+| Simple transfer                 | SIMPLEWIRE            |
+| Sofort banking                  | DRIVE                 |
+| Borgun (B-payment)              | SRPAY                 |
+| Borgun                          | BORGUN                |
+| Budapest Bank online goods loan | BUDAPEST BANK         |
+| Global Payments                 | GP                    |
+| Paysafecard                     | PAYSAFECARD           |
+| Paysafecash                     | PAYSAFECASH           |
+| Global Payments                 | GP                    |
+| Wirecard QPAY                   | QPAY                  |
+| Saferpay - SIX Payment Services | SAFERPAY              |
+| InstaCash                       | INSTACASH             |
 | IzzyPay                         | IZZYPAY               |
-| PastPay                         | PASTPAY  
+| PastPay                         | PASTPAY               |
 
 ## Endpoints
 

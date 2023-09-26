@@ -206,7 +206,7 @@
             "parameters": [],
             "example": {
                 "url": "\/numberAttributes\/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD05",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

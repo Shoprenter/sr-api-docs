@@ -122,7 +122,7 @@
             "parameters": [],
             "example": {
                 "url": "\/productClassAttributeRelations\/cHJvZHVjdENsYXNzQXR0cmlidXRlUmVsYXRpb24tYXR0cmlidXRlX2lkPTcmcHJvZHVjdF9jbGFzc19pZD0z",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

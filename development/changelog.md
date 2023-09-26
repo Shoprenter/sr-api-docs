@@ -1,26 +1,26 @@
 # API changelog
 
 #### 2023.09.05
-Egyszerűbbé tettük a szülő-gyerek termékkapcsolatok lekérését és kezelését a Shoprenter API-ban. A [Product](../api/product.md) és [ProductExtend](../api/product_extend.md) resourceokban lehetővé vált egy filterezés. A `parentProductId`-t paraméterként megadva a szűrésben, visszakapjuk az azonos `parentProductId`-val rendelkező termékeket.
+We made it easier to retrieve and manage parent-child product relationships in the Shoprenter API. Filtering has become possible in the [Product](../api/product.md) and [ProductExtend](../api/product_extend.md) resources. Specifying `parentProductId` as a parameter in the filter returns products with the same `parentProductId`.
 
-Ha gyártót töröltünk a [Manufacturer](../api/manufacturer.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a gyártó törlésével, a hozzá tartozó url is törlődni fog.
+If we deleted a manufacturer using the [Manufacturer](../api/manufacturer.md) Resource, the corresponding search-friendly url value remained in the database and could be queried. Thanks to a fix, when the manufacturer is deleted, the corresponding url will also be deleted.
 
 #### 2023.09.04
-A Setting Resource az alábbi beállítással bővült:
-- **config_display_quantity_in_category** -  Kategória oldalon kosárbarakásnál a mennyiség mező megjelenítése.
+The following setting has been added to the Setting Resource:
+- **config_display_quantity_in_category** - Display the quantity field on the category page when shopping.
 
 #### 2023.08.21
-Abban az esetben, ha szöveges tartalmat töröltünk a [CMS Extend](../api/cms_content_extend.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően szöveges tartalom törlésével, a hozzá tartozó url is törlődni fog.
+In the event that textual content was deleted using the [CMS Extend](../api/cms_content_extend.md) Resource, the corresponding search-friendly url value remained in the database and could be queried. Thanks to a fix, when text content is deleted, the associated url will also be deleted.
 
 #### 2023.08.05
-Ha kategóriát töröltünk a [Category Extend](../api/category_extend.md) Resource segítségével, akkor a hozzá tartozó keresőbarát url értéke továbbra is megmaradt adatbázisban és lekérdezhető volt. Javításnak köszönhetően a kategória törlésével, a hozzá tartozó url is törlődni fog.
+If a category was deleted using the [Category Extend](../api/category_extend.md) Resource, the corresponding search-friendly url value remained in the database and could be queried. Thanks to a fix, when you delete the category, the corresponding url will also be deleted.
 
 #### 2023.08.01
-Ha többször próbálunk egy tulajdonságot DELETE metódussal törölni, akkor minden kérés után az API 204-es, azaz sikeres törlést jelző státuszkódot ad vissza. Ezen hibajavítás értelmében csak az első sikeres törlés után fog visszaadni 204-es válaszkódot az API, minden további törlési kérés pedig 404-es válaszkóddal tér vissza.
+If we try to delete a property several times with the DELETE method, after each request the API returns a status code of 204, i.e. a successful deletion. According to this bugfix, the API will return a 204 response code only after the first successful deletion, and all subsequent deletion requests will return with a 404 response code.
 
 #### 2023.07.10
-Az [Order](../api/order.md) és az [OrderExtended](../api/order_extend.md) resource kiegészült egy új, opcionális mezővel, `externalInfo`. Ez a mező két kötelező paramétert tartalmaz: `partner_order_id` és `partner_prefix`.
-Ezek az azonosítók akkor lehetnek hasznosak, ha egy külső marketplace-en (pl. Emag marketplace) leadott rendelést a Shoprenter webáruházban is létrehozzuk API segítségével. Ha ezek az azonosítók megadásra kerülnek a rendeléshez, erre keresve is van lehetőség szűrni a rendelés lista oldalon.
+[Order](../api/order.md) and [OrderExtended](../api/order_extend.md) resource added a new optional field `externalInfo`. This field contains two required parameters: `partner_order_id` and `partner_prefix`.
+These identifiers can be useful if an order placed on an external marketplace (e.g. Emag marketplace) is also created in the Shoprenter web store using an API. If these identifiers are entered for the order, it is also possible to search for them on the order list page.
 
 #### 2023.05.23
 We have created the [Reload Order Url resource](../api/reload_order_url.md). This resource can be used to create a unique url for incomplete orders (Abandoned carts).

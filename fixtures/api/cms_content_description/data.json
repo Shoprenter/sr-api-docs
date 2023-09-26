@@ -136,7 +136,7 @@
             "parameters": [],
             "example": {
                 "url": "\/cmsContentDescriptions\/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

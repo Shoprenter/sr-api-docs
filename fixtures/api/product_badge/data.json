@@ -142,7 +142,7 @@
             "parameters": [],
             "example": {
                 "url": "\/productBadges\/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }
