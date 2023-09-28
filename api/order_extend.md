@@ -23,6 +23,7 @@ Possible values for **shippingMethodExtension**:
 | MPL Posta Point delivery           | MPLPOSTPOINT       |
 | MPL Delivery in post office        | MPLPOSTSTAY        |
 | Sameday shipping                   | SAMEDAYSHIPPING    |
+| Easybox parcel locker              | EASYBOX            |
 | Pick Pack Point Delivery           | PICKUP POINT       |
 | Express One package point          | TOFPARCELSHOP      |
 | Home delivery with courier service | WSESHIP            |
