@@ -596,8 +596,7 @@
                 {
                     "name": "parentProductId",
                     "description": {
-                        "hu": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza.",
-                        "en": "Kereső paraméter. A szülő termék innerId-ja alapján, az azonos szülővel rendelkező termékeket adja vissza."
+                        "en": "Search parameter. According to the parent product innerId, it will filter to product having the same parent."
                     }
                 }
             ],

@@ -1,29 +1,30 @@
-# WebHook Automation
+# WebHook automation
 
-A WebHook is an automatic message from an online store to an external system triggered by events such as placing an order, changing the status of an order, newsletter subscription, newsletter unsubscription, or newsletter subscriber data modification.
-
-Using the [WebHook Resource](/api/webhook.md), you can create such automations via an API. The data format sent with the webhook can be either XML or JSON. The external system can be an ERP system or an invoicing system, but there are many other possible use cases.
+Webhook is an automatic message from the webshop towards an external system, that may be triggered by events such as placing an order, changing of the order status, newsletter subscription, unsubscribing from a newsletter, or data modification of a newsletter subscriber.
+With the help of [WebHook Resource](/api/webhook.md) we can create such automations via API. The type of data sent by webhooks can be XML or JSON. The external system can be an ERP or an invoicing system, but several additional uses are possible.
 
 ## Properties
-The [WebHook Resource](/api/webhook.md) has the following properties:
-- **Label**: Used for internal identification of the notification; the name provided here will not be visible in the message.
-- **Event**: The type of event selected by us, which can be:
-  - **New Order Confirmation (order_confirm)**: You can send a message triggered by a new order event. For example, you can use this to request feedback from customers about the ordered products.
-  - **Order Status Change (order_status_change)**: If you want to notify customers or colleagues about changes in order status, it's a good idea to use this option. You can also use this event for customer groups when moving an order's status change within customer groups.
-  - **Newsletter Subscribe (newsletter_subscribe)**: When a new subscription is made to the newsletter.
-  - **Newsletter Unsubscribe (newsletter_unsubscribe)**: When someone unsubscribes from the newsletter.
-  - **Newsletter Update Subscriber Data (newsletter_update_subscriber)**: When someone updates their data used for newsletter subscriptions.
-- **Status**: Here, you can enable or disable the notification. Values:
+[WebHook Resource](/api/webhook.md) has the below properties
+- **label**: Serves the internal identification of the notification, the name entered here will not be visible in the message.
+- **event**: The type of the selected event, which can be the following:
+  - **Order_confirm**: We can send a message, that is triggered by an order. We can use this, for example, to ask customers on their opinions on the ordered products.
+  - **order_status_change**: If we would like to inform customers or colleagues on the change of order status, it is recommended to use this option. And we can use this trigger event in the same way in connection with customer groups as well, when the status change of an order is followed by movement in the customer groups.
+  - **newsletter_subscribe**: When a new subscription to the newsletter occurs.
+  - **newsletter_unsubscribe**: When someone unsubscribes from the newsletter.
+  - **newsletter_update_subscriber**: When someone changes their data used for newsletter subscription.
+- **status**: Here we can enable or disable the notification. Values:
   - **0** - Disabled
   - **1** - Enabled
-- **Parameters (webHookParameters)**: Using parameters, you can configure the format (type) and destination (url) of the webhook. The parameters should be passed as an array of objects. Parameters include:
-  - **Format (type)**: json or xml
-  - **URL (url)**
-- **Timing (webHookDelay)**: Timing can be set to determine when the notification, i.e., the webhook, should be sent after the triggering event. If this value is not specified, the notification will be sent immediately. Parameters include:
-  - **Delay Amount (delay)**: e.g., 10
-  - **Delay Unit (delayUnit)**: day or hour
+- **webHookParameters**: Parameters can be used to set the type or the url where the webhook should be sent. Parameters should be sent as an object stored in a batch.
+  Parameters:
+  - **type**: json or xml
+  - **Url**
+- **webHookDelay**: Delay can be used to set when the webhook notification is being sent after the triggering event. If this value is not specified, sending is immediate.
+  Parameters:
+  - **delay**: e.g.: 10
+  - **delayUnit**: day or hour
 
-An example of a POST request in JSON format:
+Concrete example for a  JSON type POST request:
 ```json
 {
     "label": "test webhook",
@@ -44,81 +45,81 @@ An example of a POST request in JSON format:
 }
 ```
 
-## Elküldhető adatok listája
+## List of data that can be sent
 
-### A megrendeléshez kapcsolódó események mezői
+### Fields of events related to the order
 
-A rendelésről kiküldött webhook mezőinek a jelentése.
+Meaning of the fields of the sent webhook.
 
 |Key|Value|
 |-----|-----|
-|storeName|Bolt neve|
-|innerId|Rendelés azonosító|
-|innerResourceId|Rendelés resource azonosító|
-|outerResourceId|Rendelés külső resource azonosító|
-|firstname|Vevő keresztneve|
-|lastname|Vevő vezetékneve|
-|phone|Tefonszám|
+|storeName|The name of the store|
+|innerId|ID of the order|
+|innerResourceId|Internal ID of the order resource|
+|outerResourceId|External ID of the order resource|
+|firstname|first name of the customer|
+|lastname|last name of the customer|
+|phone|phone number|
 |fax|Fax|
-|email|Email title|
+|email|E-mail address|
 |cart_token|Cart token|
-|shippingFirstname|Shipping address keresztneve|
-|shippingLastname|Shipping address vezetékneve|
-|shippingCompany|Shipping address cégneve|
-|shippingAddress1|Shipping address 1 utcája, házszáma|
-|shippingAddress2|Shipping address 2 utcája, házszáma|
-|shippingCity|Shipping address városa|
-|shippingCountryName|Shipping address országának neve|
-|shippingZoneName|Shipping address megyéjének neve|
-|shippingPostcode|Shipping address Zipcodea|
-|shippingMethodName|Szállítási mód típusa|
-|shippingInnerResourceId|Szállítási mód resource azonosítója|
-|shippingNetPrice|Szállítási mód nettó költsége|
-|shippingGrossPrice|Szállítási mód bruttó költsége|
-|paymentFirstname|Billing address keresztneve|
-|paymentLastname|Billing address vezetékneve|
-|paymentCompany|Billing address cégneve|
-|paymentAddress1|Billing address 1 utcája, házszáma|
-|paymentAddress2|Billing address 2 utcája, házszáma|
-|paymentCity|Billing address városa|
-|paymentCountryName|Billing address országának neve|
-|paymentPostcode|Billing address Zipcodea|
-|paymentTaxnumber|Billing address adószáma|
-|paymentZoneName|Billing address megyéjének neve|
-|paymentMethodName|Payment method neve|
-|paymentNetPrice|Fizetési illeték nettó költsége|
-|paymentGrossPrice|Fizetési illeték bruttó költsége|
-|couponCode|Kupon kódja|
-|couponGrossPrice|Kupon bruttó összege|
-|languageId|Nyelv azonosítója|
-|languageCode|Nyelv kódja|
-|comment|Rendelés megjegyzése|
-|total|Rendelés nettó összege|
-|totalGross|Rendelés bruttó végösszege|
-|taxPrice|Rendelés áfa tartalma|
-|orderHistory|Rendelés állapota|
-|currency|Rendelés pénznemének kódja|
-|orderHistory|Rendelés állapota|
-|orderProducts|Rendelt termékek tömbje|
+|shippingFirstname|First name for shipping address|
+|shippingLastname|Last name for shipping address|
+|shippingCompany|Company name of shipping address|
+|shippingAddress1|Street and number of shipping address 1|
+|shippingAddress2|Street and number of shipping address 2|
+|shippingCity|City of shipping address|
+|shippingCountryName|Country of shipping address|
+|shippingZoneName|County of shipping address|
+|shippingPostcode|Postal code of shipping address|
+|shippingMethodName|Shipping method|
+|shippingInnerResourceId|Resource ID of shipping method|
+|shippingNetPrice|Net price of shipping method|
+|shippingGrossPrice|Gross price of shipping method|
+|paymentFirstname|First name for billing address|
+|paymentLastname|Last name for billing address|
+|paymentCompany|Company name of billing address|
+|paymentAddress1|Street and number of billing address 1|
+|paymentAddress2|Street and number of billing address 2|
+|paymentCity|City of billing address|
+|paymentCountryName|Country of billing address|
+|paymentPostcode|Postal code of billing address|
+|paymentTaxnumber|Tax number of billing address|
+|paymentZoneName|County of billing address|
+|paymentMethodName|Name of payment method|
+|paymentNetPrice|Net price of payment fee|
+|paymentGrossPrice|Gross price of payment fee|
+|couponCode|Coupon code|
+|couponGrossPrice|Gross value of coupon|
+|languageId|ID of language|
+|languageCode|Code of language|
+|comment|Order comment|
+|total|Net value of the order|
+|totalGross|Total gross value of the order|
+|taxPrice|Value of VAT included in the order|
+|orderHistory|Status of the order|
+|currency|Code of currency|
+|orderHistory|Status of the order|
+|orderProducts|Block of ordered products|
 
-A rendelt termékekkel kapcsolatos információk az **orderProducts** tömbben találhatók, melynek jelentései az alábbiak.
+Information on the ordered products can be found in the **orderProducts** block, meanings are the below:
 
 |Key|Value|
 |-----|-----|
-|innerId|Termék azonosító|
-|innerResourceId|Termék resource azonosító|
+|innerId|Product ID|
+|innerResourceId|ID of product resource|
 |name|Name|
-|sku|Cikkszám|
-|price|Nettóérték|
-|currency|Pénznem|
-|taxRate|VAT kulcs|
-|quantity|Mennyiség|
-|image|Kép link|
-|category|Termékkategória|
-|volume|Méretek: height (magasság), hosszúság (length), szélesség (width), mértékegység (volumeUnit)|
-|weight|Súly|
+|sku|Article number|
+|price|Net value|
+|currency|Currency|
+|taxRate|VAT rate|
+|quantity|Quatity|
+|image|Image link|
+|category|Product category|
+|volume|height, length, width, unit of measure|
+|weight|Weight|
 
-Példa webhook:
+Sample webhook:
 
 ```json
 {  
@@ -130,33 +131,33 @@ Példa webhook:
             "innerResourceId":"orders\/b3JkZXItb3JkZXJfaWQ9MTkw",
             "outerResourceId":"",
             "firstname":"Test",
-            "lastname":"P\u00e9ter",
+            "lastname":"Peter",
             "phone":"+36304573549",
             "fax":"",
             "email":"pterballa@gmail.com",
             "cart_token":"cart",
             "shippingFirstname":"Test",
-            "shippingLastname":"P\u00e9ter",
+            "shippingLastname":"Peter",
             "shippingCompany":"",
             "shippingAddress1":"Test utca 5",
             "shippingAddress2":"",
             "shippingCity":"Debrecen",
-            "shippingCountryName":"Magyarorsz\u00e1g",
-            "shippingZoneName":"Hajd\u00fa-Bihar",
+            "shippingCountryName":"Hungary",
+            "shippingZoneName":"Hajdú-Bihar",
             "shippingPostcode":"4033",
             "paymentFirstname":"Test",
-            "paymentLastname":"P\u00e9ter",
+            "paymentLastname":"Peter",
             "paymentCompany":"",
             "paymentAddress1":"Test utca 5",
             "paymentAddress2":"",
             "paymentCity":"Debrecen",
-            "paymentCountryName":"Magyarorsz\u00e1g",
-            "paymentZoneName":"Hajd\u00fa-Bihar",
-            "shippingMethodName":"H\u00e1zhozsz\u00e1ll\u00edt\u00e1s fut\u00e1rszolg\u00e1lattal",
+            "paymentCountryName":"Hungary",
+            "paymentZoneName":"Hajdú-Bihar",
+            "shippingMethodName":"Home delivery with courier",
             "shippingNetPrice":970.0714,
             "shippingGrossPrice":"1006",
             "shippingInnerResourceId":"shippingModeExtend\/c2hpcHBpbmdNb2RlLWlkPTE4",
-            "paymentMethodName":"Ut\u00e1nv\u00e9tel",
+            "paymentMethodName":"Cash on delivery",
             "paymentNetPrice":0,
             "paymentGrossPrice":0,
             "couponCode":"",
@@ -172,7 +173,7 @@ Példa webhook:
             "paymentTaxnumber":"",
             "orderHistory":{  
                "status":"1",
-               "statusText":"F\u00fcgg\u0151ben l\u00e9v\u0151",
+               "statusText":"Pending",
                "comment":""
             },
             "orderProducts":{  
@@ -188,7 +189,7 @@ Példa webhook:
                      "taxRate":"27.0000",
                      "quantity":"1",
                      "image":"https:\/\/shopname.api.myshoprenter.hu\/custom\/demo\/image\/data\/product\/PF_11_00000000M232_VA0211_W1_PF.jpg",
-                     "category":"Vir\u00e1gok, Tulip\u00e1nok",
+                     "category":"Flovers, Tulips",
                      "volume":{  
                         "height":"0.00",
                         "width":"0.00",
@@ -222,14 +223,14 @@ Példa webhook:
                      "innerId":"609",
                      "innerResourceId":"orderProducts\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9NjA5",
                      "outerResourceId":"",
-                     "name":"Test term\u00e9k akci\u00f3hoz",
+                     "name":"Test product for sale",
                      "sku":"TTA1234",
                      "price":"9000",
                      "currency":"HUF",
                      "taxRate":"0.0000",
                      "quantity":"1",
                      "image":"https:\/\/shopname.api.myshoprenter.hu\/custom\/demo\/image\/no_image.jpg",
-                     "category":"FISHER-PRICE j\u00e1t\u00e9kok",
+                     "category":"FISHER-PRICE toy",
                      "volume":{  
                         "height":"0.00",
                         "width":"0.00",
@@ -267,24 +268,23 @@ Példa webhook:
 }
 ```
 
+### Fields of events related to newsletter
 
-### A hírlevélhez kapcsolódó események mezői
+Meaning of the fields of webhook related to newsletter
 
-A hírlevélhez kapcsolódóan kiküldött webhook mezőinek a jelentése.
-
-| Key                     | Value                                       |
+| Key                    | Value                                      |
 |---------------------------|---------------------------------------------|
-| subscriber_id             | Feliratkozó azonosítója                     |
-| subscriber_firstname      | Lastname                                  |
-| subscriber_lastname       | Firstname                                  |
-| subscriber_email          | E-mail title                                  |
-| subscriber_phone          | Telefonszám                                 |
-| subscriber_status         | Status                                     |
-| subscriber_language       | A feliratkozás nyelvének azonosítója        |
-| subscriber_hash           | Aktiváláshoz, leiratkozáshoz szükséges hash |
-| subscriber_subscribe_date | Feliratkozás dátuma                         |
+| subscriber_id             | ID of the subscriber                     |
+| subscriber_firstname      | First name of the subscriber                                 |
+| subscriber_lastname       | Last name of the subscriber                                |
+| subscriber_email          | E-mail address of the subscriber                                |
+| subscriber_phone          | Phone number of subscriber                                |
+| subscriber_status         | Status                                    |
+| subscriber_language       | Language ID of subscription        |
+| subscriber_hash           | hash for subscription, unsubscription |
+| subscriber_subscribe_date | Date of subscription                         |
 
-Példa webhook:
+Sample webhook:
 
 ```json
 {
@@ -293,8 +293,8 @@ Példa webhook:
       {
         "id": "1",
         "firstname": "Test",
-        "lastname": "P\u00e9ter",
-        "email": "test@shoprenter.hu",
+        "lastname": "Peter",
+        "email": "Test@shoprenter.hu",
         "phone": "+36201234567",
         "status": 1,
         "language": "1",
@@ -306,6 +306,6 @@ Példa webhook:
 }
 ```
 
-## További példák
+## Further examples
 
-- [**"Új rendelés feladás" webhook működése**](../api-examples/06_webhook.md)
+- [**"Order submission" operation of webhook**](../api-examples/06_webhook.md)

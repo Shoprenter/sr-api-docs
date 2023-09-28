@@ -20,7 +20,7 @@ Possible values for **shippingMethodExtension**:
 | GLS package point                  | GLSPARCELPOINT     |
 | GLS parcel machine                 | GLSPARCELLOCKER    |
 | MPL Parcel Vending Machine         | MPLPARCELMACHINE   |
-| MPL Posta Point delivery           | MPLPOSTPOINT       |
+| MPL Post Point delivery           | MPLPOSTPOINT       |
 | MPL Delivery in post office        | MPLPOSTSTAY        |
 | Sameday shipping                   | SAMEDAYSHIPPING    |
 | Easybox parcel locker              | EASYBOX            |
@@ -33,7 +33,7 @@ Possible values for **shippingMethodExtension**:
 
 Possible values of **paymentMethodCode**:
 
-| Megnevezés                      | Value                 |
+| Name                            | Value                 |
 |---------------------------------|-----------------------|
 | PayU                            | PAYU                  |
 | OTP online goods loan           | OTP                   |

@@ -121,7 +121,7 @@
             </paymentMethodAfter>
             <taxNumber/>
             <comment>
-                <![CDATA[test rendelés]]>
+                <![CDATA[test order]]>
             </comment>
             <total>
                 <![CDATA[4038.0000]]>

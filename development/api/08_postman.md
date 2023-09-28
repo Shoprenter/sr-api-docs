@@ -1,86 +1,80 @@
-# Postman használata és példakódok
+# Use of Postman and example codes
 
-## API használatához példák
+## Examples for API usage
 
-- PHP testeléshez használható API klienst [ide kattintva](https://github.com/Shoprenter/api-client) érheti el.
-- Shoprenter API példa kollekciók. (Használatáról bővebben a cikkben) [Letöltés](https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json)
-- [További példák](../api-examples/01_0_product_special.md)
+- You can access the API client for PHP testing by [clicking here](https://github.com/Shoprenter/api-client).
+- Example collections of Shoprenter API. (You can find further information on the usage in the article) [Download](https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json)
+- [Further examples](../api-examples/01_0_product_special.md)
 
-## Postman használata
+## Use of Postman
 
-A Postman egy komplett eszköztár API fejlesztők részére, a programmal gyorsan és hatékonyan lehet dolgozni az API-val, mivel támogatja a fejlesztők minden munkafolyamatát. A szoftver az alábbi platformokon érhető el: Mac OS X, Windows, Linux valamint Chrome.
+Postman is a complete toolset for API developers, the program makes it quick and efficient to work with API, as it supports all workflows of developers. The software is available for the following platforms: Mac OS X, Windows, Linux and Chrome.
 
-### Telepítés
+### Installation
 
-A [Postman oldalán](https://www.postman.com/downloads/) válasszuk ki milyen rendszert használunk, majd kattintsunk a letöltés gombra.
+Select which system you use on[the website of Postman](https://www.postman.com/downloads/) and click on download.
 
 ![postman client download](./images/postman_client_download.png)
 
-#### macOS telepítés
+#### macOS installation
 
-Amint sikerült a letöltés a file-t húzzuk be a “Applications” mappába. Dupla kattintással meg tudjuk nyitni az applikációt.
+Once download is finished, drag and drop the file to the “Applications” folder. You can run the application by double click.
 
-#### Windows telepítés
+#### Windows installation
 
-- Töltsük le a setup file-t.
-- Futtassuk a telepítőt
+- Download the setup file-t.
+- Run the installer
 
-#### Linux telepítés
+#### Linux installation
 
-A Linuxon történő telepítés eltérő lehet. A következő útmutatóban bővebb információ található erről: [Postman app on Ubuntu 16.04.](https://www.bluematador.com/blog/postman-how-to-install-on-ubuntu-1604?utm_source=hootsuite&utm_medium=twitter&utm_campaign=)
+Installation on Linux may be different. You can find further information on this in the following guide: [Postman app on Ubuntu 16.04.](https://www.bluematador.com/blog/postman-how-to-install-on-ubuntu-1604?utm_source=hootsuite&utm_medium=twitter&utm_campaign=)
 
-#### Böngésző bővítmény telepítés
+#### Browser extension installation
 
-Chrome böngésző esetén lehetőség van bővítményként hozzáadni a böngészőhöz a [Postman-t.](https://chrome.google.com/webstore/search/Postman?hl=hu)
+In the case of Chrome browser, it is possible to add [Postman.] to the browser as an extension.(https://chrome.google.com/webstore/search/Postman?hl=hu)
 
-### Használat
+### Usage
 
-A Postman indítása után nincs más dolgunk mint elküldeni 
-[az első kérést](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
-vagy létrehozni a [saját kollekciónkat](https://learning.postman.com/docs/getting-started/creating-the-first-collection/).
-Amennyiben további információ szükséges az induláshoz, az 
-[itt lévő dokumentációban](https://learning.postman.com/docs/getting-started/introduction/) ezekre rá tudunk keresni.
+After starting Postman, all we have to do is send [the first request](https://learning.postman.com/docs/getting-started/sending-the-first-request/)
+Or create our [own collection](https://learning.postman.com/docs/getting-started/creating-the-first-collection/).
+If any further information is necessary to get started, you can use
+[the documentation here](https://learning.postman.com/docs/getting-started/introduction/).
 
 
-#### Example kollekció importálása
+#### Importing an example collection
 
-Shoprenter részről előre elkészítettünk egy kollekciót amit be lehet importálni és használni. A kérdéses JSON file ezen az URL-en érhető el: https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json
+Shoprenter prepared a collection in advance, that can be imported and used. The JSON file in question is available at the following URL: https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json
 
-A Postman-en belül a bal felső sarokban találunk egy import gombot, ezzel be tudjuk importálni URL-ből vagy akár file-ból is a fenti példát:
+We can find an import button in the upper left corner in Postman, we can import the above mentioned example from a URL or even from a file with this:
 
 ![postman_collection_import](./images/postman_collection_import.png)
 
-Az import után a bal oldalon láthatjuk is, hogy kaptunk 5db POST példát.
+After the import, we can see on the left that we have received 5 POST examples.
 
 ![postman_post](./images/postman_post.png)
 
-Ezen az oldalon szükségünk lesz a Shoprenteres API belépési adatokra, ezeket a bolt admin felületén,
-a **Beállítások > Integrációk > API beállítások** menüben fogjuk megtalálni.<br/>Az új admin felület esetén ugyanezt pedig a **Beállítások > API beállítások** menüben fogjuk megtalálni.
+Here we will need the Shoprenter API credentials, these can be found on the sore’s admin interface, in the  **Settings > Integrations> API settings** menu.<br/>In the case of the new admin interface, the same can be found in the **Settings > API settings** menu.
 
-A következő képen egy sikeres POST-ot láthatunk, amivel egy új terméket jött létre a bolton belül. Sikeres GET kérés esetén a standard 200-as válaszkódok kapjuk, jelen esetben POST-olás történt, ezért 201-es válaszüzenetet kaptunk. Ha a státusz fülé visszük az egeret, akkor bővebb információt kaphatunk a kapott válaszkódról.
-[További API státuszkódok a Shoprenterben.](https://doc.shoprenter.hu/development/api/02_status_codes.html)
+We can see a successful POST in the following picture, which created a new product in the store. In the case of a successful GET request, we receive the standard 200 response code, in this case a POST was made, so we received a 201 response message. If we move the mouse over the status, we can get more information about the received response code.
+[Further API status codes in Shoprenter.](https://doc.shoprenter.hu/development/api/02_status_codes.html)
 
 ![postman_success_post](./images/postman_success_post.png)
 
-A kollekcióban lévő [**Batch szerkezetet**](./04_batch.md)
-mindenképpen ajánljuk tanulmányozásra, ezzel ugyanis szignifikánsan tudjuk csökkenteni az elküldött kérések számát, így az API kapcsolat is sokkal optimálisabb lehet.
- 
-#### Válasz átváltása JSON formátumra
+We definitely recommend to study the [**Batch structure**](./04_batch.md) in the collection, as with this, we can significantly reduce the number of sent requests, and the API relation can be much more optimal as well.
 
-A fenti példánál maradva lehetőség van JSON formátumban is megkapni a választ. Ehhez a headers fülön szükséges aktiválni a application/json key-t.
+#### Conversion of response to JSON
 
-![postman_json_response](./images/postman_json_response.png) 
+Sticking to the above example, it is possible to receive the response in JSON format as well. To do so, the application/json key should be activated on the headers tab.
 
-### Kódgenerálás több nyelvre
+![postman_json_response](./images/postman_json_response.png)
 
-A Postman az API hívások számos programnyelven (pl: PHP, Go, Java, Python stb.) történő implementálásában is könnyed segítséget nyújt 
-ún. kódgenerálással (lásd bővebben [**link**](https://learning.postman.com/docs/sending-requests/generate-code-snippets/)). 
 
-A Postman-ben elkészített requestből a felület bal oldalán található **Code** gomb segítségével generálhatunk kódot,
-ahol is a felugró ablakon belül kiválaszthatjuk, hogy mely nyelven szeretnénk a requestet végrehajtani. 
+### Code generation for multiple languages
 
+Postman also provides easy help with the implementation of API requests in several programming languages (e.g.: PHP, Go, Java, Python etc.), with the so-called code generation.(see more [**link**](https://learning.postman.com/docs/sending-requests/generate-code-snippets/)).
+
+We can generate a code from the request created in Postman, with the **Code** button on the left side of the interface, where, within the pop-up window, we can select the language in which we want to perform the request.
 
 ![postman_code_generate](./images/postman_code_generate.png)
 
 ![postman_code_generate](./images/postman_code_generate_php.png)
-

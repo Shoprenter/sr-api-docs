@@ -499,8 +499,7 @@
         {
             "name": "externalInfo",
             "description": {
-                "hu": "Külső marketplace azonosítók",
-                "en": "Külső marketplace azonosítók"
+                "en": "External marketplace identifiers"
             },
             "required": false,
             "readonly": false
@@ -629,8 +628,7 @@
                 {
                     "name": "externalInfo",
                     "description": {
-                        "hu": "Külső marketplace azonosítók",
-                        "en": "Külső marketplace azonosítók"
+                        "en": "External marketplace identifiers"
                     }
                 }
             ],

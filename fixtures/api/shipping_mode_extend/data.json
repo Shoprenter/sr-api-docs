@@ -51,7 +51,7 @@
         {
             "name": "shippingType",
             "description": {
-                "en": "\nThis option determines whether the shipping method is included in the calculation of the shipping fee on the product side or in the feeds forwarded to the product sharer as a shipping fee. In the case of several shipping methods of the \"Courier\" type, the system always recommends the most favorable one.<br>\n                        Lehetséges értéke:<br>\n                        <strong>COURIER_SERVICE:<\/strong> Courier Service<br>\n                        <strong>PERSONAL_RECEIPT:<\/strong> Personal\n                    "
+                "en": "\nThis option determines whether the shipping method is included in the calculation of the shipping fee on the product side or in the feeds forwarded to the product sharer as a shipping fee. In the case of several shipping methods of the \"Courier\" type, the system always recommends the most favorable one.<br>\n                        Possible values:<br>\n                        <strong>COURIER_SERVICE:<\/strong> Courier Service<br>\n                        <strong>PERSONAL_RECEIPT:<\/strong> Personal\n                    "
             },
             "required": false,
             "readonly": false
