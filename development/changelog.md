@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2023.09.28
+Two new shipping methods were added: Sameday shipping and Easybox parcel locker. These methods' values are the following: SAMEDAYSHIPPING and EASYBOX.
+
 #### 2023.09.26
 We translated the whole developer documentation to english.
 
