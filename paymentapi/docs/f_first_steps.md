@@ -1,14 +1,14 @@
-# Kezdeti lépések
+# Initial steps
 
-Mivel a fizetési tervek létrehozásához API-t használunk, minden esetben a fejlesztőnek kell biztosítani egy felületet az alkalmazásán belül,
-ahol a bolt tulajdonos elindíthatja a fizetési folyamatot. Ha pl. az Ismétlődő díjfizetést vesszük alapul, az alkalmazásunk tartalmazhat
-egy olyan aloldalt, ahol különböző havi díjas csomagokat kínálhatunk. A csomag kiválasztása után, ennek megfelelően POST kérést küld
-az alkalmazás a Payment API felé, hogy létrehozzon egy Ismétlődő díjfizetést.
+Since we use an API to create payment plans, the developer must always provide an interface within his application,
+where the store owner can start the payment process. If e.g. we take the Recurring fee payment as a basis, our application may contain it
+a sub-site where we can offer different monthly fee packages. After selecting the package, it sends a POST request accordingly
+the application to the Payment API to create a Recurring Fee payment.
 
-Amire szükség lesz tehát:
+So what you will need:
 
-- Vásárlás elindításáért felelős aloldal ahol az összes elérhető fizetés lehetőség megtekinthető. Itt ki kell listázni az adott csomagokhoz tartozó funkciókat is!
+- Subpage responsible for starting a purchase where all available payment options can be viewed. The functions belonging to the given packages must also be listed here!
 
-- notificationUrl: A fizetés közben történt eseményekről küldeni fog az API webhook-ot erre az Url-re. Ezen események kezelését is kivitelezni kell.
+- notificationUrl: It will send the API webhook to this Url about the events that happened during the payment. The management of these events must also be implemented.
 
-- failedUrl és successUrl: Ezekre az oldalakra lesz irányítva a bolt tulajdonos, ahol tájékoztatást kaphat a fizetés kimeneteléről.
+- failedUrl and successUrl: The store owner will be directed to these pages, where they can receive information about the outcome of the payment.

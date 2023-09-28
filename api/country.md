@@ -1,13 +1,13 @@
 # Country Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'country'" :lang="'hu'"/>
+<ResourceProperties :resource="'country'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'country'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'country'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'country'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'country'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

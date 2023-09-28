@@ -1,13 +1,13 @@
 # Tax Class Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'tax_class'" :lang="'hu'"/>
+<ResourceProperties :resource="'tax_class'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'tax_class'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'tax_class'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'tax_class'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'tax_class'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

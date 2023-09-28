@@ -1,7 +1,7 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/orderStatusDescriptions/b3JkZXJTdGF0dXNEZXNjcmlwdGlvbi1vcmRlcl9zdGF0dXNfaWQ9MSZsYW5ndWFnZV9pZD0x]]></href>
     <id><![CDATA[b3JkZXJTdGF0dXNEZXNjcmlwdGlvbi1vcmRlcl9zdGF0dXNfaWQ9MSZsYW5ndWFnZV9pZD0x]]></id>
-    <name><![CDATA[Függőben lévő]]></name>
+    <name><![CDATA[Pending]]></name>
     <color><![CDATA[#ff00ff]]></color>
     <orderStatus>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]></href>

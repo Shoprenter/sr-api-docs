@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Rendelés állapot azonosító.",
-                "en": "Rendelés állapot azonosító."
+                "en": "Order status identifier."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Rendelés állapot belső azonosító.",
-                "en": "Rendelés állapot belső azonosító."
+                "en": "Order status internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "orderStatusDescriptions",
             "description": {
-                "hu": "Rendelés állapot leírások linkjei.",
-                "en": "Rendelés állapot leírások linkjei."
+                "en": "Order status descriptions link."
             },
             "required": false,
             "readonly": false
@@ -32,12 +29,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/orderStatuses\/Rendelés állapot id",
-                "en": "\/orderStatuses\/Rendelés állapot id"
+                "en": "\/orderStatuses\/Order status id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -48,33 +43,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/orderStatuses",
                 "en": "\/orderStatuses"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],

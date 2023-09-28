@@ -1,8 +1,8 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==]]></href>
     <id><![CDATA[YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==]]></id>
-    <name><![CDATA[Név]]></name>
-    <description><![CDATA[Leírás]]></description>
+    <name><![CDATA[Name]]></name>
+    <description><![CDATA[Description]]></description>
     <attribute>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Nw==]]></href>
     </attribute>

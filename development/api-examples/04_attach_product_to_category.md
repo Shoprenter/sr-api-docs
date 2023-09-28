@@ -1,16 +1,16 @@
-# Termék hozzáadása kategóriához
+# Adding a Product to a Category
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy újonnan létrehozott kategóriához hozzáadni egy újonnan létrehozott terméket.
-A dokumentáción belül ennek a példának a hatékonyabb batchelt Outer ID-s változata elérhető ezen a [**linken**](../api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)
+The following example demonstrates how to add a newly created product to a newly created category. 
+A more efficient batched version of this example with Outer IDs is available within the documentation at this [**link**](../api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel).
 
-A feladat 3 lépésből áll.
-1. Kategória létrehozása a [**Category Extend Resource**](../../api/category_extend.md) segítségével.
-2. Termék létrehozása a [**Product Extend Resource**](../../api/product_extend.md) segítségével, amelyhez már létrehozáskor megadjuk a kategóriát.
-3. További kategóriák hozzáadása a termékhez a [**Product Category Relation Resource**](../../api/product_category_relation.md) segítségével.
+The task consists of three steps.
+1. Creating a category using the [**Category Extend Resource**](../../api/category_extend.md).
+2. Creating a product using the [**Product Extend Resource**](../../api/product_extend.md) and specifying the category during creation.
+3. Adding additional categories to the product using the [**Product Category Relation Resource**](../../api/product_category_relation.md) Resource.
 
-## 1. lépés
+## Step 1.
 
-A [**Category Extend Resource**](../../api/category_extend.md) segítségével létrehozzuk az új kategóriát.
+Creating a category using the [**Category Extend Resource**](../../api/category_extend.md).
 
 **Request**
 
@@ -40,7 +40,7 @@ A [**Category Extend Resource**](../../api/category_extend.md) segítségével l
     "picture": "data/category_picture.jpg",
     "categoryDescriptions": [
         {
-            "name": "Teszt Kategória",
+            "name": "Test Category",
             "language": {
                 "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
@@ -76,7 +76,7 @@ A [**Category Extend Resource**](../../api/category_extend.md) segítségével l
         {
             "href": "http://demo.api.aurora.shopname/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9MQ==",
             "id": "Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9MQ==",
-            "name": "Teszt Kategória",
+            "name": "Test Category",
             "metaKeywords": "",
             "metaDescription": "",
             "description": "",
@@ -120,9 +120,9 @@ A [**Category Extend Resource**](../../api/category_extend.md) segítségével l
 }
 ```
 
-## 2. lépés
+## Step 2.
 
-A [**Product Extend Resource**](../../api/product_extend.md) segítségével létrehozzuk az új terméket.
+Creating a product using the [**Product Extend Resource**](../../api/product_extend.md) and specifying the category during creation
 
 **Request**
 
@@ -153,9 +153,9 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
     "manufacturer": {...},
     "productDescriptions": [
         {
-            "name": "Termék Név",
-            "shortDescription": "Rövid Leírás",
-            "description": "Hosszú Leírás",
+            "name": "Product name",
+            "shortDescription": "Short description",
+            "description": "Long description",
             "language": {
                 "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
@@ -240,12 +240,12 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
         {
             "href": "http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
             "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
-            "name": "Termék Név",
+            "name": "Product name",
             "metaKeywords": {},
             "metaDescription": {},
-            "shortDescription": "Rövid Leírás",
-            "description": "Hosszú Leírás",
-            "parameters": "Szín: zöld Méret: XL",
+            "shortDescription": "Short description",
+            "description": "Long description",
+            "parameters": "Szín: green Size: XL",
             "packagingUnit": {},
             "measurementUnit": "db",
             "customContentTitle": {},
@@ -311,9 +311,10 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
 }
 ```
 
-## 3. lépés
+## Step 3.
 
-Amennyiben nem létrehozáskor adjuk meg a kategóriát a termékhez, úgy utólag a [**Product Category Relation Resource**](../../api/product_category_relation.md) segítségével is megtehetjük. (Megjegyzés: Meglévő termékhez további kategóriákat a [**Product Extend Resource**](../../api/product_extend.md) PUT methodjával is meg lehet valósítani.)
+If you do not specify the category for the product during creation, you can still do so later using the [**Product Category Relation Resource**](../../api/product_category_relation.md) Resource. 
+Note that for existing products, you can also add additional categories using the PUT method of the [**Product Extend Resource**](../../api/product_extend.md).
 
 **Request**
 

@@ -1,8 +1,8 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0zOQ==]]></href>
     <id><![CDATA[b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0zOQ==]]></id>
-    <name><![CDATA[Valami]]></name>
-    <valueName><![CDATA[B Verzió]]></valueName>
+    <name><![CDATA[Something]]></name>
+    <valueName><![CDATA[B Version]]></valueName>
     <price><![CDATA[1000.0000]]></price>
     <prefix><![CDATA[+]]></prefix>
     <orderProduct>

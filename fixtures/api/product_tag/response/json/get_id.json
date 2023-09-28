@@ -1,7 +1,7 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/productTags/cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=",
     "id": "cHJvZHVjdFRhZy1wcm9kdWN0X2lkPTI5MjAyJmxhbmd1YWdlX2lkPTE=",
-    "tags": "csaptelep,hideg-meleg",
+    "tags": "faucet,cold-hot",
     "product": {
         "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI5MjAy"
     },

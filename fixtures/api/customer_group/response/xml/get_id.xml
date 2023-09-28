@@ -2,7 +2,7 @@
     <href><![CDATA[http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02]]></href>
     <id><![CDATA[Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02]]></id>
     <innerId><![CDATA[6]]></innerId>
-    <name><![CDATA[Törzsvásárló]]></name>
+    <name><![CDATA[Regular customer]]></name>
     <percentDiscount><![CDATA[20]]></percentDiscount>
     <percentDiscountSpecialPrices><![CDATA[0]]></percentDiscountSpecialPrices>
 </response>

@@ -1,76 +1,77 @@
 # Order Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'order'" :lang="'hu'"/>
+<ResourceProperties :resource="'order'" :lang="'en'"/>
 
-## Szállítási mód típusok
+## Shipping methods
 
-A **shippingMethodExtension** lehetséges értékei:
+Possible values for **shippingMethodExtension**:
 
-| Megnevezés                        | Érték            |
-|-----------------------------------|------------------|
-| Átvevőpontok                      | RECEIVINGPOINT   |
-| Csomagküldő - (Béta)              | CSOMAGKULDO      |
-| DHL Express                       | DHLEXPRESS       |
-| DPD csomagpont                    | DPDPARCELSHOP    |
-| FoxPost Csomagautomata            | FOXPOST          |
-| FoxPost Házhozszállítás           | FOXPOSTAUTOMATA  |
-| GLS csomagpont (régi)             | GLSPARCELSHOP    |
-| GLS csomagpont                    | GLSPARCELPOINT   |
-| GLS csomagautomata                | GLSPARCELLOCKER  |
-| MPL Csomagautomata                | MPLPARCELMACHINE |
-| MPL Posta Pont szállítás          | MPLPOSTPOINT     |
-| MPL Postán maradó szállítás       | MPLPOSTSTAY      |
-| Sameday házhozszállítás           | SAMEDAYSHIPPING  |
-| Pick Pack Pont szállítás          | PICKPACKPONT     |
-| Express One csomagpont            | TOFPARCELSHOP    |
-| Házhozszállítás futárszolgálattal | WSESHIP          |
-| Személyes átvétel                 | WSESHIP          |
+| Description                        | Value            |
+|------------------------------------|------------------|
+| Pickup points                      | RECEIVINGPOINT   |
+| Parcel sender - (Béta)             | CSOMAGKULDO      |
+| DHL Express                        | DHLEXPRESS       |
+| DPD package point                  | DPDPARCELSHOP    |
+| FoxPost Parcel machine             | FOXPOST          |
+| FoxPost Home delivery              | FOXPOSTAUTOMATA  |
+| GLS package point (old)            | GLSPARCELSHOP    |
+| GLS package point                  | GLSPARCELPOINT   |
+| GLS Parcel machine                 | GLSPARCELLOCKER  |
+| MPL Parcel machine                 | MPLPARCELMACHINE |
+| MPL Post office transport          | MPLPOSTPOINT     |
+| Delivery in the MPL post office    | MPLPOSTSTAY      |
+| Pick Pack Pont transport           | PICKPACKPONT     |
+| Sameday shipping                   | SAMEDAYSHIPPING  |
+| Express One package point          | TOFPARCELSHOP    |
+| Home delivery with courier service | WSESHIP          |
+| Personal pick up                   | WSESHIP          |
 
-## Fízetés mód típusok
 
-A **paymentMethodCode** lehetséges értékei:
+## Payment Methods
 
-| Megnevezés                      | Érték                 |
+Possible values for **paymentMethodCode**:
+
+| Description                     | Value                 |
 |---------------------------------|-----------------------|
-| PayU                            | PAYU                  |
-| OTP online áruhitel             | OTP                   |
-| CIB bankkártyás fizetés         | CIB                   |
-| Utánvétel                       | COD, COD2, COD3, COD4 |
-| Cetelem fizetési mód            | CETELEM               |
-| Banki átutalás                  | BANK_TRANSFER         |
+| PayU                            | PAY                   |
+| OTP online goods loan           | OTP                   |
+| CIB bank card CIB               |
+| Cash on delivery                | COD, COD2, COD3, COD4 |
+| Cetelem payment method          | CETELEM               |
+| Bank transfer                   | BANK_TRANSFER         |
 | PayPal                          | PAYPAL                |
-| Csekkbefizetés                  | CHEQUE                |
-| Hűségpont beváltás              | LOYALTYPOINT          |
+| Check Deposit                   | CHECK                 |
+| Loyalty points using            | LOYALTYPOINT          |
 | Escalion                        | ESCALION              |
 | Unicredit                       | UNICREDIT             |
 | Euplatesc                       | EUPLATESC             |
 | PaySecure                       | PAYSECURE             |
-| Fizetés a Pick Pack Ponton      | PICKPACKPONT          |
-| K&H Bank kártyás fizetés        | KHB                   |
-| Barion bankkártyás fizetés      | BARION                |
-| Fizetés FoxPoston bankkártyával | FOXPOST_CREDIT_CARD   |
+| Payment at the Pick Pack Point  | PICKUP POINT          |
+| K&H Bank card card              | KHB                   |
+| Barion bank card payment        | BARION                |
+| Payment by FoxPoston bank card  | FOXPOST_CREDIT_CARD   |
 | Simple                          | SIMPLE                |
-| Simple átutalás                 | SIMPLEWIRE            |
-| Sofort banking                  | SOFORT                |
+| Simple transfer                 | SIMPLEWIRE            |
+| Sofort banking                  | DRIVE                 |
 | Borgun (B-payment)              | SRPAY                 |
 | Borgun                          | BORGUN                |
-| MBH online áruhitel             | MBH                   |
+| Budapest Bank online goods loan | BUDAPEST BANK         |
 | Global Payments                 | GP                    |
 | Paysafecard                     | PAYSAFECARD           |
 | Paysafecash                     | PAYSAFECASH           |
 | Global Payments                 | GP                    |
-| QENTA QPAY                      | QENTA_QPAY            |
+| Wirecard QPAY                   | QPAY                  |
 | Saferpay - SIX Payment Services | SAFERPAY              |
-| InstaCash részletfizetés        | INSTACASH             |
+| InstaCash                       | INSTACASH             |
 | IzzyPay                         | IZZYPAY               |
 | PastPay                         | PASTPAY               |
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'order'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'order'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -87,7 +88,7 @@ A **paymentMethodCode** lehetséges értékei:
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'order'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'order'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -104,7 +105,7 @@ A **paymentMethodCode** lehetséges értékei:
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'order'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'order'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -127,7 +128,7 @@ A **paymentMethodCode** lehetséges értékei:
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'order'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'order'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -150,4 +151,4 @@ A **paymentMethodCode** lehetséges értékei:
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'order'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'order'" :endpoint="'delete'" :lang="'en'"/>

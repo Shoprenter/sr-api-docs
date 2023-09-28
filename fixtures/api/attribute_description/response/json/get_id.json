@@ -1,8 +1,8 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
     "id": "YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
-    "name": "Név",
-    "description": "Leírás",
+    "name": "Name",
+    "description": "Description",
     "attribute": {
         "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Nw=="
     },

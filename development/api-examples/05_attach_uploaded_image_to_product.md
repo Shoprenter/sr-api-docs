@@ -1,20 +1,20 @@
-# Termékkép hozzáadása termékhez
+# Attach image to product
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy újonnan létrehozott termékhez elsődleges fő termékképet illetve további termékképeket hozzáadni.
+The example below shows how to add a primary main product image and additional product images to a newly created product.
 
-Fájlfeltöltéshez példa az alábbi [linken](https://support.shoprenter.hu/hc/hu/articles/215106038-F%C3%A1jlok-felt%C3%B6lt%C3%A9se-%C3%A9s-kezel%C3%A9se) olvasható. 
+An example for uploading a file can be found at the [link] below (https://support.shoprenter.hu/hc/hu/articles/215106038-F%C3%A1jlok-felt%C3%B6lt%C3%A9se-%C3%A9s-kezel%C3 %A9se) can be read.
 
-A feladat 3 lépésből áll.
-1. Fájl feltöltése a [**File Resource**](../../api/file.md) segítségével.
-2. Termék létrehozása a [**Product Extend Resource**](../../api/product_extend.md) segítségével, amelyhez már létrehozáskor megadjuk az elsődleges fő termékképet.
-3. További termékképek hozzáadása a termékhez a [**Product Image Resource**](../../api/product_image.md) segítségével.
+The task consists of 3 steps.
+1. Upload a file using [**File Resource**](../../api/file.md).
+2. Create a product using [**Product Extend Resource**](../../api/product_extend.md), for which we already specify the primary main product image during creation.
+3. Add additional product images to the product using [**Product Image Resource**](../../api/product_image.md).
 
-## 1. lépés
+## Step 1.
 
-A [**File Resource**](../../api/file.md) segítségével feltöltjük az elsődleges fő termékképet. Mivel a képet a terméknek szeretnénk beállítani, így fontos, hogy a **filePath property az alábbi alakú legyen "product\/[kép neve]", pl: "filePath": "product\/termekkep.jpg"**. Továbbá a kép fájlformátumának a jpg kiterjesztést javasoljuk. A képet base64-elve kell elküldeni.
-A feltöltést követően a termékkép megtalálható adminon felületen a Filemanageren belül a product mappában.
+We use [**File Resource**](../../api/file.md) to upload the primary main product image. Since we want to set the image as the product, it is important that the **filePath property has the following form "product\/[image name]", eg: "filePath": "product\/termekkep.jpg"**. We also recommend the jpg extension for the image file format. The image must be sent in base64.
+After uploading, the product image can be found on the admin interface in the Filemanager in the product folder.
 
-**filePath**: <strong>FIGYELEM!</strong> A feltöltendő fájlok csak az angol ABC betűit és (),_,-, karaktereket, illetve számokat tartalmazhatnak!
+**filePath**: <strong>ATTENTION!</strong> The files to be uploaded can only contain the letters of the English ABC and (),_,-, characters and numbers!
 
 **Request**
 
@@ -53,9 +53,9 @@ A feltöltést követően a termékkép megtalálható adminon felületen a File
 }
 ```
 
-## 2. lépés
+## Step 2
 
-A [**Product Extend Resource**](../../api/product_extend.md) segítségével létrehozzuk az új terméket.
+We create the new product using [**Product Extend Resource**](../../api/product_extend.md).
 
 **Request**
 
@@ -87,9 +87,9 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
     "manufacturer": {...},
     "productDescriptions": [
         {
-            "name": "Termék Név",
-            "shortDescription": "Rövid Leírás",
-            "description": "Hosszú Leírás",
+            "name": "Product name",
+            "shortDescription": "Short description",
+            "description": "Long description",
             "language": {
                 "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
@@ -171,12 +171,12 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
         {
             "href": "http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
             "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
-            "name": "Termék Név",
+            "name": "Product Name",
             "metaKeywords": {},
             "metaDescription": {},
-            "shortDescription": "Rövid Leírás",
-            "description": "Hosszú Leírás",
-            "parameters": "Szín: zöld Méret: XL",
+            "shortDescription": "Short description",
+            "description": "Long description",
+            "parameters": "Color: green Size: XL",
             "packagingUnit": {},
             "measurementUnit": "db",
             "customContentTitle": {},
@@ -231,9 +231,9 @@ A [**Product Extend Resource**](../../api/product_extend.md) segítségével lé
 }
 ```
 
-## 3.lépés
+## Step 3
 
-A termékhez tartozó további termékképek csatolását a [**Product Image Resource**](../../api/product_image.md) segítségével lehet megvalósítani.
+Additional product images belonging to the product can be attached using [**Product Image Resource**](../../api/product_image.md).
 
 **Request**
 

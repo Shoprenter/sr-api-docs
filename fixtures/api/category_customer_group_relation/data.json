@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "A kapcsolat azonosítója. Az OuterID módosítására szolgál.",
-                "en": "A kapcsolat azonosítója. Az OuterID módosítására szolgál."
+                "en": "Relation identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "category",
             "description": {
-                "hu": "A kapcsolathoz tartozó kategória linkje.",
-                "en": "A kapcsolathoz tartozó kategória linkje."
+                "en": "Category link belongs to the relation."
             },
             "required": true,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "customerGroup",
             "description": {
-                "hu": "A kapcsolathoz tartozó vásárlói csoport linkje.",
-                "en": "A kapcsolathoz tartozó vásárlói csoport linkje."
+                "en": "Customer group link belongs to the relation."
             },
             "required": true,
             "readonly": true
@@ -32,12 +29,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/categoryCustomerGroupRelations\/kapcsolat id",
-                "en": "\/categoryCustomerGroupRelations\/kapcsolat id"
+                "en": "\/categoryCustomerGroupRelations\/relation id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -48,40 +43,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/categoryCustomerGroupRelations",
                 "en": "\/categoryCustomerGroupRelations"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "categoryId",
                     "description": {
-                        "hu": "Kereső paraméter (Kategória azonosító).",
-                        "en": "Kereső paraméter (Kategória azonosító)."
+                        "en": "Search parameter (Category identifier)."
                     }
                 }
             ],
@@ -93,12 +82,10 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/categoryCustomerGroupRelations",
                 "en": "\/categoryCustomerGroupRelations"
             },
             "description": {
-                "hu": "Csak létrehozásra szolgál.",
-                "en": "Csak létrehozásra szolgál."
+                "en": "For creation only."
             },
             "parameters": [],
             "example": {
@@ -109,17 +96,15 @@
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/categoryCustomerGroupRelations\/kapcsolat id",
-                "en": "\/categoryCustomerGroupRelations\/kapcsolat id"
+                "en": "\/categoryCustomerGroupRelations\/relation id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/categoryCustomerGroupRelations\/Y2F0ZWdvcnlDdXN0b21lckdyb3VwLWNhdGVnb3J5X2lkPTEyJmN1c3RvbWVyX2dyb3VwX2lkPTY=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

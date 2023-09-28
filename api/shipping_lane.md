@@ -1,13 +1,13 @@
 # Shipping Lane Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'shipping_lane'" :lang="'hu'"/>
+<ResourceProperties :resource="'shipping_lane'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'shipping_lane'" :endpoint="'delete'" :lang="'en'"/>
 

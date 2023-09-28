@@ -1,9 +1,9 @@
-# API hívásokkal kapcsolatos követelmények és korlátozások
+# API request requirements and restrictions
 
-- A Header adatok közül, a **Content-Type** érték megadása kötelező!<br>
-A alábbi formátumok elérhetőek, majd ez a kiválasztott formátum fogja meghatározni a kommunikációt az API-val.
-  + JSON: **application/json** (ajánlott)
+- **Content-Type** value is mandatory in the Header data!<br>
+  The following formats are available, the chosen format will define communication with API.
+  + JSON: **application/json** (recommended)
   + FormData: **multipart/form-data**
-- API hívás válaszát alapértelmezetten XML formátumban kapja meg az alkalmazás
-- Amennyiben az API hívás válaszát JSON formátumban szeretnénk visszakapni, akkor már az API hívásnál a Headerben meg kell adni, hogy **Accept: application/json**
-- **A maximálisan indítható requestek limitje 3/alkalmazás/bolt/másodperc**. Túllépés esetén 429-as hibakódot kapunk válaszként. Ez percenként 180 request-et jelent.
+- The default format of API request response received by the application is XML.
+- If JSON format is required, **Accept: application/json** should be indicated in the Header of the API request.
+- **Maximum request limit is 3/application/shop/second**. Exceeding the limit will result in 429 error code. This means 180 requests per minute. 

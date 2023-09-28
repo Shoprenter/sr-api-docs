@@ -1,23 +1,23 @@
-# Termékopció kezelése
+# Handling Product Option
 
-A példa megértése érdekében érdemes előzetesen elolvasni az alábbi [cikket](https://support.shoprenter.hu/hc/hu/articles/215106128).
+In order to understand the example, it is worth reading the following [article](https://support.shoprenter.hu/hc/hu/articles/215106128) in advance.
 
-Az alábbi példában bemutatásra kerül, hogy miként lehet egy termékhez különböző termékopciókat megadni.
+The following example shows how different product options can be specified for a product.
 
-A feladat 4 lépésből áll.
-1. Termékopció létrehozása létező termékhez a [**Product Option Resource**](../../api/product_option.md) segítségével.
-2. A létrehozott termékopcióhoz tartozó nyelvesítés elkészítése a [**Product Option Description Resource**](../../api/product_option_description.md) segítségével.
-3. A létrehozott termékopció értékeinek létrehozása a [**Product Option Value Resource**](../../api/product_option_value.md) segítségével.
-4. A létrehozott termékopció értékeinek nyelvesítése a [**Product Option Value Description Resource**](../../api/product_option_value_description.md) segítségével.
+The task consists of 4 steps.
+1. Create a product option for an existing product using [**Product Option Resource**](../../api/product_option.md).
+2. Preparation of the language for the created product option using [**Product Option Description Resource**](../../api/product_option_description.md).
+3. Creating the values of the created product option using [**Product Option Value Resource**](../../api/product_option_value.md).
+4. Language of the values of the created product option using [**Product Option Value Description Resource**](../../api/product_option_value_description.md).
 
-Példa, amivel levezetjük az elkészítés folyamatát:
+An example that demonstrates the preparation process:
 
-Tegyük fel, hogy a boltunkban tortákat árulunk és a Dobos torta termékből szeretnénk egy 10 és egy 12 szeletes változatát értékesíteni.
-A 10 szeletes változat ára megegyezik a termék alapárával, viszont a 12 szeletes változatot 2000 forinttal drágábban szeretnénk árusítani. 
+Let's say that we sell cakes in our store and we want to sell a 10- and a 12-slice version of the Dobos cake product.
+The price of the 10-slice version is the same as the base price of the product, but we would like to sell the 12-slice version HUF 2,000 more expensive.
 
-## 1. lépés
+## Step 1.
 
-A [**Product Option Resource**](../../api/product_option.md) segítségével létrehozzuk az új termékopciót.
+We create the new product option using [**Product Option Resource**](../../api/product_option.md).
 
 **Request**
 
@@ -68,10 +68,10 @@ A [**Product Option Resource**](../../api/product_option.md) segítségével lé
 }
 ```
 
-## 2. lépés
+## Step 2.
 
-A [**Product Option Description Resource**](../../api/product_option_description.md) segítségével elkészítjük a létrehozott termékopcióhoz tartozó nyelvesítést.
-A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken szeretnénk hozzárendelni nevet az adott termékopcióhoz, úgy az alábbi lépést meg kell ismételni a kívánt nyelv resource id-jával.   
+With the help of [**Product Option Description Resource**](../../api/product_option_description.md) we prepare the language for the created product option.
+The example shows a English translation. If we want to assign a name to the given product option in additional languages, the step below must be repeated with the resource id of the desired language.
 
 **Request**
 
@@ -95,7 +95,7 @@ A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken sz
 
 ```json
 {
-    "name": "Szeletek száma",
+    "name": "Number of slices",
     "productOption": {
         "id": "cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
@@ -111,7 +111,7 @@ A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken sz
 {
     "href": "http://shopname.api.myshoprenter.hu/productOptionDescriptions/cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD0x",
     "id": "cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD01",
-    "name": "Szeletek száma",
+    "name": "Number of slices",
     "productOption": {
         "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
@@ -121,15 +121,15 @@ A példa magyar nyelvű fordítást mutatja be. Amennyiben további nyelveken sz
 }
 ```
 
-## 3. lépés
+## Step 3.
 
-A [**Product Option Value Resource**](../../api/product_option_value.md) segítségével elkészítjük a létrehozott termékopcióhoz tartozó értékeket.
+With the help of [**Product Option Value Resource**](../../api/product_option_value.md) we prepare the values for the created product option.
 
-Az alábbi requestben létrehozunk két változatot: egy 10 és egy 12 szeletes változatot.
-A 10 szeletes változat nem módosítja a termék árát, úgy vesszük, hogy ez a termék eredeti árával azonos.
-A 12 szeletes változat árát megnöveljük az eredeti termék árához képest 2000 forinttal.
+n the request below, we create two versions: a 10- and a 12-slice version.
+The 10-slice version does not change the price of the product, we consider it to be the same as the original price of the product.
+The price of the 12-slice version will be increased by HUF 2,000 compared to the price of the original product.
 
-**Request a 10 szeletes változatra**
+**Request for the 10-slice version**
 
 <table>
   <tr>
@@ -158,7 +158,8 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 }
 ```
 
-**Response a 10 szeletes változatra**
+
+**Response to the 10-slice version**
 
 ```json
 {
@@ -176,7 +177,7 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 }
 ```
 
-**Request a 12 szeletes változatra**
+**Request for the 12-slice version**
 
 <table>
   <tr>
@@ -207,7 +208,7 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 }
 ```
 
-**Response a 12 szeletes változatra**
+**Response to the 12-slice version**
 
 ```json
 {
@@ -225,11 +226,11 @@ A 12 szeletes változat árát megnöveljük az eredeti termék árához képest
 }
 ```
 
-## 4. lépés
+## Step 4.
 
-A [**Product Option Value Description Resource**](../../api/product_option_value_description.md) segítségével elkészítjük a létrehozott termékopcióhoz tartozó értékek nyelvesítését magyar nyelven a 10 és 12 szeletes változathoz.   
+With the help of [**Product Option Value Description Resource**](../../api/product_option_value_description.md), we prepare the Hungarian language of the values belonging to the created product option for the 10 and 12 slice versions. 
 
-**Request a 10 szeletes változatra**
+**Request for the 10-slice version**
 
 <table>
   <tr>
@@ -251,7 +252,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 
 ```json
 {
-    "name": "10 szeletes",
+    "name": "10 slices",
     "productOptionValue": {
         "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },
@@ -261,13 +262,13 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 }
 ```
 
-**Response a 10 szeletes változatra**
+**Response to the 10-slice version**
 
 ```json
 {
     "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTE=",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTQ=",
-    "name": "10 szeletes",
+    "name": "10 slices",
     "productOptionValue": {
         "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },
@@ -277,7 +278,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 }
 ```
 
-**Request a 12 szeletes változatra**
+**Request for the 12-slice version**
 
 <table>
   <tr>
@@ -299,7 +300,7 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 
 ```json
 {
-    "name": "12 szeletes",
+    "name": "12 slices",
     "productOptionValue": {
         "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },
@@ -309,13 +310,13 @@ A [**Product Option Value Description Resource**](../../api/product_option_value
 }
 ```
 
-**Response a 12 szeletes változatra**
+**Response to the 10-slice version**
 
 ```json
 {
     "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ5Jmxhbmd1YWdlX2lkPTE=",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTQ=",
-    "name": "12 szeletes",
+    "name": "12 slices",
     "productOptionValue": {
         "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },

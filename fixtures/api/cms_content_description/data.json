@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szöveges tartalom leírás azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szöveges tartalom leírás azonosító. Az OuterID módosítására szolgál."
+                "en": "Text content description identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "title",
             "description": {
-                "hu": "Szöveges tartalom címe.",
-                "en": "Szöveges tartalom címe."
+                "en": "Text content title."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "description",
             "description": {
-                "hu": "Szöveges tartalom.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.",
-                "en": "Szöveges tartalom.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező."
+                "en": "Text content.<br>In case of adding javascript, it must use a <strong>type=\"text\/javascript\"<\/strong> attribute in the script tag."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "introText",
             "description": {
-                "hu": "Szöveges tartalom.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.",
-                "en": "Szöveges tartalom.<br>Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező."
+                "en": "Text content.<br>In case of adding javascript, it must use a <strong>type=\"text/javascript\"</strong> attribute in the script tag."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Nyelv resource linkje.",
-                "en": "Nyelv resource linkje."
+                "en": "Language resource link."
             },
             "required": true,
             "readonly": true
@@ -48,8 +43,7 @@
         {
             "name": "cmsContent",
             "description": {
-                "hu": "Szöveges tartalom belső azonosítója.",
-                "en": "Szöveges tartalom belső azonosítója."
+                "en": "Text content internal identifier."
             },
             "required": true,
             "readonly": true
@@ -59,12 +53,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/cmsContentDescriptions\/szöveges tartalom leírás id",
-                "en": "\/cmsContentDescriptions\/szöveges tartalom leírás id"
+                "en": "\/cmsContentDescriptions\/text content description id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -75,33 +67,28 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/cmsContentDescriptions",
                 "en": "\/cmsContentDescriptions"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 }
             ],
@@ -113,49 +100,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/cmsContentDescriptions[\/szöveges tartalom leírás id]",
-                "en": "\/cmsContentDescriptions[\/szöveges tartalom leírás id]"
+                "en": "\/cmsContentDescriptions[\/text content description id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/cmsContentDescriptions",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/cmsContentDescriptions\/szöveges tartalom leírás id",
-                "en": "\/cmsContentDescriptions\/szöveges tartalom leírás id"
+                "en": "\/cmsContentDescriptions\/text content description id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/cmsContentDescriptions\/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/cmsContentDescriptions\/szöveges tartalom leírás id",
-                "en": "\/cmsContentDescriptions\/szöveges tartalom leírás id"
+                "en": "\/cmsContentDescriptions\/text content description id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/cmsContentDescriptions\/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTM2Jmxhbmd1YWdlX2lkPTE=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

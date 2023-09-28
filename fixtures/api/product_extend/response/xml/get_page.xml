@@ -124,7 +124,7 @@
                     <![CDATA[LIST]]>
                 </type>
                 <name>
-                    <![CDATA[szin]]>
+                    <![CDATA[color]]>
                 </name>
                 <value>
                     <value>
@@ -303,18 +303,18 @@
                     <![CDATA[cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x]]>
                 </id>
                 <name>
-                    <![CDATA[Termék Név]]>
+                    <![CDATA[Product name]]>
                 </name>
                 <metaKeywords/>
                 <metaDescription/>
                 <shortDescription>
-                    <![CDATA[Rövid Leírás]]>
+                    <![CDATA[Short description]]>
                 </shortDescription>
                 <description>
-                    <![CDATA[Hosszú Leírás]]>
+                    <![CDATA[Long description]]>
                 </description>
                 <parameters>
-                    <![CDATA[Szín: zöld Méret: XL]]>
+                    <![CDATA[Color: green Size: XL]]>
                 </parameters>
                 <packagingUnit/>
                 <measurementUnit>
@@ -874,7 +874,7 @@
                     <![CDATA[LIST]]>
                 </type>
                 <name>
-                    <![CDATA[szin]]>
+                    <![CDATA[color]]>
                 </name>
                 <value>
                     <value>
@@ -1064,18 +1064,18 @@
                     <![CDATA[cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x]]>
                 </id>
                 <name>
-                    <![CDATA[Trónok Harca póló]]>
+                    <![CDATA[Game of thrones t-shirt]]>
                 </name>
                 <metaKeywords/>
                 <metaDescription/>
                 <shortDescription>
-                    <![CDATA[Rövid Leírás]]>
+                    <![CDATA[Short description]]>
                 </shortDescription>
                 <description>
-                    <![CDATA[Hosszú Leírás]]>
+                    <![CDATA[Long description]]>
                 </description>
                 <parameters>
-                    <![CDATA[Szín: piros Méret: XL]]>
+                    <![CDATA[Color: piros Size: XL]]>
                 </parameters>
                 <packagingUnit/>
                 <measurementUnit>

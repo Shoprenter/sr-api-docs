@@ -1,29 +1,29 @@
-# Fizetési terv az ismétlődő díjfizetéshez
+# Payment plan for recurring payments
 
-Az Ismétlő díjfizetéshez elengedhetetlen, hogy fizetési tervekkel rendelkezzünk.
-A fizetési terveinket a https://billing.shoprenter.hu/plans oldalon tudjuk szerkeszteni.
-Bejelentkezés után listaszerűen láthatjuk a meglévő terveinket, illetve újakat adhatunk hozzá.
+It is essential to have payment plans for Recurring payments.
+We can edit our payment plans on https://billing.shoprenter.hu/plans.
+After logging in, you can see a list of our existing plans and add new ones.
 
-A fizetési terv árának és nevének megváltoztatása hatással van a már meglévő előfizetésekre is,
-ha a két adat valamelyike módosul, a meglévő előfizetések következő díjfizetési időszaka már az új adatok alapján történik.
+Changing the price and name of the payment plan also affects existing subscriptions,
+if one of the two data is changed, the next fee payment period for existing subscriptions is based on the new data.
 
-Fizetési terv lista oldal:
+Payment plans list page:
 
-![Kép 1](../image/plan1.jpg)
+![Image 1](../image/plan1.jpg)
 
 
-Fizetési terv létrehozása:
+Create a new payment plan:
 
-![Kép 2](../image/plan2.jpg)
+![Image 2](../image/plan2.jpg)
 
-|Mező               |        Leírás      |
-|---------------|--------------|
-| Fizetési terv név| Itt lehet meg adni a terv nevét. Pl.: "Az alkalmazásom Bronze csomagja"|
-| Fizetési ciklusok hossza | Itt adható meg, milyen időközönként vonódjon le az alkalmazás használatért kért összeg |
-| Fizetési ciklusok száma | Itt adható meg, hogy hány alkalommal terheljük a bolt tulajdonos kártyáját|
-| Fizetési terv nettó ára forintban | A nettó ár. Az ÁFA számítását lásd: [Számlakiállítás és ÁFA kalkuláció](../docs/price_calc.md) |
+| Input                             | Description                                                                                    |
+|-----------------------------------|------------------------------------------------------------------------------------------------|
+| Payment plan name | Here you can enter the name of the plan. Eg: "Bronze package of my application" |
+| Length of payment cycles | Here you can specify at what intervals the amount requested for using the application should be deducted |
+| Number of payment cycles | Here you can enter the number of times the shop owner's card will be debited |
+| Net price of payment plan in HUF | The net price. For VAT calculation, see: [Invoicing and VAT calculation](../docs/price_calc.md) |
 
-A lista oldalon, az **Azonosító** oszlopban lévő értékkel tudunk hivatkozni az egyes Fizetési tervekre,
-amikor Ismétlődő díjfizetést akarunk létrehozni az API-n keresztül.
+On the list page, we can refer to each Payment plan with the value in the **Identifier** column,
+when we want to create a Recurring fee payment through the API.
 
-[Példa az Ismétlődő díjfizetésnél](../docs/recurring_charge.md)
+[Example for recurring charge payment](../docs/recurring_charge.md)

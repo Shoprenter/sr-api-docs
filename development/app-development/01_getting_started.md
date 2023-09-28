@@ -1,78 +1,78 @@
-# Kezdeti lépések
+# Initial steps
 
-### Az Alkalmazás regisztrációjához szükséges adatok:
+### Data required to register the Application:
 
-A szükséges adatokat kérjük elküldeni a partnersupport@shoprenter.hu email címre.
+Please send the necessary data to the email address partnersupport@shoprenter.hu.
 
-**Az alkalmazás tulajának a következő adatokat kell biztosítania.**
-- **Alkalmazás neve:** ez fog megjelenni a telepíthető alkalmazások listájába.
-- **EntryPoint:** Az alkalmazás belépési pontja. Az alkalmazás fejlesztője adja. HTTPS-protokollon keresztül elérhetőnek kell lennie.
-- **RedirectUri:** Az alkalmazás authentikációs belépési pontja ezen az URL-en keresztül fogja az authentikációs adatokat igényelni az adott Shoprenter-es bolt API-jához. HTTPS protokollon keresztül elérhetőnek kell lennie. 
-  **Figyelem!** Ha pl. egy Single-Page Application (SPA) lesz a kliens, ahol URL resource azonosítóval van megadva egy-egy route (`https://example.com/shoprenter#redirect`), azt technikai okok miatt nem tudjuk elfogadni.
-- **UninstallUri:** Az alkalmazás törlése után egy GET kérés lesz elküldve erre az URL-re, hogy az alkalmazás még egy utolsó műveletet tudjon végrehajtani. 
-  (Megjegyzés: query string-ben hozzá lesznek fűzve a következő adatok: `shopname`, `code`, `timestamp`, `hmac`.)
-- **Alkalmazás logo:** az alkalmazás listában megjelenő logó kép (**250x150px**).
-- **Alkalmazás rövid leírása:** Maximum 70 karakteres rövid szöveg.
-- **Alkalmazás részletek link:** Az alkalmazás részleteire/sales oldalára mutató link.
-- **Alakalmazás típusa:** Az alkalmazásnak két formája van:
-  - Beágyazott: Az EntryPoint-nak megadott URL-t betöltjük egy Iframe-be, amit az alkalmazáshoz tartozó URL-en lehet elérni, a Shoprenter admin felületén (pl. `https://shopname.myshoprenter.hu/admin/app/1`).
-  - Átírányított: Átírányításnál a felhasználót szimplán átírányítjuk a megadott EntryPoint URL-re.
-- **A tesztbolt neve:** A fejlesztés legelején igényelni kell egy próbaboltot a [shoprenter.hu](https://www.shoprenter.hu/tesztigenyles/?devstore=1) oldalon. 
-  Itt megadható a boltnév, ami a bolt domain első részeben - `[boltNev].myshoprenter.hu` - lesz látható.
+**The application owner must provide the following information.**
+- **Application name:** this will appear in the list of installable applications.
+- **EntryPoint:** Application entry point. Provided by the app developer. It must be accessible via HTTPS protocol.
+- **RedirectUri:** The authentication entry point of the application will request the authentication data for the API of the Shoprenter store via this URL. It must be accessible via the HTTPS protocol.
+  **Attention!** If e.g. the client will be a Single-Page Application (SPA), where each route is specified with a URL resource identifier (`https://example.com/shoprenter#redirect`), we cannot accept it for technical reasons.
+- **UninstallUri:** After the application is uninstalled, a GET request will be sent to this URL so that the application can perform one last operation.
+  (Note: the following data will be added to the query string: `shopname`, `code`, `timestamp`, `hmac`.)
+- **Application logo:** the logo image appearing in the application list (**250x150px**).
+- **Short description of application:** Short text of maximum 70 characters.
+- **Application details link:** Link to the application details/sales page.
+- **Type of application:** The application has two forms:
+    - Embedded: The URL given to the EntryPoint is loaded into an Iframe, which can be accessed via the URL belonging to the application, on the Shoprenter admin interface (e.g. `https://shopname.myshoprenter.hu/admin/app/1 `).
+    - Redirected: When redirecting, the user is simply redirected to the specified EntryPoint URL.
+- **Name of the test store:** At the very beginning of the development, a test store must be requested on [shoprenter.hu](https://www.shoprenter.hu/testigenyles/?devstore=1).
+  Here you can enter the shop name, which will be visible in the first part of the shop domain - `[shopName].myshoprenter.hu`.
 
-**Az alkalmazás regisztrálása után, a következő adatokat küldi el a Partner Support:**
-- **AppId:** az alkalmazás azonosítója a Shoprenteren belül. 
-- **ClientId:** az alkalmazás azonosító.
-- **ClientSecret:** kulcs a kérések azonosításához.
-- **App URL:** az alkalmazás admin oldali Shoprenter-es URL-je. Pl.: `demo.myshoprenter.hu/admin/app/55`
+**After registering the application, Partner Support will send the following data:**
+- **AppId:** the identifier of the application within Shoprenter.
+- **ClientId:** is the application ID.
+- **ClientSecret:** key to identify requests.
+- **App URL:** the Shoprenter URL of the application on the admin side. E.g.: `demo.myshoprenter.hu/admin/app/55`
 
-### Alkalmazás telepítésének menete:
-1. A felhasználó az alkalmazás telepítésére kattint a Shoprenter admin felületén.
-2. A Shoprenter meghívja az alkalmazás fejlesztője által megadott RedirectUri-t (GET Request).
-    A hívás során átadott paraméterek:
-    - **shopname:** a bolt neve amiből a hívást indították
-    - **code:** generált hash
-    - **timestamp:** kérés ideje
-    - **hmac:** ellenőrző hash
-    - **app_url** Az az URL, amire vissza kell irányítani a felhasználót a RedirectUri alatt lévő script lefutása után
-3. Kiszolgáló félnek célszerű ellenőrizni, hogy a kérést valóban a Shoprenter küldte.
-   Annak ellenőrzése, hogy a kérést a Shoprenter küldte:
-   A query string HMAC nélküli részének (`code=0907a61c0c8d55e99db179b68161bc00&shopname=example&timestamp=1337178173`) a **ClientSecret**-el sha256 algoritmussal elkódolva egyenértékűnek kell lennie a query string HMAC paraméterének értékével.
-4. Ha a kiszolgáló fél rendben találta a kérést, küld egy POST Request-et a Shoprenter felé a `https://[shopname].myshoprenter.hu/admin/oauth/access_credential` URL-re. Ezzel a kéréssel tudja az alkalmazás kikérni az adott bolt API-jának használatához szükséges username/password párost.<br>
-  **A POST Request _multipart/form-data_ típusként kell elküldeni.**<br>
-   
-   A kérés payload-jának tartalmaznia kell az alábbi mezőket:
-    - **client_id:** Az alkalmazás ClientId-ja
-    - **client_secret:** Az alkalmazás ClientSecret értéke 
-    - **code:** a Request-ben kapott code
-    - **timestamp:** a Request-ben kapott timestamp
-    - **hmac:** a Request-ben kapott HMAC
+### Application installation process:
+1. The user clicks to install the application on the Shoprenter admin interface.
+2. Shoprenter calls the RedirectUri (GET Request) provided by the application developer.
+   Parameters passed during the call:
+    - **shopname:** the name of the shop from which the call was initiated
+    - **code:** generated hash
+    - **timestamp:** request time
+    - **hmac:** check hash
+    - **app_url** The URL to which the user must be redirected after running the script under RedirectUri
+3. It is advisable for the serving party to check that the request was indeed sent by Shoprenter.
+   To verify that the request was sent by Shoprenter:
+   The part of the query string without HMAC (`code=0907a61c0c8d55e99db179b68161bc00&shopname=example&timestamp=1337178173`) encoded with **ClientSecret** using the sha256 algorithm must be equivalent to the value of the HMAC parameter of the query string.
+4. If the server found the request OK, it sends a POST Request to Shoprenter to the URL `https://[shopname].myshoprenter.hu/admin/oauth/access_credential`. With this request, the application can retrieve the username/password pair required to use the API of the given store.<br>
+   **POST Request must be sent as _multipart/form-data_ type.**<br>
 
-A username/password páros egy JSON Response-al érkezik meg, pl.:<br><br>
+The payload of the request must contain the following fields:
+- **client_id:** The ClientId of the application
+- **client_secret:** The ClientSecret value of the application
+- **code:** code received in Request
+- **timestamp:** timestamp received in Request
+- **hmac:** HMAC received in Request
+
+The username/password pair arrives with a JSON Response, e.g.:<br><br>
 `{"username":"YLQVeH2sFFptfR88LjDXb4A","password":"AcmNWFmzSPaqfNXdnaeN6D5"}` <br><br>
-    
-  Amennyiben valamelyik adat hiányos vagy téves, úgy az API hibaüzenetet fog küldeni a megfelelő hibakóddal JSON formátumban.
-    
-  <br>**Hibák**:
-  - Ha elküldendő adatok közül valamelyik hiányzik, akkor `{"message":"Missing data in credential request","code":400}` választ fog adni.
-  - Ha elküldendő client_id és secret_id eltér, akkor `{"message":"App client and request client data mismatch","code":401}` választ fog adni.
-  - Ha a hitelesítési idő meghaladja a 30 másodpercet, akkor `{"message":"Authorization time expired","code":408}` választ fog adni.
-  - Ha a telepítés közben hiba merült fel, akkor  `{"message":"App is not installed","code":409}` választ fog adni.
-6. Amennyiben a Shoprenter megfelelőnek találja a POST Request-et egy `username`, `password` párossal fog válaszolni, amivel az alkalmazás hozzáfér az adott bolt API-jához. 
-   A 2. lépésben indított Shoprenteres kérésben lévő timestamp arra szolgál, hogy megvizsgáljuk, a kliens alkalmazás **30 másodpercen belül** megkezdi-e a API hozzáférés kérését!
-7. Ha az alkalmazás megkapta az authentikációs adatokat, a felhasználót át kell irányítani a query string-ben kapott **app_url**-re.
-8. A Shoprenter megnyitja az alkalmazáshoz tartozó EntryPoint-ot. A Request tartalmazni fogja a 2. pontban írt paramétereket.
-9. Feltelepítés után a Shoprenter csak az Entrypoint-ra küld kéréseket. Minden esetben a 2. pontban írt paraméterekkel.
 
-**Megjegyzés:** Van lehetőség egyedi query string paraméterekkel dekorálni az `app_url` értékét (az alkalmazás Shoprenteres URL-jét).
-  Ezek a paraméterek az EntryPoint URL-ben is meg fognak jelenni, az authentikációhoz használt paraméterek (`shopname`, `code`, `timestamp`, `hmac`) mellett.
+If any data is incomplete or incorrect, the API will send an error message with the corresponding error code in JSON format.
 
-  Példa:
-  Legyen az EntryPoint: `https://app.example.com/entryPoint`
-  Erre irányít át az alkalmazás: `https://[primaryDomain]/admin/app/[appId]?pelda=parameter`
-  Ez esetben az EntryPoint íly módon hívódik meg: `https://app.example.com/entryPoint?shopname=[shopname]&code=[code]&timestamp=[timestamp]&hmac=[hmac]&pelda=parameter`
+<br>**Errors**:
+- If any of the data to be sent is missing, `{"message":"Missing data in credential request","code":400}` will be returned.
+- If the client_id and secret_id to be sent differ, `{"message":"App client and request client data mismatch","code":401}` will be returned.
+- If the authorization time exceeds 30 seconds, it will return `{"message":"Authorization time expired","code":408}`.
+- If an error occurred during installation, `{"message":"App is not installed","code":409}` will be answered.
+6. If Shoprenter finds the POST Request appropriate, it will respond with a `username`, `password` pair, which allows the application to access the API of the given store.
+   The timestamp in the Shoprenteres request started in step 2 is used to check whether the client application starts requesting API access **within 30 seconds**!
+7. If the application has received the authentication data, the user must be redirected to the **app_url** received in the query string.
+8. Shoprenter opens the EntryPoint for the application. The Request will contain the parameters written in point 2.
+9. After installation, Shoprenter only sends requests to the Entrypoint. In all cases, with the parameters written in point 2.
 
-### Példa alkalmazások
+**Note:** It is possible to decorate the value of `app_url` (the Shoprenteres URL of the application) with unique query string parameters.
+These parameters will also appear in the EntryPoint URL, along with the parameters used for authentication (`shopname`, `code`, `timestamp`, `hmac`).
+
+Example:
+Let EntryPoint be `https://app.example.com/entryPoint`
+The application redirects to: `https://[primaryDomain]/admin/app/[appId]?pelda=parameter`
+In this case, EntryPoint is called like this: `https://app.example.com/entryPoint?shopname=[shopname]&code=[code]&timestamp=[timestamp]&hmac=[hmac]&pelda=parameter`
+
+### Example applications
 - [SR Demo app PHP](https://github.com/Shoprenter/sr-demo-app-php)
 - [SR Demo app PHP Slim](https://github.com/Shoprenter/sr-demo-app-php-slim)
 - [SR Demo app Node.js](https://github.com/Shoprenter/sr-demo-app-node)

@@ -1,6 +1,6 @@
 {
-    "name": "Név",
-    "description": "Leírás",
+    "name": "Name",
+    "description": "Description",
     "firstVariantSelectType": "SELECT",
     "secondVariantSelectType": "SELECT",
     "firstVariantParameter": {

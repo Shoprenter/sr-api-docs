@@ -11,9 +11,9 @@
     },
     "productDescriptions": [
         {
-            "name": "Termék Név",
-            "shortDescription": "Rövid Leírás",
-            "description": "Hosszú Leírás",
+            "name": "Product name",
+            "shortDescription": "Short description",
+            "description": "Long description",
             "language": {
                 "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }

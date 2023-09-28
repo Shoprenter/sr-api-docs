@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Attribútum azonosító. Az OuterID módosítására szolgál.",
-                "en": "Attribútum azonosító. Az OuterID módosítására szolgál."
+                "en": "Attribute identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "type",
             "description": {
-                "hu": "Típus. Lehetséges érték: LIST.",
-                "en": "Típus. Lehetséges érték: LIST."
+                "en": "Type. Possible value: LIST."
             },
             "required": true,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név (kisbetűs, és csak angol karakterek szerepelhetnek benne). ",
-                "en": "Név (kisbetűs, és csak angol karakterek szerepelhetnek benne). "
+                "en": "Name (lowercase, only english alphabet). "
             },
             "required": true,
             "readonly": true
@@ -30,8 +27,7 @@
         {
             "name": "priority",
             "description": {
-                "hu": "Prioritás. Lehetséges értékek: HIDDEN, NORMAL, IMPORTANT.",
-                "en": "Prioritás. Lehetséges értékek: HIDDEN, NORMAL, IMPORTANT."
+                "en": "Priority. Possible values: HIDDEN, NORMAL, IMPORTANT."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend.",
-                "en": "Sorrend."
+                "en": "Order."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "required",
             "description": {
-                "hu": "Kötelező-e kitölteni a mezőt.",
-                "en": "Kötelező-e kitölteni a mezőt."
+                "en": "Required?."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "presentation",
             "description": {
-                "hu": "A választható érték hogyan jelenjen meg. Lehetséges értékek: TEXT, ICON.",
-                "en": "A választható érték hogyan jelenjen meg. Lehetséges értékek: TEXT, ICON."
+                "en": "How should appear the filter. Possible values: TEXT, ICON."
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "defaultListAttributeValue",
             "description": {
-                "hu": "Alapértelmezett érték linkje.",
-                "en": "Alapértelmezett érték linkje."
+                "en": "Default value link."
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "listAttributeWidget",
             "description": {
-                "hu": "Attribútum widget linkje.",
-                "en": "Attribútum widget linkje."
+                "en": "Attribute widget link."
             },
             "required": false,
             "readonly": true
@@ -84,8 +75,7 @@
         {
             "name": "attributeDescriptions",
             "description": {
-                "hu": "Az attribútumhoz tartozó leírások.",
-                "en": "Az attribútumhoz tartozó leírások."
+                "en": "Attribute descriptions."
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "listAttributeValues",
             "description": {
-                "hu": "Az attribútumhoz tartozó értékek.",
-                "en": "Az attribútumhoz tartozó értékek."
+                "en": "Attribute values."
             },
             "required": false,
             "readonly": false
@@ -104,12 +93,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/listAttributes\/attribútum id",
-                "en": "\/listAttributes\/attribútum id"
+                "en": "\/listAttributes\/attribute id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -120,40 +107,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/listAttributes",
                 "en": "\/listAttributes"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "name",
                     "description": {
-                        "hu": "Kereső paraméter. Az attribútum neve.",
-                        "en": "Kereső paraméter. Az attribútum neve."
+                        "en": "Search parameter. Az attribute name."
                     }
                 }
             ],
@@ -165,49 +146,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/listAttributes[\/attribútum id]",
-                "en": "\/listAttributes[\/attribútum id]"
+                "en": "\/listAttributes[\/attribute id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/listAttributes",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/listAttributes\/attribútum id",
-                "en": "\/listAttributes\/attribútum id"
+                "en": "\/listAttributes\/attribute id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/listAttributes\/attribútum id",
-                "en": "\/listAttributes\/attribútum id"
+                "en": "\/listAttributes\/attribute id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

@@ -1,173 +1,173 @@
 # Order.js
 
-Sikeres rendelés oldalon el lehet helyezni olyan scripteket, amelyek képesek az adott rendelés adatait elérni. 
+On the successful order page, you can place scripts that can access the data of the given order. 
 
-A ShopRenter javascript objektum **lastOrder** property-je tartalmazza a rendeléshez tartozó adatokat, úgy mint az általános adatok (szállítási és fizetési mód, valuta stb.), illetve a megrendelt termékek adatait.
+The **lastOrder** property of the ShopRenter javascript object contains the data related to the order, such as the general data (delivery and payment method, currency, etc.) and the data of the ordered products.
 
-Az objektum szenzitív adatokat nem tartalmaz, amely alapján azonosítható lenne a Vevő.
+The object does not contain sensitive data on the basis of which the Buyer could be identified.
 
-Példa:
+Example:
 ```javascript
 console.log(ShopRenter.lastOrder);
 ```
 
-### Egyes mezők jelentése:
+### Meaning of some fields:
 
 <table> 
     <tr>
         <th>property</th>
-        <th>jelentés</th>
+        <th>meaning</th>
     </tr>
     <tr>
         <td>id</td>
-        <td>a rendelés azonosítója</td>
+        <td>order id</td>
     </tr>
     <tr>
         <td>customerGroup</td>
-        <td>a vevő csoport azonosítója</td>
+        <td>customer group</td>
     </tr>  
     <tr>
         <td>total</td>
-        <td>Rendelés utáni teljes fizetendő összeg</td>
+        <td>Total amount payable after ordering</td>
     </tr> 
     <tr>
         <td>orderStatusId</td>
-        <td>A rendelés utáni állapot azonosítója</td>
+        <td>Identifier of the post-order status</td>
     </tr>
     <tr>
         <td>currency</td>
-        <td>A valuta, amellyel végbement a rendelés</td>
+        <td>The currency in which the order was placed</td>
     </tr>
     <tr>
         <td>dateAdded</td>
-        <td>A rendelés létrejöttének a dátuma</td>
+        <td>The date the order was created</td>
     </tr>
     <tr>
         <td>shipping.methodName</td>
-        <td>A szállítási mód a rendelés nyelvén megjelenített neve</td>
+        <td>The delivery method is the name displayed in the language of the order</td>
     </tr>
     <tr>
         <td>shipping.methodCode</td>
-        <td>A szállítási mód szöveges azonosítója</td>
+        <td>Text identifier of the shipping method</td>
     </tr>
     <tr>
         <td>shipping.country</td>
-        <td>Ország neve, a rendelés nyelvén</td>
+        <td>Country name, in the language of the order</td>
     </tr>
     <tr>
         <td>shipping.countryId</td>
-        <td>Az ország azonosítója</td>
+        <td>The country identifier</td>
     </tr>
     <tr>
         <td>shipping.vatRate</td>
-        <td>A szállítási módhoz tartozó áfa mértéke</td>
+        <td>VAT amount for the delivery method</td>
     </tr>
     <tr>
         <td>shipping.expectedDelivery</td>
-        <td>Várható szállítási idő timestamp-ben</td>
+        <td>Expected delivery time in timestamp</td>
     </tr>
     <tr>
         <td>payment.methodName</td>
-        <td>A fizetési mód a rendelés nyelvén megjelenített neve</td>
+        <td>The name of the payment method displayed in the language of the order</td>
     </tr>
     <tr>
         <td>payment.methodCode</td>
-        <td>A fizetési mód szöveges azonosítója</td>
+        <td>The text identifier of the payment method</td>
     </tr>
     <tr>
         <td>payment.vatRate</td>
-        <td>A fizetési módhoz tartozó áfa mértéke</td>
+        <td>VAT rate for the payment method</td>
     </tr>
     <tr>
         <td>coupon.id</td>
-        <td>A coupon azonosítója</td>
+        <td>Identifier of the coupon</td>
     </tr>
     <tr>
         <td>coupon.vatRate</td>
-        <td>A kuponhoz tartozó áfa mértéke.</td>
+        <td>The rate of VAT for the coupon.</td>
     </tr>
     <tr>
         <td>products</td>
-        <td>Tartalmazza a rendelésben szereplő termékeket</td>
+        <td>Includes the products in the order</td>
     </tr>
     <tr>
         <td>products.id</td>
-        <td>A termék azonosítója</td>
+        <td>Identifier of the product</td>
     </tr>
     <tr>
         <td>products.title</td>
-        <td>A termék neve</td>
+        <td>Product name</td>
     </tr>
     <tr>
         <td>products.unitPrice</td>
-        <td>A termék egységára</td>
+        <td>Unit price of the product</td>
     </tr>
     <tr>
         <td>products.totalPrice</td>
-        <td>A termék teljes ára (mennyiség * egységár)</td>
+        <td>Total price of the product (quantity * unit price)</td>
     </tr>
     <tr>
         <td>products.vatRate</td>
-        <td>A termékhez tartozó áfa mértéke</td>
+        <td>The rate of VAT for the product</td>
     </tr>
     <tr>
         <td>products.quantity</td>
-        <td>Mennyiség</td>
+        <td>Quantity</td>
     </tr>
     <tr>
         <td>products.sku</td>
-        <td>A termék cikkszáma</td>
+        <td>Article number of the product</td>
     </tr>
     <tr>
         <td>products.giftWrapping</td>
-        <td>Az egyes termékekre, a Vevő által kért ajándékcsomagolás adatai. Ha az adott termékre nem kér csomagolást, úgy üres tömb lesz ezen a property-n</td>
+        <td>Data on the gift packaging requested by the Customer for each product. If you do not request packaging for the given product, there will be an empty array on this property</td>
     </tr>
     <tr>
         <td>products.giftWrapping.id</td>
-        <td>A csomagolás belső azonosítója</td>
+        <td>The internal identifier of the package</td>
     </tr>
     <tr>
         <td>products.giftWrapping.sku</td>
-        <td>A csomagolás cikkszáma</td>
+        <td>Article number of the packaging</td>
     </tr>
     <tr>
         <td>products.giftWrapping.price</td>
-        <td>A csomagolás nettó ára</td>
+        <td>Net price of packaging</td>
     </tr>
     <tr>
         <td>products.giftWrapping.vat</td>
-        <td>A csomagolás ÁFÁ-ja</td>
+        <td>VAT of packaging</td>
     </tr>
     <tr>
         <td>products.giftWrapping.name</td>
-        <td>A csomagolás neve</td>
+        <td>Name of the package</td>
     </tr>
     <tr>
         <td>products.giftWrapping.quantityName</td>
-        <td>A csomagolás mértékegységének a neve, pl.: doboz</td>
+        <td>The name of the packaging unit, e.g. box</td>
     </tr>
     <tr>
         <td>giftWrapping</td>
-        <td>A kosár ajándék csomagolása. Ugyan olyan a felépítése, mint amikor egyesével csomagolnánk be a termékeket. Ha a teljes kosárra nem kér a Vevő csomaglást, úgy üres tömb lesz ezen a property-n</td>
+        <td>The basket's gift wrapping. Although its structure is the same as when we pack the products individually. If the Buyer does not request packaging for the entire basket, there will be an empty block on this property</td>
     </tr>
     <tr>
         <td>loyaltyPoints</td>
-        <td>A rendelésben felhasznált hűségpont adatai. Ha nincs engedélyve a hűségpont rendszer, vagy az adott rendeléshez nem használtak hűségpontot, úgy üres tömb van ezen property-n</td>
+        <td>Data of the loyalty point used in the order. If the loyalty point system is not enabled, or no loyalty points were used for the given order, there is an empty array on this property</td>
     </tr>
     <tr>
         <td>loyaltyPoints.usedPoints</td>
-        <td>A rendelésben felhasznált pontok darabszáma</td>
+        <td>The number of points used in the order</td>
     </tr>
     <tr>
         <td>loyaltyPoints.valueOfOnePoint</td>
-        <td>Egy pont értéke HUF-ban</td>
+        <td>Value of one point in HUF</td>
     </tr>
     <tr>
         <td>loyaltyPoints.vatRate</td>
-        <td>ÁFA értéke. Csak a számlázó programba való átadást érinti, a hűségpont értékét nem módosítja.</td>
+        <td>VAT value. It only affects the transfer to the invoicing program, it does not change the value of the loyalty point.</td>
     </tr>
     <tr>
         <td>loyaltyPoints.totalValue</td>
-        <td>A teljes összeg, amit a Vevő hűségponttal fedezett a rendelés során. Ez a rendelésnek megfelelő valutába átváltva jelenik meg. (<strong>currency</strong> property)</td>
+        <td>The total amount covered by the Customer with loyalty points during the order. This is displayed converted to the currency corresponding to the order. (<strong>currency</strong> property)</td>
     </tr>
 </table>

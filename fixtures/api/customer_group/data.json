@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Vásárlói csoport azonosító. Az OuterID módosítására szolgál.",
-                "en": "Vásárlói csoport azonosító. Az OuterID módosítására szolgál."
+                "en": "Customer group identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Vásárlói csoport belső azonosító.",
-                "en": "Vásárlói csoport belső azonosító."
+                "en": "Customer group internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "name",
             "description": {
-                "hu": "Név.",
-                "en": "Név."
+                "en": "Name."
             },
             "required": true,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "percentDiscount",
             "description": {
-                "hu": "Százalékos kedvezmény.",
-                "en": "Százalékos kedvezmény."
+                "en": "Discount based on percent."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "percentDiscountSpecialPrices",
             "description": {
-                "hu": "A kedvezmény az akciós árakra is vonatkozik?",
-                "en": "A kedvezmény az akciós árakra is vonatkozik?"
+                "en": "Should use the discount for discounted prices?"
             },
             "required": false,
             "readonly": false
@@ -50,12 +45,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/customerGroups\/vásárlói csoport id",
-                "en": "\/customerGroups\/vásárlói csoport id"
+                "en": "\/customerGroups\/customer group id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -66,40 +59,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/customerGroups",
                 "en": "\/customerGroups"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "name",
                     "description": {
-                        "hu": "Kereső paraméter (Vásárlói csoport neve).",
-                        "en": "Kereső paraméter (Vásárlói csoport neve)."
+                        "en": "Search parameter (Customer group name)."
                     }
                 }
             ],
@@ -111,49 +98,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/customerGroups[\/vásárlói csoport id]",
-                "en": "\/customerGroups[\/vásárlói csoport id]"
+                "en": "\/customerGroups[\/customer group id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/customerGroups",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/customerGroups\/vásárlói csoport id",
-                "en": "\/customerGroups\/vásárlói csoport id"
+                "en": "\/customerGroups\/customer group id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/customerGroups\/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/customerGroups\/vásárlói csoport id",
-                "en": "\/customerGroups\/vásárlói csoport id"
+                "en": "\/customerGroups\/customer group id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/customerGroups\/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD02",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

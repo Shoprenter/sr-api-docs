@@ -1,13 +1,13 @@
 # Product Category Relation Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'product_category_relation'" :lang="'hu'"/>
+<ResourceProperties :resource="'product_category_relation'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,9 +87,9 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'product_category_relation'" :endpoint="'delete'" :lang="'en'"/>
 
-## Példák
+## Examples
 
-- [**Termék hozzáadása kategóriához**](../development/api-examples/04_attach_product_to_category.md)
-- [**Termék hozzáadása kategóriához batchelve OuterID-val**](../development/api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)
+- [**Attach product to category**](../development/api-examples/04_attach_product_to_category.md)
+- [**Attach Product to category with batch using OuterId**](../development/api/04_batch.md#termek-hozzaadasa-kategoriahoz-outer-id-segitsegevel)

@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Rendelés azonosító. Az OuterID módosítására szolgál.",
-                "en": "Rendelés azonosító. Az OuterID módosítására szolgál."
+                "en": "Order identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Rendelés belső azonosító.",
-                "en": "Rendelés belső azonosító."
+                "en": "Order internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "invoiceId",
             "description": {
-                "hu": "Szállítólevél azonosító.",
-                "en": "Szállítólevél azonosító."
+                "en": "Invoice identifier."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "invoicePrefix",
             "description": {
-                "hu": "Szállítólevél azonosító előtag.",
-                "en": "Szállítólevél azonosító előtag."
+                "en": "Invoice prefix."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "firstname",
             "description": {
-                "hu": "Vezetéknév.",
-                "en": "Vezetéknév."
+                "en": "Lastname."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "lastname",
             "description": {
-                "hu": "Keresztnév.",
-                "en": "Keresztnév."
+                "en": "Firstname."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "phone",
             "description": {
-                "hu": "Telefonszám.",
-                "en": "Telefonszám."
+                "en": "Telephone."
             },
             "required": false,
             "readonly": false
@@ -66,7 +59,6 @@
         {
             "name": "fax",
             "description": {
-                "hu": "Fax.",
                 "en": "Fax."
             },
             "required": false,
@@ -75,8 +67,7 @@
         {
             "name": "email",
             "description": {
-                "hu": "Email cím.",
-                "en": "Email cím."
+                "en": "Email Address."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "shippingFirstname",
             "description": {
-                "hu": "Szállítási cím vezetékneve.",
-                "en": "Szállítási cím vezetékneve."
+                "en": "Shipping Address lastname."
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "shippingLastname",
             "description": {
-                "hu": "Szállítási cím keresztneve.",
-                "en": "Szállítási cím keresztneve."
+                "en": "Shipping Address firstname."
             },
             "required": false,
             "readonly": false
@@ -102,8 +91,7 @@
         {
             "name": "shippingCompany",
             "description": {
-                "hu": "Szállítási cím cégneve.",
-                "en": "Szállítási cím cégneve."
+                "en": "Shipping Address company."
             },
             "required": false,
             "readonly": false
@@ -111,8 +99,7 @@
         {
             "name": "shippingAddress1",
             "description": {
-                "hu": "Szállítási cím utcája, házszáma.",
-                "en": "Szállítási cím utcája, házszáma."
+                "en": "Shipping Address address (street, house number)."
             },
             "required": false,
             "readonly": false
@@ -120,8 +107,7 @@
         {
             "name": "shippingAddress2",
             "description": {
-                "hu": "Szállítási cím kiegészítő adatai.",
-                "en": "Szállítási cím kiegészítő adatai."
+                "en": "Shipping Address additional data."
             },
             "required": false,
             "readonly": false
@@ -129,8 +115,7 @@
         {
             "name": "shippingCity",
             "description": {
-                "hu": "Szállítási cím városa.",
-                "en": "Szállítási cím városa."
+                "en": "Shipping Address city."
             },
             "required": false,
             "readonly": false
@@ -138,8 +123,7 @@
         {
             "name": "shippingPostcode",
             "description": {
-                "hu": "Szállítási cím irányítószáma.",
-                "en": "Szállítási cím irányítószáma."
+                "en": "Shipping Address postcode."
             },
             "required": false,
             "readonly": false
@@ -147,8 +131,7 @@
         {
             "name": "shippingCountryName",
             "description": {
-                "hu": "Szállítási cím országának neve.",
-                "en": "Szállítási cím országának neve."
+                "en": "Shipping Address country."
             },
             "required": false,
             "readonly": false
@@ -156,8 +139,7 @@
         {
             "name": "shippingZoneName",
             "description": {
-                "hu": "Szállítási cím megyéjének neve.",
-                "en": "Szállítási cím megyéjének neve."
+                "en": "Shipping Address zone."
             },
             "required": false,
             "readonly": false
@@ -165,8 +147,7 @@
         {
             "name": "shippingAddressFormat",
             "description": {
-                "hu": "Szállítási cím megjelenítésének formátuma.",
-                "en": "Szállítási cím megjelenítésének formátuma."
+                "en": "Shipping Address display format."
             },
             "required": false,
             "readonly": false
@@ -174,8 +155,7 @@
         {
             "name": "shippingMethodName",
             "description": {
-                "hu": "Szállítási mód neve. Csomagpontos szállítási mód esetén tartalmazhatja a csomagpont elérhetőségét is!",
-                "en": "Szállítási mód neve. Csomagpontos szállítási mód esetén tartalmazhatja a csomagpont elérhetőségét is!"
+                "en": "Shipping method name. In the case of a package delivery method, it can also include the availability of the package point!"
             },
             "required": false,
             "readonly": false
@@ -183,8 +163,7 @@
         {
             "name": "shippingMethodLocalizedName",
             "description": {
-                "hu": "Szállítási mód neve. 'shippingMethodName' -el szemben nem tartalmazza adott esetben a csomagpont címét. Ha időközben a szállítás mód neve megváltozik, ez a tulajdonság követni fogja a változást.",
-                "en": "Szállítási mód neve. 'shippingMethodName' -el szemben nem tartalmazza adott esetben a csomagpont címét. Ha időközben a szállítás mód neve megváltozik, ez a tulajdonság követni fogja a változást."
+                "en": "Shipping method name. In contrast to 'shippingMethodName', it does not include the address of the package point. If the shipping method name changes in the meantime, this property will follow the change."
             },
             "required": false,
             "readonly": true
@@ -192,8 +171,7 @@
         {
             "name": "shippingMethodTaxRate",
             "description": {
-                "hu": "Szállítás mód áfakulcsa.",
-                "en": "Szállítás mód áfakulcsa."
+                "en": "Shipping method tax rate."
             },
             "required": false,
             "readonly": false
@@ -201,8 +179,7 @@
         {
             "name": "shippingMethodTaxName",
             "description": {
-                "hu": "Szállítás mód áfakulcsának neve.",
-                "en": "Szállítás mód áfakulcsának neve."
+                "en": "Shipping method tax rate name."
             },
             "required": false,
             "readonly": false
@@ -210,8 +187,7 @@
         {
             "name": "shippingMethodExtension",
             "description": {
-                "hu": "Szállítás mód típusa. Lehetséges értékeit lásd lentebb.",
-                "en": "Szállítás mód típusa. Lehetséges értékeit lásd lentebb."
+                "en": "Shipping method type. See below for possible values."
             },
             "required": false,
             "readonly": false
@@ -219,8 +195,7 @@
         {
             "name": "shippingReceivingPointId",
             "description": {
-                "hu": "Átvevőpont azonosítója.",
-                "en": "Átvevőpont azonosítója."
+                "en": "Receiver point identifier."
             },
             "required": false,
             "readonly": false
@@ -228,8 +203,7 @@
         {
             "name": "paymentFirstname",
             "description": {
-                "hu": "Számlázási cím vezetéknév.",
-                "en": "Számlázási cím vezetéknév."
+                "en": "Billing Address Lastname."
             },
             "required": false,
             "readonly": false
@@ -237,8 +211,7 @@
         {
             "name": "paymentLastname",
             "description": {
-                "hu": "Számlázási cím keresztnév.",
-                "en": "Számlázási cím keresztnév."
+                "en": "Billing Address lastname."
             },
             "required": false,
             "readonly": false
@@ -246,8 +219,7 @@
         {
             "name": "paymentCompany",
             "description": {
-                "hu": "Számlázási cím cégneve.",
-                "en": "Számlázási cím cégneve."
+                "en": "Billing Address company."
             },
             "required": false,
             "readonly": false
@@ -255,8 +227,7 @@
         {
             "name": "paymentAddress1",
             "description": {
-                "hu": "Számlázási cím utcája, házszáma.",
-                "en": "Számlázási cím utcája, házszáma."
+                "en": "Billing Address address (street, house number)."
             },
             "required": false,
             "readonly": false
@@ -264,8 +235,7 @@
         {
             "name": "paymentAddress2",
             "description": {
-                "hu": "Számlázási cím kiegészítő adatai.",
-                "en": "Számlázási cím kiegészítő adatai."
+                "en": "Billing Address additional data."
             },
             "required": false,
             "readonly": false
@@ -273,8 +243,7 @@
         {
             "name": "paymentCity",
             "description": {
-                "hu": "Számlázási cím városa.",
-                "en": "Számlázási cím városa."
+                "en": "Billing Address city."
             },
             "required": false,
             "readonly": false
@@ -282,8 +251,7 @@
         {
             "name": "paymentPostcode",
             "description": {
-                "hu": "Számlázási cím irányítószáma.",
-                "en": "Számlázási cím irányítószáma."
+                "en": "Billing Address postcode."
             },
             "required": false,
             "readonly": false
@@ -291,8 +259,7 @@
         {
             "name": "paymentCountryName",
             "description": {
-                "hu": "Számlázási cím országának neve.",
-                "en": "Számlázási cím országának neve."
+                "en": "Billing Address country name."
             },
             "required": false,
             "readonly": false
@@ -300,8 +267,7 @@
         {
             "name": "paymentZoneName",
             "description": {
-                "hu": "Számlázási cím megyéjének neve.",
-                "en": "Számlázási cím megyéjének neve."
+                "en": "Billing Address zone name."
             },
             "required": false,
             "readonly": false
@@ -309,8 +275,7 @@
         {
             "name": "paymentAddressFormat",
             "description": {
-                "hu": "Számlázási cím megjelenítésének formátuma.",
-                "en": "Számlázási cím megjelenítésének formátuma."
+                "en": "Billing Address display format."
             },
             "required": false,
             "readonly": false
@@ -318,8 +283,7 @@
         {
             "name": "paymentMethodName",
             "description": {
-                "hu": "Fizetési mód neve.",
-                "en": "Fizetési mód neve."
+                "en": "Payment method name."
             },
             "required": false,
             "readonly": false
@@ -327,8 +291,7 @@
         {
             "name": "paymentMethodCode",
             "description": {
-                "hu": "Fizetési mód típusa. Lehetséges értékeit lásd lentebb.",
-                "en": "Fizetési mód típusa. Lehetséges értékeit lásd lentebb."
+                "en": "Payment method type. See below for possible values."
             },
             "required": false,
             "readonly": false
@@ -336,8 +299,7 @@
         {
             "name": "paymentMethodTaxRate",
             "description": {
-                "hu": "Fizetési mód áfakulcsa.",
-                "en": "Fizetési mód áfakulcsa."
+                "en": "Payment method tax rate."
             },
             "required": false,
             "readonly": false
@@ -345,8 +307,7 @@
         {
             "name": "paymentMethodTaxName",
             "description": {
-                "hu": "Fizetési mód áfakulcsának neve.",
-                "en": "Fizetési mód áfakulcsának neve."
+                "en": "Payment method tax rate name."
             },
             "required": false,
             "readonly": false
@@ -354,8 +315,7 @@
         {
             "name": "paymentMethodAfter",
             "description": {
-                "hu": "Utólag kell fizetni vagy előre.",
-                "en": "Utólag kell fizetni vagy előre."
+                "en": "You have to pay later or in advance."
             },
             "required": false,
             "readonly": false
@@ -363,8 +323,7 @@
         {
             "name": "taxNumber",
             "description": {
-                "hu": "Adószám",
-                "en": "Adószám"
+                "en": "Taxnumber."
             },
             "required": false,
             "readonly": false
@@ -372,8 +331,7 @@
         {
             "name": "comment",
             "description": {
-                "hu": "Megjegyzés.",
-                "en": "Megjegyzés."
+                "en": "Comment."
             },
             "required": false,
             "readonly": false
@@ -381,8 +339,7 @@
         {
             "name": "total",
             "description": {
-                "hu": "Rendelés eredeti bruttó összege.",
-                "en": "Rendelés eredeti bruttó összege."
+                "en": "Order gross price."
             },
             "required": false,
             "readonly": false
@@ -390,8 +347,7 @@
         {
             "name": "value",
             "description": {
-                "hu": "Rendelés árszorzója. Pénznemek között váltást szolgálja.",
-                "en": "Rendelés árszorzója. Pénznemek között váltást szolgálja."
+                "en": "Order price multiplier. It is used to switch between currencies."
             },
             "required": false,
             "readonly": false
@@ -399,8 +355,7 @@
         {
             "name": "couponTaxRate",
             "description": {
-                "hu": "Kupon áfakulcsa. (-1)",
-                "en": "Kupon áfakulcsa. (-1)"
+                "en": "Coupon tax rate."
             },
             "required": false,
             "readonly": false
@@ -408,8 +363,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -417,8 +371,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": true
@@ -426,8 +379,7 @@
         {
             "name": "ip",
             "description": {
-                "hu": "Az IP cím, amelyről a rendelés érkezett.",
-                "en": "Az IP cím, amelyről a rendelés érkezett."
+                "en": "Az IP Address, \nfrom which the order was received."
             },
             "required": false,
             "readonly": false
@@ -435,8 +387,7 @@
         {
             "name": "pickPackPontShopCode",
             "description": {
-                "hu": "A PickPackPont-os átvételi pont azonosítója.",
-                "en": "A PickPackPont-os átvételi pont azonosítója."
+                "en": "PickPackPont pick-up point identifier."
             },
             "required": false,
             "readonly": false
@@ -444,8 +395,7 @@
         {
             "name": "customer",
             "description": {
-                "hu": "Vásárló linkje.",
-                "en": "Vásárló linkje."
+                "en": "Customer link."
             },
             "required": false,
             "readonly": false
@@ -453,8 +403,7 @@
         {
             "name": "customerGroup",
             "description": {
-                "hu": "Vásárlói csoport linkje.",
-                "en": "Vásárlói csoport linkje."
+                "en": "Customer group link."
             },
             "required": false,
             "readonly": false
@@ -462,8 +411,7 @@
         {
             "name": "shippingCountry",
             "description": {
-                "hu": "Szállítási cím országának linkje.",
-                "en": "Szállítási cím országának linkje."
+                "en": "Shipping Address country link."
             },
             "required": false,
             "readonly": false
@@ -471,8 +419,7 @@
         {
             "name": "shippingZone",
             "description": {
-                "hu": "Szállítási cím megyéjének linkje.",
-                "en": "Szállítási cím megyéjének linkje."
+                "en": "Shipping Address zone link."
             },
             "required": false,
             "readonly": false
@@ -480,8 +427,7 @@
         {
             "name": "paymentCountry",
             "description": {
-                "hu": "Számlázási cím országának linkje.",
-                "en": "Számlázási cím országának linkje."
+                "en": "Billing Address country link."
             },
             "required": false,
             "readonly": false
@@ -489,8 +435,7 @@
         {
             "name": "paymentZone",
             "description": {
-                "hu": "Számlázási cím megyéjének linkje.",
-                "en": "Számlázási cím megyéjének linkje."
+                "en": "Billing Address zone link."
             },
             "required": false,
             "readonly": false
@@ -498,8 +443,7 @@
         {
             "name": "orderStatus",
             "description": {
-                "hu": "Rendelés státusz linkje. Ha nincs státusz, akkor az nem befejezett rendelés.",
-                "en": "Rendelés státusz linkje. Ha nincs státusz, akkor az nem befejezett rendelés."
+                "en": "Order status link. If there is no status, the order is not completed."
             },
             "required": false,
             "readonly": false
@@ -507,8 +451,7 @@
         {
             "name": "language",
             "description": {
-                "hu": "Nyelv linkje.",
-                "en": "Nyelv linkje."
+                "en": "Language link."
             },
             "required": false,
             "readonly": false
@@ -516,8 +459,7 @@
         {
             "name": "currency",
             "description": {
-                "hu": "Pénznem linkje.",
-                "en": "Pénznem linkje."
+                "en": "Currency link."
             },
             "required": false,
             "readonly": false
@@ -525,8 +467,7 @@
         {
             "name": "shippingMode *",
             "description": {
-                "hu": "Objektum formában megadott, a rendeléshez tartozó szállítási mód adatai.",
-                "en": "Objektum formában megadott, a rendeléshez tartozó szállítási mód adatai."
+                "en": "Data of the shipping method for the order specified in object form."
             },
             "required": false,
             "readonly": false
@@ -534,8 +475,7 @@
         {
             "name": "orderTotals",
             "description": {
-                "hu": "Kosárérték módosító tételek linkjei.",
-                "en": "Kosárérték módosító tételek linkjei."
+                "en": "Links to basket value modifying items."
             },
             "required": false,
             "readonly": false
@@ -543,8 +483,7 @@
         {
             "name": "orderProducts",
             "description": {
-                "hu": "Rendelt termékek linkjei.",
-                "en": "Rendelt termékek linkjei."
+                "en": "Order products links."
             },
             "required": false,
             "readonly": false
@@ -563,12 +502,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/orders\/rendelés id",
-                "en": "\/orders\/rendelés id"
+                "en": "\/orders\/order id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -579,145 +516,124 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/orders",
                 "en": "\/orders"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Rendelés belső azonosító.",
-                        "en": "Kereső paraméter. Rendelés belső azonosító."
+                        "en": "Search parameter. Order internal identifier."
                     }
                 },
                 {
                     "name": "innerIdMin",
                     "description": {
-                        "hu": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza.",
-                        "en": "Kereső paraméter. A rendelés belső azonosítójára lehet szűrni. A megadott azonosítótól nagyobb vagy azonos azonosítóval rendelkező rendeléseket adja vissza."
+                        "en": "Search parameter. You can filter on the internal identifier of the order. Returns orders with an ID greater than or equal to the specified ID."
                     }
                 },
                 {
                     "name": "orderStatusId",
                     "description": {
-                        "hu": "Kereső paraméter. Rendelés állapot azonosító.",
-                        "en": "Kereső paraméter. Rendelés állapot azonosító."
+                        "en": "Search parameter. Order status identifier."
                     }
                 },
                 {
                     "name": " ",
                     "description": {
-                        "hu": "Példa használat:",
-                        "en": "Példa használat:"
+                        "en": "Example:"
                     }
                 },
                 {
                     "name": " ",
                     "description": {
-                        "hu": "http:\/\/shopname.api.myshoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=",
                         "en": "http:\/\/shopname.api.myshoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
                     }
                 },
                 {
                     "name": " ",
                     "description": {
-                        "hu": "Tehát az adott rendelés státus resource azonosítóját szükséges megadni.",
-                        "en": "Tehát az adott rendelés státus resource azonosítóját szükséges megadni."
+                        "en": "Therefore, it is necessary to enter the resource identifier of the given order status."
                     }
                 },
                 {
                     "name": "email",
                     "description": {
-                        "hu": "Kereső paraméter. Csak a paraméterben megadott email címmel leadott rendeléseket fogja listázni.",
-                        "en": "Kereső paraméter. Csak a paraméterben megadott email címmel leadott rendeléseket fogja listázni."
+                        "en": "Search parameter. It will only list orders placed with the email address specified in the parameter."
                     }
                 },
                 {
                     "name": "excludeAbandonedCart",
                     "description": {
-                        "hu": "Kereső paraméter. Az excludeAbandonedCart=1 parametert használva nem fognak megjelenni a 0-ás orderStatusId-val rendelkező elhagyott kosarak.",
-                        "en": "Kereső paraméter. Az excludeAbandonedCart=1 parametert használva nem fognak megjelenni a 0-ás orderStatusId-val rendelkező elhagyott kosarak."
+                        "en": "Search parameter. Using the excludeAbandonedCart=1 parameter, abandoned carts with an orderStatusId of 0 will not be displayed."
                     }
                 },
                 {
                     "name": "excludeStorno",
                     "description": {
-                        "hu": "Kereső paraméter. Az excludeStorno=1 paramétert használva nem fognak megjeleni a törölt rendelések.",
-                        "en": "Kereső paraméter. Az excludeStorno=1 paramétert használva nem fognak megjeleni a törölt rendelések."
+                        "en": "Search parameter. Using the excludeStorno=1 parameter, storno (deleted) orders will not be displayed."
                     }
                 },
                 {
                     "name": "createdAtMin",
                     "description": {
-                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the creation date. Returns orders modified after the specified date. Format: 2013-01-01T10:30:00."
                     }
                 },
                 {
                     "name": "createdAtMax",
                     "description": {
-                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the creation date. Returns orders modified before the specified date. Format: 2013-01-01T10:30:00."
                     }
                 },
                 {
                     "name": "updatedAtMin",
                     "description": {
-                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the modification date. Returns orders modified after the specified date. Format: 2013-01-01T10:30:00."
                     }
                 },
                 {
                     "name": "updatedAtMax",
                     "description": {
-                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum előtt módosított rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum előtt módosított rendeléseket adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the modification date. Returns orders modified before the specified date. Format: 2013-01-01T10:30:00."
                     }
                 },
                 {
                     "name": "createdAt",
                     "description": {
-                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum napján létrehozott rendeléseket adja vissza. Formátum: 2013-01-01.",
-                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum napján létrehozott rendeléseket adja vissza. Formátum: 2013-01-01."
+                        "en": "Search parameter. It can be used for search the creation date. Returns orders created on the specified date. Format: 2013-01-01."
                     }
                 },
                 {
                     "name": "updatedAt",
                     "description": {
-                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított rendeléseket adja vissza. Formátum: 2013-01-01.",
-                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum napján módosított rendeléseket adja vissza. Formátum: 2013-01-01."
+                        "en": "Search parameter. It can be used for search the modification date. Returns orders modified on the specified date. Format: 2013-01-01."
                     }
                 },
                 {
                     "name": "shippingModeInnerId",
                     "description": {
-                        "hu": "Kereső paraméter. Szállítási mód belső azonosító.",
-                        "en": "Kereső paraméter. Szállítási mód belső azonosító."
+                        "en": "Search parameter. Shipping method internal identifier."
                     }
                 },
                 {
@@ -736,33 +652,29 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/orders[\/rendelés id]",
-                "en": "\/orders[\/rendelés id]"
+                "en": "\/orders[\/order id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/orders",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/orders\/rendelés id",
-                "en": "\/orders\/rendelés id"
+                "en": "\/orders\/order id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/orders\/b3JkZXItb3JkZXJfaWQ9MTcy",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         }
     }

@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Szöveges menüpont azonosító. Az OuterID módosítására szolgál.",
-                "en": "Szöveges menüpont azonosító. Az OuterID módosítására szolgál."
+                "en": "Text menu identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Szöveges menüpont belső azonosító.",
-                "en": "Szöveges menüpont belső azonosító."
+                "en": "Text menu internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "sortOrder",
             "description": {
-                "hu": "Sorrend a többi szöveges menüponthoz képest.",
-                "en": "Sorrend a többi szöveges menüponthoz képest."
+                "en": "Order between the other text menu."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "enabled",
             "description": {
-                "hu": "Engedélyezett-e?",
-                "en": "Engedélyezett-e?"
+                "en": "Is it enabled?"
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "showInHeader",
             "description": {
-                "hu": "Jelenjen meg fejlécben? Érteke: 0 vagy 1",
-                "en": "Jelenjen meg fejlécben? Érteke: 0 vagy 1"
+                "en": "Should visible in the header? Possible values: 0 or 1"
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "showInInfoModule",
             "description": {
-                "hu": "Jelenjen meg az Információk modulban? Érteke: 0 vagy 1",
-                "en": "Jelenjen meg fejlécben? Érteke: 0 vagy 1"
+                "en": "Should visible in the Information module? Possible values 0 or 1"
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "showInInfoModule2",
             "description": {
-                "hu": "Jelenjen meg az Információk 2 modulban? Érteke: 0 vagy 1",
-                "en": "Jelenjen meg az Információk 2 modulban? Érteke: 0 vagy 1"
+                "en": "Should visible in the Information 2 module? Possible values 0 or 1"
             },
             "required": false,
             "readonly": false
@@ -66,8 +59,7 @@
         {
             "name": "showInInfoModule3",
             "description": {
-                "hu": "Jelenjen meg az Információk 3 modulban? Érteke: 0 vagy 1",
-                "en": "Jelenjen meg az Információk 3 modulban? Érteke: 0 vagy 1"
+                "en": "Should visible in the Information 3 module? Possible values 0 or 1"
             },
             "required": false,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "showInFooter",
             "description": {
-                "hu": "Jelenjen meg láblécben? Érteke: 0 vagy 1",
-                "en": "Jelenjen meg láblécben? Érteke: 0 vagy 1"
+                "en": "Should visible in footer? Possible values 0 or 1"
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "informationDescriptions",
             "description": {
-                "hu": "\n                        A szöveges menüponthoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    ",
-                "en": "\n                        A szöveges menüponthoz tartozó leírások.<br>\n                        Futtatható javascript hozzáadása esetén a script tagen belül a <strong>type=\"text\/javascript\"<\/strong> attribute megadása kötelező.\n                    "
+                "en": "\n                        Description of the text menu.<br>\n                        When adding executable javascript, specifying the <strong>type=\"text/javascript\"</strong> attribute within the script tag is mandatory.\n                    "
             },
             "required": true,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "urlAliases *",
             "description": {
-                "hu": "A Szöveges menüpont keresőbarát URL-jének adatai. Nevével ellentétben termékenként csak 1 db van belőle.",
-                "en": "A Szöveges menüpont keresőbarát URL-jének adatai. Nevével ellentétben termékenként csak 1 db van belőle."
+                "en": "Data for the search engine-friendly URL of the Text menu. Contrary to its name, there is only 1 of it per product."
             },
             "required": false,
             "readonly": false
@@ -104,12 +93,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/informationExtend\/szöveges menüpont id",
-                "en": "\/informationExtend\/szöveges menüpont id"
+                "en": "\/informationExtend\/text menu id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -120,40 +107,34 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/informationExtend",
                 "en": "\/informationExtend"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Szöveges menüpont belső azonosító.",
-                        "en": "Kereső paraméter. Szöveges menüpont belső azonosító."
+                        "en": "Search parameter. Text menu internal identifier."
                     }
                 }
             ],
@@ -165,49 +146,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/informationExtend[\/szöveges menüpont id]",
-                "en": "\/informationExtend[\/szöveges menüpont id]"
+                "en": "\/informationExtend[\/text menu id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/informationExtend",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/informationExtend\/szöveges menüpont id",
-                "en": "\/informationExtend\/szöveges menüpont id"
+                "en": "\/informationExtend\/text menu id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/informationExtend\/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/informationExtend\/szöveges menüpont id",
-                "en": "\/informationExtend\/szöveges menüpont id"
+                "en": "\/informationExtend\/text menu id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/informationExtend\/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

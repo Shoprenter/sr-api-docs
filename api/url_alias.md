@@ -1,13 +1,13 @@
 # URL Alias Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'url_alias'" :lang="'hu'"/>
+<ResourceProperties :resource="'url_alias'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'url_alias'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'url_alias'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'url_alias'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'url_alias'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'url_alias'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'url_alias'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'url_alias'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'url_alias'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'url_alias'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'url_alias'" :endpoint="'delete'" :lang="'en'"/>
 

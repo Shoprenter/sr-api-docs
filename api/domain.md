@@ -1,13 +1,13 @@
 # Domain Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'domain'" :lang="'hu'"/>
+<ResourceProperties :resource="'domain'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'domain'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'domain'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

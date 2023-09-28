@@ -1,8 +1,8 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/taxClassExtend/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
     "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw",
-    "name": "Adó osztály név",
-    "description": "Leírás",
+    "name": "Tax class name",
+    "description": "Description",
     "dateCreated": "2013-08-08T12:30:00",
     "dateUpdated": "2013-08-08T12:30:00",
     "taxRates": [
@@ -11,7 +11,7 @@
             "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
             "priority": "1",
             "rate": "27.0000",
-            "description": "ÁFA (27%)",
+            "description": "VAT (27%)",
             "dateCreated": "2012-01-12T12:11:42",
             "dateUpdated": "2012-01-12T12:11:42",
             "geoZone": {

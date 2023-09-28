@@ -1,39 +1,39 @@
-# Ismétlődő díjfizetés (Recurring Charge)
+# Recurring Charge
 
-## Tulajdonságok
+## Properties
 
-|Tulajdonság            | Leírás                                                                                                                                                                                                                                                                                                                           |Kötelező       |Olvasható            |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------:|:-------------------:|
-|planId                 | Fizetési terv azonosító. (lásd: [Fizetési Terv](../docs/h_plan.md))                                                                                                                                                                                                                                                              |       x       |          x          |
-|billingCycleLength     | Fizetési ciklus hossza. Hány havonta történik díj fizetés.<br/>Pl.: az 1-es érték 1 hónapot jelent (30 nap), tehát havonta történik a levonás.                                                                                                                                                                                   |               |          x          |
-|billingCycleCount      | Fizetési ciklus száma. Hányszor történik ismételt díjfizetés. <br/>**Figyelem:** null esetén sose fog megállni a díjbeszedés!                                                                                                                                                                                                    |               |          x          |
-|expirationDate         | Lejárati dátum. Azt mutatja, mikor fogja a rendszer ismételni a díj beszedését                                                                                                                                                                                                                                                   |               |          x          |
-|id                     | Azonosító                                                                                                                                                                                                                                                                                                                        |               |          x          |
-|name                   | Név (pl.: Teljes verzió)                                                                                                                                                                                                                                                                                                         |               |          x          |
-|status                 | Státusz (lásd: [Státuszok](../docs/k_statuses.md))                                                                                                                                                                                                                                                                               |               |          x          |
-|price                  | Egy objektum, mely tartalmazza:                                                                                                                                                                                                                                                                                                  |               |          x          |
-|                       | **grossAmount**: Bruttó ár                                                                                                                                                                                                                                                                                                       |               |                     |
-|                       | **vatAmount**: ÁFA tartalom                                                                                                                                                                                                                                                                                                      |               |                     |
-|                       | **netPrice**: Nettó ár                                                                                                                                                                                                                                                                                                           |               |                     |
-|                       | **roundedGrossAmount**: Kerekített bruttó ár                                                                                                                                                                                                                                                                                     |               |                     |
-|netPrice               | Nettó ár                                                                                                                                                                                                                                                                                                                         |               |          x          |
-|notificationUrl        | A rendszerben történő eseményekről erre az URL-re küld az API értesítést                                                                                                                                                                                                                                                         |               |          x          |
-|successUrl             | A fizetés sikeressége esetén, ide irányítjuk a bolt tulajdonost                                                                                                                                                                                                                                                                  |       x       |          x          |
-|failedUrl              | A fizetés meghiúsulása esetén, ide irányítjuk a bolt tulajdonost                                                                                                                                                                                                                                                                 |       x       |          x          |
-|updatedAt              | Módosítás dátuma                                                                                                                                                                                                                                                                                                                 |               |          x          |
-|createdAt              | Létrehozás dátuma                                                                                                                                                                                                                                                                                                                |               |          x          |
-|deletedAt              | Törlés dátuma                                                                                                                                                                                                                                                                                                                    |               |          x          |
-|test                   | Ha értéke **true**, akkor teszt üzemmódban történik a fizetés feldolgozása. Számlát nem állít ki. (Default: false)*                                                                                                                                                                                                              |               |          x          |
-|confirmationUrl        | Létrehozás után, erre az URL-re kell irányítani a bolt tulajdonost                                                                                                                                                                                                                                                               |               |          x          |
-|trialDays              | Próbaidőszakos napok száma, amit az app tulajdonosa nem számít fel az app felhasználójának. Ezen napok számának a csúsztatásával kerül kiállításra a számla. Alapértelmezetten ez 0 nap<br/>(lásd: [Próbaidőszakos ismétlődő díjfizetés (Trial Recurring Charge)](#probaidoszakos-ismetlodo-dijfizetes-trial-recurring-charge)). |               |          x          |
+| Property           | Description                                                                                                                                                                                                                                                                                     |Obligatory       | Readable |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------:|:--------:|
+| planId             | Payment plan identity. (see: [Payment Plan](../docs/h_plan.md))                                                                                                                                                                                                                                 |       x       |    x     |
+| billingCycleLength | Payment cycle length. How many months is the fee paid?<br/>Ex.: the value 1 means 1 month (30 days), so the deduction takes place every month.                                                                                                                                                  |               |    x     |
+| billingCycleCount  | Payment cycle number. How many times are repeated fee payments made? <br/>**Attention:** If it is null, the fee collection will never stop!                                                                                                                                                     |               |    x     |
+| expirationDate     | Expiration date. It shows when the system will repeat the fee collection                                                                                                                                                                                                                        |               |    x     |
+| id                 | Identity                                                                                                                                                                                                                                                                                        |               |    x     |
+| name               | Name (pl.: Teljes Version)                                                                                                                                                                                                                                                                      |               |    x     |
+| status             | Status (lásd: [Státuszok](../docs/k_statuses.md))                                                                                                                                                                                                                                               |               |    x     |
+| price              | An object, contains:                                                                                                                                                                                                                                                                            |               |    x     |
+|                    | **grossAmount**: Gross price                                                                                                                                                                                                                                                                    |               |          |
+|                    | **vatAmount**: VAT amount                                                                                                                                                                                                                                                                       |               |          |
+|                    | **netPrice**: Net price                                                                                                                                                                                                                                                                         |               |          |
+|                    | **roundedGrossAmount**: Rounded gross amount                                                                                                                                                                                                                                                    |               |          |
+| netPrice           | Net price                                                                                                                                                                                                                                                                                       |               |    x     |
+| notificationUrl    | The API sends notification of events in the system to this URL                                                                                                                                                                                                                                  |               |    x     |
+| successUrl         | If the payment is successful, we will direct the store owner here                                                                                                                                                                                                                               |       x       |    x     |
+| failedUrl          | In case of payment failure, we will direct the store owner here                                                                                                                                                                                                                                 |       x       |    x     |
+| updatedAt          | Date of modification                                                                                                                                                                                                                                                                            |               |    x     |
+| createdAt          | Date of creation                                                                                                                                                                                                                                                                                |               |    x     |
+| deletedAt          | Date of deletion                                                                                                                                                                                                                                                                                |               |    x     |
+| test               | If the value is **true**, the payment is processed in test mode. It does not issue an invoice. (Default: false)*                                                                                                                                                                                |               |    x     |
+| confirmationUrl    | After creation, the store owner must be directed to this URL                                                                                                                                                                                                                                    |               |    x     |
+| trialDays          | Number of trial period days, which the app owner does not charge the app user. The invoice is issued by sliding the number of these days. By default, this is 0 days<br/>(see: [Trial Recurring Charge (Trial Recurring Charge)](#probaidoszakos-ismetlodo-dijfizetes-trial-recurring-charge)). |               |    x     |
 
-\* A rendszer egy számlaadat-összesítő email-t küld ki a bolt számlázási adatainál megadott email címre.
+\* The system sends an invoice summary email to the email address specified in the store's billing information.
 
-## Belépési pont
+## Entry point
 
 POST https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges
 
-Példa payload:
+Example payload:
 
 ```javascript
 {
@@ -46,7 +46,7 @@ Példa payload:
 }
 ```
 
-Erre adott válasz:
+Response:
 
 ```javascript
 {
@@ -56,7 +56,7 @@ Erre adott válasz:
     "expirationDate": null,
     "trialDays": 10,
     "id": 5,
-    "name": "ACME alkalmazás Gold Csomagja",
+    "name": "ACME application Gold package",
     "status": "pending",
     "price": {
         "grossAmount": 12700,
@@ -77,14 +77,14 @@ Erre adott válasz:
 }
 ```
 
-## A fizetés lekérdezése
+## Request Recurring Charge
 
 GET https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges/<charge_id>
 
-Példa kérés:
+Example request:
 GET https://exampleshop.api.myshoprenter.hu/billing/recurringCharges/12
 
-Erre adott válasz:
+Response:
 
 ```javascript
 {
@@ -94,7 +94,7 @@ Erre adott válasz:
         "expirationDate": null,
         "trialDays": 10,
         "id": 12,
-        "name": "ACME alkalmazás Gold Csomagja",
+        "name": "ACME application Gold package",
         "status": "pending",
         "price": {
         "grossAmount": 12700,
@@ -114,116 +114,116 @@ Erre adott válasz:
 }
 ```
 
-## Recurring Charge megszüntetése
+## Termination of Recurring Charge
 
-A fejlesztőknek lehetőségük van megszüntetni a Recurring Charge futását, így lezárva a fizetési ciklust.
-Egyszerűen, a fent taglalt belépési pontra, egy DELETE HTTP kérést kell küldeni a recurring charge ID-val.
+Developers have the option to stop the Recurring Charge from running, thus closing the payment cycle.
+Simply, a DELETE HTTP request with the recurring charge ID must be sent to the entry point described above.
 
 DELETE https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges/<recurring_charge_id>
 
-## Használat
+## Usage
 
-Teljesen megegyezik a Egyszeri fizetés használatával. Egyedül a rendszeren belüli kezelésben különbözik.
+It is exactly the same as using One Time Payment. It differs only in the handling within the system.
 
-## Működés példán keresztül
-Szeretném az alkalmazásomat havi díjas konstrukcióban értékesíteni. Ehhez 3 féle havidíjas csomagot akarok hozzárendelni:
+## Operation by example
+I would like to sell my application on a monthly fee plan. I want to assign 3 types of monthly fee packages to this:
 Bronze, Silver, Gold.
-Ez 3 különböző fizetési tervet jelent, melynek eltérnek a nevei, az árai és esetleg a számlázási időszakai is.
+This means 3 different payment plans with different names, prices and possibly billing periods.
 
-A billing.shoprenter.hu/plans/create linken hozhatunk létre belépés után a terveket.
+After logging in, you can create the plans on the billing.shoprenter.hu/plans/create link.
 
-A Bronz csomagot havidíjassá szeretném tenni, egy éves időszakra adom 10000 nettó HUF-ért, "Az alkalmazásom Bronze csomagja" a neve.
-Tehát a havi díjas Bronze csomagom a következőképpen kell kinézzen:
+I would like to make the Bronze package a monthly fee, I will give it to you for a period of one year for HUF 10,000 net, it is called "Bronze package of my application".
+So my monthly premium Bronze package should look like this:
 
-- Fizetési terv név: "Az alkalmazásom Bronze csomagja"
-- Fizetési ciklusok hossza (hónapban): 1
-- Fizetési ciklusok száma (ha üresen hagyja végtelen): 12
-- Fizetési terv nettó ára forintban: 10000
+- Payment plan Name: "Bronze package of my application"
+- Length of payment cycles (in months): 1
+- Number of payment cycles (infinite if left blank): 12
+- Payment plan net price in HUF: 10,000
 
-Tehát, ha a bolt tulajdonos előfizet, havonta (billingCycleLength: 1) fizet 10000 HUF nettó összeget és ez a terhelés 12-szer (billingCycleCount: 12) történik meg.
+So, if the store owner subscribes, he pays a net amount of HUF 10,000 per month (billingCycleLength: 1) and this charge is made 12 times (billingCycleCount: 12).
 
-Összefoglalva tehát: 1 évig havonta fizet 10000 HUF nettót a bolt tulajdonos az alkalmazásért (billingCycleLength * billingCycleCount).
+In summary: the shop owner pays HUF 10,000 net per month for the application (billingCycleLength * billingCycleCount).
 
-**Figyelem**: Ha "Fizetési ciklusok száma" mezőt üresen hagyjuk, úgy ezen fizetési terv alapján készült Ismétlődő fizetés sose fog lejárni.
+**Attention**: If the "Number of Payment Cycles" field is left blank, the Recurring Payment made on the basis of this payment plan will never expire.
 
-### Hiba esetén
-Ha a tranzakció lebonyolítása alatt olyan hiba történik, amely a vásárló kártyaadatait érinti, pl. lejárt bankkártya, úgy a Recurring Charge státusza FROZEN státuszra vált. Ettől kezdve **15 napig** próbálja a rendszer az adott ismételt díjbeszedést végrehajtani.
-Ha nem sikerül ezentúl se folytatni a díj beszedést, úgy a adott Recurring Charge-ot a rendszer CANCELLED státuszra állítja.
+### Error handling
+If an error occurs during the transaction that affects the customer's card data, e.g. expired bank card, the Recurring Charge status changes to FROZEN status. From then on, the system tries to carry out the given repeated fee collection for **15 days**.
+If it is not possible to continue collecting the fee from now on, the system will set the given Recurring Charge to the status CANCELED.
 
-Természetesen itt is minden hibáról a notificationUrl értesítést kap az alkalmazás.
+Of course, here too, the application is notified of all errors via the notificationUrl.
 
-## Folyamat ábra
+## Flow chart
 
 ![One Time Charge](../image/recurring-charge-flow.png)
 
-## Próbaidőszakos ismétlődő díjfizetés (Trial Recurring Charge) 
+## Trial Recurring Charge
 
-### Pozitív próbaidőszakos ismétlődő díjfizetés (Positive Trial Recurring Charge)
+### Positive Trial Recurring Charge
 
-Az app tulajdonosa élhet azzal a lehetőséggel, hogy az app leendő vásárlójának próbaidőszak formájában ingyenesen a rendelkezésére bocsátja az app összes vagy csak némely funkcionalitását egy meghatározott időszakra pl: 30 napra.
-Tegyük fel, hogy az app felhasználója a próbaidőszak alatt úgy dönt, hogy számára értékes az app és ezért előfizet, ellenben szeretne még élni a fennmaradó 20 napos ingyenes próbaidőszakkal.
-Annak érdekében, hogy az előfizetés megtörténjen, de a számlán csak a 20 nappal későbbi dátum szerepeljen, illetve a későbbi levonások is ennek függvényében történjenek, ezért a Payment API segítségével úgy kell létrehozunk az előfizetést, hogy a **trialDays propertynek átadjuk a fennmaradó 20 napot.**
+The owner of the app can take advantage of the opportunity to provide all or only some of the functionality of the app to the prospective customer of the app for free in the form of a trial period for a specific period, e.g. 30 days.
+Let's say that the user of the app decides during the trial period that the app is valuable to him and therefore subscribes, but he still wants to use the remaining 20 days of the free trial period.
+In order for the subscription to take place, but only for the date 20 days later to appear on the invoice, and for subsequent deductions to be made depending on this, we must create the subscription using the Payment API by passing the remaining 20 days to the **trialDays property .**
 
-#### Példa
+#### Example
 
 <table>
     <tr>
-        <td>Alkalmazás telepítésének dátuma</td>
+        <td>Application installation date</td>
         <td><strong>2020-09-01</strong></td>
     </tr>
     <tr>
-        <td>Felajánlott ingyenes próbanapok száma</td>
+        <td>Number of free trial days offered</td>
         <td><strong>30</strong></td>
     </tr>
     <tr>
-        <td>Előfizetés elindításának dátuma</td>
+        <td>Subscription start date</td>
         <td><strong>2020-09-10</strong></td>
     </tr>
     <tr>
-        <td>Előfizetés után fennmaradó ingyenes napok száma</td>
+        <td>Number of free days remaining after subscription</td>
         <td><strong>20</strong></td>
     </tr>
     <tr>
-        <td>Előfizetési ciklus hossza napokban</td>
+        <td>Subscription cycle length in days</td>
         <td><strong>30</strong></td>
     </tr>
     <tr>
-        <td>Előfizetés első időszakáról kiálított számlán megjelenő dátum</td>
+        <td>Date appearing on the invoice issued for the first subscription period</td>
         <td><strong>2020-10-01 - 2020-10-30</strong></td>
     </tr>
 </table>
 
 ### Negatív próbaidőszakos ismétlődő díjfizetés (Negative Trial Recurring Charge)
 
-A negatív próbaidőszakos ismétlődő díjfizetés megértéséhez egy kicsit el kell vonatkoztatunk az előbbi pozitív ismétlődő díjfizetés használatánál olvasottaktól.
-A negatív próbaidőszakos ismétlődő díjfizetés egy eszköz azokra az **aktív előfizetőkre**, akik eddig ugyan használták az appot, de a Payment API használata előtt más módon kérték be tőlük a díjakat és állították ki a számlákat.
-Annak érdekében, hogy ezentúl a Payment API-val lehessen a már futó időszakra bekérni a díjat és számlát lehessen kiállítani, olyan előfizetést kell létrehozni, amely kezdete egy múltbéli dátum. Ennek megadására szolgál a **trialDays property megadása negatív értékkel.**
+In order to understand the negative trial-period recurring fee payment, we need to forget a little to what we read about using the positive recurring fee payment above.
+The negative trial period recurring fee payment is a tool for those **active subscribers** who have used the app until now, but before using the Payment API, fees were requested from them and invoices were issued in a different way.
+In order to now be able to use the Payment API to request the fee for the already running period and issue an invoice, a subscription must be created that starts on a date in the past. This can be done by specifying the **trialDays property with a negative value.**
 
-Ha például 24 napja fut az előfizetés az app tulajdonos rendszerében és szeretne áttérni a Payment API rendszerébe, akkor úgy kell létrehozni az előfizetést, hogy a **trialDays propertynek -24 -et kell megadni**.   
+For example, if the subscription has been running for 24 days in the app owner's system and you want to switch to the Payment API system, you must create the subscription by specifying -24 for the **trialDays property**.
 
-#### Példa
+#### Example
 
 <table>
     <tr>
-        <td>Új előfizetési ciklus kezdete az app tulajdonos rendszerében</td>
+        <td>Start of a new subscription cycle in the app owner's system</td>
         <td><strong>2020-09-01</strong></td>
     </tr>
     <tr>
-        <td>Előfizetési ciklus hossza napokban</td>
+        <td>Subscription cycle length in days</td>
         <td><strong>90</strong></td>
     </tr>
     <tr>
-        <td>Előfizetés elindításának dátuma a Payment API rendszerében</td>
+        <td>Subscription start date in the Payment API system</td>
         <td><strong>2020-09-24</strong></td>
     </tr>
     <tr>
-        <td>Számlakiállításához ennyi nappal kell visszadatálni</td>
+        <td>This number of days must be backdated for invoicing</td>
         <td><strong>-24</strong></td>
     </tr>
     <tr>
-        <td>Előfizetés első időszakáról kiálított számlán megjelenő dátum</td>
+        <td>Date appearing on the invoice issued for the first subscription period</td>
         <td><strong>2020-09-01 - 2020-11-30</strong></td>
     </tr>
 </table>
 
-**FONTOS:** Negatív próbaidőszakos ismétlődő díjfizetésnél a trialDays abszolút értéke nem lehet nagyobb a billingCycleLength napokban kifejezett értékénél, máskülönben hibát fog dobni. Ha például egy előfizetési ciklus hossza 120 nap (billingCycleLength = 4), akkor a trialDays nem lehet kisebb -120-nál, azaz nem lehet -121, -122...stb. A pozitív próbaidőszakos ismétlődő díjfizetésnél nincs ilyen korlátozás.
+**IMPORTANT:** In the case of negative trial period recurring fee payments, the absolute value of trialDays cannot be greater than the value of billingCycleLength expressed in days, otherwise an error will be thrown. If, for example, the length of a subscription cycle is 120 days (billingCycleLength = 4), then trialDays cannot be smaller than -120, i.e. cannot be -121, -122...etc. There is no such restriction for recurring fee payments with a positive trial period.

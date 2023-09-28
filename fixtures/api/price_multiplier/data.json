@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Árszorzó azonosító. Az OuterID módosítására szolgál.",
-                "en": "Árszorzó azonosító. Az OuterID módosítására szolgál."
+                "en": "Price multiplier identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "categoryId",
             "description": {
-                "hu": "Kategória azonosító.",
-                "en": "Kategória azonosító."
+                "en": "Category identifier."
             },
             "required": false,
             "readonly": false
@@ -21,8 +19,7 @@
         {
             "name": "manufacturerId",
             "description": {
-                "hu": "Gyártó azonosító.",
-                "en": "Gyártó azonosító."
+                "en": "Manufacturer identifier."
             },
             "required": false,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "minNetPrice",
             "description": {
-                "hu": "Minimális nettó ár.",
-                "en": "Minimális nettó ár."
+                "en": "Minimal net price."
             },
             "required": false,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "maxNetPrice",
             "description": {
-                "hu": "Maximális nettó ár.",
-                "en": "Maximális nettó ár."
+                "en": "Maximal net price."
             },
             "required": false,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "multiplier",
             "description": {
-                "hu": "Szorzó.",
-                "en": "Szorzó."
+                "en": "Multiplier."
             },
             "required": false,
             "readonly": false
@@ -57,8 +51,7 @@
         {
             "name": "priority",
             "description": {
-                "hu": "Prioritás.",
-                "en": "Prioritás."
+                "en": "Priority."
             },
             "required": false,
             "readonly": false
@@ -68,40 +61,34 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/priceMultipliers",
                 "en": "\/priceMultipliers"
             },
             "description": {
-                "hu": "Szorzók kollekciójának lekérésére szolgál.",
-                "en": "Szorzók kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of multipliers"
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített szorzók száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített szorzók száma. Maximum 200."
+                        "en": "Number of multipliers displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "priceMultiplierId",
                     "description": {
-                        "hu": "Kereső paraméter. Sávos árszorzó azonosító.",
-                        "en": "Kereső paraméter. Sávos árszorzó azonosító."
+                        "en": "Search parameter. Price multiplier identifier."
                     }
                 }
             ],
@@ -113,49 +100,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/priceMultipliers[\/sávos árszorzó id]",
-                "en": "\/priceMultipliers[\/sávos árszorzó id]"
+                "en": "\/priceMultipliers[\/price multiplier id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/priceMultipliers",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/priceMultipliers[\/sávos árszorzó id]",
-                "en": "\/priceMultipliers[\/sávos árszorzó id]"
+                "en": "\/priceMultipliers[\/price multiplier id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/priceMultipliers\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/priceMultipliers\/sávos árszorzó id",
-                "en": "\/priceMultipliers\/sávos árszorzó id"
+                "en": "\/priceMultipliers\/price multiplier id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/priceMultipliers\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }

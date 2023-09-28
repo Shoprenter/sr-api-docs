@@ -41,10 +41,10 @@
             <![CDATA[c2hpcHBpbmdNb2RlRGVzY3JpcHRpb24taWQ9ODQmbGFuZ3VhZ2VfaWQ9MQ==]]>
         </id>
         <name>
-            <![CDATA[Saját szállítási mód neve]]>
+            <![CDATA[Custom shipping method name]]>
         </name>
         <description>
-            <![CDATA[Saját szállítási mód leírás]]>
+            <![CDATA[Custom shipping method description]]>
         </description>
         <shippingMode>
             <href>

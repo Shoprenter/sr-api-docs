@@ -1,13 +1,13 @@
 # Order Status Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'order_status'" :lang="'hu'"/>
+<ResourceProperties :resource="'order_status'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'order_status'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_status'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'order_status'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'order_status'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 

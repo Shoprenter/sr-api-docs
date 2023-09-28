@@ -1,10 +1,10 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
     "id": "Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
-    "name": "Hungarian Forint",
+    "name": "Hungarian HUF",
     "code": "HUF",
     "symbolLeft": {},
-    "symbolRight": "Ft",
+    "symbolRight": "Huf",
     "decimalPlace": "0",
     "value": "1.00000000",
     "status": "1",

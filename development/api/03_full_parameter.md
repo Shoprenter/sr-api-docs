@@ -1,12 +1,12 @@
-# Full paraméter
+# Full parameter
 
-A Resource-okból való lekérdezés során visszatérő feladat, hogy a visszakapott link-lista feldolgozásához további API hívást kell intézni, azért hogy visszakapjuk a Resource-hoz tartozó adatokat.
+Starting further API request to process the received link-list in order to get the data that belongs to the Resource is a recurring task during queries from the Resources.
 
-**A lenti példákat szemléltetésképp mutatjuk be, ezért nem tartalmazzák az egész API response-t!**
+**The following examples are only illustrations, therefore the complete API response is not included!**
 
-**Például:**
+**For example:**
 
-a terméklista lekérdezése során az alábbi eredménnyel találkozhatunk:
+In case of a product list query, we may receive the following result:
 
 <table>
   <tr>
@@ -37,9 +37,9 @@ a terméklista lekérdezése során az alábbi eredménnyel találkozhatunk:
   }
 }
 ```
+All Resources have a parameter called **full** in order to decrease the number of API requests in case of GET requests.
 
-A kevesebb API hívások érdekében minden Resource GET-es hívás esetén rendelkezik egy **full** nevű paraméterrel. 
-A `full=1` paraméter alkalmazásával a link-lista helyett a meghívott linkek tartalma jelenik meg.
+The content of the invited links will appear instead of the link-list by using `full=1` parameter.
 
 <table>
   <tr>
@@ -76,5 +76,4 @@ A `full=1` paraméter alkalmazásával a link-lista helyett a meghívott linkek 
   }
 }
 ```
-
-Használata gyorsabb és átláthatóbb kódot eredményez.
+The usage of this parameter results in a faster and more transparent code.

@@ -1,13 +1,13 @@
 # Reload Order Url Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'reload_order_url'" :lang="'hu'"/>
+<ResourceProperties :resource="'reload_order_url'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'reload_order_url'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'reload_order_url'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 

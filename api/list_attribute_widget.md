@@ -1,13 +1,13 @@
 # List Attribute Widget Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'list_attribute_widget'" :lang="'hu'"/>
+<ResourceProperties :resource="'list_attribute_widget'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'list_attribute_widget'" :endpoint="'delete'" :lang="'en'"/>
 

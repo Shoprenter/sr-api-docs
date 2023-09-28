@@ -1,13 +1,13 @@
 # Newsletter Subscriber Resource
 
-## Tulajdonságok
+## Properties
 
-<ResourceProperties :resource="'newsletter_subscriber'" :lang="'hu'"/>
+<ResourceProperties :resource="'newsletter_subscriber'" :lang="'en'"/>
 
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
-<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'get'" :lang="'hu'">
+<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'get'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -24,7 +24,7 @@
 </ResourceEndpoint>
 
 [//]: <> (GETCOLLECTION ENDPOINT)
-<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'getCollection'" :lang="'hu'">
+<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'getCollection'" :lang="'en'">
 
 <template v-slot:responseJSON>
 
@@ -41,7 +41,7 @@
 </ResourceEndpoint>
 
 [//]: <> (POST ENDPOINT)
-<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'post'" :lang="'hu'">
+<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'post'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -64,7 +64,7 @@
 </ResourceEndpoint>
 
 [//]: <> (PUT ENDPOINT)
-<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'put'" :lang="'hu'">
+<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'put'" :lang="'en'">
 
 <template v-slot:request>
 
@@ -87,5 +87,5 @@
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'delete'" :lang="'hu'"/>
+<ResourceEndpoint :resource="'newsletter_subscriber'" :endpoint="'delete'" :lang="'en'"/>
 

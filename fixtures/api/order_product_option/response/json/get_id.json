@@ -1,8 +1,8 @@
 {
     "href": "http://shopname.api.myshoprenter.hu/orderProductOptions/b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0zOQ==",
     "id": "b3JkZXJQcm9kdWN0T3B0aW9uLW9yZGVyX29wdGlvbl9pZD0zOQ==",
-    "name": "Valami",
-    "valueName": "B Verzió",
+    "name": "Something",
+    "valueName": "B Version",
     "price": "1000.0000",
     "prefix": "+",
     "orderProduct": {

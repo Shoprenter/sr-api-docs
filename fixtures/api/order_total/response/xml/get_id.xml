@@ -1,8 +1,8 @@
 <response>
     <href><![CDATA[http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03]]></href>
     <id><![CDATA[b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03]]></id>
-    <name><![CDATA[Nettó részösszeg:]]></name>
-    <valueText><![CDATA[2.400 Ft]]></valueText>
+    <name><![CDATA[Net partial amount:]]></name>
+    <valueText><![CDATA[2.400 Huf]]></valueText>
     <value><![CDATA[2400.0000]]></value>
     <sortOrder><![CDATA[1]]></sortOrder>
     <type><![CDATA[SUB_TOTAL]]></type>

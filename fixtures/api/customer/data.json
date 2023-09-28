@@ -3,8 +3,7 @@
         {
             "name": "id",
             "description": {
-                "hu": "Vásárló azonosító. Az OuterID módosítására szolgál.",
-                "en": "Vásárló azonosító. Az OuterID módosítására szolgál."
+                "en": "Customer identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -12,8 +11,7 @@
         {
             "name": "innerId",
             "description": {
-                "hu": "Vásárló belső azonosító.",
-                "en": "Vásárló belső azonosító."
+                "en": "Customer internal identifier."
             },
             "required": false,
             "readonly": true
@@ -21,8 +19,7 @@
         {
             "name": "firstname",
             "description": {
-                "hu": "Vezetéknév.",
-                "en": "Vezetéknév."
+                "en": "Lastname."
             },
             "required": true,
             "readonly": false
@@ -30,8 +27,7 @@
         {
             "name": "lastname",
             "description": {
-                "hu": "Keresztnév.",
-                "en": "Keresztnév."
+                "en": "Firstname."
             },
             "required": true,
             "readonly": false
@@ -39,8 +35,7 @@
         {
             "name": "email",
             "description": {
-                "hu": "Email cím.",
-                "en": "Email cím."
+                "en": "Email Address."
             },
             "required": true,
             "readonly": false
@@ -48,8 +43,7 @@
         {
             "name": "telephone",
             "description": {
-                "hu": "Telefonszám.",
-                "en": "Telefonszám."
+                "en": "Telephone."
             },
             "required": true,
             "readonly": false
@@ -57,7 +51,6 @@
         {
             "name": "fax",
             "description": {
-                "hu": "Fax.",
                 "en": "Fax."
             },
             "required": false,
@@ -66,8 +59,7 @@
         {
             "name": "password",
             "description": {
-                "hu": "bcrypt jelszó.",
-                "en": "bcrypt jelszó."
+                "en": "bcrypt password."
             },
             "required": true,
             "readonly": false
@@ -75,8 +67,7 @@
         {
             "name": "newsletter",
             "description": {
-                "hu": "Hírlevél feliratkozás státusz.",
-                "en": "Hírlevél feliratkozás státusz."
+                "en": "Newsletter subscription status."
             },
             "required": false,
             "readonly": false
@@ -84,8 +75,7 @@
         {
             "name": "status",
             "description": {
-                "hu": "Státusz.",
-                "en": "Státusz."
+                "en": "Status."
             },
             "required": false,
             "readonly": false
@@ -93,8 +83,7 @@
         {
             "name": "approved",
             "description": {
-                "hu": "Engedélyezett-e.",
-                "en": "Engedélyezett-e."
+                "en": "Is approved."
             },
             "required": false,
             "readonly": false
@@ -102,8 +91,7 @@
         {
             "name": "freeShipping",
             "description": {
-                "hu": "Ingyenes szállítás.",
-                "en": "Ingyenes szállítás."
+                "en": "Is free shipping."
             },
             "required": false,
             "readonly": false
@@ -111,8 +99,7 @@
         {
             "name": "dateCreated",
             "description": {
-                "hu": "Létrehozás dátuma.",
-                "en": "Létrehozás dátuma."
+                "en": "Created date."
             },
             "required": false,
             "readonly": true
@@ -120,8 +107,7 @@
         {
             "name": "dateUpdated",
             "description": {
-                "hu": "Utolsó módosítás dátuma.",
-                "en": "Utolsó módosítás dátuma."
+                "en": "Last updated date."
             },
             "required": false,
             "readonly": true
@@ -129,8 +115,7 @@
         {
             "name": "defaultAddress",
             "description": {
-                "hu": "Alapértelmezett cím linkje.",
-                "en": "Alapértelmezett cím linkje."
+                "en": "Default Address link."
             },
             "required": false,
             "readonly": false
@@ -138,8 +123,7 @@
         {
             "name": "customerGroup",
             "description": {
-                "hu": "Vásárlói csoport linkje.",
-                "en": "Vásárlói csoport linkje."
+                "en": "Customer group link."
             },
             "required": false,
             "readonly": false
@@ -147,8 +131,7 @@
         {
             "name": "addresses",
             "description": {
-                "hu": "Címek linkje.",
-                "en": "Címek linkje."
+                "en": "Addresses link."
             },
             "required": false,
             "readonly": false
@@ -156,8 +139,7 @@
         {
             "name": "loyaltyPoints",
             "description": {
-                "hu": "Hűségpontok linkje.",
-                "en": "Hűségpontok linkje."
+                "en": "Loyalty points link."
             },
             "required": false,
             "readonly": false
@@ -167,12 +149,10 @@
         "get": {
             "method": "GET",
             "url": {
-                "hu": "\/customers\/vásárló id",
-                "en": "\/customers\/vásárló id"
+                "en": "\/customers\/customer id"
             },
             "description": {
-                "hu": "Egy konkrét elem lekérésére szolgál.",
-                "en": "Egy konkrét elem lekérésére szolgál."
+                "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
@@ -183,75 +163,64 @@
         "getCollection": {
             "method": "GET",
             "url": {
-                "hu": "\/customers",
                 "en": "\/customers"
             },
             "description": {
-                "hu": "Elemek kollekciójának lekérésére szolgál.",
-                "en": "Elemek kollekciójának lekérésére szolgál."
+                "en": "Used to retrieve a collection of elements."
             },
             "parameters": [
                 {
                     "name": "page",
                     "description": {
-                        "hu": "Az adott oldal sorszáma.",
-                        "en": "Az adott oldal sorszáma."
+                        "en": "The serial number of the given page."
                     }
                 },
                 {
                     "name": "limit",
                     "description": {
-                        "hu": "Egy oldalon megjelenített elemek száma. Maximum 200.",
-                        "en": "Egy oldalon megjelenített elemek száma. Maximum 200."
+                        "en": "Number of items displayed on a page. Maximum 200."
                     }
                 },
                 {
                     "name": "full",
                     "description": {
-                        "hu": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0.",
-                        "en": "Az elsőszintű mezők értékei legyenek-e kibontva. Értéke: 1 (igen) vagy 0 (nem). Alapértelmezett: 0."
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
                     }
                 },
                 {
                     "name": "innerId",
                     "description": {
-                        "hu": "Kereső paraméter. Vásárló belső azonosító.",
-                        "en": "Kereső paraméter. Vásárló belső azonosító."
+                        "en": "Search parameter. Customer internal identifier."
                     }
                 },
                 {
                     "name": "email",
                     "description": {
-                        "hu": "Kereső paraméter. Email cím.",
-                        "en": "Kereső paraméter. Email cím."
+                        "en": "Search parameter. Email Address."
                     }
                 },
                 {
                     "name": "createdAtMin",
                     "description": {
-                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum után létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the creation date. Returns customers created after the specified date. Format: 2013-01-01T10:30:00."
                     }
                 },
                 {
                     "name": "createdAtMax",
                     "description": {
-                        "hu": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Létrehozás dátumára lehet szűrni. A megadott dátum előtt létrehozott vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the creation date. Returns customers created before the specified date. Format: 2013-01-01T10:30:00."
                     }
                 },
                 {
                     "name": "updatedAtMin",
                     "description": {
-                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum után módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the modification date. Returns customers modified after the specified date. Format: 2013-01-01T10:30:00."
                     }
                 },
                 {
                     "name": "updatedAtMax",
                     "description": {
-                        "hu": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum előtt módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00.",
-                        "en": "Kereső paraméter. Utolsó módosítás dátumára lehet szűrni. A megadott dátum előtt módosított vásárlókat adja vissza. Formátum: 2013-01-01T10:30:00."
+                        "en": "Search parameter. It can be used for search the modification date. Returns customers modified before the specified date. Format: 2013-01-01T10:30:00."
                     }
                 }
             ],
@@ -263,49 +232,43 @@
         "post": {
             "method": "POST",
             "url": {
-                "hu": "\/customers[\/vásárló id]",
-                "en": "\/customers[\/vásárló id]"
+                "en": "\/customers[\/customer id]"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/customers",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "hu": "\/customers\/vásárló id",
-                "en": "\/customers\/vásárló id"
+                "en": "\/customers\/customer id"
             },
             "description": {
-                "hu": "Létrehozásra és módosításra is szolgál.",
-                "en": "Létrehozásra és módosításra is szolgál."
+                "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
                 "url": "\/customers\/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
-                "statusCode": "200 vagy 201"
+                "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "hu": "\/customers\/vásárló id",
-                "en": "\/customers\/vásárló id"
+                "en": "\/customers\/customer id"
             },
             "description": {
-                "hu": "Törlésre szolgál.",
-                "en": "Törlésre szolgál."
+                "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
                 "url": "\/customers\/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ=",
-                "statusCode": "204 vagy 404"
+                "statusCode": "204 or 404"
             }
         }
     }
