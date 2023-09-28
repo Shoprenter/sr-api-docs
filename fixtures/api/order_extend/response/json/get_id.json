@@ -203,7 +203,7 @@
         {
             "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=",
             "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD04MDQ=",
-            "name": "Személyes átvétel (1025 Budapest, Test u. 25):",
+            "name": "Personal pickup (1025 Budapest, Test u. 25):",
             "valueText": "0 Huf",
             "value": "0.0000",
             "sortOrder": "6",

@@ -11,7 +11,7 @@ Possible values for **shippingMethodExtension**:
 | Description                        | Value            |
 |------------------------------------|------------------|
 | Pickup points                      | RECEIVINGPOINT   |
-| Parcel sender - (Béta)             | CSOMAGKULDO      |
+| Parcel sender - (Beta)             | CSOMAGKULDO      |
 | DHL Express                        | DHLEXPRESS       |
 | DPD package point                  | DPDPARCELSHOP    |
 | FoxPost Parcel machine             | FOXPOST          |

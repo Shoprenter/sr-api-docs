@@ -362,7 +362,7 @@ Example:
                   {
                     "0": "",
                     "productId": 317,
-                    "sku": "TESZTOPC1234",
+                    "sku": "TestOPC1234",
                     "minimumPlural": "0",
                     "isPresent": false,
                     "shippingTime": 1565965848,
@@ -371,7 +371,7 @@ Example:
                     "cartKey": "S7QytqrOtDKwzrQyNjQHkoZQbGSdaGVoVV1sZW6llF9QkpmfV6wEFDKwqq6trQUA",
                     "download": [],
                     "cartItemType": "Product",
-                    "name": "Test opciós termék",
+                    "name": "Test sale product",
                     "thumbWidth": "60",
                     "thumbHeight": "60",
                     "imageUrl": "https://demo.shoprenter.hu/custom/demo/image/cache/w60h60/no_image.jpg?lastmod=0.1560858478",
@@ -465,7 +465,7 @@ Example:
                   {
                     "0": "",
                     "productId": 317,
-                    "sku": "TESZTOPC1234",
+                    "sku": "TestOPC1234",
                     "minimumPlural": "0",
                     "isPresent": false,
                     "shippingTime": 1565965848,

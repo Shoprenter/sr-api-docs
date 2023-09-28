@@ -10,7 +10,7 @@
 | expirationDate     | Expiration date. It shows when the system will repeat the fee collection                                                                                                                                                                                                                        |               |    x     |
 | id                 | Identity                                                                                                                                                                                                                                                                                        |               |    x     |
 | name               | Name (pl.: Teljes Version)                                                                                                                                                                                                                                                                      |               |    x     |
-| status             | Status (lásd: [Státuszok](../docs/k_statuses.md))                                                                                                                                                                                                                                               |               |    x     |
+| status             | Status (See: [Statuses](../docs/k_statuses.md))                                                                                                                                                                                                                                                 |               |    x     |
 | price              | An object, contains:                                                                                                                                                                                                                                                                            |               |    x     |
 |                    | **grossAmount**: Gross price                                                                                                                                                                                                                                                                    |               |          |
 |                    | **vatAmount**: VAT amount                                                                                                                                                                                                                                                                       |               |          |
@@ -193,7 +193,7 @@ In order for the subscription to take place, but only for the date 20 days later
     </tr>
 </table>
 
-### Negatív próbaidőszakos ismétlődő díjfizetés (Negative Trial Recurring Charge)
+### Negative Trial Recurring Charge
 
 In order to understand the negative trial-period recurring fee payment, we need to forget a little to what we read about using the positive recurring fee payment above.
 The negative trial period recurring fee payment is a tool for those **active subscribers** who have used the app until now, but before using the Payment API, fees were requested from them and invoices were issued in a different way.
