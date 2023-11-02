@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2023.10.02
+The following setting has been added to the [Settings Resource](../api/setting.md):
+<br>**config_display_quantity_name** - Unit of measurement appears on the product page after the input field.
+
 #### 2023.09.28
 Two new shipping methods were added: Sameday shipping and Easybox parcel locker. These methods' values are the following: SAMEDAYSHIPPING and EASYBOX.
 
