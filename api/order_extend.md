@@ -28,6 +28,7 @@ Possible values for **shippingMethodExtension**:
 | Express One package point          | TOFPARCELSHOP      |
 | Home delivery with courier service | WSESHIP            |
 | Personal collection                | WSESHIP            |
+| Wolt courier service               | WOLT               |
 
 ## Payment method types
 

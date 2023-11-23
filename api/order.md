@@ -8,27 +8,27 @@
 
 Possible values for **shippingMethodExtension**:
 
-| Description                        | Value            |
-|------------------------------------|------------------|
-| Pickup points                      | RECEIVINGPOINT   |
-| Parcel sender - (Beta)             | CSOMAGKULDO      |
-| DHL Express                        | DHLEXPRESS       |
-| DPD package point                  | DPDPARCELSHOP    |
-| FoxPost Parcel machine             | FOXPOST          |
-| FoxPost Home delivery              | FOXPOSTAUTOMATA  |
-| GLS package point (old)            | GLSPARCELSHOP    |
-| GLS package point                  | GLSPARCELPOINT   |
-| GLS Parcel machine                 | GLSPARCELLOCKER  |
-| MPL Parcel machine                 | MPLPARCELMACHINE |
-| MPL Post office transport          | MPLPOSTPOINT     |
-| Delivery in the MPL post office    | MPLPOSTSTAY      |
-| Pick Pack Pont transport           | PICKPACKPONT     |
-| Sameday shipping                   | SAMEDAYSHIPPING  |
-| Easybox parcel locker              | EASYBOX          |
-| Express One package point          | TOFPARCELSHOP    |
+| Description                       | Value            |
+|-----------------------------------|------------------|
+| Pickup points                     | RECEIVINGPOINT   |
+| Parcel sender - (Beta)            | CSOMAGKULDO      |
+| DHL Express                       | DHLEXPRESS       |
+| DPD package point                 | DPDPARCELSHOP    |
+| FoxPost Parcel machine            | FOXPOST          |
+| FoxPost Home delivery             | FOXPOSTAUTOMATA  |
+| GLS package point (old)           | GLSPARCELSHOP    |
+| GLS package point                 | GLSPARCELPOINT   |
+| GLS Parcel machine                | GLSPARCELLOCKER  |
+| MPL Parcel machine                | MPLPARCELMACHINE |
+| MPL Post office transport         | MPLPOSTPOINT     |
+| Delivery in the MPL post office   | MPLPOSTSTAY      |
+| Pick Pack Pont transport          | PICKPACKPONT     |
+| Sameday shipping                  | SAMEDAYSHIPPING  |
+| Easybox parcel locker             | EASYBOX          |
+| Express One package point         | TOFPARCELSHOP    |
 | Home delivery with courier service | WSESHIP          |
-| Personal pick up                   | WSESHIP          |
-
+| Personal pick up                  | WSESHIP          |
+ | Wolt courier service              | WOLT             |
 
 ## Payment Methods
 
