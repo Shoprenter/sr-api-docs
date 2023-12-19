@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2023.11.09
+Deleting the default customer group will no longer be possible via API requests. The response code will be "400 The default customer group cannot be deleted."
+
+The maximum identifier for orders created via API requests can be the maximum value of a 32-bit signed integer (2,147,483,647). Order identifiers greater than this number will not be generated in the system.
+
 #### 2023.10.02
 The following setting has been added to the [Settings Resource](../api/setting.md):
 <br>**config_display_quantity_name** - Unit of measurement appears on the product page after the input field.
