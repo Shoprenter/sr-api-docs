@@ -64,6 +64,9 @@ We have expanded the events that can be added to [WebHook resource](../api/webho
 - newsletter unsubscribe (newsletter_unsubscribe)
 - change newsletter subscriber data (newsletter_update_subscriber)
 
+#### 2022.12.23
+We have improved the functionality of the 'onCheckoutInitiated' event to ensure that it activates at the beginning of the checkout process.
+
 #### 2022.11.30
 A new search parameter has been added to the [Order](../api/order.md) and [OrderExtend](../api/order_extend.md) Resources called "innerIdMin".\
 With this, we can filter by the internal identifier of orders, with greater than or equal logic.
