@@ -19,7 +19,7 @@
         {
             "name": "discountType",
             "description": {
-                "en": "Discount type. Possible values: PERCENT, FIX."
+                "en": "Discount type. Possible values: PERCENT, FIXED."
             },
             "required": false,
             "readonly": false
