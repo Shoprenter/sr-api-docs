@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2024.01.17
+The Wolt Shipping mode has been added to the possible values of shippingMethodExtension [Order Extend Resource](../api/order_extend.md)
+
 #### 2023.11.09
 Deleting the default customer group will no longer be possible via API requests. The response code will be "400 The default customer group cannot be deleted."
 
