@@ -3,6 +3,9 @@
 #### 2024.01.17
 The Wolt Shipping mode has been added to the possible values of shippingMethodExtension [Order Extend Resource](../api/order_extend.md)
 
+#### 2024.01.03
+If we added a product to an order through the admin interface and then queried the order via the API using the [Order Product Resource](../api/order_product.md), we might have observed that the product appeared in the query without price. We have fixed this issue.
+
 #### 2023.11.09
 Deleting the default customer group will no longer be possible via API requests. The response code will be "400 The default customer group cannot be deleted."
 
