@@ -1,8 +1,5 @@
 # API changelog
 
-#### 2024.03.07
-All Shipping Mode has become queryable from the [Shipping Mode Extend Resource](../api/shipping_mode_extend.md). But the 'extension' field is still read-only!
-
 #### 2024.01.17
 The Wolt Shipping mode has been added to the possible values of shippingMethodExtension [Order Extend Resource](../api/order_extend.md)
 
