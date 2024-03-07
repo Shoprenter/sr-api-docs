@@ -57,6 +57,14 @@
             "readonly": false
         },
         {
+            "name": "extension",
+            "description": {
+                "en": "Type of shipping mode."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
             "name": "taxClass",
             "description": {
                 "en": "Tax class link."

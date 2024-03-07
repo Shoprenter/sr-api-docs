@@ -23,6 +23,9 @@
     <shippingType>
         <![CDATA[COURIER_SERVICE]]>
     </shippingType>
+    <extension>
+        <![CDATA[WSESHIP]]>
+    </extension>
     <taxClass>
         <href>
             <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>

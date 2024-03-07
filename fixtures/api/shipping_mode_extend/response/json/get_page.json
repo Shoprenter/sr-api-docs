@@ -21,6 +21,7 @@
             "costCalculationBy": "PRICE",
             "freeShippingFrom": "0.0000",
             "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -75,7 +76,8 @@
             "enabled": "1",
             "costCalculationBy": "PRICE",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -130,7 +132,8 @@
             "enabled": "1",
             "costCalculationBy": "PRICE",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -183,7 +186,8 @@
             "enabled": "1",
             "costCalculationBy": "PRICE",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -236,7 +240,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -342,7 +347,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -448,7 +454,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -554,7 +561,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -660,7 +668,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -766,7 +775,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -872,7 +882,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": {
                 "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD00"
@@ -980,7 +991,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": {
                 "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD00"
@@ -1088,7 +1100,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": {
                 "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
@@ -1196,7 +1209,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": {
                 "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
@@ -1304,7 +1318,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": {
                 "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
@@ -1412,7 +1427,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": {
                 "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02"
@@ -1520,7 +1536,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -1630,7 +1647,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -1740,7 +1758,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -1846,7 +1865,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -1952,7 +1972,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -2058,7 +2079,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -2168,7 +2190,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -2278,7 +2301,8 @@
             "enabled": "1",
             "costCalculationBy": "PRICE",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": null,
             "geoZone": null,
             "shippingModeDescriptions": [
@@ -2384,7 +2408,8 @@
             "enabled": "0",
             "costCalculationBy": "WEIGHT",
             "freeShippingFrom": "0.0000",
-            "shippingType": "COURIER_SERVICE",
+            "shippingType": "PERSONAL_RECEIPT",
+            "extension": "WSESHIP",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },

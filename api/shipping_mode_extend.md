@@ -4,6 +4,33 @@
 
 <ResourceProperties :resource="'shipping_mode_extend'" :lang="'en'"/>
 
+## Types of shipping mode
+
+Possible values for **extension**:
+
+| Name                               | Value              |
+|------------------------------------|--------------------|
+| Receiving points                   | RECEIVINGPOINT     |
+| Parcel Sender - (Beta)             | PARCEL DELIVERY    |
+| DHL Express                        | DHL EXPRESS        |
+| DPD parcel point                   | DPDPARCELSHOP      |
+| FoxPost Parcel Vending Machine     | FOXPOST            |
+| FoxPost Home Delivery              | FOXPOST AUTOMATIC  |
+| GLS package point (old)            | GLSPARCELSHOP      |
+| GLS package point                  | GLSPARCELPOINT     |
+| GLS parcel machine                 | GLSPARCELLOCKER    |
+| MPL Parcel Vending Machine         | MPLPARCELMACHINE   |
+| MPL Post Point delivery           | MPLPOSTPOINT       |
+| MPL Delivery in post office        | MPLPOSTSTAY        |
+| Sameday shipping                   | SAMEDAYSHIPPING    |
+| Easybox parcel locker              | EASYBOX            |
+| Pick Pack Point Delivery           | PICKUP POINT       |
+| Express One package point          | TOFPARCELSHOP      |
+| Home delivery with courier service | WSESHIP            |
+| Personal collection                | WSESHIP            |
+| Wolt courier service               | WOLT               |
+
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

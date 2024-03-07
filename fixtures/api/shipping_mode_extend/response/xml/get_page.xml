@@ -41,8 +41,11 @@
                 <![CDATA[0.0000]]>
             </freeShippingFrom>
             <shippingType>
-                <![CDATA[PERSONAL_RECEIPT]]>
+                <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
@@ -154,6 +157,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
@@ -265,6 +271,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -368,6 +377,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -471,6 +483,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -707,6 +722,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -943,6 +961,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -1181,6 +1202,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -1417,6 +1441,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -1653,6 +1680,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -1889,6 +1919,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone>
                 <href>
@@ -2131,6 +2164,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone>
                 <href>
@@ -2373,6 +2409,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone>
                 <href>
@@ -2615,6 +2654,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone>
                 <href>
@@ -2857,6 +2899,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone>
                 <href>
@@ -3099,6 +3144,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone>
                 <href>
@@ -3341,6 +3389,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
@@ -3587,6 +3638,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
@@ -3833,6 +3887,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -4071,6 +4128,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -4309,6 +4369,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -4547,6 +4610,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
@@ -4793,6 +4859,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
@@ -5039,6 +5108,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass/>
             <geoZone/>
             <shippingModeDescriptions>
@@ -5277,6 +5349,9 @@
             <shippingType>
                 <![CDATA[COURIER_SERVICE]]>
             </shippingType>
+            <extension>
+                <![CDATA[WSESHIP]]>
+            </extension>
             <taxClass>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]>
