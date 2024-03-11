@@ -6,7 +6,8 @@
     "enabled": "0",
     "costCalculationBy": "WEIGHT",
     "freeShippingFrom": "0.0000",
-    "shippingType": "COURIER_SERVICE",
+    "shippingType": "PERSONAL_RECEIPT",
+    "extension": "WSESHIP",
     "taxClass": {
         "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
     },
