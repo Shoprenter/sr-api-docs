@@ -109,7 +109,7 @@
                 "en": "\/shippingModeDescriptions\/shipping method description id"
             },
             "description": {
-                "en": "It is used for both creation and modification."
+                "en": "It is used for modification only."
             },
             "parameters": [],
             "example": {
