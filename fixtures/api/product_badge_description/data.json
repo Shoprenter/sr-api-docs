@@ -125,7 +125,7 @@
                 "en": "\/productBadgeDescriptions\/product badge id"
             },
             "description": {
-                "en": "It is used to create and modify."
+                "en": "It is used for modification only."
             },
             "parameters": [],
             "example": {
