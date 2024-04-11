@@ -5,6 +5,8 @@
     "dateTo": "2013-06-29",
     "minQuantity": "0",
     "maxQuantity": "100",
+    "isLimitedDiscount": "0",
+    "maxOrderableCount": "0",
     "product": {
         "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
     },

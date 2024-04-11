@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2024.04.11
+Limited discount fields were added to Product Special Resource. [Product Special Resource](../api/product_special.md)
+
 #### 2024.03.11
 All Shipping Mode has become queryable from the Shipping Mode Extend Resource. [Shipping Mode Extend Resource](../api/shipping_mode_extend.md) But the 'extension' field is still read-only!
 

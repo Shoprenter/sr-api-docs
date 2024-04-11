@@ -7,6 +7,8 @@
     <dateTo><![CDATA[2013-06-29]]></dateTo>
     <minQuantity><![CDATA[0]]></minQuantity>
     <maxQuantity><![CDATA[100]]></maxQuantity>
+    <isLimitedDiscount><![CDATA[0]]></isLimitedDiscount>
+    <maxOrderableCount><![CDATA[0]]></maxOrderableCount>
     <product>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
     </product>
