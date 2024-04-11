@@ -57,6 +57,22 @@
             "readonly": false
         },
         {
+            "name": "isLimitedDiscount",
+            "description": {
+                "en": "Boolean flag for enable/disable limited discount. Accepted values: 0 and 1"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "maxOrderableCount",
+            "description": {
+                "en": "Quantity of products can be purchased at the discounted price"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "product",
             "description": {
                 "en": "Product link."
