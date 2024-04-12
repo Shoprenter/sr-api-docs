@@ -27,7 +27,7 @@
         {
             "name": "firstVariantSelectType",
             "description": {
-                "en": "First variant forming parameter selector type. Possible values: SELECT, ICON (only for number type), LIST."
+                "en": "First variant forming parameter selector type. Possible values: SELECT, ICON (only for listAttributes), LIST."
             },
             "required": false,
             "readonly": false
@@ -35,7 +35,7 @@
         {
             "name": "secondVariantSelectType",
             "description": {
-                "en": "Second variant forming parameter selector type. Possible values: SELECT, ICON (only for number type), LIST."
+                "en": "Second variant forming parameter selector type. Possible values: SELECT, ICON (only for listAttributes), LIST."
             },
             "required": false,
             "readonly": false
