@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2024.04.12
+The Shipping Additional Cost fields has been added to Webhook Resource. [Webhook Resource](../api/webhook.md)
+
 #### 2024.04.11
 Limited discount fields were added to Product Special Resource. [Product Special Resource](../api/product_special.md)
 
