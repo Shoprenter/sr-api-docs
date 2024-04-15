@@ -89,5 +89,14 @@
 [//]: <> (DELETE ENDPOINT)
 <ResourceEndpoint :resource="'product_class_attribute_relation'" :endpoint="'delete'" :lang="'en'"/>
 
+## Possible Error Codes
+These error codes will come into effect starting from June 3, 2024.
+
+| Method(s) | HTTP Status Code | Error Code | Error Message |
+| --- | --- | --- | --- |
+| POST, PUT | 400 | 40021 | Both variant parameters cannot reference the same attribute! |
+| POST, PUT | 400 | 40022 | Text attribute cannot be used as variant parameter |
+| POST, PUT | 400 | 40023 | Only list attributes can have ICON select type |
+
 ## Examples
 - [**Product attribute handling**](../development/api-examples/08_product_attribute_handling.md)
