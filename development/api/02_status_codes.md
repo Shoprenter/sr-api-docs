@@ -164,6 +164,31 @@
 <td>Reached maximum attribute limit. The limit is {limit}</td>
 </tr>
 <tr>
+<td>400</td>
+<td>40021</td>
+<td>Both variant parameters cannot reference the same attribute!</td>
+</tr>
+<tr>
+<td>400</td>
+<td>40022</td>
+<td>Text attribute cannot be used as variant parameter</td>
+</tr>
+<tr>
+<td>400</td>
+<td>40023</td>
+<td>Only list attributes can have ICON select type</td>
+</tr>
+<tr>
+<td>400</td>
+<td>40024</td>
+<td>Another product class with the same name already exists!</td>
+</tr>
+<tr>
+<td>400</td>
+<td>40025</td>
+<td>Cannot delete product class which has products!</td>
+</tr>
+<tr>
 <td>401</td>
 <td>40101</td>
 <td>You have no permission for this operation!</td>

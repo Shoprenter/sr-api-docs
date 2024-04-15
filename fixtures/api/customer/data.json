@@ -59,7 +59,7 @@
         {
             "name": "password",
             "description": {
-                "en": "bcrypt password."
+                "en": "bcrypt password. (rounds 15, empty salt)"
             },
             "required": true,
             "readonly": false
