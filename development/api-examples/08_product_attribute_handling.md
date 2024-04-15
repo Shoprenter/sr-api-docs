@@ -52,7 +52,7 @@ how to enter the values of the product properties.
 With a simple request, we create our product type, which will be combined with a Houseplant
 its unique properties.
 
-_The versioning parameters are discussed [here](#6-lps---termkltozatok-eilaktsa)._
+_The versioning parameters are discussed [here](#step-6-creating-product-variants)._
 
 #### Used Resource
 
