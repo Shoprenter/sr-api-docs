@@ -1,5 +1,12 @@
 # Product Class Resource
 
+## ATTENTION!
+The functionality of the product class feature will change in the Shoprenter API from June 3, 2024. The fix is necessary because the different operations of the API and the admin interface can lead to inconsistent states. By standardizing, however, we can simplify and make the management of product types more efficient.
+
+The changes will result in backward incompatible operation. We ask everyone who uses this part of the API to review the operation of the affected codes!
+
+Further details can be read in the following [entry of the Shoprenter changelog.](https://changelog.shoprenter.hu/hu/termektipus-valtozasok-az-api_ban-juniustol-Vzq3OfnF)
+
 ## Properties
 
 <ResourceProperties :resource="'product_class'" :lang="'en'"/>
