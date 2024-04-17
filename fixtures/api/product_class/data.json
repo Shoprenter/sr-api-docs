@@ -13,7 +13,7 @@
             "description": {
                 "en": "Name."
             },
-            "required": false,
+            "required": true,
             "readonly": false
         },
         {

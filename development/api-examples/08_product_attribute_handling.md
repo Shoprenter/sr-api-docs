@@ -2,8 +2,7 @@
 
 _Before we start learning about handling types and properties via API:_
 
-**Recommended** [article] found on the Shoprenter Academy (https://support.shoprenter.hu/hc/hu/articles/215106088-T%C3%ADpusok-tluodnosts%C3%A1gok-sz%C5%B1r%C5 %91k-matrix%C3%A1k)
-study. **We need to understand** what happens in the administration interface of the managed store, so that they are completely secure
+**Recommended** [article](https://support.shoprenter.hu/hc/hu/articles/215106088-T%C3%ADpusok-tluodnosts%C3%A1gok-sz%C5%B1r%C5%91k-matrix%C3%A1k) found on the Shoprenter Academy study. **We need to understand** what happens in the administration interface of the managed store, so that they are completely secure
 let's get down to business while we handle this part via API!
 
 Each of the products in the stores may have characteristics that
@@ -53,7 +52,7 @@ how to enter the values of the product properties.
 With a simple request, we create our product type, which will be combined with a Houseplant
 its unique properties.
 
-_The versioning parameters are discussed [here](#6-lps---termkltozatok-eilaktsa)._
+_The versioning parameters are discussed [here](#step-6-creating-product-variants)._
 
 #### Used Resource
 
