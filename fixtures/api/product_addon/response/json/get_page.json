@@ -1,0 +1,21 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/productAddons?page=0&limit=25",
+    "page": "0",
+    "limit": "25",
+    "first": {
+        "href": "http://shopname.api.myshoprenter.hu/productAddons?page=0&limit=25"
+    },
+    "previous": null,
+    "next": null,
+    "last": {
+        "href": "http://shopname.api.myshoprenter.hu/productAddons?page=0&limit=25"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE="
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTI="
+        }
+    ]
+}
