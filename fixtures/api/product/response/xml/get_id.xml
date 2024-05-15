@@ -114,4 +114,10 @@
     <collateralProducts>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/collateralProducts]]></href>
     </collateralProducts>
+    <productAddons>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/productAddons]]></href>
+    </productAddons>
+    <productAddonProductRelations>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddonProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
+    </productAddonProductRelations>
 </response>
