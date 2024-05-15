@@ -489,6 +489,14 @@
             "readonly": false
         },
         {
+            "name": "orderProductAddons",
+            "description": {
+                "en": "Order product addons as an object"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
             "name": "externalInfo",
             "description": {
                 "en": "External marketplace identifiers"

@@ -1,5 +1,6 @@
 # Order Extend Resource
 
+
 ## Properties
 
 <ResourceProperties :resource="'order_extend'" :lang="'en'"/>
