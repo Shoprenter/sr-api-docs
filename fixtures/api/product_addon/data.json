@@ -89,7 +89,7 @@
             "readonly": true
         },
         {
-            "name": "dateUpdated",
+            "name": "dateModified",
             "description": {
                 "en": "Last updated date"
             },

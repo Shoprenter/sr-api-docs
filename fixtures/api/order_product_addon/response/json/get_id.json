@@ -13,7 +13,7 @@
     "total": "2150.0000",
     "taxRate": "0.0000",
     "dateCreated": "2013-01-01T01:00:00",
-    "dateUpdated": "2013-01-01T01:00:00",
+    "dateModified": "2013-01-01T01:00:00",
     "order": {
         "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
     },

@@ -13,7 +13,7 @@
     <total><![CDATA[150.0000]]></total>
     <taxRate><![CDATA[0.0000]]></taxRate>
     <dateCreated><![CDATA[2013-01-01T01:00:00]]></dateCreated>
-    <dateUpdated><![CDATA[2013-01-01T01:00:00]]></dateUpdated>
+    <dateModified><![CDATA[2013-01-01T01:00:00]]></dateModified>
     <order>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
     </order>
