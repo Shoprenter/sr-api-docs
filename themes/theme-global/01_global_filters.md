@@ -173,6 +173,42 @@ fancybox/3.5.7/css/jquery.fancybox.min.css?v=1709134277
 
 Kombinálható a [stylesheet_tag](#stylesheet-tag) és [script_tag](#script-tag) filterekkel.
 
+### Elérhető assetek:
+<table>
+<tr>
+<td>catalog/view/javascript/vendor/bootstrap-touchspin/4.3.0/js/jquery.bootstrap-touchspin.min.js</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/fancybox/3.5.7/css/jquery.fancybox.min.css</td>
+<tr>
+<td>catalog/view/javascript/vendor/fancybox/3.5.7/js/jquery.fancybox.min.js</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/jquery/3.7.1/js/jquery.min.js</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/mmenu/9.3.0/css/mmenu.min.css</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/mmenu/9.3.0/js/mmenu.min.js</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/popperjs/2.11.8/js/popper.min.js</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/slick/1.9.0/js/slick.min.js</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/splidejs/4.1.4/css/splide.min.css</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/splidejs/4.1.4/js/splide.min.js</td>
+</tr>
+<tr>
+<td>catalog/view/javascript/vendor/tippyjs/6.3.7/js/tippy.min.js</td>
+</tr>
+</table>
+
 ---
 
 ## image_url
