@@ -1,52 +1,52 @@
 # config.data.json
 
-A téma konfigurálásához szükséges adatokat tartalmazza JSON formátumban. 
+A téma konfigurálásához szükséges adatokat tartalmazza JSON formátumban.
 
 Két részből áll, az assets és a presets részből:
 
 ```json
 {
-    "assets": {},
-    "presets": {}
+ "assets": {},
+ "presets": {}
 }
 ```
 
 ## assets
 
-Az assets objektumban vannak nyilvántartva a témához tartozó képek. Ezek például a bélyegképek, amelyek az admin 
-felületen megjelennek a téma kiválasztás oldalon. 
+Az assets objektumban vannak nyilvántartva a témához tartozó képek. Ezek például a bélyegképek, amelyek az admin
+felületen megjelennek a téma kiválasztás oldalon.
 
 
 Példa:
 
 ```json
 {
-    "assets": {
-        "base": {
-            "thumb": "tokyo.jpg"
-        },
-        "blue": {
-            "thumb_small": "tokyo_blue.jpg",
-            "thumb_big": "tokyo_blue_n.jpg"
-        },
-        "green": {
-            "thumb_small": "tokyo_green.jpg",
-            "thumb_big": "tokyo_green_n.jpg"
-        }
-    }
+ "assets": {
+  "base": {
+   "thumb": "starter2.jpg"
+  },
+  "blue": {
+   "thumb_small": "starter2_blue.jpg",
+   "thumb_big": "starter2_blue_n.jpg"
+  },
+  "green": {
+   "thumb_small": "starter2_green.jpg",
+   "thumb_big": "starter2_green_n.jpg"
+  }
+ }
 }
 ```
 
 ## presets
 
 A presets objektumban találhatóak a témához tartozó szín változók. Ezen változók alapján jön létre
- a **Téma testreszabás** oldalon a **Téma színek** fül tartalma. 
- 
+a **Téma testreszabás** oldalon a **Téma színek** fül tartalma.
+
 Minden változóhoz tartozik egy ColorPicker vagy BackgroundPicker.
- Ha a változó nevében a postfix color, akkor ColorPicker jelenik meg, ha a postfix background akkor BackgroundPicker, 
- ha pedig egyik sem, akkor egy text típusú input mező. A ColorPicker-nél egy színt lehet csak kiválasztani, míg a 
- BackgroundPicker segítségével színátmeneteket is lehet megadni. 
- 
+Ha a változó nevében a postfix color, akkor ColorPicker jelenik meg, ha a postfix background akkor BackgroundPicker,
+ha pedig egyik sem, akkor egy text típusú input mező. A ColorPicker-nél egy színt lehet csak kiválasztani, míg a
+BackgroundPicker segítségével színátmeneteket is lehet megadni.
+
 <table>
   <tr>
     <th>Postfix</th>
@@ -65,10 +65,7 @@ Minden változóhoz tartozik egy ColorPicker vagy BackgroundPicker.
     <td>input['type=text']</td>
   </tr>
 </table>   
- 
- **FONTOS: background postfix-es SCSS változót nem 
- szabad linear-gradient közé rakni, mert hibát okoz és a css fájl nem tud létrejönni!**
- 
+
 
 Példa:
 
@@ -106,25 +103,34 @@ Példa:
 }
 ```
 
-A presets objektum közvetlen gyerek elemei a különböző színváltozatokat tartalmazza, illetve a **base** és a **custom** 
-objektumok speciális foglalt nevek. A **base** objektum tartalmazza az alap változókat, amik minden színváltozatnál megegyeznek, 
-a példában a **blue** és a **green** változatok pedig azokat a változókat tartalmazza amikben a színváltozat eltér. 
-Az assets és a presets objektumban ugyanazok a változatok szerepelnek. Ha az admin felhasználó a Téma színek 
+A presets objektum közvetlen gyerek elemei a különböző színváltozatokat tartalmazza, illetve a **base** és a **custom**
+objektumok speciális foglalt nevek. A **base** objektum tartalmazza az alap változókat, amik minden színváltozatnál megegyeznek,
+a példában a **blue** és a **green** változatok pedig azokat a változókat tartalmazza amikben a színváltozat eltér.
+Az assets és a presets objektumban ugyanazok a változatok szerepelnek. Ha az admin felhasználó a Téma színek
 oldalon módosítja a színeket akkor a módosult érték a **custom** objektumban kerül eltárolásra.
 
-**Téma másolás** használatakor a színváltozatok (blue, green) nem kerülnek átmásolásra, a lemásolt téma, ha például 
+**Téma másolás** használatakor a változatok (blue, green) nem kerülnek átmásolásra, a lemásolt téma, ha például
 a blue volt, akkor a blue objektum változói átkerülnek a **base** objektumon belülre.
 
-A változókat a témában fel lehet használni a **style.scss** stílusleíró fájlban. Minden változó ami a 
-**config.data.json** fájl presets objektumán belül meg van adva, elérhető **SCSS** változóként!
+## Használat
+A változók bármely tpl fájlban elérhetőek, a [settings](../theme-global/04_global_objects.md#settings) objektum **get** metódusának segítségével:
 
-Például a global-font-color értéke a JSON -ben #8e8e8e, a style.scss-ben felhasználható a $global-font-color:
-
-```scss
-body {
-    color: $global-font-color; // #8e8e8e
-}
+```
+{{ settings.get('global-color', '#000') }}
 ```
 
-Tipp: Ha a style.scss-ben nem találjuk meg hol van a kezdeti értékadása egy változónak, akkor az nagy valószínűséggel 
-a config.data.json fájlban lesz definiálva.
+A settings objektumból a get metódus segítségével lekért változókat érdemes a :root pszeudó-osztályban CSS változókon keresztül átadni, így könnyen használható bármelyik CSS fájlban:
+
+```
+<style>
+:root {
+    --main-color: {{ settings.get('global-color', '#000') }};
+}
+</style>
+```
+base.css:
+```css
+body {
+ color: var(--main-color);
+}
+```
