@@ -6,6 +6,8 @@ A funkció jelenleg Béta állapotban van, amit a ShopRenter boltok admin felül
 lehet bekapcsolni. A fejlesztőknek lehetőségük van a [Storefront](mailto:storefront@shoprenter.hu) csapattól
 technikai segítséget kérni.
 
+:red_circle: **FONTOS:**  A téma fájlok szerkesztésével az egyedi téma technikai támogatása a tervező felelőssége, a Shoprenter nem vállal felelősséget és az egyedi témát használó boltoknak nem tud támogatást nyújtani. Ha technikai probléma merül fel a témával kapcsolatban, akkor az egyedi téma készítője felelős a probléma megoldásáért. A Shoprenter kizárólag a saját témákért és fejlesztésekért vállal garanciát és felelősséget.
+
 ## Általános tudnivalók:
 A Téma fájl szerkesztő a **Téma kiválasztása** oldalon érhető el a már kiválasztott sablonoknál a **Műveletek**
 gombra kattintva. Az itt megjelenő lenyílóban található **téma fájl szerkesztő** menüpontban lehet
@@ -23,8 +25,7 @@ Ekkor létrejön az általunk meghatározott néven az új téma aminél szinté
 elérni a funkciót.
 
 A **config/config.data.json** fájl írja le a téma színváltozóit. Ez azt jelenti, hogy ebben a json objektumban
-definiált property-kből jönnek létre a Frontend-en, a CSS generálás alatt az SCSS változók.
-Például a body-background property fel van véve, tehát használható a style.scss -ben a $body-background változó.
+definiált property-k határozzák meg a témánk színeit.
 
 ## Fájl kereső
 A Téma fájl szerkesztő bal felső sarkában található a fájl kereső funkció. Az ide beírt kulcsszavak alapján lehet

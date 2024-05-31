@@ -18,6 +18,8 @@ body {
 Tipp: Ha a style.scss-ben nem találjuk meg hol van a kezdeti értékadása egy változónak, akkor az nagy valószínűséggel
 a config.data.json fájlban lesz definiálva.
 
+FONTOS: background postfix-es SCSS változót nem szabad linear-gradient közé rakni, mert hibát okoz és a css fájl nem tud létrejönni!
+
 ---
 
 ## Téma fájlok
