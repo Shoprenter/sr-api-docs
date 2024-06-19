@@ -17,7 +17,7 @@ Please send the necessary data to the email address partnersupport@shoprenter.hu
 - **Type of application:** The application has two forms:
     - Embedded: The URL given to the EntryPoint is loaded into an Iframe, which can be accessed via the URL belonging to the application, on the Shoprenter admin interface (e.g. `https://shopname.myshoprenter.hu/admin/app/1 `).
     - Redirected: When redirecting, the user is simply redirected to the specified EntryPoint URL.
-- **Name of the test store:** At the very beginning of the development, a test store must be requested on [shoprenter.hu](https://www.shoprenter.hu/testigenyles/?devstore=1).
+- **Name of the test store:** At the very beginning of the development, a test store must be requested on [shoprenter.hu](https://www.shoprenter.hu/tesztigenyles/?devstore=1).
   Here you can enter the shop name, which will be visible in the first part of the shop domain - `[shopName].myshoprenter.hu`.
 
 **After registering the application, Partner Support will send the following data:**
