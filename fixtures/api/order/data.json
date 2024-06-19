@@ -658,7 +658,7 @@
             "parameters": [],
             "example": {
                 "url": "\/orders",
-                "statusCode": "200 or 201"
+                "statusCode": "200, 201 or 400"
             }
         },
         "put": {
@@ -672,7 +672,7 @@
             "parameters": [],
             "example": {
                 "url": "\/orders\/b3JkZXItb3JkZXJfaWQ9MTcy",
-                "statusCode": "200 or 201"
+                "statusCode": "200, 201 or 400"
             }
         }
     }
