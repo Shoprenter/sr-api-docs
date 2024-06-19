@@ -310,7 +310,7 @@ https://[SHOPNAME].cdn.shoprenter.hu/custom/[SHOPNAME]/image/cache/w100h150wt1q1
 <td>
 
 ```
-https://[SHOPNAME].cdn.shoprenter.hu/custom/[SHOPNAME]/image/cache/w420h420q100/starter2_kicker_1.jpg?lastmod=0.1718618595
+https://[SHOPNAME].cdn.shoprenter.hu/custom/[SHOPNAME]/image/cache/w420h420q100/starter2_kicker_1.jpg?lastmod=[TIMESTAMP]
 ```
 
 </td>
@@ -405,7 +405,6 @@ Kimenet:
   alt="Test alt" 
   sizes="(max-width: 576px) 190px, (max-width: 1200px) 270px, 370px"
  >
-
 ```
 
 </td>
@@ -501,7 +500,6 @@ A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző
 
 ```
 {{ 'base.css' | asset_url | stylesheet_tag }}
-
 ```
 
 </td>
@@ -509,7 +507,6 @@ A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző
 
 ```
 <link rel="stylesheet" href="https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/starter2_global/minified/template/assets/base.css?v=[TIMESTAMP]">
-
 ```
 
 </td>
@@ -520,7 +517,6 @@ A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző
 
 ```
 {{ 'footer.css' | asset_url | stylesheet_tag(lazy = true) }}
-
 ```
 
 </td>
@@ -528,7 +524,6 @@ A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző
 
 ```
 <link rel="stylesheet" href="https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/starter2_global/minified/template/assets/footer.css?v=[TIMESTAMP]" media="all" onload="this.media='all'">
-
 ```
 
 </td>
@@ -538,7 +533,6 @@ A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző
 
 ```
 {{ 'base.css' | asset_url | stylesheet_tag(preload = true) }}
-
 ```
 
 </td>
@@ -546,13 +540,11 @@ A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző
 
 ```
 <link rel="stylesheet" href="https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/starter2_global/minified/template/assets/base.css?v=[TIMESTAMP]">
-
 ```
 
 Request header:
 ```http request
 Link: <https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/starter2_global/minified/template/assets/style.css?v=[]TIMESTAMP]>; rel=preload; as=style
-
 ```
 
 </td>
@@ -639,8 +631,7 @@ A `script_tag` filter a rendszer által biztosított JS fájlok betöltését se
 Request header:
 
 ```http request
-Link:
-<https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/javascript/vendor/jquery/3.7.1/js/jquery.min.js?v=[TIMESTAMP]>; rel=preload; as=script
+Link: <https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/javascript/vendor/jquery/3.7.1/js/jquery.min.js?v=[TIMESTAMP]>; rel=preload; as=script
 ```
 
 </td>
