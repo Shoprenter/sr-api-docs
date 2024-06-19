@@ -4,9 +4,6 @@
     <innerId><![CDATA[3]]></innerId>
     <name><![CDATA[Product addon name]]></name>
     <sku><![CDATA[BETETDIJ01]]></sku>
-    <productInnerId><![CDATA[51]]></productInnerId>
-    <orderInnerId><![CDATA[122]]></orderInnerId>
-    <productAddonInnerId><![CDATA[5]]></productAddonInnerId>
     <type><![CDATA[DEPOSIT_FEE]]></type>
     <price><![CDATA[50.0000]]></price>
     <quantity><![CDATA[3.0000]]></quantity>

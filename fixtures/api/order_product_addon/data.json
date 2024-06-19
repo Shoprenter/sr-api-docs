@@ -33,30 +33,6 @@
             "readonly": false
         },
         {
-            "name": "productInnerId",
-            "description": {
-                "en": "The connected product internal identifier."
-            },
-            "required": true,
-            "readonly": false
-        },
-        {
-            "name": "orderInnerId",
-            "description": {
-                "en": "The order internal identifier."
-            },
-            "required": true,
-            "readonly": false
-        },
-        {
-            "name": "productAddonInnerId",
-            "description": {
-                "en": "The product addon internal identifier."
-            },
-            "required": true,
-            "readonly": false
-        },
-        {
             "name": "price",
             "description": {
                 "en": "Net price."
