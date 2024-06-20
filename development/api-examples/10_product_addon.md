@@ -1,4 +1,5 @@
 # Product Addon
+**The following example demonstrates how to create a deposit fee for products.**
 
 **1. Creating a Deposit:** `Product Addon Resource`<br>
 - **Function:**  This API Resource allows the creation of deposits in the system.
@@ -23,7 +24,7 @@ Creating a deposit
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu//productAddons</td>
+    <td>http://shopname.api.myshoprenter.hu/productAddons</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -62,7 +63,7 @@ Linking Deposit with Product:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu//productAddonProductRelations/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==</td>
+    <td>http://shopname.api.myshoprenter.hu/productAddonProductRelations/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
