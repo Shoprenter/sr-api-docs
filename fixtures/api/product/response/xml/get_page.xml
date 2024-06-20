@@ -130,6 +130,12 @@
             <collateralProducts>
                 <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/collateralProducts]]></href>
             </collateralProducts>
+            <productAddons>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/productAddons]]></href>
+            </productAddons>
+            <productAddonProductRelations>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddonProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
+            </productAddonProductRelations>
         </item>
         <item>
             <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTMwMTI=]]></href>
@@ -247,6 +253,12 @@
             <collateralProducts>
                 <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTMwMTI=/collateralProducts]]></href>
             </collateralProducts>
+            <productAddons>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/productAddons]]></href>
+            </productAddons>
+            <productAddonProductRelations>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddonProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
+            </productAddonProductRelations>
         </item>
         <item>
             <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM5NzU=]]></href>
@@ -364,6 +376,12 @@
             <collateralProducts>
                 <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM5NzU=/collateralProducts]]></href>
             </collateralProducts>
+            <productAddons>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/productAddons]]></href>
+            </productAddons>
+            <productAddonProductRelations>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddonProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
+            </productAddonProductRelations>
         </item>
         <item>
             <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM5NzY=]]></href>
@@ -481,6 +499,12 @@
             <collateralProducts>
                 <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM5NzY=/collateralProducts]]></href>
             </collateralProducts>
+            <productAddons>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/productAddons]]></href>
+            </productAddons>
+            <productAddonProductRelations>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddonProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
+            </productAddonProductRelations>
         </item>
         <item>
             <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQzOTA=]]></href>
@@ -598,6 +622,12 @@
             <collateralProducts>
                 <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTQzOTA=/collateralProducts]]></href>
             </collateralProducts>
+            <productAddons>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/productAddons]]></href>
+            </productAddons>
+            <productAddonProductRelations>
+                <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddonProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
+            </productAddonProductRelations>
         </item>
     </items>
 </response>

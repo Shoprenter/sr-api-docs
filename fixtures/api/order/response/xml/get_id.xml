@@ -182,6 +182,11 @@
             <![CDATA[http://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9MTcy]]>
         </href>
     </orderGiftWrappings>
+    <orderProductAddons>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons?orderId=b3JkZXItb3JkZXJfaWQ9MTcy]]>
+        </href>
+    </orderProductAddons>
     <externalInfo>
         <partner_order_id>
             <![CDATA[12345]]>

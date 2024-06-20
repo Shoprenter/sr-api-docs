@@ -758,4 +758,27 @@
             <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=]]></href>
         </urlAliasEntity>
     </urlAliases>
+    <productAddons>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=/productAddons]]>
+        </href>
+    </productAddons>
+    <productAddonProductRelations>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/productAddonProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD0xNzA3JmNvbGxhdGVyYWxfaWQ9MTIw]]>
+        </href>
+        <id>
+            <![CDATA[cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD0xNzA3JmNvbGxhdGVyYWxfaWQ9MTIw]]>
+        </id>
+        <product>
+            <href>
+                <![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=]]>
+            </href>
+        </product>
+        <productAddon>
+            <href>
+                <![CDATA[http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdC1wcm9kdWN0X2lkPTEyMA==]]>
+            </href>
+        </productAddon>
+    </productAddonProductRelations>
 </response>

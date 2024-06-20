@@ -495,6 +495,22 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "productAddons",
+            "description": {
+                "en": "Addons that are linked to the product"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "productAddonRelations",
+            "description": {
+                "en": "Links to Resources describing the relationship between the product and product addons."
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {

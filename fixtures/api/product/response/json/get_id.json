@@ -109,5 +109,11 @@
     },
     "collateralProducts": {
         "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=/collateralProducts"
+    },
+    "productAddons": {
+        "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=/productAddons"
+    },
+    "productAddonProductRelations": {
+        "href": "http://shopname.api.myshoprenter.hu/productAddonProductRelations?productId=cHJvZHVjdC1wcm9kdWN0X2lkPTQzOTA="
     }
 }

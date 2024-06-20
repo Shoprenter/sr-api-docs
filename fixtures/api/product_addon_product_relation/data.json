@@ -1,0 +1,117 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "Relation identifier. It is used to change the OuterID."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "product",
+            "description": {
+                "en": "Product link. The link of the product to which product addon is linked."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "productAddon",
+            "description": {
+                "en": "Product addon link. A connected Product addon link."
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/productAddonProductRelations\/relation id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddonProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/productAddonProductRelations"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                },
+                {
+                    "name": "productId",
+                    "description": {
+                        "en": "Search parameter (Product identifier)."
+                    }
+                },
+                {
+                    "name": "productAddonId",
+                    "description": {
+                        "en": "Search parameter (Product addon identifier)."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/productAddonProductRelations?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "en": "\/productAddonProductRelations"
+            },
+            "description": {
+                "en": "For creation only."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddonProductRelations",
+                "statusCode": "201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "\/productAddonProductRelations\/relation id"
+            },
+            "description": {
+                "en": "Used for deletion."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddonProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
+                "statusCode": "204 or 404"
+            }
+        }
+    }
+}
