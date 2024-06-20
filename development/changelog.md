@@ -1,5 +1,38 @@
 # API changelog
 
+#### 2024.06.20
+The Deposit Fee system has become available in Hungary, for which we created new API Resources and expanded old ones.
+
+**New API Resources:**<br>
+
+**1. Creating a Deposit:** `Product Addon Resource`<br>
+- **Function:**  This API Resource allows the creation of deposits in the system.
+- **Data:** All necessary data for each deposit is defined here, such as amount, type, VAT.<br>
+
+**2. Linking Deposit with Product:** `Product Addon Product Relation Resource`<br>
+
+- **Function**`: This API Resource is responsible for linking deposits and products.
+
+- **Opportunity:** It allows adding the appropriate deposit to a given product.<br>
+
+**3. Ordered Deposits:** `Order Product Addon Resource`<br>
+
+- **Function:** This API Resource is used for managing the deposits ordered during the ordering process.<br>
+
+- **Information:** It provides information about the ordered deposits and ensures their tracking in the order process.<br>
+
+Extending existing API Resources with Product Addon information:
+
+- [Order Resource](../api/order.md)
+
+- [Order Extend Resource](../api/order_extend.md)
+
+- [Product Resource](../api/product.md)
+
+- [Product Extend Resource](../api/product_extend.md)
+
+- [Webhook](../api/webhook.md)
+
 #### 2024.04.12
 The Shipping Additional Cost fields have been added to Webhook Resource. [Webhook Resource](../api/webhook.md)
 
