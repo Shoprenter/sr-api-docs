@@ -84,6 +84,9 @@
     "orderGiftWrappings": {
         "href": "http://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
     },
+    "orderProductAddons": {
+        "href": "http://shopname.api.myshoprenter.hu/orderProductAddons?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+    },
     "externalInfo": {
         "partner_order_id": "12345",
         "partner_prefix": "EMAG"

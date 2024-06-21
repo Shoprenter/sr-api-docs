@@ -128,5 +128,22 @@
                 "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE0OQ=="
             }
         }
+    ],
+    "productAddonProductRelations": [
+        {
+            "productAddon": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTEyMA=="
+            }
+        },
+        {
+            "productAddon": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTExOQ=="
+            }
+        },
+        {
+            "productAddon": {
+                "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTExOA=="
+            }
+        }
     ]
 }
