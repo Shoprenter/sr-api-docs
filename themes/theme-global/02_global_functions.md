@@ -7,7 +7,7 @@ ShopRenter által biztosított függvények és filterek is. Ezek azért készü
 
 ## asset()
 
-Az asset függvény az elérési útvonalat kiegészíti a cdn-es domain névvel és verziót is kap.
+Az `asset` függvény az elérési útvonalat kiegészíti a cdn-es domain névvel és verziót is kap.
 
 ### Szintaxis
 
@@ -32,13 +32,12 @@ Példa:
 Kimenet:
 
 ```
-<script src="https://boltnev.cdn.shoprenter.hu/catalog/view/javascript/filter/mobile_filter.js?v=12345678"></script>
+<script src="https://[BOLTNEV].cdn.shoprenter.hu/catalog/view/javascript/filter/mobile_filter.js?v=[TIMESTAMP]"></script>
 ```
-
 
 ## asset_image_url()
 
-Az asset_image_url függvénynek a kép fájl nevét kell csak megadni és kiegészíti a cdn-es domain névvel és verziót is kap.
+Az `asset_image_url` függvénynek a kép fájl nevét kell csak megadni és kiegészíti a cdn-es domain névvel és verziót is kap.
 Célszerű a [dinamikus modulok](../theme-development-tools/02_theme_sections.md) képfeltöltésénél használni.
 
 ### Szintaxis
@@ -64,13 +63,47 @@ Példa:
 Kimenet:
 
 ```html
-<img src="https://boltnev.cdn.shoprenter.hu/custom/boltnev/image/data/kepfajl.jpg?v=12345678" />
+<img src="https://[BOLTNEV].cdn.shoprenter.hu/custom/boltnev/image/data/kepfajl.jpg?v=[TIMESTAMP]" />
 ```
+
+## add_script_asset()
+
+Az `add_script_asset` függvény a rendszer saját JavaScript fájljainak hozzáadására szolgál a TPL fájlokban.  A függvény automatikusan kiegészíti a fájl URL-jét a CDN-es domain névvel és egy verzió paraméterrel és létrehoz egy `<script>` tag-et. Ez a függvény biztosítja, hogy a szükséges JS fájlok megfelelően beillesztésre kerüljenek az oldal betöltése során, és a rendszer funkciói helyesen működjenek.
+
+### Szintaxis
+
+```
+{{ add_script_asset(filePath) }}
+```
+
+### Argumentumok
+
+**filePath**: A fájl útvonala a gyökér könyvtártól.
+
+### Visszatérési érték
+
+A teljes url -el tér vissza, string típusként.
+
+Példa:
+
+```twig
+{{ add_script_asset('catalog/view/javascript/addtocart/addtocart.js') }}
+```
+
+Kimenet:
+
+```
+<script src="https://[BOLTNEV].cdn.shoprenter.hu/catalog/view/javascript/addtocart/addtocart.js?v=[TIMESTAMP]"></script>
+```
+
+- :red_circle: **FONTOS:** Kérjük ne távolítsa el vagy módosítsa az így hozzáadott fájlokat. Ezek a szkriptek elengedhetetlenek a rendszer funkcióinak helyes működéséhez. Ezen függvény használata a rendszer saját JS fájljaira korlátozódik.
+- :red_circle: **FONTOS:** Bizonyos esetekben rendszer szinten történik egy csoportosítás  és egybegyúrás az add_script_asset-el hozzáadott fájlok esetében. Ezek a fájlok minify-olva, egy másik néven érhetők el, hogy optimalizálják a betöltési időt és a teljesítményt.
+
 
 ## isDeviceType()
 
 Ha szeretnénk mobil eszközön más megjelenést készíteni és már a html kódot se szeretnénk megjeleníteni, akkor az
-isDeviceType függvény segítségével lehet feltételeket készíteni a templateben.
+`isDeviceType` függvény segítségével lehet feltételeket készíteni a templateben.
 
 ### Szintaxis
 
