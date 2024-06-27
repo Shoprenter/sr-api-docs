@@ -2,7 +2,7 @@
 
 Az elérhető objektumok segítségével könnyedén felépítheted és testreszabhatod a témákat a rendszerben. Az objektumok metódusokkal és/vagy tulajdonságokkal rendelkeznek, amelyek lehetővé teszik a beállítások kezelését, pénznemek kezelését, képek kezelését, általános rendszerinformációk lekérdezését és különféle útvonalak elérését. Az alábbiakban részletes leírást találsz az egyes objektumokról és azok használatáról.
 
-Globálisan az összes template fájában elérhetőek ezek az objektumok.
+Globálisan minden template fájlban elérhetőek ezek az objektumok.
 
 ## config
 
@@ -263,6 +263,8 @@ A routes objektum egy olyan asszociatív tömb, amelyben a kulcsok a route nevei
 <tr><td>wishlist_url</td><td>/index.php?route=wishlist/wishlist</td></tr>
 <tr><td>checkout_cart_url</td><td>index.php?route=checkout/cart</td></tr>
 </table>
+
+:red_circle: Kerüljük el, hogy a rendszer útvonalát közvetlenül beírjuk a sablonba. **Helyette használjuk a routes objektumot.**
 
 ---
 
