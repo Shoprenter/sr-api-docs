@@ -523,7 +523,7 @@ A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző
 <td>
 
 ```
-<link rel="stylesheet" href="https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/starter2_global/minified/template/assets/footer.css?v=[TIMESTAMP]" media="all" onload="this.media='all'">
+<link rel="stylesheet" href="https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/starter2_global/minified/template/assets/footer.css?v=[TIMESTAMP]" media="print" onload="this.media='all'">
 ```
 
 </td>
