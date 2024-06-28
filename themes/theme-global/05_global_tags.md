@@ -7,7 +7,7 @@ Hamarosan
 A jshrink segítségével a JavaScript kódunkat minimalizálhatjuk, ami csökkenti a forráskód méretét és gyorsítja a betöltési időt.
 
 ### Használat
-A TPL fájlban, ahol a JavaScript kódot használjuk, a kódunkat `{% jshrink %}` és `{% endjshrink %}` közé kell tenni. Ez a két tag közötti kód automatikusan minifikáljuk a jshrink segítségével.
+A TPL fájlban, ahol a JavaScript kódot használjuk, a kódunkat `{% jshrink %}` és `{% endjshrink %}` közé kell tenni. Ez a két tag közötti kód automatikusan minifikál a jshrink segítségével.
 
 ### Példakód
 
