@@ -1,7 +1,7 @@
 # Layout
 
 ## Twig
-A projekt jelenleg a Twig 1.43.1 verzióját használja. További információ a [Twig hivatalos dokumentációjában](https://twig.symfony.com/doc/1.x/) található.
+A template rendszer Twig motorra épül. További információ a [Twig hivatalos dokumentációjában](https://twig.symfony.com) található.
 
 ---
 
@@ -62,7 +62,7 @@ Ebben a példában a `1-column-layout.tpl` kiterjeszti a `base.tpl` sablont, és
 ---
 
 ## Layout felépítés
-A layout két részre bontható: a route (útvonal) és a hozzá kapcsolódó HTML felépítés. Példaként vegyük a `product/product` útvonalat, amely a következő láncot követi: `product/product` → `1-column-layout.tpl` → `base.tpl`. A `base.tpl`-ben a `pagehead`, `header` és `footer` modulok a loadModule függvénnyel vannak betöltve, így áll össze a végső HTML struktúra.
+A layout két részre bontható: a route (útvonal) és a hozzá kapcsolódó HTML felépítés. Példaként vegyük a `product/product` útvonalat, amely a következő láncot követi: `product/product.tpl` → `1-column-layout.tpl` → `base.tpl`. A `base.tpl`-ben a `pagehead`, `header` és `footer` modulok a loadModule függvénnyel vannak betöltve, így áll össze a végső HTML struktúra.
 
 ---
 
