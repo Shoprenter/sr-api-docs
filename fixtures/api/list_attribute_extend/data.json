@@ -1,0 +1,175 @@
+{
+    "properties": [
+        {
+            "name": "idddd",
+            "description": {
+                "en": "Attribute description identifier. It is used to change the OuterID."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "en": "Name."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "description",
+            "description": {
+                "en": "Description."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "prefix",
+            "description": {
+                "en": "Text before value."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "postfix",
+            "description": {
+                "en": "Text after value."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "attribute",
+            "description": {
+                "en": "Attribute link."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "language",
+            "description": {
+                "en": "Language link."
+            },
+            "required": true,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/attributeDescriptions\/attribute descriprtion id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/attributeDescriptions"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                },
+                {
+                    "name": "numberAttributeId",
+                    "description": {
+                        "en": "Attribute identifier."
+                    }
+                },
+                {
+                    "name": "listAttributeId",
+                    "description": {
+                        "en": "Attribute identifier."
+                    }
+                },
+                {
+                    "name": "textAttributeId",
+                    "description": {
+                        "en": "Attribute identifier."
+                    }
+                },
+                {
+                    "name": "languageId",
+                    "description": {
+                        "en": "Language identifier."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/attributeDescriptions?page=0&limit=3",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "en": "\/attributeDescriptions[\/attribute descriprtion id]"
+            },
+            "description": {
+                "en": "It is used for both creation and modification."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeDescriptions",
+                "statusCode": "200 or 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "en": "\/attributeDescriptions\/attribute descriprtion id"
+            },
+            "description": {
+                "en": "It is used for modification only."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+                "statusCode": "200 or 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "\/attributeDescriptions\/attribute descriprtion id"
+            },
+            "description": {
+                "en": "Used for deletion."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+                "statusCode": "204 or 404"
+            }
+        }
+    }
+}
