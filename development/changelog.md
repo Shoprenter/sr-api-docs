@@ -39,6 +39,16 @@ The Shipping Additional Cost fields have been added to Webhook Resource. [Webhoo
 #### 2024.04.11
 Limited discount fields were added to Product Special Resource. [Product Special Resource](../api/product_special.md)
 
+#### 2024.03.16
+We have fixed the encoding of special characters used in the shipping and billing addresses associated with orders in API requests.
+
+The following setting has been added to the [Settings Resource](../api/setting.md):
+
+- **config_mobile_simple_snapshot** - Simplified mobile product card
+- **config_number_of_columns_in_category_page** - Number of products per row on category page in desktop view
+- **config_number_of_columns_in_category_page_in_mobile** - Number of products per row on category page in mobile view
+- **config_search_dropdown** - Enable dropdown search module
+
 #### 2024.03.11
 All Shipping Mode has become queryable from the Shipping Mode Extend Resource. [Shipping Mode Extend Resource](../api/shipping_mode_extend.md) But the 'extension' field is still read-only!
 
