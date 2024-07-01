@@ -51,7 +51,7 @@
         {
             "name": "attributeDescriptions",
             "description": {
-                "en": "Attribute descriptions."
+                "en": "Attribute descriptions. <a href='#attributedescriptions-field-properties'>See properties</a>"
             },
             "required": false,
             "readonly": false
@@ -59,7 +59,7 @@
         {
             "name": "defaultListAttributeValue",
             "description": {
-                "en": "Identifier of the default list attribute value."
+                "en": "References the `valueId` of the default list attribute value."
             },
             "required": false,
             "readonly": false
@@ -67,7 +67,7 @@
         {
             "name": "listAttributeValues",
             "description": {
-                "en": "Attribute values."
+                "en": "Attribute values. <a href='#listattributevalues-field-properties'>See properties</a>"
             },
             "required": false,
             "readonly": false
@@ -109,21 +109,21 @@
         "get": {
             "method": "GET",
             "url": {
-                "en": "\/listAttributes\/attribute id"
+                "en": "\/listAttributesExtend\/attribute id"
             },
             "description": {
                 "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
-                "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
+                "url": "\/listAttributesExtend\/bGlzdEF0dHJpYnV0ZUV4dGVuZC1hdHRyaWJ1dGVfaWQ9OQ==",
                 "statusCode": "200"
             }
         },
         "getCollection": {
             "method": "GET",
             "url": {
-                "en": "\/listAttributes"
+                "en": "\/listAttributesExtend"
             },
             "description": {
                 "en": "Used to retrieve a collection of elements."
@@ -150,54 +150,54 @@
                 {
                     "name": "name",
                     "description": {
-                        "en": "Search parameter. Az attribute name."
+                        "en": "Search parameter. The attribute identifying name."
                     }
                 }
             ],
             "example": {
-                "url": "\/listAttributes?page=0&limit=25",
+                "url": "\/listAttributesExtend?page=0&limit=25",
                 "statusCode": "200"
             }
         },
         "post": {
             "method": "POST",
             "url": {
-                "en": "\/listAttributes[\/attribute id]"
+                "en": "\/listAttributesExtend[\/attribute id]"
             },
             "description": {
                 "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
-                "url": "\/listAttributes",
+                "url": "\/listAttributesExtend",
                 "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "en": "\/listAttributes\/attribute id"
+                "en": "\/listAttributesExtend\/attribute id"
             },
             "description": {
                 "en": "It is used for modification only."
             },
             "parameters": [],
             "example": {
-                "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
+                "url": "\/listAttributesExtend\/bGlzdEF0dHJpYnV0ZUV4dGVuZC1hdHRyaWJ1dGVfaWQ9OQ==",
                 "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "en": "\/listAttributes\/attribute id"
+                "en": "\/listAttributesExtend\/attribute id"
             },
             "description": {
                 "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
-                "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
+                "url": "\/listAttributesExtend\/bGlzdEF0dHJpYnV0ZUV4dGVuZC1hdHRyaWJ1dGVfaWQ9OQ==",
                 "statusCode": "204 or 404"
             }
         }
