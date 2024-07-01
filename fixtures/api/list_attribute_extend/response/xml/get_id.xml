@@ -49,7 +49,9 @@
         <prefix/>
         <postfix/>
     </attributeDescriptions>
-    <defaultListAttributeValue/>
+    <defaultListAttributeValue>
+        <valueId>2</valueId>
+    </defaultListAttributeValue>
     <listAttributeValues>
         <valueId>1</valueId>
         <listAttributeValueDescriptions>

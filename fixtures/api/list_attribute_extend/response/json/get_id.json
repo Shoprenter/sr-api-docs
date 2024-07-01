@@ -27,7 +27,9 @@
             "postfix": ""
         }
     ],
-    "defaultListAttributeValue": null,
+    "defaultListAttributeValue": {
+        "valueId": 2
+    },
     "listAttributeValues": [
         {
             "valueId": 1,

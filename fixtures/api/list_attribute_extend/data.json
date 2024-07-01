@@ -1,9 +1,9 @@
 {
     "properties": [
         {
-            "name": "idddd",
+            "name": "id",
             "description": {
-                "en": "Attribute description identifier. It is used to change the OuterID."
+                "en": "Attribute identifier. If submitted in the request body, this property can be used to change the OuterID."
             },
             "required": false,
             "readonly": false
@@ -11,71 +11,119 @@
         {
             "name": "name",
             "description": {
-                "en": "Name."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "description",
-            "description": {
-                "en": "Description."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "prefix",
-            "description": {
-                "en": "Text before value."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "postfix",
-            "description": {
-                "en": "Text after value."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "attribute",
-            "description": {
-                "en": "Attribute link."
+                "en": "Attribute name for internal identification. Only lowercase letters of the English alphabet and numbers are allowed. "
             },
             "required": true,
             "readonly": true
         },
         {
-            "name": "language",
+            "name": "priority",
             "description": {
-                "en": "Language link."
+                "en": "Priority. Accepted values: HIDDEN, NORMAL, IMPORTANT."
             },
-            "required": true,
-            "readonly": true
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "en": "Position of the attribute in lists."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "required",
+            "description": {
+                "en": "Whether products are required to have a set value for this attribute."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "presentation",
+            "description": {
+                "en": "Appearance of the product attribute filter. Accepted values: TEXT, ICON."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "attributeDescriptions",
+            "description": {
+                "en": "Attribute descriptions."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "defaultListAttributeValue",
+            "description": {
+                "en": "Identifier of the default list attribute value."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "listAttributeValues",
+            "description": {
+                "en": "Attribute values."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "valuesSortBy",
+            "description": {
+                "en": "How should the values in the product attribute filter be sorted?<br/> Accepted values: <ul><li>SYSTEM_SORTBY_VALUE_ASC (sort by value, ascending),</li><li>SYSTEM_SORTBY_VALUE_DESC (sort by value, descending),</li><li>SYSTEM_SORTBY_LABEL_ASC (sort by label, ascending),</li></li>SYSTEM_SORTBY_LABEL_DESC (sort by label, descending)</li><ul>"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "listAttributeWidget",
+            "description": {
+                "en": "Attribute widget."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "displayInList",
+            "description": {
+                "en": "Whether the attribute should appear in product listing pages such as category pages."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "relatedProductClasses",
+            "description": {
+                "en": "Links of the product classes this attribute is connected to."
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {
         "get": {
             "method": "GET",
             "url": {
-                "en": "\/attributeDescriptions\/attribute descriprtion id"
+                "en": "\/listAttributes\/attribute id"
             },
             "description": {
                 "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
-                "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+                "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
                 "statusCode": "200"
             }
         },
         "getCollection": {
             "method": "GET",
             "url": {
-                "en": "\/attributeDescriptions"
+                "en": "\/listAttributes"
             },
             "description": {
                 "en": "Used to retrieve a collection of elements."
@@ -100,74 +148,56 @@
                     }
                 },
                 {
-                    "name": "numberAttributeId",
+                    "name": "name",
                     "description": {
-                        "en": "Attribute identifier."
-                    }
-                },
-                {
-                    "name": "listAttributeId",
-                    "description": {
-                        "en": "Attribute identifier."
-                    }
-                },
-                {
-                    "name": "textAttributeId",
-                    "description": {
-                        "en": "Attribute identifier."
-                    }
-                },
-                {
-                    "name": "languageId",
-                    "description": {
-                        "en": "Language identifier."
+                        "en": "Search parameter. Az attribute name."
                     }
                 }
             ],
             "example": {
-                "url": "\/attributeDescriptions?page=0&limit=3",
+                "url": "\/listAttributes?page=0&limit=25",
                 "statusCode": "200"
             }
         },
         "post": {
             "method": "POST",
             "url": {
-                "en": "\/attributeDescriptions[\/attribute descriprtion id]"
+                "en": "\/listAttributes[\/attribute id]"
             },
             "description": {
                 "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
-                "url": "\/attributeDescriptions",
+                "url": "\/listAttributes",
                 "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "en": "\/attributeDescriptions\/attribute descriprtion id"
+                "en": "\/listAttributes\/attribute id"
             },
             "description": {
                 "en": "It is used for modification only."
             },
             "parameters": [],
             "example": {
-                "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+                "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
                 "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "en": "\/attributeDescriptions\/attribute descriprtion id"
+                "en": "\/listAttributes\/attribute id"
             },
             "description": {
                 "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
-                "url": "\/attributeDescriptions\/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+                "url": "\/listAttributes\/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9OA==",
                 "statusCode": "204 or 404"
             }
         }
