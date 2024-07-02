@@ -93,4 +93,45 @@ A maximum of 300 product attributes can be created!
 </template>
 </ResourceEndpoint>
 
+[//]: <> (POST ENDPOINT)
+<ResourceEndpoint :resource="'list_attribute_extend'" :endpoint="'post'" :lang="'en'">
+<template v-slot:request>
+
+<<< @/docs/fixtures/api/list_attribute_extend/request/post.json
+
+</template>
+<template v-slot:responseJSON>
+
+<<< @/docs/fixtures/api/list_attribute_extend/response/json/get_id.json
+
+</template>
+<template v-slot:responseXML>
+
+<<< @/docs/fixtures/api/list_attribute_extend/response/xml/get_id.xml
+
+</template>
+</ResourceEndpoint>
+
+[//]: <> (PUT ENDPOINT)
+<ResourceEndpoint :resource="'list_attribute_extend'" :endpoint="'put'" :lang="'en'">
+<template v-slot:request>
+
+<<< @/docs/fixtures/api/list_attribute_extend/request/put.json
+
+</template>
+<template v-slot:responseJSON>
+
+<<< @/docs/fixtures/api/list_attribute_extend/response/json/get_id.json
+
+</template>
+<template v-slot:responseXML>
+
+<<< @/docs/fixtures/api/list_attribute_extend/response/xml/get_id.xml
+
+</template>
+</ResourceEndpoint>
+
+[//]: <> (DELETE ENDPOINT)
+<ResourceEndpoint :resource="'list_attribute_extend'" :endpoint="'delete'" :lang="'en'"/>
+
 
