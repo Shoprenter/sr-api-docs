@@ -11,7 +11,7 @@
         {
             "name": "name",
             "description": {
-                "en": "Attribute name for internal identification. Only lowercase letters of the English alphabet and numbers are allowed. "
+                "en": "Attribute name for internal identification. Only lowercase letters of the English alphabet and numbers are allowed. Must be unique."
             },
             "required": true,
             "readonly": true
