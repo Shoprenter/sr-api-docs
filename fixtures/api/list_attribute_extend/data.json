@@ -53,7 +53,7 @@
             "description": {
                 "en": "Attribute descriptions. <a href='#attributedescriptions-field-properties'>See properties</a>"
             },
-            "required": false,
+            "required": true,
             "readonly": false
         },
         {
@@ -83,7 +83,7 @@
         {
             "name": "listAttributeWidget",
             "description": {
-                "en": "Attribute widget."
+                "en": "Attribute widget. <a href='#listattributewidget-field-properties'>See properties</a>"
             },
             "required": false,
             "readonly": false
