@@ -101,7 +101,7 @@
             "description": {
                 "en": "Links of the product classes this attribute is connected to."
             },
-            "required": false,
+            "required": true,
             "readonly": false
         }
     ],

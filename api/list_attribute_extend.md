@@ -13,7 +13,7 @@ A maximum of 300 product attributes can be created!
 <tr><th>Property</th> <th>Description</th> <th>Required</th> <th>Readonly</th></tr>
 <tr> <td>language</td> <td>Language identifier.</td> <td></td> <td></td> </tr>
 <tr> <td>name</td> <td>Attribute name in the given language.</td> <td>x</td> <td></td> </tr>
-<tr> <td>description</td> <td>Attribute description in the given language.</td> <td></td> <td></td> </tr>
+<tr> <td>description</td> <td>Attribute description in the given language.</td> <td>x</td> <td></td> </tr>
 <tr> <td>prefix</td> <td>Text before the attribute value in the given language.</td> <td></td> <td></td> </tr>
 <tr> <td>postfix</td> <td>Text after the attribute value in the given language.</td> <td></td> <td></td> </tr>
 </table>
@@ -58,8 +58,8 @@ A maximum of 300 product attributes can be created!
 <div class="resource-properties">
 <table>
 <tr><th>Property</th> <th>Description</th> <th>Required</th> <th>Readonly</th></tr>
-<tr> <td>language</td> <td>Language identifier.</td> <td></td> <td></td> </tr>
-<tr> <td>label</td> <td>Label of the attribute filter in the widget in the given language.</td> <td></td> <td></td> </tr>
+<tr> <td>language</td> <td>Language identifier.</td> <td>x</td> <td></td> </tr>
+<tr> <td>label</td> <td>Label of the attribute filter in the widget in the given language.</td> <td>x</td> <td></td> </tr>
 </table>
 </div>
 
