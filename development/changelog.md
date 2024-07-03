@@ -2,7 +2,7 @@
 
 #### 2024.07.03
 
-The announced bug fixes on the [ProductClass](../api/product_class.md) and [ProductClassAttributeRelation](../api/product_class_attribute_relation.md) resources have been implemented, which may cause backward incompatible behavior. More detailed information can be found at the following link: https://changelog.shoprenter.hu/hu/termektipus-valtozasok-az-api_ban-juniustol-Vzq3OfnF 
+The announced bug fixes on the [ProductClass](../api/product_class.md) and [ProductClassAttributeRelation](../api/product_class_attribute_relation.md) resources have been implemented, which may cause backward incompatible behavior. More detailed information can be found at the [following link.](https://changelog.shoprenter.hu/hu/termektipus-valtozasok-az-api_ban-juniustol-Vzq3OfnF)
 
 #### 2024.06.20
 The Deposit Fee system has become available in Hungary, for which we created new API Resources and expanded old ones.
