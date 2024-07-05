@@ -179,7 +179,7 @@
                 "en": "\/listAttributesExtend\/attribute id"
             },
             "description": {
-                "en": "It is used for modification only. Properties marked as arrays ([]) submitted with the PUT method are overwritten, so only the submitted items will remain. A potential issue is that non-submitted list items may disappear."
+                "en": "It is used for modification only. Properties marked as arrays ([]) submitted with the PUT method are overwritten, so only the submitted items will remain and the non-submitted list items will be deleted."
             },
             "parameters": [],
             "example": {
