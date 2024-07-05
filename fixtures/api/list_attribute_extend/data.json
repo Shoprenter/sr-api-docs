@@ -49,7 +49,7 @@
             "readonly": false
         },
         {
-            "name": "attributeDescriptions",
+            "name": "attributeDescriptions[]",
             "description": {
                 "en": "Attribute descriptions. <a href='#attributedescriptions-field-properties'>See properties</a>"
             },
@@ -65,7 +65,7 @@
             "readonly": false
         },
         {
-            "name": "listAttributeValues",
+            "name": "listAttributeValues[]",
             "description": {
                 "en": "Attribute values. <a href='#listattributevalues-field-properties'>See properties</a>"
             },
@@ -97,7 +97,7 @@
             "readonly": false
         },
         {
-            "name": "relatedProductClasses",
+            "name": "relatedProductClasses[]",
             "description": {
                 "en": "Links of the product classes this attribute is connected to."
             },
@@ -165,7 +165,7 @@
                 "en": "\/listAttributesExtend[\/attribute id]"
             },
             "description": {
-                "en": "It is used for both creation and modification."
+                "en": "It is used for both creation and modification. Properties marked as arrays ([]) submitted with the POST method are always appended; there is a potential issue that they might already exist."
             },
             "parameters": [],
             "example": {
@@ -179,7 +179,7 @@
                 "en": "\/listAttributesExtend\/attribute id"
             },
             "description": {
-                "en": "It is used for modification only."
+                "en": "It is used for modification only. Properties marked as arrays ([]) submitted with the PUT method are overwritten, so only the submitted items will remain and the non-submitted list items will be deleted."
             },
             "parameters": [],
             "example": {
