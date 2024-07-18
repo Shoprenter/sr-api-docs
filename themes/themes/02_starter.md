@@ -1,13 +1,10 @@
 # Starter (deprecated)
 ## style.scss
-A témához tartozó stíluslap az **assets/style.scss** ami [SCSS](https://sass-lang.com) előfeldolgozóban íródott.
-A fájl tetején találhatóak a témához tartozó meta információk, mint például milyen framework-öt használ a téma,
-vagy mi a téma neve.
+The stylesheet related to the theme is **assets/style.scss**, which is written in the [SCSS](https://sass-lang.com) preprocessor. At the top of the file, there is meta information related to the theme, such as which framework the theme uses, or the name of the theme.
 
-A változókat a témában fel lehet használni a **style.scss** stílusleíró fájlban. Minden változó ami a
-**config.data.json** fájl presets objektumán belül meg van adva, elérhető **SCSS** változóként!
+Variables in the theme can be used in the **style.scss** stylesheet. Every variable that is defined within the presets object in the **config.data.json** file is available as an **SCSS** variable!
 
-Például a global-font-color értéke a JSON -ben #8e8e8e, a style.scss-ben felhasználható a $global-font-color:
+For example, the value of global-font-color in the JSON is #8e8e8e, and it can be used in style.scss as $global-font-color:
 
 ```scss
 body {
@@ -15,100 +12,96 @@ body {
 }
 ```
 
-Tipp: Ha a style.scss-ben nem találjuk meg hol van a kezdeti értékadása egy változónak, akkor az nagy valószínűséggel
-a config.data.json fájlban lesz definiálva.
+Tip: If we cannot find the initial assignment of a variable in style.scss, it is likely defined in the config.data.json file.
 
-FONTOS: background postfix-es SCSS változót nem szabad linear-gradient közé rakni, mert hibát okoz és a css fájl nem tud létrejönni!
+IMPORTANT: Do not place a background postfix SCSS variable inside a linear-gradient, as it will cause an error and prevent the CSS file from being generated!
 
 ---
 
-## Téma fájlok
+## Theme files
 
 ### common/header.tpl - deprecated
 
-A fejléc reprezentálására szolgáló téma fájl. Általában tartalmazza a fejlécet a kategória menüvel együtt és egyes
-témáknál a bannerkezelő is a része. A **common** mappában található meg a Téma fájl szerkesztőben.
+The theme file representing the header. Typically includes the header along with the category menu, and in some themes, it also includes the banner manager. It is located in the ***common*** folder in the Theme File Editor.
 
-A header.tpl-ben is használható minden függvény, ami globálisan elérhető. Részletek erről a
-[Globális függvények](../theme-global/02_global_functions.md) dokumentációban találhatóak.
+All functions that are globally available can be used in the header.tpl as well. Details about this can be found in the [Global Functions](../theme-global/02_global_functions.md) documentation.
 
-#### Felépítés
+#### Structure
 
-A fejléc a pagehead.tpl után kerül be a forráskódba. Két olyan html elem is található itt, amelynek a záró párja
-nem a header.tpl-ben található. Az egyik a ```<div class="page-wrap">``` a másik pedig a ```<main>```. Ennek a két
-html tagnek a záró része a footer.tpl-ben található.
+The header is included in the source code after `pagehead.tpl`. There are two HTML elements here whose closing pair
+is not found in `header.tpl`. One is `<div class="page-wrap">` and the other is `<main>`. The closing parts of these two
+HTML tags are found in `footer.tpl`.
 
-Maga a fejléc tartalmi része a ```<header>``` tag-en belül van. Mivel a fejléc minden témánál egyedi, így a
-**Tokyo témán** keresztül nézzük meg mit tartalmaz.
+The content part of the header is within the `<header>` tag. Since the header is unique for every theme, let's explore
+what the **Tokyo theme** includes.
 
-* **Mobil menü**
+* **Mobile Menu**
 
-A fejlécben található a mobil menü betöltése is, ez található a legelső 3 sorban. A mobil menü csak akkor jelenik meg
-ha a karbantartás nincs bekapcsolva (maintance).
+Loading of the mobile menu is included in the header, within the first 3 lines. The mobile menu is displayed only if
+maintenance is not enabled (`maintance`).
 
-* **Üzenetek**
+* **Messages**
 
-A page-wrap tetején található a hibaüzenetek vagy rendszer üzenetek kiírása a **shop_warning** változón keresztül.
-Ha admin felhasználóval belépünk akkor az oldal tetején megjelenő piros sáv lesz ez.
+Error messages or system messages are displayed at the top of `page-wrap` through the **shop_warning** variable. If logged
+in as an admin user, a red banner appears at the top of the page.
 
-* **Fejléc top pozíció**
+* **Header Top Position**
 
-A Tokyo témában található egy **header-top** pozíció elhelyezés. Itt jelenik meg például a Top line modul.
+The Tokyo theme includes a **header-top** position. For example, the Top line module appears here.
 
-* **Navigációs sáv**
+* **Navigation Bar**
 
-A navbar-ban több modul is megjelenítésre kerül. A bal oldalán a telefonszám jelenhet meg (ha be van kapcsolva a
-fejlécben való megjelenítés) és a nyelvváltó, pénznemváltó modulok (mobil eszköz kivételével). A jobb oldalán a
-belépés és a szöveges menüpontok jelennek meg.
+Several modules are displayed in the navbar. On the left side, the phone number may appear (if enabled in the header) along
+with language and currency switcher modules (except on mobile devices). On the right side, login and text menu items appear.
 
-* **Fejléc alsó része**
+* **Footer of the Header**
 
-A navigációs sáv alatt a fejléc alsó része jelenik meg a logóval, kategória menüvel és a kereső, kosár modulokkal.
-A Tokyo témában speciális a kereső modul, mivel csak egy ikon jelenik meg. Az ikonra kattinva egy teljes képernyős
-ablakban lehet a keresést végrehajtani. A kereső és kosár ikon között megjelenhet még a kívánságlista ikon is, ez is
-beállítás függő és akkor jelenik meg ha van a kívánságlistához adva tartalom.
+Below the navigation bar, the footer of the header appears with the logo, category menu, and search and cart modules. The
+search module in the Tokyo theme is special because only an icon appears. Clicking on the icon opens a full-screen window for
+search. Between the search and cart icons, the wishlist icon may also appear, depending on settings and if content has been
+added to the wishlist.
 
-Ez a sáv egyben a sticky fejléc is, ami azt jelenti, hogy ha görgetünk az ablak tetején marad a fejléc alsó része.
+This bar also serves as the sticky header, meaning it stays at the top of the window when scrolling.
 
-A fejléc top pozíció, a navigációs sáv és a fejléc alsó része karbantartás módban nem jelenik meg, helyette csak a
-logó látszódik. Ennek lekezelése is a header.tpl része.
+The header top position, navigation bar, and footer of the header do not appear in maintenance mode; only the logo is visible.
+Handling this is also part of `header.tpl`.
 
-* **Banner pozíció**
+* **Banner Position**
 
-A Tokyo témában a bannerkezelő modulnak dedikált pozíció van létrehozva a fejlécben scroller pozíció néven.
-Ez csak akkor jelenik meg ha a főoldalon vagyunk és nem karbantartás módban.
+In the Tokyo theme, a dedicated position called `scroller` is created for the banner manager module in the header. This is
+displayed only on the homepage and not in maintenance mode.
 
-* **Kenyérmorzsa**
+* **Breadcrumb**
 
-A pathway vagy breadcrumb vagyis a kenyérmorzsa a fejléc alatt és a main tartalom között jelenhet meg a pathway-top
-pozícióban. A pathway modult ugyanakkor egy másik pozícióba is át lehet helyezni, ez a pathway-inside pozíciób.
+The pathway or breadcrumb appears below the header and between the main content in the `pathway-top` position. The pathway
+module can also be moved to another position, such as `pathway-inside`.
 
-#### Átadott adatok a header.tpl-nek
+#### Passed Data to `header.tpl`
 
 * **maintance**
 
-Ha az oldal karbantartásra van kapcsolva, akkor a maintance változó értéke true, különben pedig false.
+If the site is in maintenance mode, the value of the `maintance` variable is true; otherwise, it is false.
 
 * **shop_warning**
 
-Ha van ilyen üzenet akkor a ```<div id="page-warnings">...</div>``` jelenik meg a megfelelő szöveggel.
+If there is such a message, `<div id="page-warnings">...</div>` is displayed with the appropriate text.
 
 * **phone**
 
-A bolt információknál megadott telefonszámot adja vissza.
+Returns the phone number provided in the store information.
 
 * **isFrontPage** (deprecated)
 
-Ha a kezdőlapon vagyunk akkor true az értéke, különben pedig false.
+If on the homepage, its value is true; otherwise, false.
 
 ---
 
 ### pagehead.tpl
 
-A `<head>` és a `<body>` nyitó elemeket tartalmazza a pagehead.tpl, ide kerülnek a meta tagek és a scriptek.
+Contains the opening elements `<head>` and `<body>` in the pagehead.tpl, where meta tags and scripts are placed.
 
 ##### content_for_header
 
-Kötelező ezt a változót megadni a pagehead.tpl-ben, enélkül nem működik a rendszer.
-A `<head>` nyitó és a `</head>` záró tagek közé kell elhelyezni.
-Ez a változó tartalmazza a szükséges ShopRenter scripteket, amik a rendszer működéséhez kellenek.
+It is mandatory to provide this variable in pagehead.tpl, without which the system will not function.
+Place it between the opening `<head>` and closing `</head>` tags.
+This variable contains the necessary ShopRenter scripts required for the system to operate.

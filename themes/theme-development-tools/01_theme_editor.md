@@ -1,68 +1,43 @@
-# Téma fájl szerkesztő
+# Theme editor
 
-A Téma fájl szerkesztő egy olyan új funkció a ShopRenter rendszerében amellyel lehetőséget adunk arra,
-hogy az ügyfelek egyedi design igényeiket önerőből vagy külső segítséggel megvalósíthassák!
-A funkció jelenleg Béta állapotban van, amit a ShopRenter boltok admin felületén a Labor menüpontban
-lehet bekapcsolni. A fejlesztőknek lehetőségük van a [Storefront](mailto:storefront@shoprenter.hu) csapattól
-technikai segítséget kérni.
+The Theme editor is a new feature in the ShopRenter system that allows customers to implement their unique design requirements independently or with external assistance! This feature is currently in beta and can be enabled in the Labor menu of the ShopRenter store admin interface. Developers have the option to seek technical assistance from the [Storefront](mailto:storefront@shoprenter.hu) team.
 
-:red_circle: **FONTOS:**  A téma fájlok szerkesztésével az egyedi téma technikai támogatása a tervező felelőssége, a Shoprenter nem vállal felelősséget és az egyedi témát használó boltoknak nem tud támogatást nyújtani. Ha technikai probléma merül fel a témával kapcsolatban, akkor az egyedi téma készítője felelős a probléma megoldásáért. A Shoprenter kizárólag a saját témákért és fejlesztésekért vállal garanciát és felelősséget.
+:red_circle: **IMPORTANT:** Editing theme files is the responsibility of the designer creating the custom theme. Shoprenter does not assume responsibility and cannot provide support for stores using custom themes. If there are technical issues related to the theme, it is the responsibility of the custom theme creator to resolve them. ShopRenter only guarantees and takes responsibility for its own themes and developments.
 
-## Általános tudnivalók:
-A Téma fájl szerkesztő a **Téma kiválasztása** oldalon érhető el a már kiválasztott sablonoknál a **Műveletek**
-gombra kattintva. Az itt megjelenő lenyílóban található **téma fájl szerkesztő** menüpontban lehet
-szerkeszteni a téma fájlokat. Továbbá a felső menüben a **Beállítások** > **Megjelenés** > **Téma fájl szerkesztő**
-menüpontból is elérhető.
+## General Information:
+The Theme editor is accessible on the **Choose Theme** page under the **Actions** button for selected templates. It can also be accessed from **Settings** > **Appearance** > **Theme editor** in the top menu.
 
-A Téma fájl szerkesztő úgy van felépítve, hogy a bal oldalon találhatóak a sablonhoz tartozó fájlok. Ide tartoznak
-a stíluslapok, illetve a konfigurációs fájlok is. Maga a HTML kódok .tpl kiterjesztésű template fájlokban érhetőek el.
-Ezekhez a fájlokhoz a [TWIG](https://twig.sensiolabs.org) template motort használja a ShopRenter.
+The Theme editor is structured with template files associated with the theme on the left side. This includes stylesheets and configuration files. HTML codes are available in template files with a .tpl extension, utilizing the [TWIG](https://twig.sensiolabs.org) template engine by ShopRenter.
 
-## Egyedi design készítése, Téma másolás funkció:
-Amennyiben új egyedi designt szeretnénk készíteni, akkor kattintsunk a Műveletek-en belül a **téma másolása** gombra.
-A felugró ablakban adjuk meg a téma nevét, majd kattintsunk a téma másolása gombra.
-Ekkor létrejön az általunk meghatározott néven az új téma aminél szintén a Téma fájl szerkesztő gombbal lehet
-elérni a funkciót.
+## Creating Custom Designs, Theme Duplication Feature:
+To create a new custom design, click on the **duplicate theme** button within **Actions**. In the popup window, provide a name for the theme and click on the duplicate theme button. This will create a new theme with the specified name, accessible again with the Theme editor button.
 
-A **config/config.data.json** fájl írja le a téma színváltozóit. Ez azt jelenti, hogy ebben a json objektumban
-definiált property-k határozzák meg a témánk színeit.
+The **config/config.data.json** file defines the theme's color variables. This means that properties defined in this JSON object determine the colors used in our theme.
 
-## Fájl kereső
-A Téma fájl szerkesztő bal felső sarkában található a fájl kereső funkció. Az ide beírt kulcsszavak alapján lehet
-keresni téma fájlokra, ezzel megkönnyítve a fájlok elérését.
+## File Search
+Located in the top left corner of the Theme editor is the file search function. You can search for theme files based on keywords, making it easier to access files.
 
-## Verziók kezelése
-Annak érdekében, hogy a Téma fájl szerkesztőt használó fejlesztők biztonsággal tudják használni a fájlokat
-és kipróbálni a módosításokat, minden fájl verzió követés alatt áll. A megnyitott fájlok szerkesztő felülete fölött
-található egy Korábbi verziók link. Ide kattintva a megjelenő legördülő menüből ki lehet választani egy korábbi
-verziót vagy akár az eredeti is! Ha kiválasztottuk az általunk kívánt verziót a szerkesztő felületbe az adott verzió
-tartalma betöltődik, a mentés gombbal pedig már a korábbi tartalommal létrejött verzió lesz használatban.
+## Version Management
+To ensure safe use of files and to test modifications, version tracking is applied to all files used in the Theme editor. Above the editor interface of opened files, there is a link for **Previous Versions**. Clicking here allows selection of a previous version or even the original! Once selected, the content of that version loads into the editor, and using the save button will make that version active.
 
-## Új fájl létrehozása
-A Téma fájlokat tartalmazó mappában lehetőség nyílik új fájlok létrehozására is.
-Az új fájl nevénél nem kell megadni kiterjesztést. Ezeket az új fájlokat a Twig include függvényének segítségével
-lehet beszúrni egy adott template fájlba.
+## Creating New Files
+In the directory containing theme files, there is an option to create new files. The file name does not need an extension. These new files can be inserted into a specific template file using the Twig include function.
 
-## Billentyűkombinációk
-A szerkesztő felületben a fejlesztői munka megkönnyítésére a következő billentyűkombinációkat érdemes használni:
+## Keyboard Shortcuts
+To facilitate developer work within the editor interface, consider using the following keyboard shortcuts:
 
 - **CTRL + F / Command + G**
 
-  Kulcsszó kereső.
-  A felugró keresőbe beírjuk a keresett kulcsszót, majd entert nyomunk.
-  Több találat esetén F3-al / Command + G a következő találatra, míg a SHIFT + F3 / Command + Shift + G kombinációval
-  az előző találatra tudunk ugrani.
+  Keyword search. Enter the keyword in the search popup and press enter. Use F3 / Command + G for the next match and SHIFT + F3 / Command + Shift + G for the previous match.
 
 - **CTRL + G / Control + G**
 
-  A gomb lenyomása után felugró ablakban általunk megadott sorszámú sorához ugrik a rendszer a kódban.
-  Például ha megadjuk, hogy 1200, akkor az 1200-adik sorhoz ugrik a rendszer rögtön.
+  After pressing the button, a popup window appears where you can enter the line number you want to jump to in the code. For example, entering 1200 jumps to the 1200th line.
 
 - **F11**
 
-  Az F11 gomb megnyomásával előhozható a Téma fájl szerkesztő full-screen módja, így a teljes képernyőt kihasználva,
-  könnyebben módosíthatunk a kódban.
+  Pressing F11 enables full-screen mode for the Theme editor, utilizing the entire screen for easier code modification.
 
 - **CTRL + S**
 
-  A billentyűkombináció segítségével az adott fájl elmentésre kerül.
+  Save the current file using this keyboard shortcut.

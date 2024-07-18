@@ -1,26 +1,24 @@
-# Függvények
+# Functions
 
-A téma fájlokhoz a [TWIG](https://twig.sensiolabs.org) template motort használja a ShopRenter. Így minden tpl
-kiterjesztésű fájl TWIG szintaxisra épül. A TWIG dokumentációban látható alap függvények és filterek mellett vannak a
-ShopRenter által biztosított függvények és filterek is. Ezek azért készültek, hogy a frontend fejlesztést megkönnyítsék.
+The ShopRenter uses the [TWIG](https://twig.sensiolabs.org) template engine for theme files. Therefore, every tpl file is based on TWIG syntax. In addition to the basic functions and filters shown in the TWIG documentation, ShopRenter provides custom functions and filters to facilitate frontend development.
 
 ## add_body_class()
 
-Az `add_body_class` használatával tudunk a `<body>` tag-hez class-t hozzáadni. String típusú paramétert vár.
+Using `add_body_class`, you can add a class to the `<body>` tag. It expects a string type parameter.
 
-### Szintaxis
+### Syntax
 
 ```
 {{ add_body_class(className) }}
 ```
 
-Példa:
+Example:
 
 ```twig
 {{ add_body_class("new-class") }}
 ```
 
-Kimenet:
+Output:
 
 ```
 <body class="page-body new-class">
@@ -28,29 +26,29 @@ Kimenet:
 
 ## asset()
 
-Az `asset` függvény az elérési útvonalat kiegészíti a cdn-es domain névvel és verziót is kap.
+The `asset` function complements the file path with the CDN domain and version.
 
-### Szintaxis
+### Syntax
 
 ```
 asset(filePath)
 ```
 
-### Argumentumok
+### Arguments
 
-**filePath**: A fájl útvonala a gyökér könyvtártól.
+**filePath**: The file path from the root directory.
 
-### Visszatérési érték
+### Return value
 
-A teljes url -el tér vissza, string típusként.
+Returns the full URL as a string.
 
-Példa:
+Example:
 
 ```twig
 <script src="{{ asset('catalog/view/javascript/filter/mobile_filter.js') }}"></script>
 ```
 
-Kimenet:
+Output:
 
 ```
 <script src="https://[BOLTNEV].cdn.shoprenter.hu/catalog/view/javascript/filter/mobile_filter.js?v=[TIMESTAMP]"></script>
@@ -58,30 +56,29 @@ Kimenet:
 
 ## asset_image_url()
 
-Az `asset_image_url` függvénynek a kép fájl nevét kell csak megadni és kiegészíti a cdn-es domain névvel és verziót is kap.
-Célszerű a [dinamikus modulok](../theme-development-tools/02_theme_sections.md) képfeltöltésénél használni.
+The `asset_image_url` function requires only the image file name and complements it with the CDN domain and version. It is recommended for uploading images in [dynamic modules](../theme-development-tools/02_theme_sections.md).
 
-### Szintaxis
+### Syntax
 
 ```
 asset_image_url(fileName)
 ```
 
-### Argumentumok
+### Arguments
 
-**fileName**: A fájl neve amit szeretnénk teljes url-el megjeleníteni.
+**fileName**: The name of the file to display with the full URL.
 
-### Visszatérési érték
+### Return value
 
-A teljes url -el tér vissza, string típusként.
+Returns the full URL as a string.
 
-Példa:
+Example:
 
 ```twig
 <img src="{{ asset_image_url('kepfajl.jpg') }}" />
 ```
 
-Kimenet:
+Output:
 
 ```html
 <img src="https://[BOLTNEV].cdn.shoprenter.hu/custom/boltnev/image/data/kepfajl.jpg?v=[TIMESTAMP]" />
@@ -89,75 +86,74 @@ Kimenet:
 
 ## add_script_asset()
 
-Az `add_script_asset` függvény a rendszer saját JavaScript fájljainak hozzáadására szolgál a TPL fájlokban.  A függvény automatikusan kiegészíti a fájl URL-jét a CDN-es domain névvel és egy verzió paraméterrel és létrehoz egy `<script>` tag-et. Ez a függvény biztosítja, hogy a szükséges JS fájlok megfelelően beillesztésre kerüljenek az oldal betöltése során, és a rendszer funkciói helyesen működjenek.
+The `add_script_asset` function is used to add system JavaScript files in TPL files. The function automatically complements the file URL with the CDN domain and a version parameter, creating a `<script>` tag. This function ensures that the necessary JS files are properly included during page load for the system functions to work correctly.
 
-### Szintaxis
+### Syntax
 
 ```
 {{ add_script_asset(filePath) }}
 ```
 
-### Argumentumok
+### Arguments
 
-**filePath**: A fájl útvonala a gyökér könyvtártól.
+**filePath**: The file path from the root directory.
 
-### Visszatérési érték
+### Return value
 
-A teljes url -el tér vissza, string típusként.
+Returns the full URL as a string.
 
-Példa:
+Example:
 
 ```twig
 {{ add_script_asset('catalog/view/javascript/addtocart/addtocart.js') }}
 ```
 
-Kimenet:
+Output:
 
 ```
 <script src="https://[BOLTNEV].cdn.shoprenter.hu/catalog/view/javascript/addtocart/addtocart.js?v=[TIMESTAMP]"></script>
 ```
 
-- :red_circle: **FONTOS:** Kérjük ne távolítsa el vagy módosítsa az így hozzáadott fájlokat. Ezek a szkriptek elengedhetetlenek a rendszer funkcióinak helyes működéséhez. Ezen függvény használata a rendszer saját JS fájljaira korlátozódik.
-- :red_circle: **FONTOS:** Bizonyos esetekben rendszer szinten történik egy csoportosítás  és egybegyúrás az add_script_asset-el hozzáadott fájlok esetében. Ezek a fájlok minify-olva, egy másik néven érhetők el, hogy optimalizálják a betöltési időt és a teljesítményt.
+- :red_circle: IMPORTANT: Please do not remove or modify files added this way. These scripts are essential for the proper functioning of the system.
+- :red_circle: IMPORTANT: In certain cases, system-level grouping and concatenation occur for files added with add_script_asset. These files are accessible under a different name after minification to optimize loading times and performance.
 
 
 ## isDeviceType()
 
-Ha szeretnénk mobil eszközön más megjelenést készíteni és már a html kódot se szeretnénk megjeleníteni, akkor az
-`isDeviceType` függvény segítségével lehet feltételeket készíteni a templateben.
+If you want to create different appearances for mobile devices and prefer not to display HTML code in the template, you can use the `isDeviceType` function to create conditions in the template. 
 
-### Szintaxis
+### Syntax
 
 ```
 isDeviceType(deviceType)
 ```
 
-### Argumentumok
+### Arguments
 
-**deviceType**: A device nevét kell megadni. Lehetséges értékek: mobile, tablet, desktop.
+**deviceType**: Specify the device name. Possible values: mobile, tablet, desktop.
 
-### Visszatérési érték
+### Return value
 
-Boolean értékkel tér vissza: true vagy false.
+The function returns a boolean value: true or false.
 
 
-Példa:
+Example:
 
 ```twig
 {% if isDeviceType('desktop') %}
-    Csak asztalon jelenik meg
+    Only appears on desktop
 {% else if isDeviceType('mobile') %}
     <div>[-.-]</div>
 {% endif %}
 ```
 
-Kimenet ha PC-ről nézzük:
+Output when viewed on a PC:
 
 ```html
-Csak asztalon jelenik meg
+Only appears on desktop
 ```
 
-Kimenet ha Mobiltelefonról nézzük:
+Output when viewed on a mobile phone:
 
 ```html
 <div>[-.-]</div>

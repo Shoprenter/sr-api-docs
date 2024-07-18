@@ -1,38 +1,37 @@
-# Objektumok
+# Objects
 
-Az elérhető objektumok segítségével könnyedén felépítheted és testreszabhatod a témákat a rendszerben. Az objektumok metódusokkal és/vagy tulajdonságokkal rendelkeznek, amelyek lehetővé teszik a beállítások kezelését, pénznemek kezelését, képek kezelését, általános rendszerinformációk lekérdezését és különféle útvonalak elérését. Az alábbiakban részletes leírást találsz az egyes objektumokról és azok használatáról.
+Objects available in the system allow you to easily build and customize themes. These objects come with methods and/or properties that facilitate handling settings, managing currencies, handling images, querying general system information, and accessing various routes. Below you'll find detailed descriptions of each object and how to use them.
 
-Globálisan minden template fájlban elérhetőek ezek az objektumok.
+These objects are globally accessible in every template file.
 
 ## config
 
-### Leírás
+### Description
 
-Az admin felületen található beállítások objektuma.
+Object representing the settings available in the admin interface.
 
-### get() metódusa
+### get() method
 
-#### Szintaxis
+#### Syntax
 
 ```
 config.get(configName)
 ```
 
-#### Argumentum
+#### Argument
 
-**configName**: String amely a lekérni kívánt konfigurációs beállítás nevét jelenti.
+**configName**: String representing the name of the configuration setting to retrieve.
 
-#### Visszatérési érték
+#### Return Value
 
-Visszatérhet több típussal is, lehet String, Boolean vagy Integer is. Amennyiben nem létezik NULL.
+Can return various types such as String, Boolean, or Integer. Returns NULL if the setting doesn't exist.
 
-
-#### Példakód:
+#### Example Code:
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -56,44 +55,43 @@ Visszatérhet több típussal is, lehet String, Boolean vagy Integer is. Amennyi
 
 ---
 ## currency
-### Leírás
-Az objektum információkat tartalmaz a webáruházban beállított pénznemekről.
-### Tulajdonságok
+### Description
+Contains information about currencies set in the online shop.
 
+### Properties
 <table>
 <tr>
-    <th>Tulajdonság</th>
-    <th>Leírás</th>
-    <th>Típus</th>
+    <th>Property</th>
+    <th>Description</th>
+    <th>Type</th>
 </tr>
 <tr>
     <td>currencyId</td>
-    <td>aktuális pénznem id, pl. 4</td>
+    <td>current currency ID, e.g., 4</td>
     <td>String</td>
 </tr>
 <tr>
     <td>currencyCode</td>
-    <td>aktuális pénznem code, pl. HUF</td>
+    <td>current currency code, e.g., HUF</td>
     <td>String</td>
 </tr>
 <tr>
     <td>currencyTitle</td>
-    <td>aktuális pénznem title, pl. Hungarian Forint</td>
+    <td>current currency title, e.g., Hungarian Forint</td>
     <td>String</td>
 </tr>
 </table>
 
-### Használat
-A `Currency` objektum lekérhető a [shop](#shop) objektumból a currentCurrency és az availableCurrencies tulajdonságokon keresztül
+### Usage
+The `Currency` object can be accessed via the [shop](#shop) object through the `currentCurrency` and `availableCurrencies` properties.
 
-
-### Példakód
-Az aktív pénznemek 1. elemének a title-je, ebben a példában a HUF:
+### Example
+Retrieve the title of the first active currency (HUF in this example):
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -117,16 +115,16 @@ HUF
 
 ## image
 
-Az `Image` objektumot a képek kezelésére használjuk, melynek jelenleg csak egy `src` tulajdonsága van, amely a kép forrását (URL-jét) tárolja. Az `src` tulajdonság típusa sztring. Csak abban a TPL-ben elérhető, ahol átadásra került.
+Used for handling images, the `Image` object currently only has an `src` property which stores the image source (URL). The `src` property is of type string. Available only in templates where passed.
 
-### Példakód:
+### Example:
 
-A news.tpl-ben a content változón belül elérhető egy image objektum.
+Accessing an image object within the content variable in news.tpl:
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -150,33 +148,35 @@ data/test.png
 
 ## page
 
-A `page` objektum egy globális objektum, amely a rendszer általános információinak lekérdezésére szolgál.
+The `page` object is a global object used for querying general system information.
 
-### metódusok
+### methods
 <table>
 <tr>
-    <th>név</th>
-    <th>Leírás</th>
-    <th>Típus</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Type</th>
 </tr>
 <tr>
     <td>getRoute()</td>
-    <td>visszaadja az aktuális kérés útvonalát, ha nem érhető el üres karakterláncot kapunk</td>
+    <td>Returns the current request route, returns an empty string if not available.</td>
     <td>String</td>
 </tr>
 <tr>
     <td>getUrl()</td>
-    <td>visszaadja az aktuális kérés teljes URL-jét</td>
+    <td>Returns the full URL of the current request.</td>
     <td>String</td>
 </tr>
 </table>
 
-### Példakód ha termékoldalon vagyunk
+### Example Code for Product Page
+
+Retrieve the current route on a product page:
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -200,14 +200,14 @@ product/product
 
 ## routes
 
-A routes objektum egy olyan asszociatív tömb, amelyben a kulcsok a route nevei, az értékek pedig az adott route-hoz tartozó URL-ek. Ez mindig sztring típusú.
+The `routes` object is an associative array where keys are route names and values are URLs associated with those routes. Always of string type.
 
-### Példakód
+### Example
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -227,11 +227,11 @@ A routes objektum egy olyan asszociatív tömb, amelyben a kulcsok a route nevei
 </tr>
 </table>
 
-### Teljes lista
+### Full list
 <table>
 <tr>
-    <td>Kulcs:</td>
-    <td>érték:</td>
+    <td>Key:</td>
+    <td>Value:</td>
 </tr>
 <tr><td>account_url</td><td>/index.php?route=account/account</td></tr>
 <tr><td>account_edit_url</td><td>/index.php?route=account/edit</td></tr>
@@ -264,32 +264,32 @@ A routes objektum egy olyan asszociatív tömb, amelyben a kulcsok a route nevei
 <tr><td>checkout_cart_url</td><td>index.php?route=checkout/cart</td></tr>
 </table>
 
-:red_circle: Kerüljük el, hogy a rendszer útvonalát közvetlenül beírjuk a sablonba. **Helyette használjuk a routes objektumot.**
+:red_circle: Avoid hardcoding system routes directly in templates. **Use the routes object instead.**
 
 ---
 
 ## settings
-Ezt az objektumot használjuk a témához beállított színek kezelésére. A színek a config.data.json fájlban vannak definiálva.
+Used for managing color settings defined in `config.data.json` for themes.
 
 
-### get() metódusa
+### get() method
 
-#### Használat
+#### Usage
 
 ```twig
 {{ settings.get('key', 'default_value') }}
 ```
 
-Ez a kód a `key` nevű beállítás értékét adja vissza, ha létezik. Ha a `key` nevű beállítás nem létezik, akkor az `default_value` értéket adja vissza. Sztring típussal tér vissza.
+Returns the value of the setting named `key` if it exists. If `key` doesn't exist, returns `default_value`. Returns as a string.
 
-#### Példakód
+#### Example
 
-A config.data.json fájlban beállított "global-color" szín kikérése
+Retrieve the "global-color" setting from `config.data.json`:
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -313,52 +313,52 @@ A config.data.json fájlban beállított "global-color" szín kikérése
 
 ## shop
 
-A shop objektum segítségével a webáruházhoz tartozó általános információk kérhetők ki.
+The shop object can be used to request general information about the online store.
 
 
-### Tulajdonságok
+### Properties
 
 <table>
 <tr>
-    <th>Tulajdonság neve</th>
-    <th>Leírás</th>
-    <th>Típus</th>
+    <th>Property name</th>
+    <th>Description</th>
+    <th>Type</th>
 </tr>
 <tr>
     <td>name</td>
-    <td>a shop nevét adja vissza</td>
+    <td>Returns the name of the shop</td>
     <td>Sztring</td>
 </tr>
 <tr>
     <td>title</td>
-    <td>a shop címét adja vissza</td>
+    <td>Returns the title of the shop.</td>
     <td>Sztring</td>
 </tr>
 <tr>
     <td>needCountdown</td>
-    <td>egy logikai értéket ad vissza, amely azt jelzi, hogy az adott oldalon van-e akció visszaszámláló </td>
+    <td>Returns a Boolean indicating whether there's a countdown active on the page.</td>
     <td>Boolean</td>
 </tr>
 <tr>
     <td>currency</td>
-    <td>a shop aktuális pénznemét adja vissza, tulajdonságai a <a href="#currency">currency objektumnál</a> megtalálahtóak </td>
+    <td>aReturns the current currency of the shop, its properties can be found in the <a href="#currency">currency object</a></td>
     <td>Currency</td>
 </tr>
 <tr>
     <td>availableCurrencies</td>
-    <td>a shopban elérhető pénznemek listáját adja vissza</td>
+    <td>Returns a list of currencies available in the shop.</td>
     <td>Array</td>
 </tr>
 </table>
 
-### Példakód
+### Example
 
-A shop nevét írjuk ki
+Output the name of the shop:
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -384,8 +384,7 @@ Demo
 
 ### viewHelper.loadModule()
 
-Az engedélyezett modulok vagy dinamikus modulok beillesztésére szolgál. Ha egy modul hozzá van rendelve egy pozícióhoz
-és a viewHelper.loadModule segítségével is behúzzuk, akkor megjelenik a pozícióban és ott is ahol a loadModule-t használtuk.
+Used to insert enabled or dynamic modules. If a module is assigned to a position and is also pulled in using `viewHelper.loadModule`, it will appear both in its assigned position and where `loadModule` is used.
 
 #### Szintaxis
 
@@ -393,18 +392,18 @@ Az engedélyezett modulok vagy dinamikus modulok beillesztésére szolgál. Ha e
 viewHelper.loadModule(moduleRoute)
 ```
 
-#### Argumentumok
+#### Argumentok
 
-**moduleRoute**: A modul elérés, ahogy az admin felületen is hivatkozunk rá.
+**moduleRoute**: The module path as referenced in the admin interface.
 
-#### Visszatérési érték
+#### Return Value
 
-A loadModule a hivatkozott modul html kódjával tér vissza.
+Returns the HTML code of the referenced module.
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -451,29 +450,28 @@ A loadModule a hivatkozott modul html kódjával tér vissza.
 
 ### viewHelper.loadPosition()
 
-Az adott pozícióban megjelenő összes modult jeleníti meg, amik engedélyezett állapotra vannak állítva. A pozíciók
-amik a témában definiálva vannak a **config/settings.json** fájlban találhatóak.
+Displays all modules enabled for a given position. Positions are defined in the theme's **config/settings.json** file.
 
-#### Szintaxis
+#### Syntax
 
 ```
 viewHelper.loadPosition(positionName)
 ```
 
-#### Argumentumok
+#### Arguments
 
-**positionName**: A pozíció nevét kell megadni.
+**positionName**: Name of the position to load.
 
-#### Visszatérési érték
+#### Return Value
 
-Minden modul htmljét visszaadja ami az adott pozícióban megjelenhet.
+Returns the HTML of all modules that can appear in the specified position.
 
-Példa:
+Example:
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -498,28 +496,28 @@ Példa:
 
 ### viewHelper.isPositionEmpty()
 
-Azt vizsgálja, hogy egy adott pozícióhoz van-e modul hozzárendelve.
+Checks if a given position has any modules assigned to it.
 
-#### Szintaxis
+#### Syntax
 
 ```
 viewHelper.loadPosition(positionName)
 ```
 
-#### Argumentumok
+#### Arguments
 
-**positionName**: A pozíció nevét kell megadni.
+**positionName**: Name of the position to check.
 
-#### Visszatérési érték
+#### Return Value
 
-Boolean értékkel tér vissza: true vagy false.
+Returns a Boolean: true or false.
 
-Példa:
+Example:
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>

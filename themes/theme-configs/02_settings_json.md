@@ -1,6 +1,6 @@
 # settings.json
 
-Az adott témához tartozó pozíciók beállítását tartalmazza.
+Contains the position settings for the given theme.
 
 ```json
 {
@@ -9,15 +9,14 @@ Az adott témához tartozó pozíciók beállítását tartalmazza.
 ```
 
 ## layouts (deprecated)
-A layoutok setting.json-ből való beállítását Starter 2-től nem támogatjuk. A layoutokat az adott tpl-ben kell definiálni extends segítségével. Bővebb információ a Layoutok használatáról a [Layoutok](../theme-development-tools/03_layouts.md) című fejezetben található. Az alapértelmezett layout a `layout/1-column-layout.tpl`.
+
+The configuration of layouts from settings.json is not supported from Starter 2 onwards. Layouts should be defined in the respective tpl file using extends. More information on using layouts can be found in the [Layouts]((../theme-development-tools/03_layouts.md)) chapter. The default layout is layout/1-column-layout.tpl.
 
 
 
 ## positions
 
-A positions objektumban az adott témához tartozó modul pozíciókat lehet beállítani. A positions objektumban lévő
-értékek tulajdonság nevei lesznek a pozíciók nevei, az értéke pedig egy objektum, aminél két tulajdonságot lehet
-definiálni:
+In the positions object, you can set module positions for the given theme. The property names in the positions object will be the names of the positions, and the value will be an object where two properties can be defined:
 
 <table>
 <tr>
@@ -28,7 +27,7 @@ deniedfor <strong>deprecated</strong>
 Tömb
 </td>
 <td><del>
-Fel lehet sorolni azokat a modulokat amiket szeretnénk letiltani ebben a pozícióban
+List the modules that you want to disable in this position
 </del>
 </td>
 <tr>
@@ -39,12 +38,12 @@ allowedfor
 Tömb
 </td>
 <td>
-Azon modulok felsorolása, amelyek engedélyezettek ebben a pozícióban. <strong>Dinamikus modulokat közelezően fel kell venni.</strong>
+List of modules that are allowed in this position. <strong>Dynamic modules must be included.</strong>
 </td>
 </tr>
 </table>
 
-Példa:
+Example:
 
 ``` json
 "positions": {
@@ -89,13 +88,11 @@ Példa:
     }
 ```
 
-A példa alapján a `home` pozícióban 5 modul van engedélyezve. `categoryoffer`, `news`, `bannerslider`, `infographs` és `kickerimage` modul.
+Based on the example, the `home` position has 5 modules enabled: `categoryoffer`, `news`, `bannerslider`, `infographs`, and `kickerimage`.
 
-Másik példát megnézve a `footer-top` pozícióban csak az egyedi html modulok vannak engedélyezve.
-Ezeket nem kell felsorolni egyesével, hogy `customcontent1`, `customcontent2`, stb., hanem létezik egy foglalt
-kulcsszó erre: `customcontents`.
+In another example, the `footer-top` position only has custom HTML modules enabled. You don't need to list them individually as `customcontent1`, `customcontent2`, etc., because there is a reserved keyword for this: `customcontents`.
 
-Harmadik példát nézve a `pathway` pozícióban csak a `pathway` modul engedélyezett.
+In a third example, the `pathway` position only has the `pathway` module enabled.
 
-A pozíciók használata a ShopRenter egyik leggyakrabban használt része. Érdemes tisztában lenni velük,
-ha a [dinamikus modulokat](../theme-development-tools/02_theme_sections.md) használjuk.
+The use of positions is one of the most commonly used features in ShopRenter. It is worth understanding them when using [dynamic modules](../theme-development-tools/02_theme_sections.md).
+

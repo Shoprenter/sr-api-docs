@@ -1,8 +1,8 @@
 # config.data.json
 
-A téma konfigurálásához szükséges adatokat tartalmazza JSON formátumban.
+Contains the necessary data for theme configuration in JSON format.
 
-Két részből áll, az assets és a presets részből:
+It consists of two parts: assets and presets:
 
 ```json
 {
@@ -13,11 +13,9 @@ Két részből áll, az assets és a presets részből:
 
 ## assets
 
-Az assets objektumban vannak nyilvántartva a témához tartozó képek. Ezek például a bélyegképek, amelyek az admin
-felületen megjelennek a téma kiválasztás oldalon.
+In the assets object, images associated with the theme are recorded. These include thumbnails that appear on the theme selection page in the admin interface.
 
-
-Példa:
+Example:
 
 ```json
 {
@@ -39,18 +37,15 @@ Példa:
 
 ## presets
 
-A presets objektumban találhatóak a témához tartozó szín változók. Ezen változók alapján jön létre
-a **Téma testreszabás** oldalon a **Téma színek** fül tartalma.
+The presets object contains the color variables associated with the theme. Based on these variables, the content of the **Theme Colors** tab is created on the **Theme Customization** page.
 
-Minden változóhoz tartozik egy ColorPicker vagy BackgroundPicker.
-Ha a változó nevében a postfix color, akkor ColorPicker jelenik meg, ha a postfix background akkor BackgroundPicker,
-ha pedig egyik sem, akkor egy text típusú input mező. A ColorPicker-nél egy színt lehet csak kiválasztani, míg a
-BackgroundPicker segítségével színátmeneteket is lehet megadni.
+Each variable is associated with either a ColorPicker or BackgroundPicker.
+If the variable name has the postfix color, a ColorPicker appears; if the postfix is background, a BackgroundPicker appears; and if neither, then a text-type input field appears. The ColorPicker allows selecting a single color, while the BackgroundPicker enables specifying gradients.
 
 <table>
   <tr>
     <th>Postfix</th>
-    <th>Megjelenés</th>
+    <th>Appearance</th>
   </tr> 
   <tr>
     <td>-color</td>
@@ -61,13 +56,13 @@ BackgroundPicker segítségével színátmeneteket is lehet megadni.
     <td>BackgroundPicker</td>
   </tr>
   <tr>
-    <td>egyik sem</td>
+    <td>none/td>
     <td>input['type=text']</td>
   </tr>
 </table>   
 
 
-Példa:
+Example:
 
 ```json
 {
@@ -103,23 +98,25 @@ Példa:
 }
 ```
 
-A presets objektum közvetlen gyerek elemei a különböző színváltozatokat tartalmazza, illetve a **base** és a **custom**
-objektumok speciális foglalt nevek. A **base** objektum tartalmazza az alap változókat, amik minden színváltozatnál megegyeznek,
-a példában a **blue** és a **green** változatok pedig azokat a változókat tartalmazza amikben a színváltozat eltér.
-Az assets és a presets objektumban ugyanazok a változatok szerepelnek. Ha az admin felhasználó a Téma színek
-oldalon módosítja a színeket akkor a módosult érték a **custom** objektumban kerül eltárolásra.
+The `presets` object contains direct children which include various color variations, as well as the **base** and **custom**
+objects which are special reserved names. The **base** object contains base variables that remain consistent across all color variations.
+In the example, the **blue** and **green** variations contain variables where the color variation differs.
+The assets and presets objects include the same variations. If an admin user modifies colors on the Theme Colors
+page, the modified value is stored in the **custom** object.
 
-**Téma másolás** használatakor a változatok (blue, green) nem kerülnek átmásolásra, a lemásolt téma, ha például
-a blue volt, akkor a blue objektum változói átkerülnek a **base** objektumon belülre.
+When using **Theme Copy**, the variations (blue, green) are not copied over. Instead, the copied theme, for example
+if it was blue, moves the blue object's variables into the **base** object.
 
-## Használat
-A változók bármely tpl fájlban elérhetőek, a [settings](../theme-global/04_global_objects.md#settings) objektum **get** metódusának segítségével:
+## Usage
+The variables can be accessed in any tpl file using the **get** method of the [settings](../theme-global/04_global_objects.md#settings) object.
+
 
 ```
 {{ settings.get('global-color', '#000') }}
 ```
 
-A settings objektumból a get metódus segítségével lekért változókat érdemes a :root pszeudó-osztályban CSS változókon keresztül átadni, így könnyen használható bármelyik CSS fájlban:
+Variables retrieved from the settings object using the get method are best passed through CSS variables in the
+pseudo-class. This approach makes them easily usable in any CSS file.
 
 ```
 <style>

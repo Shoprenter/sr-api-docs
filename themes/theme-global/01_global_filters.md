@@ -1,7 +1,6 @@
-# Filterek
+# Filters
 
-A filterek segítségével bizonyos adatok kimenetét módosíthatjuk. Amennyiben használni szeretnénk egy filtert dupla kapcsos zárójelek között kell hozzáadnunk pipe **|** karaktert használva.
-Egy kimeneten több szűrő is használható. Balról jobbra vannak elemezve.
+Filters allow us to modify the output of certain data. To use a filter, enclose it in double curly braces and separate multiple filters with a pipe **|** character. Filters are applied sequentially from left to right.
 
 ```
 {{ data | filter_name | filter_name2 }}
@@ -11,14 +10,14 @@ Egy kimeneten több szűrő is használható. Balról jobbra vannak elemezve.
 
 ## asset_url
 
-`string | asset_url` - _string visszatérési érték_
+`string | asset_url` - _string return value_
 
-Az assets mappa alatt található css fájl minified cdn url címét adja vissza.
+The CDN URL address for the minified CSS file located under the assets folder.
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -39,21 +38,21 @@ https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/[THEMENAME]
 </tr>
 </table>
 
-Kombinálható a [stylesheet_tag](#stylesheet-tag) filter-el.
+It can be combined with the [stylesheet_tag](#stylesheet-tag) filter.
 
 ---
 
 ## color_contrast
 
-`string | color_contrast(string)` - _number visszatérési érték_
+`string | color_contrast(string)` - _number return value_
 
-Kiszámítja a kontrasztarányt két szín között, és visszaadja ezt az arányszámot. A színek megadásának sorrendje nem számít.<br>
-A megadott string hexadecimális színkóddal működik.
+It calculates the contrast ratio between two colors and returns this ratio. The order of providing the colors does not matter.<br>
+It works with the provided string of hexadecimal color codes.
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -92,14 +91,14 @@ A megadott string hexadecimális színkóddal működik.
 ---
 
 ## currency_format
-`number | currency_format` - _string visszatérési érték_
+`number | currency_format` - _string return value_
 
-Egy adott árat formáz a webáruház pénznembeállítása alapján.
+It formats a given price according to the currency settings of the online store.
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -140,15 +139,15 @@ Egy adott árat formáz a webáruház pénznembeállítása alapján.
 ## global_asset_url
 
 
-`string | global_asset_url` - _string visszatérési érték_
+`string | global_asset_url` - _string return value_
 
 
-Rendszerszintű JS és CSS fájlok cdn url-jét adja vissza.
+It returns the CDN URLs of system JS and CSS files.
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -171,9 +170,9 @@ fancybox/3.5.7/css/jquery.fancybox.min.css?v=1709134277
 </tr>
 </table>
 
-Kombinálható a [stylesheet_tag](#stylesheet-tag) és [script_tag](#script-tag) filterekkel.
+It can be combined with the [stylesheet_tag](#stylesheet-tag) and [script_tag](#script-tag) filters.
 
-### Elérhető assetek:
+### Available assets:
 <table>
 <tr>
 <td>bootstrap-touchspin/4.3.0/js/jquery.bootstrap-touchspin.min.js</td>
@@ -216,40 +215,41 @@ Kombinálható a [stylesheet_tag](#stylesheet-tag) és [script_tag](#script-tag)
 
 ## image_url
 
-`string | image_url(width, height, watermark)` - _string visszatérési érték_
+`string | image_url(width, height, watermark)` - _string return value_
 
-Az image_url filter létrehozza egy kép CDN elérési útvonalát, amely opcionálisan tartalmazza a megadott szélességet, magasságot és vízjelet. A vízjel megjelenítéséhez szükséges, hogy admin felületen is engedélyezve legyen a vízjel használata.
+The image_url filter creates a CDN path for an image, optionally including specified width, height, and watermark parameters. Displaying the watermark requires enabling it in the admin interface.
 
-:red_circle: **FONTOS:**
-Ha az admin felületen a labor menüpontban a "WebP képek automatikus kiszolgálása" beállítás engedélyezve van, az image_url értéke WebP formátumban kerül visszaadásra.
+:red_circle: **IMPORTANT:**
+If the "Serve WebP images automatically" setting is enabled in the admin interface under the Labs menu, image_url returns the value in WebP format.
 
-### Paraméterek:
+### Parameters:
+
 <table>
 <tr>
 <td>width</td>
 <td>number</td>
-<td>A kép szélessége. Értéke 1 és 5760 között lehet.</td>
+<td>The width of the image. Its value can be between 1 and 5760.</td>
 </tr>
 <tr>
 <td>height</td>
 <td>number</td>
-<td>A kép magassága. Értéke 1 és 5760 között lehet.</td>
+<td>The height of the image. Its value can be between 1 and 5760.</td>
 </tr>
 <tr>
 <td>watermark</td>
 <td>boolean</td>
-<td>Ha true, akkor a vízjelet tartalmazó kép útvonalát adja vissza.</td>
+<td>If true, it returns the path of the image containing a watermark.</td>
 </tr>
 </table>
 
-### Hibakezelés:
-- Ha a width vagy height értéke nem esik az 1 és 5760 közé, akkor hibaüzenetet ad: "Image url error: Width and height must be between 1 and 5760"
+### Error handling:
+- If the value of width or height is not between 1 and 5760, it returns an error message: "Image url error: Width and height must be between 1 and 5760"
 
-### Példák:
+### Examples:
 <table>
 <tr>
-<td>Kód:</td>
-<td>Kimenet:</td>
+<td>Code:</td>
+<td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -321,59 +321,59 @@ https://[SHOPNAME].cdn.shoprenter.hu/custom/[SHOPNAME]/image/cache/w420h420q100/
 
 ## image_tag
 
-`string | image_tag(width, height, widths, alt, class, loading, sizes)` - _string visszatérési érték_
+`string | image_tag(width, height, widths, alt, class, loading, sizes)` - _string return value_
 
-Az image_tag filter egy HTML `<img>` címkét generál az adott image_url alapján. Az attribútumokat az opcionális paraméterek segítségével állíthatjuk be.
+Az image_tag filter egy HTML `<img>` címkét generál az adott image_url alapján. Az attribútumokat az opcionális Parameters segítségével állíthatjuk be.
 
-### Paraméterek:
+### Parameters:
 
 <table>
 <tr>
 <td>width</td>
 <td>number</td>
-<td>A kép szélessége. Ha nincs megadva, akkor az `image_url` filternél megadott értéket veszi alapértelmezettnek. Értéke 1 és 5760 között lehet.</td>
+<td>The image width. If not provided, it takes the value set in the image_url filter as the default. Its value can be between 1 and 5760.</td>
 </tr>
 <tr>
 <td>height</td>
 <td>number</td>
-<td>A kép magassága. Ha nincs megadva, akkor az image_url filternél megadott értéket veszi alapértelmezettnek. Értéke 1 és 5760 között lehet.</td>
+<td> The image height. If not provided, it takes the value set in the image_url filter as the default. Its value can be between 1 and 5760.</td>
 </tr>
 <tr>
 <td>widths</td>
 <td>array</td>
-<td>A különböző szélességeket tartalmazó tömb, amelyből srcset attribútumot generálunk. A tömb értékei nem lehetnek 0-k.</td>
+<td>The array of different widths from which to generate a srcset attribute. The values of the array cannot be 0.</td>
 </tr>
 <tr>
 <td>alt</td>
 <td>string</td>
-<td>A kép alternatív szövege. Ha nincs megadva, akkor üres értékkel kerül a HTML-be.</td>
+<td>Alternative text for the image. If not specified, it will be entered in the HTML with an empty value.</td>
 </tr>
 <tr>
 <td>class</td>
 <td>string</td>
-<td>A kép CSS osztályai. Ha nincs megadva, akkor nem kerül be az attribútum a kimenetbe.</td>
+<td>The CSS classes of the image. If not specified, the attribute is not included in the output.</td>
 </tr>
 <tr>
 <td>loading</td>
 <td>string</td>
-<td>A kép betöltési attribútuma (pl. lazy). Ha nincs megadva, akkor nem kerül be az attribútum a kimenetbe.</td>
+<td>The loading attribute of the image (e.g. lazy). If not specified, the attribute is not included in the output.</td>
 </tr>
 <tr>
 <td>sizes</td>
 <td>string</td>
-<td>A kép méretezési attribútuma. Ha nincs megadva, akkor nem kerül be az attribútum a kimenetbe.</td>
+<td>The sizes attribute of the image. If not specified, the attribute is omitted from the output.</td>
 </tr>
 </table>
 
-### Hibakezelés
-- Ha a width vagy height értéke nem esik az 1 és 5760 közötti tartományba, akkor hibaüzenetet ad: "Image tag error: Width and height must be between 1 and 5760"
-- Ha a widths tömbben 0 érték szerepel, akkor hibaüzenetet ad.
+### Error handling
+- If the value of width or height does not fall into the range between 1 and 5760, it gives an error message: "Image tag error: Width and height must be between 1 and 5760"
+- If the widths array contains a value of 0, it gives an error message.
 
-### Példa
+### Example
 <table>
 <tr>
 <td>
-Kód:
+Code:
 
 ```
 {{ 'path/to/image.jpg' | image_url(width = 370, height = 370) | image_tag(
@@ -389,7 +389,7 @@ Kód:
 </tr>
 <tr>
 <td>
-Kimenet:
+Output:
 
 ```
 <img 
@@ -415,16 +415,16 @@ Kimenet:
 
 ## placeholder_svg
 
-`string | placeholder_svg_tag` - _string visszatérési érték_
+`string | placeholder_svg_tag` - _string return value_
 
 
-A placeholder_svg filter segítségével SVG formátumú helykitöltő képek generálhatók.
+The placeholder_svg filter can be used to generate SVG-format placeholder images.
 
-### Példa
+### Example
 <table>
 <tr>
-<td>Kód:</td>
-<td>Kimenet:</td>
+<td>Code:</td>
+<td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -470,30 +470,31 @@ A placeholder_svg filter segítségével SVG formátumú helykitöltő képek ge
 
 ## stylesheet_tag
 
-`string | stylesheet_tag` - _string visszatérési érték_
+`string | stylesheet_tag` - _string return value_
 
-A stylesheet_tag filter a stíluslapok betöltését segíti elő, különböző opciók beállításával, mint például a preload és lazy load. A stylesheet_tag filter létrehoz egy `<link>` elemet a megadott CSS fájl betöltéséhez. A visszatérési érték egy minified verzió.
 
-### Paraméterek:
+The stylesheet_tag filter facilitates the loading of stylesheets with various options such as preload and lazy load. It creates a `<link>` element to load the specified CSS file. The return value is a minified version.
+
+### Parameters:
 
 <table>
 <tr>
 <td>preload</td>
 <td>boolean</td>
-<td>Ha true, akkor egy `Link` request header-t állítunk be. Ez az beállítás lehetővé teszi, hogy a stíluslap betöltése előre megtörténjen, javítva ezzel a weboldal gyorsaságát és teljesítményét.. Alapértelmezett érték: false.</td>
+<td>If true, we set a `Link` request header. This setting allows the stylesheet to be preloaded, thereby improving website speed and performance. Default value is false.</td>
 </tr>
 <tr>
 <td>lazy</td>
 <td>boolean</td>
-<td>Ha true, akkor a stíluslap később töltődik be. Alapértelmezett érték: false.</td>
+<td>If true, the stylesheet is loaded later. Default value: false.</td>
 </tr>
 </table>
 
 ### Példák:
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -554,34 +555,35 @@ Link: <https://[SHOPNAME].cdn.shoprenter.hu/catalog/view/theme/starter2_global/m
 ---
 ## script_tag
 
-`string | script_tag` - _string visszatérési érték_
+`string | script_tag` - _string return value_
 
-A `script_tag` filter a rendszer által biztosított JS fájlok betöltését segíti elő, különböző opciók beállításával, mint például a preload, defer és async. A script_tag filter létrehoz egy `<script>` elemet a megadott JS fájl betöltéséhez. A [global_asset_url](#global-asset-url) filter kombinálásásval használható.
+The `script_tag` filter facilitates the loading of system-provided JS files with various options such as preload, defer, and async. It creates a `<script>` element to load the specified JS file. It can be combined with the [global_asset_url](#global-asset-url) filter.
 
-### Paraméterek:
+### Parameters:
 <table>
 <tr>
 <td>preload</td>
 <td>boolean</td>
-<td>Ha `true`, akkor egy `Link` request header-t állítunk be. Ez az beállítás lehetővé teszi, hogy a script betöltése előre megtörténjen, javítva ezzel a weboldal gyorsaságát és teljesítményét. Alapértelmezett érték: `false`.</td>
+<td>If `true`, sets a `Link` request header. This allows the script to be preloaded, improving website speed and performance. Default value: `false`.</td>
 </tr>
 <tr>
 <td>defer</td>
 <td>boolean</td>
-<td>Ha `true`, akkor a script a dokumentum elemzése után lesz végrehajtva. Alapértelmezett érték: `false`.</td>
+<td>If `true`, the script will be executed after the document parsing is complete. Default value: `false`.</td>
 </tr>
 <tr>
 <td>async</td>
 <td>boolean</td>
-<td>Ha `true`, akkor a script aszinkron módon lesz végrehajtva, amint elérhetővé válik. Alapértelmezett érték: `false`.</td>
+<td>If `true`, the script will be executed asynchronously as soon as it becomes available. Default value: `false`.</td>
 </tr>
 </table>
 
-### Példák:
+
+### Examples:
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>

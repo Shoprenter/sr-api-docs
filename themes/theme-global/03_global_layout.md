@@ -1,12 +1,12 @@
 # Layout
 
 ## Twig
-A template rendszer Twig motorra épül. További információ a [Twig hivatalos dokumentációjában](https://twig.symfony.com) található.
+The template system is built on the Twig engine. Further information can be found in the [official Twig documentation](https://twig.symfony.com).
 
 ---
 
-## Kiterjesztés
-A Twig sablonok kiterjesztéséhez az `extends` kulcsszót használjuk, amely lehetővé teszi, hogy egy meglévő sablonból kiindulva új sablonokat hozzunk létre. Az alábbiakban egy példa látható a `1-column-layout.tpl` kiterjesztésére a `base.tpl` használatával:
+## Extend a layout
+To extend Twig templates, we use the `extends` keyword, which allows us to create new templates based on an existing one. Below is an example of extending `1-column-layout.tpl` using `base.tpl`:
 
 ### 1-column-layout.tpl
 
@@ -57,25 +57,28 @@ A Twig sablonok kiterjesztéséhez az `extends` kulcsszót használjuk, amely le
 ```
 
 
-Ebben a példában a `1-column-layout.tpl` kiterjeszti a `base.tpl` sablont, és definiál különböző blokkokat, például `body_content`, hogy testreszabja az alapsablon tartalmát. A `body_content` blokkban nemcsak a `container` osztályt adjuk hozzá, hanem felülírjuk a `base.tpl`-ben definiált `{% block body_content %}` blokk tartalmát is. Ennek eredményeképpen a `1-column-layout.tpl`-t használó helyeken a `base.tpl`-ben található `main-content` elem tartalmazni fogja a `1-column-layout.tpl`-ben meghatározott `page_head`, `page_body` és egyéb elemeket. Emellett a `header` és `footer` modulok is megjelennek, amelyeket a `base.tpl`-ben a [loadModule](04_global_objects.md#viewhelperloadmodule) segítségével töltöttünk be.
+In this example, `1-column-layout.tpl` extends the `base.tpl` template and defines various blocks such as `body_content` to customize the base template's content. In the `body_content` block, we not only add the `container` class but also override the content of `{% block body_content %}` defined in `base.tpl`. As a result, in places where `1-column-layout.tpl` is used, the `main-content` element in `base.tpl` will include the `page_head`, `page_body`, and other elements defined in `1-column-layout.tpl`. Additionally, the `header` and `footer` modules will appear, loaded using the [loadModule](04_global_objects.md#viewhelperloadmodule) function in `base.tpl`.
+
 
 ---
 
-## Layout felépítés
-A layout két részre bontható: a route (útvonal) és a hozzá kapcsolódó HTML felépítés. Példaként vegyük a `product/product` útvonalat, amely a következő láncot követi: `product/product.tpl` → `1-column-layout.tpl` → `base.tpl`. A `base.tpl`-ben a `pagehead`, `header` és `footer` modulok a loadModule függvénnyel vannak betöltve, így áll össze a végső HTML struktúra.
+## Layout Structure
+
+The layout can be divided into two parts: the route and its associated HTML structure. For example, let's consider the `product/product` route, which follows the following chain: `product/product.tpl` → `1-column-layout.tpl` → `base.tpl`. In `base.tpl`, the `pagehead`, `header`, and `footer` modules are loaded using the `loadModule` function, resulting in the final HTML structure.
 
 ---
 
-## Modul felépítés
-Egy modul felépítése több sablonból állhat, amelyek egymásra épülnek. Például a termék modul esetében a következő láncolatot követhetjük: `featured.tpl` → `product_module.tpl` → `module.tpl`. Ezen sablonok rétegezése lehetővé teszi a modulok testreszabását és újrafelhasználhatóságát a rendszerben.
+## Module Structure
 
-Fontos megjegyezni, hogy egy aloldalhoz tartozó blokk, amelyet a `loadModule` függvény segítségével húztunk be (nem include-oltuk), nem érhető el a modulban. Ez azt jelenti, hogy nem tudjuk felülírni vagy módosítani az aloldalhoz tartozó blokkot a modul sablonjában.
+A module's structure can consist of multiple templates that build upon each other. For example, in the case of a product module, we can follow the chain: `featured.tpl` → `product_module.tpl` → `module.tpl`. Layering these templates allows for customization and reusability of modules within the system.
+
+It's important to note that a block belonging to a subpage, pulled in using the `loadModule` function (not included directly), is not accessible within the module. This means we cannot override or modify the block associated with the subpage in the module template.
 
 ---
 
-## Layout rendelése route-hoz
+## Assigning Layout to Routes
 
-A `settings.json` fájlban lehet meghatározni az alapértelmezett layoutot, amely a TFSZ-ben nem elérhető template fájlokhoz tartozik. Ez biztosítja, hogy a megfelelő layout töltődjön be az adott oldalon. Az alábbiakban egy példa látható a [settings.json](../theme-configs/02_settings_json.md) fájlból:
+In the `settings.json` file, you can define the default layout for template files that are not accessible in the TFSZ. This ensures that the appropriate layout is loaded on the specific page. Below is an example from the [settings.json](../theme-configs/02_settings_json.md) file:
 
 ```json
 {
@@ -89,4 +92,7 @@ A `settings.json` fájlban lehet meghatározni az alapértelmezett layoutot, ame
 ```
 [Teljes lista a route-okról](04_global_objects.md#routes)
 
-:red_circle: **Amennyiben a `product/product` route-ra szeretnénk egy layoutot beállítani, akkor azt nem itt tudjuk szabályozni, hanem a hozzá tartozó tpl fájlban lehet megadni.**
+[Full list of routes](04_global_objects.md#routes)
+
+:red_circle: **If you want to set a layout for the `product/product` route, it cannot be controlled here. You need to specify it in the corresponding tpl file.**
+

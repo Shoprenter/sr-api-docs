@@ -1,37 +1,39 @@
 # Starter 2.0
 
-A Starter 2.0 egy kiinduló téma a Shoprenter rendszerében, amelyet kifejezetten partnereknek fejlesztettünk, akik egyedi arculatot készítenek. A fejlesztőknek lehetőségük van teljesen testreszabni a témát.
+Starter 2.0 is a starter theme within the Shoprenter system, specifically developed for partners creating unique designs. Developers have the opportunity to fully customize the theme.
 
 ---
 
-## CSS felépítés
+## CSS Structure
 
-A téma optimalizált módon tölti be a CSS fájlokat annak érdekében, hogy minimalizálja az oldalbetöltési időt és javítsa a felhasználói élményt.
+The theme optimally loads CSS files to minimize page load times and enhance user experience.
 
-A CSS fájlokat csak akkor töltjük be, ha az az adott oldalon vagy funkcióban valóban szükséges.
+CSS files are loaded only when necessary for the specific page or functionality.
 
-Általánosságban arra törekszünk, hogy csak azok a CSS fájlok töltődjenek be, amelyeket valóban használunk az alkalmazás különböző részein, néhány kivétel azonban mégis létezik. Ezek a kivételek olyan alapvető stílusfájlok és harmadik féltől származó CSS-ek, melyek elengedhetetlenek az oldal megjelenítéséhez és a funkciók megfelelő működéséhez.
-1. <b>base.css</b>: Az alapvető alapstílusokat és formázásokat tartalmazza, amelyek elengedhetetlenek az oldal strukturálásához és az általános megjelenéséhez. 
-2. <b>header.css és footer.css</b>: A fejléc és lábléc formázásait tartalmazó css-ek.
-3. <b>product-card.css</b>: A termékkártyák formázását tartalmazó fájl.
-3. <b>harmadik féltől származó CSS-ek</b>: Bizonyos esetekben olyan harmadik féltől származó stílusokat használunk, amelyek elengedhetetlenek bizonyos funkciók vagy komponensek megfelelő működéséhez.
+In general, we strive to load only those CSS files that are actually used in different parts of the application, with a few exceptions. These exceptions include fundamental style files and third-party CSS files essential for page rendering and proper functionality.
+1. <b>base.css</b>: Contains fundamental base styles and formatting essential for structuring the page and overall appearance.
+2. <b>header.css</b> and <b>footer.css</b>: Contains styling for the header and footer.
+3. <b>product-card.css</b>: Includes styling for product cards.
+3. <b>Third-party CSS files</b>: In some cases, we use third-party styles necessary for certain functionalities or components.
 
-A CSS fájlok az <b>assets</b> mappában találhatóak, téma fájl szerkesztő segítségével itt tudjuk móodosítani.
+CSS files are located in the <b>assets</b> folder and can be modified using the theme file editor.
 
-A CSS fájlok betöltése a TPL-ekben történik a [stylesheet_tag](../theme-global/01_global_filters.md#stylesheet-tag) filter használatával. Példa:<br>
+CSS files are loaded in TPLs using the [stylesheet_tag](../theme-global/01_global_filters.md#stylesheet-tag) filter. Example:
 ``` {{ 'base.css' | asset_url | stylesheet_tag(preload = true) }} ```
 
 ---
 
-## CSS változók
-Az általános css tulajdonságokat(pl. gap, gutter ) a base.css-ben írtuk meg, míg a színek beállítása a pagehead.tpl-ben történik.
-Minta egy általános szabály hozzáadására:
+## CSS Variables
+
+General CSS properties (e.g., gap, gutter) are defined in base.css, while colors are set in pagehead.tpl.
+Here's an example of adding a general rule:
+
 ``` 
 :root {
     --custom-property: red;
 }
 ```
-használat:
+usage:
 ``` 
 body {
     color: var(--custom-property);
@@ -40,53 +42,54 @@ body {
 
 ---
 
-## Képek
-A témában található kép elemeket [image_tag](../theme-global/01_global_filters.md#image-tag) vagy [image_url](../theme-global/01_global_filters.md#image-url) filterek használatával oldottuk meg. A hajtás alatti (below the fold) képeket minden esetben elláttuk loading="lazy" attribútummal.
+## Images
+
+Images in the theme are handled using [image_tag](../theme-global/01_global_filters.md#image-tag) or [image_url](../theme-global/01_global_filters.md#image-url) filters. Below-the-fold images are always equipped with the loading="lazy" attribute.
 
 ---
 
-## Kiemelt TPL fájlok
+## Featured TPL Files
 ### pagehead.tpl (common/pagehead.tpl)
 
-A `<head>` és a `<body>` nyitó elemeket tartalmazza a pagehead.tpl, ide kerülnek a meta tagek és a scriptek.
+Contains the opening `<head>` and `<body>` elements, where meta tags and scripts are placed.
 
 #### content_for_header
-Kötelező ezt a változót megadni a pagehead.tpl-ben, enélkül nem működik a rendszer.
-A `<head>` nyitó és a `</head>` záró tagek közé kell elhelyezni.
-Ez a változó tartalmazza a szükséges ShopRenter scripteket, amik a rendszer működéséhez kellenek.
+It's mandatory to provide this variable in pagehead.tpl; the system won't function without it.
+It should be placed between the opening `<head>` and closing `</head>` tags.
+This variable includes essential ShopRenter scripts required for the system to operate.
 
-## színek
-A :root CSS pseudo-osztályon keresztül itt injektáljuk a dokumentumba CSS változók segítségével a színeket, melyek a [config.data.json](../theme-configs/01_config_data_json.md) fájlban vannak definiálva. Így a színek használhatóak tpl és css szinten is. A színek megfelelő kontrasztjának biztosítása érhető el a [color_contrast](../theme-global/01_global_filters.md#color-contrast) filter alkalmazásával.
+## Colors
+Colors are injected into the document via CSS variables using the :root pseudo-class, defined in the [config.data.json](../theme-configs/01_config_data_json.md) file. This allows colors to be used at both tpl and css levels. Ensuring proper color contrast is achieved using the [color_contrast](../theme-global/01_global_filters.md#color-contrast) filter.
 
-## betűtípusok
-A snippets/fonts.tpl fájlon keresztül töltjük be @font-face szabályt használva a témához tartozó betűtípust, amelyet a base.css-ben állítjuk be a body elemre. Alapértelmezetten saját szerveren tárolt betűtípust használunk.
+## Fonts
+Fonts are loaded through the snippets/fonts.tpl file using @font-face rules, which are then applied to the body element in base.css. By default, fonts hosted on our own server are used.
 
 ---
 
 ## header.tpl (sections/header.tpl)
-A fejléc megjelenítését és funkcionalitását szolgáló [dinamikus modul](../theme-development-tools/02_theme_sections.md ). Tartalma:
-1. telefonszám, email cím
-2. fejléc linkek
-3. nyelvváltó és pénznem váltó modulok
-4. hamburger/mobil menü
-5. logó
-6. keresés modul
-7. kívánságlista modul
-8. belépéshez tartozó link
-9. kosár modul
-10. kategória modul
+Handles the display and functionality of the header [dynamic module](../theme-development-tools/02_theme_sections.md ). Includes:
+1. Phone number, email address
+2. Header links
+3. Language switcher and currency switcher modules
+4. Hamburger/mobile menu
+5. Logo
+6. Search module
+7. Wishlist module
+8. Login link
+9. Cart module
+10. Category module
 
-<i>A dinamikus modulban található logó csak itt a fejlécben jelenik meg. Admin felületen az általános beállításoknál található logó jelenik meg minden más esetben (pl. rendelés visszaigazoló e-mailek).</i>
+<i>The logo within the dynamic module appears exclusively in the header. In the admin interface, the general settings logo appears in all other cases (e.g., order confirmation emails).</i>
 
 ---
 
 ## footer_scripts.tpl (common/footer_scripts.tpl)
-A témához tartozó JS fájlok betöltését szolgáló fájl. Az itt található JS-kódok a dokumentum törzsének záró ``</body>`` tagja előtt kerülnek beillesztésre a layout/base.tpl fájlban az [include twig tag](https://twig.symfony.com/doc/1.x/tags/include.html) segítségével.
+Handles the loading of JS files specific to the theme. JavaScript codes within this file are inserted just before the closing ``</body>`` tag of the document in the layout/base.tpl file using the [include twig tag](https://twig.symfony.com/doc/1.x/tags/include.html).
 
 ---
 
-# 3rd party megoldások
-A harmadik féltől származó eszközöket saját szerveren hosztoljuk és a [script_tag](../theme-global/01_global_filters.md#script_tag) filterrel töltjük be.
+# 3rd Party Solutions
+Third-party tools are hosted on our own server and loaded using the [script_tag](../theme-global/01_global_filters.md#script_tag) filter.
 1. [jQuery 3.7.1](https://jquery.com/)
 2. [FancyBox 3.5.7](https://fancyapps.com/)
 3. [Mmenu JS 9.3.0](https://mmenujs.com/)
