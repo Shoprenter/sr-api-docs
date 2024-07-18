@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2024.07.15
+
+We have fixed the issue where if a script was placed via a Script tag Resource on the "thank_you_page", it did not execute upon order submission.
+
 #### 2024.07.03
 
 The announced bug fixes on the [ProductClass](../api/product_class.md) and [ProductClassAttributeRelation](../api/product_class_attribute_relation.md) resources have been implemented, which may cause backward incompatible behavior. More detailed information can be found at the [following link.](https://changelog.shoprenter.hu/hu/termektipus-valtozasok-az-api_ban-juniustol-Vzq3OfnF)
