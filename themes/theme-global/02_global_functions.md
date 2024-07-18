@@ -4,6 +4,27 @@ A téma fájlokhoz a [TWIG](https://twig.sensiolabs.org) template motort haszná
 kiterjesztésű fájl TWIG szintaxisra épül. A TWIG dokumentációban látható alap függvények és filterek mellett vannak a
 ShopRenter által biztosított függvények és filterek is. Ezek azért készültek, hogy a frontend fejlesztést megkönnyítsék.
 
+## add_body_class()
+
+Az `add_body_class` használatával tudunk a `<body>` tag-hez class-t hozzáadni. String típusú paramétert vár.
+
+### Szintaxis
+
+```
+{{ add_body_class(className) }}
+```
+
+Példa:
+
+```twig
+{{ add_body_class("new-class") }}
+```
+
+Kimenet:
+
+```
+<body class="page-body new-class">
+```
 
 ## asset()
 
