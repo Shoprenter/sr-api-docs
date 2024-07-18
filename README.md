@@ -15,6 +15,5 @@ features:
   link: /development/changelog.html
 - title: '<i class="far fa-file-code"></i> Themes'
   link: /themes/themes/01_starter2.html
-  info: 'We are in active development, contact: <a href="mailto:storefront@shoprenter.hu">storefront@shoprenter.hu</a>'
 footer: © 2011 - 2024 Shoprenter Kft.
 ---

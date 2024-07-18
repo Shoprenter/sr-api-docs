@@ -1,49 +1,17 @@
 # settings.json
 
-Az adott témához tartozó téma beállításokat tartalmazza, mint például a layout-ok és pozíciók.
+Az adott témához tartozó pozíciók beállítását tartalmazza.
 
 ```json
 {
- "layouts": [],
  "positions": {}
 }
 ```
 
-## layouts
+## layouts (deprecated)
+A layoutok setting.json-ből való beállítását Starter 2-től nem támogatjuk. A layoutokat az adott tpl-ben kell definiálni extends segítségével. Bővebb információ a Layoutok használatáról a [Layoutok](../theme-development-tools/03_layouts.md) című fejezetben található. Az alapértelmezett layout a `layout/1-column-layout.tpl`.
 
-A layouts tömbben lehet beállítani azt hogy az adott [route](../theme-global/06_routing_system.md)-hoz milyen elrendezés
-tartozzon. A layoutokhoz tartozó téma fájlokat a téma fájl szerkesztő layout mappájában lehet elérni.
 
-Példa:
-
-```json
-{
- "layouts": [
-  {
-   "name": "layout/1-column-layout",
-   "route": "error/not_found"
-  },
-  {
-   "name": "layout/1-column-home-layout",
-   "route": "common/home"
-  },
-  {
-   "name": "layout/1-column-product-layout",
-   "route": "product/product"
-  },
-  {
-   "name": "layout/2-column-left-layout",
-   "route": "default"
-  }
- ]
-}
-```
-
-A példa alapján a `default` route esetén a `layout/2-column-left-layout.tpl` fájl alapján épül fel a frontend.
-Ha nincs megadva egy route-hoz egyedi layout, akkor mindig a default-nál beállított layout lesz érvényes.
-
-Egy másik elem a példában a `common/home` route, vagyis a kezdőlap esetén már egy másik layout fájl lesz használva:
-`layout/1-column-home-layout`.
 
 ## positions
 
