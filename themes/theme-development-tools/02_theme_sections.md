@@ -1,70 +1,54 @@
-# Dinamikus modulok
-A Téma fájl szerkesztőben található **sections** mappában találhatóak a dinamikus modulok.
-A dinamikus modulok olyan modulok, amelyekben egyszerre tudjuk a megjelenést (frontend) és a
-beállításokat (admin felület) kezelni.
+# Dynamic Modules
 
-A dinamikus modulokon kívül létrehozott változók a dinamikus modulokon belül nem elérhetőek.
-Ehhez hasonlóan, a dinamikus modulokon belül létrehozott változók a dinamikus modulokon kívül nem elérhetőek.
+In the Theme File Editor, dynamic modules are located in the **sections** directory. Dynamic modules are modules where both the frontend appearance and the admin interface settings can be managed simultaneously.
 
-A dinamikus modulokban egy új tag is használható:
+Variables created outside of dynamic modules cannot be accessed within dynamic modules. Similarly, variables created within dynamic modules cannot be accessed outside of them.
+
+Within dynamic modules, a new tag can be used:
 
 ``` {% schema %}```
 
-A schema tag-ről bővebben a későbbiekben fogunk írni.
+More details about the schema tag will be provided later.
 
-## A dinamikus modulok használata
-A dinamikus modulok a téma fájlokhoz hozzáadhatóak manuálisan, vagy modul pozíciókon keresztül dinamikusan is.
+## Using Dynamic Modules
+Dynamic modules can be added to theme files manually or dynamically through module positions.
 
-### Manuális használat
-Dinamikus modult a téma fájlhoz a *viewHelper.loadModule()* függvény segítségével lehet beilleszteni. Például:
+### Manual Usage
+To add a dynamic module to a theme file, use the *viewHelper.loadModule()* function. For example:
 
 ``` 
 {{ viewHelper.loadModule('sections/my-first-section') }}
 ``` 
 
-_A fenti példa szerint beillesztett modult a későbbiekben "manuálisan beillesztett modulnak" hívjuk._
+_The dynamically inserted module as shown above is referred to as a "manually inserted module" in the following._
 
-A dinamikus modul több téma fájlba is beilleszthető, ugyanakkor az adott dinamikus modul csak egyszer fordulhat elő
-a modulok között, a modul lista oldalon. Ha egy manuálisan beillesztett modulnak módosítjuk a konfigurációját,
-a módosítás minden olyan helyen érvényes lesz, ahol az adott modul megtalálható. Fontos megjegyezni, hogy a
-dinamikus modulok nem tartalmazhatnak más dinamikus modulokat. Manuális használat esetén elegendő egy
-**name** tulajdonság megadása az _attributes_ objektumban.
+A dynamic module can be inserted into multiple theme files; however, each specific dynamic module can only appear once in the modules list on the Modules page. If we modify the configuration of a manually inserted module, the changes will apply everywhere that module is found. It's important to note that dynamic modules cannot contain other dynamic modules. For manual usage, specifying a **name** attribute in the _attributes_ object is sufficient.
 
-### Pozícióban való használat
-A dinamikus modulokat pozíciókban is el lehet helyezni a **viewHelper.loadPosition()** függvény segítségével. Például:
+### Usage in Positions
+Dynamic modules can also be placed within positions using the **viewHelper.loadPosition()** function. For example:
 
 ```
 {{ viewHelper.loadPosition('home') }}
 ```
 
-Ez azt jelenti, hogy a ShopRenter minden olyan modult megjelenít aminek a pozíciója: _home_.
-A pozíciókat a Téma fájl szerkesztőben a **settings.json** fájl **positions** objektumában lehet meghatározni.
+This means that ShopRenter displays all modules whose position is **_home_**. Positions can be defined in the **positions** object within the **settings.json** file in the Theme File Editor.
 
-:red_circle: **FONTOS**: Ha szeretnénk új pozíciókat létrehozni ide kell felvenni őket.
-A dinamikus modulok pozícióját az adminisztrátorok az admin felületen belül a dinamikus modul szerkesztés oldalán
-tudják megváltoztatni. A dinamikus moduloknak lennie kell egy **position**, **status** és **sort_order** beállítása a
-schema settings objektumán belül különben nem fog megjelenni a modul.
+:red_circle: **IMPORTANT**: If you want to create new positions, you need to add them here. Administrators can change the positions of dynamic modules within the admin interface on the dynamic module editing page. Dynamic modules must have a **position**, **status**, and **sort_order** set in the schema settings object; otherwise, the module will not appear.
 
-## Dinamikus modulok schema használata
-A dinamikus modulok sémája a Twig **{% schema %}** tag-ben van definiálva. A twig comment tag-hez hasonlóan
-a sémának nincs kimenete és a schema tag-ben lévő Twig kód nem kerül lefuttatásra.
+## Using Dynamic Module Schema
+The schema of dynamic modules is defined within the Twig **{% schema %}** tag. Similar to the Twig comment tag, the schema does not produce any output, and the Twig code within the schema tag is not executed.
 
-Minden dinamikus modulban egy schema tag lehet, aminek valid JSON-t kell tartalmaznia.
-A schema tag a dinamikus modul téma fájlban bárhol elhelyezhető, kivéve egy másik Twig tag-en belül.
+Each dynamic module can have one schema tag containing valid JSON. The schema tag can be placed anywhere within the dynamic module theme file, except inside another Twig tag.
 
-A dinamikus modul schema tag-n belül a következő tulajdonságok határozhatók meg:
-
-attributes
-settings
-blocks
+Within the schema tag of a dynamic module, the following properties can be defined:
 
 ### attributes
-Dinamikus modul schema-jában lennie kell egy **attributes** objektumnak és egy **name** tulajdonságnak. Ha ez hiányzik, hibaüzenetet fogunk kapni a modul betöltése során.
+The schema of a dynamic module must include an **attributes** object and a **name** property. If these are missing, an error will occur when the module is loaded.
 
-#### name tulajdonság
-A name tulajdonsággal adhatjuk meg a dinamikus modul nevét. Ez lehet egyszerű String típus vagy akár objektum is. Utóbbi használata akkor indokolt, ha nyelvspecifikusan szeretnénk meghatározni a modul nevét.
+#### name property
+The **name** property is used to define the name of the dynamic module. It can be a simple string or an object. Using an object is useful when specifying the module name in a language-specific manner.
 
-Például:
+For example:
 ```
 {% schema %}
 {
@@ -74,7 +58,7 @@ Például:
 }
 {% endschema %}
 ```
-Vagy:
+Or:
 ```
 {% schema %}
 {
@@ -88,10 +72,12 @@ Vagy:
 {% endschema %}
 ```
 
-#### helpLink tulajdonság
-Van lehetőség egy **helpLink** tulajdonság megadására is, aminek egy url-t kell megadni. Erre az url-re fog a "Segítség" gomb mutatni.
+#### helpLink property
 
-Például:
+There is an option to specify a **helpLink** property, where you need to provide a URL. The "Help" button will link to this URL.
+
+For example:
+
 ```
 {% schema %}
 {
@@ -106,14 +92,16 @@ Például:
 {% endschema %}
 ```
 
-#### maxBlocks tulajdonság
-Ha egy olyan dinamikus modult hozunk létre, amely blokkokat is használ (lásd bővebben: [blocks](#blocks)), akkor lehetőségünk van megadni, hogy legfeljebb hány darab blokk elemet lehessen rögzíteni a modulhoz.
+#### maxBlocks property
 
-Alapértelmezetten bármennyi blokkot felvehetünk egy dinamikus modulhoz. Ha viszont szeretnénk egy maximum értéket beállítani, fontos, hogy maxBlocks tulajdonság értékének egy pozitív egész számot adjunk meg.
+If you create a dynamic module that also uses blocks (see more: [blocks](#blocks)), you have the option to specify the maximum number of block items that can be added to the module.
 
-Ha nem megfelelő értéket adunk meg ennek a tulajdonságnak, az hibaüzenetet fog eredményezni, amely megakadályozza a modul betöltését.
+By default, you can add as many blocks as needed to a dynamic module. However, if you want to set a maximum limit, it's important to provide a positive integer value for the maxBlocks property.
 
-Példa a helyes használatra:
+Incorrect values for this property will result in an error message, preventing the module from loading.
+
+Example of correct usage:
+
 ```
 {% schema %}
 {
@@ -126,12 +114,12 @@ Példa a helyes használatra:
 ```
 
 ### settings
-A dinamikus modulnak a saját beállításai vannak a settings objektumon belül.
-A beállításokat arra lehet használni, hogy egy admin felületet biztosítsunk a dinamikus modul szerkesztő felületéhez.
-A felhasználó az admin felületen a modul listából érheti el a dinamikus modult a nevére vagy a szerkesztés gombra
-kattintva.
 
-Például:
+Dynamic modules have their own settings within the settings object.
+Settings can be used to provide an admin interface for editing the dynamic module.
+Users can access the dynamic module from the module list in the admin interface by clicking on its name or the edit button.
+
+For example:
 
 ```
 {% schema %}
@@ -151,28 +139,27 @@ Például:
 {% endschema %}
 ```
 
-A dinamikus modul settings objektumán belül a **name** tulajdonságnak egyedinek kell lennie az adott
-dinamikus modulon belül, de globálisan nem szükséges, hogy egyedi legyen. Az alulvonás karakteren (_) kívül
-semmilyen speciális karakter nem használható a name tulajdonságon értékénél.
+Within the settings object of a dynamic module, the **name** property must be unique within that specific dynamic module, but it does not need to be globally unique. No special characters other than underscore (_) can be used in the value of the name property.
 
-A beállítás értékét a html-ben a **section Object**-en keresztül lehet elérni, például:
+The value of the setting can be accessed in HTML through the **section Object**, for example:
 
 ```
 {{ section.settings.name }}
 ```
 
-A default property szolgál egy mező alapértelmezett értékének beállítására. Ez egy opcionálisan meghatározható beállítás. A property értéke lehet string|int|bool|object, annak függvényében, hogy multilang -e az adott mező, vagy sem.
+The default property serves to set a field's default value. This is an optional setting. The property value can be string|int|bool|object, depending on whether the field is multilingual or not.
 
-- Ha nincs default mező, akkor az összes nyelven üres.
-- Ha van default mező, de üres, akkor az összes nyelven üres.
-- Ha van default, de nem objektum, akkor minden nyelven a meghatározott értéket kapja meg.
-- Ha objektum, akkor language code alapján meghatározott nyelven kapja meg a felvett értéket.
+- If there is no default field, it is empty in all languages.
+- If there is a default field but it is empty, it is empty in all languages.
+- If there is a default field and it is not an object, it has the specified value in all languages.
+- If it is an object, it receives the entered value in the language determined by the language code.
 
 ### blocks
-Vannak olyan esetek amikor bizonyos beállításokból dinamikusan szeretnénk létrehozni több változatot, erre szolgálnak a blokkok.
-Ezeket a változatokat a felhasználó tudja dinamikusan létrehozni, anélkül, hogy a programozónak újabb beállításokat/"beállítás csoportokat" kelljen hozzá adnia.
+There are cases where we want to dynamically create multiple versions from certain settings, and this is where blocks come into play.
+Users can dynamically create these versions without requiring the programmer to add additional settings or "setting groups."
 
-Például:
+For example:
+
 
 ```
 {% schema %}
@@ -203,17 +190,18 @@ Például:
 {% endschema %}
 ```
 
-A blocks objektumon belül, a **type** tulajdonságnak megadhatunk bármit, de ennek mindenképp egyedinek kell lennie, mivel ez azonosítja be az adott blokkot. A **type** csak a latin abc kis betűit és számokat tartalmazhat, valamint alulvonás karaktert (_).
-A **name** tulajdonság az admin felületen megjelenő **type** felhasználóbarát neve.
-A blokkon belüli **settings** objektum ugyanúgy funkciónál, mint ahogy a már fent említett **settings** objektum.
+Within the blocks object, the **type** property can be set to anything, but it must be unique as it identifies the specific block. The **type** can only contain lowercase Latin letters, numbers, and underscores (_).
+The **name** property is the user-friendly name of the **type** displayed in the admin interface.
+The **settings** object inside the block functions in the same way as the **settings** object mentioned above.
 
-A blocks objektumot a html-ben a **section Object**-en keresztül lehet elérni, például:
+The blocks object can be accessed in HTML through the **section Object**, for example:
+
 
 ```
 {{ section.blocks }}
 ```
 
-Egy példa a blocks iterációra a Twig html-en belül:
+An example of iterating over blocks in Twig HTML:
 
 ```
 <ul class="list">
@@ -225,8 +213,8 @@ Egy példa a blocks iterációra a Twig html-en belül:
 </ul>
 ```
 
-#### Speciális field-ek a Blocks settings objektumon belül
-Az admin felületen, a "Tartalom" lista megjelenését befolyásoló különleges **name** tulajdonság értékek.
+#### Special fields within the Blocks settings object
+Unique **name** properties that influence the appearance of the "Content" list in the admin interface.
 
 <table>
 <tr>
@@ -235,27 +223,27 @@ Az admin felületen, a "Tartalom" lista megjelenését befolyásoló különlege
 </tr>
 <tr>
   <td>status</td>
-  <td>A listában láthatóvá válik az adott block példány státusza</td>
+  <td>Displays the status of the specific block instance in the list</td>
 </tr>
 <tr>
   <td>title</td>
-  <td>A listában megjelenő adott block példány neve</td>
+  <td>Represents the name of the specific block instance in the list</td>
 </tr>
 <tr>
   <td>image</td>
-  <td>A listában megjelenő adott block példány képe</td>
+  <td>Represents the image of the specific block instance in the list</td>
 </tr>
 </table>
 
 ### presets
 
-Ez egy opcionálisan megadható beállítás.
+This is an optional setting.
 
-Ha egy mező értékét szeretnénk előre meghatározni, a "presets" nevű property lesz segítségünkre. Ebben az objektumban tudjuk meghatározni egy-egy mező értékét. Fontos, hogy a presets-ben definiált kezdőértékeket csak témaváltáskor állítja be a rendszer és menti el adatbázisba.
+If we want to predefine the value of a field, we can use the "presets" property. Within this object, we can define initial values for each field. It's important to note that the system sets and saves the values defined in "presets" only when changing themes.
 
-A presets-ek használatának leginkább a blokkoknál van értelme, amikor egy létrehozott blokkhoz szeretnénk minta elemeket rögzíteni.
+Using presets makes the most sense with blocks, where we want to establish sample elements for a created block.
 
-Vegyük például a fentebb létrehozott blokkot:
+For example, consider the block created above:
 
 ```
 "presets": {
@@ -271,17 +259,18 @@ Vegyük például a fentebb létrehozott blokkot:
 }
 ```
 
-Ezzel gyakorlatilag annyit tettünk, hogy előre létrehoztunk egy blokkot a modulunkban.
+Essentially, we have pre-created a block within our module.
 
-**Fontos!** Ha egy mező többnyelvű, azaz a beállításai közt meghatározzuk, hogy:
+**Important!** If a field is multilingual, meaning we specify among its settings that:
 
 ```
 "multilang": true
 ```
 
-Ebben az esetben nem string-ként kell a presets mező értékét meghatározni, hanem language code alapján, objektumként.
+In this case, the value of the `presets` field should be defined not as a string, but as an object based on the language code.
 
-Példa:
+Example:
+
 
 **Blokk schema:**
 
@@ -318,7 +307,7 @@ Példa:
 {% endschema %}
 ```
 
-**Helyes presets meghatározás:**
+**Correct definition of presets:**
 
 ```
 "presets": {
@@ -337,10 +326,10 @@ Példa:
 }
 ```
 
-**Ha egy többnyelvű mező presets értéke nem objektum, "Váratlan hibaüzenet" jelzést fogunk kapni a modul mentése során. Ugyanez igaz a fordított esetre is, azaz egy NEM többnyelvű mező preset értéke nem lehet objektum, különben hibát fogunk kapni a mentés alkalmával.**
+**If a multilingual field's presets value is not an object, we will receive an "Unexpected error message" during module saving. The same applies in reverse: for a non-multilingual field, the preset value cannot be an object, otherwise an error will occur during saving.**
 
-## Input típusok
-Jelenleg elérhető input típusok:
+## Input Types
+Currently available input types:
 
 text  
 textarea  
@@ -352,9 +341,8 @@ number
 position  
 datetime
 
-### Egysoros szöveg beviteli mező
-Az egysoros szöveg beviteli mezőt akkor használhatjuk, ha rövid szöveget szeretnénk megjeleníteni,
-mint például egy cím vagy egy név.
+### Single-line text input
+We can use a single-line text input field when we want to display short text, such as a title or a name.
 
 Input
 
@@ -413,8 +401,9 @@ Példa:
 }
 ```
 
-### Többsoros szöveg beviteli mező
-A többsoros szöveg beviteli mezőt akkor használhatjuk, ha hosszabb szöveget vagy HTML kódot szeretnénk megjeleníteni.
+### Multi-line text input field
+
+We can use a multi-line text input field when we want to display longer text or HTML code.
 
 Input
 
@@ -474,7 +463,7 @@ Példa:
 ```
 
 ### HTML Editor
-A HTML editor-t, hasonlóan a többsoros szöveg beviteli mezőhöz, használhatjuk hosszabb szövegek vagy HTML kód szerkesztéséhez.
+The HTML editor can be used similarly to the multi-line text input field for editing longer text or HTML code.
 
 Input
 
@@ -533,8 +522,9 @@ Példa:
 }
 ```
 
-### Képfeltöltés
-A képfeltöltésre szolgáló mező az image típusú mező, ahol a képek, fav ikonok, vagy a  slideshow-khoz használt képeket lehet feltölteni.
+### Image Upload
+
+The image upload field is used for uploading images such as pictures, fav icons, or images used for slideshows.
 
 Input
 
@@ -593,13 +583,14 @@ Példa:
 }
 ```
 
-A Twig templateben az [asset_image_url](../theme-global/02_global_functions.md#asset-image-url) függvényt célszerű használni a képfájl megjelenítésére.
+Using the [asset_image_url](../theme-global/02_global_functions.md#asset-image-url) Function in Twig Templates
 
-### Legördülő menü (select)
-A legördülő típus arra használható, hogy a felhasználónak különböző lehetőségeket mutassunk.
-Például, kiválaszthatja azokat a termékeket, amelyeket a termék oldalon szeretne megjeleníteni.
+### Dropdown Menu (select)
+The dropdown type is used to present various options to the user.
+For example, they can select which products they want to display on the product page.
 
-A legördülő menünek meg kell adni egy **options** objektumot, ahol felsoroljuk a kiválasztható értékeket.
+The dropdown menu must be provided with an **options** object listing the selectable values.
+
 
 Input
 
@@ -678,8 +669,8 @@ Példa:
 ```
 
 ### Checkbox
-A checkbox típus segítségével beállítások ki-be kapcsolását végezhetjük el, például, az oldalon lévő
-elemek megjelenítésére vagy elrejtésére.
+Using the checkbox type, you can toggle settings on and off, for example, displaying or hiding elements on the page.
+
 
 Input
 
@@ -738,8 +729,8 @@ Példa:
 }
 ```
 
-### Szám beviteli mező
-A number típusú beviteli mező csak szám karakterek beolvasására alkalmas.
+### Number Input Field
+The number input field accepts only numeric characters.
 
 Input
 
@@ -798,11 +789,9 @@ Példa:
 }
 ```
 
-### Pozíció típus
-Ha a típust position-re állítjuk, arra használhatjuk, hogy egy legördülő menüből ki tudjuk választani a
-rendszer pozíciókat. A különbség a legördülő menü és a position típus között az, hogy a position típusnak
-előre meghatározott értékei vannak. Ezek az előre meghatározott értékek a **settings.json** fájl positions
-objektumában vannak definiálva.
+### Position Type
+When setting the type to `position`, it allows us to select system positions from a dropdown menu. The difference between a dropdown menu and the position type is that the position type has predefined values. These predefined values are defined in the `positions` object of the `settings.json` file.
+
 
 Input
 
@@ -855,13 +844,13 @@ Példa:
 }
 ```
 
-### Dátum idővel
+### Date Time Picker
 
-A `datetime` segítségével egy felhasználóbarát, dátum- és időválasztó felülettel elátott inputot tudunk elhelyezni.  
-A `default` mezőben üres karakterláncot, vagy `YYYY-MM-DD HH:mm:ss` formátumú dátumot lehet megadni. (pl.: `"default": ""`
-vagy `"default": "2019-01-01 12:00:00"`)  
-Mentéskor is ilyen formátumú értékek kerülnek tárolásra.  
-Amennyiben nem kötelező a mező (`"required": false`), megjelnik egy törlés gomb is.
+Using `datetime`, we can place an input field with a user-friendly date and time selector interface.  
+In the `default` field, you can specify an empty string or a date-time format in `YYYY-MM-DD HH:mm:ss` format (e.g., `"default": ""` or `"default": "2019-01-01 12:00:00"`).  
+Upon saving, values are stored in this format.  
+If the field is not required (`"required": false`), a delete button will also appear.
+s.
 
 Input
 
@@ -892,15 +881,16 @@ Példa:
 }
 ```
 
-**Vigyázat!**  
-Twig templateben a `{{ ""|date('Y-m-d H:i:s') }}` az aktuális dátumot és időt fogja visszaadni.  
-Tehát ha a mező nem kötelező és üres értéket mentünk el, akkor ezt külön kezelnünk kell!
+**Warning!**  
+In Twig template, `{{ ""|date('Y-m-d H:i:s') }}` will return the current date and time.  
+Therefore, if the field is not required and we save an empty value, this needs to be handled separately!
 
-## Többnyelvűség használata
-Többnyelvűség esetén a **multilang** tulajdonságot true értékre kell állítani egy mező esetén.
-A label, default, help és options tulajdonságok esetén van lehetőség többnyelvű értékek felvételére.
+## Using Multilingual Fields
+In case of multilingual fields, the **multilang** property should be set to true.  
+The label, default, help, and options properties can accept multilingual values.
 
-Példa:
+Example:
+
 ```
 {
     "type": "select",

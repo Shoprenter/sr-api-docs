@@ -1,20 +1,18 @@
-# Tagek
-
-Hamarosan
+# Tags
 
 ## jshrink
 
-A jshrink segítségével a JavaScript kódunkat minimalizálhatjuk, ami csökkenti a forráskód méretét és gyorsítja a betöltési időt.
+Using jshrink, you can minimize your JavaScript code, reducing the size of the source code and speeding up loading times.
 
-### Használat
-A TPL fájlban, ahol a JavaScript kódot használjuk, a kódunkat `{% jshrink %}` és `{% endjshrink %}` közé kell tenni. Ez a két tag közötti kód automatikusan minifikál a jshrink segítségével.
+### Usage
+In the TPL file where JavaScript code is used, wrap your code between `{% jshrink %}` and `{% endjshrink %}` tags. The code between these tags will automatically be minified using jshrink.
 
-### Példakód
+### Example
 
 <table>
 <tr>
-    <td>Kód:</td>
-    <td>Kimenet:</td>
+    <td>Code:</td>
+    <td>Output:</td>
 </tr>
 <tr>
 <td>
@@ -45,6 +43,7 @@ A TPL fájlban, ahol a JavaScript kódot használjuk, a kódunkat `{% jshrink %}
 
 ## schema
 
-A `{% schema %}` tag egy speciális tag, amelyet kizárólag Dinamikus moduloknál használható a sablonokban.
+The `{% schema %}` tag is a special tag used exclusively for Dynamic modules in templates.
 
-Bővebben információ a [Dinamikus modulok](../theme-development-tools/02_theme_sections.md#dinamikus-modulok-schema-használata) dokumentációban található.
+For more information, refer to the [Dynamic modules](../theme-development-tools/02_theme_sections.md#using-schema-in-dynamic-modules) documentation.
+

@@ -1,15 +1,13 @@
-# Routing rendszer
- 
- A ShopRenter téma rendszeréhez szorosan kötődik a routing rendszer. A route azt az azonosítót jelenti, ami alapján
-  meg lehet állapítani, hogy melyik aloldalon vagyunk. Ez egy téma készítése során fontos, hiszen ez alapján lehet
-   megtalálni a megfelelő téma fájlt, illetve az adott route-hoz tartozó layout-ot módosítani.
-   
-## Route-ok ShopRenter-ben
+# Routing System
+
+The routing system is closely integrated with the ShopRenter theme system. A route represents an identifier that determines which subpage we are currently on. This is crucial during theme development as it helps locate the appropriate theme file and modify the layout associated with that route.
+
+## Routes in ShopRenter
 
 <table>
 <tr>
 <th>route</th>
-<th>leírás</th>
+<th>description</th>
 </tr>
 
 <tr>
@@ -17,7 +15,7 @@
 product/list
 </td>
 <td>
-Terméklista oldal/kategória oldal
+Product list/category page
 </td>
 </tr>
 
@@ -26,7 +24,7 @@ Terméklista oldal/kategória oldal
 product/manufacturers
 </td>
 <td>
-Összes gyártó lista oldala
+All manufacturers list page 
 </td>
 </tr>
 
@@ -35,7 +33,7 @@ product/manufacturers
 filter
 </td>
 <td>
-Terméklista oldal szűrés után
+Product list page after filtering 
 </td>
 </tr>
 
@@ -44,7 +42,7 @@ Terméklista oldal szűrés után
 product/product
 </td>
 <td>
-Termék oldal
+Product page
 </td>
 </tr>
 
@@ -53,7 +51,7 @@ Termék oldal
 information/information_list
 </td>
 <td>
-Szöveges tartalom lista oldal
+Content list page   
 </td>
 </tr>
 
@@ -62,7 +60,7 @@ Szöveges tartalom lista oldal
 information/information
 </td>
 <td>
-Szöveges tartalom aloldal
+Content page 
 </td>
 </tr>
 
@@ -71,7 +69,7 @@ Szöveges tartalom aloldal
 information/contact
 </td>
 <td>
-Kapcsolat oldal
+Contact page
 </td>
 </tr>
 
@@ -80,7 +78,7 @@ Kapcsolat oldal
 information/personaldata
 </td>
 <td>
-Személyes adatok kezelése
+Manage personal data page 
 </td>
 </tr>
 
@@ -89,7 +87,7 @@ Személyes adatok kezelése
 information/sitemap
 </td>
 <td>
-Oldaltérkép
+Sitemap page
 </td>
 </tr>
 
@@ -98,7 +96,7 @@ Oldaltérkép
 information/style_guide
 </td>
 <td>
-Style Guide oldal
+Style guide page
 </td>
 </tr>
 
@@ -107,7 +105,7 @@ Style Guide oldal
 error/not_found
 </td>
 <td>
-404-es hiba oldal
+404 error page
 </td>
 </tr>
 
@@ -116,7 +114,7 @@ error/not_found
 account/account
 </td>
 <td>
-Felhasználói fiók oldala
+User account page
 </td>
 </tr>
 
@@ -125,7 +123,7 @@ Felhasználói fiók oldala
 account/edit
 </td>
 <td>
-Fiók adatok módosítása
+Edit account details page 
 </td>
 </tr>
 
@@ -134,7 +132,7 @@ Fiók adatok módosítása
 account/password
 </td>
 <td>
-Jelszócsere oldal
+Password change page  
 </td>
 </tr>
 
@@ -143,7 +141,7 @@ Jelszócsere oldal
 account/address
 </td>
 <td>
-Címadatok módosítása
+Modify address details page
 </td>
 </tr>
 
@@ -152,7 +150,7 @@ Címadatok módosítása
 account/waitinglist
 </td>
 <td>
-Értesítés kéréseim oldal
+Notification requests page
 </td>
 </tr>
 
@@ -161,7 +159,7 @@ account/waitinglist
 account/history
 </td>
 <td>
-Korábbi rendeléseim lista oldala
+List of past orders page 
 </td>
 </tr>
 
@@ -170,7 +168,7 @@ Korábbi rendeléseim lista oldala
 account/invoice
 </td>
 <td>
-Korábbi rendelés részletes aloldala
+Detailed page of a past order
 </td>
 </tr>
 
@@ -179,7 +177,7 @@ Korábbi rendelés részletes aloldala
 account/download
 </td>
 <td>
-Letölthető termékek lista oldala
+List of downloadable products page
 </td>
 </tr>
 
@@ -188,7 +186,7 @@ Letölthető termékek lista oldala
 account/newsletter
 </td>
 <td>
-Hírlevél feliratkozása/lemondása aloldal
+Newsletter subscription/unsubscription page 
 </td>
 </tr>
 
@@ -197,7 +195,7 @@ Hírlevél feliratkozása/lemondása aloldal
 account/registration_contribution
 </td>
 <td>
-Regisztrációs hozzájárulás elfogadása/elutasítása
+Accept/reject registration contribution
 </td>
 </tr>
 
@@ -206,7 +204,7 @@ Regisztrációs hozzájárulás elfogadása/elutasítása
 account/aaffiliate
 </td>
 <td>
-Affiliate aloldal
+Affiliate subpage
 </td>
 </tr>
 
@@ -215,27 +213,23 @@ Affiliate aloldal
 wishlist/wishlist
 </td>
 <td>
-Kívánságlistán lévő termékek listája
+List of products in the wishlist
 </td>
 </tr>
 
 </table>
 
-A bejelentkezés, regisztráció, kosár és pénztár oldalak téma fájljaihoz nem lehet hozzáférni a ShopRenter-ben. 
-Ezeken az oldalakon a route értéke üres lesz.
+The template files for login, registration, cart, and checkout pages are not accessible in ShopRenter; the route value for these pages will be empty.
 
-## Hol és mire használhatjuk a route-kat?
+## Where and How to Use Routes?
 
-1. Ha szeretnénk meghatározni, hogy melyik oldalon vagyunk, a
- [ShopRenter.js](../../development/frontend-api/01_shoprenterjs_api.md#page) 
- objektumból ki lehet kérni: `ShopRenter.page.route`
+1. To determine the current page, you can retrieve it from the `ShopRenter.page.route` object in [ShopRenter.js](../../development/frontend-api/01_shoprenterjs_api.md#page).
 
-2. A `settings.json` layouts property értékénél meg lehet adni, melyik route-hoz milyen layout tartozzon.
+2. Specify which layout corresponds to which route in the `settings.json` under the `layouts` property.
 
-3. A Téma fájl szerkesztőben a route alapján lehet megtalálni a téma fájlt. 
-Például a product/product route-hoz a product/product.tpl tartozik.
+3. In the Theme File Editor, locate theme files based on the route. For example, the `product/product` route corresponds to `product/product.tpl`.
 
-Kivétel ez alól a `product/list`, ahol nem a product/list.tpl a téma fájl, hanem több téma fájl is tartozik hozzá:
+An exception is the `product/list` route, which has multiple associated theme files instead of just `product/list.tpl`:
   
 <table>
 
@@ -244,7 +238,7 @@ Kivétel ez alól a `product/list`, ahol nem a product/list.tpl a téma fájl, h
 product/search.tpl
 </td>
 <td>
-Kereső találatok
+Search results
 </td>
 </tr>
 
@@ -253,7 +247,7 @@ Kereső találatok
 product/category.tpl
 </td>
 <td>
-Terméklista/kategória oldal
+Product list/category page 
 </td>
 </tr>
 
@@ -262,7 +256,7 @@ Terméklista/kategória oldal
 product/manufacturer.tpl
 </td> 
 <td>
-Terméklista egy adott gyártóhoz
+Product list for a specific manufacturer 
 </td>
 </tr>
 
@@ -271,7 +265,7 @@ Terméklista egy adott gyártóhoz
 product/productspecial.tpl
 </td> 
 <td>
-Akciós termékek lista oldala
+Special offers list page 
 </td>
 </tr>
 
@@ -280,7 +274,7 @@ Akciós termékek lista oldala
 product/latestlist.tpl
 </td> 
 <td>
-Legújabb termékek lista oldala
+Newest products list page 
 </td>
 </tr>
 
