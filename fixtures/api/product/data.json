@@ -265,6 +265,14 @@
             "readonly": false
         },
         {
+            "name": "durableMediaDevice",
+            "description": {
+                "en": "Is it a durable media device?"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "taxClass",
             "description": {
                 "en": "Tax class."
