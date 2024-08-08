@@ -1,0 +1,205 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "Attribute identifier. If submitted in the request body, this property can be used to change the OuterID."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "en": "Attribute name for internal identification. Only lowercase letters of the English alphabet and numbers are allowed. Must be unique."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "priority",
+            "description": {
+                "en": "Priority. Accepted values: HIDDEN, NORMAL, IMPORTANT."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sortOrder",
+            "description": {
+                "en": "Position of the attribute in lists."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "required",
+            "description": {
+                "en": "Whether products are required to have a set value for this attribute."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "presentation",
+            "description": {
+                "en": "Appearance of the product attribute filter. Accepted values: TEXT, ICON."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "attributeDescriptions[]",
+            "description": {
+                "en": "Attribute descriptions. <a href='#attributedescriptions-field-properties'>See properties</a>"
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "defaultListAttributeValue",
+            "description": {
+                "en": "References the `valueId` of the default list attribute value."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "listAttributeValues[]",
+            "description": {
+                "en": "Attribute values. <a href='#listattributevalues-field-properties'>See properties</a>"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "valuesSortBy",
+            "description": {
+                "en": "How should the values in the product attribute filter be sorted?<br/> Accepted values: <ul><li>SYSTEM_SORTBY_VALUE_ASC (sort by value, ascending),</li><li>SYSTEM_SORTBY_VALUE_DESC (sort by value, descending),</li><li>SYSTEM_SORTBY_LABEL_ASC (sort by label, ascending),</li></li>SYSTEM_SORTBY_LABEL_DESC (sort by label, descending)</li><ul>"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "listAttributeWidget",
+            "description": {
+                "en": "Attribute widget. <a href='#listattributewidget-field-properties'>See properties</a>"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "displayInList",
+            "description": {
+                "en": "Whether the attribute should appear in product listing pages such as category pages."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "relatedProductClasses[]",
+            "description": {
+                "en": "Links of the product classes this attribute is connected to."
+            },
+            "required": true,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/listAttributesExtend\/attribute id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributesExtend\/bGlzdEF0dHJpYnV0ZUV4dGVuZC1hdHRyaWJ1dGVfaWQ9OQ==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/listAttributesExtend"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                },
+                {
+                    "name": "name",
+                    "description": {
+                        "en": "Search parameter. The attribute identifying name."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/listAttributesExtend?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "en": "\/listAttributesExtend[\/attribute id]"
+            },
+            "description": {
+                "en": "It is used for both creation and modification. Properties marked as arrays ([]) submitted with the POST method are always appended; there is a potential issue that they might already exist."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributesExtend",
+                "statusCode": "200 or 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "en": "\/listAttributesExtend\/attribute id"
+            },
+            "description": {
+                "en": "It is used for modification only. Properties marked as arrays ([]) submitted with the PUT method are overwritten, so only the submitted items will remain and the non-submitted list items will be deleted."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributesExtend\/bGlzdEF0dHJpYnV0ZUV4dGVuZC1hdHRyaWJ1dGVfaWQ9OQ==",
+                "statusCode": "200 or 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "\/listAttributesExtend\/attribute id"
+            },
+            "description": {
+                "en": "Used for deletion."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/listAttributesExtend\/bGlzdEF0dHJpYnV0ZUV4dGVuZC1hdHRyaWJ1dGVfaWQ9OQ==",
+                "statusCode": "204 or 404"
+            }
+        }
+    }
+}
