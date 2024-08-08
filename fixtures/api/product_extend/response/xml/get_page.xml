@@ -113,6 +113,9 @@
             <freeShipping>
                 <![CDATA[0]]>
             </freeShipping>
+            <durableMediaDevice>
+                <![CDATA[0]]>
+            </durableMediaDevice>
             <productAttributeExtend>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==]]>
@@ -886,6 +889,9 @@
             <freeShipping>
                 <![CDATA[0]]>
             </freeShipping>
+            <durableMediaDevice>
+                <![CDATA[0]]>
+            </durableMediaDevice>
             <productAttributeExtend>
                 <href>
                     <![CDATA[http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==]]>

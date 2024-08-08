@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2024.08.13
+
+The durable media device field has been added to the [Product](../api/product.md) and 
+[ProductExtend](../api/product_extend.md) resource documentation.
+
 #### 2024.07.15
 
 We have fixed the issue where if a script was placed via a Script tag Resource on the "thank_you_page", it did not execute upon order submission.

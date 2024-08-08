@@ -47,6 +47,7 @@
             "dateUpdated": "2013-08-08T12:30:00",
             "imageAlt": "image alt",
             "freeShipping": "0",
+            "durableMediaDevice": "0",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -160,6 +161,7 @@
             "dateUpdated": "2013-08-08T12:30:00",
             "imageAlt": "image alt",
             "freeShipping": "0",
+            "durableMediaDevice": "0",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -273,6 +275,7 @@
             "dateUpdated": "2013-08-08T12:30:00",
             "imageAlt": "image alt",
             "freeShipping": "0",
+            "durableMediaDevice": "0",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -386,6 +389,7 @@
             "dateUpdated": "2013-08-08T12:30:00",
             "imageAlt": "image alt",
             "freeShipping": "0",
+            "durableMediaDevice": "0",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
@@ -499,6 +503,7 @@
             "dateUpdated": "2013-08-08T12:30:00",
             "imageAlt": "image alt",
             "freeShipping": "0",
+            "durableMediaDevice": "0",
             "taxClass": {
                 "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             },
