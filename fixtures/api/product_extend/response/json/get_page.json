@@ -47,6 +47,7 @@
             "dateUpdated": "2017-10-20T09:25:30",
             "imageAlt": "image alt",
             "freeShipping": "0",
+            "durableMediaDevice": "0",
             "productAttributeExtend": [
                 {
                     "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==",
@@ -463,6 +464,7 @@
             "dateUpdated": "2017-10-20T09:25:30",
             "imageAlt": "image alt",
             "freeShipping": "0",
+            "durableMediaDevice": "0",
             "productAttributeExtend": [
                 {
                     "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==",

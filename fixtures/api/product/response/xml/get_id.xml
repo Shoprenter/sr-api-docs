@@ -31,6 +31,7 @@
     <dateUpdated><![CDATA[2013-08-08T12:30:00]]></dateUpdated>
     <imageAlt><![CDATA[image alt]]></imageAlt>
     <freeShipping><![CDATA[0]]></freeShipping>
+    <durableMediaDevice><![CDATA[0]]></durableMediaDevice>
     <taxClass>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
     </taxClass>
