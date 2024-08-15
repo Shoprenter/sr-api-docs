@@ -1,5 +1,12 @@
 # API changelog
 
+#### 2024.08.15
+
+The following changes have been made to the [Webhook Resource](../api/webhook.md):
+
+- The field **order_shippingCountryIsoCode2** is now available for the "Order status change" event.
+- A new field **order_shippingCountryIsoCode3** has been added to both the "Order confirm" and "Order status change" events.
+
 #### 2024.08.13
 
 The durable media device field has been added to the [Product](../api/product.md) and 
