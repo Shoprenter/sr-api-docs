@@ -2,25 +2,26 @@
 
 ## Properties
 
-| Property        | Description                                                                                                      |Obligatory       |Readable            |
-|-----------------|------------------------------------------------------------------------------------------------------------------|:-------------:|:-------------------:|
-| id              | Identity                                                                                                         |               |          x          |
-| name            | Name (e.g.: Full Version, Monthly Gold package, etc.)                                                            |       x       |          x          |
-| status          | Status (see [Statuses](../docs/statuses.md))                                                                     |               |          x          |
-| price           | An object, contains:                                                                                             |               |          x          |
-|                 | **grossAmount**: Gross price                                                                                     |               |                     |
-|                 | **vatAmount**: VAT amount                                                                                        |               |                     |
-|                 | **netPrice**: Net price                                                                                          |               |                     |
-|                 | **roundedGrossAmount**: Rounded Gross price                                                                      |               |                     |
-| netPrice        | Net Price                                                                                                        |       x       |          x          |
-| notificationUrl | An API webhook notification about events in the system is sent to this URL                                       |               |          x          |
-| successUrl      | If the payment is successful, we will direct the store owner here                                                |       x       |          x          |
-| failedUrl       | In case of payment failure, we will direct the store owner here                                                  |       x       |          x          |
-| updatedAt       | Date of modification                                                                                             |               |          x          |
-| createdAt       | Date of creation                                                                                                 |               |          x          |
-| deletedAt       | Date of deletion                                                                                                 |               |          x          |
-| test            | If the value is **true**, the payment is processed in test mode. It does not issue an invoice. (Default: false)* |               |          x          |
-| confirmationUrl | After creation, the customer must be redirected to this URL                                                      |               |          x          |
+| Property        | Description                                                                                                      |Obligatory       | Readable |
+|-----------------|------------------------------------------------------------------------------------------------------------------|:-------------:|:--------:|
+| id              | Identity                                                                                                         |               |    x     |
+| name            | Name (e.g.: Full Version, Monthly Gold package, etc.)                                                            |       x       |    x     |
+| status          | Status (see [Statuses](../docs/statuses.md))                                                                     |               |    x     |
+| price           | An object, contains:                                                                                             |               |    x     |
+|                 | **grossAmount**: Gross price                                                                                     |               |          |
+|                 | **vatAmount**: VAT amount                                                                                        |               |          |
+|                 | **netPrice**: Net price                                                                                          |               |          |
+|                 | **roundedGrossAmount**: Rounded Gross price                                                                      |               |          |
+| netPrice        | Net Price                                                                                                        |       x       |    x     |
+| notificationUrl | An API webhook notification about events in the system is sent to this URL                                       |               |    x     |
+| successUrl      | If the payment is successful, we will direct the store owner here                                                |       x       |    x     |
+| failedUrl       | In case of payment failure, we will direct the store owner here                                                  |       x       |    x     |
+| updatedAt       | Date of modification                                                                                             |               |    x     |
+| createdAt       | Date of creation                                                                                                 |               |    x     |
+| deletedAt       | Date of deletion                                                                                                 |               |    x     |
+| test            | If the value is **true**, the payment is processed in test mode. It does not issue an invoice. (Default: false)* |               |    x     |
+| confirmationUrl | After creation, the customer must be redirected to this URL                                                      |               |    x     |
+| paymentMethod   | Payment Method type ("barion", "bank_transfer")                                                                  |               |    x     |
 
 \* The system sends an invoice summary email to the email title specified in the store's billing information.
 
@@ -37,7 +38,8 @@ Example payload:
     "notificationUrl": "https://notification-webhook-url.com",
     "failedUrl": "https://failedUrl.com",
     "successUrl": "https://successUrl.com",
-    "test": true
+    "test": true,
+    "paymentMethod": "barion"
 }
 ```
 
