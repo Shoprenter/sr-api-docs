@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2024.08.29
+
+We’ve enhanced the Payment API by introducing a new feature: Plan management. You can now create, update, and delete plans directly through the API, giving you greater control and flexibility in managing your payment offerings.
+
 #### 2024.08.15
 
 The following changes have been made to the [Webhook Resource](../api/webhook.md):
