@@ -27,3 +27,132 @@ On the list page, we can refer to each Payment plan with the value in the **Iden
 when we want to create a Recurring fee payment through the API.
 
 [Example for recurring charge payment](../docs/recurring_charge.md)
+
+# API 
+## Properties
+
+| Property           | Description                                           | Obligatory | Readable |
+|--------------------|-------------------------------------------------------|:----------:|:--------:|
+| id                 | Identity                                              |            |    x     |
+| name               | Name (e.g.: Full Version, Monthly Gold package, etc.) |     x      |    x     |
+| netPrice           | Net price of payment plan in HUF                      |     x      |    x     |
+| createdAt          | Date of creation                                      |            |    x     |
+| updatedAt          | Date of modification                                  |            |    x     |
+| billingCycleCount  | Number of payment cycles                              |            |    x     |
+| billingCycleLength | Length of payment cycles	                             |     x      |    x     |
+
+
+## Entry point
+
+`POST` https://<shop_name>.api.myshoprenter.hu/billing/plans
+
+Example payload:
+
+```javascript
+{
+    "name": "Gold package",
+    "netPrice": 1000,
+    "billingCycleLength": 5
+    "billingCycleCount": 2
+}
+```
+
+Response:
+
+```javascript
+{
+    "id": 22,
+    "name": "Gold package",
+    "netPrice": 1000,
+    "createdAt": "2024-08-29 13:22:56",
+    "updatedAt": "2024-08-29 13:22:56",
+    "billingCycleCount": 2,
+    "billingCycleLength": 5
+}
+```
+
+
+`GET` https://<shop_name>.api.myshoprenter.hu/billing/plans
+
+Response:
+
+```javascript
+[
+    {
+        "id": 22,
+        "name": "Gold package",
+        "netPrice": 1000,
+        "createdAt": "2024-08-29 13:22:56",
+        "updatedAt": "2024-08-29 13:22:56",
+        "billingCycleCount": null,
+        "billingCycleLength": 5
+    },
+    {
+        "id": 21,
+        "name": "Silver package",
+        "netPrice": 900,
+        "createdAt": "2024-08-29 13:22:56",
+        "updatedAt": "2024-08-29 13:22:56",
+        "billingCycleCount": 1,
+        "billingCycleLength": 5
+    },
+]
+```
+
+`GET` https://<shop_name>.api.myshoprenter.hu/billing/plans/22
+
+Response:
+
+```javascript
+    {
+        "id": 22,
+        "name": "Gold package",
+        "netPrice": 1000,
+        "createdAt": "2024-08-29 13:22:56",
+        "updatedAt": "2024-08-29 13:22:56",
+        "billingCycleCount": null,
+        "billingCycleLength": 5
+    }
+```
+
+
+`PUT` https://<shop_name>.api.myshoprenter.hu/billing/plans/22
+
+Example payload:
+```javascript
+{
+    "name": "New Gold package",
+    "netPrice": 1000,
+    "billingCycleLength": 6
+    "billingCycleCount": 2
+}
+```
+
+Response:
+
+```javascript
+[
+    {
+        "id": 22,
+        "name": "Gold package",
+        "netPrice": 1000,
+        "createdAt": "2024-08-29 13:22:56",
+        "updatedAt": "2024-08-29 13:35:56",
+        "billingCycleCount": 2,
+        "billingCycleLength": 6
+    },
+]
+```
+
+`DELETE` https://<shop_name>.api.myshoprenter.hu/billing/plans/22
+
+Response status: `204`
+
+```javascript
+
+```
+
+
+
+
+
