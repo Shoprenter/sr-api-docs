@@ -1,6 +1,6 @@
 # API changelog
 
-#### 2024.08.30
+#### 2024.09.02
 
 The following changes have been made to the [Webhook Resource](../api/webhook.md):
 
