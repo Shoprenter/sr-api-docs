@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2024.09.05
+A change has been made to the [Webhook Resource](../api/webhook.md):
+
+- A new field **orderProduct_durableMediaDevice** has been added to the "Order confirm" event.
+
 #### 2024.08.29
 
 We’ve enhanced the Payment API by introducing a new feature: Plan management. You can now create, update, and delete plans directly through the API, giving you greater control and flexibility in managing your payment offerings.
