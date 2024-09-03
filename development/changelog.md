@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2024.09.02
+
+The following changes have been made to the [Webhook Resource](../api/webhook.md):
+
+The fields **order_paymentCountryIsoCode2** and **order_paymentCountryIsoCode3** are now available for both the "Order confirm" and "Order status change" events.
+
 #### 2024.08.29
 
 We’ve enhanced the Payment API by introducing a new feature: Plan management. You can now create, update, and delete plans directly through the API, giving you greater control and flexibility in managing your payment offerings.
