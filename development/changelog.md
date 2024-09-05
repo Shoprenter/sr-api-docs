@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2024.09.05
+A change has been made to the [Webhook Resource](../api/webhook.md):
+
+- A new field **orderProduct_durableMediaDevice** has been added to the "Order confirm" event.
+
 #### 2024.09.02
 
 The following changes have been made to the [Webhook Resource](../api/webhook.md):
