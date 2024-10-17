@@ -1,0 +1,151 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "Order Invoice custom identifier."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "invoiceId",
+            "description": {
+                "en": "Invoice unique identifier. e.g. SR-1234"
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "invoicePath",
+            "description": {
+                "en": "The external URL of invoice"
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "invoiceType",
+            "description": {
+                "en": "The type of the invoice. <br />Possible values: <br /><b>einvoice</b>: E-invoice. <br /><b>normal</b>: Normal invoice. <br /><b>proforma</b>: Proforma invoice. <br /><b>storno</b>: Storno invoice. <br /><b>correction</b>: Correction invoice. <br />Default value: normal"
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "order",
+            "description": {
+                "en": "Order link (Required)."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "en": "Created date."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateUpdated",
+            "description": {
+                "en": "Last updated date."
+            },
+            "required": false,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderInvoices\/orderInvoice id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderInvoices\/c2NyaXB0VGFnLWlkPTc=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderInvoices"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/orderInvoices?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "en": "\/orderInvoices[\/orderInvoice id]"
+            },
+            "description": {
+                "en": "It is used to create and modify."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderInvoices",
+                "statusCode": "200 or 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "en": "\/orderInvoices\/orderInvoice id"
+            },
+            "description": {
+                "en": "It is used for modification only."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderInvoices\/c2NyaXB0VGFnLWlkPTc=",
+                "statusCode": "200 or 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "\/orderInvoices\/orderInvoice id"
+            },
+            "description": {
+                "en": "Used for deletion."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderInvoices\/c2NyaXB0VGFnLWlkPTc=",
+                "statusCode": "204 or 404"
+            }
+        }
+    }
+}

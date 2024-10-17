@@ -1,0 +1,31 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.myshoprenter.hu/orderInvoices/b3JkZXJJbnZvaWNlLWlkPTE=]]>
+    </href>
+    <id>
+        <![CDATA[b3JkZXJJbnZvaWNlLWlkPTE=]]>
+    </id>
+    <innerId>
+        <![CDATA[1]]>
+    </innerId>
+    <invoiceId>
+        <![CDATA[SR-1234]]>
+    </invoiceId>
+    <invoicePath>
+        <![CDATA[https://somedomain.hu/SR-1234.pdf]]>
+    </invoicePath>
+    <invoiceType>
+        <![CDATA[normal]]>
+    </invoiceType>
+    <dateCreated>
+        <![CDATA[2024-08-13 09:31:59]]>
+    </dateCreated>
+    <dateModified>
+        <![CDATA[2024-08-13 09:31:59]]>
+    </dateModified>
+    <order>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTI3]]>
+        </href>
+    </order>
+</response>

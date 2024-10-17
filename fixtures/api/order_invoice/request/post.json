@@ -1,0 +1,8 @@
+{
+    "invoiceId": "SR-1234",
+    "invoicePath": "https:\/\/somedomain.hu\/sSR-1234.pdf",
+    "invoiceType": "normal",
+    "order": {
+        "id": "c2NyaXB0VGFnLWlkPTc="
+    }
+}
