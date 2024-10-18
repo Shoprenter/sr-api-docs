@@ -1,5 +1,23 @@
 # API changelog
 
+#### 2024.10.07
+
+We have introduced the following updates to our API:
+
+[Order Products Resource:](../api/order_product.md)
+
+Two new properties have been added:
+
+- grossPrice: The gross price of the product at the time of purchase
+
+- originalGrossPrice: The original gross price of the product.
+
+[Webhook Resource:](../api/webhook.md)
+
+A new property has been added to the webhook:
+
+- orderProduct_grossPrice: The gross price of the ordered products.
+
 #### 2024.09.05
 A change has been made to the [Webhook Resource](../api/webhook.md):
 
