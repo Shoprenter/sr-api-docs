@@ -8,6 +8,8 @@
     "modelNumber": {},
     "originalPrice": "2400.0000",
     "price": "2400.0000",
+    "grossPrice": "3048",
+    "originalGrossPrice": "3048",
     "total": "2400.0000",
     "taxRate": "25.0000",
     "stock1": "0",

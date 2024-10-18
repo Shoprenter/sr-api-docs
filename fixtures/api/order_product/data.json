@@ -199,6 +199,22 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "grossPrice",
+            "description": {
+                "en": "The gross price of the product at the time of purchase."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "originalGrossPrice",
+            "description": {
+                "en": "The original gross price of the product."
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {

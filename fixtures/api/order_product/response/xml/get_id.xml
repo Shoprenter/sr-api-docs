@@ -8,6 +8,8 @@
     <modelNumber/>
     <originalPrice><![CDATA[2400.0000]]></originalPrice>
     <price><![CDATA[2400.0000]]></price>
+    <grossPrice><![CDATA[2400.0000]]></grossPrice>
+    <originalGrossPrice><![CDATA[2400.0000]]></originalGrossPrice>
     <total><![CDATA[2400.0000]]></total>
     <taxRate><![CDATA[25.0000]]></taxRate>
     <stock1><![CDATA[0]]></stock1>
