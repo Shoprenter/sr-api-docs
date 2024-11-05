@@ -7,7 +7,7 @@ The Theme editor is a new feature in the ShopRenter system that allows customers
 ## General Information:
 The Theme editor is accessible on the **Choose Theme** page under the **Actions** button for selected templates. It can also be accessed from **Settings** > **Appearance** > **Theme editor** in the top menu.
 
-The Theme editor is structured with template files associated with the theme on the left side. This includes stylesheets and configuration files. HTML codes are available in template files with a .tpl extension, utilizing the [TWIG](https://twig.sensiolabs.org) template engine by ShopRenter.
+The Theme editor is structured with template files associated with the theme on the left side. This includes stylesheets and configuration files. HTML codes are available in template files with a .tpl extension, utilizing the [TWIG](https://twig.symfony.com) template engine by ShopRenter.
 
 ## Creating Custom Designs, Theme Duplication Feature:
 To create a new custom design, click on the **duplicate theme** button within **Actions**. In the popup window, provide a name for the theme and click on the duplicate theme button. This will create a new theme with the specified name, accessible again with the Theme editor button.
