@@ -121,7 +121,6 @@ Fonts are loaded through the snippets/fonts.tpl file using @font-face rules, whi
 ---
 
 ## Snippets
-In our theme system, "snippets" are reusable code blocks that streamline design and functionality across the site. Most snippets include SVG elements, but they can also contain dynamic reusable code.
 
 In our theme system, "snippets" are reusable code blocks that help streamline design and functionality across the site. Most snippets include SVG elements, but they can also contain dynamic reusable code.
 
