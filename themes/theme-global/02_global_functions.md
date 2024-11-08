@@ -1,6 +1,6 @@
 # Functions
 
-The ShopRenter uses the [TWIG](https://twig.sensiolabs.org) template engine for theme files. Therefore, every tpl file is based on TWIG syntax. In addition to the basic functions and filters shown in the TWIG documentation, ShopRenter provides custom functions and filters to facilitate frontend development.
+The ShopRenter uses the [TWIG](https://twig.symfony.com) template engine for theme files. Therefore, every tpl file is based on TWIG syntax. In addition to the basic functions and filters shown in the TWIG documentation, ShopRenter provides custom functions and filters to facilitate frontend development.
 
 ## add_body_class()
 
