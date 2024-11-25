@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2024.12.03
+
+A change has been made to the [Coupon Resource](../api/coupon.md):
+
+- A new field **maxOrderLimit** has been added.
+
 #### 2024.10.07
 
 We have introduced the following updates to our API:

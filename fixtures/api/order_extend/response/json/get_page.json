@@ -141,6 +141,7 @@
                 "dateUpdated": "0000-00-00 00:00:00",
                 "email": "",
                 "minOrderLimit": "0.00",
+                "maxOrderLimit": "0.00",
                 "targetType": "PRODUCT",
                 "validToSpecialProducts": "1",
                 "taxClass": {

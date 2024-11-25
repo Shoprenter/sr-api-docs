@@ -340,6 +340,9 @@
         <minOrderLimit>
             <![CDATA[0.00]]>
         </minOrderLimit>
+        <maxOrderLimit>
+            <![CDATA[0.00]]>
+        </maxOrderLimit>
         <targetType>
             <![CDATA[PRODUCT]]>
         </targetType>
