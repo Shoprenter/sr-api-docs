@@ -131,7 +131,7 @@
         {
             "name": "maxOrderLimit",
             "description": {
-                "en": "\nMaximum order value from which the coupon can be validated."
+                "en": "\nMaximum order value up to which the coupon can be validated."
             },
             "required": false,
             "readonly": false
