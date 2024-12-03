@@ -65,4 +65,14 @@
             </href>
         </language>
     </cmsContentDescriptions>
+    <cmsContentTags>
+        <tag>
+            <![CDATA[Tag name]]>
+        </tag>
+        <language>
+            <href>
+                <![CDATA[https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+            </href>
+        </language>
+    </cmsContentTags>
 </response>

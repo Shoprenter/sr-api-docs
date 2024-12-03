@@ -40,6 +40,14 @@
                         "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                     }
                 }
+            ],
+            "cmsContentTags": [
+                {
+                    "tag": "Tag name",
+                    "language": {
+                        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                    }
+                }
             ]
         },
         {
@@ -66,6 +74,14 @@
                     "cmsContent": {
                         "href": "https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xOQ=="
                     },
+                    "language": {
+                        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                    }
+                }
+            ],
+            "cmsContentTags": [
+                {
+                    "tag": "Tag name",
                     "language": {
                         "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                     }
