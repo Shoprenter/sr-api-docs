@@ -129,6 +129,14 @@
             "readonly": false
         },
         {
+            "name": "maxOrderLimit",
+            "description": {
+                "en": "\nMaximum order value up to which the coupon can be validated."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "targetType",
             "description": {
                 "en": "The coupon applies to a product (PRODUCT) or a category (CATEGORY). Possible values: PRODUCT, CATEGORY."
