@@ -26,5 +26,13 @@
                 "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         }
+    ],
+    "cmsContentTags": [
+        {
+            "tag": "Tag name",
+            "language": {
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+            }
+        }
     ]
 }

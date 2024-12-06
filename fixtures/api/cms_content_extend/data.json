@@ -103,6 +103,14 @@
             },
             "required": true,
             "readonly": false
+        },
+        {
+            "name": "cmsContentTags",
+            "description": {
+                "en": "Given as an array, text content label data in several languages."
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {
