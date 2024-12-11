@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2024.12.11
+
+A change has been made to the [Webhook Resource](../api/webhook.md):
+
+- Two new fields have been added: **order_loyaltyPoints** and **order_loyaltyPointsUsed**.
+
 #### 2024.12.03
 
 A change has been made to the [Coupon Resource](../api/coupon.md):
