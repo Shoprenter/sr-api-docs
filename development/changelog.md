@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2024.12.12
+A change has been made to the [CMS Content Extend Resource](../api/cms_content_extend.html):
+- A new field have been added: **cmsContentTags**
+
 #### 2024.12.11
 
 A change has been made to the [Webhook Resource](../api/webhook.md):
