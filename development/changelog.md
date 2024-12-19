@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2025.01.08
+The following setting has been added to the [Settings Resource](../api/setting.md):
+- **feature_switch_libvips** - Automatic serving of WebP images.
+
 #### 2024.12.12
 A change has been made to the [CMS Content Extend Resource](../api/cms_content_extend.html):
 - A new field have been added: **cmsContentTags**
