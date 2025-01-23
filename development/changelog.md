@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2025.01.22
+Updated Status Codes for DELETE Requests on [Extend Resources](api/06_extend_resource.md):
+- The API now returns a **204** status code upon a successful DELETE request for Extend Resources.
+- If the target resource does not exist, the API will respond with a **404** status code.
+- In cases of other errors, the API will continue to return the appropriate status codes.
+
 #### 2025.01.08
 The following setting has been added to the [Settings Resource](../api/setting.md):
 - **feature_switch_libvips** - Automatic serving of WebP images.

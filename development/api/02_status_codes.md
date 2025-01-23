@@ -13,6 +13,16 @@
 <td>OK</td>
 <td>The request was successfully processed by ShopRenter</td>
 </tr>
+<tr>
+<td>201</td>
+<td>Created</td>
+<td>The request has been successfully processed by ShopRenter, and a resource has been created.</td>
+</tr>
+<tr>
+<td>204</td>
+<td>No Content</td>
+<td>The request has been successfully processed by ShopRenter, and there is no content to return.</td>
+</tr>
 </table>
 
 ### 4xx Client error
