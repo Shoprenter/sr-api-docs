@@ -137,6 +137,38 @@
             "readonly": false
         },
         {
+            "name": "validToSpecialProducts",
+            "description": {
+                "en": "\nUseable with other discounts."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "validWithGiftProducts",
+            "description": {
+                "en": "\nValid with gift products."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "validWithBulkDiscount",
+            "description": {
+                "en": "\nValid with bulk discount."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "validWithLoyaltyPoints",
+            "description": {
+                "en": "\nValid with loyalty points."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "targetType",
             "description": {
                 "en": "The coupon applies to a product (PRODUCT) or a category (CATEGORY). Possible values: PRODUCT, CATEGORY."
