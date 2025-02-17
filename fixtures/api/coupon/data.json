@@ -139,7 +139,7 @@
         {
             "name": "validToSpecialProducts",
             "description": {
-                "en": "\nUseable with other discounts."
+                "en": "\nCan be combined with other discounts."
             },
             "required": false,
             "readonly": false
@@ -147,7 +147,7 @@
         {
             "name": "validWithGiftProducts",
             "description": {
-                "en": "\nValid with gift products."
+                "en": "\nCan be used on gift promotion items."
             },
             "required": false,
             "readonly": false
@@ -155,7 +155,7 @@
         {
             "name": "validWithBulkDiscount",
             "description": {
-                "en": "\nValid with bulk discount."
+                "en": "\nWorks with bulk purchase discounts."
             },
             "required": false,
             "readonly": false
@@ -163,7 +163,7 @@
         {
             "name": "validWithLoyaltyPoints",
             "description": {
-                "en": "\nValid with loyalty points."
+                "en": "\nCan be used alongside loyalty points."
             },
             "required": false,
             "readonly": false
