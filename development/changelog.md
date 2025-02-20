@@ -1,5 +1,15 @@
 # API changelog
 
+#### 2025.02.26
+A change has been made to the following resources:
+
+- [Product Description Resource](../api/product_description.md)
+- [Product Extend Resource](../api/product_extend.md)
+- [Product Resource](../api/product.md)
+
+Requests containing an invalid languageId or taxClassId will now be rejected with a 400 Bad Request response.
+
+
 #### 2025.01.22
 Updated Status Codes for DELETE Requests on [Extend Resources](api/06_extend_resource.md):
 - The API now returns a **204** status code upon a successful DELETE request for Extend Resources.
