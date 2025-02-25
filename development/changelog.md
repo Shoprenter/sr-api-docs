@@ -1,6 +1,6 @@
 # API changelog
 
-#### 2025.02.18
+#### 2025.02.25
 
 A change has been made to the [Coupon Resource](../api/coupon.md):
 
