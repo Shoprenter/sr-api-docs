@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2025.02.25
+
+A change has been made to the [Coupon Resource](../api/coupon.md):
+
+- Four new fields have been added: **validToSpecialProducts**, **validWithGiftProducts**, **validWithBulkDiscount** and **validWithLoyaltyPoints**.
+
 #### 2025.02.26
 A change has been made to the following resources:
 
