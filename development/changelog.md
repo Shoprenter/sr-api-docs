@@ -1,12 +1,6 @@
 # API changelog
 
-#### 2025.02.25
-
-A change has been made to the [Coupon Resource](../api/coupon.md):
-
-- Four new fields have been added: **validToSpecialProducts**, **validWithGiftProducts**, **validWithBulkDiscount** and **validWithLoyaltyPoints**.
-
-#### 2025.02.26
+#### 2025.03.05
 A change has been made to the following resources:
 
 - [Product Description Resource](../api/product_description.md)
@@ -15,6 +9,11 @@ A change has been made to the following resources:
 
 Requests containing an invalid languageId or taxClassId will now be rejected with a 400 Bad Request response.
 
+#### 2025.02.25
+
+A change has been made to the [Coupon Resource](../api/coupon.md):
+
+- Four new fields have been added: **validToSpecialProducts**, **validWithGiftProducts**, **validWithBulkDiscount** and **validWithLoyaltyPoints**.
 
 #### 2025.01.22
 Updated Status Codes for DELETE Requests on [Extend Resources](api/06_extend_resource.md):
