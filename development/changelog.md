@@ -1,5 +1,14 @@
 # API changelog
 
+#### 2025.03.05
+A change has been made to the following resources:
+
+- [Product Description Resource](../api/product_description.md)
+- [Product Extend Resource](../api/product_extend.md)
+- [Product Resource](../api/product.md)
+
+Requests containing an invalid languageId or taxClassId will now be rejected with a 400 Bad Request response.
+
 #### 2025.02.25
 
 A change has been made to the [Coupon Resource](../api/coupon.md):
