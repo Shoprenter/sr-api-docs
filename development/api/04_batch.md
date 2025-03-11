@@ -72,7 +72,7 @@ The API request should follow the below structure:
         "method": "GET",
         "uri": "http://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0",
         "response": {
-          "header": { "statusCode": "200" },
+          "header": { "statusCode": 200 },
           "body": {}
         }
       },
@@ -80,7 +80,7 @@ The API request should follow the below structure:
         "method": "POST",
         "uri": "http://shopname.api.myshoprenter.hu/products/[ID]",
         "response": {
-          "header": { "statusCode": "200" },
+          "header": { "statusCode": 200 },
           "body": {}
         }
       }
