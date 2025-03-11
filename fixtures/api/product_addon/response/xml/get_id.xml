@@ -12,4 +12,7 @@
     <quantityModifiable><![CDATA[0]]></quantityModifiable>
     <dateCreated><![CDATA[2024-05-13T12:30:00]]></dateCreated>
     <dateModified><![CDATA[2024-05-13T12:30:00]]></dateModified>
+    <taxClass>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
+    </taxClass>
 </response>
