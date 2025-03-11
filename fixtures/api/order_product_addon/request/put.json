@@ -8,5 +8,8 @@
     "price": "50.0000",
     "quantity": "3",
     "total": "150.0000",
-    "taxRate": "0.0000"
+    "taxRate": "5.0000",
+    "taxClass": {
+        "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+    }
 }

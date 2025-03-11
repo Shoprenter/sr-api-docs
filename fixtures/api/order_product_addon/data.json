@@ -111,6 +111,14 @@
             },
             "required": false,
             "readonly": true
+        },
+        {
+            "name": "taxClass",
+            "description": {
+                "en": "Tax class link."
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {
