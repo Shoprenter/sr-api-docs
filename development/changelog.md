@@ -1,12 +1,12 @@
 # API changelog
 
 #### 2025.03.19
-taxClass field added:
+A change has been made to the following resources:
 
 - [Product Addon Resource](../api/product_addon.md)
 - [Order Product Addon Resource](../api/order_product_addon.md)
 
-Requests containing an invalid languageId or taxClassId will now be rejected with a 400 Bad Request response.
+taxClass field added
 
 #### 2025.03.05
 A change has been made to the following resources:
