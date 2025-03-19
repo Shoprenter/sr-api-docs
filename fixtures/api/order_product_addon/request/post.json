@@ -9,5 +9,5 @@
     "quantity": "3",
     "total": "150.0000",
     "taxRate": "0.0000",
-    "taxClass": 0
+    "taxClass": null
 }
