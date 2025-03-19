@@ -20,5 +20,8 @@
     <productAddon>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdC1wcm9kdWN0X2lkPTUx]]></href>
     </productAddon>
+    <taxClass>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
+    </taxClass>
 </response>
 
