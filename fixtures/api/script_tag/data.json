@@ -19,7 +19,7 @@
         {
             "name": "src",
             "description": {
-                "en": "The external script URL"
+                "en": "The external script URL (Use only trusted, well-tested code, malicious or broken scripts can harm site performance or security)"
             },
             "required": true,
             "readonly": false
