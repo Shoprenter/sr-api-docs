@@ -389,7 +389,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "text",
@@ -450,7 +450,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "textarea",
@@ -510,7 +510,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "htmleditor",
@@ -571,7 +571,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "image",
@@ -642,7 +642,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "select",
@@ -717,7 +717,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "checkbox",
@@ -777,7 +777,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "number",
@@ -833,7 +833,7 @@ Input
 </tr>
 </table>
 
-Példa:
+Example:
 ```
 {
     "type": "position",
@@ -864,7 +864,7 @@ Input
 |required|boolean||
 
 
-Példa:
+Example:
 ```json
 {
   "type": "datetime",
@@ -884,6 +884,71 @@ Példa:
 **Warning!**  
 In Twig template, `{{ ""|date('Y-m-d H:i:s') }}` will return the current date and time.  
 Therefore, if the field is not required and we save an empty value, this needs to be handled separately!
+
+### Colorpicker
+Using the color picker type, you can select a color from a palette. This is useful for customizing visual elements, such as changing background colors or text highlights.
+
+Input
+
+<table>
+<tr>
+  <th>field</th>
+  <th>value</th>
+  <th>required</th>
+</tr>
+<tr>
+  <td>type</td>
+  <td>"colorpicker"</td>
+  <td>required</td>
+</tr>
+<tr>
+  <td>name</td>
+  <td>Text (abcABC_)</td>
+  <td>required</td>
+</tr>
+<tr>
+  <td>label</td>
+  <td>Text | Object</td>
+  <td>required</td>
+</tr>
+<tr>
+  <td>default</td>
+  <td>Text | Object</td>
+  <td></td>
+</tr>
+<tr>
+  <td>help</td>
+  <td>Text | Object</td>
+  <td></td>
+</tr>
+<tr>
+  <td>multilang</td>
+  <td>Boolean</td>
+  <td></td>
+</tr>
+<tr>
+  <td>required</td>
+  <td>Boolean</td>
+  <td></td>
+</tr>
+</table>
+
+Example:
+```json
+{
+  "type": "colorpicker",
+  "name": "color",
+  "label": {
+    "hu": "Szöveg cím",
+    "en": "Text color"
+  },
+  "default": "#000000",
+  "help": {
+    "hu": "Segítség szöveg magyarul",
+    "en": "Help text in English"
+  }
+}
+```
 
 ## Using Multilingual Fields
 In case of multilingual fields, the **multilang** property should be set to true.  
