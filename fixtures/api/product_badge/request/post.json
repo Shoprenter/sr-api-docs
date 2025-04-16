@@ -1,5 +1,6 @@
 {
-    "name": "Action",
-    "picture": "p_1.png",
-    "description": "Sale!"
+    "name": "Sale",
+    "custom": 0,
+    "active": 1,
+    "sortOrder": 1
 }

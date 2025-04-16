@@ -47,6 +47,22 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "badgeType",
+            "description": {
+                "en": "Defines how the badge is applied. Possible values: \"manual\", \"auto\""
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "validatorService",
+            "description": {
+                "en": "Rule for applying badge. Possible values: <ul><li>latest_badge (auto type)</li><li>sale_badge (auto type)</li><li>top_badge (auto type)</li><li>free_shipping_badge (auto type)</li><li>low_stock_badge (auto type)</li><li>present_badge (auto type)</li><li>manual_badge (manual type)</li></ul>"
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {

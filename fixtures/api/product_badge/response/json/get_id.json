@@ -2,10 +2,10 @@
     "href": "http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=",
     "id": "cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=",
     "innerId": "7",
-    "name": "Action",
-    "picture": "p_1.png",
-    "description": "Sale!",
+    "name": "Sale!",
     "custom": "0",
     "active": "1",
-    "sortOrder": "1"
+    "sortOrder": "1",
+    "badgeType": "auto",
+    "validatorService": "sale_badge"
 }

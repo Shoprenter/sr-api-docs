@@ -2,10 +2,10 @@
     <href><![CDATA[http://shopname.api.myshoprenter.hu/productBadges/cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=]]></href>
     <id><![CDATA[cHJvZHVjdEJhZGdlLWJhZGdlX2lkPTc=]]></id>
     <innerId><![CDATA[7]]></innerId>
-    <name><![CDATA[Action]]></name>
-    <picture><![CDATA[p_1.png]]></picture>
-    <description><![CDATA[Sale!]]></description>
+    <name><![CDATA[Sale]]></name>
     <custom><![CDATA[0]]></custom>
     <active><![CDATA[1]]></active>
     <sortOrder><![CDATA[1]]></sortOrder>
+    <badgeType><![CDATA[auto]]></badgeType>
+    <validatorService><![CDATA[sale_badge]]></validatorService>
 </response>
