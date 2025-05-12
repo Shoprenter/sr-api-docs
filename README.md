@@ -15,5 +15,7 @@ features:
   link: /development/changelog.html
 - title: '<i class="far fa-file-code"></i> Themes'
   link: /themes/themes/01_starter2.html
+- title: '<i class="far fa-file-code"></i> SR Style Guide'
+  link: https://styleguide.shoprenter.hu/
 footer: © 2011 - 2024 Shoprenter Kft.
 ---
