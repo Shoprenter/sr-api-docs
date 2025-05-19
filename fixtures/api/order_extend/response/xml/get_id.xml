@@ -340,12 +340,24 @@
         <minOrderLimit>
             <![CDATA[0.00]]>
         </minOrderLimit>
+        <maxOrderLimit>
+            <![CDATA[0.00]]>
+        </maxOrderLimit>
         <targetType>
             <![CDATA[PRODUCT]]>
         </targetType>
         <validToSpecialProducts>
             <![CDATA[1]]>
         </validToSpecialProducts>
+        <validWithGiftProducts>
+            <![CDATA[1]]>
+        </validWithGiftProducts>
+        <validWithBulkDiscount>
+            <![CDATA[1]]>
+        </validWithBulkDiscount>
+        <validWithLoyaltyPoints>
+            <![CDATA[1]]>
+        </validWithLoyaltyPoints>
         <taxClass>
             <href>
                 <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx]]>
@@ -658,6 +670,32 @@
         </orderProductOptions>
     </orderProducts>
     <orderGiftWrappings/>
+    <orderProductAddons>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></href>
+        <id><![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></id>
+        <innerId><![CDATA[3]]></innerId>
+        <name><![CDATA[Product addon name]]></name>
+        <sku><![CDATA[BETETDIJ01]]></sku>
+        <productInnerId><![CDATA[51]]></productInnerId>
+        <orderInnerId><![CDATA[122]]></orderInnerId>
+        <productAddonInnerId><![CDATA[5]]></productAddonInnerId>
+        <type><![CDATA[DEPOSIT_FEE]]></type>
+        <price><![CDATA[50.0000]]></price>
+        <quantity><![CDATA[3.0000]]></quantity>
+        <total><![CDATA[150.0000]]></total>
+        <taxRate><![CDATA[0.0000]]></taxRate>
+        <dateCreated><![CDATA[2013-01-01T01:00:00]]></dateCreated>
+        <dateUpdated><![CDATA[2013-01-01T01:00:00]]></dateUpdated>
+        <order>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
+        </order>
+        <product>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx]]></href>
+        </product>
+        <productAddon>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdC1wcm9kdWN0X2lkPTUx]]></href>
+        </productAddon>
+    </orderProductAddons>
     <orderAddressIdentifications/>
     <externalInfo>
         <partner_order_id>

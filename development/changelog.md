@@ -1,10 +1,159 @@
 # API changelog
 
+#### 2025.03.19
+A change has been made to the following resources:
+
+- [Product Addon Resource](../api/product_addon.md)
+- [Order Product Addon Resource](../api/order_product_addon.md)
+
+taxClass field added
+
+#### 2025.03.05
+A change has been made to the following resources:
+
+- [Product Description Resource](../api/product_description.md)
+- [Product Extend Resource](../api/product_extend.md)
+- [Product Resource](../api/product.md)
+
+Requests containing an invalid languageId or taxClassId will now be rejected with a 400 Bad Request response.
+
+#### 2025.02.25
+
+A change has been made to the [Coupon Resource](../api/coupon.md):
+
+- Four new fields have been added: **validToSpecialProducts**, **validWithGiftProducts**, **validWithBulkDiscount** and **validWithLoyaltyPoints**.
+
+#### 2025.01.22
+Updated Status Codes for DELETE Requests on [Extend Resources](api/06_extend_resource.md):
+- The API now returns a **204** status code upon a successful DELETE request for Extend Resources.
+- If the target resource does not exist, the API will respond with a **404** status code.
+- In cases of other errors, the API will continue to return the appropriate status codes.
+
+#### 2025.01.08
+The following setting has been added to the [Settings Resource](../api/setting.md):
+- **feature_switch_libvips** - Automatic serving of WebP images.
+
+#### 2024.12.12
+A change has been made to the [CMS Content Extend Resource](../api/cms_content_extend.html):
+- A new field have been added: **cmsContentTags**
+
+#### 2024.12.11
+
+A change has been made to the [Webhook Resource](../api/webhook.md):
+
+- Two new fields have been added: **order_loyaltyPoints** and **order_loyaltyPointsUsed**.
+
+#### 2024.12.03
+
+A change has been made to the [Coupon Resource](../api/coupon.md):
+
+- A new field **maxOrderLimit** has been added.
+
+#### 2024.10.07
+
+We have introduced the following updates to our API:
+
+[Order Products Resource:](../api/order_product.md)
+
+Two new properties have been added:
+
+- grossPrice: The gross price of the product at the time of purchase
+
+- originalGrossPrice: The original gross price of the product.
+
+[Webhook Resource:](../api/webhook.md)
+
+A new property has been added to the webhook:
+
+- orderProduct_grossPrice: The gross price of the ordered products.
+
+#### 2024.09.05
+A change has been made to the [Webhook Resource](../api/webhook.md):
+
+- A new field **orderProduct_durableMediaDevice** has been added to the "Order confirm" event.
+
+#### 2024.09.02
+
+The following changes have been made to the [Webhook Resource](../api/webhook.md):
+
+The fields **order_paymentCountryIsoCode2** and **order_paymentCountryIsoCode3** are now available for both the "Order confirm" and "Order status change" events.
+
+#### 2024.08.29
+
+We’ve enhanced the Payment API by introducing a new feature: Plan management. You can now create, update, and delete plans directly through the API, giving you greater control and flexibility in managing your payment offerings.
+
+#### 2024.08.15
+
+The following changes have been made to the [Webhook Resource](../api/webhook.md):
+
+- The field **order_shippingCountryIsoCode2** is now available for the "Order status change" event.
+- A new field **order_shippingCountryIsoCode3** has been added to both the "Order confirm" and "Order status change" events.
+
+#### 2024.08.15
+
+We created new API Resource for [OrderInvoice](../api/order_invoice.md).
+
+#### 2024.08.13
+
+The durable media device field has been added to the [Product](../api/product.md) and 
+[ProductExtend](../api/product_extend.md) resource documentation.
+
+#### 2024.07.15
+
+We have fixed the issue where if a script was placed via a Script tag Resource on the "thank_you_page", it did not execute upon order submission.
+
+#### 2024.07.03
+
+The announced bug fixes on the [ProductClass](../api/product_class.md) and [ProductClassAttributeRelation](../api/product_class_attribute_relation.md) resources have been implemented, which may cause backward incompatible behavior. More detailed information can be found at the [following link.](https://changelog.shoprenter.hu/hu/termektipus-valtozasok-az-api_ban-juniustol-Vzq3OfnF)
+
+#### 2024.06.20
+The Deposit Fee system has become available in Hungary, for which we created new API Resources and expanded old ones.
+
+**New API Resources:**<br>
+
+**1. Creating a Deposit:** `Product Addon Resource`<br>
+- **Function:**  This API Resource allows the creation of deposits in the system.
+- **Data:** All necessary data for each deposit is defined here, such as amount, type, VAT.<br>
+
+**2. Linking Deposit with Product:** `Product Addon Product Relation Resource`<br>
+
+- **Function**`: This API Resource is responsible for linking deposits and products.
+
+- **Opportunity:** It allows adding the appropriate deposit to a given product.<br>
+
+**3. Ordered Deposits:** `Order Product Addon Resource`<br>
+
+- **Function:** This API Resource is used for managing the deposits ordered during the ordering process.<br>
+
+- **Information:** It provides information about the ordered deposits and ensures their tracking in the order process.<br>
+
+Extending existing API Resources with Product Addon information:
+
+- [Order Resource](../api/order.md)
+
+- [Order Extend Resource](../api/order_extend.md)
+
+- [Product Resource](../api/product.md)
+
+- [Product Extend Resource](../api/product_extend.md)
+
+- [Webhook](../api/webhook.md)
+
 #### 2024.04.12
 The Shipping Additional Cost fields have been added to Webhook Resource. [Webhook Resource](../api/webhook.md)
 
 #### 2024.04.11
 Limited discount fields were added to Product Special Resource. [Product Special Resource](../api/product_special.md)
+
+#### 2024.03.16
+We have fixed the encoding of special characters used in the shipping and billing addresses associated with orders in API requests.
+
+The following setting has been added to the [Settings Resource](../api/setting.md):
+
+- **config_mobile_simple_snapshot** - Simplified mobile product card
+- **config_number_of_columns_in_category_page** - Number of products per row on category page in desktop view
+- **config_number_of_columns_in_category_page_in_mobile** - Number of products per row on category page in mobile view
+- **config_search_dropdown** - Enable dropdown search module
 
 #### 2024.03.11
 All Shipping Mode has become queryable from the Shipping Mode Extend Resource. [Shipping Mode Extend Resource](../api/shipping_mode_extend.md) But the 'extension' field is still read-only!

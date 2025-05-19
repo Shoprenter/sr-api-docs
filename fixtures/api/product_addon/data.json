@@ -1,0 +1,199 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "Product addon identifier. It is used to change the OuterID."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "sku",
+            "description": {
+                "en": "SKU"
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "en": "Name of the product addon."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "type",
+            "description": {
+                "en": "Type. Possible values: <br>\n<strong>DEPOSIT_FEE</strong><br>\n<strong>OTHER</strong>"
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "price",
+            "description": {
+                "en": "Net price"
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "TaxRate",
+            "description": {
+                "en": "Tax rate E.g.: 27. Default is NULL."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "required",
+            "description": {
+                "en": "Possible values: 0 or 1. Default 1<br/> 1 if required to add the product addon into cart when the connected product is added to cart."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "autoScaling",
+            "description": {
+                "en": "Possible values: 0 or 1. Default 1<br/>1 if needed to scale the product addon's quantity along with the connected product's quantity"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "separatedItem",
+            "description": {
+                "en": "Possible values: 0 or 1. Default 1<br/> If 1, it will appear in the cart as separated item (from the connected product) with its own price. If 0, the connected product price will include the addon's price and the addon won't be separate item"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "quantityModifiable",
+            "description": {
+                "en": "Possible values: 0 or 1. Default 0<br/> If 1, the quantity of the product addon can be modified in the cart"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "en": "Created date"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateModified",
+            "description": {
+                "en": "Last updated date"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "taxClass",
+            "description": {
+                "en": "Tax class link."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/productAddons\/product addon id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddons\/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/productAddons"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/productAddons?page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "en": "\/productAddons[\/product addon id]"
+            },
+            "description": {
+                "en": "It is used to create and modify."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddons",
+                "statusCode": "200 or 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "en": "\/productAddons\/product addon id"
+            },
+            "description": {
+                "en": "It is used to create and modify."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddons\/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+                "statusCode": "200 or 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "\/productAddons\/product addon id"
+            },
+            "description": {
+                "en": "Used for deletion."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddons\/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+                "statusCode": "204 or 404"
+            }
+        }
+    }
+}

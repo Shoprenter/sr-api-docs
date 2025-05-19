@@ -31,6 +31,7 @@
     "dateUpdated": "2017-10-20T09:25:30",
     "imageAlt": "image alt",
     "freeShipping": "0",
+    "durableMediaDevice": "0",
     "productAttributeExtend": [
         {
             "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==",
@@ -423,5 +424,20 @@
         "urlAliasEntity": {
             "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
         }
-    }
+    },
+    "productAddons": {
+        "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=/productAddons"
+    },
+    "productAddonProductRelations": [
+        {
+            "href": "http://shopname.api.myshoprenter.hu/productAddonProductRelations/cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD0xNzA3JmNvbGxhdGVyYWxfaWQ9MTE4",
+            "id": "cHJvZHVjdENvbGxhdGVyYWxQcm9kdWN0UmVsYXRpb24tcHJvZHVjdF9pZD0xNzA3JmNvbGxhdGVyYWxfaWQ9MTE4",
+            "product": {
+                "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+            },
+            "productAddon": {
+                "href": "http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdC1wcm9kdWN0X2lkPTExOA=="
+            }
+        }
+    ]
 }

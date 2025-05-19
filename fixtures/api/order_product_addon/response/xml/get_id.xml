@@ -1,0 +1,27 @@
+<response>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></href>
+    <id><![CDATA[b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></id>
+    <innerId><![CDATA[3]]></innerId>
+    <name><![CDATA[Product addon name]]></name>
+    <sku><![CDATA[BETETDIJ01]]></sku>
+    <type><![CDATA[DEPOSIT_FEE]]></type>
+    <price><![CDATA[50.0000]]></price>
+    <quantity><![CDATA[3.0000]]></quantity>
+    <total><![CDATA[150.0000]]></total>
+    <taxRate><![CDATA[0.0000]]></taxRate>
+    <dateCreated><![CDATA[2013-01-01T01:00:00]]></dateCreated>
+    <dateModified><![CDATA[2013-01-01T01:00:00]]></dateModified>
+    <order>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
+    </order>
+    <product>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx]]></href>
+    </product>
+    <productAddon>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdC1wcm9kdWN0X2lkPTUx]]></href>
+    </productAddon>
+    <taxClass>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
+    </taxClass>
+</response>
+

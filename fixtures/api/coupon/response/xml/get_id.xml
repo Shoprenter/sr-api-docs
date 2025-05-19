@@ -16,6 +16,11 @@
     <dateUpdated><![CDATA[0000-00-00 00:00:00]]></dateUpdated>
     <email/>
     <minOrderLimit><![CDATA[0.00]]></minOrderLimit>
+    <maxOrderLimit><![CDATA[0.00]]></maxOrderLimit>
+    <validToSpecialProducts><![CDATA[1]]></validToSpecialProducts>
+    <validWithGiftProducts><![CDATA[1]]></validWithGiftProducts>
+    <validWithBulkDiscount><![CDATA[1]]></validWithBulkDiscount>
+    <validWithLoyaltyPoints><![CDATA[1]]></validWithLoyaltyPoints>
     <targetType><![CDATA[CATEGORY]]></targetType>
     <taxClass>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>

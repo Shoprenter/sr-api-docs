@@ -1,0 +1,32 @@
+<response>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons?page=0&limit=5]]></href>
+    <page>0</page>
+    <limit>5</limit>
+    <first>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons?page=0&limit=5]]></href>
+    </first>
+    <previous/>
+    <next>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons?page=1&limit=5]]></href>
+    </next>
+    <last>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons?page=51&limit=5]]></href>
+    </last>
+    <items>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9NA==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9NQ==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Ng==]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderProductAddons/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Nw==]]></href>
+        </item>
+    </items>
+</response>

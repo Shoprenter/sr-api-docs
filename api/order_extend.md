@@ -1,5 +1,6 @@
 # Order Extend Resource
 
+
 ## Properties
 
 <ResourceProperties :resource="'order_extend'" :lang="'en'"/>
@@ -68,6 +69,14 @@ Possible values of **paymentMethodCode**:
 | InstaCash installment payment   | INSTACASH             |
 | IzzyPay                         | IZZYPAY               |
 | PastPay                         | PASTPAY               |
+| Simple subscription             | SIMPLE_SUBSCRIPTION   |
+| Barion subscription             | BARION_SUBSCRIPTION   |
+| Stripe                          | STRIPE                |
+| Viva Walet                      | VIVA_WALLET           |
+| OTP Szép kártya                 | OTP_SZEP              |
+| KHB Szép kártya                 | KHB_SZEP              |
+| MKB Szép kártya                 | MKB_SZEP              |
+| OTP EP kártya                   | OTP_EP                |
 | Milpay                          | MILPAY                |
 
 ## Endpoints

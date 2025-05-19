@@ -1,0 +1,15 @@
+{
+    "orderInnerId": "33",
+    "productInnerId": "122",
+    "productAddonInnerId": "5",
+    "name": "1L Üveg Betétdíj",
+    "sku": "BETETDIJ01",
+    "type": "DEPOSIT_FEE",
+    "price": "50.0000",
+    "quantity": "3",
+    "total": "150.0000",
+    "taxRate": "5.0000",
+    "taxClass": {
+        "id": "dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+    }
+}

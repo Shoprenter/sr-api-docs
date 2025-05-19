@@ -1,0 +1,18 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+    "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+    "sku": "BETETDIJ01",
+    "name": "1L Üveg Betétdíj",
+    "type": "DEPOSIT_FEE",
+    "price": "50.0000",
+    "taxRate": "null",
+    "required": "1",
+    "autoScaling": "1",
+    "separatedItem": "1",
+    "quantityModifiable": "0",
+    "dateCreated": "2024-05-13",
+    "dateModified": "2024-05-13",
+    "taxClass": {
+        "href": "http://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+    }
+}

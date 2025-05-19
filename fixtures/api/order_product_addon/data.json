@@ -1,0 +1,221 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "Ordered product addon identifier. It is used to change the OuterID."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "en": "Ordered product addon internal identifier"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "name",
+            "description": {
+                "en": "Product addon name."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "sku",
+            "description": {
+                "en": "sku."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "price",
+            "description": {
+                "en": "Net price."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "quantity",
+            "description": {
+                "en": "Quantity."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "total",
+            "description": {
+                "en": "Total price. (\nnet price multiplied by quantity)."
+            },
+            "required": true,
+            "readonly": false
+        },
+        {
+            "name": "taxRate",
+            "description": {
+                "en": "Tax rate. E.g.: 25. Default NULL."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "type",
+            "description": {
+                "en": "Type of the product addon. Possible values: <br>\n<strong>DEPOSIT_FEE</strong><br>\n<strong>OTHER</strong> <br>Default: DEPOSIT_FEE"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "dateCreated",
+            "description": {
+                "en": "Created date."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateModified",
+            "description": {
+                "en": "Last updated date."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "order",
+            "description": {
+                "en": "Order link."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "product",
+            "description": {
+                "en": "Product link."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "productAddon",
+            "description": {
+                "en": "Product addon link."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "taxClass",
+            "description": {
+                "en": "Tax class link."
+            },
+            "required": false,
+            "readonly": false
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderProductAddons\/ordered product addon id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderProductAddons\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderProductAddons"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                },
+                {
+                    "name": "orderId",
+                    "description": {
+                        "en": "Search parameter. Order identifier."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/orderProductAddons?page=0&limit=5",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "en": "\/orderProductAddons[\/ordered product addon id]"
+            },
+            "description": {
+                "en": "It is used for both creation and modification."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderProductAddons",
+                "statusCode": "200 or 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "en": "\/orderProductAddons\/ordered product addon id"
+            },
+            "description": {
+                "en": "It is used for both creation and modification."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderProductAddons\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+                "statusCode": "200 or 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "\/orderProductAddons\/ordered product addon id"
+            },
+            "description": {
+                "en": "Used for deletion."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderProductAddons\/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+                "statusCode": "204 or 404"
+            }
+        }
+    }
+}

@@ -265,6 +265,14 @@
             "readonly": false
         },
         {
+            "name": "durableMediaDevice",
+            "description": {
+                "en": "Is it a durable media device?"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "productAttributeExtend",
             "description": {
                 "en": "This list contains the properties belonging to the product.<br> The objects in the list contain the property's type (\"type\"), its text identifier (\"name\") - this is not the label that can be entered in several languages, but the internal identifier - and itself the value (\"value\").<br> The values of \"type\" are the same as the values that can be selected on the \"Custom product properties\" editor interface.<br> \"value\" stores the value of the property belonging to the product, e.g. the blue value for the color. There may be a feature that does not have a multilingual version, e.g. a number - this does not need to be stored in multiple languages. Thus \"value\" contains only 1 object, not a list (as it would for a text value).<br> Property types: integer (INTEGER), fractional number (FLOAT), selection list (LIST), arbitrary value (TEXT)."
@@ -495,6 +503,22 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "productAddons",
+            "description": {
+                "en": "Addons that are linked to the product"
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "productAddonRelations",
+            "description": {
+                "en": "Links to Resources describing the relationship between the product and product addons."
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {

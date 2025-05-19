@@ -14,7 +14,8 @@ features:
 - title: '<i class="far fa-list-alt"></i> API Changelog'
   link: /development/changelog.html
 - title: '<i class="far fa-file-code"></i> Themes'
-  link: https://github.com/Shoprenter/themes
-  info: 'We are in active development, contact: <a href="mailto:storefront@shoprenter.hu">storefront@shoprenter.hu</a>'
+  link: /themes/themes/01_starter2.html
+- title: '<i class="far fa-file-code"></i> SR Style Guide'
+  link: https://styleguide.shoprenter.hu/
 footer: © 2011 - 2024 Shoprenter Kft.
 ---

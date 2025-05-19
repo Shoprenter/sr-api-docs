@@ -1,0 +1,13 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/orderInvoices/b3JkZXJJbnZvaWNlLWlkPTE=",
+    "id": "b3JkZXJJbnZvaWNlLWlkPTE=",
+    "innerId": "1",
+    "invoiceId": "SR-1234",
+    "invoicePath": "https://somedomain.hu/SR-1234.pdf",
+    "invoiceType": "normal",
+    "dateCreated": "2024-08-13 09:31:59",
+    "dateModified": "2024-08-13 09:31:59",
+    "order": {
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTI3"
+    }
+}

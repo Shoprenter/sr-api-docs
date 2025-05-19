@@ -19,7 +19,7 @@
         {
             "name": "discountType",
             "description": {
-                "en": "Discount type. Possible values: PERCENT, FIX."
+                "en": "Discount type. Possible values: PERCENT, FIXED."
             },
             "required": false,
             "readonly": false
@@ -124,6 +124,46 @@
             "name": "minOrderLimit",
             "description": {
                 "en": "\nMinimum order value from which the coupon can be validated."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "maxOrderLimit",
+            "description": {
+                "en": "\nMaximum order value up to which the coupon can be validated."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "validToSpecialProducts",
+            "description": {
+                "en": "\nCan be combined with other discounts."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "validWithGiftProducts",
+            "description": {
+                "en": "\nCan be used on gift promotion items."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "validWithBulkDiscount",
+            "description": {
+                "en": "\nWorks with bulk purchase discounts."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "validWithLoyaltyPoints",
+            "description": {
+                "en": "\nCan be used alongside loyalty points."
             },
             "required": false,
             "readonly": false

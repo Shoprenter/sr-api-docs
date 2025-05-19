@@ -1,0 +1,12 @@
+{
+    "sku": "BETETDIJ01",
+    "name": "1L Üveg Betétdíj",
+    "type": "DEPOSIT_FEE",
+    "price": "50.0000",
+    "taxRate": "",
+    "taxClass": null,
+    "required": "1",
+    "autoScaling": "1",
+    "separatedItem": "1",
+    "quantityModifiable": "0"
+}

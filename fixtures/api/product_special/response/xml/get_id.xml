@@ -3,8 +3,8 @@
     <id><![CDATA[cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=]]></id>
     <priority><![CDATA[1]]></priority>
     <price><![CDATA[1000.0000]]></price>
-    <dateFrom><![CDATA[2013-06-14]]></dateFrom>
-    <dateTo><![CDATA[2013-06-29]]></dateTo>
+    <dateFrom><![CDATA[2013-06-14 08:00:00]]></dateFrom>
+    <dateTo><![CDATA[2013-06-29 16:00:00]]></dateTo>
     <minQuantity><![CDATA[0]]></minQuantity>
     <maxQuantity><![CDATA[100]]></maxQuantity>
     <isLimitedDiscount><![CDATA[0]]></isLimitedDiscount>
