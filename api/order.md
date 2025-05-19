@@ -68,7 +68,7 @@ Possible values for **paymentMethodCode**:
 | InstaCash                       | INSTACASH             |
 | IzzyPay                         | IZZYPAY               |
 | PastPay                         | PASTPAY               |
-| Milpay                          | PASTPAY               |
+| Milpay                          | MILPAY                |
 
 ## Endpoints
 
