@@ -76,6 +76,8 @@ Possible values for **paymentMethodCode**:
 | KHB Szép kártya                 | KHB_SZEP              |
 | MKB Szép kártya                 | MKB_SZEP              |
 | OTP EP kártya                   | OTP_EP                |
+| Milpay                          | MILPAY                |
+
 
 ## Endpoints
 
