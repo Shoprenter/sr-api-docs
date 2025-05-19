@@ -4,7 +4,7 @@
 
 A change has been made to the [Coupon Resource](../api/coupon.md):
 
-- A new field have been added: **bypassMinOrderLimitWithCoupon**.
+- A new field has been added: **bypassMinOrderLimitWithCoupon**.
 
 #### 2025.03.19
 A change has been made to the following resources:
