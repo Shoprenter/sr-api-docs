@@ -1,0 +1,13 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=",
+    "id": "b3JkZXJDcmVkaXRDYXJkLWlkPTE=",
+    "innerId": "1",
+    "transactionId": "123456789",
+    "date": "2013-01-11 00:00:00",
+    "licenceNumber": "0",
+    "bankResponseCode": "No",
+    "bankResponse": "CARD UNAUTHORIZED",
+    "order": {
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+    }
+}

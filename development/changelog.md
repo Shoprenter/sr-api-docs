@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2025.05.07
+A new API Resource [OrderCreditCards](../api/order_credit_card.md) has been added.
+- This resource can be used to get the credit card information associated with an order.
+- The new resource is also available in the **orderCreditCards** field of the [Order Extend Resource](../api/order_extend.md).
+
 #### 2025.03.19
 A change has been made to the following resources:
 

@@ -511,6 +511,14 @@
             },
             "required": false,
             "readonly": false
+        },
+        {
+            "name": "orderCreditCards",
+            "description": {
+                "en": "Credit card information."
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {

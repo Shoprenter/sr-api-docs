@@ -1,0 +1,32 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/orderCreditCards?page=0&limit=5",
+    "page": "0",
+    "limit": "5",
+    "first": {
+        "href": "http://shopname.api.myshoprenter.hu/orderCreditCards?page=0&limit=5"
+    },
+    "previous": null,
+    "next": {
+        "href": "http://shopname.api.myshoprenter.hu/orderCreditCards?page=1&limit=5"
+    },
+    "last": {
+        "href": "http://shopname.api.myshoprenter.hu/orderCreditCards?page=2&limit=5"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE="
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTI="
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTM="
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTQ="
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTU="
+        }
+    ]
+}
