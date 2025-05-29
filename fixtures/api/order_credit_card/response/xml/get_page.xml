@@ -1,0 +1,32 @@
+<response>
+    <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards?page=0&limit=5]]></href>
+    <page>0</page>
+    <limit>5</limit>
+    <first>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards?page=0&limit=5]]></href>
+    </first>
+    <previous/>
+    <next>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards?page=1&limit=5]]></href>
+    </next>
+    <last>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards?page=2&limit=5]]></href>
+    </last>
+    <items>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTI=]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTM=]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTQ=]]></href>
+        </item>
+        <item>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTU=]]></href>
+        </item>
+    </items>
+</response>

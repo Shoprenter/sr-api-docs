@@ -1,0 +1,33 @@
+<response>
+    <orderCreditCards>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=]]>
+        </href>
+        <id>
+            <![CDATA[b3JkZXJDcmVkaXRDYXJkLWlkPTE]]>
+        </id>
+        <innerId>
+            <![CDATA[1]]>
+        </innerId>
+        <transactionId>
+            <![CDATA[123456789]]>
+        </transactionId>
+        <date>
+            <![CDATA[2013-01-11 00:00:00]]>
+        </date>
+        <licenceNumber>
+            <![CDATA[0]]>
+        </licenceNumber>
+        <bankResponseCode>
+            <![CDATA[No]]>
+        </bankResponseCode>
+        <bankResponse>
+            <![CDATA[CARD UNAUTHORIZED]]>
+        </bankResponse>
+        <order>
+            <href>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+            </href>
+        </order>
+    </orderCreditCards>
+</response>
