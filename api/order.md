@@ -24,6 +24,9 @@ Possible values for **shippingMethodExtension**:
 | Delivery in the MPL post office   | MPLPOSTSTAY      |
 | Pick Pack Pont transport          | PICKPACKPONT     |
 | Sameday shipping                  | SAMEDAYSHIPPING  |
+| Shoprenter Go GLS Home delivery | SHOPRENTERGOGLSSHIPPING |
+| Shoprenter Go GLS Parcel point | SHOPRENTERGOGLSPARCELPOINT |
+| Shoprenter Go GLS Parcel locker | SHOPRENTERGOGLSPARCELLOCKER |
 | Easybox parcel locker             | EASYBOX          |
 | Express One package point         | TOFPARCELSHOP    |
 | Home delivery with courier service | WSESHIP          |
