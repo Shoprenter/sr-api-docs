@@ -582,6 +582,12 @@
                 <dateUpdated>
                     <![CDATA[-0001-11-30T00:00:00]]>
                 </dateUpdated>
+                <gtin>
+                    <![CDATA[0123456789013]]>
+                </gtin>
+                <durableMediaDevice>
+                    <![CDATA[1]]>
+                </durableMediaDevice>
                 <order>
                     <href>
                         <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTI=]]>
