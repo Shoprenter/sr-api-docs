@@ -26,6 +26,12 @@
     <parentProduct>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/product/cHJvZHVjdC1wcm9kdWN0X2lkPTUw]]></href>
     </parentProduct>
+    <gtin>
+        <![CDATA[0123456789012]]>
+    </gtin>
+    <durableMediaDevice>
+        <![CDATA[1]]>
+    </durableMediaDevice>
     <order>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]></href>
     </order>

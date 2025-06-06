@@ -26,6 +26,8 @@
     "parentProduct": {
         "href": "http://shopname.api.myshoprenter.hu/product/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
     },
+    "gtin": "0123456789012",
+    "durableMediaDevice": "1",
     "order": {
         "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
     },

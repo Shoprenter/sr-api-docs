@@ -255,6 +255,8 @@
             "subtractStock": "1",
             "dateCreated": "2017-07-30T21:02:10",
             "dateUpdated": "2017-10-19T16:38:44",
+            "gtin": "0123456789012",
+            "durableMediaDevice": "1",
             "order": {
                 "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
             },
@@ -281,6 +283,8 @@
             "subtractStock": "1",
             "dateCreated": "2017-10-19T16:38:44",
             "dateUpdated": "2017-10-19T16:38:44",
+            "gtin": "0123456789013",
+            "durableMediaDevice": "1",
             "order": {
                 "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
             },

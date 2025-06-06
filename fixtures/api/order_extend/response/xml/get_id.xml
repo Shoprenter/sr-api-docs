@@ -596,6 +596,12 @@
         <dateUpdated>
             <![CDATA[2017-10-19T16:38:44]]>
         </dateUpdated>
+        <gtin>
+            <![CDATA[0123456789012]]>
+        </gtin>
+        <durableMediaDevice>
+            <![CDATA[1]]>
+        </durableMediaDevice>
         <order>
             <href>
                 <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
@@ -656,6 +662,12 @@
         <dateUpdated>
             <![CDATA[2017-10-19T16:38:44]]>
         </dateUpdated>
+        <gtin>
+            <![CDATA[0123456789012]]>
+        </gtin>
+        <durableMediaDevice>
+            <![CDATA[1]]>
+        </durableMediaDevice>
         <order>
             <href>
                 <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
