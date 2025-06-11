@@ -177,6 +177,22 @@
             "readonly": true
         },
         {
+            "name": "gtin",
+            "description": {
+                "en": "Global Trade Item Number (GTIN)."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "durableMediaDevice",
+            "description": {
+                "en": "Durable media device (1/0)"
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "order",
             "description": {
                 "en": "Order link."

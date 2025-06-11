@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2025.05.28
+A change has been made to the [Order Product Resource](../api/order_product.md):
+
+- Two new fields have been added: **gtin** and **durableMediaDevice**.
+
 #### 2025.05.27
 
 A change has been made to the [Coupon Resource](../api/coupon.md):
