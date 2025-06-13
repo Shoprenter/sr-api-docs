@@ -198,6 +198,457 @@ product/product
 
 ---
 
+## product
+
+The main data associated with the product can be accessed in the `product.tpl` file through the `product_info` object. Example code:
+
+<table>
+<tr>
+    <td>Code:</td>
+    <td>Output:</td>
+</tr>
+<tr>
+<td>
+
+```twig
+{{ product_info.name}}
+```
+
+</td>
+<td>
+
+```
+The product name
+```
+
+</td>
+</tr>
+</table>
+
+### Full list
+<table>
+<tr>
+    <td>Field Name:</td>
+    <td>Description:</td>
+    <td>Example value:</td>
+</tr>
+<tr>
+    <td><code>product_id</code></td>
+    <td>The ID of the product (string)</td>
+    <td>"001"</td>
+</tr>
+<tr>
+    <td><code>model</code></td>
+    <td>Item number of manufacturers</td>
+    <td>"99_001"</td>
+</tr>
+<tr>
+    <td><code>sku</code></td>
+    <td>Stock Keeping Unit - Item number (string)</td>
+    <td>997000012_00</td>
+</tr>
+<tr>
+    <td><code>gtin</code></td>
+    <td>Global Trade Item Number (string)</td>
+    <td>"23432420023"</td>
+</tr>
+<tr>
+    <td><code>quantity</code></td>
+    <td>Total quantity of the product in stock (number)</td>
+    <td>400</td>
+</tr>
+<tr>
+    <td><code>quantity_2</code></td>
+    <td>Quantity in Warehouse 1 (string)</td>
+    <td>"100"</td>
+</tr>
+<tr>
+    <td><code>quantity_3</code></td>
+    <td>Quantity in Warehouse 2 (string)</td>
+    <td>"100"</td>
+</tr>
+<tr>
+    <td><code>quantity_4</code></td>
+    <td>Quantity in Warehouse 3 (string)</td>
+    <td>"100"</td>
+</tr>
+<tr>
+    <td><code>quantity_5</code></td>
+    <td>Quantity in Warehouse 4 (string)</td>
+    <td>"100"</td>
+</tr>
+<tr>
+    <td><code>stock_status_id</code></td>
+    <td>Out of stock status ID (string)</td>
+    <td>"5"</td>
+</tr>
+<tr>
+    <td><code>instock_status_id</code></td>
+    <td>In stock status ID (string) </td>
+    <td>"9"</td>
+</tr>
+<tr>
+    <td><code>wh2_stock_status_id</code></td>
+    <td>Only Warehouse 1 stock status ID (string)</td>
+    <td>"9"</td>
+</tr>
+<tr>
+    <td><code>wh3_stock_status_id</code></td>
+    <td>Only Warehouse 2 stock status ID (string)</td>
+    <td>"0"</td>
+</tr>
+<tr>
+    <td><code>wh4_stock_status_id</code></td>
+    <td>Only Warehouse 3 stock status ID (string)</td>
+    <td>"0"</td>
+</tr>
+<tr>
+    <td><code>wh5_stock_status_id</code></td>
+    <td>Only Warehouse 4 stock status ID (string)</td>
+    <td>"0"</td>
+</tr>
+<tr>
+    <td><code>image</code></td>
+    <td>Path to the main image file (string) </td>
+    <td>"product/0003.jpg"</td>
+</tr>
+<tr>
+    <td><code>manufacturer_id</code></td>
+    <td>Manufacturer ID related to the product (string)</td>
+    <td>"23"</td>
+</tr>
+<tr>
+    <td><code>shipping</code></td>
+    <td>Indicates if shipping is applicable for the product (string)</td>
+    <td>"1"</td>
+</tr>
+<tr>
+    <td><code>price</code></td>
+    <td>Net price of the product without tax (string)</td>
+    <td>"1500.0000"</td>
+</tr>
+<tr>
+    <td><code>tax_class_id</code></td>
+    <td>Tax ID associated with the product (string)</td>
+    <td>"10"</td>
+</tr>
+<tr>
+    <td><code>date_available</code></td>
+    <td>Date when the product is available (string)</td>
+    <td>"2015-06-05"</td>
+</tr>
+<tr>
+    <td><code>weight</code></td>
+    <td>Weight (string)</td>
+    <td>"0.00"</td>
+</tr>
+<tr>
+    <td><code>weight_class_id</code></td>
+    <td>Weight measurement ID (string)</td>
+    <td>"1"</td>
+</tr>
+<tr>
+    <td><code>length</code></td>
+    <td>Length (string)</td>
+    <td>"0.00"</td>
+</tr>
+<tr>
+    <td><code>width</code></td>
+    <td>Width (string)</td>
+    <td>"0.00"</td>
+</tr>
+<tr>
+    <td><code>height</code></td>
+    <td>Height (string)</td>
+    <td>"0.00"</td>
+</tr>
+<tr>
+    <td><code>length_class_id</code></td>
+    <td>Length measurement ID (string)</td>
+    <td>"1"</td>
+</tr>
+<tr>
+    <td><code>status</code></td>
+    <td>Product status: Enabled: 0, Disabled: 1, Discontinued: 2 (string)</td>
+    <td>"0"</td>
+</tr>
+<tr>
+    <td><code>date_added</code></td>
+    <td>Date the product was added (string)</td>
+    <td>"2013-06-05 14:57:35"</td>
+</tr>
+<tr>
+      <td><code>date_modified</code></td>
+      <td>Date of the last modification (string)</td>
+      <td>"2024-10-22 12:58:23"</td>
+    </tr>
+    <tr>
+      <td><code>sort_order</code></td>
+      <td>Sorting value (string)</td>
+      <td>"121"</td>
+    </tr>
+    <tr>
+      <td><code>subtract</code></td>
+      <td>Inventory reduction (1: Yes, 0: No) (string)</td>
+      <td>"1"</td>
+    </tr>
+    <tr>
+      <td><code>minimum</code></td>
+      <td>Minimum order quantity (string)</td>
+      <td>"1"</td>
+    </tr>
+    <tr>
+      <td><code>maximum</code></td>
+      <td>Maximum order quantity (0 means unlimited) (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>minimum_plural</code></td>
+      <td>Only multiples of the minimum order can be purchased (0: No, 1: Yes) (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>unit_quantity</code></td>
+      <td>Unit of measure (string)</td>
+      <td>"0.0000"</td>
+    </tr>
+    <tr>
+      <td><code>product_cost</code></td>
+      <td>Product cost (string)</td>
+      <td>"0.0000"</td>
+    </tr>
+    <tr>
+      <td><code>szorzo</code></td>
+      <td>Price multiplier (string)</td>
+      <td>"1.0000"</td>
+    </tr>
+    <tr>
+      <td><code>szorzo_lock</code></td>
+      <td>Multiplier lock (1: Yes, 0: No) (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>product_class_id</code></td>
+      <td>Product type ID related to the product (string)</td>
+      <td>"4"</td>
+    </tr>
+    <tr>
+      <td><code>available</code></td>
+      <td>Is the product orderable? (0: No, 1: Yes, 3: Request Quote, 4: Order) (string)</td>
+      <td>"1"</td>
+    </tr>
+    <tr>
+      <td><code>product_ring_id</code></td>
+      <td>Parent product ID, if none then itself the product ID (string)</td>
+      <td>"188"</td>
+    </tr>
+    <tr>
+      <td><code>loyalty_points</code></td>
+      <td>Loyalty points set for the product (string)</td>
+      <td>"123"</td>
+    </tr>
+    <tr>
+      <td><code>cetelem_free_loan</code></td>
+      <td>Eligible for promotional loan (1: Yes, 0: No) (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>custom_css_class</code></td>
+      <td>Custom CSS class (string)</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td><code>image_alt</code></td>
+      <td>Alt text for the main image (string)</td>
+      <td>"alt tag"</td>
+    </tr>
+    <tr>
+      <td><code>parent_sku</code></td>
+      <td>Parent product SKU (string)</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td><code>stock_decline_notification_value</code></td>
+      <td>Stock decline notification value; if empty, takes global value (string)</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td><code>free_shipping</code></td>
+      <td>Is free shipping applicable? (1: Yes, 0: No) (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>archivable_product</code></td>
+      <td>Is this a discontinued product? (0: No, 1: Yes) (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>durable_media_device</code></td>
+      <td>Is this a durable medium? (1: Yes, 0: No) (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>name</code></td>
+      <td>Product name (string)</td>
+      <td>"The product name"</td>
+    </tr>
+    <tr>
+      <td><code>meta_keywords</code></td>
+      <td>Meta keywords (string)</td>
+      <td>""</td>
+    </tr>
+    <tr>
+      <td><code>meta_description</code></td>
+      <td>Meta description (string)</td>
+      <td>"this is the meta description"</td>
+    </tr>
+    <tr>
+      <td><code>description</code></td>
+      <td>Description (string)</td>
+      <td>"description content"</td>
+    </tr>
+    <tr>
+      <td><code>short_description</code></td>
+      <td>Short description/Short specification (string)</td>
+      <td>"Short description content"</td>
+    </tr>
+    <tr>
+      <td><code>parameters</code></td>
+      <td>Parameters (string)</td>
+      <td>"Parameter prop: Paramtere value"</td>
+    </tr>
+    <tr>
+      <td><code>unit_name</code></td>
+      <td>Unit of measure name (string)</td>
+      <td>"test"</td>
+    </tr>
+    <tr>
+      <td><code>custom_title</code></td>
+      <td>Meta title (string)</td>
+      <td>"Meta title"</td>
+    </tr>
+    <tr>
+      <td><code>robots_meta_tag</code></td>
+      <td>0: Global setting; 2: index, nofollow; 3: noindex, follow; 4: noindex, nofollow (string)</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td><code>quantity_name</code></td>
+      <td>Name of the quantity (string)</td>
+      <td>"db"</td>
+    </tr>
+    <tr>
+      <td><code>manufacturer</code></td>
+      <td>Manufacturer name associated with the product (string)</td>
+      <td>"Test manufactuer"</td>
+    </tr>
+    <tr>
+      <td><code>manufacturer_image</code></td>
+      <td>Image associated with the manufacturer (string)</td>
+      <td>"data/man_test.jpg"</td>
+    </tr>
+    <tr>
+      <td><code>secondary_product_image</code></td>
+      <td>URL of the first additional image among additional images (string)</td>
+      <td>"product/test/test.jpg</td>
+    </tr>
+    <tr>
+      <td><code>secondary_product_image_modified</code></td>
+      <td>Date of the last modification of the second image (string)</td>
+      <td>"2024-08-27 13:36:12"</td>
+    </tr>
+ <tr>
+            <td><code>_disable_addtocart</code></td>
+            <td>
+                "Disable add to cart button when stock is 0" setting is set to Yes and the product is in stock (boolean)
+            </td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td><code>allImages</code></td>
+            <td>Array of images associated with the product</td>
+            <td>Array</td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>allImages: </strong>Each image is defined as an object. The following fields are included in the data of each image.
+            <table>
+                <tr>
+                    <td><code>main_pic</code></td>
+                    <td>Indicates whether the image is the main image for the product. (boolean)</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td><code>product_id</code></td>
+                    <td>The identifier of the product associated with the image. (string)</td>
+                    <td>"188"</td>
+                </tr>
+                <tr>
+                    <td><code>image</code></td>
+                    <td>The file path of the image. (string)</td>
+                    <td>"product/0003.jpg"</td>
+                </tr>
+                <tr>
+                    <td><code>image_alt</code></td>
+                    <td>The alternative text for the image, which appears if the image cannot be loaded. (string)</td>
+                    <td>"alt text"</td>
+                </tr>
+                <tr>
+                    <td><code>date_added</code></td>
+                    <td>The date and time the image was added. (string)</td>
+                    <td>"2013-06-05 14:57:35"</td>
+                </tr>
+                <tr>
+                    <td><code>date_modified</code></td>
+                    <td>The date and time of the last modification. (string)</td>
+                    <td>"2024-10-22 13:17:34"</td>
+                </tr>
+                <tr>
+                    <td><code>product_image_id</code></td>
+                    <td>The unique identifier of the image associated with the product. (string)</td>
+                    <td>"1530"</td>
+                </tr>
+                <tr>
+                    <td><code>order</code></td>
+                    <td>The number indicating the display order of the images. (string)</td>
+                    <td>"1"</td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+        <tr>
+            <td><code>formated_price</code></td>
+            <td>The formatted price of the product (string)</td>
+            <td>"1.905 Ft"</td>
+        </tr>
+        <tr>
+            <td><code>category_name</code></td>
+            <td>The name of the category in which the product is found (string)</td>
+            <td>"Category name"</td>
+        </tr>
+        <tr>
+            <td><code>parent_category_name</code></td>
+            <td>The name of the parent category (string)</td>
+            <td>"Parent category name"</td>
+        </tr>
+        <tr>
+            <td><code>manufacturer_name</code></td>
+            <td>The name of the manufacturer associated with the product (string)</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><code>product_on_wishlist</code></td>
+            <td>Whether the product is on the wishlist (boolean)</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td><code>product_video_code (string)</code></td>
+            <td>The YouTube video identifier string associated with the product (string)</td>
+            <td>""</td>
+        </tr>
+</table>
+
+---
+
 ## routes
 
 The `routes` object is an associative array where keys are route names and values are URLs associated with those routes. Always of string type.
@@ -341,7 +792,7 @@ The shop object can be used to request general information about the online stor
 </tr>
 <tr>
     <td>currency</td>
-    <td>aReturns the current currency of the shop, its properties can be found in the <a href="#currency">currency object</a></td>
+    <td>Returns the current currency of the shop, its properties can be found in the <a href="#currency">currency object</a></td>
     <td>Currency</td>
 </tr>
 <tr>
@@ -540,4 +991,4 @@ Example:
 
 </td>
 </tr>
-</table>
+</table> 
