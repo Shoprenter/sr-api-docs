@@ -169,6 +169,14 @@
             "readonly": false
         },
         {
+            "name": "bypassMinOrderLimitWithCoupon",
+            "description": {
+                "en": "\nWe allow placing orders even if the cart value falls below the minimum purchase amount after coupon redemption."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "targetType",
             "description": {
                 "en": "The coupon applies to a product (PRODUCT) or a category (CATEGORY). Possible values: PRODUCT, CATEGORY."

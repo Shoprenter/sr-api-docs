@@ -1,0 +1,117 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "Order credit card identifier."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "en": "Order credit card internal identifier."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "transactionId",
+            "description": {
+                "en": "Transaction id."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "date",
+            "description": {
+                "en": "Date of transaction."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "licenceNumber",
+            "description": {
+                "en": "Licence number."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "bankResponseCode",
+            "description": {
+                "en": "Code of the bank response."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "bankResponse",
+            "description": {
+                "en": "Message of the bank response."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "order",
+            "description": {
+                "en": "Link to the order."
+            },
+            "required": false,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderCreditCards\/Order credit card id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderCreditCards\/b3JkZXJDcmVkaXRDYXJkLWlkPTE=",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderCreditCards"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/orderCreditCards?page=0&limit=5",
+                "statusCode": "200"
+            }
+        }
+    }
+}

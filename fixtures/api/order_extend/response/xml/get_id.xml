@@ -358,6 +358,9 @@
         <validWithLoyaltyPoints>
             <![CDATA[1]]>
         </validWithLoyaltyPoints>
+        <bypassMinOrderLimitWithCoupon>
+            <![CDATA[0]]>
+        </bypassMinOrderLimitWithCoupon>
         <taxClass>
             <href>
                 <![CDATA[http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx]]>
@@ -593,6 +596,12 @@
         <dateUpdated>
             <![CDATA[2017-10-19T16:38:44]]>
         </dateUpdated>
+        <gtin>
+            <![CDATA[0123456789012]]>
+        </gtin>
+        <durableMediaDevice>
+            <![CDATA[1]]>
+        </durableMediaDevice>
         <order>
             <href>
                 <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
@@ -653,6 +662,12 @@
         <dateUpdated>
             <![CDATA[2017-10-19T16:38:44]]>
         </dateUpdated>
+        <gtin>
+            <![CDATA[0123456789012]]>
+        </gtin>
+        <durableMediaDevice>
+            <![CDATA[1]]>
+        </durableMediaDevice>
         <order>
             <href>
                 <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
@@ -705,4 +720,35 @@
             <![CDATA[EMAG]]>
         </partner_order_id>
     </externalInfo>
+    <orderCreditCards>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=]]>
+        </href>
+        <id>
+            <![CDATA[b3JkZXJDcmVkaXRDYXJkLWlkPTE]]>
+        </id>
+        <innerId>
+            <![CDATA[1]]>
+        </innerId>
+        <transactionId>
+            <![CDATA[123456789]]>
+        </transactionId>
+        <date>
+            <![CDATA[2013-01-11 00:00:00]]>
+        </date>
+        <licenceNumber>
+            <![CDATA[0]]>
+        </licenceNumber>
+        <bankResponseCode>
+            <![CDATA[No]]>
+        </bankResponseCode>
+        <bankResponse>
+            <![CDATA[CARD UNAUTHORIZED]]>
+        </bankResponse>
+        <order>
+            <href>
+                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+            </href>
+        </order>
+    </orderCreditCards>
 </response>

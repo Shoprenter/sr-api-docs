@@ -148,6 +148,7 @@
         "validWithGiftProducts": "1",
         "validWithBulkDiscount": "1",
         "validWithLoyaltyPoints": "1",
+        "bypassMinOrderLimitWithCoupon": "0",
         "taxClass": {
             "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
         },
@@ -254,6 +255,8 @@
             "subtractStock": "1",
             "dateCreated": "2017-07-30T21:02:10",
             "dateUpdated": "2017-10-19T16:38:44",
+            "gtin": "0123456789012",
+            "durableMediaDevice": "1",
             "order": {
                 "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
             },
@@ -280,6 +283,8 @@
             "subtractStock": "1",
             "dateCreated": "2017-10-19T16:38:44",
             "dateUpdated": "2017-10-19T16:38:44",
+            "gtin": "0123456789013",
+            "durableMediaDevice": "1",
             "order": {
                 "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
             },
@@ -324,5 +329,20 @@
     "externalInfo": {
         "partner_order_id": "12345",
         "partner_prefix": "EMAG"
-    }
+    },
+    "orderCreditCards": [
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=",
+            "id": "b3JkZXJDcmVkaXRDYXJkLWlkPTE=",
+            "innerId": "1",
+            "transactionId": "123456789",
+            "date": "2013-01-11 00:00:00",
+            "licenceNumber": "0",
+            "bankResponseCode": "No",
+            "bankResponse": "CARD UNAUTHORIZED",
+            "order": {
+                "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+            }
+        }
+    ]
 }

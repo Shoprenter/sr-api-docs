@@ -147,6 +147,7 @@
                 "validWithGiftProducts": "1",
                 "validWithBulkDiscount": "1",
                 "validWithLoyaltyPoints": "1",
+                "bypassMinOrderLimitWithCoupon": "0",
                 "taxClass": {
                     "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
                 },
@@ -254,6 +255,8 @@
                     "subtractStock": "1",
                     "dateCreated": "-0001-11-30T00:00:00",
                     "dateUpdated": "-0001-11-30T00:00:00",
+                    "gtin": "0123456789012",
+                    "durableMediaDevice": "1",
                     "order": {
                         "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTI="
                     },
@@ -281,6 +284,8 @@
                     "subtractStock": "1",
                     "dateCreated": "-0001-11-30T00:00:00",
                     "dateUpdated": "-0001-11-30T00:00:00",
+                    "gtin": "0123456789013",
+                    "durableMediaDevice": "1",
                     "order": {
                         "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTI="
                     },
@@ -293,7 +298,22 @@
                 }
             ],
             "orderGiftWrappings": [],
-            "orderAddressIdentifications": []
+            "orderAddressIdentifications": [],
+            "orderCreditCards": [
+                {
+                    "href": "http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=",
+                    "id": "b3JkZXJDcmVkaXRDYXJkLWlkPTE=",
+                    "innerId": "1",
+                    "transactionId": "123456789",
+                    "date": "2013-01-11 00:00:00",
+                    "licenceNumber": "0",
+                    "bankResponseCode": "No",
+                    "bankResponse": "CARD UNAUTHORIZED",
+                    "order": {
+                        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI="
+                    }
+                }
+            ]
         }
     ]
 }
