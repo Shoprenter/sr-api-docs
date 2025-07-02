@@ -635,7 +635,7 @@
                 "en": "\/productExtend[\/product id]"
             },
             "description": {
-                "en": "It is used to create. Resources marked as Related Resources are always created."
+                "en": "It is used to create or modify. Resources marked as Related Resources are always created."
             },
             "parameters": [
                 {
@@ -656,7 +656,7 @@
                 "en": "\/productExtend\/product id"
             },
             "description": {
-                "en": "It is for modification. Resources marked as Related Resources are always overwritten."
+                "en": "It is used to create or modify. Resources marked as Related Resources are always overwritten."
             },
             "parameters": [
                 {
