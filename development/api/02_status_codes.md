@@ -199,9 +199,19 @@
 <td>Cannot delete product class which has products!</td>
 </tr>
 <tr>
+<td>400</td>
+<td>40032</td>
+<td>The given orderBy parameter: {parameter} is invalid!</td>
+</tr>
+<tr>
 <td>401</td>
 <td>40101</td>
 <td>You have no permission for this operation!</td>
+</tr>
+<tr>
+<td>404</td>
+<td>40033</td>
+<td>Product not found with sku: {parameter}</td>
 </tr>
 <tr>
 <td>404</td>
