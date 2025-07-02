@@ -637,7 +637,14 @@
             "description": {
                 "en": "It is used to create. Resources marked as Related Resources are always created."
             },
-            "parameters": [],
+            "parameters": [
+                {
+                    "name": "sku",
+                    "description": {
+                        "en": "Product SKU. It is used to identify the product to be modified. If a product with the specified SKU does not exist, an error is returned."
+                    }
+                }
+            ],
             "example": {
                 "url": "\/products",
                 "statusCode": "200 or 201"
@@ -651,7 +658,14 @@
             "description": {
                 "en": "It is for modification. Resources marked as Related Resources are always overwritten."
             },
-            "parameters": [],
+            "parameters": [
+                {
+                    "name": "sku",
+                    "description": {
+                        "en": "Product SKU. It is used to identify the product to be modified. If a product with the specified SKU does not exist, an error is returned."
+                    }
+                }
+            ],
             "example": {
                 "url": "\/products\/cHJvZHVjdC1wcm9kdWN0X2lkPTUw",
                 "statusCode": "200 or 201"
