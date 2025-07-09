@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'number_attribute_value'" :lang="'en'"/>
 
+<ResourceScopes :resource="'number_attribute_value'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

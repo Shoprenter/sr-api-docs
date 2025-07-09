@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'webhook'" :lang="'en'"/>
 
+<ResourceScopes :resource="'webhook'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

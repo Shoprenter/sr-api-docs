@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'shipping_mode_extend'" :lang="'en'"/>
 
+<ResourceScopes :resource="'shipping_mode_extend'"/>
+
 ## Types of shipping mode
 
 Possible values for **extension**:

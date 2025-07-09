@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'length_class'" :lang="'en'"/>
 
+<ResourceScopes :resource="'length_class'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

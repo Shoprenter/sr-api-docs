@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'product_list_attribute_value_relation'" :lang="'en'"/>
 
+<ResourceScopes :resource="'product_list_attribute_value_relation'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

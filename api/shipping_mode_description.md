@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'shipping_mode_description'" :lang="'en'"/>
 
+<ResourceScopes :resource="'shipping_mode_description'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

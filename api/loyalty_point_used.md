@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'loyalty_point_used'" :lang="'en'"/>
 
+<ResourceScopes :resource="'loyalty_point_used'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

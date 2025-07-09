@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'setting'" :lang="'en'"/>
 
+<ResourceScopes :resource="'setting'"/>
+
 ## Meanings of Setting keys
 
 The table below shows the meanings of the keys returned by the API:

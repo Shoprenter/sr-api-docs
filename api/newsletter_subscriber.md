@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'newsletter_subscriber'" :lang="'en'"/>
 
+<ResourceScopes :resource="'newsletter_subscriber'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

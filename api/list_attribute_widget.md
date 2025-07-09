@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'list_attribute_widget'" :lang="'en'"/>
 
+<ResourceScopes :resource="'list_attribute_widget'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

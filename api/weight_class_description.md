@@ -2,7 +2,9 @@
 
 ## Properties
 
-<ResourceProperties :resource="'weight_class'" :lang="'en'"/>
+<ResourceProperties :resource="'weight_class_description'" :lang="'en'"/>
+
+<ResourceScopes :resource="'weight_class_description'"/>
 
 ## Endpoints
 

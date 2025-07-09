@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'payment_mode'" :lang="'en'"/>
 
+<ResourceScopes :resource="'payment_mode'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

@@ -1,5 +1,8 @@
 # API changelog
 
+#### 2025.07.08
+The API menu items have been supplemented with [**a guide on custom shop API client credentials**](api/10_custom_api_clients.md)
+
 #### 2025.05.28
 A change has been made to the [Order Product Resource](../api/order_product.md):
 

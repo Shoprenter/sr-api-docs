@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'tax_rate'" :lang="'en'"/>
 
+<ResourceScopes :resource="'tax_rate'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

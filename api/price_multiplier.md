@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'price_multiplier'" :lang="'en'"/>
 
+<ResourceScopes :resource="'price_multiplier'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

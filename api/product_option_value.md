@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'product_option_value'" :lang="'en'"/>
 
+<ResourceScopes :resource="'product_option_value'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

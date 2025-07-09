@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'file'" :lang="'en'"/>
 
+<ResourceScopes :resource="'file'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

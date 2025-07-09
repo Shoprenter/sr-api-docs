@@ -11,6 +11,8 @@ Further details can be read in the following [entry of the Shoprenter changelog.
 
 <ResourceProperties :resource="'product_class_attribute_relation'" :lang="'en'"/>
 
+<ResourceScopes :resource="'product_class_attribute_relation'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

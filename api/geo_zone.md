@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'geo_zone'" :lang="'en'"/>
 
+<ResourceScopes :resource="'geo_zone'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

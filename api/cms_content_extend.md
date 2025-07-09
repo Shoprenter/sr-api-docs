@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'cms_content_extend'" :lang="'en'"/>
 
+<ResourceScopes :resource="'cms_content_extend'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'product_product_badge_relation'" :lang="'en'"/>
 
+<ResourceScopes :resource="'product_product_badge_relation'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

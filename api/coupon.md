@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'coupon'" :lang="'en'"/>
 
+<ResourceScopes :resource="'coupon'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'order_credit_card'" :lang="'en'"/>
 
+<ResourceScopes :resource="'order_credit_card'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
