@@ -19,7 +19,7 @@ Please send the necessary data to the email address partnersupport@shoprenter.hu
     - Redirected: When redirecting, the user is simply redirected to the specified EntryPoint URL.
 - **Name of the test store:** At the very beginning of the development, a test store must be requested on [shoprenter.hu](https://www.shoprenter.hu/tesztigenyles/?devstore=1).
   Here you can enter the shop name, which will be visible in the first part of the shop domain - `[shopName].myshoprenter.hu`.
-- **Required scopes:** You must specify the scopes your application will require in advance. The client credentials you'll receive will only grant access to these pre-defined scopes. Required scopes per API resource are listed [here](). When installing the app, the shop owner will be presented with this list of required scopes, allowing them to grant informed consent to the app’s data access.
+- **Required scopes:** You must specify the scopes your application will require in advance. The client credentials you'll receive will only grant access to these pre-defined scopes. Required scopes per API resource are listed [here](../api/11_scopes.md). When installing the app, the shop owner will be presented with this list of required scopes, allowing them to grant informed consent to the app’s data access.
 
 **After registering the application, Partner Support will send the following data:**
 - **AppId:** the identifier of the application within Shoprenter.
@@ -46,7 +46,7 @@ Please send the necessary data to the email address partnersupport@shoprenter.hu
    In this case, EntryPoint is called like this: `https://app.example.com/entryPoint?shopname=[shopname]&code=[code]&timestamp=[timestamp]&hmac=[hmac]&pelda=parameter`<br><br>
 5. Shoprenter opens the EntryPoint for the application. The request will contain the parameters described in step 2.
 6. After installation, Shoprenter only sends requests to the Entrypoint. In all cases, with the parameters described in step 2.
-7. After obtaining the client credentials from Partner Support and completing the installation process, the application is ready to request access tokens for the shop's API. Instructions for requesting an access token are specified [here](../api/11_acquiring_an_access_token.md)
+7. After obtaining the client credentials from Partner Support and completing the installation process, the application is ready to request access tokens for the shop's API. Instructions for requesting an access token are specified [here](../api/12_acquiring_an_access_token.md)
 
 ### Updating application scopes
 

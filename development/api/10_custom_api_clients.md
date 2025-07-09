@@ -12,4 +12,4 @@ update your client’s allowed scopes accordingly.
 The interface for creating, updating, or deleting a shop’s custom API clients is available in the shop admin under
 _Settings > API Settings_.
 
-These clients can use the **Client Credentials** grant type to obtain an OAuth access token as described [here](./11_acquiring_an_access_token.md).
+These clients can use the **Client Credentials** grant type to obtain an OAuth access token as described [here](./12_acquiring_an_access_token.md).
