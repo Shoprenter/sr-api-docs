@@ -65,9 +65,9 @@ To obtain consent for the new scopes in shops that have already installed the ap
 | `shopName` | string | The name of the shop.            |
 | `clientId` | string | The ClientId of the application. |
 
-It is up to the application to decide whether consent is obtained via in-app redirection or by emailing shop owners who have already installed the app - or any other way. 
+It is up to the application to decide whether consent is obtained via in-app redirection or by emailing shop owners who have already installed the app — or any other way. 
 
-Until the shop owner grants consent - by clicking the button on the URL mentioned above - the application will not have access to the new scopes in that specific store.
+Until the shop owner grants consent — by clicking the button on the URL mentioned above — the application will not have access to the new scopes in that specific store.
 
 
 ### Example applications
