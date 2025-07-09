@@ -5,6 +5,8 @@
 
 <ResourceProperties :resource="'order_extend'" :lang="'en'"/>
 
+<ResourceScopes :resource="'order_extend'"/>
+
 ## Types of shipping method
 
 Possible values for **shippingMethodExtension**:

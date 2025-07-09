@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'order'" :lang="'en'"/>
 
+<ResourceScopes :resource="'order'"/>
+
 ## Shipping methods
 
 Possible values for **shippingMethodExtension**:

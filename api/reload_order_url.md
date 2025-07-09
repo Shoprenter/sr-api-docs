@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'reload_order_url'" :lang="'en'"/>
 
+<ResourceScopes :resource="'reload_order_url'"/>
+
 ## Endpoints
 
 [//]: <> (POST ENDPOINT)

@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'language'" :lang="'en'"/>
 
+<ResourceScopes :resource="'language'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
