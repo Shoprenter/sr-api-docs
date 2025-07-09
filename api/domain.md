@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'domain'" :lang="'en'"/>
 
+<ResourceScopes :resource="'domain'"/>
+
 ## Endpoints
 
 [//]: <> (GETCOLLECTION ENDPOINT)

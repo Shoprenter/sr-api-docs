@@ -7,6 +7,8 @@ A maximum of 300 product attributes can be created!
 
 <ResourceProperties :resource="'number_attribute'" :lang="'en'"/>
 
+<ResourceScopes :resource="'number_attribute'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

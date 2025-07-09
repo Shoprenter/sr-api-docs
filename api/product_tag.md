@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'product_tag'" :lang="'en'"/>
 
+<ResourceScopes :resource="'product_tag'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
