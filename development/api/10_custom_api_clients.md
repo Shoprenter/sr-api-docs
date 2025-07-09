@@ -1,7 +1,6 @@
 # Shop Custom API Clients
 
-If you only need access to the API of a specific shop, there's no need to develop a full app for the platform. Instead,
-the shop administrator can create an API client for you and give you it's credentials to use.
+If you only need access to the API of a specific shop, there's no need to develop a full app for the platform. Instead, the shop administrator can create an API client for you via the shop’s admin interface and provide you its credentials.
 
 ## Client permissions
 
