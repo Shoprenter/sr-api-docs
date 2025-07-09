@@ -6,8 +6,7 @@ Depending on your use case, you can either:
 - [Create a custom API client](./10_custom_api_clients.md) for a specific shop (recommended for shop-specific integrations), or
 - Register a platform app by completing the [initial app development steps](../app-development/01_getting_started.md).
 
-Once you have your credentials — a client identifier and a client secret — you can send the following request to acquire
-an access token to the shop's API:
+Once you have your credentials — a client identifier and a client secret — you can send the following request to acquire an access token to the shop's API:
 
 ### `POST https://oauth.app.shoprenter.net/{shopName}/app/token`
 
