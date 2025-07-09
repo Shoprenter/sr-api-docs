@@ -92,7 +92,7 @@ an access token to the shop's API:
 To make authenticated requests to the API using an access token:
 
 - Use the API2 base URL for the specific shop:  
-  `https://{shopName}.api2.myshoprenter.hu/`
+  `https://{shopName}.api2.myshoprenter.hu/api/`
 
 - Include the access token in the `Authorization` header of each request, using the Bearer scheme:
 
