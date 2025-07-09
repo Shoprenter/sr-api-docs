@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'customer_extend'" :lang="'en'"/>
 
+<ResourceScopes :resource="'customer_extend'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

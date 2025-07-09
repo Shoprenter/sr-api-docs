@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'order_invoice'" :lang="'en'"/>
 
+<ResourceScopes :resource="'order_invoice'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'weight_class'" :lang="'en'"/>
 
+<ResourceScopes :resource="'weight_class'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

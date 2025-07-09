@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'text_attribute_value_description'" :lang="'en'"/>
 
+<ResourceScopes :resource="'text_attribute_value_description'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

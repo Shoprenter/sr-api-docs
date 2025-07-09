@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'currency'" :lang="'en'"/>
 
+<ResourceScopes :resource="'currency'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

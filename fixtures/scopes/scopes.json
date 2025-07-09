@@ -1,0 +1,803 @@
+{
+  "address": {
+    "endpoint": "addresses",
+    "methods": {
+      "GET": "customer.customer:read",
+      "POST": "customer.customer:write",
+      "PUT": "customer.customer:write",
+      "DELETE": "customer.customer:write"
+    }
+  },
+  "attribute_description": {
+    "endpoint": "attributeDescriptions",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "attribute_widget_category_relation": {
+    "endpoint": "attributeWidgetCategoryRelations",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "attribute_widget_description": {
+    "endpoint": "attributeWidgetDescriptions",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "category": {
+    "endpoint": "categories",
+    "methods": {
+      "GET": "product.category:read",
+      "POST": "product.category:write",
+      "PUT": "product.category:write",
+      "DELETE": "product.category:write"
+    }
+  },
+  "category_customer_group_relation": {
+    "endpoint": "categoryCustomerGroupRelations",
+    "methods": {
+      "GET": "product.category:read",
+      "POST": "product.category:write",
+      "PUT": "product.category:write",
+      "DELETE": "product.category:write"
+    }
+  },
+  "category_description": {
+    "endpoint": "categoryDescriptions",
+    "methods": {
+      "GET": "product.category:read",
+      "POST": "product.category:write",
+      "PUT": "product.category:write",
+      "DELETE": "product.category:write"
+    }
+  },
+  "category_extend": {
+    "endpoint": "categoryExtend",
+    "methods": {
+      "GET": "product.category:read",
+      "POST": "product.category:write",
+      "PUT": "product.category:write",
+      "DELETE": "product.category:write"
+    }
+  },
+  "cms_content_description": {
+    "endpoint": "cmsContentDescriptions",
+    "methods": {
+      "GET": "cms.content:read",
+      "POST": "cms.content:write",
+      "PUT": "cms.content:write",
+      "DELETE": "cms.content:write"
+    }
+  },
+  "cms_content_extend": {
+    "endpoint": "cmsContentExtend",
+    "methods": {
+      "GET": "cms.content:read",
+      "POST": "cms.content:write",
+      "PUT": "cms.content:write",
+      "DELETE": "cms.content:write"
+    }
+  },
+  "country": {
+    "endpoint": "countries",
+    "methods": {
+      "GET": "localization.location:read"
+    }
+  },
+  "coupon": {
+    "endpoint": "coupons",
+    "methods": {
+      "GET": "marketing.coupon:read",
+      "POST": "marketing.coupon:write",
+      "PUT": "marketing.coupon:write",
+      "DELETE": "marketing.coupon:write"
+    }
+  },
+  "coupon_category_relation": {
+    "endpoint": "couponCategoryRelations",
+    "methods": {
+      "GET": "marketing.coupon:read",
+      "POST": "marketing.coupon:write",
+      "PUT": "marketing.coupon:write",
+      "DELETE": "marketing.coupon:write"
+    }
+  },
+  "coupon_description": {
+    "endpoint": "couponDescriptions",
+    "methods": {
+      "GET": "marketing.coupon:read",
+      "POST": "marketing.coupon:write",
+      "PUT": "marketing.coupon:write",
+      "DELETE": "marketing.coupon:write"
+    }
+  },
+  "coupon_product_relation": {
+    "endpoint": "couponProductRelations",
+    "methods": {
+      "GET": "marketing.coupon:read",
+      "POST": "marketing.coupon:write",
+      "PUT": "marketing.coupon:write",
+      "DELETE": "marketing.coupon:write"
+    }
+  },
+  "currency": {
+    "endpoint": "currencies",
+    "methods": {
+      "GET": "localization.currency:read"
+    }
+  },
+  "customer": {
+    "endpoint": "customers",
+    "methods": {
+      "GET": "customer.customer:read",
+      "POST": "customer.customer:write",
+      "PUT": "customer.customer:write",
+      "DELETE": "customer.customer:write"
+    }
+  },
+  "customer_extend": {
+    "endpoint": "customerExtend",
+    "methods": {
+      "GET": "customer.customer:read",
+      "POST": "customer.customer:write",
+      "PUT": "customer.customer:write",
+      "DELETE": "customer.customer:write"
+    }
+  },
+  "customer_group": {
+    "endpoint": "customerGroups",
+    "methods": {
+      "GET": "customer.customerGroup:read",
+      "POST": "customer.customerGroup:write",
+      "PUT": "customer.customerGroup:write",
+      "DELETE": "customer.customerGroup:write"
+    }
+  },
+  "customer_group_product_price": {
+    "endpoint": "customerGroupProductPrices",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "document": {
+    "endpoint": "documents",
+    "methods": {
+      "GET": "cms.document:read",
+      "POST": "cms.document:write",
+      "PUT": "cms.document:write",
+      "DELETE": "cms.document:write"
+    }
+  },
+  "document_description": {
+    "endpoint": "documentDescriptions",
+    "methods": {
+      "GET": "cms.document:read",
+      "POST": "cms.document:write",
+      "PUT": "cms.document:write",
+      "DELETE": "cms.document:write"
+    }
+  },
+  "domain": {
+    "endpoint": "domains",
+    "methods": {
+      "GET": "store.domain:read"
+    }
+  },
+  "file": {
+    "endpoint": "files",
+    "methods": {
+      "GET": "store.file:read",
+      "POST": "store.file:write",
+      "DELETE": "store.file:write"
+    }
+  },
+  "geo_zone": {
+    "endpoint": "geoZones",
+    "methods": {
+      "GET": "localization.location:read"
+    }
+  },
+  "information_description": {
+    "endpoint": "informationDescriptions",
+    "methods": {
+      "GET": "cms.information:read",
+      "POST": "cms.information:write",
+      "PUT": "cms.information:write",
+      "DELETE": "cms.information:write"
+    }
+  },
+  "information_extend": {
+    "endpoint": "informationExtend",
+    "methods": {
+      "GET": "cms.information:read",
+      "POST": "cms.information:write",
+      "PUT": "cms.information:write",
+      "DELETE": "cms.information:write"
+    }
+  },
+  "language": {
+    "endpoint": "languages",
+    "methods": {
+      "GET": "localization.language:read"
+    }
+  },
+  "length_class": {
+    "endpoint": "lengthClasses",
+    "methods": {
+      "GET": "localization.lengthUnit:read"
+    }
+  },
+  "length_class_description": {
+    "endpoint": "lengthClassDescriptions",
+    "methods": {
+      "GET": "localization.lengthUnit:read"
+    }
+  },
+  "list_attribute": {
+    "endpoint": "listAttributes",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "list_attribute_extend": {
+    "endpoint": "listAttributeExtend",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "list_attribute_value": {
+    "endpoint": "listAttributeValues",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "list_attribute_value_description": {
+    "endpoint": "listAttributeValueDescriptions",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "list_attribute_widget": {
+    "endpoint": "listAttributeWidgets",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "loyalty_point": {
+    "endpoint": "loyaltyPoints",
+    "methods": {
+      "GET": "marketing.loyaltyPoint:read",
+      "POST": "marketing.loyaltyPoint:write",
+      "PUT": "marketing.loyaltyPoint:write",
+      "DELETE": "marketing.loyaltyPoint:write"
+    }
+  },
+  "loyalty_point_used": {
+    "endpoint": "loyaltyPointsUsed",
+    "methods": {
+      "GET": "marketing.loyaltyPoint:read",
+      "POST": "marketing.loyaltyPoint:write",
+      "PUT": "marketing.loyaltyPoint:write",
+      "DELETE": "marketing.loyaltyPoint:write"
+    }
+  },
+  "manufacturer": {
+    "endpoint": "manufacturers",
+    "methods": {
+      "GET": "product.manufacturer:read",
+      "POST": "product.manufacturer:write",
+      "PUT": "product.manufacturer:write",
+      "DELETE": "product.manufacturer:write"
+    }
+  },
+  "manufacturer_description": {
+    "endpoint": "manufacturerDescriptions",
+    "methods": {
+      "GET": "product.manufacturer:read",
+      "POST": "product.manufacturer:write",
+      "PUT": "product.manufacturer:write",
+      "DELETE": "product.manufacturer:write"
+    }
+  },
+  "newsletter_subscriber": {
+    "endpoint": "newsletterSubscribers",
+    "methods": {
+      "GET": "newsletter.subscriber:read",
+      "POST": "newsletter.subscriber:write",
+      "PUT": "newsletter.subscriber:write",
+      "DELETE": "newsletter.subscriber:write"
+    }
+  },
+  "number_attribute": {
+    "endpoint": "numberAttributes",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "number_attribute_value": {
+    "endpoint": "numberAttributeValues",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "number_attribute_widget": {
+    "endpoint": "numberAttributeWidgets",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "number_attribute_widget_limit": {
+    "endpoint": "numberAttributeWidgetLimits",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "order": {
+    "endpoint": "orders",
+    "methods": {
+      "GET": "order.order:read",
+      "POST": "order.order:write",
+      "PUT": "order.order:write",
+      "PATCH": "order.order:write"
+    }
+  },
+  "order_extend": {
+    "endpoint": "orderExtend",
+    "methods": {
+      "GET": "order.order:read"
+    }
+  },
+  "order_invoice": {
+    "endpoint": "orderInvoices",
+    "methods": {
+      "GET": "order.order:read",
+      "POST": "order.order:write",
+      "PUT": "order.order:write",
+      "DELETE": "order.order:write"
+    }
+  },
+  "order_product": {
+    "endpoint": "orderProducts",
+    "methods": {
+      "GET": "order.order:read",
+      "POST": "order.order:write",
+      "PUT": "order.order:write",
+      "DELETE": "order.order:write"
+    }
+  },
+  "order_product_addon": {
+    "endpoint": "orderProductAddons",
+    "methods": {
+      "GET": "order.order:read",
+      "POST": "order.order:write",
+      "PUT": "order.order:write",
+      "DELETE": "order.order:write"
+    }
+  },
+  "order_product_option": {
+    "endpoint": "orderProductOptions",
+    "methods": {
+      "GET": "order.order:read",
+      "POST": "order.order:write",
+      "PUT": "order.order:write",
+      "DELETE": "order.order:write"
+    }
+  },
+  "order_status": {
+    "endpoint": "orderStatuses",
+    "methods": {
+      "GET": "order.status:read"
+    }
+  },
+  "order_status_description": {
+    "endpoint": "orderStatusDescriptions",
+    "methods": {
+      "GET": "order.status:read"
+    }
+  },
+  "order_total": {
+    "endpoint": "orderTotals",
+    "methods": {
+      "GET": "order.order:read",
+      "POST": "order.order:write",
+      "PUT": "order.order:write",
+      "DELETE": "order.order:write"
+    }
+  },
+  "payment_mode": {
+    "endpoint": "paymentModes",
+    "methods": {
+      "GET": "payment.paymentMethod:read"
+    }
+  },
+  "price_multiplier": {
+    "endpoint": "priceMultipliers",
+    "methods": {
+      "GET": "product.priceMultiplier:read",
+      "POST": "product.priceMultiplier:write",
+      "PUT": "product.priceMultiplier:write",
+      "DELETE": "product.priceMultiplier:write"
+    }
+  },
+  "product": {
+    "endpoint": "products",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "PATCH": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_addon": {
+    "endpoint": "productAddons",
+    "methods": {
+      "GET": "product.addon:read",
+      "POST": "product.addon:write",
+      "PUT": "product.addon:write",
+      "DELETE": "product.addon:write"
+    }
+  },
+  "product_addon_product_relation": {
+    "endpoint": "productAddonProductRelations",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_badge": {
+    "endpoint": "productBadges",
+    "methods": {
+      "GET": "product.badge:read",
+      "POST": "product.badge:write",
+      "PUT": "product.badge:write",
+      "DELETE": "product.badge:write"
+    }
+  },
+  "product_badge_description": {
+    "endpoint": "productBadgeDescriptions",
+    "methods": {
+      "GET": "product.badge:read",
+      "POST": "product.badge:write",
+      "PUT": "product.badge:write",
+      "DELETE": "product.badge:write"
+    }
+  },
+  "product_category_relation": {
+    "endpoint": "productCategoryRelations",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_class": {
+    "endpoint": "productClasses",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "product_class_attribute_relation": {
+    "endpoint": "productClassAttributeRelations",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "product_collateral_product_relation": {
+    "endpoint": "productCollateralProductRelations",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_description": {
+    "endpoint": "productDescriptions",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_document_relation": {
+    "endpoint": "productDocumentRelations",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_extend": {
+    "endpoint": "productExtend",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_image": {
+    "endpoint": "productImages",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_list_attribute_value_relation": {
+    "endpoint": "productListAttributeValueRelations",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_option": {
+    "endpoint": "productOptions",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_option_description": {
+    "endpoint": "productOptionDescriptions",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_option_value": {
+    "endpoint": "productOptionValues",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_option_value_description": {
+    "endpoint": "productOptionValueDescriptions",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_product_badge_relation": {
+    "endpoint": "productProductBadgeRelations",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_related_product_relation": {
+    "endpoint": "productRelatedProductRelations",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_special": {
+    "endpoint": "productSpecials",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "product_tag": {
+    "endpoint": "productTags",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "reload_order_url": {
+    "endpoint": "reloadOrderUrls",
+    "methods": {
+      "POST": "order.reorderLink:write"
+    }
+  },
+  "script_tag": {
+    "endpoint": "scriptTags",
+    "methods": {
+      "GET": "store.scriptTag:read",
+      "POST": "store.scriptTag:write",
+      "PUT": "store.scriptTag:write",
+      "DELETE": "store.scriptTag:write"
+    }
+  },
+  "setting": {
+    "endpoint": "settings",
+    "methods": {
+      "GET": "store.setting:read"
+    }
+  },
+  "shipping_lane": {
+    "endpoint": "shippingLanes",
+    "methods": {
+      "GET": "shipping.shippingMethod:read",
+      "POST": "shipping.shippingMethod:write",
+      "PUT": "shipping.shippingMethod:write",
+      "DELETE": "shipping.shippingMethod:write"
+    }
+  },
+  "shipping_mode_description": {
+    "endpoint": "shippingModeDescriptions",
+    "methods": {
+      "GET": "shipping.shippingMethod:read",
+      "POST": "shipping.shippingMethod:write",
+      "PUT": "shipping.shippingMethod:write",
+      "DELETE": "shipping.shippingMethod:write"
+    }
+  },
+  "shipping_mode_extend": {
+    "endpoint": "shippingModeExtend",
+    "methods": {
+      "GET": "shipping.shippingMethod:read",
+      "POST": "shipping.shippingMethod:write",
+      "PUT": "shipping.shippingMethod:write",
+      "DELETE": "shipping.shippingMethod:write"
+    }
+  },
+  "stock_status": {
+    "endpoint": "stockStatuses",
+    "methods": {
+      "GET": "product.stockStatus:read"
+    }
+  },
+  "stock_status_description": {
+    "endpoint": "stockStatusDescriptions",
+    "methods": {
+      "GET": "product.stockStatus:read"
+    }
+  },
+  "tax_class": {
+    "endpoint": "taxClasses",
+    "methods": {
+      "GET": "taxClass.taxClass:read"
+    }
+  },
+  "tax_class_extend": {
+    "endpoint": "taxClassExtend",
+    "methods": {
+      "GET": "taxClass.taxClass:read"
+    }
+  },
+  "tax_rate": {
+    "endpoint": "taxRates",
+    "methods": {
+      "GET": "taxClass.taxClass:read"
+    }
+  },
+  "text_attribute": {
+    "endpoint": "textAttributes",
+    "methods": {
+      "GET": "product.attribute:read",
+      "POST": "product.attribute:write",
+      "PUT": "product.attribute:write",
+      "DELETE": "product.attribute:write"
+    }
+  },
+  "text_attribute_value": {
+    "endpoint": "textAttributeValues",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "text_attribute_value_description": {
+    "endpoint": "textAttributeValueDescriptions",
+    "methods": {
+      "GET": "product.product:read",
+      "POST": "product.product:write",
+      "PUT": "product.product:write",
+      "DELETE": "product.product:write"
+    }
+  },
+  "url_alias": {
+    "endpoint": "urlAliases",
+    "methods": {
+      "GET": "store.urlAlias:read",
+      "POST": "store.urlAlias:write",
+      "PUT": "store.urlAlias:write",
+      "DELETE": "store.urlAlias:write"
+    }
+  },
+  "webhook": {
+    "endpoint": "webhooks",
+    "methods": {
+      "GET": "store.webhook:read",
+      "POST": "store.webhook:write",
+      "PUT": "store.webhook:write",
+      "DELETE": "store.webhook:write"
+    }
+  },
+  "weight_class": {
+    "endpoint": "weightClasses",
+    "methods": {
+      "GET": "localization.weightUnit:read"
+    }
+  },
+  "weight_class_description": {
+    "endpoint": "weightClassDescriptions",
+    "methods": {
+      "GET": "localization.weightUnit:read"
+    }
+  },
+  "zone": {
+    "endpoint": "zones",
+    "methods": {
+      "GET": "localization.location:read"
+    }
+  }
+}

@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'url_alias'" :lang="'en'"/>
 
+<ResourceScopes :resource="'url_alias'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
