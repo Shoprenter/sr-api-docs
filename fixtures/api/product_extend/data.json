@@ -679,7 +679,14 @@
             "description": {
                 "en": "Used for deletion."
             },
-            "parameters": [],
+            "parameters": [
+                {
+                    "name": "sku",
+                    "description": {
+                        "en": "Product SKU. It is used to identify the product to be deleted. If a product with the specified SKU does not exist, an error is returned."
+                    }
+                }
+            ],
             "example": {
                 "url": "\/productExtend\/cHJvZHVjdC1wcm9kdWN0X2lkPTUw",
                 "statusCode": "204 or 404"
