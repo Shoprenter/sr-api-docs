@@ -90,7 +90,7 @@ Once you have your credentials — a client identifier and a client secret — y
 
 To make authenticated requests to the API using an access token:
 
-- Use the API2 base URL for the specific shop:  
+- Use the API2 URL for the specific shop:  
   `https://{shopName}.api2.myshoprenter.hu/api/`
 
 - Include the access token in the `Authorization` header of each request, using the Bearer scheme:
@@ -100,3 +100,55 @@ To make authenticated requests to the API using an access token:
   ```
 
 Make sure to replace `{shopName}` with the actual shop name.
+
+
+## Authentication Migration Guide
+
+- Implement code to [obtain an access token](./12_acquiring_an_access_token.md#acquiring-an-access-token) for the shop's API using the client credentials grant.
+- In all API requests:
+  - Change the HTTP `Authorization` request header to use the `Bearer` scheme with the access token instead of `Basic`
+  - Change the request url to the new API2 version
+- Implement code to detect when the token has expired and to request a new one before making further API calls.
+
+### Examples
+
+#### Token Acquisition Request
+```bash
+curl -X POST "https://oauth.app.shoprenter.net/[shopName]/app/token" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "grant_type": "client_credentials",
+    "client_id": "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET"
+  }'
+
+```
+
+#### API Request **Before** Migration (Basic scheme)
+```bash
+curl https://[shopName].api.myshoprenter.hu/products \
+  -H "Authorization: Basic BASE64(USERNAME:PASSWORD)"
+```
+
+#### API Request **After** Migration (Bearer scheme with access token and API2 url)
+```bash
+curl https://[shopName].api2.myshoprenter.hu/api/products \
+  -H "Authorization: Bearer YOUR_ACCESS_TOKEN"
+```
+
+#### Decode the access token to check the granted scopes or the expiry timestamp
+
+PHP
+```php
+list($header, $payload, $signature) = explode('.', $jwt);
+$decodedPayload = json_decode(base64_decode(strtr($payload, '-_', '+/')), true);
+```
+
+JavaScript
+```javascript
+const decodedPayload = JSON.parse(atob(jwt.split('.')[1].replace(/-/g, '+').replace(/_/g, '/')));
+```
+
+---
+
+
