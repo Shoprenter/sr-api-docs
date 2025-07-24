@@ -1,6 +1,6 @@
 # API changelog
 
-#### 2025.07.25
+#### 2025.07.24
 We are introducing OAuth2 Authentication for enhanced API security and flexibility.
 
 **New documentation available:**
