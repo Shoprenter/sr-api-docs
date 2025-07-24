@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'shipping_lane'" :lang="'en'"/>
 
+<ResourceScopes :resource="'shipping_lane'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

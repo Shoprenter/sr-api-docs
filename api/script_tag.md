@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'script_tag'" :lang="'en'"/>
 
+<ResourceScopes :resource="'script_tag'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

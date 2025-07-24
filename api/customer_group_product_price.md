@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'customer_group_product_price'" :lang="'en'"/>
 
+<ResourceScopes :resource="'customer_group_product_price'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)

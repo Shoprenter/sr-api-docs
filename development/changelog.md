@@ -1,5 +1,15 @@
 # API changelog
 
+#### 2025.07.24
+We are introducing OAuth2 Authentication for enhanced API security and flexibility.
+
+**New documentation available:**
+- [**Guide for custom shop API client credentials**](api/10_custom_api_clients.md) - Learn how shop owners can generate their own API clients
+- [**Required scopes for each API endpoint**](/api/address.md) - Every API endpoint now displays the required scopes for each request method
+- [**Complete API scopes overview**](api/11_scopes.md) - Comprehensive list of all scopes across all endpoints
+- [**Acquiring access tokens**](api/12_acquiring_an_access_token.md) - Step-by-step guide for obtaining OAuth2 access tokens
+- [**Authentication migration guide**](api/12_acquiring_an_access_token.md#authentication-migration-guide) - Instructions for migrating from legacy authentication to OAuth2
+
 #### 2025.05.28
 A change has been made to the [Order Product Resource](../api/order_product.md):
 

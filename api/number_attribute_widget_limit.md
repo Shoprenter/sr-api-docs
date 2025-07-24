@@ -4,6 +4,8 @@
 
 <ResourceProperties :resource="'number_attribute_widget_limit'" :lang="'en'"/>
 
+<ResourceScopes :resource="'number_attribute_widget_limit'"/>
+
 ## Endpoints
 
 [//]: <> (GET ENDPOINT)
