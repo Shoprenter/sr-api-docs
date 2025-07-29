@@ -1,0 +1,13 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==",
+    "id": "b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==",
+    "innerId": "1",
+    "comment": "A comment for the order history",
+    "dateAdded": "2011-01-04 10:00:00",
+    "order": {
+        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+    },
+    "orderStatus": {
+        "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+    }
+}
