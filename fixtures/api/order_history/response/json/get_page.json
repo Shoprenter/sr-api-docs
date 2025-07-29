@@ -1,0 +1,44 @@
+{
+    "href": "http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=0&limit=2",
+    "page": 0,
+    "pageCount": 13,
+    "limit": 2,
+    "first": {
+        "href": "http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=0&limit=2"
+    },
+    "previous": null,
+    "next": {
+        "href": "http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=1&limit=2"
+    },
+    "last": {
+        "href": "http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=12&limit=2"
+    },
+    "items": [
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==",
+            "id": "b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==",
+            "innerId": "1",
+            "comment": "",
+            "dateAdded": "2011-01-04 10:00:00",
+            "order": {
+                "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+            },
+            "orderStatus": {
+                "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+            }
+        },
+        {
+            "href": "http://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9Mg==",
+            "id": "b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9Mg==",
+            "innerId": "2",
+            "comment": "",
+            "dateAdded": "2011-08-25 10:00:00",
+            "order": {
+                "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+            },
+            "orderStatus": {
+                "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTI="
+            }
+        }
+    ]
+}

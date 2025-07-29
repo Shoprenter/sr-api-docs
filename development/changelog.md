@@ -1,5 +1,9 @@
 # API changelog
 
+#### 2025.08.06
+A new API Resource [OrderHistories](../api/order_history.md) has been added.
+This resource allows you to retrieve the status change history of orders.
+
 #### 2025.07.24
 We are introducing OAuth2 Authentication for enhanced API security and flexibility.
 

@@ -388,6 +388,12 @@
       "GET": "order.order:read"
     }
   },
+  "order_history": {
+    "endpoint": "orderHistories",
+    "methods": {
+      "GET": "order.order:read"
+    }
+  },
   "order_invoice": {
     "endpoint": "orderInvoices",
     "methods": {
