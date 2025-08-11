@@ -1,0 +1,107 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "Order history identifier."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "innerId",
+            "description": {
+                "en": "Order history internal identifier."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "comment",
+            "description": {
+                "en": "Order history comment."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "dateAdded",
+            "description": {
+                "en": "Added date."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "order",
+            "description": {
+                "en": "Link to the order."
+            },
+            "required": false,
+            "readonly": true
+        },
+        {
+            "name": "orderStatus",
+            "description": {
+                "en": "Link to the order status."
+            },
+            "required": false,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderHistories\/order history id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orderHistories\/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "\/orderHistories"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                },
+                {
+                    "name": "orderId",
+                    "description": {
+                        "en": "Search parameter. Order identifier."
+                    }
+                }
+            ],
+            "example": {
+                "url": "\/orderHistories?full=1&page=0&limit=1",
+                "statusCode": "200"
+            }
+        }
+    }
+}

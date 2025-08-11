@@ -1,0 +1,25 @@
+<response>
+    <href>
+        <![CDATA[http://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9Mg==]]>
+    </href>
+    <id>
+        <![CDATA[b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9Mg==]]>
+    </id>
+    <innerId>
+        <![CDATA[2]]>
+    </innerId>
+    <comment/>
+    <dateAdded>
+        <![CDATA[2011-08-25 10:00:00]]>
+    </dateAdded>
+    <order>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]>
+        </href>
+    </order>
+    <orderStatus>
+        <href>
+            <![CDATA[http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTI=]]>
+        </href>
+    </orderStatus>
+</response>
