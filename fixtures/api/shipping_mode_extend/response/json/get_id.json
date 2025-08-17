@@ -4,6 +4,7 @@
     "innerId": "84",
     "sortOrder": "3",
     "enabled": "0",
+    "type": "WSESHIP",
     "costCalculationBy": "WEIGHT",
     "freeShippingFrom": "0.0000",
     "shippingType": "PERSONAL_RECEIPT",
