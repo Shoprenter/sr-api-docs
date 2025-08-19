@@ -233,36 +233,36 @@
             "readonly": true
         },
         {
-          "name": "originalPriceCurrency",
-          "description": {
-            "en": "The original net price of the product, converted to the order currency."
-          },
-          "required": false,
-          "readonly": true
+            "name": "originalPriceCurrency",
+            "description": {
+              "en": "The original net price of the product, converted to the order currency."
+            },
+            "required": false,
+            "readonly": true
         },
         {
-          "name": "priceCurrency",
-          "description": {
-            "en": "The net price of the product, converted to the order currency."
-          },
-          "required": false,
-          "readonly": true
+            "name": "priceCurrency",
+            "description": {
+              "en": "The net price of the product, converted to the order currency."
+            },
+            "required": false,
+            "readonly": true
         },
         {
-          "name": "grossPriceCurrency",
-          "description": {
-            "en": "The gross price of the product, converted to the order currency."
-          },
-          "required": false,
-          "readonly": true
+            "name": "grossPriceCurrency",
+            "description": {
+              "en": "The gross price of the product, converted to the order currency."
+            },
+            "required": false,
+            "readonly": true
         },
         {
-          "name": "originalGrossPriceCurrency",
-          "description": {
-            "en": "The original gross price of the product, converted to the order currency."
-          },
-          "required": false,
-          "readonly": true
+            "name": "originalGrossPriceCurrency",
+            "description": {
+              "en": "The original gross price of the product, converted to the order currency."
+            },
+            "required": false,
+            "readonly": true
         }
     ],
     "endpoints": {
