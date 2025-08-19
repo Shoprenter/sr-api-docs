@@ -1,5 +1,14 @@
 # API changelog
 
+### 2025.08.14
+We’ve expanded the orderProducts object with four new fields:
+- originalPriceCurrency
+- priceCurrency
+- grossPriceCurrency
+- originalGrossPriceCurrency
+
+This allows product base prices to be correctly multiplied by exchange rates when converting between currencies.
+
 #### 2025.08.06
 A new API Resource [OrderHistories](../api/order_history.md) has been added.
 This resource allows you to retrieve the status change history of orders.
