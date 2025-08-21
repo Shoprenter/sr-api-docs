@@ -8,8 +8,12 @@
     <modelNumber/>
     <originalPrice><![CDATA[2400.0000]]></originalPrice>
     <price><![CDATA[2400.0000]]></price>
-    <grossPrice><![CDATA[2400.0000]]></grossPrice>
-    <originalGrossPrice><![CDATA[2400.0000]]></originalGrossPrice>
+    <grossPrice><![CDATA[3000.0000]]></grossPrice>
+    <originalGrossPrice><![CDATA[3000.0000]]></originalGrossPrice>
+    <originalPriceCurrency><![CDATA[2400.0000]]></originalPriceCurrency>
+    <priceCurrency><![CDATA[2400.0000]]></priceCurrency>
+    <grossPriceCurrency><![CDATA[3000.0000]]></grossPriceCurrency>
+    <originalGrossPriceCurrency><![CDATA[3000.0000]]></originalGrossPriceCurrency>
     <total><![CDATA[2400.0000]]></total>
     <taxRate><![CDATA[25.0000]]></taxRate>
     <stock1><![CDATA[0]]></stock1>
