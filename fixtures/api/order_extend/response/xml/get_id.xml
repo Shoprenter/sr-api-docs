@@ -575,6 +575,18 @@
         <taxRate>
             <![CDATA[27.0000]]>
         </taxRate>
+        <originalPriceCurrency>
+            <![CDATA[400.0000]]>
+        </originalPriceCurrency>
+        <priceCurrency>
+            <![CDATA[400.0000]]>
+        </priceCurrency>
+        <grossPriceCurrency>
+            <![CDATA[508.0000]]>
+        </grossPriceCurrency>
+        <originalGrossPriceCurrency>
+            <![CDATA[508.0000]]>
+        </originalGrossPriceCurrency>
         <stock1>
             <![CDATA[1]]>
         </stock1>
