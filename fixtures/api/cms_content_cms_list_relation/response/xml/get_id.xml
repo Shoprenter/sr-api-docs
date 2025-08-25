@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <href>https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE=</href>
+    <id>Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE=</id>
+    <cmsContent>
+        <href>https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNQ==</href>
+    </cmsContent>
+    <cmsContentList>
+        <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+    </cmsContentList>
+</response>

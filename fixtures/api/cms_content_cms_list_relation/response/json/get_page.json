@@ -1,0 +1,37 @@
+{
+    "items": [
+        {
+            "href": "https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE=",
+            "id": "Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE=",
+            "cmsContent": {
+                "href": "https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNQ=="
+            },
+            "cmsContentList": {
+                "href": "https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x"
+            }
+        },
+        {
+            "href": "https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsaXN0X2lkPTE=",
+            "id": "Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsaXN0X2lkPTE=",
+            "cmsContent": {
+                "href": "https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNg=="
+            },
+            "cmsContentList": {
+                "href": "https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x"
+            }
+        },
+        {
+            "href": "https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNyZsaXN0X2lkPTI=",
+            "id": "Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNyZsaXN0X2lkPTI=",
+            "cmsContent": {
+                "href": "https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNw=="
+            },
+            "cmsContentList": {
+                "href": "https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0y"
+            }
+        }
+    ],
+    "limit": 25,
+    "page": 0,
+    "total": 3
+}

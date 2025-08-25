@@ -1,0 +1,23 @@
+{
+    "enabled": "1",
+    "showIntroText": "1",
+    "showAuthorName": "0",
+    "showDateCreated": "1",
+    "showIntroPicture": "1",
+    "itemsPerPage": "10",
+    "maxItems": "50",
+    "orderBy": "date_desc",
+    "customCssClass": "custom-list-style",
+    "cmsContentListDescriptions": [
+        {
+            "title": "Sample List Title",
+            "name": "sample-list-name",
+            "metaDescription": "This is a sample meta description for SEO purposes",
+            "keywords": "cms, content, list, sample",
+            "description": "This is a sample CMS content list description",
+            "language": {
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+            }
+        }
+    ]
+}

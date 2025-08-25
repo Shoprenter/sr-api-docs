@@ -3,143 +3,87 @@
         {
             "name": "id",
             "description": {
-                "en": "Text content identifier. It is used to change the OuterID."
+                "en": "CMS Content List description identifier. It is used to change the OuterID."
             },
             "required": false,
             "readonly": false
         },
         {
-            "name": "innerId",
+            "name": "name",
             "description": {
-                "en": "Text content internal identifier."
-            },
-            "required": false,
-            "readonly": true
-        },
-        {
-            "name": "sortOrder",
-            "description": {
-                "en": "Order relative to other textual content."
+                "en": "CMS Content List name."
             },
             "required": false,
             "readonly": false
         },
         {
-            "name": "enabled",
+            "name": "title",
             "description": {
-                "en": "Is it enabled?"
+                "en": "CMS Content List title."
             },
             "required": false,
             "readonly": false
         },
         {
-            "name": "author",
+            "name": "metaDescription",
             "description": {
-                "en": "The name of the author."
+                "en": "CMS Content List meta description for SEO."
             },
             "required": false,
             "readonly": false
         },
         {
-            "name": "showIntroText",
+            "name": "keywords",
             "description": {
-                "en": "Show intro text."
+                "en": "CMS Content List keywords for SEO."
             },
             "required": false,
             "readonly": false
         },
         {
-            "name": "introPicturePath",
+            "name": "description",
             "description": {
-                "en": "Intro picture path."
+                "en": "CMS Content List description.<br>In case of adding javascript, it must use a <strong>type=\"text/javascript\"</strong> attribute in the script tag."
             },
             "required": false,
             "readonly": false
         },
         {
-            "name": "showAuthorName",
+            "name": "language",
             "description": {
-                "en": "Show author name."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "showDateCreated",
-            "description": {
-                "en": "Show date created."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "datePublished",
-            "description": {
-                "en": "The date when published. (Y-m-d\\TH:i:s)"
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "dateCreated",
-            "description": {
-                "en": "The date when created. (Y-m-d\\TH:i:s)"
-            },
-            "required": false,
-            "readonly": true
-        },
-        {
-            "name": "dateUpdated",
-            "description": {
-                "en": "The date when updated. (Y-m-d\\TH:i:s)"
-            },
-            "required": false,
-            "readonly": true
-        },
-        {
-            "name": "cmsContentDescriptions",
-            "description": {
-                "en": "\n                        Links of the descriptions belong to the text content.<br>\n                        In case of adding javascript, it must use a <strong>type=\"text/javascript\"</strong> attribute in the script tag.\n                    "
+                "en": "Language resource link."
             },
             "required": true,
-            "readonly": false
-        },
-        {
-            "name": "cmsContentTags",
-            "description": {
-                "en": "Given as an array, text content label data in several languages."
-            },
-            "required": false,
             "readonly": true
         },
         {
-            "name": "cmsContentCmsListRelations",
+            "name": "cmsContentList",
             "description": {
-                "en": "Links to CMS Content Lists that this content belongs to."
+                "en": "CMS Content List internal identifier."
             },
-            "required": false,
-            "readonly": false
+            "required": true,
+            "readonly": true
         }
     ],
     "endpoints": {
         "get": {
             "method": "GET",
             "url": {
-                "en": "\/cmsContentExtend\/text content id"
+                "en": "/cmsContentListDescriptions/cms content list description id"
             },
             "description": {
                 "en": "Used to retrieve a specific item."
             },
             "parameters": [],
             "example": {
-                "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
+                "url": "/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
                 "statusCode": "200"
             }
         },
         "getCollection": {
             "method": "GET",
             "url": {
-                "en": "\/cmsContentExtend"
+                "en": "/cmsContentListDescriptions"
             },
             "description": {
                 "en": "Used to retrieve a collection of elements."
@@ -164,56 +108,56 @@
                     }
                 },
                 {
-                    "name": "innerId",
+                    "name": "cmsContentListId",
                     "description": {
-                        "en": "Search parameter. Text content internal identifier."
+                        "en": "Filter by CMS Content List ID."
                     }
                 }
             ],
             "example": {
-                "url": "\/cmsContentExtend?full=1&page=0&limit=25",
+                "url": "/cmsContentListDescriptions?full=1&page=0&limit=25",
                 "statusCode": "200"
             }
         },
         "post": {
             "method": "POST",
             "url": {
-                "en": "\/cmsContentExtend[\/text content id]"
+                "en": "/cmsContentListDescriptions[/cms content list description id]"
             },
             "description": {
                 "en": "It is used for both creation and modification."
             },
             "parameters": [],
             "example": {
-                "url": "\/cmsContentExtend",
+                "url": "/cmsContentListDescriptions",
                 "statusCode": "200 or 201"
             }
         },
         "put": {
             "method": "PUT",
             "url": {
-                "en": "\/cmsContentExtend\/text content id"
+                "en": "/cmsContentListDescriptions/cms content list description id"
             },
             "description": {
                 "en": "It is used for modification only."
             },
             "parameters": [],
             "example": {
-                "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
+                "url": "/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
                 "statusCode": "200 or 201"
             }
         },
         "delete": {
             "method": "DELETE",
             "url": {
-                "en": "\/cmsContentExtend\/text content id"
+                "en": "/cmsContentListDescriptions/cms content list description id"
             },
             "description": {
                 "en": "Used for deletion."
             },
             "parameters": [],
             "example": {
-                "url": "\/cmsContentExtend\/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOA==",
+                "url": "/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
                 "statusCode": "204 or 404"
             }
         }
