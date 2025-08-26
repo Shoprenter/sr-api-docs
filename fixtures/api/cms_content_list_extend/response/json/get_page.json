@@ -11,8 +11,6 @@
             "showIntroPicture": "1",
             "itemsPerPage": "10",
             "maxItems": "50",
-            "orderBy": "date_desc",
-            "customCssClass": "custom-list-style",
             "cmsContentListDescriptions": [
                 {
                     "href": "https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
@@ -20,7 +18,6 @@
                     "title": "Sample List Title",
                     "name": "sample-list-name",
                     "metaDescription": "This is a sample meta description for SEO purposes",
-                    "keywords": "cms, content, list, sample",
                     "description": "This is a sample CMS content list description",
                     "cmsContentList": {
                         "href": "https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x"
@@ -47,8 +44,6 @@
             "showIntroPicture": "0",
             "itemsPerPage": "20",
             "maxItems": "100",
-            "orderBy": "title_asc",
-            "customCssClass": "another-list-style",
             "cmsContentListDescriptions": [
                 {
                     "href": "https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTImbGFuZ3VhZ2VfaWQ9MQ=="

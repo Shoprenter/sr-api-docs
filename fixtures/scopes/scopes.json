@@ -89,15 +89,6 @@
       "DELETE": "cms.content:write"
     }
   },
-  "cms_content_list": {
-    "endpoint": "cmsContentLists",
-    "methods": {
-      "GET": "cms.content:read",
-      "POST": "cms.content:write",
-      "PUT": "cms.content:write",
-      "DELETE": "cms.content:write"
-    }
-  },
   "cms_content_list_description": {
     "endpoint": "cmsContentListDescriptions",
     "methods": {

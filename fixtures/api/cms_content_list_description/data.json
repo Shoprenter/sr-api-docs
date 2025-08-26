@@ -33,14 +33,6 @@
             "readonly": false
         },
         {
-            "name": "keywords",
-            "description": {
-                "en": "CMS Content List keywords for SEO."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
             "name": "description",
             "description": {
                 "en": "CMS Content List description.<br>In case of adding javascript, it must use a <strong>type=\"text/javascript\"</strong> attribute in the script tag."

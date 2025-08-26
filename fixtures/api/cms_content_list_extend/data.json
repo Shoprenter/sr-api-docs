@@ -73,22 +73,6 @@
             "readonly": false
         },
         {
-            "name": "orderBy",
-            "description": {
-                "en": "Order of items. Possible values: date_asc, date_desc, title_asc, title_desc."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
-            "name": "customCssClass",
-            "description": {
-                "en": "Custom CSS class for styling."
-            },
-            "required": false,
-            "readonly": false
-        },
-        {
             "name": "cmsContentListDescriptions",
             "description": {
                 "en": "List of CMS Content List Descriptions."
@@ -102,7 +86,7 @@
                 "en": "List of CMS Content items related to this list."
             },
             "required": false,
-            "readonly": true
+            "readonly": false
         }
     ],
     "endpoints": {

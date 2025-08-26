@@ -7,7 +7,6 @@
             <title>Sample List Title</title>
             <name>sample-list-name</name>
             <metaDescription>This is a sample meta description for SEO purposes</metaDescription>
-            <keywords>cms, content, list, sample</keywords>
             <description>This is a sample CMS content list description</description>
             <cmsContentList>
                 <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
@@ -22,7 +21,6 @@
             <title>Minta lista cím</title>
             <name>minta-lista-nev</name>
             <metaDescription>Ez egy minta meta leírás SEO célokra</metaDescription>
-            <keywords>cms, tartalom, lista, minta</keywords>
             <description>Ez egy minta CMS tartalmi lista leírása</description>
             <cmsContentList>
                 <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>

@@ -5,7 +5,6 @@
     <title>Sample List Title</title>
     <name>sample-list-name</name>
     <metaDescription>This is a sample meta description for SEO purposes</metaDescription>
-    <keywords>cms, content, list, sample</keywords>
     <description>This is a sample CMS content list description</description>
     <cmsContentList>
         <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>

@@ -6,8 +6,6 @@
     "showIntroPicture": "1",
     "itemsPerPage": "10",
     "maxItems": "50",
-    "orderBy": "date_desc",
-    "customCssClass": "custom-list-style",
     "cmsContentListDescriptions": [
         {
             "title": "Sample List Title",
@@ -16,7 +14,7 @@
             "keywords": "cms, content, list, sample",
             "description": "This is a sample CMS content list description",
             "language": {
-                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "id": "bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         }
     ]
