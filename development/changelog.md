@@ -1,6 +1,14 @@
 # API changelog
 
-### 2025.08.14
+#### 2025.09.03
+We introduced a new API Resources:
+- [CmsContentListExtend](../api/cms_content_list_extend.md) - This resource can be used to manage CMS content lists.
+- [CmsContentListDescription](../api/cms_content_list_description.md) - This resource can be used to manage descriptions of CMS content lists in different languages.
+- [CmsContentListCmsContentRelation](../api/cms_content_cms_list_relation.md) - This resource can be used to manage the relationship between CMS content lists and CMS content items.
+
+We improved the [CmsContentExtend Resource](../api/cms_content_extend.md) by adding a new field: **cmsContentLists**. This field provides information about the CMS content lists associated with a specific CMS content item.
+
+#### 2025.08.14
 We’ve expanded the orderProducts object with four new fields:
 - originalPriceCurrency
 - priceCurrency
