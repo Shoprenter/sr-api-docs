@@ -1,0 +1,9 @@
+{
+    "enabled": "1",
+    "showIntroText": "1",
+    "showAuthorName": "1",
+    "showDateCreated": "1",
+    "showIntroPicture": "0",
+    "itemsPerPage": "20",
+    "maxItems": "100"
+}

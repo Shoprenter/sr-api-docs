@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <items>
+        <item>
+            <href>https://shopname.api.myshoprenter.hu/cmsContentListExtend/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+            <id>Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</id>
+            <innerId>1</innerId>
+            <enabled>1</enabled>
+            <showIntroText>1</showIntroText>
+            <showAuthorName>0</showAuthorName>
+            <showDateCreated>1</showDateCreated>
+            <showIntroPicture>1</showIntroPicture>
+            <itemsPerPage>10</itemsPerPage>
+            <maxItems>50</maxItems>
+            <cmsContentListDescriptions>
+                <cmsContentListDescription>
+                    <href>https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</href>
+                    <id>Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</id>
+                    <title>Sample List Title</title>
+                    <n>sample-list-name</n>
+                    <metaDescription>This is a sample meta description for SEO purposes</metaDescription>
+                    <description>This is a sample CMS content list description</description>
+                    <cmsContentList>
+                        <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+                    </cmsContentList>
+                    <language>
+                        <href>https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==</href>
+                    </language>
+                </cmsContentListDescription>
+            </cmsContentListDescriptions>
+            <cmsContentCmsListRelations>
+                <cmsContentCmsListRelation>
+                    <href>https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE=</href>
+                </cmsContentCmsListRelation>
+            </cmsContentCmsListRelations>
+        </item>
+        <item>
+            <href>https://shopname.api.myshoprenter.hu/cmsContentListExtend/Y21zQ29udGVudExpc3QtbGlzdF9pZD0y</href>
+            <id>Y21zQ29udGVudExpc3QtbGlzdF9pZD0y</id>
+            <innerId>2</innerId>
+            <enabled>1</enabled>
+            <showIntroText>0</showIntroText>
+            <showAuthorName>1</showAuthorName>
+            <showDateCreated>0</showDateCreated>
+            <showIntroPicture>0</showIntroPicture>
+            <itemsPerPage>20</itemsPerPage>
+            <maxItems>100</maxItems>
+            <cmsContentListDescriptions>
+                <cmsContentListDescription>
+                    <href>https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTImbGFuZ3VhZ2VfaWQ9MQ==</href>
+                </cmsContentListDescription>
+            </cmsContentListDescriptions>
+            <cmsContentCmsListRelations/>
+        </item>
+    </items>
+    <limit>25</limit>
+    <page>0</page>
+    <total>2</total>
+</response>

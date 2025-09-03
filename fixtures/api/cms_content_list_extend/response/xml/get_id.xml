@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <href>https://shopname.api.myshoprenter.hu/cmsContentListExtend/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+    <id>Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</id>
+    <innerId>1</innerId>
+    <enabled>1</enabled>
+    <showIntroText>1</showIntroText>
+    <showAuthorName>0</showAuthorName>
+    <showDateCreated>1</showDateCreated>
+    <showIntroPicture>1</showIntroPicture>
+    <itemsPerPage>10</itemsPerPage>
+    <maxItems>50</maxItems>
+    <cmsContentListDescriptions>
+        <cmsContentListDescription>
+            <href>https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</href>
+            <id>Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</id>
+            <title>Sample List Title</title>
+            <n>sample-list-name</n>
+            <metaDescription>This is a sample meta description for SEO purposes</metaDescription>
+            <description>This is a sample CMS content list description</description>
+            <cmsContentList>
+                <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+            </cmsContentList>
+            <language>
+                <href>https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==</href>
+            </language>
+        </cmsContentListDescription>
+    </cmsContentListDescriptions>
+    <cmsContentCmsListRelations>
+        <cmsContentCmsListRelation>
+            <href>https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE=</href>
+            <id>Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE=</id>
+            <cmsContent>
+                <href>https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0xNQ==</href>
+            </cmsContent>
+            <cmsContentList>
+                <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+            </cmsContentList>
+        </cmsContentCmsListRelation>
+    </cmsContentCmsListRelations>
+</response>

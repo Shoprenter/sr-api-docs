@@ -75,4 +75,24 @@
             </href>
         </language>
     </cmsContentTags>
+    <cmsContentCmsListRelations>
+        <cmsContentCmsListRelation>
+            <href>
+                <![CDATA[https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0zOSZsaXN0X2lkPTE=]]>
+            </href>
+            <id>
+                <![CDATA[Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0zOSZsaXN0X2lkPTE=]]>
+            </id>
+            <cmsContent>
+                <href>
+                    <![CDATA[https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0zOQ==]]>
+                </href>
+            </cmsContent>
+            <cmsContentList>
+                <href>
+                    <![CDATA[https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x]]>
+                </href>
+            </cmsContentList>
+        </cmsContentCmsListRelation>
+    </cmsContentCmsListRelations>
 </response>

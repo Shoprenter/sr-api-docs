@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <items>
+        <item>
+            <href>https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</href>
+            <id>Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</id>
+            <title>Sample List Title</title>
+            <name>sample-list-name</name>
+            <metaDescription>This is a sample meta description for SEO purposes</metaDescription>
+            <description>This is a sample CMS content list description</description>
+            <cmsContentList>
+                <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+            </cmsContentList>
+            <language>
+                <href>https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==</href>
+            </language>
+        </item>
+        <item>
+            <href>https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9Mg==</href>
+            <id>Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9Mg==</id>
+            <title>Minta lista cím</title>
+            <name>minta-lista-nev</name>
+            <metaDescription>Ez egy minta meta leírás SEO célokra</metaDescription>
+            <description>Ez egy minta CMS tartalmi lista leírása</description>
+            <cmsContentList>
+                <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+            </cmsContentList>
+            <language>
+                <href>https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg==</href>
+            </language>
+        </item>
+    </items>
+    <limit>25</limit>
+    <page>0</page>
+    <total>2</total>
+</response>

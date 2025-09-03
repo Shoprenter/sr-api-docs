@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <href>https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</href>
+    <id>Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==</id>
+    <title>Sample List Title</title>
+    <name>sample-list-name</name>
+    <metaDescription>This is a sample meta description for SEO purposes</metaDescription>
+    <description>This is a sample CMS content list description</description>
+    <cmsContentList>
+        <href>https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x</href>
+    </cmsContentList>
+    <language>
+        <href>https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==</href>
+    </language>
+</response>

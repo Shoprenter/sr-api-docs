@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "href": "https://shopname.api.myshoprenter.hu/cmsContentListExtend/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x",
+            "id": "Y21zQ29udGVudExpc3QtbGlzdF9pZD0x",
+            "innerId": "1",
+            "enabled": "1",
+            "showIntroText": "1",
+            "showAuthorName": "0",
+            "showDateCreated": "1",
+            "showIntroPicture": "1",
+            "itemsPerPage": "10",
+            "maxItems": "50",
+            "cmsContentListDescriptions": [
+                {
+                    "href": "https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
+                    "id": "Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
+                    "title": "Sample List Title",
+                    "name": "sample-list-name",
+                    "metaDescription": "This is a sample meta description for SEO purposes",
+                    "description": "This is a sample CMS content list description",
+                    "cmsContentList": {
+                        "href": "https://shopname.api.myshoprenter.hu/cmsContentLists/Y21zQ29udGVudExpc3QtbGlzdF9pZD0x"
+                    },
+                    "language": {
+                        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                    }
+                }
+            ],
+            "cmsContentCmsListRelations": [
+                {
+                    "href": "https://shopname.api.myshoprenter.hu/cmsContentCmsListRelations/Y21zQ29udGVudENtc0xpc3RSZWxhdGlvbi1pbmZvcm1hdGlvbl9pZD0xNSZsaXN0X2lkPTE="
+                }
+            ]
+        },
+        {
+            "href": "https://shopname.api.myshoprenter.hu/cmsContentListExtend/Y21zQ29udGVudExpc3QtbGlzdF9pZD0y",
+            "id": "Y21zQ29udGVudExpc3QtbGlzdF9pZD0y",
+            "innerId": "2",
+            "enabled": "1",
+            "showIntroText": "0",
+            "showAuthorName": "1",
+            "showDateCreated": "0",
+            "showIntroPicture": "0",
+            "itemsPerPage": "20",
+            "maxItems": "100",
+            "cmsContentListDescriptions": [
+                {
+                    "href": "https://shopname.api.myshoprenter.hu/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTImbGFuZ3VhZ2VfaWQ9MQ=="
+                }
+            ],
+            "cmsContentCmsListRelations": []
+        }
+    ],
+    "limit": 25,
+    "page": 0,
+    "total": 2
+}

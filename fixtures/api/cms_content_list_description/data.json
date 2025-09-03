@@ -1,0 +1,157 @@
+{
+    "properties": [
+        {
+            "name": "id",
+            "description": {
+                "en": "CMS Content List description identifier. It is used to change the OuterID."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "name",
+            "description": {
+                "en": "CMS Content List name."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "title",
+            "description": {
+                "en": "CMS Content List title."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "metaDescription",
+            "description": {
+                "en": "CMS Content List meta description for SEO."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "description",
+            "description": {
+                "en": "CMS Content List description.<br>In case of adding javascript, it must use a <strong>type=\"text/javascript\"</strong> attribute in the script tag."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
+            "name": "language",
+            "description": {
+                "en": "Language resource link."
+            },
+            "required": true,
+            "readonly": true
+        },
+        {
+            "name": "cmsContentList",
+            "description": {
+                "en": "CMS Content List internal identifier."
+            },
+            "required": true,
+            "readonly": true
+        }
+    ],
+    "endpoints": {
+        "get": {
+            "method": "GET",
+            "url": {
+                "en": "/cmsContentListDescriptions/cms content list description id"
+            },
+            "description": {
+                "en": "Used to retrieve a specific item."
+            },
+            "parameters": [],
+            "example": {
+                "url": "/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
+                "statusCode": "200"
+            }
+        },
+        "getCollection": {
+            "method": "GET",
+            "url": {
+                "en": "/cmsContentListDescriptions"
+            },
+            "description": {
+                "en": "Used to retrieve a collection of elements."
+            },
+            "parameters": [
+                {
+                    "name": "page",
+                    "description": {
+                        "en": "The serial number of the given page."
+                    }
+                },
+                {
+                    "name": "limit",
+                    "description": {
+                        "en": "Number of items displayed on a page. Maximum 200."
+                    }
+                },
+                {
+                    "name": "full",
+                    "description": {
+                        "en": "Whether the values of the first-level fields should be expanded. Value: 1 (yes) or 0 (no). Default: 0."
+                    }
+                },
+                {
+                    "name": "cmsContentListId",
+                    "description": {
+                        "en": "Filter by CMS Content List ID."
+                    }
+                }
+            ],
+            "example": {
+                "url": "/cmsContentListDescriptions?full=1&page=0&limit=25",
+                "statusCode": "200"
+            }
+        },
+        "post": {
+            "method": "POST",
+            "url": {
+                "en": "/cmsContentListDescriptions[/cms content list description id]"
+            },
+            "description": {
+                "en": "It is used for both creation and modification."
+            },
+            "parameters": [],
+            "example": {
+                "url": "/cmsContentListDescriptions",
+                "statusCode": "200 or 201"
+            }
+        },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "en": "/cmsContentListDescriptions/cms content list description id"
+            },
+            "description": {
+                "en": "It is used for modification only."
+            },
+            "parameters": [],
+            "example": {
+                "url": "/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
+                "statusCode": "200 or 201"
+            }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "/cmsContentListDescriptions/cms content list description id"
+            },
+            "description": {
+                "en": "Used for deletion."
+            },
+            "parameters": [],
+            "example": {
+                "url": "/cmsContentListDescriptions/Y21zQ29udGVudExpc3REZXNjcmlwdGlvbi1saXN0X2lkPTEmbGFuZ3VhZ2VfaWQ9MQ==",
+                "statusCode": "204 or 404"
+            }
+        }
+    }
+}
