@@ -3,7 +3,7 @@
 ## Examples for API usage
 
 - You can access the API client for PHP testing by [clicking here](https://github.com/Shoprenter/api-client).
-- Example collections of Shoprenter API. (You can find further information on the usage in the article) [Download](https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json)
+- Example collections of Shoprenter API. (You can find further information on the usage in the article) [Download](https://register.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json)
 - [Further examples](../api-examples/01_0_product_special.md)
 
 ## Use of Postman
@@ -43,7 +43,7 @@ If any further information is necessary to get started, you can use
 
 #### Importing an example collection
 
-Shoprenter prepared a collection in advance, that can be imported and used. The JSON file in question is available at the following URL: https://www.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json
+Shoprenter prepared a collection in advance, that can be imported and used. The JSON file in question is available at the following URL: https://register.shoprenter.hu/api/postman/ShoprenterAPI.postman_collection.json
 
 We can find an import button in the upper left corner in Postman, we can import the above mentioned example from a URL or even from a file with this:
 
