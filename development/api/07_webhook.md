@@ -97,7 +97,6 @@ Meaning of the fields of the sent webhook.
 |total|Net value of the order|
 |totalGross|Total gross value of the order|
 |taxPrice|Value of VAT included in the order|
-|orderHistory|Status of the order|
 |currency|Code of currency|
 |orderHistory|Status of the order|
 |orderProducts|Block of ordered products|
@@ -174,7 +173,8 @@ Sample webhook:
             "orderHistory":{  
                "status":"1",
                "statusText":"Pending",
-               "comment":""
+               "comment":"",
+               "dateAdded":"2025-12-01 20:57:40"
             },
             "orderProducts":{  
                "orderProduct":[  
