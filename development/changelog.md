@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2026.01.08
+A change has been made to the [Webhook Resource](../api/webhook.md):
+
+- A new field **orderHistory_dateAdded** has been added.
+
 #### 2025.09.03
 We introduced a new API Resources:
 - [CmsContentListExtend](../api/cms_content_list_extend.md) - This resource can be used to manage CMS content lists.
