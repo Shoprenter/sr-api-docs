@@ -1,8 +1,12 @@
 # API changelog
 
-#### 2026.01.08
+#### 2026.01.09
 A change has been made to the [Webhook Resource](../api/webhook.md):
 
+- Three new fields have been added to the "Order confirm" and "Order status change" events:
+  - **orderProduct_durableMediaDevice** - Boolean value indicating whether the ordered product is a durable media device, enabling billing systems to associate the appropriate license code.
+  - **orderProduct_gtin** - The barcode of the ordered product.
+  - **orderProduct_model** - Manufacturer's part number of the ordered product.
 - A new field **orderHistory_dateAdded** has been added.
 
 #### 2025.09.03
