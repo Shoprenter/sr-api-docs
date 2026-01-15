@@ -1,6 +1,6 @@
 # API changelog
 
-#### 2026.01.09
+#### 2026.01.15
 A change has been made to the [Webhook Resource](../api/webhook.md):
 
 - Three new fields have been added to the "Order confirm" and "Order status change" events:
@@ -8,6 +8,7 @@ A change has been made to the [Webhook Resource](../api/webhook.md):
   - **orderProduct_gtin** - The barcode of the ordered product.
   - **orderProduct_model** - Manufacturer's part number of the ordered product.
 - A new field **orderHistory_dateAdded** has been added.
+- We have expanded the events that can be added to [WebHook resource](../api/webhook.md) with an additional option: **abandoned_cart** - When a visitor abandons their cart.
 
 #### 2025.09.03
 We introduced a new API Resources:

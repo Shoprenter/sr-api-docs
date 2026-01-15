@@ -12,6 +12,7 @@ With the help of [WebHook Resource](/api/webhook.md) we can create such automati
   - **newsletter_subscribe**: When a new subscription to the newsletter occurs.
   - **newsletter_unsubscribe**: When someone unsubscribes from the newsletter.
   - **newsletter_update_subscriber**: When someone changes their data used for newsletter subscription.
+  - **abandoned_cart**: When a visitor abandons their cart.
 - **status**: Here we can enable or disable the notification. Values:
   - **0** - Disabled
   - **1** - Enabled
