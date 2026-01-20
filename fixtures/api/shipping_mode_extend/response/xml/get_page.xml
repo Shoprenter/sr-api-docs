@@ -34,6 +34,9 @@
             <enabled>
                 <![CDATA[1]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[PRICE]]>
             </costCalculationBy>
@@ -148,6 +151,9 @@
             <enabled>
                 <![CDATA[1]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[PRICE]]>
             </costCalculationBy>
@@ -368,6 +374,9 @@
             <enabled>
                 <![CDATA[1]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[PRICE]]>
             </costCalculationBy>
@@ -474,6 +483,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -713,6 +725,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -952,6 +967,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -1193,6 +1211,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -1432,6 +1453,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -1671,6 +1695,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -1910,6 +1937,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -2155,6 +2185,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -2400,6 +2433,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -2645,6 +2681,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -2890,6 +2929,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -3135,6 +3177,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -3380,6 +3425,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -3629,6 +3677,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -3878,6 +3929,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -4119,6 +4173,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -4360,6 +4417,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -4601,6 +4661,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -4850,6 +4913,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
@@ -5099,6 +5165,9 @@
             <enabled>
                 <![CDATA[1]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[PRICE]]>
             </costCalculationBy>
@@ -5340,6 +5409,9 @@
             <enabled>
                 <![CDATA[0]]>
             </enabled>
+            <type>
+                <![CDATA[WSESHIP]]>
+            </type>
             <costCalculationBy>
                 <![CDATA[WEIGHT]]>
             </costCalculationBy>
