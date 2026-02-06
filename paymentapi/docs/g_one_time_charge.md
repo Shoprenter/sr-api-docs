@@ -6,7 +6,7 @@
 |-----------------|------------------------------------------------------------------------------------------------------------------|:-------------:|:-------------------:|
 | id              | Identity                                                                                                         |               |          x          |
 | name            | Name (e.g.: Full Version, Monthly Gold package, etc.)                                                            |       x       |          x          |
-| status          | Status (see [Statuses](../docs/statuses.md))                                                                     |               |          x          |
+| status          | Status (see [Statuses](../docs/k_statuses.md))                                                                     |               |          x          |
 | price           | An object, contains:                                                                                             |               |          x          |
 |                 | **grossAmount**: Gross price                                                                                     |               |                     |
 |                 | **vatAmount**: VAT amount                                                                                        |               |                     |
