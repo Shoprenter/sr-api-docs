@@ -26,7 +26,7 @@ It is determined by two factors: the **country** registered for the store and th
 
 It may happen that in the specific store where I want to install the application in question,
 has incomplete billing data.
-So when creating [One Time](../docs/one_time_charge.md) and [Recurring Charge](../docs/recurring_charge.md), we can get an error message that the system sees missing billing data. This is error code 40019.
+So when creating [One Time](../docs/g_one_time_charge.md) and [Recurring Charge](../docs/i_recurring_charge.md), we can get an error message that the system sees missing billing data. This is error code 40019.
 
 In this case, the application must draw the attention of the store operator to replace the missing billing data in the "My Account" menu item of the admin interface.
 

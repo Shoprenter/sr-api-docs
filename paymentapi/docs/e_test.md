@@ -1,7 +1,7 @@
 # Test mode
 
 We provide an opportunity to safely test the integration of the Payment API - during its development.
-To start a payment in test mode, when creating a new payment, which can be [one-time](../docs/one_time_charge.md) or even [recurring](../docs/recurring_charge.md), the payload must contain the **test** property with a value of **true**.
+To start a payment in test mode, when creating a new payment, which can be [one-time](../docs/g_one_time_charge.md) or even [recurring](../docs/i_recurring_charge.md), the payload must contain the **test** property with a value of **true**.
 
 Example of POST data in case of recurring charge:
 
