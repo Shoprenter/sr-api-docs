@@ -444,7 +444,7 @@ the "Round" value.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescription</td>
+    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -492,7 +492,7 @@ the "Round" value.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescription</td>
+    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
