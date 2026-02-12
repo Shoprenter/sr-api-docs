@@ -19,7 +19,7 @@
         {
             "name": "event",
             "description": {
-                "en": "The event identifier subscribe for. Possible values: <ul><li>order_confirm (order confirm)</li><li>order_status_change (order status change)</li><li>newsletter_subscribe (newsletter subscribe)</li><li>newsletter_unsubscribe (newsletter unsubscribe)</li><li>newsletter_update_subscriber (newsletter subscriber data change)</li></ul>"
+                "en": "The event identifier subscribe for. Possible values: <ul><li>order_confirm (order confirm)</li><li>order_status_change (order status change)</li><li>newsletter_subscribe (newsletter subscribe)</li><li>newsletter_unsubscribe (newsletter unsubscribe)</li><li>newsletter_update_subscriber (newsletter subscriber data change)</li><li>abandoned_cart (abandoned cart)</li></ul>"
             },
             "required": true,
             "readonly": false
