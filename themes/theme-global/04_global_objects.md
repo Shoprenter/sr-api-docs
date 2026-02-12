@@ -198,6 +198,89 @@ product/product
 
 ---
 
+## language
+
+Global object for accessing language and localization information.
+
+### getActLangName() method
+
+Returns the full name of the current language.
+
+#### Szintaxis
+
+```
+language.getActLangName()
+```
+
+### getActCode() method
+
+Returns the code of the currently set language.
+
+#### Syntax
+
+```
+language.getActCode()
+```
+
+### getLanguages() method
+
+Returns the list of available languages.
+
+#### Syntax
+
+```
+language.getLanguages()
+```
+
+#### Return Value
+
+Returns an array with the below properties.
+
+<table>
+<tr>
+    <th>Property</th>
+    <th>Description</th>
+    <th>Type</th>
+</tr>
+<tr>
+    <td>language_id</td>
+    <td>Unique identifier of the language</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>name</td>
+    <td>Name of the language</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>code</td>
+    <td>Short language code (ISO-style)</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>locale</td>
+    <td>Comma-separated list of locale identifiers for the language</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>image</td>
+    <td>Full URL of the flag image representing the language</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>image_path</td>
+    <td>Relative path to the language flag image</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>image_file</td>
+    <td>Filename of the language flag image</td>
+    <td>String</td>
+</tr>
+</table>
+
+---
+
 ## routes
 
 The `routes` object is an associative array where keys are route names and values are URLs associated with those routes. Always of string type.
@@ -341,7 +424,7 @@ The shop object can be used to request general information about the online stor
 </tr>
 <tr>
     <td>currency</td>
-    <td>aReturns the current currency of the shop, its properties can be found in the <a href="#currency">currency object</a></td>
+    <td>Returns the current currency of the shop, its properties can be found in the <a href="#currency">currency object</a></td>
     <td>Currency</td>
 </tr>
 <tr>

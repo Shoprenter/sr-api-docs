@@ -29,12 +29,12 @@ All relevant data can be modified in the "My Account" menu item on the test shop
 
 It is recommended to store the identifier of the prepared payments, which
 the
-- [shop name].api.myshoprenter.hu/billing/recurringCharges ( [Recurring charge payment](../docs/recurring_charge.md) )
-- [shop name].api.myshoprenter.hu/billing/oneTimeCharges ( [One-time charge payment](../docs/one_time_charge.md) )
+- [shop name].api.myshoprenter.hu/billing/recurringCharges ( [Recurring charge payment](../docs/i_recurring_charge.md) )
+- [shop name].api.myshoprenter.hu/billing/oneTimeCharges ( [One-time charge payment](../docs/g_one_time_charge.md) )
 
 they arrive in endpoint responses.
 
-From the messages received in [Notification webhooks](../docs/notifications.md), the partner is informed which status the given payment has changed to.
+From the messages received in [Notification webhooks](../docs/l_notifications.md), the partner is informed which status the given payment has changed to.
 
 E.g.: In the case of a Recurring fee payment, some problem occurred with the card to be charged during the next charging attempt, so a webhook is received from the Payment API informing the user that the Recurring Charge with ID 2345 has switched to FROZEN status.
 
