@@ -42,19 +42,17 @@ The API request should follow the below structure:
 
 ```json
 {
-  "data": {
-    "requests": [
-      {
-        "method": "GET",
-        "uri": "http://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0"
-      },
-      {
-        "method": "POST",
-        "uri": "http://shopname.api.myshoprenter.hu/products/[ID]",
-        "data": {}
-      }
-    ]
-  }
+  "requests": [
+    {
+      "method": "GET",
+      "uri": "http://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0"
+    },
+    {
+      "method": "POST",
+      "uri": "http://shopname.api.myshoprenter.hu/products/[ID]",
+      "data": {...}
+    }
+  ]
 }
 ```
 
@@ -72,16 +70,16 @@ The API request should follow the below structure:
         "method": "GET",
         "uri": "http://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0",
         "response": {
-          "header": { "statusCode": "200" },
-          "body": {}
+          "header": { "statusCode": 200 },
+          "body": {...}
         }
       },
       {
         "method": "POST",
         "uri": "http://shopname.api.myshoprenter.hu/products/[ID]",
         "response": {
-          "header": { "statusCode": "200" },
-          "body": {}
+          "header": { "statusCode": 200 },
+          "body": {...}
         }
       }
     ]
@@ -339,25 +337,23 @@ In order to upload all further data of the products (e.g. pictures, details, etc
 
 ```json
 {
-  "data": {
-    "requests": [
-        {
-            "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/productExtend",
-            "data": {...}
-        },
-        {
-            "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/productExtend",
-            "data": {...}
-        },
-        {
-            "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/productExtend",
-            "data": {...}
-        }
-    ]
-  }
+  "requests": [
+      {
+          "method": "POST",
+          "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+          "data": {...}
+      },
+      {
+          "method": "POST",
+          "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+          "data": {...}
+      },
+      {
+          "method": "POST",
+          "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+          "data": {...}
+      }
+  ]
 }
 ```
 
