@@ -202,16 +202,6 @@ The `customer` object provides access to the currently logged-in customer's data
     <td>Address</td>
 </tr>
 <tr>
-    <td>getData()</td>
-    <td>Returns the customer's basic data as an associative array: customer_id, firstname, lastname, name, email, telephone.</td>
-    <td>Array</td>
-</tr>
-<tr>
-    <td>toArray()</td>
-    <td>Returns the full customer data as an array, including defaultAddressId and all addresses.</td>
-    <td>Array</td>
-</tr>
-<tr>
     <td>isLogged()</td>
     <td>Returns true if the customer is currently logged in, false otherwise.</td>
     <td>Boolean</td>
