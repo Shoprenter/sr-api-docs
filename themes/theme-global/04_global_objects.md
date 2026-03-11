@@ -112,7 +112,341 @@ HUF
 </table>
 
 ---
+## customer
 
+### Description
+
+The `customer` object provides access to the currently logged-in customer's data and state. It is available globally in every template file. If no customer is logged in, methods that return identity or account data will return empty values.
+
+### Methods
+
+<table>
+<tr>
+    <th>Method</th>
+    <th>Description</th>
+    <th>Return Type</th>
+</tr>
+<tr>
+    <td>getId()</td>
+    <td>Returns the unique identifier of the logged-in customer.</td>
+    <td>Integer</td>
+</tr>
+<tr>
+    <td>getFirstName()</td>
+    <td>Returns the customer's first name.</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>getLastName()</td>
+    <td>Returns the customer's last name.</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>getEmail()</td>
+    <td>Returns the customer's email address.</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>getTelephone()</td>
+    <td>Returns the customer's telephone number.</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>getFax()</td>
+    <td>Returns the customer's fax number.</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>getNewsletter()</td>
+    <td>Returns the newsletter subscription status of the customer.</td>
+    <td>Integer</td>
+</tr>
+<tr>
+    <td>getCustomerGroupId()</td>
+    <td>Returns the ID of the customer group the customer belongs to. Falls back to the default group ID from config if not set.</td>
+    <td>Integer</td>
+</tr>
+<tr>
+    <td>getAddressId()</td>
+    <td>Returns the ID of the customer's default address.</td>
+    <td>Integer</td>
+</tr>
+<tr>
+    <td>getCountryId()</td>
+    <td>Returns the country ID associated with the customer's default address.</td>
+    <td>Integer</td>
+</tr>
+<tr>
+    <td>getZoneId()</td>
+    <td>Returns the zone ID associated with the customer's default address.</td>
+    <td>Integer</td>
+</tr>
+<tr>
+    <td>getPercentDiscount()</td>
+    <td>Returns the percentage discount assigned to the customer's group.</td>
+    <td>Float</td>
+</tr>
+<tr>
+    <td>getPercentDiscountSpecialPrices()</td>
+    <td>Returns whether the customer's group discount applies to special/sale prices as well.</td>
+    <td>Boolean</td>
+</tr>
+<tr>
+    <td>getCustomerGroupDiscountRate()</td>
+    <td>Returns the calculated discount multiplier (e.g. 0.9 for a 10% discount). Used to compute final prices.</td>
+    <td>Float</td>
+</tr>
+<tr>
+    <td>getDefaultAddress()</td>
+    <td>Returns the customer's default address as an Address object. Fields can be accessed via <code>getField('field_name')</code>. See the available fields below.</td>
+    <td>Address</td>
+</tr>
+<tr>
+    <td>isLogged()</td>
+    <td>Returns true if the customer is currently logged in, false otherwise.</td>
+    <td>Boolean</td>
+</tr>
+<tr>
+    <td>isRegistered()</td>
+    <td>Returns true if the customer is logged in, or if they filled out the registration form during checkout.</td>
+    <td>Boolean</td>
+</tr>
+<tr>
+    <td>hasOrder()</td>
+    <td>Returns true if the customer has placed at least one order. For guests, checks by email from checkout data.</td>
+    <td>Boolean</td>
+</tr>
+<tr>
+    <td>isFreeShipping()</td>
+    <td>Returns true if the customer is entitled to free shipping based on their customer group settings.</td>
+    <td>Boolean</td>
+</tr>
+<tr>
+    <td>isEnabledLoyaltyPoints()</td>
+    <td>Returns true if the loyalty points system is enabled for the customer.</td>
+    <td>Boolean</td>
+</tr>
+<tr>
+    <td>getRegistrationCheck()</td>
+    <td>Returns the value of the registration check flag for the customer.</td>
+    <td>Boolean</td>
+</tr>
+</table>
+
+### Examples
+
+#### Check if the customer is logged in
+
+<table>
+<tr>
+    <td>Code:</td>
+    <td>Output:</td>
+</tr>
+<tr>
+<td>
+
+```twig
+{% if customer.isLogged() %}
+    <span>Welcome, {{ customer.getFirstName() }}!</span>
+{% endif %}
+```
+
+</td>
+<td>
+
+```html
+<span>Welcome, John!</span>
+```
+
+</td>
+</tr>
+</table>
+
+#### Display the customer's email address
+
+<table>
+<tr>
+    <td>Code:</td>
+    <td>Output:</td>
+</tr>
+<tr>
+<td>
+
+```twig
+{{ customer.getEmail() }}
+```
+
+</td>
+<td>
+
+```
+john.doe@example.com
+```
+
+</td>
+</tr>
+</table>
+
+#### Show a free shipping badge if the customer qualifies
+
+<table>
+<tr>
+    <td>Code:</td>
+    <td>Output:</td>
+</tr>
+<tr>
+<td>
+
+```twig
+{% if customer.isFreeShipping() %}
+    <span class="badge">Free Shipping</span>
+{% endif %}
+```
+
+</td>
+<td>
+
+```html
+<span class="badge">Free Shipping</span>
+```
+
+</td>
+</tr>
+</table>
+
+#### Access default address fields
+
+The `getDefaultAddress()` method returns an `Address` object. Its fields can be accessed using `getField('field_name')`.
+
+Available fields:
+
+<table>
+<tr>
+    <th>Field</th>
+    <th>Description</th>
+    <th>Type</th>
+</tr>
+<tr>
+    <td>firstname</td>
+    <td>First name on the address</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>lastname</td>
+    <td>Last name on the address</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>company</td>
+    <td>Company name</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>taxnumber</td>
+    <td>Tax number (for business addresses)</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>address_1</td>
+    <td>Primary address line</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>address_2</td>
+    <td>Secondary address line</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>postcode</td>
+    <td>Postal code</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>city</td>
+    <td>City name</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>country</td>
+    <td>Country name</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>country_id</td>
+    <td>Country ID</td>
+    <td>Integer</td>
+</tr>
+<tr>
+    <td>zone</td>
+    <td>Zone / county name</td>
+    <td>String</td>
+</tr>
+<tr>
+    <td>zone_id</td>
+    <td>Zone ID</td>
+    <td>Integer</td>
+</tr>
+</table>
+
+<table>
+<tr>
+    <td>Code:</td>
+    <td>Output:</td>
+</tr>
+<tr>
+<td>
+
+```twig
+{{ customer.getDefaultAddress().getField('firstname') }}
+{{ customer.getDefaultAddress().getField('lastname') }}
+{{ customer.getDefaultAddress().getField('city') }}
+{{ customer.getDefaultAddress().getField('postcode') }}
+{{ customer.getDefaultAddress().getField('address_1') }}
+{{ customer.getDefaultAddress().getField('country') }}
+```
+
+</td>
+<td>
+
+```
+John
+Doe
+Budapest
+1234
+Main Street 1.
+Hungary
+```
+
+</td>
+</tr>
+</table>
+
+#### Display a loyalty points indicator
+
+<table>
+<tr>
+    <td>Code:</td>
+    <td>Output:</td>
+</tr>
+<tr>
+<td>
+
+```twig
+{% if customer.isEnabledLoyaltyPoints() %}
+    <div class="loyalty-points">You have loyalty points available!</div>
+{% endif %}
+```
+
+</td>
+<td>
+
+```html
+<div class="loyalty-points">You have loyalty points available!</div>
+```
+
+</td>
+</tr>
+</table>
 ## image
 
 Used for handling images, the `Image` object currently only has an `src` property which stores the image source (URL). The `src` property is of type string. Available only in templates where passed.
