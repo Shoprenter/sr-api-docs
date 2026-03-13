@@ -447,6 +447,7 @@ Hungary
 </td>
 </tr>
 </table>
+
 ## image
 
 Used for handling images, the `Image` object currently only has an `src` property which stores the image source (URL). The `src` property is of type string. Available only in templates where passed.
