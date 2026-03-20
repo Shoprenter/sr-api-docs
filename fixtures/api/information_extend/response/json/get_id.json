@@ -42,6 +42,9 @@
         "urlAlias": "example_information_1",
         "urlAliasEntity": {
             "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+        },
+        "language": {
+            "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
         }
     }
 }

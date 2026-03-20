@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2026.04.14
+
+A change has been made to the [UrlAlias Resource](../api/url_alias.md):
+
+- A new field has been added: **language**.
+
 #### 2026.01.15
 A change has been made to the [Webhook Resource](../api/webhook.md):
 

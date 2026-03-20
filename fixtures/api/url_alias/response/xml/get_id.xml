@@ -6,5 +6,8 @@
     <urlAliasEntity>
         <href><![CDATA[http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTIzNDYw]]></href>
     </urlAliasEntity>
+    <language>
+        <href><![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+    </language>
 </response>
 

@@ -138,5 +138,8 @@
         <urlAliasEntity>
             <href><![CDATA[http://shopname.api.myshoprenter.hu/products/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc=]]></href>
         </urlAliasEntity>
+        <language>
+            <href><![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+        </language>
     </urlAliases>
 </response>

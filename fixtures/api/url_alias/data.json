@@ -31,6 +31,14 @@
             },
             "required": true,
             "readonly": false
+        },
+        {
+            "name": "language",
+            "description": {
+                "en": "Language link."
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {
