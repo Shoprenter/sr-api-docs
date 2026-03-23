@@ -98,7 +98,10 @@
                 "type": "CATEGORY",
                 "urlAlias": "test_kategoria_924",
                 "urlAliasEntity": {
-                    "href": "http://shopname.api.myshoprenter.hu/products/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc="
+                    "href": "http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         },

@@ -131,6 +131,9 @@
                         <![CDATA[http://demo.api.aurora.rosti/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=]]>
                     </href>
                 </urlAliasEntity>
+                <language>
+                    <href><![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]></href>
+                </language>
             </urlAliases>
         </item>
         <item>
