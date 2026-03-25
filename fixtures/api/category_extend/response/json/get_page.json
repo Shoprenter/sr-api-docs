@@ -106,10 +106,7 @@
             }
         },
         {
-            "href": [
-                "http://shopname.api.myshoprenter.hu/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI=",
-                "http://shopname.api.myshoprenter.hu/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI1"
-            ],
+            "href": "http://shopname.api.myshoprenter.hu/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI1",
             "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI1",
             "innerId": "925",
             "picture": [],
