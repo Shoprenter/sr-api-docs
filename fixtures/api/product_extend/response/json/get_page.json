@@ -859,6 +859,9 @@
                 "urlAlias": "game_of_thrones_t_shirt",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         }

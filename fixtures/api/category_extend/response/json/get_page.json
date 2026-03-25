@@ -193,6 +193,9 @@
                 "urlAlias": "konyvek_925",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/products/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         }
