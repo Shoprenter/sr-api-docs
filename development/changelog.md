@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2026.03.19
+The **createdBefore** and **createdAfter** search parameters have been added to the following resources:
+- [CategoryExtend](../api/category_extend.md)
+- [CmsContentExtend](../api/cms_content_extend.md)
+- [InformationExtend](../api/information_extend.md)
+
 #### 2026.03.18
 The Shoprenter Payment API now supports OAuth2 authentication. The previous username/password Basic Auth method is now deprecated.
 
