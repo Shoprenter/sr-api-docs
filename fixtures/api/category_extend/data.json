@@ -160,6 +160,18 @@
                     "description": {
                         "en": "Search parameter. Category internal identifier."
                     }
+                },
+                {
+                    "name": "createdBefore",
+                    "description": {
+                        "en": "Search parameter. Filters results by creation date. Returns items created before the specified date. Format: 2019-01-01T00:00:00."
+                    }
+                },
+                {
+                    "name": "createdAfter",
+                    "description": {
+                        "en": "Search parameter. Filters results by creation date. Returns items created after the specified date. Format: 2019-01-01T00:00:00."
+                    }
                 }
             ],
             "example": {

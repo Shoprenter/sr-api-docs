@@ -31,7 +31,7 @@
 
 ## Entry point
 
-POST https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges
+POST https://<shop_name>.api2.myshoprenter.hu/api/billing/recurringCharges
 
 Example payload:
 
@@ -79,10 +79,10 @@ Response:
 
 ## Request Recurring Charge
 
-GET https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges/<charge_id>
+GET https://<shop_name>.api2.myshoprenter.hu/api/billing/recurringCharges/<charge_id>
 
 Example request:
-GET https://exampleshop.api.myshoprenter.hu/billing/recurringCharges/12
+GET https://exampleshop.api2.myshoprenter.hu/api/billing/recurringCharges/12
 
 Response:
 
@@ -119,7 +119,7 @@ Response:
 Developers have the option to stop the Recurring Charge from running, thus closing the payment cycle.
 Simply, a DELETE HTTP request with the recurring charge ID must be sent to the entry point described above.
 
-DELETE https://<shop_name>.api.myshoprenter.hu/billing/recurringCharges/<recurring_charge_id>
+DELETE https://<shop_name>.api2.myshoprenter.hu/api/billing/recurringCharges/<recurring_charge_id>
 
 ## Usage
 

@@ -32,7 +32,7 @@ We need:
 
 ## Entry point
 
-POST https://<shopname>.api.myshoprenter.hu/billing/fundingSourceChanges
+POST https://<shopname>.api2.myshoprenter.hu/api/billing/fundingSourceChanges
 
 Example payload:
 

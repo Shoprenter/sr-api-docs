@@ -26,7 +26,7 @@
 
 ## Entry point
 
-POST https://<shop_name>.api.myshoprenter.hu/billing/oneTimeCharges
+POST https://<shop_name>.api2.myshoprenter.hu/api/billing/oneTimeCharges
 
 Example payload:
 
@@ -69,10 +69,10 @@ Response:
 
 ## The payment requesting
 
-GET https://<shop_name>.api.myshoprenter.hu/billing/oneTimeCharges/<charge_id>
+GET https://<shop_name>.api2.myshoprenter.hu/api/billing/oneTimeCharges/<charge_id>
 
 Example:
-GET https://exampleshop.api.myshoprenter.hu/billing/oneTimeCharges/12
+GET https://exampleshop.api2.myshoprenter.hu/api/billing/oneTimeCharges/12
 
 Response:
 

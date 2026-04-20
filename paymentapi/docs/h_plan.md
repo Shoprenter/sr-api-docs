@@ -44,7 +44,7 @@ when we want to create a Recurring fee payment through the API.
 
 ## Entry point
 
-`POST` https://<shop_name>.api.myshoprenter.hu/billing/plans
+`POST` https://<shop_name>.api2.myshoprenter.hu/api/billing/plans
 
 Example payload:
 
@@ -72,7 +72,7 @@ Response:
 ```
 
 
-`GET` https://<shop_name>.api.myshoprenter.hu/billing/plans
+`GET` https://<shop_name>.api2.myshoprenter.hu/api/billing/plans
 
 Response:
 
@@ -99,7 +99,7 @@ Response:
 ]
 ```
 
-`GET` https://<shop_name>.api.myshoprenter.hu/billing/plans/22
+`GET` https://<shop_name>.api2.myshoprenter.hu/api/billing/plans/22
 
 Response:
 
@@ -116,7 +116,7 @@ Response:
 ```
 
 
-`PUT` https://<shop_name>.api.myshoprenter.hu/billing/plans/22
+`PUT` https://<shop_name>.api2.myshoprenter.hu/api/billing/plans/22
 
 Example payload:
 ```javascript
@@ -144,7 +144,7 @@ Response:
 ]
 ```
 
-`DELETE` https://<shop_name>.api.myshoprenter.hu/billing/plans/22
+`DELETE` https://<shop_name>.api2.myshoprenter.hu/api/billing/plans/22
 
 Response status: `204`
 
