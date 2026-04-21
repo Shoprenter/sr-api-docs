@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2026.04.21
+
+A change has been made to the [UrlAlias Resource](../api/url_alias.md):
+
+- A new field has been added: **language**.
+
 #### 2026.03.19
 The **createdBefore** and **createdAfter** search parameters have been added to the following resources:
 - [CategoryExtend](../api/category_extend.md)
@@ -161,7 +167,7 @@ We created new API Resource for [OrderInvoice](../api/order_invoice.md).
 
 #### 2024.08.13
 
-The durable media device field has been added to the [Product](../api/product.md) and 
+The durable media device field has been added to the [Product](../api/product.md) and
 [ProductExtend](../api/product_extend.md) resource documentation.
 
 #### 2024.07.15
@@ -401,7 +407,7 @@ This contains the **current** name of the delivery method in the language of the
   Narrowing the collection by date has become much more customizable.
 - Added a new API endpoint: [**Tax Class Extend Resource**](../api/tax_class_extend.md)
   Thus, the VAT rates do not have to be retrieved via a link.
-- 
+-
 #### 2021.02.09
 - Added a **parentProduct** property to [**Order Product Resource**](../api/order_product.md).
   It is typically inspired by tasks where we need to know what the ordered product is when processing an order

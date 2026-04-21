@@ -98,15 +98,15 @@
                 "type": "CATEGORY",
                 "urlAlias": "test_kategoria_924",
                 "urlAliasEntity": {
-                    "href": "http://shopname.api.myshoprenter.hu/products/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc="
+                    "href": "http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         },
         {
-            "href": [
-                "http://shopname.api.myshoprenter.hu/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI=",
-                "http://shopname.api.myshoprenter.hu/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI1"
-            ],
+            "href": "http://shopname.api.myshoprenter.hu/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI1",
             "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9OTI1",
             "innerId": "925",
             "picture": [],
@@ -190,6 +190,9 @@
                 "urlAlias": "konyvek_925",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/products/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         }

@@ -56,6 +56,9 @@
                 "urlAlias": "example_information_1",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         },
@@ -103,6 +106,9 @@
                 "urlAlias": "example_information_2",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         },
@@ -150,6 +156,9 @@
                 "urlAlias": "example_information_3",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         },
@@ -197,6 +206,9 @@
                 "urlAlias": "example_information_4",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         },
@@ -244,6 +256,9 @@
                 "urlAlias": "example_information_6",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         },
@@ -291,6 +306,9 @@
                 "urlAlias": "example_information_7",
                 "urlAliasEntity": {
                     "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                },
+                "language": {
+                    "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
                 }
             }
         }

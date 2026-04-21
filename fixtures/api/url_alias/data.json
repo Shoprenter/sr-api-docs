@@ -31,6 +31,14 @@
             },
             "required": true,
             "readonly": false
+        },
+        {
+            "name": "language",
+            "description": {
+                "en": "Language link.<br>Default: The identifier for the default language"
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {
