@@ -1,6 +1,7 @@
 {
   "sortOrder": 3,
   "enabled": 0,
+  "type": "WSESHIP",
   "costCalculationBy": "WEIGHT",
   "freeShippingFrom": 0,
   "shippingType": "COURIER_SERVICE",
