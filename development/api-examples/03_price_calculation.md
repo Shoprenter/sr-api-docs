@@ -24,7 +24,7 @@ In a batch request, you need to retrieve all the influencing factors required fo
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/batch</td>
+    <td>https://shopname.api.myshoprenter.hu/batch</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -41,15 +41,15 @@ In a batch request, you need to retrieve all the influencing factors required fo
       "requests": [
          {
             "method": "GET",
-            "uri": "http://shopname.api.myshoprenter.hu/geoZones?full=1"
+            "uri": "https://shopname.api.myshoprenter.hu/geoZones?full=1"
          },
          {
             "method": "GET",
-            "uri": "http://shopname.api.myshoprenter.hu/taxRates?full=1"
+            "uri": "https://shopname.api.myshoprenter.hu/taxRates?full=1"
          },
          {
             "method": "GET",
-            "uri": "http://shopname.api.myshoprenter.hu/currencies?full=1"
+            "uri": "https://shopname.api.myshoprenter.hu/currencies?full=1"
          }
       ]
    }
@@ -64,26 +64,26 @@ The response from the [Batch API](../api/04_batch.md) reveals the settings conta
 {
     "items": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01",
+            "href": "https://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD01",
             "name": "Hungary",
             "description": "HUN",
             "countries": [
                 {
-                    "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
+                    "href": "https://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3",
                     "id": "Y291bnRyeS1jb3VudHJ5X2lkPTk3",
                     "name": "Hungary",
                     "isoCode2": "HU",
                     "isoCode3": "HUN",
                     "status": "1",
                     "zones": {
-                        "href": "http://shopname.api.myshoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+                        "href": "https://shopname.api.myshoprenter.hu/zones?countryId=Y291bnRyeS1jb3VudHJ5X2lkPTk3"
                     }
                 }
             ]
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02",
+            "href": "https://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD02",
             "id": "Z2VvWm9uZS1nZW9fem9uZV9pZD02",
             "name": "European Union",
             "description": "EU",
@@ -99,7 +99,7 @@ The response from the [Batch API](../api/04_batch.md) reveals the settings conta
 {
     "items": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
+            "href": "https://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
             "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NA==",
             "priority": "1",
             "rate": "0.0000",
@@ -107,14 +107,14 @@ The response from the [Batch API](../api/04_batch.md) reveals the settings conta
             "dateCreated": "2020-01-01T12:00:00",
             "dateUpdated": "2020-01-01T12:00:00",
             "geoZone": {
-                "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+                "href": "https://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
             },
             "taxClass": {
-                "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
+                "href": "https://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEx"
             }
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
+            "href": "https://shopname.api.myshoprenter.hu/taxRates/dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
             "id": "dGF4UmF0ZS10YXhfcmF0ZV9pZD05NQ==",
             "priority": "1",
             "rate": "27.0000",
@@ -122,10 +122,10 @@ The response from the [Batch API](../api/04_batch.md) reveals the settings conta
             "dateCreated": "2020-01-01T12:00:00",
             "dateUpdated": "2020-01-01T12:00:00",
             "geoZone": {
-                "href": "http://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
+                "href": "https://shopname.api.myshoprenter.hu/geoZones/Z2VvWm9uZS1nZW9fem9uZV9pZD01"
             },
             "taxClass": {
-                "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+                "href": "https://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
             }
         }
     ]
@@ -138,7 +138,7 @@ The response from the [Batch API](../api/04_batch.md) reveals the settings conta
 {
     "items": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
+            "href": "https://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
             "id": "Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA==",
             "name": "HUF",
             "code": "HUF",
@@ -150,7 +150,7 @@ The response from the [Batch API](../api/04_batch.md) reveals the settings conta
             "dateUpdated": "2020-01-01 12:00:00"
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==",
+            "href": "https://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==",
             "id": "Y3VycmVuY3ktY3VycmVuY3lfaWQ9NQ==",
             "name": "EUR",
             "code": "EUR",
@@ -178,7 +178,7 @@ Querying the current product using the [**productExtend**](../../api/product_ext
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYx</td>
+    <td>https://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYx</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>

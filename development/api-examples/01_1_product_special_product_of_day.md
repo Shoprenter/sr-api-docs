@@ -41,7 +41,7 @@ Although the product of the day uses the same **Product Special resource** as wh
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productSpecials</td>
+    <td>https://shopname.api.myshoprenter.hu/productSpecials</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -68,7 +68,7 @@ Although the product of the day uses the same **Product Special resource** as wh
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
+    "href": "https://shopname.api.myshoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "priority": "-1",
     "price": "1000.0000",
@@ -80,7 +80,7 @@ Although the product of the day uses the same **Product Special resource** as wh
     "type": "day_spec",
     "dayOfWeek": "4",
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "customerGroup": null
 }
@@ -102,7 +102,7 @@ If we want to change the customer group to the "Everyone" customer group, it is 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productSpecials/[ProductSpecialResourceID]</td>
+    <td>https://shopname.api.myshoprenter.hu/productSpecials/[ProductSpecialResourceID]</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -127,7 +127,7 @@ If we want to change the customer group to the "Everyone" customer group, it is 
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
+    "href": "https://shopname.api.myshoprenter.hu/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTg4",
     "priority": "-1",
     "price": 900.0000,
@@ -139,7 +139,7 @@ If we want to change the customer group to the "Everyone" customer group, it is 
     "type": "day_spec",
     "dayOfWeek": 5,
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "customerGroup": null
 }

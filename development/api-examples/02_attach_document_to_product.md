@@ -21,7 +21,7 @@ Upload the desired document using [File Resource](../../api/file.md). It is impo
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/files</td>
+    <td>https://shopname.api.myshoprenter.hu/files</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -66,7 +66,7 @@ After that, we create an identifier for the previously uploaded image with the h
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/documents</td>
+    <td>https://shopname.api.myshoprenter.hu/documents</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -87,7 +87,7 @@ After that, we create an identifier for the previously uploaded image with the h
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ==",
+    "href": "https://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ==",
     "id": "ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ==",
     "innerId": "5",
     "dateCreated": "2019-09-11T15:12:47",
@@ -110,7 +110,7 @@ With the Document resource ID, we can set the name and language of the uploaded 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/documentDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/documentDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -141,16 +141,16 @@ With the Document resource ID, we can set the name and language of the uploaded 
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/documentDescriptions/ZG9jdW1lbnREZXNjcmlwdGlvbi1kb2N1bWVudF9pZD01Jmxhbmd1YWdlX2lkPTE=",
+    "href": "https://shopname.api.myshoprenter.hu/documentDescriptions/ZG9jdW1lbnREZXNjcmlwdGlvbi1kb2N1bWVudF9pZD01Jmxhbmd1YWdlX2lkPTE=",
     "id": "ZG9jdW1lbnREZXNjcmlwdGlvbi1kb2N1bWVudF9pZD01Jmxhbmd1YWdlX2lkPTE=",
     "name": "Name of the pdf",
     "filename": "test.pdf",
     "mask": "test.pdf",
     "document": {
-        "href": "http://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
+        "href": "https://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```
@@ -170,7 +170,7 @@ If all of this is in place, we can attach the uploaded document to the desired p
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productDocumentRelations</td>
+    <td>https://shopname.api.myshoprenter.hu/productDocumentRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -198,13 +198,13 @@ If all of this is in place, we can attach the uploaded document to the desired p
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productDocumentRelations/cHJvZHVjdERvY3VtZW50LWlkPTY=",
+    "href": "https://shopname.api.myshoprenter.hu/productDocumentRelations/cHJvZHVjdERvY3VtZW50LWlkPTY=",
     "id": "cHJvZHVjdERvY3VtZW50LWlkPTY=",
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "document": {
-        "href": "http://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
+        "href": "https://shopname.api.myshoprenter.hu/documents/ZG9jdW1lbnQtZG9jdW1lbnRfaWQ9NQ=="
     }
 }
 ```

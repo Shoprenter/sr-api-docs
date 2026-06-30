@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+    "href": "https://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
     "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
     "innerId": "3",
     "name": "1L Üveg Betétdíj",
@@ -12,15 +12,15 @@
     "dateCreated": "2013-01-01T01:00:00",
     "dateModified": "2013-01-01T01:00:00",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
     },
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
     },
     "orderProductAddon": {
-        "href": "http://shopname.api.myshoprenter.hu/orderProductAddon/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
+        "href": "https://shopname.api.myshoprenter.hu/orderProductAddon/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
     },
     "taxClass": {
-        "href": "http://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+        "href": "https://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
     }
 }

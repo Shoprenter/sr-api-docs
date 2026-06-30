@@ -1,6 +1,6 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
+        <![CDATA[https://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
     </href>
     <id>
         <![CDATA[d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
@@ -19,11 +19,11 @@
             <![CDATA[json]]>
         </type>
         <url>
-            <![CDATA[http://shoprenter.hu]]>
+            <![CDATA[https://shoprenter.hu]]>
         </url>
         <webHook>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
             </href>
         </webHook>
         <fields>
@@ -54,7 +54,7 @@
         </delayUnit>
         <webHook>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9MTQ0]]>
             </href>
         </webHook>
     </webHookDelay>

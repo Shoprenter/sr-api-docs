@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderInvoices/b3JkZXJJbnZvaWNlLWlkPTE=",
+    "href": "https://shopname.api.myshoprenter.hu/orderInvoices/b3JkZXJJbnZvaWNlLWlkPTE=",
     "id": "b3JkZXJJbnZvaWNlLWlkPTE=",
     "innerId": "1",
     "invoiceId": "SR-1234",
@@ -8,6 +8,6 @@
     "dateCreated": "2024-08-13 09:31:59",
     "dateModified": "2024-08-13 09:31:59",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTI3"
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTI3"
     }
 }

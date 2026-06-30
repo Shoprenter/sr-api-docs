@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
+    "href": "https://shopname.api.myshoprenter.hu/informationExtend/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
     "id": "aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY=",
     "innerId": "16",
     "sortOrder": "1",
@@ -11,40 +11,40 @@
     "showInFooter": "0",
     "informationDescriptions": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x",
+            "href": "https://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0x",
             "title": "Text menu item title",
             "description": "Text menu item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
             "information": {
-                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY="
+                "href": "https://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY="
             },
             "language": {
-                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0y",
+            "href": "https://shopname.api.myshoprenter.hu/informationDescriptions/aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0y",
             "id": "aW5mb3JtYXRpb25EZXNjcmlwdGlvbi1pbmZvcm1hdGlvbl9pZD0xNiZsYW5ndWFnZV9pZD0y",
             "title": "Text menu item title in English",
             "description": "Text menu item in English. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porttitor ligula in ex pulvinar pharetra.",
             "information": {
-                "href": "http://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY="
+                "href": "https://shopname.api.myshoprenter.hu/informations/aW5mb3JtYXRpb24taW5mb3JtYXRpb25faWQ9MTY="
             },
             "language": {
-                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         }
     ],
     "urlAliases": {
-        "href": "http://shopname.api.myshoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
+        "href": "https://shopname.api.myshoprenter.hu/urlAliases/dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
         "id": "dXJsQWxpYXMtdXJsX2FsaWFzX2lkPTYyOA==",
         "type": "INFORMATION",
         "urlAlias": "example_information_1",
         "urlAliasEntity": {
-            "href": "http://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+            "href": "https://shopname.api.myshoprenter.hu/informations/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
         },
         "language": {
-            "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+            "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
         }
     }
 }

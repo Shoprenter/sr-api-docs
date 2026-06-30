@@ -22,7 +22,7 @@ It is only necessary to enter a number higher than 0 for the value of the minimu
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productSpecials</td>
+    <td>https://shopname.api.myshoprenter.hu/productSpecials</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -54,7 +54,7 @@ It is only necessary to enter a number higher than 0 for the value of the minimu
 
 ```json
 {
-    "href": "http://demo.api.aurora.ballapeter/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTEwOQ==",
+    "href": "https://demo.api.aurora.ballapeter/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTEwOQ==",
     "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTEwOQ==",
     "priority": "1",
     "price": "1000.0000",
@@ -66,10 +66,10 @@ It is only necessary to enter a number higher than 0 for the value of the minimu
     "type": "interval",
     "dayOfWeek": null,
     "product": {
-        "href": "http://demo.api.aurora.ballapeter/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "https://demo.api.aurora.ballapeter/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "customerGroup": {
-        "href": "http://demo.api.aurora.ballapeter/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+        "href": "https://demo.api.aurora.ballapeter/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
     }
 }
 ```
@@ -90,7 +90,7 @@ If we want to change the customer group to "Everyone" customer group, it is wort
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productSpecials/product_special_id</td>
+    <td>https://shopname.api.myshoprenter.hu/productSpecials/product_special_id</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -122,7 +122,7 @@ If we want to change the customer group to "Everyone" customer group, it is wort
 
 ```json
 {
-    "href": "http://demo.api.aurora.ballapeter/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTEwOQ==",
+    "href": "https://demo.api.aurora.ballapeter/productSpecials/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTEwOQ==",
     "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTEwOQ==",
     "priority": "1",
     "price": "2000.0000",
@@ -134,10 +134,10 @@ If we want to change the customer group to "Everyone" customer group, it is wort
     "type": "interval",
     "dayOfWeek": null,
     "product": {
-        "href": "http://demo.api.aurora.ballapeter/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
+        "href": "https://demo.api.aurora.ballapeter/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE2OQ=="
     },
     "customerGroup": {
-        "href": "http://demo.api.aurora.ballapeter/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+        "href": "https://demo.api.aurora.ballapeter/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
     }
 }
 ```
@@ -157,7 +157,7 @@ To delete a special price, we will need the resource identifier of the previousl
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productSpecials/product_special_id</td>
+    <td>https://shopname.api.myshoprenter.hu/productSpecials/product_special_id</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>

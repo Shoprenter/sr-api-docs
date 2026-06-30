@@ -26,7 +26,7 @@ The webhook is sent immediately, which can be specified by not specifying the **
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/webHooks</td>
+    <td>https://shopname.api.myshoprenter.hu/webHooks</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -57,7 +57,7 @@ The webhook is sent immediately, which can be specified by not specifying the **
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9Njg=",
+    "href": "https://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9Njg=",
     "id": "d2ViSG9vay1ub3RpZmljYXRpb25faWQ9Njg=",
     "event": "order_confirm",
     "status": "1",
@@ -67,7 +67,7 @@ The webhook is sent immediately, which can be specified by not specifying the **
             "type": "json",
             "url": "https://webhook.site/ef62fe6d-2ca0-42a5-831d-5ab8457bcac6",
             "webHook": {
-                "href": "http://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9Njg="
+                "href": "https://shopname.api.myshoprenter.hu/webHooks/d2ViSG9vay1ub3RpZmljYXRpb25faWQ9Njg="
             }
         }
     ],

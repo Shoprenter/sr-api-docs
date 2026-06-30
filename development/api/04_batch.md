@@ -27,7 +27,7 @@ The size limit of a post is *(max_post_size)* **32MB**. Please pay attention to 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/batch</td>
+    <td>https://shopname.api.myshoprenter.hu/batch</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -46,11 +46,11 @@ The API request should follow the below structure:
     "requests": [
       {
         "method": "GET",
-        "uri": "http://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0"
+        "uri": "https://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0"
       },
       {
         "method": "POST",
-        "uri": "http://shopname.api.myshoprenter.hu/products/[ID]",
+        "uri": "https://shopname.api.myshoprenter.hu/products/[ID]",
         "data": {}
       }
     ]
@@ -70,7 +70,7 @@ The API request should follow the below structure:
     "request": [
       {
         "method": "GET",
-        "uri": "http://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0",
+        "uri": "https://shopname.api.myshoprenter.hu/productExtend?full=1&limit=200&page=0",
         "response": {
           "header": { "statusCode": "200" },
           "body": {}
@@ -78,7 +78,7 @@ The API request should follow the below structure:
       },
       {
         "method": "POST",
-        "uri": "http://shopname.api.myshoprenter.hu/products/[ID]",
+        "uri": "https://shopname.api.myshoprenter.hu/products/[ID]",
         "response": {
           "header": { "statusCode": "200" },
           "body": {}
@@ -105,15 +105,15 @@ Array(
     [requests] => Array(
         [0] => Array(
             [method] => GET
-            [uri] => http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
+            [uri] => https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
         )
         [1] => Array(
             [method] => DELETE
-            [uri] => http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
+            [uri] => https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
         )
         [2] => Array(
             [method] => PUT
-            [uri] => http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
+            [uri] => https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
             [data] => Array(
                 [picture] => /data/cukorbetegek.JPG
                 [sortOrder] => 2
@@ -132,14 +132,14 @@ Array(
         )
         [3] => Array(
             [method] => POST
-            [uri] => http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
+            [uri] => https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
             [data] => Array(
                 [status] => 0
             )
         )
         [4] => Array(
             [method] => GET
-            [uri] => http://shopname.api.myshoprenter.hu/category/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
+            [uri] => https://shopname.api.myshoprenter.hu/category/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=
         )
     )
 )
@@ -158,13 +158,13 @@ Response
      <requests>
          <request>
              <method><![CDATA[GET]]></method>
-             <uri><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
+             <uri><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
              <response>
                  <header>
                      <statusCode>200</statusCode>
                  </header>
                  <body>
-                     <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                     <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      <id><![CDATA[Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></id>
                      <innerId><![CDATA[18]]></innerId>
                      <picture><![CDATA[/data/cukorbetegek.JPG]]></picture>
@@ -176,26 +176,26 @@ Response
                      <dateCreated><![CDATA[2014-09-15T15:32:02]]></dateCreated>
                      <dateUpdated><![CDATA[2014-09-15T15:32:02]]></dateUpdated>
                      <parentCategory>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTM=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTM=]]></href>
                      </parentCategory>
                      <centralCategory>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </centralCategory>
                      <categoryDescriptions>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categoryDescriptions?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categoryDescriptions?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </categoryDescriptions>
                      <categoryCustomerGroupRelations>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categoryCustomerGroupRelations?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categoryCustomerGroupRelations?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </categoryCustomerGroupRelations>
                      <customerGroups>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=/customerGroups]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=/customerGroups]]></href>
                      </customerGroups>
                  </body>
              </response>
          </request>
          <request>
              <method><![CDATA[DELETE]]></method>
-             <uri><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
+             <uri><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
              <response>
                  <header>
                      <statusCode>200</statusCode>
@@ -205,13 +205,13 @@ Response
          </request>
          <request>
              <method><![CDATA[PUT]]></method>
-             <uri><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
+             <uri><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
              <response>
                  <header>
                      <statusCode>200</statusCode>
                  </header>
                  <body>
-                     <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                     <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      <id><![CDATA[Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></id>
                      <innerId><![CDATA[18]]></innerId>
                      <picture><![CDATA[/data/cukorbetegek.JPG]]></picture>
@@ -223,32 +223,32 @@ Response
                      <dateCreated><![CDATA[2014-09-15T15:32:02]]></dateCreated>
                      <dateUpdated><![CDATA[2014-09-15T15:33:53]]></dateUpdated>
                      <parentCategory>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTM=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTM=]]></href>
                      </parentCategory>
                      <centralCategory>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </centralCategory>
                      <categoryDescriptions>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categoryDescriptions?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categoryDescriptions?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </categoryDescriptions>
                      <categoryCustomerGroupRelations>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categoryCustomerGroupRelations?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categoryCustomerGroupRelations?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </categoryCustomerGroupRelations>
                      <customerGroups>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=/customerGroups]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=/customerGroups]]></href>
                      </customerGroups>
                  </body>
              </response>
          </request>
          <request>
              <method><![CDATA[POST]]></method>
-             <uri><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
+             <uri><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
              <response>
                  <header>
                      <statusCode>200</statusCode>
                  </header>
                  <body>
-                     <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                     <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      <id><![CDATA[Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></id>
                      <innerId><![CDATA[18]]></innerId>
                      <picture><![CDATA[/data/cukorbetegek.JPG]]></picture>
@@ -260,26 +260,26 @@ Response
                      <dateCreated><![CDATA[2014-09-15T15:32:02]]></dateCreated>
                      <dateUpdated><![CDATA[2014-09-15T15:33:53]]></dateUpdated>
                      <parentCategory>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTM=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9NTM=]]></href>
                      </parentCategory>
                      <centralCategory>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </centralCategory>
                      <categoryDescriptions>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categoryDescriptions?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categoryDescriptions?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </categoryDescriptions>
                      <categoryCustomerGroupRelations>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categoryCustomerGroupRelations?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categoryCustomerGroupRelations?categoryId=Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></href>
                      </categoryCustomerGroupRelations>
                      <customerGroups>
-                         <href><![CDATA[http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=/customerGroups]]></href>
+                         <href><![CDATA[https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=/customerGroups]]></href>
                      </customerGroups>
                  </body>
              </response>
          </request>
          <request>
              <method><![CDATA[GET]]></method>
-             <uri><![CDATA[http://shopname.api.myshoprenter.hu/category/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
+             <uri><![CDATA[https://shopname.api.myshoprenter.hu/category/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTg=]]></uri>
              <response>
                  <header>
                      <statusCode>404</statusCode>
@@ -326,7 +326,7 @@ In order to upload all further data of the products (e.g. pictures, details, etc
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/batch</td>
+    <td>https://shopname.api.myshoprenter.hu/batch</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -343,17 +343,17 @@ In order to upload all further data of the products (e.g. pictures, details, etc
     "requests": [
         {
             "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+            "uri": "https://shopname.api.myshoprenter.hu/productExtend",
             "data": {...}
         },
         {
             "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+            "uri": "https://shopname.api.myshoprenter.hu/productExtend",
             "data": {...}
         },
         {
             "method": "POST",
-            "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+            "uri": "https://shopname.api.myshoprenter.hu/productExtend",
             "data": {...}
         }
     ]
@@ -369,7 +369,7 @@ In order to upload all further data of the products (e.g. pictures, details, etc
         "request": [
             {
                 "method": "POST",
-                "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+                "uri": "https://shopname.api.myshoprenter.hu/productExtend",
                 "response": {
                     "header": {
                         "statusCode": 200
@@ -379,7 +379,7 @@ In order to upload all further data of the products (e.g. pictures, details, etc
             },
             {
                 "method": "POST",
-                "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+                "uri": "https://shopname.api.myshoprenter.hu/productExtend",
                 "response": {
                     "header": {
                         "statusCode": 200
@@ -389,7 +389,7 @@ In order to upload all further data of the products (e.g. pictures, details, etc
             },
             {
                 "method": "POST",
-                "uri": "http://shopname.api.myshoprenter.hu/productExtend",
+                "uri": "https://shopname.api.myshoprenter.hu/productExtend",
                 "response": {
                     "header": {
                         "statusCode": 200

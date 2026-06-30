@@ -1,6 +1,6 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ=]]>
+        <![CDATA[https://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ=]]>
     </href>
     <id>
         <![CDATA[bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ=]]>
@@ -10,7 +10,7 @@
     </value>
     <lengthClassDescriptions>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/lengthClassDescriptions?lengthClassId=bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ=]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/lengthClassDescriptions?lengthClassId=bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTQ=]]>
         </href>
     </lengthClassDescriptions>
 </response>

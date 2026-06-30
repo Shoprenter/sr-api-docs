@@ -578,7 +578,7 @@
                 {
                     "name": "orderStatusId",
                     "description": {
-                        "en": "Search parameter. Order status identifier.<br>Example usage:http://shopname.api.myshoprenter.hu/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=<br>Therefore, it is necessary to enter the resource identifier of the given order status."
+                        "en": "Search parameter. Order status identifier.<br>Example usage:https://shopname.api.myshoprenter.hu/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=<br>Therefore, it is necessary to enter the resource identifier of the given order status."
                     }
                 },
                 {

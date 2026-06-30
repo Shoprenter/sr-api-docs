@@ -24,7 +24,7 @@ Creating a deposit
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productAddons</td>
+    <td>https://shopname.api.myshoprenter.hu/productAddons</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -63,7 +63,7 @@ Linking Deposit with Product:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productAddonProductRelations/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==</td>
+    <td>https://shopname.api.myshoprenter.hu/productAddonProductRelations/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>

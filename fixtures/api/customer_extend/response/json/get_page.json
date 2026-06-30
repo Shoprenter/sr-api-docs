@@ -1,36 +1,36 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/customerExtend?page=0&limit=25",
+    "href": "https://shopname.api.myshoprenter.hu/customerExtend?page=0&limit=25",
     "page": "0",
     "limit": "25",
     "first": {
-        "href": "http://shopname.api.myshoprenter.hu/customerExtend?page=0&limit=25"
+        "href": "https://shopname.api.myshoprenter.hu/customerExtend?page=0&limit=25"
     },
     "previous": null,
     "next": null,
     "last": {
-        "href": "http://shopname.api.myshoprenter.hu/customerExtend?page=0&limit=25"
+        "href": "https://shopname.api.myshoprenter.hu/customerExtend?page=0&limit=25"
     },
     "items": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+            "href": "https://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Mg=="
+            "href": "https://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Mg=="
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Mw=="
+            "href": "https://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Mw=="
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9NA=="
+            "href": "https://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9NA=="
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9NQ=="
+            "href": "https://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9NQ=="
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Ng=="
+            "href": "https://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Ng=="
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw=="
+            "href": "https://shopname.api.myshoprenter.hu/customerExtend/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9Nw=="
         }
     ]
 }

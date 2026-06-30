@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTcy",
+    "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9MTcy",
     "id": "b3JkZXItb3JkZXJfaWQ9MTcy",
     "innerId": "172",
     "invoiceId": "0",
@@ -50,42 +50,42 @@
     "pickPackPontShopCode": "100010",
     "loyaltyPointsTaxRate": "-1.0000",
     "customer": {
-        "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
+        "href": "https://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MzQ="
     },
     "customerGroup": {
-        "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+        "href": "https://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
     },
     "shippingZone": null,
     "shippingCountry": {
-        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "https://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "paymentZone": null,
     "paymentCountry": {
-        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "https://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "orderStatus": {
-        "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+        "href": "https://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "currency": {
-        "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+        "href": "https://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
     },
     "shippingMode": {
-        "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
+        "href": "https://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
     },
     "orderTotals": {
-        "href": "http://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+        "href": "https://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
     },
     "orderProducts": {
-        "href": "http://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+        "href": "https://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
     },
     "orderGiftWrappings": {
-        "href": "http://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+        "href": "https://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
     },
     "orderProductAddons": {
-        "href": "http://shopname.api.myshoprenter.hu/orderProductAddons?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
+        "href": "https://shopname.api.myshoprenter.hu/orderProductAddons?orderId=b3JkZXItb3JkZXJfaWQ9MTcy"
     },
     "externalInfo": {
         "partner_order_id": "12345",

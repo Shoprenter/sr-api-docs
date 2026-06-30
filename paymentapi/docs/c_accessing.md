@@ -6,7 +6,7 @@ The payment system is available through three ShopRenter API resources.
 - DELETE _**https://<shop_name>.api2.myshoprenter.hu/api/billing/recurringCharges/{recurring_charge_id}**_
 
 On the Shoprenter Partner Dashboard, financial statements can be viewed and [Payment plans](../docs/h_plan.md) can be managed:
-http://billing.shoprenter.hu/login
+https://billing.shoprenter.hu/login
 
 On the login interface, we can enter the dashboard of the application with the username/token pair received during the [previously mentioned registration](../docs/b_settings.md).
 

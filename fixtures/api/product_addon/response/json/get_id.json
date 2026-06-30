@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
+    "href": "https://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
     "id": "cHJvZHVjdFNwZWNpYWwtcHJvZHVjdF9zcGVjaWFsX2lkPTE=",
     "sku": "BETETDIJ01",
     "name": "1L Üveg Betétdíj",
@@ -13,6 +13,6 @@
     "dateCreated": "2024-05-13",
     "dateModified": "2024-05-13",
     "taxClass": {
-        "href": "http://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+        "href": "https://shopname.api.myshoprenter.hu/taxClass/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
     }
 }

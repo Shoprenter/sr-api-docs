@@ -1,30 +1,30 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=0&limit=2]]>
+        <![CDATA[https://shopname.api.myshoprenter.hu/orderHistories?full=1&page=0&limit=2]]>
     </href>
     <page>0</page>
     <pageCount>13</pageCount>
     <limit>2</limit>
     <first>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=0&limit=2]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/orderHistories?full=1&page=0&limit=2]]>
         </href>
     </first>
     <previous/>
     <next>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=1&limit=2]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/orderHistories?full=1&page=1&limit=2]]>
         </href>
     </next>
     <last>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/orderHistories?full=1&page=12&limit=2]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/orderHistories?full=1&page=12&limit=2]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==]]>
             </href>
             <id>
                 <![CDATA[b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9MQ==]]>
@@ -38,18 +38,18 @@
             </dateAdded>
             <order>
                 <href>
-                    <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]>
+                    <![CDATA[https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]>
                 </href>
             </order>
             <orderStatus>
                 <href>
-                    <![CDATA[http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]>
+                    <![CDATA[https://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE=]]>
                 </href>
             </orderStatus>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9Mg==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/orderHistories/b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9Mg==]]>
             </href>
             <id>
                 <![CDATA[b3JkZXJIaXN0b3J5LW9yZGVyX2hpc3RvcnlfaWQ9Mg==]]>
@@ -63,12 +63,12 @@
             </dateAdded>
             <order>
                 <href>
-                    <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]>
+                    <![CDATA[https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw==]]>
                 </href>
             </order>
             <orderStatus>
                 <href>
-                    <![CDATA[http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTI=]]>
+                    <![CDATA[https://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTI=]]>
                 </href>
             </orderStatus>
         </item>

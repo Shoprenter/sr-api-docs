@@ -1,150 +1,150 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25]]>
+        <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25]]>
     </href>
     <page>0</page>
     <pageCount>7</pageCount>
     <limit>25</limit>
     <first>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes?page=0&limit=25]]>
         </href>
     </first>
     <previous/>
     <next>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=1&limit=25]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes?page=1&limit=25]]>
         </href>
     </next>
     <last>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes?page=6&limit=25]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes?page=6&limit=25]]>
         </href>
     </last>
     <items>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYw]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYw]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYx]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYz]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTYz]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTY0]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTY0]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOA==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTExOQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMA==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMg==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMg==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMw==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyMw==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNA==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNg==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNg==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNw==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyNw==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOA==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTEyOQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OA==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE0OQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MA==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1MQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mg==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mg==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mw==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE1Mw==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MA==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MA==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MQ==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2MQ==]]>
             </href>
         </item>
         <item>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2Mg==]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/shippingLanes/c2hpcHBpbmdMYW5lLWlkPTE2Mg==]]>
             </href>
         </item>
     </items>

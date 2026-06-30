@@ -1,10 +1,10 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/couponProductRelations/        Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE=",
+    "href": "https://shopname.api.myshoprenter.hu/couponProductRelations/        Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE=",
     "id": "Y291cG9uUHJvZHVjdFJlbGF0aW9uLWNvdXBvbl9wcm9kdWN0X2lkPTE=",
     "coupon": {
-        "href": "http://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0y"
+        "href": "https://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0y"
     },
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTIxMTA="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTIxMTA="
     }
 }

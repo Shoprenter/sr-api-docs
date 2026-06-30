@@ -34,7 +34,7 @@ Concrete example for a  JSON type POST request:
     "webHookParameters": [
         {
             "type": "json",
-            "url": "http://shoprenter.hu"
+            "url": "https://shoprenter.hu"
         }
     ],
     "webHookDelay": [
