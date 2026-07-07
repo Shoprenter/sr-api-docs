@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
+    "href": "https://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD03",
     "name": "Net partial amount:",
     "valueText": "2.400 Huf",
@@ -11,6 +11,6 @@
     "dateCreated": "2013-01-01T01:00:00",
     "dateUpdated": "2013-01-01T01:00:00",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
     }
 }

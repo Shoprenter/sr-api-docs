@@ -1,5 +1,5 @@
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
+    "href": "https://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
     "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw==",
     "innerId": "3",
     "name": "Product name",
@@ -28,17 +28,17 @@
     "length": "1.00",
     "weight": "1.00",
     "parentProduct": {
-        "href": "http://shopname.api.myshoprenter.hu/product/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+        "href": "https://shopname.api.myshoprenter.hu/product/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
     },
     "gtin": "0123456789012",
     "durableMediaDevice": "1",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9Mw=="
     },
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUx"
     },
     "orderProductOptions": {
-        "href": "http://shopname.api.myshoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw=="
+        "href": "https://shopname.api.myshoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9Mw=="
     }
 }

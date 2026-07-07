@@ -67,7 +67,7 @@ _The versioning parameters are discussed [here](#step-6-creating-product-variant
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productClasses</td>
+    <td>https://shopname.api.myshoprenter.hu/productClasses</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -89,7 +89,7 @@ _The versioning parameters are discussed [here](#step-6-creating-product-variant
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
+    "href": "https://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "id": "cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "name": "houseplant",
     "description": "This is the houseplant type description",
@@ -98,7 +98,7 @@ _The versioning parameters are discussed [here](#step-6-creating-product-variant
     "firstVariantParameter": null,
     "secondVariantParameter": null,
     "productClassAttributeRelations": {
-        "href": "http://shopname.api.myshoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "https://shopname.api.myshoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     }
 }
 ```
@@ -132,7 +132,7 @@ for a product.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/numberAttributes</td>
+    <td>https://shopname.api.myshoprenter.hu/numberAttributes</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -161,7 +161,7 @@ for a product.
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
+    "href": "https://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
     "id": "bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw==",
     "type": "INTEGER",
     "name": "number_of_sunny_hours",
@@ -174,13 +174,13 @@ for a product.
     "showValueIfZero": null,
     "valuePrecision": null,
     "numberAttributeWidget": {
-        "href": "http://shopname.api.myshoprenter.hu/numberAttributeWidgets/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "https://shopname.api.myshoprenter.hu/numberAttributeWidgets/bnVtYmVyQXR0cmlidXRlV2lkZ2V0LWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "attributeDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "https://shopname.api.myshoprenter.hu/attributeDescriptions?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "numberAttributeValues": {
-        "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "https://shopname.api.myshoprenter.hu/numberAttributeValues?numberAttributeId=bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     }
 }
 ```
@@ -211,7 +211,7 @@ Following the example, we will now create a property that will contain the Latin
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/textAttributes</td>
+    <td>https://shopname.api.myshoprenter.hu/textAttributes</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -238,7 +238,7 @@ Following the example, we will now create a property that will contain the Latin
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
+    "href": "https://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
     "id": "dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU=",
     "type": "TEXT",
     "name": "latin_name",
@@ -248,10 +248,10 @@ Following the example, we will now create a property that will contain the Latin
     "textFieldType": "INPUT",
     "translateable": "0",
     "attributeDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "https://shopname.api.myshoprenter.hu/attributeDescriptions?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     },
     "textAttributeValues": {
-        "href": "http://shopname.api.myshoprenter.hu/textAttributeValues?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "https://shopname.api.myshoprenter.hu/textAttributeValues?textAttributeId=dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     }
 }
 ```
@@ -298,7 +298,7 @@ As with the previous examples, we first create the attribute itself.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/listAttributes</td>
+    <td>https://shopname.api.myshoprenter.hu/listAttributes</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -324,7 +324,7 @@ As with the previous examples, we first create the attribute itself.
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
+    "href": "https://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
         "id": "bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY=",
         "type": "LIST",
         "name": "shape_of_leaves",
@@ -333,14 +333,14 @@ As with the previous examples, we first create the attribute itself.
         "required": "1",
         "presentation": "TEXT",
         "listAttributeWidget": {
-            "href": "http://shopname.api.myshoprenter.hu/listAttributeWidgets/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9MTY="
+            "href": "https://shopname.api.myshoprenter.hu/listAttributeWidgets/bGlzdEF0dHJpYnV0ZVdpZGdldC1hdHRyaWJ1dGVfaWQ9MTY="
         },
         "defaultListAttributeValue": null,
         "attributeDescriptions": {
-            "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+            "href": "https://shopname.api.myshoprenter.hu/attributeDescriptions?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
         },
         "listAttributeValues": {
-            "href": "http://shopname.api.myshoprenter.hu/listAttributeValues?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+            "href": "https://shopname.api.myshoprenter.hu/listAttributeValues?listAttributeId=bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
         }
 }
 ```
@@ -374,7 +374,7 @@ the two new values for the "Form of letters" unique property.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/listAttributeValues</td>
+    <td>https://shopname.api.myshoprenter.hu/listAttributeValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -397,26 +397,26 @@ the two new values for the "Form of letters" unique property.
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x",
+    "href": "https://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x",
     "listAttribute": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+        "href": "https://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
     },
     "listAttributeValueDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x"
+        "href": "https://shopname.api.myshoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0x"
     }
 }
 ```
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
+    "href": "https://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "listAttribute": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+        "href": "https://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
     },
     "listAttributeValueDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "https://shopname.api.myshoprenter.hu/listAttributeValueDescriptions?listAttributeValueId=bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -444,7 +444,7 @@ the "Round" value.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/listAttributeValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -471,14 +471,14 @@ the "Round" value.
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
+    "href": "https://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "name": "spiky",
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "listAttributeValue": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "https://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -492,7 +492,7 @@ the "Round" value.
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/listAttributeValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -519,14 +519,14 @@ the "Round" value.
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
+    "href": "https://shopname.api.myshoprenter.hu/listAttributeValueDescriptions/bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "id": "bGlzdEF0dHJpYnV0ZVZhbHVlRGVzY3JpcHRpb24tbGFuZ3VhZ2VfaWQ9MSZhdHRyaWJ1dGVfaWQ9MTYmdmFsdWVfaWQ9Mg==",
     "name": "rounded",
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "listAttributeValue": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "https://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -561,7 +561,7 @@ What we will need:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/attributeDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/attributeDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -589,15 +589,15 @@ What we will need:
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
+    "href": "https://shopname.api.myshoprenter.hu/attributeDescriptions/YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
     "id": "YXR0cmlidXRlRGVzY3JpcHRpb24tYXR0cmlidXRlX2lkPTcmbGFuZ3VhZ2VfaWQ9NA==",
     "name": "Number of sunny hours",
     "description": "It tells you how many hours per day the plant needs to spend in sunlight",
     "attribute": {
-        "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "https://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9NA=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9NA=="
     }
 }
 ```
@@ -627,7 +627,7 @@ Or, of course, for the resource id of the Indoor plant product type: cHJvZHVjdEN
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productClassAttributeRelations</td>
+    <td>https://shopname.api.myshoprenter.hu/productClassAttributeRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -653,13 +653,13 @@ Or, of course, for the resource id of the Indoor plant product type: cHJvZHVjdEN
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productClassAttributeRelations/cHJvZHVjdENsYXNzQXR0cmlidXRlUmVsYXRpb24tcHJvZHVjdF9jbGFzc19pZD0xNCZhdHRyaWJ1dGVfaWQ9MTM=",
+    "href": "https://shopname.api.myshoprenter.hu/productClassAttributeRelations/cHJvZHVjdENsYXNzQXR0cmlidXRlUmVsYXRpb24tcHJvZHVjdF9jbGFzc19pZD0xNCZhdHRyaWJ1dGVfaWQ9MTM=",
     "id": "cHJvZHVjdENsYXNzQXR0cmlidXRlUmVsYXRpb24tcHJvZHVjdF9jbGFzc19pZD0xNCZhdHRyaWJ1dGVfaWQ9MTM=",
     "productClass": {
-        "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "https://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     },
     "attribute": {
-        "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "https://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     }
 }
 ```
@@ -692,7 +692,7 @@ field. Of course, we can also assign the product type when creating a new produc
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
+    <td>https://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -715,11 +715,11 @@ field. Of course, we can also assign the product type when creating a new produc
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
+    "href": "https://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
 ...
  "productClass": {
-        "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "https://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     },
 ...
 
@@ -765,7 +765,7 @@ What we need:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/numberAttributeValues</td>
+    <td>https://shopname.api.myshoprenter.hu/numberAttributeValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -792,14 +792,14 @@ What we need:
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTEzJnByb2R1Y3RfaWQ9NjE0",
+    "href": "https://shopname.api.myshoprenter.hu/numberAttributeValues/bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTEzJnByb2R1Y3RfaWQ9NjE0",
     "id": "bnVtYmVyQXR0cmlidXRlVmFsdWUtYXR0cmlidXRlX2lkPTEzJnByb2R1Y3RfaWQ9NjE0",
     "value": "3",
     "numberAttribute": {
-        "href": "http://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
+        "href": "https://shopname.api.myshoprenter.hu/numberAttributes/bnVtYmVyQXR0cmlidXRlLWF0dHJpYnV0ZV9pZD0xMw=="
     },
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     }
 }
 ```
@@ -829,7 +829,7 @@ What we need:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/textAttributeValues</td>
+    <td>https://shopname.api.myshoprenter.hu/textAttributeValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -855,16 +855,16 @@ What we need:
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
+    "href": "https://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "id": "dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "textAttribute": {
-        "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "https://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     },
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     },
     "textAttributeValueDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
+        "href": "https://shopname.api.myshoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
     }
 }
 ```
@@ -890,7 +890,7 @@ Since we specified that the unique property named **latin_name** will be monolin
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/textAttributeValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -915,16 +915,16 @@ Since we specified that the unique property named **latin_name** will be monolin
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
+    "href": "https://shopname.api.myshoprenter.hu/textAttributeValues/dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "id": "dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA==",
     "textAttribute": {
-        "href": "http://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
+        "href": "https://shopname.api.myshoprenter.hu/textAttributes/dGV4dEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTU="
     },
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     },
     "textAttributeValueDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
+        "href": "https://shopname.api.myshoprenter.hu/textAttributeValueDescriptions?textAttributeValueId=dGV4dEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNSZwcm9kdWN0X2lkPTYxNA=="
     }
 }
 ```
@@ -951,7 +951,7 @@ What we need:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productListAttributeValueRelations</td>
+    <td>https://shopname.api.myshoprenter.hu/productListAttributeValueRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -977,13 +977,13 @@ What we need:
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productListAttributeValueRelations/cHJvZHVjdExpc3RBdHRyaWJ1dGVWYWx1ZVJlbGF0aW9uLXByb2R1Y3RfaWQ9NjE0JmF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
+    "href": "https://shopname.api.myshoprenter.hu/productListAttributeValueRelations/cHJvZHVjdExpc3RBdHRyaWJ1dGVWYWx1ZVJlbGF0aW9uLXByb2R1Y3RfaWQ9NjE0JmF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "id": "cHJvZHVjdExpc3RBdHRyaWJ1dGVWYWx1ZVJlbGF0aW9uLXByb2R1Y3RfaWQ9NjE0JmF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y",
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA=="
     },
     "listAttributeValue": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
+        "href": "https://shopname.api.myshoprenter.hu/listAttributeValues/bGlzdEF0dHJpYnV0ZVZhbHVlLWF0dHJpYnV0ZV9pZD0xNiZ2YWx1ZV9pZD0y"
     }
 }
 ```
@@ -1020,7 +1020,7 @@ For the resource id of the unique property "form of letters": **bGlzdEF0dHJpYnV0
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ</td>
+    <td>https://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -1043,18 +1043,18 @@ For the resource id of the unique property "form of letters": **bGlzdEF0dHJpYnV0
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
+    "href": "https://shopname.api.myshoprenter.hu/productClasses/cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "id": "cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ=",
     "name": "houseplant",
     "description": "This is the houseplant type description",
     "firstVariantSelectType": "SELECT",
     "secondVariantSelectType": "SELECT",
     "firstVariantParameter": {
-        "href": "http://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
+        "href": "https://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9MTY="
     },
     "secondVariantParameter": null,
     "productClassAttributeRelations": {
-        "href": "http://shopname.api.myshoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
+        "href": "https://shopname.api.myshoprenter.hu/productClassAttributeRelations?productClassId=cHJvZHVjdENsYXNzLXByb2R1Y3RfY2xhc3NfaWQ9MTQ="
     }
 }
 ```
@@ -1102,7 +1102,7 @@ Let's create a product variant in such a way that:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
+    <td>https://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -1125,14 +1125,14 @@ Let's create a product variant in such a way that:
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
+    "href": "https://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTYxNA==",
      ...
      "parentProduct": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxMg=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTYxMg=="
      },
      "volumeUnit": {
-        "href": "http://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE="
+        "href": "https://shopname.api.myshoprenter.hu/lengthClasses/bGVuZ3RoQ2xhc3MtbGVuZ3RoX2NsYXNzX2lkPTE="
      },
      ...
    }

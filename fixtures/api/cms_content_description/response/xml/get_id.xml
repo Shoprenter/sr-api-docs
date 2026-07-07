@@ -1,6 +1,6 @@
 <response>
     <href>
-        <![CDATA[http://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTMmbGFuZ3VhZ2VfaWQ9MQ==]]>
+        <![CDATA[https://shopname.api.myshoprenter.hu/cmsContentDescriptions/Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTMmbGFuZ3VhZ2VfaWQ9MQ==]]>
     </href>
     <id>
         <![CDATA[Y21zQ29udGVudERlc2NyaXB0aW9uLWluZm9ybWF0aW9uX2lkPTMmbGFuZ3VhZ2VfaWQ9MQ==]]>
@@ -16,12 +16,12 @@
     </introText>
     <cmsContent>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0z]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/cmsContents/Y21zQ29udGVudC1pbmZvcm1hdGlvbl9pZD0z]]>
         </href>
     </cmsContent>
     <language>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ==]]>
         </href>
     </language>
 </response>

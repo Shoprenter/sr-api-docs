@@ -1,7 +1,7 @@
 <response>
     <orderCreditCards>
         <href>
-            <![CDATA[http://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=]]>
+            <![CDATA[https://shopname.api.myshoprenter.hu/orderCreditCards/b3JkZXJDcmVkaXRDYXJkLWlkPTE=]]>
         </href>
         <id>
             <![CDATA[b3JkZXJDcmVkaXRDYXJkLWlkPTE]]>
@@ -26,7 +26,7 @@
         </bankResponse>
         <order>
             <href>
-                <![CDATA[http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
+                <![CDATA[https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NzI=]]>
             </href>
         </order>
     </orderCreditCards>

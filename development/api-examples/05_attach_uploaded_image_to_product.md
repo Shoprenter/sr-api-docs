@@ -25,7 +25,7 @@ After uploading, the product image can be found on the admin interface in the Fi
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/files</td>
+    <td>https://shopname.api.myshoprenter.hu/files</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -66,7 +66,7 @@ We create the new product using [**Product Extend Resource**](../../api/product_
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productExtend</td>
+    <td>https://shopname.api.myshoprenter.hu/productExtend</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -117,7 +117,7 @@ We create the new product using [**Product Extend Resource**](../../api/product_
 
 ```json{17}
 {
-    "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
+    "href": "https://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
     "innerId": "1707",
     "sku": "ABCD-1234",
@@ -169,7 +169,7 @@ We create the new product using [**Product Extend Resource**](../../api/product_
     },
     "productDescriptions": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
+            "href": "https://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
             "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
             "name": "Product Name",
             "metaKeywords": {},
@@ -185,14 +185,14 @@ We create the new product using [**Product Extend Resource**](../../api/product_
             "dateUpdated": "2017-10-20T09:25:30",
             "videoCode": {},
             "product": {
-                "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
             },
             "language": {
-                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0y",
+            "href": "https://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0y",
             "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0y",
             "name": "Product Name",
             "metaKeywords": {},
@@ -208,10 +208,10 @@ We create the new product using [**Product Extend Resource**](../../api/product_
             "dateUpdated": "2017-10-20T09:25:30",
             "videoCode": {},
             "product": {
-                "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
             },
             "language": {
-                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         }
     ],
@@ -244,7 +244,7 @@ Additional product images belonging to the product can be attached using [**Prod
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productImages</td>
+    <td>https://shopname.api.myshoprenter.hu/productImages</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -270,13 +270,13 @@ Additional product images belonging to the product can be attached using [**Prod
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productImages/cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
+    "href": "https://shopname.api.myshoprenter.hu/productImages/cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
     "id": "cHJvZHVjdEltYWdlLXByb2R1Y3RfaW1hZ2VfaWQ9MQ==",
     "imagePath": "product\/image.jpg",
     "imageAlt": "Image Alt",
     "sortOrder": "1",
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
     }
 }
 ```

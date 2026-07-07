@@ -18,7 +18,7 @@ In case of a coupon list query, we may receive the following result:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/coupons/[resource id]</td>
+    <td>https://shopname.api.myshoprenter.hu/coupons/[resource id]</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -28,7 +28,7 @@ In case of a coupon list query, we may receive the following result:
 
 ```json
 {
-  "href": "http://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x",
+  "href": "https://shopname.api.myshoprenter.hu/coupons/Y291cG9uLWNvdXBvbl9pZD0x",
   "id": "Y291cG9uLWNvdXBvbl9pZD0x",
   "code": "10wevb",
   "discountType": "PERCENT",
@@ -52,10 +52,10 @@ In case of a coupon list query, we may receive the following result:
   "validWithLoyaltyPoints": "1",
   "targetType": "CATEGORY",
   "taxClass": {
-    "href": "http://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
+    "href": "https://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
   },
   "couponDescriptions": {
-    "href": "http://shopname.api.myshoprenter.hu/couponDescriptions?couponId=Y291cG9uLWNvdXBvbl9pZD0x"
+    "href": "https://shopname.api.myshoprenter.hu/couponDescriptions?couponId=Y291cG9uLWNvdXBvbl9pZD0x"
   }
 }
 ```
@@ -69,7 +69,7 @@ In case of non-product endpoints, the same request with `emptyBody=1` would retu
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/coupons/[resource id]?emptyBody=1</td>
+    <td>https://shopname.api.myshoprenter.hu/coupons/[resource id]?emptyBody=1</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>

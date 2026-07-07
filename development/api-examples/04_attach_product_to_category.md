@@ -21,7 +21,7 @@ Creating a category using the [**Category Extend Resource**](../../api/category_
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/categoryExtend</td>
+    <td>https://shopname.api.myshoprenter.hu/categoryExtend</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -60,7 +60,7 @@ Creating a category using the [**Category Extend Resource**](../../api/category_
 
 ```json
 {
-    "href": "http://demo.api.aurora.shopname/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5",
+    "href": "https://demo.api.aurora.shopname/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5",
     "id": "Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5",
     "innerId": "119",
     "picture": "data/category_picture.jpg",
@@ -74,7 +74,7 @@ Creating a category using the [**Category Extend Resource**](../../api/category_
     "centralCategory": null,
     "categoryDescriptions": [
         {
-            "href": "http://demo.api.aurora.shopname/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9MQ==",
+            "href": "https://demo.api.aurora.shopname/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9MQ==",
             "id": "Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9MQ==",
             "name": "Test Category",
             "metaKeywords": "",
@@ -86,14 +86,14 @@ Creating a category using the [**Category Extend Resource**](../../api/category_
             "heading": null,
             "shortDescription": "",
             "category": {
-                "href": "http://demo.api.aurora.shopname/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
+                "href": "https://demo.api.aurora.shopname/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
             },
             "language": {
-                "href": "http://demo.api.aurora.shopname/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "https://demo.api.aurora.shopname/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://demo.api.aurora.shopname/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9Mg==",
+            "href": "https://demo.api.aurora.shopname/categoryDescriptions/Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9Mg==",
             "id": "Y2F0ZWdvcnlEZXNjcmlwdGlvbi1jYXRlZ29yeV9pZD0xMTkmbGFuZ3VhZ2VfaWQ9Mg==",
             "name": "Test Category",
             "metaKeywords": "",
@@ -105,16 +105,16 @@ Creating a category using the [**Category Extend Resource**](../../api/category_
             "heading": null,
             "shortDescription": "",
             "category": {
-                "href": "http://demo.api.aurora.shopname/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
+                "href": "https://demo.api.aurora.shopname/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
             },
             "language": {
-                "href": "http://demo.api.aurora.shopname/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "https://demo.api.aurora.shopname/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         }
     ],
     "categoryCustomerGroupRelations": [...],
     "customerGroups": {
-        "href": "http://demo.api.aurora.shopname/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5/customerGroups"
+        "href": "https://demo.api.aurora.shopname/categoryExtend/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5/customerGroups"
     },
     "urlAliases": []
 }
@@ -133,7 +133,7 @@ Creating a product using the [**Product Extend Resource**](../../api/product_ext
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productExtend</td>
+    <td>https://shopname.api.myshoprenter.hu/productExtend</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -189,7 +189,7 @@ Creating a product using the [**Product Extend Resource**](../../api/product_ext
 
 ```json{98-109}
 {
-    "href": "http://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
+    "href": "https://shopname.api.myshoprenter.hu/productExtend/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc=",
     "innerId": "1707",
     "sku": "ABCD-1234",
@@ -238,7 +238,7 @@ Creating a product using the [**Product Extend Resource**](../../api/product_ext
     "allImages": {...},
     "productDescriptions": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
+            "href": "https://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
             "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0x",
             "name": "Product name",
             "metaKeywords": {},
@@ -254,14 +254,14 @@ Creating a product using the [**Product Extend Resource**](../../api/product_ext
             "dateUpdated": "2017-10-20T09:25:30",
             "videoCode": {},
             "product": {
-                "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
             },
             "language": {
-                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
             }
         },
         {
-            "href": "http://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0y",
+            "href": "https://shopname.api.myshoprenter.hu/productDescriptions/cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0y",
             "id": "cHJvZHVjdERlc2NyaXB0aW9uLXByb2R1Y3RfaWQ9MTcwNyZsYW5ndWFnZV9pZD0y",
             "name": "Product Name",
             "metaKeywords": {},
@@ -277,23 +277,23 @@ Creating a product using the [**Product Extend Resource**](../../api/product_ext
             "dateUpdated": "2017-10-20T09:25:30",
             "videoCode": {},
             "product": {
-                "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
             },
             "language": {
-                "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
+                "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9Mg=="
             }
         }
     ],
     "productRelatedProductRelations": [...],
     "productCategoryRelations": [
         {
-            "href": "http://shopname.api.myshoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD01Mw==",
+            "href": "https://shopname.api.myshoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD01Mw==",
             "id": "cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD01Mw==",
             "product": {
-                "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+                "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
             },
             "category": {
-                "href": "http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
+                "href": "https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
             }
         }
     ],
@@ -325,7 +325,7 @@ Note that for existing products, you can also add additional categories using th
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productCategoryRelations</td>
+    <td>https://shopname.api.myshoprenter.hu/productCategoryRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -351,13 +351,13 @@ Note that for existing products, you can also add additional categories using th
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD0xMTk=",
+    "href": "https://shopname.api.myshoprenter.hu/productCategoryRelations/cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD0xMTk=",
     "id": "cHJvZHVjdENhdGVnb3J5LXByb2R1Y3RfaWQ9MTcwNyZjYXRlZ29yeV9pZD0xMTk=",
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTE3MDc="
     },
     "category": {
-        "href": "http://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
+        "href": "https://shopname.api.myshoprenter.hu/categories/Y2F0ZWdvcnktY2F0ZWdvcnlfaWQ9MTE5"
     }
 }
 ```

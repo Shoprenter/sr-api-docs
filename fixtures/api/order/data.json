@@ -574,7 +574,7 @@
                 {
                     "name": " ",
                     "description": {
-                        "en": "http:\/\/shopname.api.myshoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+                        "en": "https:\/\/shopname.api.myshoprenter.hu\/orders?orderStatusId=b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
                     }
                 },
                 {

@@ -36,7 +36,7 @@ Here we must pay attention to the fact that the order must already be added at t
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orders</td>
+    <td>https://shopname.api.myshoprenter.hu/orders</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -127,7 +127,7 @@ Here we must pay attention to the fact that the order must already be added at t
 ```json
 
 {
-    "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
+    "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
     "id": "b3JkZXItb3JkZXJfaWQ9NDk=",
     "innerId": "49",
     "invoiceId": "0",
@@ -178,40 +178,40 @@ Here we must pay attention to the fact that the order must already be added at t
     "pickPackPontShopCode": "100010",
     "loyaltyPointsTaxRate": "-1.0000",
     "customer": {
-        "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
     },
     "customerGroup": {
-        "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+        "href": "https://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
     },
     "shippingZone": null,
     "shippingCountry": {
-        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "https://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "paymentZone": null,
     "paymentCountry": {
-        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "https://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "orderStatus": {
-        "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+        "href": "https://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "currency": {
-        "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+        "href": "https://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
     },
     "shippingMode": {
-        "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
+        "href": "https://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
     },
     "furgefutarWaybill": 0,
     "orderTotals": {
-        "href": "http://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderProducts": {
-        "href": "http://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderGiftWrappings": {
-        "href": "http://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -240,7 +240,7 @@ The following example will help you determine what kind of request we should sen
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
+    <td>https://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -269,7 +269,7 @@ The following example will help you determine what kind of request we should sen
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
+    "href": "https://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjQ=",
     "name": "Net partial amount:",
     "valueText": "18.000 Huf ",
@@ -281,7 +281,7 @@ The following example will help you determine what kind of request we should sen
     "dateCreated": "2020-11-19T23:22:46",
     "dateUpdated": "2020-11-19T23:22:46",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -297,7 +297,7 @@ The following example will help you determine what kind of request we should ent
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
+    <td>https://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -326,7 +326,7 @@ The following example will help you determine what kind of request we should ent
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
+    "href": "https://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjU=",
     "name": "VAT (27%): ",
     "valueText": " 4.860 Huf ",
@@ -338,7 +338,7 @@ The following example will help you determine what kind of request we should ent
     "dateCreated": "2020-11-19T23:23:46",
     "dateUpdated": "2020-11-19T23:23:46",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -354,7 +354,7 @@ The following example will help you determine what kind of request we should sen
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
+    <td>https://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -383,7 +383,7 @@ The following example will help you determine what kind of request we should sen
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
+    "href": "https://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjY=",
     "name": "Gross partial amount:",
     "valueText": "22.860 Huf",
@@ -395,7 +395,7 @@ The following example will help you determine what kind of request we should sen
     "dateCreated": "2020-11-19T23:24:59",
     "dateUpdated": "2020-11-19T23:24:59",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -411,7 +411,7 @@ The following example will help you with what kind of request we should send in 
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
+    <td>https://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -440,7 +440,7 @@ The following example will help you with what kind of request we should send in 
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
+    "href": "https://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02Njc=",
     "name": "Home delivery with courier service:",
     "valueText": "1.200 Huf",
@@ -452,7 +452,7 @@ The following example will help you with what kind of request we should send in 
     "dateCreated": "2020-11-19T23:27:05",
     "dateUpdated": "2020-11-19T23:27:05",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -468,7 +468,7 @@ The following example will help you determine what kind of request we should ent
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orderTotals</td>
+    <td>https://shopname.api.myshoprenter.hu/orderTotals</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -497,7 +497,7 @@ The following example will help you determine what kind of request we should ent
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
+    "href": "https://shopname.api.myshoprenter.hu/orderTotals/b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
     "id": "b3JkZXJUb3RhbC1vcmRlcl90b3RhbF9pZD02NjM=",
     "name": "Gross total:",
     "valueText": "24060 Huf",
@@ -509,7 +509,7 @@ The following example will help you determine what kind of request we should ent
     "dateCreated": "2020-11-19T23:19:24",
     "dateUpdated": "2020-11-19T23:19:24",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```
@@ -536,7 +536,7 @@ the reason will be that the OrderTotal is incomplete or that we did not track th
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orderProducts</td>
+    <td>https://shopname.api.myshoprenter.hu/orderProducts</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -577,7 +577,7 @@ the reason will be that the OrderTotal is incomplete or that we did not track th
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
+    "href": "https://shopname.api.myshoprenter.hu/orderProducts/b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
     "id": "b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw",
     "name": "Bőrnadrág, Mango",
     "sku": "9950000051",
@@ -598,13 +598,13 @@ the reason will be that the OrderTotal is incomplete or that we did not track th
     "length": "1.00",
     "weight": "1.00",
     "order": {
-        "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM3MA=="
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTM3MA=="
     },
     "orderProductOptions": {
-        "href": "http://shopname.api.myshoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw"
+        "href": "https://shopname.api.myshoprenter.hu/orderProductOptions?orderProductId=b3JkZXJQcm9kdWN0LW9yZGVyX3Byb2R1Y3RfaWQ9MTMw"
     }
 }
 ```
@@ -623,7 +623,7 @@ change the "total" value using the following example:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=</td>
+    <td>https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -643,7 +643,7 @@ change the "total" value using the following example:
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
+    "href": "https://shopname.api.myshoprenter.hu/orders/b3JkZXItb3JkZXJfaWQ9NDk=",
     "id": "b3JkZXItb3JkZXJfaWQ9NDk=",
     "innerId": "49",
     "invoiceId": "0",
@@ -694,40 +694,40 @@ change the "total" value using the following example:
     "pickPackPontShopCode": "100010",
     "loyaltyPointsTaxRate": "-1.0000",
     "customer": {
-        "href": "http://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/customers/Y3VzdG9tZXItY3VzdG9tZXJfaWQ9MQ=="
     },
     "customerGroup": {
-        "href": "http://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
+        "href": "https://shopname.api.myshoprenter.hu/customerGroups/Y3VzdG9tZXJHcm91cC1jdXN0b21lcl9ncm91cF9pZD04"
     },
     "shippingZone": null,
     "shippingCountry": {
-        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "https://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "paymentZone": null,
     "paymentCountry": {
-        "href": "http://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
+        "href": "https://shopname.api.myshoprenter.hu/countries/Y291bnRyeS1jb3VudHJ5X2lkPTk3"
     },
     "orderStatus": {
-        "href": "http://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
+        "href": "https://shopname.api.myshoprenter.hu/orderStatuses/b3JkZXJTdGF0dXMtb3JkZXJfc3RhdHVzX2lkPTE="
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     },
     "currency": {
-        "href": "http://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
+        "href": "https://shopname.api.myshoprenter.hu/currencies/Y3VycmVuY3ktY3VycmVuY3lfaWQ9NA=="
     },
     "shippingMode": {
-        "href": "http://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
+        "href": "https://shopname.api.myshoprenter.hu/shippingModes/c2hpcHBpbmdNb2RlLWlkPTE4"
     },
     "furgefutarWaybill": 0,
     "orderTotals": {
-        "href": "http://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orderTotals?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderProducts": {
-        "href": "http://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orderProducts?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     },
     "orderGiftWrappings": {
-        "href": "http://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
+        "href": "https://shopname.api.myshoprenter.hu/orderGiftWrappings?orderId=b3JkZXItb3JkZXJfaWQ9NDk="
     }
 }
 ```

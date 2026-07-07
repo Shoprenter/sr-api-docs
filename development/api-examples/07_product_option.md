@@ -28,7 +28,7 @@ We create the new product option using [**Product Option Resource**](../../api/p
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productOptions</td>
+    <td>https://shopname.api.myshoprenter.hu/productOptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -52,18 +52,18 @@ We create the new product option using [**Product Option Resource**](../../api/p
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00",
+    "href": "https://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00",
     "id": "cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00",
     "innerId": "4",
     "sortOrder": "1",
     "product": {
-        "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
+        "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTUw"
     },
     "productOptionDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptionDescriptions?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "https://shopname.api.myshoprenter.hu/productOptionDescriptions?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "productOptionValues": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptionValues?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "https://shopname.api.myshoprenter.hu/productOptionValues?productOptionId=cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     }
 }
 ```
@@ -82,7 +82,7 @@ The example shows a English translation. If we want to assign a name to the give
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productOptionDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/productOptionDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -109,14 +109,14 @@ The example shows a English translation. If we want to assign a name to the give
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productOptionDescriptions/cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD0x",
+    "href": "https://shopname.api.myshoprenter.hu/productOptionDescriptions/cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD0x",
     "id": "cHJvZHVjdE9wdGlvbkRlc2NyaXB0aW9uLXByb2R1Y3Rfb3B0aW9uX2lkPTUxOCZsYW5ndWFnZV9pZD01",
     "name": "Number of slices",
     "productOption": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "https://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```
@@ -138,7 +138,7 @@ The price of the 12-slice version will be increased by HUF 2,000 compared to the
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productOptionValues</td>
+    <td>https://shopname.api.myshoprenter.hu/productOptionValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -163,16 +163,16 @@ The price of the 12-slice version will be increased by HUF 2,000 compared to the
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
+    "href": "https://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "price": "0000.0000",
     "prefix": "",
     "sortOrder": "1",
     "productOption": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "https://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "productOptionValueDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "https://shopname.api.myshoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     }
 }
 ```
@@ -186,7 +186,7 @@ The price of the 12-slice version will be increased by HUF 2,000 compared to the
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productOptionValues</td>
+    <td>https://shopname.api.myshoprenter.hu/productOptionValues</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -212,16 +212,16 @@ The price of the 12-slice version will be increased by HUF 2,000 compared to the
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
+    "href": "https://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA==",
     "price": "2000.0000",
     "prefix": "+",
     "sortOrder": "2",
     "productOption": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
+        "href": "https://shopname.api.myshoprenter.hu/productOptions/cHJvZHVjdE9wdGlvbi1wcm9kdWN0X29wdGlvbl9pZD00"
     },
     "productOptionValueDescriptions": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "https://shopname.api.myshoprenter.hu/productOptionValueDescriptions?productOptionValueId=cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     }
 }
 ```
@@ -239,7 +239,7 @@ With the help of [**Product Option Value Description Resource**](../../api/produ
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productOptionValueDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/productOptionValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -266,14 +266,14 @@ With the help of [**Product Option Value Description Resource**](../../api/produ
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTE=",
+    "href": "https://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTE=",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTQ=",
     "name": "10 slices",
     "productOptionValue": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "https://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```
@@ -287,7 +287,7 @@ With the help of [**Product Option Value Description Resource**](../../api/produ
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/productOptionValueDescriptions</td>
+    <td>https://shopname.api.myshoprenter.hu/productOptionValueDescriptions</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -314,14 +314,14 @@ With the help of [**Product Option Value Description Resource**](../../api/produ
 
 ```json
 {
-    "href": "http://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ5Jmxhbmd1YWdlX2lkPTE=",
+    "href": "https://shopname.api.myshoprenter.hu/productOptionValueDescriptions/cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ5Jmxhbmd1YWdlX2lkPTE=",
     "id": "cHJvZHVjdE9wdGlvblZhbHVlRGVzY3JpcHRpb24tcHJvZHVjdF9vcHRpb25fdmFsdWVfaWQ9NzQ4Jmxhbmd1YWdlX2lkPTQ=",
     "name": "12 slices",
     "productOptionValue": {
-        "href": "http://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
+        "href": "https://shopname.api.myshoprenter.hu/productOptionValues/cHJvZHVjdE9wdGlvblZhbHVlLXByb2R1Y3Rfb3B0aW9uX3ZhbHVlX2lkPTc0OA=="
     },
     "language": {
-        "href": "http://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
+        "href": "https://shopname.api.myshoprenter.hu/languages/bGFuZ3VhZ2UtbGFuZ3VhZ2VfaWQ9MQ=="
     }
 }
 ```

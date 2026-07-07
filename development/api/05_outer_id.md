@@ -26,7 +26,7 @@ E.g. product request without Outer ID:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/products</td>
+    <td>https://shopname.api.myshoprenter.hu/products</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -59,7 +59,7 @@ HTTP STATUS CODE: 200 or 201
 ```json
 {
   "response": {
-    "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
+    "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=",
     "innerId": "1",
     "sku": "SKU-11"
@@ -76,7 +76,7 @@ Product request with OUTER_ID:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/products/SKU-11</td>
+    <td>https://shopname.api.myshoprenter.hu/products/SKU-11</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -109,7 +109,7 @@ HTTP STATUS CODE: 200 or 201
 ```json
 {
   "response": {
-    "href": "http://shopname.api.myshoprenter.hu/products/SKU-11",
+    "href": "https://shopname.api.myshoprenter.hu/products/SKU-11",
     "innerId": "1",
     "id": "SKU-11",
     "sku": "SKU-11"
@@ -138,7 +138,7 @@ If you would like to assign OUTER_ID to an already existing resource, or want to
 ```json
 {
   "response": {
-    "href": "http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTk2",
+    "href": "https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTk2",
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTk2",
     "innerId": "96",
     "sku": "BI-NAT004HU30",
@@ -164,7 +164,7 @@ Example for a POST/PUT request:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>http://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTk2</td>
+    <td>https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTk2</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -190,7 +190,7 @@ TestOuterID has been sent as the id property in this case, so it is assigned as 
 ```json
 {
   "response": {
-    "href": "http://shopname.api.myshoprenter.hu/products/TestOuterID",
+    "href": "https://shopname.api.myshoprenter.hu/products/TestOuterID",
     "id": "TestOuterID",
     "innerId": "96",
     "sku": "BI-NAT004HU30",
