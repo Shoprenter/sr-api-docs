@@ -4,7 +4,7 @@
 
 #### HTTP → HTTPS Redirection – September 30, 2026
 
-Effective September 30, 2026, requests sent to the Shoprenter API over HTTP will be redirected to HTTPS using a **308 Permanent Redirect** response. As a result, request body data may be lost during the redirection process. Please review your applications' API calls and update any endpoints that are still using HTTP to use HTTPS instead.
+Effective September 30, 2026, requests sent to the Shoprenter API over HTTP will be redirected to HTTPS using a **308 Permanent Redirect** response. As a result, request body data may be lost during the redirection process.<br> Please review your applications' API calls and update any endpoints that are still using HTTP to use HTTPS instead.
 
 #### 2026.04.21
 
