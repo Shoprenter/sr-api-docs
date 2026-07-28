@@ -39,7 +39,11 @@ Please send the necessary data to the email address partnersupport@shoprenter.hu
 3. It is advisable for the serving party to check that the request was indeed sent by Shoprenter.
    To verify that the request was sent by Shoprenter:
    The part of the query string without HMAC (`code=0907a61c0c8d55e99db179b68161bc00&shopname=example&timestamp=1337178173`) encoded with **ClientSecret** using the sha256 algorithm must be equivalent to the value of the HMAC parameter of the query string.
-4. Once the request is validated, the user must be redirected to the **app_url** received in the query string. <br> _Previously, the application server was supposed to request credentials for Basic Authentication from Shoprenter at this point in the process, but Basic Authentication has since been deprecated and is no longer supported. Attempting to request Basic Authentication credentials will result in a 403 error response from the Shoprenter endpoint._ <br><br>**Note:** It is possible to decorate the value of `app_url` (Shoprenter's URL of the application) with unique query string parameters.
+4. Once the request is validated, the user must be redirected to the **app_url** received in the query string.
+   > **Note (SR Payment API only):** Applications that use the Shoprenter Payment API need to request base auth credentials at this stage before redirecting. Further details for this step can be found in the [Payment API docs](../../paymentapi/docs/c_accessing.md#requesting-credentials). If your application does not use the Shoprenter Payment API, this step can be skipped. If you plan on using it in the future, it's recommended to request the credentials from the start, since it cannot be requested later and will require reinstallation of the application.
+
+**Note:** It is possible to decorate the value of `app_url` (Shoprenter's URL of the application) with unique query string parameters.
+
    These parameters will also appear in the EntryPoint URL, along with the parameters used for request authentication (`shopname`, `code`, `timestamp`, `hmac`).<br>
    **Example:** <br> Let EntryPoint be `https://app.example.com/entryPoint`<br>
    The application redirects to: `https://[primaryDomain]/admin/app/[appId]?pelda=parameter`<br>
