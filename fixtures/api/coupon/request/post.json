@@ -1,7 +1,7 @@
 {
     "code": "10wevb",
     "discountType": "PERCENT",
-    "percentDiscount": "10",
+    "percentDiscountValue": "10",
     "freeShipping": "1",
     "totalNumberOfCoupons": "100",
     "totalNumberOfCouponsPerCustomer": "1",
