@@ -682,6 +682,20 @@
                 "url": "\/orders\/b3JkZXItb3JkZXJfaWQ9MTcy",
                 "statusCode": "200, 201 or 400"
             }
+        },
+        "delete": {
+            "method": "DELETE",
+            "url": {
+                "en": "\/orders\/order id"
+            },
+            "description": {
+                "en": "Used for deletion. Only orders older than 1 year can be deleted, otherwise the response status code is 400."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/orders\/b3JkZXItb3JkZXJfaWQ9MTcy",
+                "statusCode": "204, 400, 404 or 405"
+            }
         }
     }
 }
