@@ -1,5 +1,11 @@
 # API changelog
 
+#### 2026.08.25
+
+A new **DELETE** endpoint has been added to the [Order Resource](../api/order.md):
+
+- Only orders older than 1 year can be deleted. For newer orders the request is rejected with a **400** status code.
+
 #### 2026.07.17
 
 #### HTTP → HTTPS Redirection – September 30, 2026

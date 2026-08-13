@@ -406,7 +406,8 @@
       "GET": "order.order:read",
       "POST": "order.order:write",
       "PUT": "order.order:write",
-      "PATCH": "order.order:write"
+      "PATCH": "order.order:write",
+      "DELETE": "order.order:write"
     }
   },
   "order_extend": {
