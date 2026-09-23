@@ -43,7 +43,7 @@ Possible values for **paymentMethodCode**:
 |---------------------------------|-----------------------|
 | PayU                            | PAY                   |
 | OTP online goods loan           | OTP                   |
-| CIB bank card CIB               |
+| CIB bank card                   | CIB                   |
 | Cash on delivery                | COD, COD2, COD3, COD4 |
 | Cetelem payment method          | CETELEM               |
 | Bank transfer                   | BANK_TRANSFER         |
@@ -82,6 +82,9 @@ Possible values for **paymentMethodCode**:
 | MKB Szép kártya                 | MKB_SZEP              |
 | OTP EP kártya                   | OTP_EP                |
 | Milpay                          | MILPAY                |
+| Raiffeisen bank card             | RAIFFEISEN            |
+| Raiffeisen Pay                   | RAIFFEISEN_PAY        |
+| Raiffeisen Pay RTP               | RAIFFEISEN_PAY_RTP    |
 
 
 ## Endpoints
