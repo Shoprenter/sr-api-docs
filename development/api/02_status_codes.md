@@ -204,6 +204,11 @@
 <td>The given orderBy parameter: {parameter} is invalid!</td>
 </tr>
 <tr>
+<td>400</td>
+<td>40034</td>
+<td>Only orders older than {parameter} year(s) can be deleted.</td>
+</tr>
+<tr>
 <td>401</td>
 <td>40101</td>
 <td>You have no permission for this operation!</td>
