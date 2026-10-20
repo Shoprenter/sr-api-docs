@@ -315,7 +315,7 @@
         {
             "name": "paymentMethodAfter",
             "description": {
-                "en": "You have to pay later or in advance."
+                "en": "You have to pay later or in advance. (1 = the order is paid by cash on delivery. 0 = the order is not paid by cash on delivery (e.g. paid in advance). Default value: 1.)"
             },
             "required": false,
             "readonly": true
