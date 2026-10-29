@@ -1,5 +1,11 @@
 # API changelog
 
+#### TODO-RELEASE-DATE
+
+A change has been made to the [Product Addon Product Relation Resource](../api/product_addon_product_relation.md):
+
+- A new field has been added: **quantity** - the quantity of the product addon per one unit of the product (e.g. the number of deposit fee items per product).
+
 #### 2026.07.17
 
 #### HTTP → HTTPS Redirection – September 30, 2026
