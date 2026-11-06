@@ -23,6 +23,14 @@
             },
             "required": true,
             "readonly": false
+        },
+        {
+            "name": "quantity",
+            "description": {
+                "en": "Quantity of the product addon per one unit of the product. For a required, auto-scaling addon the quantity added to the cart is the product quantity multiplied by this value; for other addons it is this value.<br>A whole number between 1 and 2147483647; other values are rejected with HTTP 400 (error code 40005).<br>Default: 1 on creation. If it is omitted on modification, the stored value is kept."
+            },
+            "required": false,
+            "readonly": false
         }
     ],
     "endpoints": {
@@ -36,7 +44,7 @@
             },
             "parameters": [],
             "example": {
-                "url": "\/productAddonProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
+                "url": "\/productAddonProductRelations\/cHJvZHVjdEFkZG9uUHJvZHVjdFJlbGF0aW9uLXByb2R1Y3RfYWRkb25faWQ9MzAxMiZwcm9kdWN0X2lkPTI0NTE=",
                 "statusCode": "200"
             }
         },
@@ -99,6 +107,20 @@
                 "statusCode": "201"
             }
         },
+        "put": {
+            "method": "PUT",
+            "url": {
+                "en": "\/productAddonProductRelations\/relation id"
+            },
+            "description": {
+                "en": "It is used for modification only."
+            },
+            "parameters": [],
+            "example": {
+                "url": "\/productAddonProductRelations\/cHJvZHVjdEFkZG9uUHJvZHVjdFJlbGF0aW9uLXByb2R1Y3RfYWRkb25faWQ9MzAxMiZwcm9kdWN0X2lkPTI0NTE=",
+                "statusCode": "200"
+            }
+        },
         "delete": {
             "method": "DELETE",
             "url": {
@@ -109,7 +131,7 @@
             },
             "parameters": [],
             "example": {
-                "url": "\/productAddonProductRelations\/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==",
+                "url": "\/productAddonProductRelations\/cHJvZHVjdEFkZG9uUHJvZHVjdFJlbGF0aW9uLXByb2R1Y3RfYWRkb25faWQ9MzAxMiZwcm9kdWN0X2lkPTI0NTE=",
                 "statusCode": "204 or 404"
             }
         }

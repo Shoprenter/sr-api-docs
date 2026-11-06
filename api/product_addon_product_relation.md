@@ -76,18 +76,18 @@
 
 <template v-slot:responseJSON>
 
-<<< @/docs/fixtures/api/product_related_product_relation/response/json/get_id.json
+<<< @/docs/fixtures/api/product_addon_product_relation/response/json/get_id.json
 
 </template>
 
 <template v-slot:responseXML>
 
-<<< @/docs/fixtures/api/product_related_product_relation/response/xml/get_id.xml
+<<< @/docs/fixtures/api/product_addon_product_relation/response/xml/get_id.xml
 
 </template>
 
 </ResourceEndpoint>
 
 [//]: <> (DELETE ENDPOINT)
-<ResourceEndpoint :resource="'product_related_product_relation'" :endpoint="'delete'" :lang="'en'"/>
+<ResourceEndpoint :resource="'product_addon_product_relation'" :endpoint="'delete'" :lang="'en'"/>
 
