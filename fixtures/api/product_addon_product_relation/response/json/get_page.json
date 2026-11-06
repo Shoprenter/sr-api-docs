@@ -11,6 +11,6 @@
         "href": "https://shopname.api.myshoprenter.hu/productAddonProductRelations?page=0&limit=25"
     },
     "items": {
-        "href": "https://shopname.api.myshoprenter.hu/productAddonProductRelations/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg=="
+        "href": "https://shopname.api.myshoprenter.hu/productAddonProductRelations/cHJvZHVjdEFkZG9uUHJvZHVjdFJlbGF0aW9uLXByb2R1Y3RfYWRkb25faWQ9MzAxMiZwcm9kdWN0X2lkPTI0NTE="
     }
 }

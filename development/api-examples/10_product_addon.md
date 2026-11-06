@@ -63,7 +63,7 @@ Linking Deposit with Product:
   </tr>
   <tr>
     <td><b>url:</b></td>
-    <td>https://shopname.api.myshoprenter.hu/productAddonProductRelations/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==</td>
+    <td>https://shopname.api.myshoprenter.hu/productAddonProductRelations</td>
   </tr>
   <tr>
     <td><b>headers:</b></td>
@@ -82,7 +82,10 @@ Linking Deposit with Product:
     "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE="
   },
   "productAddon": {
-    "id": "cHJvZHVjdC1wcm9kdWN0X2lkPTMwMTI="
-  }
+    "id": "cHJvZHVjdEFkZG9uLWlkPTMwMTI="
+  },
+  "quantity": 2
 }
 ```
+
+The optional **quantity** field sets how many deposit items belong to one unit of the product (e.g. a pack of two bottles). Because the deposit above is required and auto-scaling, adding 3 units of the product to the cart adds 6 deposit items. If **quantity** is omitted, it defaults to 1.

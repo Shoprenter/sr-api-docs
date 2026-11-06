@@ -1,11 +1,11 @@
 <response>
-    <href><![CDATA[https://shopname.api.myshoprenter.hu/productAddonProductRelations/cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==]]></href>
-    <id><![CDATA[cmVsYXRlZFByb2R1Y3QtcHJvZHVjdF9pZD0yNDUxJnJlbGF0ZWRfaWQ9MzAxMg==]]></id>
+    <href><![CDATA[https://shopname.api.myshoprenter.hu/productAddonProductRelations/cHJvZHVjdEFkZG9uUHJvZHVjdFJlbGF0aW9uLXByb2R1Y3RfYWRkb25faWQ9MzAxMiZwcm9kdWN0X2lkPTI0NTE=]]></href>
+    <id><![CDATA[cHJvZHVjdEFkZG9uUHJvZHVjdFJlbGF0aW9uLXByb2R1Y3RfYWRkb25faWQ9MzAxMiZwcm9kdWN0X2lkPTI0NTE=]]></id>
     <product>
         <href><![CDATA[https://shopname.api.myshoprenter.hu/products/cHJvZHVjdC1wcm9kdWN0X2lkPTI0NTE=]]></href>
     </product>
     <productAddon>
-        <href><![CDATA[https://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdC1wcm9kdWN0X2lkPTMwMTI=]]></href>
+        <href><![CDATA[https://shopname.api.myshoprenter.hu/productAddons/cHJvZHVjdEFkZG9uLWlkPTMwMTI=]]></href>
     </productAddon>
     <quantity><![CDATA[2]]></quantity>
 </response>
