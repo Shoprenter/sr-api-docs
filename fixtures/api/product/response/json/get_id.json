@@ -32,6 +32,7 @@
     "imageAlt": "image alt",
     "freeShipping": "0",
     "durableMediaDevice": "0",
+    "manufacturerGuaranteeMonths": "0",
     "taxClass": {
         "href": "https://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw"
     },

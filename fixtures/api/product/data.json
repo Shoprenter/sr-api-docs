@@ -273,6 +273,14 @@
             "readonly": false
         },
         {
+            "name": "manufacturerGuaranteeMonths",
+            "description": {
+                "en": "Manufacturer's voluntary guarantee in months, an integer between 0 and 65535. The statutory mandatory guarantee is not stored here. 0 or null means no manufacturer guarantee. If the field is omitted, the stored value does not change. The GARAN label is displayed if the value is greater than 24, divisible by 6, at most 1194, and the product has a manufacturer and a model number. Accepted as a JSON integer or a numeric string (e.g. 12 or \"12\"); decimal values such as 12.0 are rejected."
+            },
+            "required": false,
+            "readonly": false
+        },
+        {
             "name": "taxClass",
             "description": {
                 "en": "Tax class."
