@@ -1,5 +1,10 @@
 # API changelog
 
+#### 2026.11.13
+A change has been made to the [Product Resource](../api/product.md) and the [ProductExtend Resource](../api/product_extend.md):
+
+- A new field has been added: **manufacturerGuaranteeMonths** - the manufacturer's voluntary guarantee in months.
+
 #### 2026.07.17
 
 #### HTTP → HTTPS Redirection – September 30, 2026

@@ -32,6 +32,7 @@
     <imageAlt><![CDATA[image alt]]></imageAlt>
     <freeShipping><![CDATA[0]]></freeShipping>
     <durableMediaDevice><![CDATA[0]]></durableMediaDevice>
+    <manufacturerGuaranteeMonths><![CDATA[0]]></manufacturerGuaranteeMonths>
     <taxClass>
         <href><![CDATA[https://shopname.api.myshoprenter.hu/taxClasses/dGF4Q2xhc3MtdGF4X2NsYXNzX2lkPTEw]]></href>
     </taxClass>

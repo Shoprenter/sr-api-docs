@@ -32,6 +32,7 @@
     "imageAlt": "image alt",
     "freeShipping": "0",
     "durableMediaDevice": "0",
+    "manufacturerGuaranteeMonths": "0",
     "productAttributeExtend": [
         {
             "href": "https://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==",

@@ -92,6 +92,9 @@
     <durableMediaDevice>
         <![CDATA[0]]>
     </durableMediaDevice>
+    <manufacturerGuaranteeMonths>
+        <![CDATA[0]]>
+    </manufacturerGuaranteeMonths>
     <productAttributeExtend>
         <href>
             <![CDATA[https://shopname.api.myshoprenter.hu/listAttributes/bGlzdEF0dHJpYnV0ZS1hdHRyaWJ1dGVfaWQ9Mg==]]>

@@ -3,6 +3,7 @@
     "stock2": "22",
     "sku": "ABCD-1234",
     "price": "2200",
+    "manufacturerGuaranteeMonths": "0",
     "manufacturer": {
         "name": "Manufacturer name",
         "picture": "image.jpg",
